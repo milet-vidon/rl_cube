@@ -1,0 +1,247 @@
+{
+  "passed": false,
+  "kind": "state_based_traditional_teacher",
+  "task": "left_pickup_whole_cube_rightward_90deg_tilt_mirrored_right_opposition_hold",
+  "protocol_sha256": "6131ae12af83ab4a354257395db184e60fefa23893bb1773510fcd77538f0e87",
+  "failures": [
+    "episode_failed:8401"
+  ],
+  "trials": [
+    {
+      "seed": 8201,
+      "split": "development",
+      "accepted": true,
+      "run": "/home/brainco/rl_cube/revotron_cube_rl/runs/tilt_regrasp_full_8201_v18",
+      "trajectory_sha256": "af18b9cbfb7bb6d352cbaf8fa084b43e1ea4a7e7700ef8ad1e0ce19ad312eaa8",
+      "measured": {
+        "accepted": true,
+        "scope": "whole_cube_tilt_and_mirrored_right_grasp",
+        "full_episode": true,
+        "failures": [],
+        "final_tilt_error_deg": 1.0068302780747465,
+        "longest_measured_hold_seconds": 3.566666666666667,
+        "contact_coverage_in_qualifying_window": {
+          "left": {
+            "thumb": 1.0,
+            "index": 1.0,
+            "middle": 1.0,
+            "ring": 1.0,
+            "little": 1.0
+          },
+          "right": {
+            "thumb": 1.0,
+            "index": 1.0,
+            "middle": 1.0,
+            "ring": 1.0,
+            "little": 1.0
+          }
+        },
+        "maximum_lift_m": 0.18681949043273927,
+        "final_lift_m": 0.18071728610992432,
+        "cube_returned_to_table_after_lift": false,
+        "robot_table_impulse_sum_Ns": 0.0,
+        "self_contact_impulse_sum_Ns": 0
+      },
+      "config_sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+      "runtime_config_sha256": "7a0cb036416efc988ae280c688e080ceab1a9fdff5cbcde08256afb93cf77a14",
+      "asset_contract_sha256": "66c7def3313cc9a9c50d7605914aad7d0f79acaa7862346553e617ba8c1d391c",
+      "minimum_actual_arm_soft_limit_clearance_deg": 4.667186118528072,
+      "soft_limit_hit_steps": 0,
+      "hard_limit_hit_steps": 0,
+      "dropped": false
+    },
+    {
+      "seed": 8301,
+      "split": "development",
+      "accepted": true,
+      "run": "/home/brainco/rl_cube/revotron_cube_rl/runs/tilt_regrasp_full_8301_v18",
+      "trajectory_sha256": "38e688425eeab5b50d268a3ca59da1d7ba3a4c811dbd8ee5b892d3474ee1941a",
+      "measured": {
+        "accepted": true,
+        "scope": "whole_cube_tilt_and_mirrored_right_grasp",
+        "full_episode": true,
+        "failures": [],
+        "final_tilt_error_deg": 4.485947794767513,
+        "longest_measured_hold_seconds": 3.7333333333333334,
+        "contact_coverage_in_qualifying_window": {
+          "left": {
+            "thumb": 1.0,
+            "index": 1.0,
+            "middle": 1.0,
+            "ring": 1.0,
+            "little": 1.0
+          },
+          "right": {
+            "thumb": 1.0,
+            "index": 1.0,
+            "middle": 1.0,
+            "ring": 1.0,
+            "little": 1.0
+          }
+        },
+        "maximum_lift_m": 0.19066458606719972,
+        "final_lift_m": 0.18408673667907716,
+        "cube_returned_to_table_after_lift": false,
+        "robot_table_impulse_sum_Ns": 0.0,
+        "self_contact_impulse_sum_Ns": 0
+      },
+      "config_sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+      "runtime_config_sha256": "7a0cb036416efc988ae280c688e080ceab1a9fdff5cbcde08256afb93cf77a14",
+      "asset_contract_sha256": "66c7def3313cc9a9c50d7605914aad7d0f79acaa7862346553e617ba8c1d391c",
+      "minimum_actual_arm_soft_limit_clearance_deg": 0.11204075349277341,
+      "soft_limit_hit_steps": 0,
+      "hard_limit_hit_steps": 0,
+      "dropped": false
+    },
+    {
+      "seed": 8401,
+      "split": "independent",
+      "accepted": false,
+      "run": "/home/brainco/rl_cube/revotron_cube_rl/runs/tilt_regrasp_independent_8401_v18",
+      "trajectory_sha256": "51f0d62bd0d5bce6f08a11bc5ecbfaea01bacee11789181ceee711e1d301e62f",
+      "measured": {
+        "accepted": false,
+        "scope": "whole_cube_tilt_and_mirrored_right_grasp",
+        "full_episode": true,
+        "failures": [
+          "missing_full_pickup_tilt_sequence",
+          "self_contact_impulse",
+          "no_3s_measured_opposition_hold_at_90deg"
+        ],
+        "final_tilt_error_deg": 0.9012386300003284,
+        "longest_measured_hold_seconds": 0.0,
+        "contact_coverage_in_qualifying_window": null,
+        "maximum_lift_m": 0.18697601222991944,
+        "final_lift_m": 0.17875605487823487,
+        "cube_returned_to_table_after_lift": false,
+        "robot_table_impulse_sum_Ns": 0.0,
+        "self_contact_impulse_sum_Ns": 0.36689151811469883
+      },
+      "config_sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+      "runtime_config_sha256": "7a0cb036416efc988ae280c688e080ceab1a9fdff5cbcde08256afb93cf77a14",
+      "asset_contract_sha256": "66c7def3313cc9a9c50d7605914aad7d0f79acaa7862346553e617ba8c1d391c",
+      "minimum_actual_arm_soft_limit_clearance_deg": 6.269425554408003,
+      "soft_limit_hit_steps": 0,
+      "hard_limit_hit_steps": 0,
+      "dropped": false
+    },
+    {
+      "seed": 8402,
+      "split": "independent",
+      "accepted": true,
+      "run": "/home/brainco/rl_cube/revotron_cube_rl/runs/tilt_regrasp_independent_8402_v18",
+      "trajectory_sha256": "d4c36eca4b3dc1f9a742e5f8d6a20421c92d7a106772d97693b9388f0fc09333",
+      "measured": {
+        "accepted": true,
+        "scope": "whole_cube_tilt_and_mirrored_right_grasp",
+        "full_episode": true,
+        "failures": [],
+        "final_tilt_error_deg": 1.7954231904592541,
+        "longest_measured_hold_seconds": 3.7333333333333334,
+        "contact_coverage_in_qualifying_window": {
+          "left": {
+            "thumb": 1.0,
+            "index": 1.0,
+            "middle": 1.0,
+            "ring": 1.0,
+            "little": 1.0
+          },
+          "right": {
+            "thumb": 1.0,
+            "index": 1.0,
+            "middle": 1.0,
+            "ring": 1.0,
+            "little": 1.0
+          }
+        },
+        "maximum_lift_m": 0.18997245693206788,
+        "final_lift_m": 0.183704909324646,
+        "cube_returned_to_table_after_lift": false,
+        "robot_table_impulse_sum_Ns": 0.0,
+        "self_contact_impulse_sum_Ns": 0
+      },
+      "config_sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+      "runtime_config_sha256": "7a0cb036416efc988ae280c688e080ceab1a9fdff5cbcde08256afb93cf77a14",
+      "asset_contract_sha256": "66c7def3313cc9a9c50d7605914aad7d0f79acaa7862346553e617ba8c1d391c",
+      "minimum_actual_arm_soft_limit_clearance_deg": 0.5094416499716253,
+      "soft_limit_hit_steps": 0,
+      "hard_limit_hit_steps": 0,
+      "dropped": false
+    },
+    {
+      "seed": 8403,
+      "split": "independent",
+      "accepted": true,
+      "run": "/home/brainco/rl_cube/revotron_cube_rl/runs/tilt_regrasp_independent_8403_v18",
+      "trajectory_sha256": "9309a21fc27fb6943c7be55be4521e77d1ac888893755b5790640c98ac7be958",
+      "measured": {
+        "accepted": true,
+        "scope": "whole_cube_tilt_and_mirrored_right_grasp",
+        "full_episode": true,
+        "failures": [],
+        "final_tilt_error_deg": 1.2902394073302572,
+        "longest_measured_hold_seconds": 3.6333333333333333,
+        "contact_coverage_in_qualifying_window": {
+          "left": {
+            "thumb": 1.0,
+            "index": 1.0,
+            "middle": 1.0,
+            "ring": 1.0,
+            "little": 1.0
+          },
+          "right": {
+            "thumb": 1.0,
+            "index": 1.0,
+            "middle": 1.0,
+            "ring": 1.0,
+            "little": 1.0
+          }
+        },
+        "maximum_lift_m": 0.18968170547485352,
+        "final_lift_m": 0.1838267412185669,
+        "cube_returned_to_table_after_lift": false,
+        "robot_table_impulse_sum_Ns": 0.0,
+        "self_contact_impulse_sum_Ns": 0
+      },
+      "config_sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+      "runtime_config_sha256": "7a0cb036416efc988ae280c688e080ceab1a9fdff5cbcde08256afb93cf77a14",
+      "asset_contract_sha256": "66c7def3313cc9a9c50d7605914aad7d0f79acaa7862346553e617ba8c1d391c",
+      "minimum_actual_arm_soft_limit_clearance_deg": 0.7986796707541552,
+      "soft_limit_hit_steps": 0,
+      "hard_limit_hit_steps": 0,
+      "dropped": false
+    }
+  ],
+  "accepted": 4,
+  "total": 5,
+  "independent_accepted": 2,
+  "independent_total": 3,
+  "source_sha256": {
+    "tilt_regrasp.py": "c9ae84b5386bb42392e0ed903e16e39aef0be599fac0437abfb3d208c4878bb1",
+    "tilt_collision_plan.py": "09307ae2e029b6cf6e79ae548495a6a62f2f321838d46c5536353c55542262c4",
+    "tilt_experiment.py": "d345f965ec3f93a1c662eaf736bf9f25f4fb50733fee6784ff5fe9798154081d",
+    "tilt_audit.py": "b0ac3ef9b1608b16c002812f804841116b5eb7b3b6666d3befbde46ae8c645bd",
+    "opposition_teacher.py": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1",
+    "opposition_feedback.py": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883",
+    "proximal_planner.py": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16",
+    "opposition_grasp_v20.json": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a",
+    "config.json": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+    "environment.py": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7",
+    "joint_safety.py": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887",
+    "kinematics.py": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212",
+    "isaac_compat.py": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825",
+    "finger_contact_audit.py": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0",
+    "self_contact_audit.py": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c"
+  },
+  "assets_sha256": {
+    "/home/brainco/rl_cube/revotron_revo3/source/revotron_system/usd/revotron_bimanual_revo3_56dof.usd": "c066a65ff5ac77a8fb0a5fb3658c71f151b64777cdc9a8f66a0739d4033170a2",
+    "/home/brainco/rl_cube/revotron_revo3/source/revotron_system/urdf/revotron_bimanual_revo3_56dof.urdf": "598cc4cc94a37e35517eba4e450b3a3b334214549c7e196bf3f1332940e71325",
+    "/home/brainco/rl_cube/isaac_mujoco_cube/upstream/mujoco_cube-main/cube_3x3x3.xml": "b7b32a4a8624241817aafcbdba20217b7250fb9c570440af6fbdcf5ec084c023",
+    "/home/brainco/rl_cube/isaac_mujoco_cube/upstream/mujoco_cube-main/assets/sticker.png": "278454a3391b00b997c70f1e3e40f38014e620df9426943d7197191c0338f506"
+  },
+  "gate_source_sha256": "3729acd300adb96cd86ada04ea23cb6b1b569847f3359e67f282a4c95d4293a1",
+  "soft_limit_version": "revo3_user_soft_limits_v2",
+  "neural_policy_trained": false,
+  "layer_turn_validated": false,
+  "real_robot_tested": false
+}

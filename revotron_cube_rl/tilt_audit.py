@@ -17,14 +17,14 @@ def tilt_error(row):
     reference = row.get('tilt_reference_wxyz')
     if reference is None:
         return 90.0
-    target = Rotation.from_euler('x', 90, degrees=True).as_matrix() @ rotation_wxyz(reference)
+    target = Rotation.from_euler('x', row.get('tilt_degrees', 90), degrees=True).as_matrix() @ rotation_wxyz(reference)
     actual = rotation_wxyz(row['cube_quaternion_wxyz'])
     return float(np.degrees(Rotation.from_matrix(target @ actual.T).magnitude()))
 
 
 def contact_topology(row, side):
     """Cube-frame opposition: left X faces, mirrored right Y faces."""
-    axis, thumb_sign = (0, -1) if side == 'left' else (1, 1)
+    axis, thumb_sign = (0, -1) if side == 'left' else (row.get('right_contact_axis', 1), row.get('right_thumb_sign', 1))
     rotation = rotation_wxyz(row['cube_quaternion_wxyz'])
     center = np.asarray(row['cube_position'])
     impulses = {finger: 0.0 for finger in FINGERS}

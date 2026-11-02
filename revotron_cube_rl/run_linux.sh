@@ -59,10 +59,10 @@ case "$ENTRY" in
     run_isaac opposition_experiment.py --grasp-config "${ROOT}/opposition_grasp_v20.json" "$@"
     ;;
   tilt-teacher)
-    run_isaac tilt_experiment.py --regrasp --shift=-0.12,-0.08,0 "$@"
+    run_isaac palm_handover_experiment.py "$@"
     ;;
   tilt-replay)
-    run_isaac tilt_replay.py "$@"
+    run_isaac palm_handover_replay.py "$@"
     ;;
   dagger)
     run_isaac collect_dagger.py "$@"

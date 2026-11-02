@@ -1,0 +1,66 @@
+{
+  "scope": "left pickup, reverse whole-cube 90 degree tilt and 3 second hold only",
+  "elbow_outward_posture_accepted": false,
+  "right_regrasp_validated": false,
+  "neural_policy_trained": false,
+  "gate": "revotron_cube_rl/palm_direction_gate_certificate.json",
+  "protocol": "revotron_cube_rl/palm_direction_protocol_v5.json",
+  "runs": [
+    {
+      "seed": 9301,
+      "split": "development",
+      "path": "revotron_cube_rl/runs/palm_direction_9301_v5",
+      "original_path": "/home/brainco/rl_cube/revotron_cube_rl/runs/palm_direction_9301_v5",
+      "trajectory_sha256": "6980f9bc1ee74955acb480b72869acc63168bfa6d12591be3f3587b6e2929374"
+    },
+    {
+      "seed": 9402,
+      "split": "development",
+      "path": "revotron_cube_rl/runs/palm_direction_9402_v5",
+      "original_path": "/home/brainco/rl_cube/revotron_cube_rl/runs/palm_direction_9402_v5",
+      "trajectory_sha256": "3a661797d49528083db9d8e70c4637f6606d3ee00d76707fd07a451e11a9f219"
+    },
+    {
+      "seed": 9403,
+      "split": "development",
+      "path": "revotron_cube_rl/runs/palm_direction_9403_v5",
+      "original_path": "/home/brainco/rl_cube/revotron_cube_rl/runs/palm_direction_9403_v5",
+      "trajectory_sha256": "bc98f9f49beae33bcd93422e47ae04e07548d4bbd6e2b19bd9d8008a49299540"
+    },
+    {
+      "seed": 9501,
+      "split": "independent",
+      "path": "revotron_cube_rl/runs/palm_direction_9501_v5",
+      "original_path": "/home/brainco/rl_cube/revotron_cube_rl/runs/palm_direction_9501_v5",
+      "trajectory_sha256": "08de51207e88736f507803caa2749a0f177d816e9475b1d16ed9daafc54e1089"
+    },
+    {
+      "seed": 9502,
+      "split": "independent",
+      "path": "revotron_cube_rl/runs/palm_direction_9502_v5",
+      "original_path": "/home/brainco/rl_cube/revotron_cube_rl/runs/palm_direction_9502_v5",
+      "trajectory_sha256": "8e655d650959f107be6b3945cf88db4f8c324699851738397a52233ad010733d"
+    },
+    {
+      "seed": 9503,
+      "split": "independent",
+      "path": "revotron_cube_rl/runs/palm_direction_9503_v5",
+      "original_path": "/home/brainco/rl_cube/revotron_cube_rl/runs/palm_direction_9503_v5",
+      "trajectory_sha256": "fc258472d0176b77f4466d3765bf25c7997475746a7499f9432a38eb4148001b"
+    }
+  ],
+  "asset_path_mapping": {
+    "/home/brainco/rl_cube/revotron_revo3/source/revotron_system/usd/revotron_bimanual_revo3_56dof.usd": "revotron_revo3/source/revotron_system/usd/revotron_bimanual_revo3_56dof.usd",
+    "/home/brainco/rl_cube/revotron_revo3/source/revotron_system/urdf/revotron_bimanual_revo3_56dof.urdf": "revotron_revo3/source/revotron_system/urdf/revotron_bimanual_revo3_56dof.urdf",
+    "/home/brainco/rl_cube/isaac_mujoco_cube/upstream/mujoco_cube-main/cube_3x3x3.xml": "isaac_mujoco_cube/upstream/mujoco_cube-main/cube_3x3x3.xml",
+    "/home/brainco/rl_cube/isaac_mujoco_cube/upstream/mujoco_cube-main/assets/sticker.png": "isaac_mujoco_cube/upstream/mujoco_cube-main/assets/sticker.png"
+  },
+  "historical_experiments": {
+    "parallel_processes": 3,
+    "envs_per_process": 1,
+    "physics_device": "cpu",
+    "gpu": "RTX 5070 Laptop 8 GB"
+  },
+  "publication_physx_rerun": false,
+  "note": "Original certificate bytes and hashes are preserved; absolute paths in runtime gates remain an open issue. New user elbow requirement is not part of this certificate."
+}

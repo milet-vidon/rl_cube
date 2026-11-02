@@ -1,3 +1,16 @@
+# 本次同步验证（2026-11-02）
+
+- 发布目录：`github_project`；解释器为原机 conda `rl_cube_6_2`。
+- `python -m unittest discover -s revotron_cube_rl -p 'test_*.py'`：40 tests，全部通过。
+- `python revotron_cube_rl/test_arm_safety.py`：通过。
+- `python revotron_cube_rl/linux_migration_check.py`：通过，资产路径解析到发布目录。
+- `bash -n revotron_cube_rl/run_linux.sh`：通过。
+- 从发布目录核对 19 个冻结源文件、4 个资产、六个完整回合的协议/源码/配置/资产合同/轨迹哈希；从已存轨迹离线重算原有翻转验收，6/6 通过。读取路径全部由仓库内索引显式解析，不读取原工作区的 run。
+- 以上是对已有 PhysX 证据的同步检查，没有新训练、没有重跑 Isaac。相关细节见 [publication_validation.json](evidence/palm_direction_v5/publication_validation.json)。
+- 左肘外展与右手完整接抓未通过；本次检查没有扩大原证书验收范围。
+
+以下保留初次发布记录。
+
 # 发布验证（2026-11-02）
 
 - Python：原机 `.conda/rl_cube_6_2/bin/python`。

@@ -23,6 +23,15 @@ def set_right_arm_gains(env,regrasp):
     env.robot.write_joint_damping_to_sim_index(damping=torch.full((1,7),damping,dtype=torch.float32),joint_ids=ids)
 
 class TiltPlanner(OppositionPlanner):
+    tilt_degrees=90.
+    grasp_symmetry=np.array([[0.,-1.,0.],[-1.,0.,0.],[0.,0.,-1.]])
+    right_contact_axis=1
+    right_thumb_sign=1
+    pregrasp_offset_cube=np.array([-.10,0.,-.06])
+    little_contact_z=None
+    keep_right_side=False
+    right_palm_offset_cube=np.zeros(3)
+    refine_contact_geometry=False
     def __init__(self,grasp_config):
         super().__init__(grasp_config)
         # The old single-finger support used a posture-specific -100 degree
@@ -30,31 +39,70 @@ class TiltPlanner(OppositionPlanner):
         # explicit full-body mesh planning, within the user's original limits.
         self.k.limits['Joint2_R']=list(self.cfg['arm_soft_limits']['Joint2_R'])
 
-    def regrasp_path(self,q,measured,cube_position,cube_quaternion):
+    def regrasp_path(self,q,measured,cube_position,cube_quaternion,points=None):
         """Mirror the actual held grasp onto a free pair of cube faces."""
         names=self.cfg['joint_names'];m=np.diag([1.,-1.,1.,1.])
-        Q=np.array([[0.,-1.,0.],[-1.,0.,0.],[0.,0.,-1.]])
+        Q=self.grasp_symmetry.copy()
         cube=np.eye(4);cube[:3,:3]=Rotation.from_quat(np.asarray(cube_quaternion)[[1,2,3,0]]).as_matrix()
         cube[:3,3]=np.asarray(cube_position)-[0,0,self.cfg['robot_z']]
         lp=np.linalg.inv(cube)@self.k.fk_link(measured,'left_palm_link')
         symmetry=np.eye(4);symmetry[:3,:3]=Q
-        local=symmetry@m@lp@m;target=cube@local
+        local=symmetry@m@lp@m;local[:3,3]+=self.right_palm_offset_cube;target=cube@local
         closed={n.replace('left_','right_'):v for n,v in measured.items() if n.startswith('left_')}
         opened={n:closed[n]+self.primary_open[n.replace('right_','left_')]-self.primary_closed[n.replace('right_','left_')] for n in closed}
         # The inherited little-finger preshape grazed the cube during lateral
         # insertion. Keep it extended until the palm reaches the grasp pose.
         opened.update(right_little_MCP_joint=.3,right_little_PIP_joint=0.,right_little_DIP_joint=0.)
         final=self.fit_tilt(q,'right',target[:3,3],target[:3,:3])
+        contact_anchors=None
+        if self.refine_contact_geometry:
+            closed,opened,contact_anchors=self.refine_right_hand(final,closed,cube,measured,points or [])
+        else:
+            if self.little_contact_z is not None:
+                anchor=self.grasp['contact_anchors']['little']
+                link=anchor['link'].replace('left_','right_')
+                point=np.diag([1.,-1.,1.])@np.asarray(anchor['point_local'])
+                little_names=[n for n in closed if n.startswith('right_little_')]
+                ref=np.array([closed[n] for n in little_names])
+                def little_position(values):
+                    frame=self.k.fk_link(final|closed|dict(zip(little_names,values)),link)
+                    return cube[:3,:3].T@(frame[:3,:3]@point+frame[:3,3]-cube[:3,3])
+                target_little=little_position(ref);target_little[2]=self.little_contact_z
+                bounds=np.array([self.k.limits[n] for n in little_names])
+                lo=np.maximum(bounds[:,0]+.02,ref-.5);hi=np.minimum(bounds[:,1]-.02,ref+.5)
+                fit=least_squares(lambda x:np.r_[80*(little_position(x)-target_little),.03*(x-ref)],np.clip(ref,lo+1e-6,hi-1e-6),bounds=(lo,hi),max_nfev=100)
+                if np.linalg.norm(little_position(fit.x)-target_little)>.003:
+                    raise ValueError('Right little finger cannot clear the opposing hand')
+                closed.update(zip(little_names,fit.x))
+            # A joint-angle 'opening' inherited from the left pickup moved the
+            # mirrored thumb inward. Open geometrically along its face normal.
+            thumb_names=[n for n in closed if n.startswith('right_thumb_')]
+            anchor=self.grasp['contact_anchors']['thumb']
+            thumb_link=anchor['link'].replace('left_','right_')
+            thumb_point=np.diag([1.,-1.,1.])@np.asarray(anchor['point_local'])
+            def thumb_position(values):
+                frame=self.k.fk_link(final|dict(zip(thumb_names,values)),thumb_link)
+                return frame[:3,:3]@thumb_point+frame[:3,3]
+            thumb_target=thumb_position([closed[n] for n in thumb_names])+cube[:3,self.right_contact_axis]*self.right_thumb_sign*.020
+            thumb_ref=np.array([opened[n] for n in thumb_names])
+            thumb_limits=np.array([self.k.limits[n] for n in thumb_names])
+            thumb_lo=np.maximum(thumb_limits[:,0]+.02,thumb_ref-.7)
+            thumb_hi=np.minimum(thumb_limits[:,1]-.02,thumb_ref+.7)
+            thumb_fit=least_squares(lambda x:np.r_[80*(thumb_position(x)-thumb_target),.05*(x-thumb_ref)],
+                np.clip(thumb_ref,thumb_lo+1e-6,thumb_hi-1e-6),bounds=(thumb_lo,thumb_hi),max_nfev=100)
+            if np.linalg.norm(thumb_position(thumb_fit.x)-thumb_target)>.002:
+                raise ValueError('Right thumb cannot reach the open pregrasp clearance')
+            opened.update(zip(thumb_names,thumb_fit.x))
         # Approach along the two tangents of the grasped faces. Keeping the
         # offset in cube coordinates avoids pushing into a face as yaw varies.
-        pre_offset=cube[:3,:3]@np.array([-.10,0.,-.06])
+        pre_offset=cube[:3,:3]@self.pregrasp_offset_cube
         pre=target.copy();pre[:3,3]+=pre_offset
         approach=self.fit_tilt(final,'right',pre[:3,3],pre[:3,:3]);approach.update(opened)
         limits=np.array([self.k.limits[n] for n in names])
         velocity=np.array([.35 if n.startswith('Joint') else 1. for n in names])
         acceleration=np.array([.7 if n.startswith('Joint') else 4. for n in names])
         def timed(points,seconds):return timed_path(points,seconds,self.cfg['control_hz'],velocity,acceleration,limits)
-        request={'initial':measured,'opened':opened,'goal':approach,'cube_position':np.asarray(cube_position).tolist(),'cube_quaternion':np.asarray(cube_quaternion).tolist()}
+        request={'initial':measured,'opened':opened,'goal':approach,'cube_position':np.asarray(cube_position).tolist(),'cube_quaternion':np.asarray(cube_quaternion).tolist(),'keep_right_side':self.keep_right_side}
         # The preinstalled convex-geometry package uses the host NumPy ABI.
         # Keep it in a separate process from Isaac's conda environment.
         with tempfile.TemporaryDirectory(prefix='cube_regrasp_') as directory:
@@ -80,7 +128,7 @@ class TiltPlanner(OppositionPlanner):
         phases.append(('right_approach',timed(points,3.)))
         end=q|closed;phases.append(('right_close',timed([[q[n] for n in names],[end[n] for n in names]],2.)))
         phases.append(('bilateral_hold',np.repeat(np.array([[end[n] for n in names]],dtype=np.float32),181,axis=0)))
-        return phases,{'Q':Q.tolist(),'right_palm_in_cube':local.tolist(),'right_closed':closed,'collision_route':route,'pregrasp_offset_cube_m':[-.10,0.,-.06],'pregrasp_offset_world_m':pre_offset.tolist()}
+        return phases,{'Q':Q.tolist(),'right_contact_anchors':contact_anchors,'right_palm_offset_cube_m':self.right_palm_offset_cube.tolist(),'right_palm_in_cube':local.tolist(),'right_closed':closed,'collision_route':route,'thumb_open_face_normal_offset_m':.020,'pregrasp_offset_cube_m':self.pregrasp_offset_cube.tolist(),'pregrasp_offset_world_m':pre_offset.tolist(),'right_contact_axis':self.right_contact_axis,'right_thumb_sign':self.right_thumb_sign,'little_contact_z':self.little_contact_z}
 
     def fit_tilt(self,q,side,position,rotation):
         names=[f'Joint{i}_{"L" if side=="left" else "R"}' for i in range(1,8)]
@@ -103,7 +151,8 @@ class TiltPlanner(OppositionPlanner):
             raise ValueError('Tilt IK outside position/orientation envelope')
         return result
 
-    def tilt_path(self,q,cube_position,shift=(0.,0.,0.),degrees=90.):
+    def tilt_path(self,q,cube_position,shift=(0.,0.,0.),degrees=None):
+        degrees=self.tilt_degrees if degrees is None else degrees
         center=np.asarray(cube_position)-[0,0,self.cfg['robot_z']]
         start=self.k.fk_link(q,'left_palm_link');names=self.cfg['joint_names']
         limits=np.array([self.k.limits[n] for n in names])
@@ -138,8 +187,9 @@ class TiltPlanner(OppositionPlanner):
         return path
 
 class TiltTeacher:
+    planner_type=TiltPlanner
     def __init__(self,env,config,shift=(0.,0.,0.),regrasp=False):
-        self.env=env;self.base=OppositionTeacher(env,config);self.planner=TiltPlanner(config)
+        self.env=env;self.base=OppositionTeacher(env,config);self.planner=self.planner_type(config)
         self.shift=shift;self.mode='pickup';self.name='ready';self.failure_reason=None
         self.finger_contacts={};self.nominal_target=None;self.reference=None;self.path=None
         self.tick=0;self.wait=0;self.lost=0;self.hold=0;self.accepted=False;self.tilt_error_deg=90.
@@ -177,7 +227,7 @@ class TiltTeacher:
         if self.lost>=10:self.failure_reason='primary_grasp_lost_during_tilt'
         ref=Rotation.from_quat(self.reference[[1,2,3,0]]).as_matrix()
         current=Rotation.from_quat(quat[[1,2,3,0]]).as_matrix()
-        target=Rotation.from_euler('x',90,degrees=True).as_matrix()@ref
+        target=Rotation.from_euler('x',self.planner.tilt_degrees,degrees=True).as_matrix()@ref
         self.tilt_error_deg=float(np.degrees(Rotation.from_matrix(target@current.T).magnitude()))
         safe_pose=self.env.metrics.get('height_m',0)>=.08 and not self.env.metrics.get('cube_table_contact',True)
         qualified=self.tick>=len(self.path) and all_fingers and safe_pose and self.tilt_error_deg<=5.
@@ -186,7 +236,7 @@ class TiltTeacher:
         if self.mode=='tilt' and self.hold>=90 and self.regrasp:
             set_right_arm_gains(self.env,True)
             q=dict(zip(self.env.cfg['joint_names'],goal.tolist()));measured=dict(zip(self.env.cfg['joint_names'],actual.tolist()))
-            self.right_phases,self.regrasp_geometry=self.planner.regrasp_path(q,measured,state[:3].numpy(),quat)
+            self.right_phases,self.regrasp_geometry=self.planner.regrasp_path(q,measured,state[:3].numpy(),quat,self.contact_points)
             self.right_arrival=MirrorArrival(self.planner.k,self.env.cfg,self.planner.grasp,measured,state[:3].numpy(),quat,self.regrasp_geometry,self.contact_points)
             self.mode='regrasp'
         elif self.mode=='regrasp':
@@ -210,6 +260,9 @@ class MirrorArrival:
         self.k=k;self.names=cfg['joint_names'];self.robot_z=cfg['robot_z'];self.tick=0;self.targets={}
         self.reference=geometry['right_closed'];self.anchors={};m=np.diag([1.,-1.,1.]);self.symmetry=np.array(geometry['Q'])@m
         cube_r=Rotation.from_quat(np.asarray(quat)[[1,2,3,0]]).as_matrix();position=np.asarray(position)-[0,0,self.robot_z]
+        if geometry.get('right_contact_anchors'):
+            self.anchors={f:{key:(np.array(value) if key!='link' else value) for key,value in anchor.items()} for f,anchor in geometry['right_contact_anchors'].items()}
+            return
         for f,anchor in grasp['contact_anchors'].items():
             contacts=[p for p in points if p['side']=='left' and p['finger']==f]
             if not contacts:raise ValueError('Missing measured left contact for mirrored grasp')
@@ -219,8 +272,11 @@ class MirrorArrival:
             # Aim 1.5 mm inside the nominal face, as in the accepted left
             # arrival controller. A target exactly on the measured surface
             # left three right fingertips hovering without contact force.
-            target_cube[1]=.027 if f=='thumb' else -.027
-            if f=='index':target_cube[[0,2]]=np.clip(target_cube[[0,2]],-.023,.023)
+            axis=geometry.get('right_contact_axis',1);thumb_sign=geometry.get('right_thumb_sign',1)
+            target_cube[axis]=.027*thumb_sign*(1 if f=='thumb' else -1)
+            tangent=[i for i in range(3) if i!=axis]
+            if f=='index':target_cube[tangent]=np.clip(target_cube[tangent],-.023,.023)
+            if f=='little' and geometry.get('little_contact_z') is not None:target_cube[2]=geometry['little_contact_z']
             self.anchors[f]={'link':anchor['link'].replace('left_','right_'),'point_local':m@t[:3,:3].T@(world-t[:3,3]),'target_cube':target_cube}
     def update(self,measured,nominal,contacts,position,quat):
         q=dict(zip(self.names,measured));out=nominal.copy();r=Rotation.from_quat(np.asarray(quat)[[1,2,3,0]]).as_matrix()

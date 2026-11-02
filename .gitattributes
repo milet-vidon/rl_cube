@@ -16,3 +16,10 @@ revotron_cube_rl/runs/opposition_development_v20/trajectory_7102.json filter=lfs
 revotron_cube_rl/runs/opposition_development_v20/trajectory_7204.json filter=lfs diff=lfs merge=lfs -text
 revotron_cube_rl/runs/opposition_development_v20/trajectory_7103.json filter=lfs diff=lfs merge=lfs -text
 revotron_cube_rl/runs/opposition_development_v20/trajectory_7101.json filter=lfs diff=lfs merge=lfs -text
+# Palm-direction evidence: keep raw bytes and use LFS for large trajectories/video.
+revotron_cube_rl/runs/palm_*/trajectory_*.json filter=lfs diff=lfs merge=lfs -text
+docs/evidence/palm_direction_v5/demo.mp4 filter=lfs diff=lfs merge=lfs -text
+revotron_cube_rl/runs/palm_*/tilt_plan_*.json filter=lfs diff=lfs merge=lfs -text
+revotron_cube_rl/runs/palm_*/right_plan_*.json filter=lfs diff=lfs merge=lfs -text
+# Frozen configs have original CRLF bytes covered by experiment SHA256.
+revotron_cube_rl/runs/**/config.json -text whitespace=cr-at-eol

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T17:39:30.653309+08:00",
+  "updated_at": "2026-11-02T20:08:01.553514+08:00",
   "observation_version": 3,
   "actions": 56,
   "traditional_visual": {
@@ -1637,5 +1637,93 @@
     "previous_independent_result": "v19: 4/5, seed 7204 torso contact; retained, then used for regression",
     "grasp_config_sha256": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a",
     "demo_run": "runs/opposition_independent_7305_visual_v20"
+  },
+  "whole_cube_tilt_regrasp": {
+    "version": "v19",
+    "method": "traditional_state_based_teacher",
+    "motion": "left pickup, whole-cube rightward 90 degree tilt, mirrored right opposition grasp, bilateral hold",
+    "certificate": "tilt_regrasp_gate_certificate.json",
+    "protocol": "tilt_regrasp_protocol_v19.json",
+    "development_seeds": [
+      8401,
+      8301
+    ],
+    "development_accepted": 2,
+    "independent_seeds": [
+      8501,
+      8502,
+      8503
+    ],
+    "independent_accepted": 3,
+    "independent_total": 3,
+    "hold_seconds": 3,
+    "final_tilt_error_deg": [
+      1.704319582604504,
+      2.4189362156201777,
+      4.106641088375963
+    ],
+    "post_tilt_shift_m": [
+      -0.12,
+      -0.06,
+      0.0
+    ],
+    "thumb_open_offset_m": 0.02,
+    "left_pickup_baseline_unchanged": true,
+    "global_soft_limits_unchanged": true,
+    "neural_policy_trained": false,
+    "layer_turn_validated": false,
+    "right_only_handover_validated": false,
+    "real_robot_tested": false,
+    "previous_independent_cohorts": {
+      "v17": "2/3; 8301 premature thumb contact",
+      "v18": "2/3; 8401 left shoulder/body contact"
+    },
+    "demo_seed": 8501,
+    "demo_kind": "measured simulation trajectory replay",
+    "user_posture_accepted": false,
+    "semantic_correction": "User rejected v19 direction: left palm faced away from right hand and wrists crossed. Existing physics pass does not satisfy requested handover posture."
+  },
+  "palm_direction_correction": {
+    "updated_at": "2026-11-02T21:18:32.234465+08:00",
+    "version": "v5",
+    "scope": "left_pickup_reverse_tilt_and_hold_only",
+    "user_direction_correction_implemented": true,
+    "left_palm_normal_world_y_negative": true,
+    "wrists_and_elbows_uncrossed": true,
+    "certificate": "palm_direction_gate_certificate.json",
+    "protocol": "palm_direction_protocol_v5.json",
+    "development_accepted": 3,
+    "development_total": 3,
+    "independent_accepted": 3,
+    "independent_total": 3,
+    "independent_seeds": [
+      9501,
+      9502,
+      9503
+    ],
+    "right_regrasp_validated": false,
+    "right_only_handover_validated": false,
+    "neural_policy_trained": false,
+    "layer_turn_validated": false,
+    "left_pickup_baseline_sources_unchanged": {
+      "opposition_teacher.py": true,
+      "opposition_feedback.py": true,
+      "proximal_planner.py": true,
+      "opposition_geometry.py": true,
+      "opposition_experiment.py": true,
+      "finger_contact_audit.py": true,
+      "opposition_acceptance.py": true,
+      "self_contact_audit.py": true,
+      "side_grasp.py": true,
+      "config.json": true,
+      "kinematics.py": true,
+      "environment.py": true,
+      "joint_safety.py": true,
+      "acceptance.py": true,
+      "isaac_compat.py": true
+    },
+    "known_open_issue": "Right-hand approach and finger opposition remain unaccepted due to wrist connector and adjacent finger collisions in development.",
+    "elbow_outward_posture_accepted": false,
+    "user_requested_posture_correction": "Left elbow must point outward, not inward as in the current demonstration. Existing 3/3 evaluates reverse tilt and holding only; it does not evaluate the requested elbow posture."
   }
 }

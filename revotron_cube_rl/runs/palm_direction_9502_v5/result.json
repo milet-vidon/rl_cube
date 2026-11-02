@@ -1,0 +1,76 @@
+{
+  "trials": [
+    {
+      "seed": 9502,
+      "development_resume": false,
+      "full_episode_verified": true,
+      "accepted": true,
+      "tilt_only_accepted": true,
+      "right_regrasp_validated": false,
+      "steps": 969,
+      "failure": null,
+      "self_contact_impulse_sum_Ns": 0,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "final_tilt_error_deg": 0.6656698729015306,
+      "tilt_hold_seconds": 3.0,
+      "right_hold_seconds": 0.0,
+      "final_self_pairs": {},
+      "measured_audit": {
+        "accepted": true,
+        "scope": "whole_cube_tilt_only",
+        "full_episode": true,
+        "failures": [],
+        "final_tilt_error_deg": 0.6656698729015306,
+        "longest_measured_hold_seconds": 3.0,
+        "contact_coverage_in_qualifying_window": {
+          "left": {
+            "thumb": 1.0,
+            "index": 1.0,
+            "middle": 1.0,
+            "ring": 1.0,
+            "little": 1.0
+          }
+        },
+        "maximum_lift_m": 0.19079047107696534,
+        "final_lift_m": 0.18351035976409913,
+        "cube_returned_to_table_after_lift": false,
+        "robot_table_impulse_sum_Ns": 0.0,
+        "self_contact_impulse_sum_Ns": 0,
+        "semantic_task": "left_palm_toward_right_hand_uncrossed_opposition_handover",
+        "longest_palm_facing_hold_seconds": 3.0,
+        "final_hand_geometry": {
+          "left_palm_position_root": [
+            0.4513144881906434,
+            0.08016535249675621,
+            -0.04115327870726593
+          ],
+          "right_palm_position_root": [
+            0.33728014454925714,
+            -0.22304338318345057,
+            -0.12611922863595004
+          ],
+          "left_palm_normal_world": [
+            0.27619306784190534,
+            -0.8028131934957746,
+            0.5284017085752024
+          ],
+          "right_palm_normal_world": [
+            -0.1521105131963972,
+            0.9883607885859823,
+            -0.0023115710727785836
+          ],
+          "left_facing_right_cos": 0.49873962218169265,
+          "right_facing_left_cos": 0.8424505190760124,
+          "palm_normal_dot": -0.8367023884057834,
+          "wrist_y_separation_m": 0.3032087356802068,
+          "elbow_y_separation_m": 0.6346848756074905,
+          "left_wrist_from_cube_y_m": 0.054670117619885106,
+          "right_wrist_from_cube_y_m": 0.24853861806032168
+        }
+      }
+    }
+  ],
+  "accepted": 1,
+  "total": 1,
+  "elapsed_s": 77.72235319599713
+}

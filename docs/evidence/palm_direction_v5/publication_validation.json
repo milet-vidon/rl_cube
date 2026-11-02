@@ -1,0 +1,42 @@
+{
+  "scope": "publication hash verification and offline reaudit of existing PhysX trajectories",
+  "new_physx_run": false,
+  "left_elbow_outward_acceptance": false,
+  "right_regrasp_validated": false,
+  "sources_verified": 19,
+  "assets_verified": 4,
+  "trials": [
+    {
+      "seed": 9301,
+      "split": "development",
+      "offline_reaudit_accepted": true
+    },
+    {
+      "seed": 9402,
+      "split": "development",
+      "offline_reaudit_accepted": true
+    },
+    {
+      "seed": 9403,
+      "split": "development",
+      "offline_reaudit_accepted": true
+    },
+    {
+      "seed": 9501,
+      "split": "independent",
+      "offline_reaudit_accepted": true
+    },
+    {
+      "seed": 9502,
+      "split": "independent",
+      "offline_reaudit_accepted": true
+    },
+    {
+      "seed": 9503,
+      "split": "independent",
+      "offline_reaudit_accepted": true
+    }
+  ],
+  "all_checks_passed": true,
+  "path_resolution": "explicit repository-relative index, no reads from the original experiment paths; runtime gate migration remains open"
+}

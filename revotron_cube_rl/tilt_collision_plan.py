@@ -7,7 +7,8 @@ sys.path.insert(0,str(Path(__file__).resolve().parent))
 from kinematics import RobotKinematics
 
 class CollisionScene:
- def __init__(self,initial,opened,cube_position,cube_quaternion):
+ def __init__(self,initial,opened,cube_position,cube_quaternion,keep_right_side=False):
+  self.keep_right_side=keep_right_side;self.cube_y=float(cube_position[1])
   self.k=RobotKinematics();self.q=initial|opened;self.names=[f'Joint{i}_R' for i in range(1,8)];self.request=coal.DistanceRequest();self.request.enable_signed_distance=True
   root=Path(__file__).resolve().parent.parent/'revotron_revo3/source/revotron_system';tree=ET.parse(root/'urdf/revotron_bimanual_revo3_56dof.urdf').getroot();self.moving=[];self.fixed=[];frames=self.k.fk(self.q)
   for link in tree.findall('link'):
@@ -22,7 +23,12 @@ class CollisionScene:
     shape=coal.MeshLoader().load(str(root/'urdf'/mesh.get('filename')),np.ones(3));shape.buildConvexRepresentation(True);shape=shape.convex
     local=np.eye(4);o=collision.find('origin')
     if o is not None:local[:3,3]=np.fromstring(o.get('xyz','0 0 0'),sep=' ');local[:3,:3]=R.from_euler('xyz',np.fromstring(o.get('rpy','0 0 0'),sep=' ')).as_matrix()
-    vertices=np.asarray(shape.points());center=vertices.mean(0);radius=float(np.linalg.norm(vertices-center,axis=1).max());obj=(name,shape,local,center,radius)
+    vertices=np.asarray(shape.points());center=vertices.mean(0);radius=float(np.linalg.norm(vertices-center,axis=1).max())
+    # Conservative planning proxy for observed wrist-connector contacts.
+    # The simulated collision meshes and contact reporting are unchanged.
+    if keep_right_side and name in ('left_connector_link','right_connector_link'):
+     lo,hi=vertices.min(0),vertices.max(0);local[:3,3]+=local[:3,:3]@((lo+hi)/2);shape=coal.Box(*(hi-lo));center=np.zeros(3);radius=float(np.linalg.norm(hi-lo)/2)
+    obj=(name,shape,local,center,radius)
     if moving:self.moving.append(obj)
     else:self.fixed.append((name,shape,frames[name]@local,center,radius))
   C=np.eye(4);C[:3,:3]=R.from_quat(np.asarray(cube_quaternion)[[1,2,3,0]]).as_matrix();C[:3,3]=np.asarray(cube_position)-[0,0,1.15]
@@ -42,11 +48,14 @@ class CollisionScene:
   limits=np.array([self.k.limits[n] for n in self.names])
   if np.any(x<limits[:,0]) or np.any(x>limits[:,1]):self.last_pair=('right_arm','soft_limits',0.);return False
   q=self.q|dict(zip(self.names,x));frames=self.k.fk(q);moving=[(n,m,frames[n]@t,c,r) for n,m,t,c,r in self.moving]
+  if self.keep_right_side:
+   if frames['right_palm_link'][1,3]>self.cube_y-.02 or frames['right_palm_link'][1,3]>frames['left_palm_link'][1,3]-.05 or frames['Link4_R'][1,3]>frames['Link4_L'][1,3]-.04:
+    self.last_pair=('right_arm','noncrossing_side_envelope',0.);return False
   for a in moving:
    n,m,t,c,r=a
    # Table top is -0.25 m in robot-root coordinates.
    if (t[:3,:3]@c+t[:3,3])[2]-r<-.25:
-    v=np.asarray(m.points())@t[:3,:3].T+t[:3,3]
+    v=(np.asarray(m.points()) if hasattr(m,'points') else np.array([[x,y,z] for x in [-m.halfSide[0],m.halfSide[0]] for y in [-m.halfSide[1],m.halfSide[1]] for z in [-m.halfSide[2],m.halfSide[2]]]))@t[:3,:3].T+t[:3,3]
     if v[:,2].min()<-.246:self.last_pair=(n,'table',float(v[:,2].min()+.25));return False
    for b in self.fixed:
     if n=='Link1_R' and not b[0].startswith(('left_','Link')):continue
@@ -104,6 +113,6 @@ def search(scene,start,goal,timeout=80.):
  raise ValueError(f'No route within {timeout} s; nodes {[len(t[0]) for t in trees]}, checks {scene.calls}')
 
 if __name__=='__main__':
- request=json.loads(Path(sys.argv[1]).read_text());scene=CollisionScene(request['initial'],request['opened'],request['cube_position'],request['cube_quaternion']);names=scene.names
+ request=json.loads(Path(sys.argv[1]).read_text());scene=CollisionScene(request['initial'],request['opened'],request['cube_position'],request['cube_quaternion'],request.get('keep_right_side',False));names=scene.names
  path=search(scene,np.array([request['initial'][n] for n in names]),np.array([request['goal'][n] for n in names]))
  Path(sys.argv[2]).write_text(json.dumps({'right_names':names,'waypoints':[p.tolist() for p in path],'collision_checks':scene.calls},indent=2))
