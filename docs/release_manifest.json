@@ -11,8 +11,8 @@
   },
   {
     "path": "docs/evidence/palm_direction_v5/index.json",
-    "bytes": 3300,
-    "sha256": "1283869d219222bf4d7c29efc812b1e7ccd7aa52b08d7ae894c2fb5f0d2a0778"
+    "bytes": 3541,
+    "sha256": "b2e21df94d9b7335c489f34b1d9b0e7ce0a7c5f38471d51fc1d6203e4a94413d"
   },
   {
     "path": "docs/evidence/palm_direction_v5/publication_validation.json",
@@ -311,8 +311,8 @@
   },
   {
     "path": "revotron_cube_rl/current_status.json",
-    "bytes": 51645,
-    "sha256": "efcf363e5928e8d70f80e112298aabe32fb91bc57a650d4db3e583f7edf393bb"
+    "bytes": 51896,
+    "sha256": "c9386bf381a3e9bd93757139a7aa1bd2fdb780383979e02fa96dc8d8ca3a46a4"
   },
   {
     "path": "revotron_cube_rl/curriculum.json",

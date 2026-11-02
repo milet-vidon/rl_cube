@@ -38,3 +38,9 @@ bash revotron_cube_rl/run_linux.sh tilt-replay --run revotron_cube_rl/runs/palm_
 默认 `tilt-teacher` 仅运行左手翻转与保持。显式 `--regrasp` 仍是未通过验收的开发路径，不应进入后续 PPO/DAgger 主线。已经查看过的 seed 只能用于开发回归。
 
 证书中的原机绝对路径保持原样，以保留历史哈希；`docs/evidence/palm_direction_v5/index.json` 提供仓库内路径映射。发布时会在仓库目录验证文件哈希和重算所选轨迹的原有验收，但运行时所有门禁的跨目录解析仍需修复，不应通过关闭哈希校验解决。
+
+## GitHub 问题跟踪
+
+- [[P1] 左手肘应朝外：增加外展构型约束与姿态验收](https://github.com/milet-vidon/rl_cube/issues/1)
+- [[P1] 修复右手接抓中的腕部与相邻手指碰撞](https://github.com/milet-vidon/rl_cube/issues/2)
+- [[P0] 修复验收证书与实验路径的跨工作区解析](https://github.com/milet-vidon/rl_cube/issues/3)

@@ -62,5 +62,10 @@
     "gpu": "RTX 5070 Laptop 8 GB"
   },
   "publication_physx_rerun": false,
-  "note": "Original certificate bytes and hashes are preserved; absolute paths in runtime gates remain an open issue. New user elbow requirement is not part of this certificate."
+  "note": "Original certificate bytes and hashes are preserved; absolute paths in runtime gates remain an open issue. New user elbow requirement is not part of this certificate.",
+  "tracking_issues": {
+    "left_elbow": "https://github.com/milet-vidon/rl_cube/issues/1",
+    "right_regrasp": "https://github.com/milet-vidon/rl_cube/issues/2",
+    "portable_gates": "https://github.com/milet-vidon/rl_cube/issues/3"
+  }
 }

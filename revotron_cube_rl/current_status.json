@@ -1724,6 +1724,11 @@
     },
     "known_open_issue": "Right-hand approach and finger opposition remain unaccepted due to wrist connector and adjacent finger collisions in development.",
     "elbow_outward_posture_accepted": false,
-    "user_requested_posture_correction": "Left elbow must point outward, not inward as in the current demonstration. Existing 3/3 evaluates reverse tilt and holding only; it does not evaluate the requested elbow posture."
+    "user_requested_posture_correction": "Left elbow must point outward, not inward as in the current demonstration. Existing 3/3 evaluates reverse tilt and holding only; it does not evaluate the requested elbow posture.",
+    "tracking_issues": {
+      "left_elbow": "https://github.com/milet-vidon/rl_cube/issues/1",
+      "right_regrasp": "https://github.com/milet-vidon/rl_cube/issues/2",
+      "portable_gates": "https://github.com/milet-vidon/rl_cube/issues/3"
+    }
   }
 }
