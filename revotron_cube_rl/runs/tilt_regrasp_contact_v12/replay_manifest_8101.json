@@ -1,0 +1,14 @@
+{
+  "kind": "visualization_of_measured_physics_trajectory",
+  "source_trajectory": "/home/brainco/rl_cube/revotron_cube_rl/runs/tilt_regrasp_contact_v12/trajectory_8101.json",
+  "source_sha256": "32e5d1efe13c4d98ee9053b39679a452956ce747bcf26309c5181414d3b35f47",
+  "renderer_source_sha256": "df37bf2dc04f7b81813a8595b3c18084d6b0704e944da6a8c131bdd40bc69e2e",
+  "recorded_steps": [
+    93,
+    94
+  ],
+  "fps": 10,
+  "frames": 2,
+  "frozen_tail_frames": 0,
+  "replay_used_for_acceptance": false
+}

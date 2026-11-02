@@ -1,0 +1,1395 @@
+{
+  "scope": "State-only locked-cube pickup; no visual-policy or layer-turn claim",
+  "selected_model": "state_bc_v4",
+  "selection_evidence": "work/state_learning/model_selection.json",
+  "training_seeds": [
+    4001,
+    4002,
+    4003,
+    4004,
+    4005,
+    4006,
+    4007,
+    4008
+  ],
+  "independent_test": {
+    "kind": "pure_state_policy_evaluation",
+    "split": "test",
+    "trials": [
+      {
+        "seed": 4201,
+        "split": "test",
+        "kind": "pure_state_policy",
+        "acceptance": {
+          "accepted": false,
+          "failure_reasons": [
+            "pickup_gate_failed",
+            "independent_contact_hold_gate"
+          ],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 878,
+          "max_joint_velocity_rad_s": 1.8621439933776855,
+          "max_position_error_rad": 0.05616038292646408,
+          "dropped": false,
+          "continuous_hold_seconds": 0.0
+        },
+        "steps": 900,
+        "max_height_m": 0.017293449878692635,
+        "robot_table_impulse_sum": 0.0,
+        "returned_to_table_after_lift": false,
+        "drop_flag_definition": "Environment drop flag means below table minus 12 cm or excessive lateral escape; return to tabletop is reported separately."
+      },
+      {
+        "seed": 4202,
+        "split": "test",
+        "kind": "pure_state_policy",
+        "acceptance": {
+          "accepted": false,
+          "failure_reasons": [
+            "pickup_gate_failed",
+            "independent_contact_hold_gate"
+          ],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 866,
+          "max_joint_velocity_rad_s": 2.8971805572509766,
+          "max_position_error_rad": 0.05394710600376129,
+          "dropped": false,
+          "continuous_hold_seconds": 0.0
+        },
+        "steps": 900,
+        "max_height_m": 0.037560340404510506,
+        "robot_table_impulse_sum": 0.0,
+        "returned_to_table_after_lift": false,
+        "drop_flag_definition": "Environment drop flag means below table minus 12 cm or excessive lateral escape; return to tabletop is reported separately."
+      },
+      {
+        "seed": 4203,
+        "split": "test",
+        "kind": "pure_state_policy",
+        "acceptance": {
+          "accepted": true,
+          "failure_reasons": [],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 468,
+          "max_joint_velocity_rad_s": 2.009129524230957,
+          "max_position_error_rad": 0.02663475275039673,
+          "dropped": false,
+          "continuous_hold_seconds": 1.0
+        },
+        "steps": 548,
+        "max_height_m": 0.11494570636749268,
+        "robot_table_impulse_sum": 0.0,
+        "returned_to_table_after_lift": false,
+        "drop_flag_definition": "Environment drop flag means below table minus 12 cm or excessive lateral escape; return to tabletop is reported separately."
+      },
+      {
+        "seed": 4204,
+        "split": "test",
+        "kind": "pure_state_policy",
+        "acceptance": {
+          "accepted": false,
+          "failure_reasons": [
+            "pickup_gate_failed",
+            "independent_contact_hold_gate"
+          ],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 858,
+          "max_joint_velocity_rad_s": 4.261963844299316,
+          "max_position_error_rad": 0.06514716148376465,
+          "dropped": false,
+          "continuous_hold_seconds": 0.0
+        },
+        "steps": 900,
+        "max_height_m": 0.04882180356979371,
+        "robot_table_impulse_sum": 0.0,
+        "returned_to_table_after_lift": false,
+        "drop_flag_definition": "Environment drop flag means below table minus 12 cm or excessive lateral escape; return to tabletop is reported separately."
+      },
+      {
+        "seed": 4205,
+        "split": "test",
+        "kind": "pure_state_policy",
+        "acceptance": {
+          "accepted": false,
+          "failure_reasons": [
+            "pickup_gate_failed",
+            "independent_contact_hold_gate"
+          ],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 883,
+          "max_joint_velocity_rad_s": 1.7417908906936646,
+          "max_position_error_rad": 0.03722885996103287,
+          "dropped": false,
+          "continuous_hold_seconds": 0.0
+        },
+        "steps": 900,
+        "max_height_m": 0.014693554878234871,
+        "robot_table_impulse_sum": 0.0,
+        "returned_to_table_after_lift": false,
+        "drop_flag_definition": "Environment drop flag means below table minus 12 cm or excessive lateral escape; return to tabletop is reported separately."
+      }
+    ],
+    "accepted": 1,
+    "total": 5,
+    "elapsed_s": 562.2129521890001,
+    "checkpoint_sha256": "7b9d53ca91fa9524b388b75ad37b3f2e36f5286f89a6f4dec41b27ce5e628a8e",
+    "actor_observation": "privileged simulator state, own control history, initial cube position and clock; no teacher actions"
+  },
+  "development_evaluations": {
+    "state_bc_v1_development": {
+      "kind": "pure_state_policy_evaluation",
+      "split": "development",
+      "trials": [
+        {
+          "seed": 4101,
+          "split": "development",
+          "kind": "pure_state_policy",
+          "acceptance": {
+            "accepted": false,
+            "failure_reasons": [
+              "pickup_gate_failed",
+              "robot_table_contact",
+              "independent_contact_hold_gate"
+            ],
+            "robot_table_threshold_Ns": 1e-06,
+            "soft_limit_hit_steps": 0,
+            "hard_limit_hit_steps": 0,
+            "cube_table_contact_steps": 96,
+            "max_joint_velocity_rad_s": 1.6899449825286865,
+            "max_position_error_rad": 0.09438338875770569,
+            "dropped": false,
+            "continuous_hold_seconds": 0.0
+          },
+          "steps": 96,
+          "max_height_m": 1.1587142945135298e-07,
+          "robot_table_impulse_sum": 0.429645262658599
+        },
+        {
+          "seed": 4102,
+          "split": "development",
+          "kind": "pure_state_policy",
+          "acceptance": {
+            "accepted": false,
+            "failure_reasons": [
+              "pickup_gate_failed",
+              "hard_limit",
+              "independent_contact_hold_gate"
+            ],
+            "robot_table_threshold_Ns": 1e-06,
+            "soft_limit_hit_steps": 0,
+            "hard_limit_hit_steps": 1,
+            "cube_table_contact_steps": 25,
+            "max_joint_velocity_rad_s": 1.459384799003601,
+            "max_position_error_rad": 0.08723020553588867,
+            "dropped": false,
+            "continuous_hold_seconds": 0.0
+          },
+          "steps": 25,
+          "max_height_m": 5.6266784675962356e-08,
+          "robot_table_impulse_sum": 0.0
+        },
+        {
+          "seed": 4103,
+          "split": "development",
+          "kind": "pure_state_policy",
+          "acceptance": {
+            "accepted": false,
+            "failure_reasons": [
+              "pickup_gate_failed",
+              "robot_table_contact",
+              "independent_contact_hold_gate"
+            ],
+            "robot_table_threshold_Ns": 1e-06,
+            "soft_limit_hit_steps": 0,
+            "hard_limit_hit_steps": 0,
+            "cube_table_contact_steps": 63,
+            "max_joint_velocity_rad_s": 12.390284538269043,
+            "max_position_error_rad": 0.11605525016784668,
+            "dropped": false,
+            "continuous_hold_seconds": 0.0
+          },
+          "steps": 63,
+          "max_height_m": 5.6266784675962356e-08,
+          "robot_table_impulse_sum": 0.22591140400619128
+        }
+      ],
+      "accepted": 0,
+      "total": 3,
+      "elapsed_s": 8.137328085998888,
+      "checkpoint_sha256": "9729631b903fd47c58139e31ea0f5879d3c531f67f0fe5ddcbc0188361d41865",
+      "actor_observation": "privileged simulator state, own control history, initial cube position and clock; no teacher actions"
+    },
+    "state_bc_v2_development": {
+      "kind": "pure_state_policy_evaluation",
+      "split": "development",
+      "trials": [
+        {
+          "seed": 4101,
+          "split": "development",
+          "kind": "pure_state_policy",
+          "acceptance": {
+            "accepted": false,
+            "failure_reasons": [
+              "pickup_gate_failed",
+              "arm_soft_limit",
+              "independent_contact_hold_gate"
+            ],
+            "robot_table_threshold_Ns": 1e-06,
+            "soft_limit_hit_steps": 1,
+            "hard_limit_hit_steps": 0,
+            "cube_table_contact_steps": 128,
+            "max_joint_velocity_rad_s": 0.8938084244728088,
+            "max_position_error_rad": 0.023702755570411682,
+            "dropped": false,
+            "continuous_hold_seconds": 0.0
+          },
+          "steps": 128,
+          "max_height_m": 1.1587142945135298e-07,
+          "robot_table_impulse_sum": 0.0
+        },
+        {
+          "seed": 4102,
+          "split": "development",
+          "kind": "pure_state_policy",
+          "acceptance": {
+            "accepted": false,
+            "failure_reasons": [
+              "pickup_gate_failed",
+              "arm_soft_limit",
+              "independent_contact_hold_gate"
+            ],
+            "robot_table_threshold_Ns": 1e-06,
+            "soft_limit_hit_steps": 1,
+            "hard_limit_hit_steps": 0,
+            "cube_table_contact_steps": 127,
+            "max_joint_velocity_rad_s": 0.8758226633071899,
+            "max_position_error_rad": 0.023710161447525024,
+            "dropped": false,
+            "continuous_hold_seconds": 0.0
+          },
+          "steps": 127,
+          "max_height_m": 1.754760742267436e-07,
+          "robot_table_impulse_sum": 0.0
+        },
+        {
+          "seed": 4103,
+          "split": "development",
+          "kind": "pure_state_policy",
+          "acceptance": {
+            "accepted": false,
+            "failure_reasons": [
+              "pickup_gate_failed",
+              "arm_soft_limit",
+              "independent_contact_hold_gate"
+            ],
+            "robot_table_threshold_Ns": 1e-06,
+            "soft_limit_hit_steps": 1,
+            "hard_limit_hit_steps": 0,
+            "cube_table_contact_steps": 135,
+            "max_joint_velocity_rad_s": 0.8486176133155823,
+            "max_position_error_rad": 0.023847654461860657,
+            "dropped": false,
+            "continuous_hold_seconds": 0.0
+          },
+          "steps": 135,
+          "max_height_m": -3.3378600994282692e-09,
+          "robot_table_impulse_sum": 0.0
+        }
+      ],
+      "accepted": 0,
+      "total": 3,
+      "elapsed_s": 13.789533506000225,
+      "checkpoint_sha256": "65993ca9fb5ca2421d7281ac46f71f694f956ec5ca8940d4b696bd2c7e2d78ab",
+      "actor_observation": "privileged simulator state, own control history, initial cube position and clock; no teacher actions"
+    },
+    "state_bc_v3_development": {
+      "kind": "pure_state_policy_evaluation",
+      "split": "development",
+      "trials": [
+        {
+          "seed": 4101,
+          "split": "development",
+          "kind": "pure_state_policy",
+          "acceptance": {
+            "accepted": false,
+            "failure_reasons": [
+              "pickup_gate_failed",
+              "robot_table_contact",
+              "independent_contact_hold_gate"
+            ],
+            "robot_table_threshold_Ns": 1e-06,
+            "soft_limit_hit_steps": 0,
+            "hard_limit_hit_steps": 0,
+            "cube_table_contact_steps": 508,
+            "max_joint_velocity_rad_s": 7.961099624633789,
+            "max_position_error_rad": 0.25922632217407227,
+            "dropped": false,
+            "continuous_hold_seconds": 0.3
+          },
+          "steps": 655,
+          "max_height_m": 0.11335056686401368,
+          "robot_table_impulse_sum": 0.05006036455676323
+        },
+        {
+          "seed": 4102,
+          "split": "development",
+          "kind": "pure_state_policy",
+          "acceptance": {
+            "accepted": false,
+            "failure_reasons": [
+              "pickup_gate_failed",
+              "robot_table_contact",
+              "independent_contact_hold_gate"
+            ],
+            "robot_table_threshold_Ns": 1e-06,
+            "soft_limit_hit_steps": 0,
+            "hard_limit_hit_steps": 0,
+            "cube_table_contact_steps": 563,
+            "max_joint_velocity_rad_s": 7.330914497375488,
+            "max_position_error_rad": 0.35309118032455444,
+            "dropped": false,
+            "continuous_hold_seconds": 0.2
+          },
+          "steps": 657,
+          "max_height_m": 0.1013837423324585,
+          "robot_table_impulse_sum": 0.020454994389504298
+        },
+        {
+          "seed": 4103,
+          "split": "development",
+          "kind": "pure_state_policy",
+          "acceptance": {
+            "accepted": false,
+            "failure_reasons": [
+              "pickup_gate_failed",
+              "hard_limit",
+              "independent_contact_hold_gate"
+            ],
+            "robot_table_threshold_Ns": 1e-06,
+            "soft_limit_hit_steps": 0,
+            "hard_limit_hit_steps": 1,
+            "cube_table_contact_steps": 477,
+            "max_joint_velocity_rad_s": 3.082768440246582,
+            "max_position_error_rad": 0.07361161708831787,
+            "dropped": false,
+            "continuous_hold_seconds": 0.2
+          },
+          "steps": 621,
+          "max_height_m": 0.10943430328369141,
+          "robot_table_impulse_sum": 0.0
+        }
+      ],
+      "accepted": 0,
+      "total": 3,
+      "elapsed_s": 65.80775454399918,
+      "checkpoint_sha256": "66c7de84d4719d58a0748c3a6cd7914b48e27d5851363dbd417272bbf2836bcd",
+      "actor_observation": "privileged simulator state, own control history, initial cube position and clock; no teacher actions"
+    },
+    "state_bc_v4_development": {
+      "kind": "pure_state_policy_evaluation",
+      "split": "development",
+      "trials": [
+        {
+          "seed": 4101,
+          "split": "development",
+          "kind": "pure_state_policy",
+          "acceptance": {
+            "accepted": true,
+            "failure_reasons": [],
+            "robot_table_threshold_Ns": 1e-06,
+            "soft_limit_hit_steps": 0,
+            "hard_limit_hit_steps": 0,
+            "cube_table_contact_steps": 467,
+            "max_joint_velocity_rad_s": 2.0550570487976074,
+            "max_position_error_rad": 0.027724266052246094,
+            "dropped": false,
+            "continuous_hold_seconds": 1.0
+          },
+          "steps": 549,
+          "max_height_m": 0.11551278495788575,
+          "robot_table_impulse_sum": 0.0
+        },
+        {
+          "seed": 4102,
+          "split": "development",
+          "kind": "pure_state_policy",
+          "acceptance": {
+            "accepted": false,
+            "failure_reasons": [
+              "pickup_gate_failed",
+              "independent_contact_hold_gate"
+            ],
+            "robot_table_threshold_Ns": 1e-06,
+            "soft_limit_hit_steps": 0,
+            "hard_limit_hit_steps": 0,
+            "cube_table_contact_steps": 797,
+            "max_joint_velocity_rad_s": 10.00000286102295,
+            "max_position_error_rad": 0.056154608726501465,
+            "dropped": false,
+            "continuous_hold_seconds": 0.1
+          },
+          "steps": 900,
+          "max_height_m": 0.11576050186157227,
+          "robot_table_impulse_sum": 0.0
+        },
+        {
+          "seed": 4103,
+          "split": "development",
+          "kind": "pure_state_policy",
+          "acceptance": {
+            "accepted": false,
+            "failure_reasons": [
+              "pickup_gate_failed",
+              "independent_contact_hold_gate"
+            ],
+            "robot_table_threshold_Ns": 1e-06,
+            "soft_limit_hit_steps": 0,
+            "hard_limit_hit_steps": 0,
+            "cube_table_contact_steps": 871,
+            "max_joint_velocity_rad_s": 3.9207441806793213,
+            "max_position_error_rad": 0.03677278012037277,
+            "dropped": false,
+            "continuous_hold_seconds": 0.0
+          },
+          "steps": 900,
+          "max_height_m": 0.029072877407073983,
+          "robot_table_impulse_sum": 0.0
+        }
+      ],
+      "accepted": 1,
+      "total": 3,
+      "elapsed_s": 79.86887134300014,
+      "checkpoint_sha256": "7b9d53ca91fa9524b388b75ad37b3f2e36f5286f89a6f4dec41b27ce5e628a8e",
+      "actor_observation": "privileged simulator state, own control history, initial cube position and clock; no teacher actions"
+    },
+    "state_ppo_v1_development": {
+      "kind": "pure_state_policy_evaluation",
+      "split": "development",
+      "trials": [
+        {
+          "seed": 4101,
+          "split": "development",
+          "kind": "pure_state_policy",
+          "acceptance": {
+            "accepted": false,
+            "failure_reasons": [
+              "pickup_gate_failed",
+              "hard_limit",
+              "independent_contact_hold_gate"
+            ],
+            "robot_table_threshold_Ns": 1e-06,
+            "soft_limit_hit_steps": 0,
+            "hard_limit_hit_steps": 1,
+            "cube_table_contact_steps": 467,
+            "max_joint_velocity_rad_s": 3.20432710647583,
+            "max_position_error_rad": 0.05610761046409607,
+            "dropped": false,
+            "continuous_hold_seconds": 0.0
+          },
+          "steps": 531,
+          "max_height_m": 0.07696491146087647,
+          "robot_table_impulse_sum": 0.0,
+          "returned_to_table_after_lift": false,
+          "drop_flag_definition": "Environment drop flag means below table minus 12 cm or excessive lateral escape; return to tabletop is reported separately."
+        },
+        {
+          "seed": 4102,
+          "split": "development",
+          "kind": "pure_state_policy",
+          "acceptance": {
+            "accepted": false,
+            "failure_reasons": [
+              "pickup_gate_failed",
+              "hard_limit",
+              "independent_contact_hold_gate"
+            ],
+            "robot_table_threshold_Ns": 1e-06,
+            "soft_limit_hit_steps": 0,
+            "hard_limit_hit_steps": 1,
+            "cube_table_contact_steps": 830,
+            "max_joint_velocity_rad_s": 3.529848337173462,
+            "max_position_error_rad": 0.05560614913702011,
+            "dropped": false,
+            "continuous_hold_seconds": 0.0
+          },
+          "steps": 875,
+          "max_height_m": 0.04279493951797486,
+          "robot_table_impulse_sum": 0.0,
+          "returned_to_table_after_lift": false,
+          "drop_flag_definition": "Environment drop flag means below table minus 12 cm or excessive lateral escape; return to tabletop is reported separately."
+        },
+        {
+          "seed": 4103,
+          "split": "development",
+          "kind": "pure_state_policy",
+          "acceptance": {
+            "accepted": false,
+            "failure_reasons": [
+              "pickup_gate_failed",
+              "independent_contact_hold_gate"
+            ],
+            "robot_table_threshold_Ns": 1e-06,
+            "soft_limit_hit_steps": 0,
+            "hard_limit_hit_steps": 0,
+            "cube_table_contact_steps": 819,
+            "max_joint_velocity_rad_s": 5.078200817108154,
+            "max_position_error_rad": 0.0660199522972107,
+            "dropped": false,
+            "continuous_hold_seconds": 0.03333333333333333
+          },
+          "steps": 900,
+          "max_height_m": 0.09479862117767335,
+          "robot_table_impulse_sum": 0.0,
+          "returned_to_table_after_lift": true,
+          "drop_flag_definition": "Environment drop flag means below table minus 12 cm or excessive lateral escape; return to tabletop is reported separately."
+        }
+      ],
+      "accepted": 0,
+      "total": 3,
+      "elapsed_s": 77.9726532299992,
+      "checkpoint_sha256": "7c5ad1b4381d60609d5a08c35e9a4943075979b58444c2d99cb9e12e479451c4",
+      "actor_observation": "privileged simulator state, own control history, initial cube position and clock; no teacher actions"
+    }
+  },
+  "ppo_training": {
+    "kind": "state_PPO",
+    "iterations": [
+      {
+        "iteration": 0,
+        "critic_warmup": true,
+        "loss": {
+          "value": 0.0023679635487496853,
+          "surrogate": 1.0736286640167236e-05,
+          "entropy": -178.428955078125
+        },
+        "actor_delta": 0.0,
+        "completed_episodes": 0,
+        "accepted_episodes": 0,
+        "elapsed_s": 21.694985223000913
+      },
+      {
+        "iteration": 1,
+        "critic_warmup": true,
+        "loss": {
+          "value": 0.001692496589384973,
+          "surrogate": -4.132627509534359e-05,
+          "entropy": -178.428955078125
+        },
+        "actor_delta": 0.0,
+        "completed_episodes": 1,
+        "accepted_episodes": 0,
+        "elapsed_s": 40.71323954900072
+      },
+      {
+        "iteration": 2,
+        "critic_warmup": true,
+        "loss": {
+          "value": 0.002319809835171327,
+          "surrogate": -7.334165275096893e-06,
+          "entropy": -178.428955078125
+        },
+        "actor_delta": 0.0,
+        "completed_episodes": 2,
+        "accepted_episodes": 0,
+        "elapsed_s": 62.31925940700057
+      },
+      {
+        "iteration": 3,
+        "critic_warmup": true,
+        "loss": {
+          "value": 0.002381869562668726,
+          "surrogate": 2.7907313778996468e-05,
+          "entropy": -178.428955078125
+        },
+        "actor_delta": 0.0,
+        "completed_episodes": 2,
+        "accepted_episodes": 0,
+        "elapsed_s": 81.32702119600071
+      },
+      {
+        "iteration": 4,
+        "critic_warmup": false,
+        "loss": {
+          "value": 0.001669831486651674,
+          "surrogate": 0.08664461970329285,
+          "entropy": -178.4290008544922
+        },
+        "actor_delta": 2.3718923330307007e-05,
+        "completed_episodes": 3,
+        "accepted_episodes": 0,
+        "elapsed_s": 99.86427675100094
+      },
+      {
+        "iteration": 5,
+        "critic_warmup": false,
+        "loss": {
+          "value": 0.0030768590222578496,
+          "surrogate": 0.04215178563026711,
+          "entropy": -178.42904090881348
+        },
+        "actor_delta": 1.8494203686714172e-05,
+        "completed_episodes": 4,
+        "accepted_episodes": 0,
+        "elapsed_s": 121.54974172500079
+      },
+      {
+        "iteration": 6,
+        "critic_warmup": false,
+        "loss": {
+          "value": 0.002860653796233237,
+          "surrogate": 0.014801067009102553,
+          "entropy": -178.42905616760254
+        },
+        "actor_delta": 1.7488375306129456e-05,
+        "completed_episodes": 4,
+        "accepted_episodes": 0,
+        "elapsed_s": 140.4423895559994
+      },
+      {
+        "iteration": 7,
+        "critic_warmup": false,
+        "loss": {
+          "value": 0.0016066906682681292,
+          "surrogate": 0.013835450467013288,
+          "entropy": -178.4290657043457
+        },
+        "actor_delta": 1.8190592527389526e-05,
+        "completed_episodes": 5,
+        "accepted_episodes": 0,
+        "elapsed_s": 159.2995322200004
+      },
+      {
+        "iteration": 8,
+        "critic_warmup": false,
+        "loss": {
+          "value": 0.002339277372811921,
+          "surrogate": 0.01104925200343132,
+          "entropy": -178.42910385131836
+        },
+        "actor_delta": 1.7173122614622116e-05,
+        "completed_episodes": 6,
+        "accepted_episodes": 0,
+        "elapsed_s": 180.95906981100052
+      },
+      {
+        "iteration": 9,
+        "critic_warmup": false,
+        "loss": {
+          "value": 0.0024580520403105766,
+          "surrogate": 0.0014264641213230789,
+          "entropy": -178.42916870117188
+        },
+        "actor_delta": 2.1481886506080627e-05,
+        "completed_episodes": 6,
+        "accepted_episodes": 0,
+        "elapsed_s": 200.0653716050001
+      },
+      {
+        "iteration": 10,
+        "critic_warmup": false,
+        "loss": {
+          "value": 0.00161875864432659,
+          "surrogate": 0.01223760680295527,
+          "entropy": -178.42917251586914
+        },
+        "actor_delta": 2.0138919353485107e-05,
+        "completed_episodes": 7,
+        "accepted_episodes": 0,
+        "elapsed_s": 219.11295178399996
+      },
+      {
+        "iteration": 11,
+        "critic_warmup": false,
+        "loss": {
+          "value": 0.002221854985691607,
+          "surrogate": 0.008717631222680211,
+          "entropy": -178.4292163848877
+        },
+        "actor_delta": 1.7369166016578674e-05,
+        "completed_episodes": 8,
+        "accepted_episodes": 0,
+        "elapsed_s": 240.80389008299971
+      },
+      {
+        "iteration": 12,
+        "critic_warmup": false,
+        "loss": {
+          "value": 0.0024382730189245194,
+          "surrogate": 0.008740522433072329,
+          "entropy": -178.42923545837402
+        },
+        "actor_delta": 2.4187378585338593e-05,
+        "completed_episodes": 8,
+        "accepted_episodes": 0,
+        "elapsed_s": 260.09433782999986
+      },
+      {
+        "iteration": 13,
+        "critic_warmup": false,
+        "loss": {
+          "value": 0.06632757093757391,
+          "surrogate": 0.009554049000144005,
+          "entropy": -178.4292449951172
+        },
+        "actor_delta": 1.7305836081504822e-05,
+        "completed_episodes": 9,
+        "accepted_episodes": 0,
+        "elapsed_s": 278.67596382900047
+      },
+      {
+        "iteration": 14,
+        "critic_warmup": false,
+        "loss": {
+          "value": 0.002418067248072475,
+          "surrogate": 0.012565471988637,
+          "entropy": -178.4292449951172
+        },
+        "actor_delta": 1.985207200050354e-05,
+        "completed_episodes": 10,
+        "accepted_episodes": 0,
+        "elapsed_s": 299.9356233210001
+      },
+      {
+        "iteration": 15,
+        "critic_warmup": false,
+        "loss": {
+          "value": 0.002100319921737537,
+          "surrogate": 0.0070129415253177285,
+          "entropy": -178.4292278289795
+        },
+        "actor_delta": 2.1366868168115616e-05,
+        "completed_episodes": 10,
+        "accepted_episodes": 0,
+        "elapsed_s": 319.4842841030004
+      },
+      {
+        "iteration": 16,
+        "critic_warmup": false,
+        "loss": {
+          "value": 0.06384358322247863,
+          "surrogate": 0.006073202122934163,
+          "entropy": -178.4291648864746
+        },
+        "actor_delta": 2.0839273929595947e-05,
+        "completed_episodes": 11,
+        "accepted_episodes": 0,
+        "elapsed_s": 338.3245195470008
+      },
+      {
+        "iteration": 17,
+        "critic_warmup": false,
+        "loss": {
+          "value": 0.0026205770700471476,
+          "surrogate": 0.014292526106146397,
+          "entropy": -178.42915534973145
+        },
+        "actor_delta": 2.7002417482435703e-05,
+        "completed_episodes": 12,
+        "accepted_episodes": 0,
+        "elapsed_s": 359.9045487629992
+      },
+      {
+        "iteration": 18,
+        "critic_warmup": false,
+        "loss": {
+          "value": 0.002078278601402417,
+          "surrogate": 0.016049376456066966,
+          "entropy": -178.42914581298828
+        },
+        "actor_delta": 2.5313347578048706e-05,
+        "completed_episodes": 12,
+        "accepted_episodes": 0,
+        "elapsed_s": 379.5255096100009
+      },
+      {
+        "iteration": 19,
+        "critic_warmup": false,
+        "loss": {
+          "value": 0.0017026978894136846,
+          "surrogate": 0.0114060053601861,
+          "entropy": -178.42914009094238
+        },
+        "actor_delta": 1.683458685874939e-05,
+        "completed_episodes": 13,
+        "accepted_episodes": 0,
+        "elapsed_s": 398.31797976300004
+      },
+      {
+        "iteration": 20,
+        "critic_warmup": false,
+        "loss": {
+          "value": 0.002304256850038655,
+          "surrogate": 0.017058338620699942,
+          "entropy": -178.42912101745605
+        },
+        "actor_delta": 1.8477439880371094e-05,
+        "completed_episodes": 14,
+        "accepted_episodes": 0,
+        "elapsed_s": 419.6312638069994
+      },
+      {
+        "iteration": 21,
+        "critic_warmup": false,
+        "loss": {
+          "value": 0.0020276797731639817,
+          "surrogate": 0.005621753218747472,
+          "entropy": -178.42911529541016
+        },
+        "actor_delta": 2.0680949091911316e-05,
+        "completed_episodes": 14,
+        "accepted_episodes": 0,
+        "elapsed_s": 439.10202545799984
+      },
+      {
+        "iteration": 22,
+        "critic_warmup": false,
+        "loss": {
+          "value": 0.001808731147320941,
+          "surrogate": 0.004895202349871397,
+          "entropy": -178.42915153503418
+        },
+        "actor_delta": 2.2679567337036133e-05,
+        "completed_episodes": 15,
+        "accepted_episodes": 0,
+        "elapsed_s": 458.3855268219995
+      },
+      {
+        "iteration": 23,
+        "critic_warmup": false,
+        "loss": {
+          "value": 0.0024661493953317404,
+          "surrogate": 0.012131958501413465,
+          "entropy": -178.42914390563965
+        },
+        "actor_delta": 2.3966655135154724e-05,
+        "completed_episodes": 16,
+        "accepted_episodes": 0,
+        "elapsed_s": 479.77432749999934
+      }
+    ],
+    "episodes": [
+      {
+        "episode": 0,
+        "seed": 4001,
+        "acceptance": {
+          "accepted": false,
+          "failure_reasons": [
+            "pickup_gate_failed",
+            "independent_contact_hold_gate"
+          ],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 889,
+          "max_joint_velocity_rad_s": 3.321981191635132,
+          "max_position_error_rad": 0.05866341292858124,
+          "dropped": false,
+          "continuous_hold_seconds": 0.0
+        }
+      },
+      {
+        "episode": 1,
+        "seed": 4002,
+        "acceptance": {
+          "accepted": false,
+          "failure_reasons": [
+            "pickup_gate_failed",
+            "independent_contact_hold_gate"
+          ],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 888,
+          "max_joint_velocity_rad_s": 10.000000953674316,
+          "max_position_error_rad": 0.041071414947509766,
+          "dropped": false,
+          "continuous_hold_seconds": 0.0
+        }
+      },
+      {
+        "episode": 2,
+        "seed": 4003,
+        "acceptance": {
+          "accepted": false,
+          "failure_reasons": [
+            "pickup_gate_failed",
+            "independent_contact_hold_gate"
+          ],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 891,
+          "max_joint_velocity_rad_s": 5.417353630065918,
+          "max_position_error_rad": 0.0630483627319336,
+          "dropped": false,
+          "continuous_hold_seconds": 0.0
+        }
+      },
+      {
+        "episode": 3,
+        "seed": 4004,
+        "acceptance": {
+          "accepted": false,
+          "failure_reasons": [
+            "pickup_gate_failed",
+            "independent_contact_hold_gate"
+          ],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 879,
+          "max_joint_velocity_rad_s": 10.000015258789062,
+          "max_position_error_rad": 0.06122863292694092,
+          "dropped": false,
+          "continuous_hold_seconds": 0.0
+        }
+      },
+      {
+        "episode": 4,
+        "seed": 4005,
+        "acceptance": {
+          "accepted": false,
+          "failure_reasons": [
+            "pickup_gate_failed",
+            "independent_contact_hold_gate"
+          ],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 889,
+          "max_joint_velocity_rad_s": 9.999996185302734,
+          "max_position_error_rad": 0.03643941879272461,
+          "dropped": false,
+          "continuous_hold_seconds": 0.0
+        }
+      },
+      {
+        "episode": 5,
+        "seed": 4006,
+        "acceptance": {
+          "accepted": false,
+          "failure_reasons": [
+            "pickup_gate_failed",
+            "independent_contact_hold_gate"
+          ],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 881,
+          "max_joint_velocity_rad_s": 3.639669179916382,
+          "max_position_error_rad": 0.04048764705657959,
+          "dropped": false,
+          "continuous_hold_seconds": 0.0
+        }
+      },
+      {
+        "episode": 6,
+        "seed": 4007,
+        "acceptance": {
+          "accepted": false,
+          "failure_reasons": [
+            "pickup_gate_failed",
+            "independent_contact_hold_gate"
+          ],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 884,
+          "max_joint_velocity_rad_s": 5.6533074378967285,
+          "max_position_error_rad": 0.04693511128425598,
+          "dropped": false,
+          "continuous_hold_seconds": 0.0
+        }
+      },
+      {
+        "episode": 7,
+        "seed": 4008,
+        "acceptance": {
+          "accepted": false,
+          "failure_reasons": [
+            "pickup_gate_failed",
+            "independent_contact_hold_gate"
+          ],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 885,
+          "max_joint_velocity_rad_s": 3.1208600997924805,
+          "max_position_error_rad": 0.04902791976928711,
+          "dropped": false,
+          "continuous_hold_seconds": 0.0
+        }
+      },
+      {
+        "episode": 8,
+        "seed": 4001,
+        "acceptance": {
+          "accepted": false,
+          "failure_reasons": [
+            "pickup_gate_failed",
+            "hard_limit",
+            "independent_contact_hold_gate"
+          ],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 1,
+          "cube_table_contact_steps": 862,
+          "max_joint_velocity_rad_s": 10.000003814697266,
+          "max_position_error_rad": 0.05256936699151993,
+          "dropped": false,
+          "continuous_hold_seconds": 0.0
+        }
+      },
+      {
+        "episode": 9,
+        "seed": 4002,
+        "acceptance": {
+          "accepted": false,
+          "failure_reasons": [
+            "pickup_gate_failed",
+            "independent_contact_hold_gate"
+          ],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 889,
+          "max_joint_velocity_rad_s": 7.260170936584473,
+          "max_position_error_rad": 0.05926632881164551,
+          "dropped": false,
+          "continuous_hold_seconds": 0.0
+        }
+      },
+      {
+        "episode": 10,
+        "seed": 4003,
+        "acceptance": {
+          "accepted": false,
+          "failure_reasons": [
+            "pickup_gate_failed",
+            "hard_limit",
+            "independent_contact_hold_gate"
+          ],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 1,
+          "cube_table_contact_steps": 873,
+          "max_joint_velocity_rad_s": 10.000001907348633,
+          "max_position_error_rad": 0.0638197511434555,
+          "dropped": false,
+          "continuous_hold_seconds": 0.0
+        }
+      },
+      {
+        "episode": 11,
+        "seed": 4004,
+        "acceptance": {
+          "accepted": false,
+          "failure_reasons": [
+            "pickup_gate_failed",
+            "independent_contact_hold_gate"
+          ],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 873,
+          "max_joint_velocity_rad_s": 3.9856553077697754,
+          "max_position_error_rad": 0.04098784923553467,
+          "dropped": false,
+          "continuous_hold_seconds": 0.0
+        }
+      },
+      {
+        "episode": 12,
+        "seed": 4005,
+        "acceptance": {
+          "accepted": false,
+          "failure_reasons": [
+            "pickup_gate_failed",
+            "independent_contact_hold_gate"
+          ],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 897,
+          "max_joint_velocity_rad_s": 7.895697593688965,
+          "max_position_error_rad": 0.03847837448120117,
+          "dropped": false,
+          "continuous_hold_seconds": 0.0
+        }
+      },
+      {
+        "episode": 13,
+        "seed": 4006,
+        "acceptance": {
+          "accepted": false,
+          "failure_reasons": [
+            "pickup_gate_failed",
+            "independent_contact_hold_gate"
+          ],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 890,
+          "max_joint_velocity_rad_s": 2.1770777702331543,
+          "max_position_error_rad": 0.0464763343334198,
+          "dropped": false,
+          "continuous_hold_seconds": 0.0
+        }
+      },
+      {
+        "episode": 14,
+        "seed": 4007,
+        "acceptance": {
+          "accepted": false,
+          "failure_reasons": [
+            "pickup_gate_failed",
+            "independent_contact_hold_gate"
+          ],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 892,
+          "max_joint_velocity_rad_s": 9.999655723571777,
+          "max_position_error_rad": 0.04919806122779846,
+          "dropped": false,
+          "continuous_hold_seconds": 0.0
+        }
+      },
+      {
+        "episode": 15,
+        "seed": 4008,
+        "acceptance": {
+          "accepted": false,
+          "failure_reasons": [
+            "pickup_gate_failed",
+            "independent_contact_hold_gate"
+          ],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 897,
+          "max_joint_velocity_rad_s": 5.184750080108643,
+          "max_position_error_rad": 0.05264484882354736,
+          "dropped": false,
+          "continuous_hold_seconds": 0.0
+        }
+      }
+    ],
+    "task_success_claim": false,
+    "checkpoint_sha256": "7c5ad1b4381d60609d5a08c35e9a4943075979b58444c2d99cb9e12e479451c4",
+    "elapsed_s": 479.7956928950007
+  },
+  "teacher_training": {
+    "kind": "teacher_dataset",
+    "split": "training",
+    "trials": [
+      {
+        "seed": 4001,
+        "split": "training",
+        "kind": "teacher",
+        "acceptance": {
+          "accepted": true,
+          "failure_reasons": [],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 471,
+          "max_joint_velocity_rad_s": 9.99999713897705,
+          "max_position_error_rad": 0.030451714992523193,
+          "dropped": false,
+          "continuous_hold_seconds": 9.333333333333334
+        },
+        "steps": 799,
+        "max_height_m": 0.11544710063934327,
+        "robot_table_impulse_sum": 0.0
+      },
+      {
+        "seed": 4002,
+        "split": "training",
+        "kind": "teacher",
+        "acceptance": {
+          "accepted": true,
+          "failure_reasons": [],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 468,
+          "max_joint_velocity_rad_s": 5.079010009765625,
+          "max_position_error_rad": 0.03290665149688721,
+          "dropped": false,
+          "continuous_hold_seconds": 9.333333333333334
+        },
+        "steps": 798,
+        "max_height_m": 0.1154906120300293,
+        "robot_table_impulse_sum": 0.0
+      },
+      {
+        "seed": 4003,
+        "split": "training",
+        "kind": "teacher",
+        "acceptance": {
+          "accepted": true,
+          "failure_reasons": [],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 469,
+          "max_joint_velocity_rad_s": 2.9204068183898926,
+          "max_position_error_rad": 0.027500629425048828,
+          "dropped": false,
+          "continuous_hold_seconds": 9.333333333333334
+        },
+        "steps": 798,
+        "max_height_m": 0.11534958744049073,
+        "robot_table_impulse_sum": 0.0
+      },
+      {
+        "seed": 4004,
+        "split": "training",
+        "kind": "teacher",
+        "acceptance": {
+          "accepted": true,
+          "failure_reasons": [],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 470,
+          "max_joint_velocity_rad_s": 5.035684108734131,
+          "max_position_error_rad": 0.029140233993530273,
+          "dropped": false,
+          "continuous_hold_seconds": 9.333333333333334
+        },
+        "steps": 798,
+        "max_height_m": 0.11536532306671143,
+        "robot_table_impulse_sum": 0.0
+      },
+      {
+        "seed": 4005,
+        "split": "training",
+        "kind": "teacher",
+        "acceptance": {
+          "accepted": true,
+          "failure_reasons": [],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 470,
+          "max_joint_velocity_rad_s": 5.957849025726318,
+          "max_position_error_rad": 0.02756941318511963,
+          "dropped": false,
+          "continuous_hold_seconds": 9.333333333333334
+        },
+        "steps": 798,
+        "max_height_m": 0.11529785060882569,
+        "robot_table_impulse_sum": 0.0
+      },
+      {
+        "seed": 4006,
+        "split": "training",
+        "kind": "teacher",
+        "acceptance": {
+          "accepted": true,
+          "failure_reasons": [],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 470,
+          "max_joint_velocity_rad_s": 8.275182723999023,
+          "max_position_error_rad": 0.032830119132995605,
+          "dropped": false,
+          "continuous_hold_seconds": 9.333333333333334
+        },
+        "steps": 799,
+        "max_height_m": 0.1149945821762085,
+        "robot_table_impulse_sum": 0.0
+      },
+      {
+        "seed": 4007,
+        "split": "training",
+        "kind": "teacher",
+        "acceptance": {
+          "accepted": true,
+          "failure_reasons": [],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 466,
+          "max_joint_velocity_rad_s": 5.060413837432861,
+          "max_position_error_rad": 0.03438544273376465,
+          "dropped": false,
+          "continuous_hold_seconds": 9.333333333333334
+        },
+        "steps": 798,
+        "max_height_m": 0.1156967248916626,
+        "robot_table_impulse_sum": 0.0
+      },
+      {
+        "seed": 4008,
+        "split": "training",
+        "kind": "teacher",
+        "acceptance": {
+          "accepted": true,
+          "failure_reasons": [],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 466,
+          "max_joint_velocity_rad_s": 3.4185969829559326,
+          "max_position_error_rad": 0.03324604034423828,
+          "dropped": false,
+          "continuous_hold_seconds": 9.333333333333334
+        },
+        "steps": 799,
+        "max_height_m": 0.11543446445465089,
+        "robot_table_impulse_sum": 0.0
+      }
+    ],
+    "accepted": 8,
+    "total": 8,
+    "elapsed_s": 251.03139963299873,
+    "checkpoint_sha256": null,
+    "actor_observation": "privileged simulator state, own control history, initial cube position and clock; no teacher actions"
+  },
+  "teacher_independent_reference": "5/5; seeds 3101-3105; no neural policy",
+  "checkpoint_sha256": "7b9d53ca91fa9524b388b75ad37b3f2e36f5286f89a6f4dec41b27ce5e628a8e",
+  "config_sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+  "active_target_dimensions": 44,
+  "action_interface_dimensions": 56,
+  "policy_prior": "Joint targets use demonstration-derived bounds; constant demonstrated joints remain fixed. All commands pass the existing safety layer.",
+  "soft_limit_version": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887",
+  "assets_sha256": {
+    "/home/brainco/rl_cube/revotron_revo3/source/revotron_system/usd/revotron_bimanual_revo3_56dof.usd": "c066a65ff5ac77a8fb0a5fb3658c71f151b64777cdc9a8f66a0739d4033170a2",
+    "/home/brainco/rl_cube/revotron_revo3/source/revotron_system/urdf/revotron_bimanual_revo3_56dof.urdf": "598cc4cc94a37e35517eba4e450b3a3b334214549c7e196bf3f1332940e71325",
+    "/home/brainco/rl_cube/isaac_mujoco_cube/upstream/mujoco_cube-main/cube_3x3x3.xml": "b7b32a4a8624241817aafcbdba20217b7250fb9c570440af6fbdcf5ec084c023",
+    "/home/brainco/rl_cube/isaac_mujoco_cube/upstream/mujoco_cube-main/assets/sticker.png": "278454a3391b00b997c70f1e3e40f38014e620df9426943d7197191c0338f506"
+  },
+  "runtime_versions": {
+    "isaacsim": "6.2.0.0",
+    "isaaclab": "3.0.0",
+    "torch": "2.11.0+cu130",
+    "rsl-rl-lib": "5.5.1"
+  },
+  "hardware": "RTX 5070 Laptop GPU 8 GB; one environment; CPU PhysX/PPO, RTX camera rendering",
+  "demo_seed": 4203,
+  "demo_accepted": true,
+  "evidence_sha256": {
+    "revotron_cube_rl/runs/state_selected_independent_test/result.json": "df2216539caa8e07bb76fdb9f5e15c27198df1bb9165387266cd8e1018eb3b0d",
+    "revotron_cube_rl/runs/state_bc_v4/training_config.json": "e68e5a2cfba1b99e0a440da2175be021aaeb6cdda7a39651244672f81bf981ab",
+    "work/state_learning/protocol.json": "e963dd015bca05e02419be98a346cee4603cd07e7dd237f75ca1647040719d01",
+    "work/state_learning/model_selection.json": "26936a9c05f07ef7f314ff60ba07529ac2a64b28cedfa38198dddad2d4af9926"
+  },
+  "limitations": [
+    "Five seeds are a small test set, not a general success guarantee.",
+    "No vision actor, physical layer rotation, cube solving or real robot deployment is validated."
+  ]
+}

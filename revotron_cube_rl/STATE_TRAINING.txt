@@ -1,0 +1,22 @@
+状态策略训练与演示：state_bc_v4
+纯策略独立测试：1/5；测试 seed 4201–4205 未参与训练和选模。
+策略读取仿真状态，不读取相机图像；视频是实际 Isaac Sim 渲染。
+演示 seed 4203：通过抓取与安全验收
+PPO 完成 24 轮，每轮 600 步；前 4 轮仅训练 critic。
+验收包含：双侧真实接触、抬升至少 8 cm、连续保持至少 1 秒、无碰桌及限位违规。
+本轮不代表视觉抓取、单面转层、连续转面或魔方复原完成。
+learned_state_demo.gif 为一个通过回合（若全失败则展示首个失败）；failed_state_demo.gif 保留失败对照。总体成功率以全部 5 组测试为准。
+GIF 使用索引色压缩；learned_state_demo_final_frame.png 保存彩色原始末帧。
+模型原文件：/home/brainco/rl_cube/revotron_cube_rl/runs/state_bc_v4/checkpoint.pt
+评估轨迹：/home/brainco/rl_cube/revotron_cube_rl/runs/state_selected_independent_test
+配置 SHA256：bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4
+Checkpoint SHA256：7b9d53ca91fa9524b388b75ad37b3f2e36f5286f89a6f4dec41b27ce5e628a8e
+
+重放命令（同一批 seed 的重放不属于新的独立测试）：
+cd /home/brainco/rl_cube
+./run.sh state evaluate --name replay_state_demo --checkpoint /home/brainco/rl_cube/revotron_cube_rl/runs/state_bc_v4/checkpoint.pt --seeds 4203 --split test --record
+每次重放请使用新的 --name，避免覆盖已有记录。
+
+测试结果与记录：pipeline_status.json 和 runs/state_bc_v4/independent_test.json。
+命令入口：./run.sh state collect|bc|ppo|evaluate（在 rl_cube 目录）。
+模型及安全解码测试：source activate.sh; python -m unittest discover -s revotron_cube_rl -p test_state_policy.py

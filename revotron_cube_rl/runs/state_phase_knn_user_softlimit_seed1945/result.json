@@ -1,0 +1,74 @@
+{
+  "mode": "state_phase_rgb_knn_evaluate",
+  "seed": 1945,
+  "real_rgb": true,
+  "action_dim": 56,
+  "neighbors": 1,
+  "action_clip": 1.0,
+  "q_weight": 0.5,
+  "action_weight": 1.0,
+  "phase_horizon_steps": 391,
+  "config_sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+  "steps_total": 600,
+  "successes": 1,
+  "episodes": 1,
+  "elapsed_s": 56.431623697280884,
+  "contact_events": 57321,
+  "last_metrics": {
+    "height_m": 5.6266784675962356e-08,
+    "bilateral_contact": false,
+    "contact_impulse": [
+      0.0,
+      0.0
+    ],
+    "table_impulse": 0.022399814717019337,
+    "robot_table_impulse": 0.0,
+    "hold_steps": 0,
+    "success": false,
+    "drop": false,
+    "reward": -0.0021694005125551473,
+    "terms": {
+      "reach": 0.13676247545727066,
+      "bilateral_contact": 0.0,
+      "lift": 0.0,
+      "hold": 0.0,
+      "hold_progress": 0.0,
+      "success_once": 0.0,
+      "action_rate": 0.00010625018330756575,
+      "joint_speed": 6.145470979390666e-05,
+      "drop": 0.0,
+      "timeout": 0.0,
+      "terminal": 0.0,
+      "potential": 0.027352495091454133,
+      "raw_potential": 0.027352495091454133,
+      "raw_component": {
+        "reach": 0.027352495091454133,
+        "bilateral_contact": 0.0,
+        "lift": 0.0,
+        "hold_progress": 0.0
+      },
+      "potential_difference": -0.00016880780692881542,
+      "step_penalty": -0.002,
+      "success_bonus": 0.0,
+      "drop_penalty": -0.0,
+      "action_rate_penalty": -5.312509165378288e-07,
+      "joint_speed_penalty": -6.145470979390666e-08
+    },
+    "cube_position": [
+      0.48542287945747375,
+      0.014830599538981915,
+      0.9285000562667847
+    ],
+    "linear_speed": 2.761435098364018e-05,
+    "angular_speed": 0.0010990748414769769
+  },
+  "task_success_claim": true,
+  "status": "completed",
+  "artifacts": {
+    "overview_rollout_gif": "overview_rollout.gif",
+    "chest_rollout_gif": "chest_rollout.gif",
+    "overview_final": "overview_final.png",
+    "chest_final": "chest_final.png",
+    "frames": 100
+  }
+}

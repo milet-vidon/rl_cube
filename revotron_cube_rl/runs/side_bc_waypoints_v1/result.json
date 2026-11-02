@@ -1,0 +1,140 @@
+{
+  "history": [
+    {
+      "epoch": -1,
+      "geometry_validation_rmse_rad": 1.8964334634274874e-07,
+      "geometry_validation_max_joint_error_rad": 2.086162567138672e-06,
+      "kind": "fitted cubic initialization"
+    },
+    {
+      "epoch": 0,
+      "train_loss": 5.3912714292891906e-08,
+      "validation_rmse_rad": 1.8682906159430994e-05,
+      "validation_max_joint_error_rad": 0.0001608133316040039
+    },
+    {
+      "epoch": 100,
+      "train_loss": 3.999494069262255e-08,
+      "validation_rmse_rad": 1.5835807355252665e-07,
+      "validation_max_joint_error_rad": 2.086162567138672e-06
+    },
+    {
+      "epoch": 200,
+      "train_loss": 2.9576977311762676e-08,
+      "validation_rmse_rad": 1.334681102788321e-07,
+      "validation_max_joint_error_rad": 1.7881393432617188e-06
+    },
+    {
+      "epoch": 300,
+      "train_loss": 2.620014605270171e-08,
+      "validation_rmse_rad": 1.2426335674415725e-07,
+      "validation_max_joint_error_rad": 1.7285346984863281e-06
+    },
+    {
+      "epoch": 400,
+      "train_loss": 2.3692551920362348e-08,
+      "validation_rmse_rad": 1.1725024167400341e-07,
+      "validation_max_joint_error_rad": 1.6093254089355469e-06
+    },
+    {
+      "epoch": 500,
+      "train_loss": 2.1310270881258475e-08,
+      "validation_rmse_rad": 1.1057035095415701e-07,
+      "validation_max_joint_error_rad": 1.5497207641601562e-06
+    },
+    {
+      "epoch": 600,
+      "train_loss": 1.9565636222296234e-08,
+      "validation_rmse_rad": 1.0571653437440018e-07,
+      "validation_max_joint_error_rad": 1.430511474609375e-06
+    },
+    {
+      "epoch": 700,
+      "train_loss": 1.81640213980927e-08,
+      "validation_rmse_rad": 1.0154959970851729e-07,
+      "validation_max_joint_error_rad": 1.3709068298339844e-06
+    },
+    {
+      "epoch": 800,
+      "train_loss": 1.7001012153627926e-08,
+      "validation_rmse_rad": 9.868814947088433e-08,
+      "validation_max_joint_error_rad": 1.3113021850585938e-06
+    },
+    {
+      "epoch": 900,
+      "train_loss": 1.605309840613245e-08,
+      "validation_rmse_rad": 9.627191228841698e-08,
+      "validation_max_joint_error_rad": 1.2516975402832031e-06
+    },
+    {
+      "epoch": 1000,
+      "train_loss": 1.5271982789499816e-08,
+      "validation_rmse_rad": 9.416081869410427e-08,
+      "validation_max_joint_error_rad": 1.1920928955078125e-06
+    },
+    {
+      "epoch": 1100,
+      "train_loss": 1.4679437221332137e-08,
+      "validation_rmse_rad": 9.252386926302111e-08,
+      "validation_max_joint_error_rad": 1.1324882507324219e-06
+    },
+    {
+      "epoch": 1200,
+      "train_loss": 1.4120526969918501e-08,
+      "validation_rmse_rad": 9.125522167235797e-08,
+      "validation_max_joint_error_rad": 1.0728836059570312e-06
+    },
+    {
+      "epoch": 1300,
+      "train_loss": 1.3692762479422527e-08,
+      "validation_rmse_rad": 8.99990817748444e-08,
+      "validation_max_joint_error_rad": 1.0728836059570312e-06
+    },
+    {
+      "epoch": 1400,
+      "train_loss": 1.3389180431033765e-08,
+      "validation_rmse_rad": 8.92010610968123e-08,
+      "validation_max_joint_error_rad": 1.0728836059570312e-06
+    },
+    {
+      "epoch": 1500,
+      "train_loss": 1.3157474221259235e-08,
+      "validation_rmse_rad": 8.864814638681793e-08,
+      "validation_max_joint_error_rad": 1.0728836059570312e-06
+    },
+    {
+      "epoch": 1600,
+      "train_loss": 1.2986896891220567e-08,
+      "validation_rmse_rad": 8.815701576277396e-08,
+      "validation_max_joint_error_rad": 1.0728836059570312e-06
+    },
+    {
+      "epoch": 1700,
+      "train_loss": 1.2866730791927239e-08,
+      "validation_rmse_rad": 8.781431586299162e-08,
+      "validation_max_joint_error_rad": 1.0132789611816406e-06
+    },
+    {
+      "epoch": 1800,
+      "train_loss": 1.2719351794032718e-08,
+      "validation_rmse_rad": 8.762427266240466e-08,
+      "validation_max_joint_error_rad": 1.0132789611816406e-06
+    },
+    {
+      "epoch": 1900,
+      "train_loss": 1.2741242727543067e-08,
+      "validation_rmse_rad": 8.76223634787448e-08,
+      "validation_max_joint_error_rad": 1.0132789611816406e-06
+    },
+    {
+      "epoch": 1999,
+      "train_loss": 1.2728840204090375e-08,
+      "validation_rmse_rad": 8.749884514224881e-08,
+      "validation_max_joint_error_rad": 1.0132789611816406e-06
+    }
+  ],
+  "elapsed_s": 4.032322197001122,
+  "physical_success_claim": false,
+  "training_plans": 49,
+  "geometry_validation_plans": 36
+}

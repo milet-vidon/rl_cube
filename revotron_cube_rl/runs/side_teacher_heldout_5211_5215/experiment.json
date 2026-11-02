@@ -1,0 +1,11 @@
+{
+  "name": "side_teacher_heldout_5211_5215",
+  "seeds": "5211,5212,5213,5214,5215",
+  "widths": ".096",
+  "offsets": ".025",
+  "record": false,
+  "wrist": 35.0,
+  "tilt": 15.0,
+  "finger_mode": "curled",
+  "hold": 3.0
+}

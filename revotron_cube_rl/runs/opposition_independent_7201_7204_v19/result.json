@@ -1,0 +1,228 @@
+{
+  "kind": "experimental_traditional_teacher",
+  "trials": [
+    {
+      "seed": 7201,
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 569,
+        "max_joint_velocity_rad_s": 2.3256754875183105,
+        "max_position_error_rad": 0.06999078392982483,
+        "dropped": false,
+        "continuous_hold_seconds": 3.0
+      },
+      "opposition": {
+        "passed": true,
+        "main_hand": "left",
+        "support_hand": "right",
+        "hold_contact_coverage": {
+          "thumb": 1.0,
+          "index": 1.0,
+          "middle": 1.0,
+          "ring": 1.0,
+          "little": 1.0
+        },
+        "correct_face_contact_coverage": {
+          "thumb": 1.0,
+          "index": 1.0,
+          "middle": 1.0,
+          "ring": 1.0,
+          "little": 1.0
+        },
+        "thumb_corner_contact_coverage": 1.0,
+        "required_thumb_coverage": 0.9,
+        "required_each_four_finger_coverage": 0.5,
+        "expected_faces": "thumb on cube -X corner, four fingers on cube +X",
+        "corner_distance_max_m": 0.018,
+        "face_position_tolerance_m": 0.006
+      },
+      "controller_failure": null,
+      "max_height_m": 0.1857195463180542,
+      "steps": 887,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "self_contact_impulse_sum_Ns": 0,
+      "contact_pairs": {
+        "/World/Cube | /World/Table/geometry/mesh": 24.034948743025097,
+        "/World/Robot/left_little_DIP_link | /World/Cube": 56.08318837344099,
+        "/World/Robot/left_thumb_DIP_link | /World/Cube": 69.49730276834583,
+        "/World/Robot/left_ring_DIP_link | /World/Cube": 12.451869697181186,
+        "/World/Robot/left_middle_DIP_link | /World/Cube": 4.391438316460901,
+        "/World/Robot/left_index_DIP_link | /World/Cube": 9.348293018361447,
+        "/World/Robot/right_middle_DIP_link | /World/Cube": 0.23256181914005322
+      }
+    },
+    {
+      "seed": 7202,
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 578,
+        "max_joint_velocity_rad_s": 2.2887160778045654,
+        "max_position_error_rad": 0.07043424248695374,
+        "dropped": false,
+        "continuous_hold_seconds": 3.0
+      },
+      "opposition": {
+        "passed": true,
+        "main_hand": "left",
+        "support_hand": "right",
+        "hold_contact_coverage": {
+          "thumb": 1.0,
+          "index": 1.0,
+          "middle": 1.0,
+          "ring": 1.0,
+          "little": 1.0
+        },
+        "correct_face_contact_coverage": {
+          "thumb": 1.0,
+          "index": 1.0,
+          "middle": 1.0,
+          "ring": 1.0,
+          "little": 1.0
+        },
+        "thumb_corner_contact_coverage": 1.0,
+        "required_thumb_coverage": 0.9,
+        "required_each_four_finger_coverage": 0.5,
+        "expected_faces": "thumb on cube -X corner, four fingers on cube +X",
+        "corner_distance_max_m": 0.018,
+        "face_position_tolerance_m": 0.006
+      },
+      "controller_failure": null,
+      "max_height_m": 0.18594199085235597,
+      "steps": 896,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "self_contact_impulse_sum_Ns": 0,
+      "contact_pairs": {
+        "/World/Cube | /World/Table/geometry/mesh": 24.34311934190833,
+        "/World/Robot/left_little_DIP_link | /World/Cube": 56.97040285297247,
+        "/World/Robot/left_thumb_DIP_link | /World/Cube": 70.74914537929062,
+        "/World/Robot/left_ring_DIP_link | /World/Cube": 13.583785760676198,
+        "/World/Robot/left_middle_DIP_link | /World/Cube": 4.67595255826446,
+        "/World/Robot/left_index_DIP_link | /World/Cube": 8.847163667743578,
+        "/World/Robot/right_middle_DIP_link | /World/Cube": 0.23358392309352535
+      }
+    },
+    {
+      "seed": 7203,
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 546,
+        "max_joint_velocity_rad_s": 1.6321920156478882,
+        "max_position_error_rad": 0.06148931384086609,
+        "dropped": false,
+        "continuous_hold_seconds": 3.0
+      },
+      "opposition": {
+        "passed": true,
+        "main_hand": "left",
+        "support_hand": "right",
+        "hold_contact_coverage": {
+          "thumb": 1.0,
+          "index": 0.9777777777777777,
+          "middle": 1.0,
+          "ring": 1.0,
+          "little": 1.0
+        },
+        "correct_face_contact_coverage": {
+          "thumb": 1.0,
+          "index": 0.9777777777777777,
+          "middle": 1.0,
+          "ring": 1.0,
+          "little": 1.0
+        },
+        "thumb_corner_contact_coverage": 1.0,
+        "required_thumb_coverage": 0.9,
+        "required_each_four_finger_coverage": 0.5,
+        "expected_faces": "thumb on cube -X corner, four fingers on cube +X",
+        "corner_distance_max_m": 0.018,
+        "face_position_tolerance_m": 0.006
+      },
+      "controller_failure": null,
+      "max_height_m": 0.18901246452331544,
+      "steps": 863,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "self_contact_impulse_sum_Ns": 0,
+      "contact_pairs": {
+        "/World/Cube | /World/Table/geometry/mesh": 17.837963263466506,
+        "/World/Robot/left_little_DIP_link | /World/Cube": 23.767104105242026,
+        "/World/Robot/left_thumb_DIP_link | /World/Cube": 22.242663130589506,
+        "/World/Robot/left_index_DIP_link | /World/Cube": 1.5331276775511167,
+        "/World/Robot/left_ring_DIP_link | /World/Cube": 1.2683909983809445,
+        "/World/Robot/left_middle_DIP_link | /World/Cube": 1.9402960323669745,
+        "/World/Robot/right_middle_DIP_link | /World/Cube": 0.24037966085623022
+      }
+    },
+    {
+      "seed": 7204,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "independent_contact_hold_gate",
+          "robot_self_contact"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 570,
+        "max_joint_velocity_rad_s": 2.1408088207244873,
+        "max_position_error_rad": 0.0707157552242279,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      },
+      "opposition": {
+        "passed": true,
+        "main_hand": "left",
+        "support_hand": "right",
+        "hold_contact_coverage": {
+          "thumb": 1.0,
+          "index": 1.0,
+          "middle": 1.0,
+          "ring": 1.0,
+          "little": 1.0
+        },
+        "correct_face_contact_coverage": {
+          "thumb": 1.0,
+          "index": 1.0,
+          "middle": 1.0,
+          "ring": 1.0,
+          "little": 1.0
+        },
+        "thumb_corner_contact_coverage": 1.0,
+        "required_thumb_coverage": 0.9,
+        "required_each_four_finger_coverage": 0.5,
+        "expected_faces": "thumb on cube -X corner, four fingers on cube +X",
+        "corner_distance_max_m": 0.018,
+        "face_position_tolerance_m": 0.006
+      },
+      "controller_failure": null,
+      "max_height_m": 0.18674510383605958,
+      "steps": 796,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "self_contact_impulse_sum_Ns": 0.7208483597041722,
+      "contact_pairs": {
+        "/World/Cube | /World/Table/geometry/mesh": 24.20288643483006,
+        "/World/Robot/left_little_DIP_link | /World/Cube": 44.795762476798686,
+        "/World/Robot/left_thumb_DIP_link | /World/Cube": 56.931004538128,
+        "/World/Robot/left_ring_DIP_link | /World/Cube": 10.758358965458672,
+        "/World/Robot/left_middle_DIP_link | /World/Cube": 3.285654345079621,
+        "/World/Robot/left_index_DIP_link | /World/Cube": 6.348710818860697
+      }
+    }
+  ],
+  "accepted": 3,
+  "total": 4,
+  "elapsed_s": 239.51840817300035,
+  "promoted_for_learning": false
+}

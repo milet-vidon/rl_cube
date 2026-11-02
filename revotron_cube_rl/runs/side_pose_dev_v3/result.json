@@ -1,0 +1,112 @@
+{
+  "trials": [
+    {
+      "seed": 4201,
+      "candidate": 0,
+      "width": 0.104,
+      "offset": 0.015,
+      "steps": 1200,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 1200,
+        "max_joint_velocity_rad_s": 9.999999046325684,
+        "max_position_error_rad": 0.1939067840576172,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      },
+      "controller_failure": null,
+      "max_height_m": 4.964733123780096e-05,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "contact_pairs": {
+        "/World/Cube | /World/Table/geometry/mesh": 26.69884755448752,
+        "/World/Robot/left_middle_DIP_link | /World/Cube": 0.5752076707205576,
+        "/World/Robot/right_middle_DIP_link | /World/Cube": 0.24665537858120784,
+        "/World/Robot/right_ring_DIP_link | /World/Cube": 0.014398185696679564,
+        "/World/Robot/left_ring_DIP_link | /World/Cube": 0.014816134425956749
+      },
+      "kind": "traditional_side_teacher",
+      "elapsed_s": 82.3746820790002
+    },
+    {
+      "seed": 4201,
+      "candidate": 1,
+      "width": 0.104,
+      "offset": 0.025,
+      "steps": 1200,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 1200,
+        "max_joint_velocity_rad_s": 10.000007629394531,
+        "max_position_error_rad": 0.1932370662689209,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      },
+      "controller_failure": null,
+      "max_height_m": 7.974767684937323e-05,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "contact_pairs": {
+        "/World/Cube | /World/Table/geometry/mesh": 26.74407568662545,
+        "/World/Robot/left_middle_DIP_link | /World/Cube": 0.6165737355427259,
+        "/World/Robot/right_middle_DIP_link | /World/Cube": 0.190789049998508,
+        "/World/Robot/right_ring_DIP_link | /World/Cube": 0.0033067543809947005,
+        "/World/Robot/left_ring_DIP_link | /World/Cube": 0.007568828904628199
+      },
+      "kind": "traditional_side_teacher",
+      "elapsed_s": 159.600856310999
+    },
+    {
+      "seed": 4201,
+      "candidate": 2,
+      "width": 0.1,
+      "offset": 0.015,
+      "steps": 1200,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 1193,
+        "max_joint_velocity_rad_s": 10.000003814697266,
+        "max_position_error_rad": 0.19330954551696777,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      },
+      "controller_failure": null,
+      "max_height_m": 0.008570369720458992,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "contact_pairs": {
+        "/World/Cube | /World/Table/geometry/mesh": 26.2545870470643,
+        "/World/Robot/left_middle_DIP_link | /World/Cube": 1.7362201599681024,
+        "/World/Robot/right_middle_DIP_link | /World/Cube": 1.3767003371635576,
+        "/World/Robot/right_ring_DIP_link | /World/Table/geometry/mesh": 0.0,
+        "/World/Robot/right_ring_DIP_link | /World/Cube": 0.07901000338066824,
+        "/World/Robot/left_ring_DIP_link | /World/Cube": 0.09081216303311224
+      },
+      "kind": "traditional_side_teacher",
+      "elapsed_s": 239.56374121499903
+    }
+  ],
+  "accepted": 0,
+  "total": 3,
+  "controller_sha256": "792d5db83a8fab4e201635506f3f5305cebb39817fe40a2ef47f60f46388a017",
+  "config_sha256": "171b28aaca88d392e025e1204e0ce1fed9195080f305d8ee7c1df31f868d11ec",
+  "elapsed_s": 240.0186879310004
+}

@@ -1,0 +1,6 @@
+{
+  "type": "ValueError",
+  "message": "Collision route search failed: Traceback (most recent call last):\n  File \"/home/brainco/rl_cube/revotron_cube_rl/tilt_collision_plan.py\", line 4, in <module>\n    import numpy as np,coal\nModuleNotFoundError: No module named 'coal'\n",
+  "seed": 8101,
+  "traceback": "Traceback (most recent call last):\n  File \"/home/brainco/rl_cube/revotron_cube_rl/tilt_experiment.py\", line 50, in <module>\n    teacher.right_phases,teacher.regrasp_geometry=teacher.planner.regrasp_path(nominal,measured,initial['cube_position'],initial['cube_quaternion_wxyz'])\n                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/brainco/rl_cube/revotron_cube_rl/tilt_regrasp.py\", line 43, in regrasp_path\n    if completed.returncode:raise ValueError('Collision route search failed: '+completed.stderr[-1500:])\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Collision route search failed: Traceback (most recent call last):\n  File \"/home/brainco/rl_cube/revotron_cube_rl/tilt_collision_plan.py\", line 4, in <module>\n    import numpy as np,coal\nModuleNotFoundError: No module named 'coal'\n\n"
+}

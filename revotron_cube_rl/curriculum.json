@@ -1,0 +1,19 @@
+{
+  "promotion": "Manual promotion only after held-out evaluation, never by training reward alone",
+  "holdout_seeds": [101, 202, 303, 404, 505],
+  "stages": [
+    {"id": 0, "task": "RGB/56-DOF/physics integration", "implemented": true, "gate": "Real camera nonconstant; no actor privileged-state leakage; finite states; free cube rests under gravity; zero-action robot stable"},
+    {"id": 1, "task": "tabletop bilateral pickup and hold", "implemented": true, "cube": "26 original cubie meshes, locked layers, free rigid body", "gate": "At least 90/100 held-out randomized episodes: BOTH hands contact cube, >=8cm lift, low speeds, no table support, continuous >=1s; check video and collision integrity"},
+    {"id": 2, "task": "long hold, regrasp and whole-cube reorientation", "implemented": false, "gate": ">=90% held for 5s and rotated to target within 10deg; enforce inter-hand collision and disturbance recovery"},
+    {"id": 3, "task": "unlock free-core cube, one face +/-90deg", "implemented": false, "gate": "First validate free-core passive joint stability; then >=90% trials within 5deg, other-layer drift <5deg, no explosion/teleport, contact-only turning"},
+    {"id": 4, "task": "successive turns on two perpendicular faces", "implemented": false, "gate": ">=80% complete both turns without dropping; inspect cubie centers and orientation against discrete expected permutation"},
+    {"id": 5, "task": "vision facelet state estimation + active scan", "implemented": false, "gate": "Read all 54 facelets by repositioning cube; validate legal cube state and confidence; no simulator facelet input at inference"},
+    {"id": 6, "task": "short scrambles to full 3x3 solve", "implemented": false, "gate": "Planner consumes only visual state; command-conditioned manipulation policy executes and visually verifies each move; 1/2/5/10/20-move scramble evaluation separately"}
+  ],
+  "later_costs": {
+    "regrasp": "penalize loss of all support, joint speed, effort, inter-hand collision and time; reward contact distribution and object pose accuracy",
+    "face_turn": "reward decrease in target-layer angle error, penalize non-target-layer drift, center displacement and drop; success only from measured cubie transforms",
+    "solve": "minimize executed move count/time/recovery attempts; discrete planner supplies moves, RL controls physical execution",
+    "vision": "reject low-confidence or physically impossible facelet states; collect additional views instead of reading hidden state"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "kind": "pure_state_policy_evaluation",
+  "split": "development",
+  "trials": [
+    {
+      "seed": 4101,
+      "split": "development",
+      "kind": "pure_state_policy",
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 467,
+        "max_joint_velocity_rad_s": 2.0550570487976074,
+        "max_position_error_rad": 0.027724266052246094,
+        "dropped": false,
+        "continuous_hold_seconds": 1.0
+      },
+      "steps": 549,
+      "max_height_m": 0.11551278495788575,
+      "robot_table_impulse_sum": 0.0
+    },
+    {
+      "seed": 4102,
+      "split": "development",
+      "kind": "pure_state_policy",
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 797,
+        "max_joint_velocity_rad_s": 10.00000286102295,
+        "max_position_error_rad": 0.056154608726501465,
+        "dropped": false,
+        "continuous_hold_seconds": 0.1
+      },
+      "steps": 900,
+      "max_height_m": 0.11576050186157227,
+      "robot_table_impulse_sum": 0.0
+    },
+    {
+      "seed": 4103,
+      "split": "development",
+      "kind": "pure_state_policy",
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 871,
+        "max_joint_velocity_rad_s": 3.9207441806793213,
+        "max_position_error_rad": 0.03677278012037277,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      },
+      "steps": 900,
+      "max_height_m": 0.029072877407073983,
+      "robot_table_impulse_sum": 0.0
+    }
+  ],
+  "accepted": 1,
+  "total": 3,
+  "elapsed_s": 79.86887134300014,
+  "checkpoint_sha256": "7b9d53ca91fa9524b388b75ad37b3f2e36f5286f89a6f4dec41b27ce5e628a8e",
+  "actor_observation": "privileged simulator state, own control history, initial cube position and clock; no teacher actions"
+}

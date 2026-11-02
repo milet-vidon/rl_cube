@@ -1,0 +1,53 @@
+{
+  "kind": "BC_training_only",
+  "history": [
+    {
+      "epoch": 1,
+      "training_loss": 45.622535319937086,
+      "elapsed_s": 0.05379415100105689
+    },
+    {
+      "epoch": 100,
+      "training_loss": 0.01284562851023479,
+      "elapsed_s": 1.4706628460007778
+    },
+    {
+      "epoch": 200,
+      "training_loss": 0.008283072715284119,
+      "elapsed_s": 2.855677994000871
+    },
+    {
+      "epoch": 300,
+      "training_loss": 0.006110161831259714,
+      "elapsed_s": 4.252075809001326
+    },
+    {
+      "epoch": 400,
+      "training_loss": 0.005323148159473552,
+      "elapsed_s": 5.640985098001693
+    },
+    {
+      "epoch": 500,
+      "training_loss": 0.005180393178938384,
+      "elapsed_s": 7.015569482000501
+    },
+    {
+      "epoch": 600,
+      "training_loss": 0.005156512661620819,
+      "elapsed_s": 8.390635161000318
+    }
+  ],
+  "task_success_claim": false,
+  "training_seeds": [
+    4001,
+    4002,
+    4003,
+    4004,
+    4005,
+    4006,
+    4007,
+    4008
+  ],
+  "checkpoint_sha256": "9729631b903fd47c58139e31ea0f5879d3c531f67f0fe5ddcbc0188361d41865",
+  "elapsed_s": 8.398632035001356
+}

@@ -1,0 +1,149 @@
+{
+  "trials": [
+    {
+      "seed": 6101,
+      "kind": "BC_waypoint_network_with_contact_supervisor",
+      "split": "test",
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 321,
+        "max_joint_velocity_rad_s": 1.6645681858062744,
+        "max_position_error_rad": 0.025357484817504883,
+        "dropped": false,
+        "continuous_hold_seconds": 3.0
+      },
+      "controller_failure": null,
+      "max_height_m": 0.11378258132934571,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "returned_after_any_lift": false,
+      "steps": 452,
+      "initial_xyz": [
+        0.4901460111141205,
+        -0.006882438901811838,
+        0.9285000562667847
+      ]
+    },
+    {
+      "seed": 6102,
+      "kind": "BC_waypoint_network_with_contact_supervisor",
+      "split": "test",
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 322,
+        "max_joint_velocity_rad_s": 2.25685715675354,
+        "max_position_error_rad": 0.025356769561767578,
+        "dropped": false,
+        "continuous_hold_seconds": 3.0
+      },
+      "controller_failure": null,
+      "max_height_m": 0.11257844829559327,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "returned_after_any_lift": false,
+      "steps": 454,
+      "initial_xyz": [
+        0.4841996133327484,
+        0.010738997720181942,
+        0.9284999966621399
+      ]
+    },
+    {
+      "seed": 6103,
+      "kind": "BC_waypoint_network_with_contact_supervisor",
+      "split": "test",
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 321,
+        "max_joint_velocity_rad_s": 2.2473933696746826,
+        "max_position_error_rad": 0.02535688877105713,
+        "dropped": false,
+        "continuous_hold_seconds": 3.0
+      },
+      "controller_failure": null,
+      "max_height_m": 0.11070602798461915,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "returned_after_any_lift": false,
+      "steps": 454,
+      "initial_xyz": [
+        0.4816039204597473,
+        -0.008292320184409618,
+        0.9284999966621399
+      ]
+    },
+    {
+      "seed": 6104,
+      "kind": "BC_waypoint_network_with_contact_supervisor",
+      "split": "test",
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 320,
+        "max_joint_velocity_rad_s": 2.731768846511841,
+        "max_position_error_rad": 0.025357306003570557,
+        "dropped": false,
+        "continuous_hold_seconds": 3.0
+      },
+      "controller_failure": null,
+      "max_height_m": 0.11415964031219483,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "returned_after_any_lift": false,
+      "steps": 454,
+      "initial_xyz": [
+        0.48826906085014343,
+        -0.005121814087033272,
+        0.9285000562667847
+      ]
+    },
+    {
+      "seed": 6105,
+      "kind": "BC_waypoint_network_with_contact_supervisor",
+      "split": "test",
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 328,
+        "max_joint_velocity_rad_s": 2.521106004714966,
+        "max_position_error_rad": 0.02805018424987793,
+        "dropped": false,
+        "continuous_hold_seconds": 0.43333333333333335
+      },
+      "controller_failure": "lift_contact_lost",
+      "max_height_m": 0.10268669986724854,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "returned_after_any_lift": true,
+      "steps": 401,
+      "initial_xyz": [
+        0.46626386046409607,
+        -0.001447657705284655,
+        0.9284999966621399
+      ]
+    }
+  ],
+  "accepted": 4,
+  "total": 5,
+  "checkpoint_sha256": "b5d67408ae2b8cb3f862a9c0d7017ea53e5ac2d827434cff40374871735001d7",
+  "elapsed_s": 122.71493105199988,
+  "split": "test",
+  "runtime_teacher_or_IK": false,
+  "pure_end_to_end_PPO": false
+}

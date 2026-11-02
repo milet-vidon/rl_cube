@@ -1,0 +1,628 @@
+{
+  "kind": "state_PPO",
+  "iterations": [
+    {
+      "iteration": 0,
+      "critic_warmup": true,
+      "loss": {
+        "value": 0.0023679635487496853,
+        "surrogate": 1.0736286640167236e-05,
+        "entropy": -178.428955078125
+      },
+      "actor_delta": 0.0,
+      "completed_episodes": 0,
+      "accepted_episodes": 0,
+      "elapsed_s": 21.694985223000913
+    },
+    {
+      "iteration": 1,
+      "critic_warmup": true,
+      "loss": {
+        "value": 0.001692496589384973,
+        "surrogate": -4.132627509534359e-05,
+        "entropy": -178.428955078125
+      },
+      "actor_delta": 0.0,
+      "completed_episodes": 1,
+      "accepted_episodes": 0,
+      "elapsed_s": 40.71323954900072
+    },
+    {
+      "iteration": 2,
+      "critic_warmup": true,
+      "loss": {
+        "value": 0.002319809835171327,
+        "surrogate": -7.334165275096893e-06,
+        "entropy": -178.428955078125
+      },
+      "actor_delta": 0.0,
+      "completed_episodes": 2,
+      "accepted_episodes": 0,
+      "elapsed_s": 62.31925940700057
+    },
+    {
+      "iteration": 3,
+      "critic_warmup": true,
+      "loss": {
+        "value": 0.002381869562668726,
+        "surrogate": 2.7907313778996468e-05,
+        "entropy": -178.428955078125
+      },
+      "actor_delta": 0.0,
+      "completed_episodes": 2,
+      "accepted_episodes": 0,
+      "elapsed_s": 81.32702119600071
+    },
+    {
+      "iteration": 4,
+      "critic_warmup": false,
+      "loss": {
+        "value": 0.001669831486651674,
+        "surrogate": 0.08664461970329285,
+        "entropy": -178.4290008544922
+      },
+      "actor_delta": 2.3718923330307007e-05,
+      "completed_episodes": 3,
+      "accepted_episodes": 0,
+      "elapsed_s": 99.86427675100094
+    },
+    {
+      "iteration": 5,
+      "critic_warmup": false,
+      "loss": {
+        "value": 0.0030768590222578496,
+        "surrogate": 0.04215178563026711,
+        "entropy": -178.42904090881348
+      },
+      "actor_delta": 1.8494203686714172e-05,
+      "completed_episodes": 4,
+      "accepted_episodes": 0,
+      "elapsed_s": 121.54974172500079
+    },
+    {
+      "iteration": 6,
+      "critic_warmup": false,
+      "loss": {
+        "value": 0.002860653796233237,
+        "surrogate": 0.014801067009102553,
+        "entropy": -178.42905616760254
+      },
+      "actor_delta": 1.7488375306129456e-05,
+      "completed_episodes": 4,
+      "accepted_episodes": 0,
+      "elapsed_s": 140.4423895559994
+    },
+    {
+      "iteration": 7,
+      "critic_warmup": false,
+      "loss": {
+        "value": 0.0016066906682681292,
+        "surrogate": 0.013835450467013288,
+        "entropy": -178.4290657043457
+      },
+      "actor_delta": 1.8190592527389526e-05,
+      "completed_episodes": 5,
+      "accepted_episodes": 0,
+      "elapsed_s": 159.2995322200004
+    },
+    {
+      "iteration": 8,
+      "critic_warmup": false,
+      "loss": {
+        "value": 0.002339277372811921,
+        "surrogate": 0.01104925200343132,
+        "entropy": -178.42910385131836
+      },
+      "actor_delta": 1.7173122614622116e-05,
+      "completed_episodes": 6,
+      "accepted_episodes": 0,
+      "elapsed_s": 180.95906981100052
+    },
+    {
+      "iteration": 9,
+      "critic_warmup": false,
+      "loss": {
+        "value": 0.0024580520403105766,
+        "surrogate": 0.0014264641213230789,
+        "entropy": -178.42916870117188
+      },
+      "actor_delta": 2.1481886506080627e-05,
+      "completed_episodes": 6,
+      "accepted_episodes": 0,
+      "elapsed_s": 200.0653716050001
+    },
+    {
+      "iteration": 10,
+      "critic_warmup": false,
+      "loss": {
+        "value": 0.00161875864432659,
+        "surrogate": 0.01223760680295527,
+        "entropy": -178.42917251586914
+      },
+      "actor_delta": 2.0138919353485107e-05,
+      "completed_episodes": 7,
+      "accepted_episodes": 0,
+      "elapsed_s": 219.11295178399996
+    },
+    {
+      "iteration": 11,
+      "critic_warmup": false,
+      "loss": {
+        "value": 0.002221854985691607,
+        "surrogate": 0.008717631222680211,
+        "entropy": -178.4292163848877
+      },
+      "actor_delta": 1.7369166016578674e-05,
+      "completed_episodes": 8,
+      "accepted_episodes": 0,
+      "elapsed_s": 240.80389008299971
+    },
+    {
+      "iteration": 12,
+      "critic_warmup": false,
+      "loss": {
+        "value": 0.0024382730189245194,
+        "surrogate": 0.008740522433072329,
+        "entropy": -178.42923545837402
+      },
+      "actor_delta": 2.4187378585338593e-05,
+      "completed_episodes": 8,
+      "accepted_episodes": 0,
+      "elapsed_s": 260.09433782999986
+    },
+    {
+      "iteration": 13,
+      "critic_warmup": false,
+      "loss": {
+        "value": 0.06632757093757391,
+        "surrogate": 0.009554049000144005,
+        "entropy": -178.4292449951172
+      },
+      "actor_delta": 1.7305836081504822e-05,
+      "completed_episodes": 9,
+      "accepted_episodes": 0,
+      "elapsed_s": 278.67596382900047
+    },
+    {
+      "iteration": 14,
+      "critic_warmup": false,
+      "loss": {
+        "value": 0.002418067248072475,
+        "surrogate": 0.012565471988637,
+        "entropy": -178.4292449951172
+      },
+      "actor_delta": 1.985207200050354e-05,
+      "completed_episodes": 10,
+      "accepted_episodes": 0,
+      "elapsed_s": 299.9356233210001
+    },
+    {
+      "iteration": 15,
+      "critic_warmup": false,
+      "loss": {
+        "value": 0.002100319921737537,
+        "surrogate": 0.0070129415253177285,
+        "entropy": -178.4292278289795
+      },
+      "actor_delta": 2.1366868168115616e-05,
+      "completed_episodes": 10,
+      "accepted_episodes": 0,
+      "elapsed_s": 319.4842841030004
+    },
+    {
+      "iteration": 16,
+      "critic_warmup": false,
+      "loss": {
+        "value": 0.06384358322247863,
+        "surrogate": 0.006073202122934163,
+        "entropy": -178.4291648864746
+      },
+      "actor_delta": 2.0839273929595947e-05,
+      "completed_episodes": 11,
+      "accepted_episodes": 0,
+      "elapsed_s": 338.3245195470008
+    },
+    {
+      "iteration": 17,
+      "critic_warmup": false,
+      "loss": {
+        "value": 0.0026205770700471476,
+        "surrogate": 0.014292526106146397,
+        "entropy": -178.42915534973145
+      },
+      "actor_delta": 2.7002417482435703e-05,
+      "completed_episodes": 12,
+      "accepted_episodes": 0,
+      "elapsed_s": 359.9045487629992
+    },
+    {
+      "iteration": 18,
+      "critic_warmup": false,
+      "loss": {
+        "value": 0.002078278601402417,
+        "surrogate": 0.016049376456066966,
+        "entropy": -178.42914581298828
+      },
+      "actor_delta": 2.5313347578048706e-05,
+      "completed_episodes": 12,
+      "accepted_episodes": 0,
+      "elapsed_s": 379.5255096100009
+    },
+    {
+      "iteration": 19,
+      "critic_warmup": false,
+      "loss": {
+        "value": 0.0017026978894136846,
+        "surrogate": 0.0114060053601861,
+        "entropy": -178.42914009094238
+      },
+      "actor_delta": 1.683458685874939e-05,
+      "completed_episodes": 13,
+      "accepted_episodes": 0,
+      "elapsed_s": 398.31797976300004
+    },
+    {
+      "iteration": 20,
+      "critic_warmup": false,
+      "loss": {
+        "value": 0.002304256850038655,
+        "surrogate": 0.017058338620699942,
+        "entropy": -178.42912101745605
+      },
+      "actor_delta": 1.8477439880371094e-05,
+      "completed_episodes": 14,
+      "accepted_episodes": 0,
+      "elapsed_s": 419.6312638069994
+    },
+    {
+      "iteration": 21,
+      "critic_warmup": false,
+      "loss": {
+        "value": 0.0020276797731639817,
+        "surrogate": 0.005621753218747472,
+        "entropy": -178.42911529541016
+      },
+      "actor_delta": 2.0680949091911316e-05,
+      "completed_episodes": 14,
+      "accepted_episodes": 0,
+      "elapsed_s": 439.10202545799984
+    },
+    {
+      "iteration": 22,
+      "critic_warmup": false,
+      "loss": {
+        "value": 0.001808731147320941,
+        "surrogate": 0.004895202349871397,
+        "entropy": -178.42915153503418
+      },
+      "actor_delta": 2.2679567337036133e-05,
+      "completed_episodes": 15,
+      "accepted_episodes": 0,
+      "elapsed_s": 458.3855268219995
+    },
+    {
+      "iteration": 23,
+      "critic_warmup": false,
+      "loss": {
+        "value": 0.0024661493953317404,
+        "surrogate": 0.012131958501413465,
+        "entropy": -178.42914390563965
+      },
+      "actor_delta": 2.3966655135154724e-05,
+      "completed_episodes": 16,
+      "accepted_episodes": 0,
+      "elapsed_s": 479.77432749999934
+    }
+  ],
+  "episodes": [
+    {
+      "episode": 0,
+      "seed": 4001,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 889,
+        "max_joint_velocity_rad_s": 3.321981191635132,
+        "max_position_error_rad": 0.05866341292858124,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      }
+    },
+    {
+      "episode": 1,
+      "seed": 4002,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 888,
+        "max_joint_velocity_rad_s": 10.000000953674316,
+        "max_position_error_rad": 0.041071414947509766,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      }
+    },
+    {
+      "episode": 2,
+      "seed": 4003,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 891,
+        "max_joint_velocity_rad_s": 5.417353630065918,
+        "max_position_error_rad": 0.0630483627319336,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      }
+    },
+    {
+      "episode": 3,
+      "seed": 4004,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 879,
+        "max_joint_velocity_rad_s": 10.000015258789062,
+        "max_position_error_rad": 0.06122863292694092,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      }
+    },
+    {
+      "episode": 4,
+      "seed": 4005,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 889,
+        "max_joint_velocity_rad_s": 9.999996185302734,
+        "max_position_error_rad": 0.03643941879272461,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      }
+    },
+    {
+      "episode": 5,
+      "seed": 4006,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 881,
+        "max_joint_velocity_rad_s": 3.639669179916382,
+        "max_position_error_rad": 0.04048764705657959,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      }
+    },
+    {
+      "episode": 6,
+      "seed": 4007,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 884,
+        "max_joint_velocity_rad_s": 5.6533074378967285,
+        "max_position_error_rad": 0.04693511128425598,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      }
+    },
+    {
+      "episode": 7,
+      "seed": 4008,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 885,
+        "max_joint_velocity_rad_s": 3.1208600997924805,
+        "max_position_error_rad": 0.04902791976928711,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      }
+    },
+    {
+      "episode": 8,
+      "seed": 4001,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "hard_limit",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 1,
+        "cube_table_contact_steps": 862,
+        "max_joint_velocity_rad_s": 10.000003814697266,
+        "max_position_error_rad": 0.05256936699151993,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      }
+    },
+    {
+      "episode": 9,
+      "seed": 4002,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 889,
+        "max_joint_velocity_rad_s": 7.260170936584473,
+        "max_position_error_rad": 0.05926632881164551,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      }
+    },
+    {
+      "episode": 10,
+      "seed": 4003,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "hard_limit",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 1,
+        "cube_table_contact_steps": 873,
+        "max_joint_velocity_rad_s": 10.000001907348633,
+        "max_position_error_rad": 0.0638197511434555,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      }
+    },
+    {
+      "episode": 11,
+      "seed": 4004,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 873,
+        "max_joint_velocity_rad_s": 3.9856553077697754,
+        "max_position_error_rad": 0.04098784923553467,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      }
+    },
+    {
+      "episode": 12,
+      "seed": 4005,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 897,
+        "max_joint_velocity_rad_s": 7.895697593688965,
+        "max_position_error_rad": 0.03847837448120117,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      }
+    },
+    {
+      "episode": 13,
+      "seed": 4006,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 890,
+        "max_joint_velocity_rad_s": 2.1770777702331543,
+        "max_position_error_rad": 0.0464763343334198,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      }
+    },
+    {
+      "episode": 14,
+      "seed": 4007,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 892,
+        "max_joint_velocity_rad_s": 9.999655723571777,
+        "max_position_error_rad": 0.04919806122779846,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      }
+    },
+    {
+      "episode": 15,
+      "seed": 4008,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 897,
+        "max_joint_velocity_rad_s": 5.184750080108643,
+        "max_position_error_rad": 0.05264484882354736,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      }
+    }
+  ],
+  "task_success_claim": false,
+  "checkpoint_sha256": "7c5ad1b4381d60609d5a08c35e9a4943075979b58444c2d99cb9e12e479451c4",
+  "elapsed_s": 479.7956928950007
+}

@@ -1,0 +1,108 @@
+{
+  "trials": [
+    {
+      "seed": 4201,
+      "candidate": 0,
+      "width": 0.068,
+      "offset": 0.015,
+      "steps": 281,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "robot_table_contact",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 281,
+        "max_joint_velocity_rad_s": 0.7771456837654114,
+        "max_position_error_rad": 0.034451425075531006,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      },
+      "controller_failure": null,
+      "max_height_m": 1.1587142945135298e-07,
+      "robot_table_impulse_sum_Ns": 0.0012621815787883049,
+      "contact_pairs": {
+        "/World/Cube | /World/Table/geometry/mesh": 6.316639706733922,
+        "/World/Robot/left_ring_DIP_link | /World/Table/geometry/mesh": 0.0012621815787883049,
+        "/World/Robot/right_ring_DIP_link | /World/Table/geometry/mesh": 0.0
+      },
+      "kind": "traditional_side_teacher",
+      "elapsed_s": 17.685034819000066
+    },
+    {
+      "seed": 4201,
+      "candidate": 1,
+      "width": 0.062,
+      "offset": 0.015,
+      "steps": 269,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "robot_table_contact",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 269,
+        "max_joint_velocity_rad_s": 0.7771456241607666,
+        "max_position_error_rad": 0.03501486778259277,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      },
+      "controller_failure": null,
+      "max_height_m": 5.6266784675962356e-08,
+      "robot_table_impulse_sum_Ns": 0.011938808272922022,
+      "contact_pairs": {
+        "/World/Cube | /World/Table/geometry/mesh": 6.047834216334527,
+        "/World/Robot/left_ring_DIP_link | /World/Table/geometry/mesh": 0.011938808272922022,
+        "/World/Robot/right_ring_DIP_link | /World/Table/geometry/mesh": 0.0
+      },
+      "kind": "traditional_side_teacher",
+      "elapsed_s": 31.819308289999753
+    },
+    {
+      "seed": 4201,
+      "candidate": 2,
+      "width": 0.056,
+      "offset": 0.015,
+      "steps": 263,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "robot_table_contact",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 263,
+        "max_joint_velocity_rad_s": 0.7771458625793457,
+        "max_position_error_rad": 0.03479969501495361,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      },
+      "controller_failure": null,
+      "max_height_m": -3.3378600994282692e-09,
+      "robot_table_impulse_sum_Ns": 0.014561776108945145,
+      "contact_pairs": {
+        "/World/Cube | /World/Table/geometry/mesh": 5.891073469737095,
+        "/World/Robot/left_ring_DIP_link | /World/Table/geometry/mesh": 0.014561776108945145,
+        "/World/Robot/right_ring_DIP_link | /World/Table/geometry/mesh": 0.0
+      },
+      "kind": "traditional_side_teacher",
+      "elapsed_s": 45.753899343999365
+    }
+  ],
+  "accepted": 0,
+  "total": 3,
+  "controller_sha256": "5e024dd9fc09629928ce41001f2075e8266f00dfba2bf8eeb3a7542446ae0e5f",
+  "config_sha256": "171b28aaca88d392e025e1204e0ce1fed9195080f305d8ee7c1df31f868d11ec",
+  "elapsed_s": 45.853125559000546
+}

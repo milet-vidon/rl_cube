@@ -1,0 +1,23 @@
+{
+  "trials": [
+    {
+      "seed": 8101,
+      "accepted": false,
+      "tilt_only_accepted": false,
+      "right_regrasp_validated": false,
+      "steps": 1225,
+      "failure": "safety_gate",
+      "self_contact_impulse_sum_Ns": 0.01892721075326009,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "final_tilt_error_deg": 1.7295728671424533,
+      "tilt_hold_seconds": 0.0,
+      "right_hold_seconds": 0.0,
+      "final_self_pairs": {
+        "/World/Robot/right_index_PIP_link | /World/Robot/Link7_L": 0.01892721075326009
+      }
+    }
+  ],
+  "accepted": 0,
+  "total": 1,
+  "elapsed_s": 94.96463879999646
+}

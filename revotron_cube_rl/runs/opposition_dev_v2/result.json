@@ -1,0 +1,51 @@
+{
+  "kind": "experimental_traditional_teacher",
+  "trials": [
+    {
+      "seed": 7101,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "independent_contact_hold_gate",
+          "robot_self_contact",
+          "thumb_four_finger_topology"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 167,
+        "max_joint_velocity_rad_s": 0.5764774084091187,
+        "max_position_error_rad": 0.01873534917831421,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      },
+      "opposition": {
+        "passed": false,
+        "main_hand": "left",
+        "support_hand": "right",
+        "hold_contact_coverage": {
+          "thumb": 0.0,
+          "index": 0.0,
+          "middle": 0.0,
+          "ring": 0.0,
+          "little": 0.0
+        },
+        "required_thumb_coverage": 0.9,
+        "required_each_four_finger_coverage": 0.5
+      },
+      "controller_failure": null,
+      "max_height_m": 1.754760742267436e-07,
+      "steps": 167,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "self_contact_impulse_sum_Ns": 0.0029911010956555867,
+      "contact_pairs": {
+        "/World/Cube | /World/Table/geometry/mesh": 3.7407218702488256
+      }
+    }
+  ],
+  "accepted": 0,
+  "total": 1,
+  "elapsed_s": 14.434315575002984,
+  "promoted_for_learning": false
+}

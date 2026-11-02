@@ -1,0 +1,84 @@
+{
+  "runtime_versions": {
+    "isaacsim": "6.2.0.0",
+    "isaaclab": "3.0.0",
+    "torch": "2.11.0+cu130",
+    "rsl-rl-lib": "5.5.1"
+  },
+  "mode": "evaluate",
+  "seed": 19,
+  "real_rgb": true,
+  "action_dim": 56,
+  "action_gain": 1.0,
+  "initial_action_clip": 1.0,
+  "initial_action_steps": 0,
+  "config_sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+  "iterations": [
+    {
+      "iteration": 0,
+      "mean_reward": -0.002218975540017709,
+      "loss": {},
+      "actor_parameter_max_delta": 0.0,
+      "successes": 0,
+      "episodes": 0,
+      "elapsed_s": 1.952544927597046
+    }
+  ],
+  "task_success_claim": false,
+  "privileged_actor_leak_max": 0.0,
+  "black_image_action_delta": 0.014697352424263954,
+  "steps_total": 16,
+  "successes": 0,
+  "episodes": 0,
+  "elapsed_s": 1.956678867340088,
+  "contact_events": 1296,
+  "last_metrics": {
+    "height_m": -3.3378600994282692e-09,
+    "bilateral_contact": false,
+    "contact_impulse": [
+      0.0,
+      0.0
+    ],
+    "table_impulse": 0.022397512114265966,
+    "robot_table_impulse": 0.0,
+    "hold_steps": 0,
+    "success": false,
+    "drop": false,
+    "reward": -0.002256496192842424,
+    "terms": {
+      "reach": 0.4026995144107978,
+      "bilateral_contact": 0.0,
+      "lift": 0.0,
+      "hold": 0.0,
+      "hold_progress": 0.0,
+      "success_once": 0.0,
+      "action_rate": 2.040005143977286e-11,
+      "joint_speed": 1.4643892427557148e-06,
+      "drop": 0.0,
+      "timeout": 0.0,
+      "terminal": 0.0,
+      "potential": 0.08053990288215956,
+      "raw_potential": 0.08053990288215956,
+      "raw_component": {
+        "reach": 0.08053990288215956,
+        "bilateral_contact": 0.0,
+        "lift": 0.0,
+        "hold_progress": 0.0
+      },
+      "potential_difference": -0.0002564947283511809,
+      "step_penalty": -0.002,
+      "success_bonus": 0.0,
+      "drop_penalty": -0.0,
+      "action_rate_penalty": -1.020002571988643e-13,
+      "joint_speed_penalty": -1.4643892427557149e-09
+    },
+    "cube_position": [
+      0.4776113033294678,
+      0.012776065617799759,
+      0.9284999966621399
+    ],
+    "linear_speed": 0.0005925120203755796,
+    "angular_speed": 0.0156343262642622
+  },
+  "status": "completed"
+}

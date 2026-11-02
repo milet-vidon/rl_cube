@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "scope": "method transfer to Revo3/Tianji; not hardware or paper-result replication",
+  "stage": "staged_teacher_safety",
+  "development_seeds": [17, 23],
+  "heldout_seeds": [3101, 3102, 3103, 3104, 3105],
+  "heldout_reuse_rule": "After inspecting failures, used seeds become development seeds; preregister a fresh heldout set before further tuning.",
+  "teacher_parameters": {"grasp": "staged_parallel", "width": 0.096, "pregrasp_scale": 0.35, "approach_height": 0.068},
+  "gates": {"robot_table_impulse_sum_max_Ns": 0.000001, "required_heldout_success_rate": 1.0, "minimum_heldout_episodes": 5, "arm_soft_limit_hit_steps_max": 0, "hard_limit_violation_tolerance_rad": 0.0001},
+  "report_categories": ["traditional_teacher", "teacher_policy_mixture", "state_policy", "visual_actor", "post_ppo_visual_actor"],
+  "later_stages": ["state_pickup", "state_single_face", "pbt", "visual_distillation", "two_distinct_face_turns", "cube_planner", "sim_to_real"],
+  "pbt_population": 8,
+  "pbt_execution": "blocked until state baseline; hardware concurrency must be measured separately from population size",
+  "turn_sequence": ["U+90", "R-90"],
+  "real_robot_execution": "not configured; requires calibrated hardware and a separate execution session"
+}

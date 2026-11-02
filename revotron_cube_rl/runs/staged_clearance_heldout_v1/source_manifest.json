@@ -1,0 +1,18 @@
+{
+  "captured_after_execution": true,
+  "note": "Controller/environment/safety/reward/kinematics unchanged during validation. Sweep elapsed timer was changed from time.time to monotonic after validation; prior logs retain original values.",
+  "sha256": {
+    "config.json": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+    "transfer_protocol.json": "ad8a48b933b0b0998ee31aa33d8ceb3375ed44aa757dcaae901275d059e15ddd",
+    "environment.py": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7",
+    "traditional_controller.py": "8894fcffbd5f176f0ccb9b6f67fcfba924cb875bf513f82f382793e09f1c8ee5",
+    "joint_safety.py": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887",
+    "acceptance.py": "8a09cfb4c087e06a2fada695cb5caeab68d32eabbf494fbec0eee69a855fa248",
+    "isaac_compat.py": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825",
+    "kinematics.py": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212",
+    "rewards.py": "6262c617137f505e75a2037c3736d4179e7ac9de62f0d7046a0914647926d70d",
+    "stage_gate.py": "9608548bf57b9af44d8ef0108f2c6f532906c517b3380d021bd8c494321414f5",
+    "audit_teacher.py": "d4868609a9d09b30577069a9bc753dcbdbf1d9f6de90301dbc6841d69750890a",
+    "sweep_controller.py": "5c4cb0bfdb4f1260f492bbb16c7b024200d622964f17cdd5b316f6a5ba87e52e"
+  }
+}

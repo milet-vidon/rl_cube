@@ -1,0 +1,20 @@
+{
+  "teacher_gate_sha256": "c9ab518de477cd3ff27fe5219e925161ca7ae4f62712a62a2bd1b290d81098e8",
+  "validated_code_sha256": {
+    "config.json": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+    "transfer_protocol.json": "ad8a48b933b0b0998ee31aa33d8ceb3375ed44aa757dcaae901275d059e15ddd",
+    "traditional_controller.py": "8894fcffbd5f176f0ccb9b6f67fcfba924cb875bf513f82f382793e09f1c8ee5",
+    "environment.py": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7",
+    "joint_safety.py": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887",
+    "acceptance.py": "8a09cfb4c087e06a2fada695cb5caeab68d32eabbf494fbec0eee69a855fa248",
+    "isaac_compat.py": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825"
+  },
+  "assets_sha256": {
+    "/home/brainco/rl_cube/revotron_revo3/source/revotron_system/usd/revotron_bimanual_revo3_56dof.usd": "c066a65ff5ac77a8fb0a5fb3658c71f151b64777cdc9a8f66a0739d4033170a2",
+    "/home/brainco/rl_cube/revotron_revo3/source/revotron_system/urdf/revotron_bimanual_revo3_56dof.urdf": "598cc4cc94a37e35517eba4e450b3a3b334214549c7e196bf3f1332940e71325",
+    "/home/brainco/rl_cube/isaac_mujoco_cube/upstream/mujoco_cube-main/cube_3x3x3.xml": "b7b32a4a8624241817aafcbdba20217b7250fb9c570440af6fbdcf5ec084c023",
+    "/home/brainco/rl_cube/isaac_mujoco_cube/upstream/mujoco_cube-main/assets/sticker.png": "278454a3391b00b997c70f1e3e40f38014e620df9426943d7197191c0338f506"
+  },
+  "soft_limit_config_sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+  "rsl_compat_sha256": "dbfc9c34e07d90eb4fc87421fe29eb9958af98f8c87af5d799be5fa9aff89d4b"
+}

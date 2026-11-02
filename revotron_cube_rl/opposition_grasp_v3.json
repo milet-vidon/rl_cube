@@ -1,0 +1,120 @@
+{
+  "center_palm": [
+    0.05903708190983429,
+    0.003913467160545763,
+    0.13159864877915345
+  ],
+  "cube_rotation_palm": [
+    [
+      0.896233269224069,
+      -0.4435830555103941,
+      0.0
+    ],
+    [
+      0.4435830555103941,
+      0.896233269224069,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.9999999999999999
+    ]
+  ],
+  "clearance_m": -0.0005,
+  "contact_geometry": "convex collision mesh support vertices",
+  "joint_targets": {
+    "left_thumb_CMP_joint": 0.3975205328591971,
+    "left_thumb_CMR_joint": 0.5960672042531465,
+    "left_thumb_MCP_joint": 0.6167098091151516,
+    "left_thumb_PIP_joint": 1.2870321396411954,
+    "left_thumb_DIP_joint": 1.087939971466285,
+    "left_index_MPR_joint": -0.08988800966064521,
+    "left_index_MCP_joint": 0.415999584538148,
+    "left_index_PIP_joint": 0.617126445521512,
+    "left_index_DIP_joint": 0.8279805599497482,
+    "left_middle_MPR_joint": -0.045453798906755986,
+    "left_middle_MCP_joint": 0.7669414661883568,
+    "left_middle_PIP_joint": 0.41040102606987167,
+    "left_middle_DIP_joint": 0.42008642782023464,
+    "left_ring_MPR_joint": 0.008662794398270165,
+    "left_ring_MCP_joint": 0.7147162632378448,
+    "left_ring_PIP_joint": 0.47710532203629563,
+    "left_ring_DIP_joint": 0.0925993473017851,
+    "left_little_MPR_joint": 0.07291976127104155,
+    "left_little_MCP_joint": 0.5731520284154265,
+    "left_little_PIP_joint": 0.26366650754172444,
+    "left_little_DIP_joint": 0.037489951195886245
+  },
+  "max_tip_error_m": 0.00017837091862314637,
+  "errors_m": {
+    "thumb": 3.245962567514714e-05,
+    "index": 0.00017837091862314637,
+    "middle": 2.611685638085129e-05,
+    "ring": 9.735487687987515e-06,
+    "little": 0.0001711225083712686
+  },
+  "face_points": {
+    "thumb": [
+      -0.01792495607784303,
+      -0.018064600381337913,
+      -0.02766790555251065
+    ],
+    "index": [
+      -0.02472032805162449,
+      -0.025979410481309688,
+      0.028187751303788974
+    ],
+    "middle": [
+      0.00046349110178509415,
+      -0.013827517026242285,
+      0.02795661269578503
+    ],
+    "ring": [
+      0.0025199045513032035,
+      0.019295212668160134,
+      0.027847918731353113
+    ],
+    "little": [
+      -0.00782781109884429,
+      0.024831019523141047,
+      0.02767368047656368
+    ]
+  },
+  "cost": 0.0024408179178535172,
+  "evaluations": 38,
+  "kind": "kinematic_only",
+  "frame_roll_deg": 90.0,
+  "main_hand": "left",
+  "support_hand": "right",
+  "open_joint_targets": {
+    "left_thumb_CMP_joint": 0.3975205328591971,
+    "left_thumb_CMR_joint": 0.5960672042531465,
+    "left_thumb_MCP_joint": 0.6167098091151516,
+    "left_thumb_PIP_joint": 1.1370321396411955,
+    "left_thumb_DIP_joint": 1.087939971466285,
+    "left_index_MPR_joint": -0.08988800966064521,
+    "left_index_MCP_joint": 0.335999584538148,
+    "left_index_PIP_joint": 0.617126445521512,
+    "left_index_DIP_joint": 0.7779805599497481,
+    "left_middle_MPR_joint": -0.045453798906755986,
+    "left_middle_MCP_joint": 0.6869414661883568,
+    "left_middle_PIP_joint": 0.41040102606987167,
+    "left_middle_DIP_joint": 0.37008642782023465,
+    "left_ring_MPR_joint": 0.008662794398270165,
+    "left_ring_MCP_joint": 0.6347162632378448,
+    "left_ring_PIP_joint": 0.47710532203629563,
+    "left_ring_DIP_joint": 0.04259934730178509,
+    "left_little_MPR_joint": 0.07291976127104155,
+    "left_little_MCP_joint": 0.49315202841542644,
+    "left_little_PIP_joint": 0.26366650754172444,
+    "left_little_DIP_joint": 0.02
+  },
+  "collision_distance_min_m": 0.0006438180429808873,
+  "table_clearance_min_m": 0.004970129688301211,
+  "optimization_evaluations": 21,
+  "elapsed_s": 1.0713964019996638,
+  "physics_verified": false,
+  "preshape_path_clearance_m": 0.00015418390003002898,
+  "closing_path_clearance_m": -0.00018604452629890703
+}

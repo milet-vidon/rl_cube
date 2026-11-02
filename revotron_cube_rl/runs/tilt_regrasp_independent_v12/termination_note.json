@@ -1,0 +1,9 @@
+{
+  "reason": "Stopped after independent seed 8201 exposed right-arm IK reach boundary; preserve failure and reserve a fresh evaluation cohort after repair.",
+  "completed_failed_seeds": [
+    8201
+  ],
+  "interrupted_seed": 8202,
+  "unexecuted_seed": 8203,
+  "future_eval_seeds_will_differ": true
+}

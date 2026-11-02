@@ -1,0 +1,9 @@
+{
+  "revolute_joints": 56,
+  "joint_names_match": true,
+  "articulation_roots": [
+    "/revotron_bimanual/root_joint"
+  ],
+  "meshes": 387,
+  "validation": "USD structure and references; no robot physics rollout or control validation"
+}

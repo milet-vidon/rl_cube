@@ -1,0 +1,29 @@
+{
+  "name": "tilt_regrasp_regression_v13",
+  "seeds": "8201",
+  "shift": "-0.12,-0.08,0",
+  "record": false,
+  "regrasp": true,
+  "development_resume": null,
+  "contact_only": false,
+  "kind": "whole_cube_tilt_regrasp",
+  "eligible_independent_evaluation": true,
+  "source_sha256": {
+    "tilt_regrasp.py": "d5949ba82f142e0fa193e7314a6c1425f05c91b5a541b5a47e4f1a0ac95f7a76",
+    "tilt_collision_plan.py": "cd456e46e0a0083aa0a59af2eac55033f6c94946c39248d51f38dc335617a0a7",
+    "tilt_experiment.py": "356985e2c5039deb29a08af59361ebb9adf2c801c206b3039f9141613f4b6843",
+    "tilt_audit.py": "57ff304500abcc58b92fa25908259438793ddc91bab0b93ecb6d05a70085d3eb",
+    "opposition_teacher.py": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1",
+    "opposition_feedback.py": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883",
+    "proximal_planner.py": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16",
+    "opposition_grasp_v20.json": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a",
+    "config.json": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+    "environment.py": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7",
+    "joint_safety.py": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887",
+    "kinematics.py": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212",
+    "isaac_compat.py": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825",
+    "finger_contact_audit.py": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0",
+    "self_contact_audit.py": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c"
+  },
+  "right_regrasp_validated": false
+}

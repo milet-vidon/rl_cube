@@ -1,0 +1,126 @@
+状态快照：2026-11-01T14:12:15.795567+00:00
+当前阶段：传统控制已具备拿起基线，向真实胸部 RGB 策略和 RSL-RL PPO 迁移。
+
+传统控制（标准门槛）：8/8，最大抬升 11.54 cm；双侧接触、连续低速 1 秒。
+传统控制（额外未示范种子）：5/5，要求线速度 <0.02 m/s、角速度 <0.3 rad/s、连续保持 3 秒。
+两组验证的机器人-桌面累计接触冲量：0 N s。
+初始魔方 XY 各随机 ±15 mm，偏航 ±0.15 rad；这些结果不能推及整个桌面或实机。
+传统教师使用初始魔方真值和 IK/PD；控制全部 56 个关节，当前实测主要双侧中指/无名指受力。
+
+示范预训练：completed，按完整 episode 留出，critic 未预训练。
+独立闭环评估：状态 completed，成功 0/2。
+反馈修正后策略：成功 0/1；无桌面支撑且双侧接触的最大抬升 1.49 cm，共 14 个控制步。
+第二轮 DAgger：3 个混合教师回合成功，新增查询 1173 条；合并数据 4299 条。
+第二轮 BC：选中第 184 轮，holdout MSE 0.00039100873832119084。纯策略评估 0/3；第二轮 PPO 后单回合 0/1。
+第三轮 beta=0.5 DAgger：3 个混合教师回合成功，新增查询 1172 条；合并训练集 6253 条。BC 选中第 1 轮，holdout MSE 0.00029051585745867576；seed=601 纯策略 0/3。
+第四轮新教师基线+前三轮 query：合并 9378 条、24 个 episode；BC 选中第 99 轮，holdout MSE 0.00022873983232707268；seed=901 纯策略 0/3，三段均未接触。
+第五轮 beta=0.3 DAgger：3 个混合教师回合成功，新增查询 1174 条；合并数据 10552 条。
+第五轮 RGB+本体去噪 BC：warmstart 选中第 41 轮，原始 holdout MSE 0.00039255147070080975；seed=1021 纯策略 0/3，一段有 132 个双侧接触步但 clean bilateral 高度 0、机器人-桌面累计冲量约 246.6 N s。
+第五轮从零初始化 RGB+本体去噪 BC：选中第 99 轮，holdout MSE 0.0005459883076967425；seed=1103 纯策略 0/3，最高抬升 1.76 cm 但三段 clean bilateral 高度均为 0，机器人-桌面累计冲量约 3693 N s。
+动作幅值诊断：全程 gain=0.5 仍停在远处；前90步 clip=0.12 也未接触，说明需要改视觉表示/绝对目标或阶段控制，而非继续整体缩放。
+显式位置 round6：胸部 RGB 只经红色目标分割提取 6 维位置/尺度特征；beta=0.6 DAgger 3/3 混合回合成功，新增 1173 条；BC holdout MSE 0.0009710012514830887，纯策略 seed=1501 为 0/1，robot-table impulse 约 89.5 N s，未达成功门槛。
+显式位置 round7：beta=0.4 DAgger 3/3 混合回合成功，新增 1190 条；BC holdout MSE 0.0019021630000712907。纯策略尚未据此宣称成功。
+绝对 56 关节目标 round8：将策略输出改为绝对关节目标，再由运行时转成 PD 增量；BC 选中第 146 轮，holdout 目标 MSE 2.5944921302939264e-05；纯策略 seed=1701 为 0/1，robot-table impulse 约 0.636945678244448 N s。
+绝对目标 DAgGER：beta=0.4（round9）和 beta=0.8（round10）各 3 个混合回合均未达到教师成功门槛，query_successes 分别为 0 和 0；两轮均保留查询数据用于审计，不能视作纯策略成功。
+绝对目标动作损失 round11：直接优化由目标反解出的 PD 动作，BC 选中第 143 轮，holdout action MSE 0.014483176649974247；纯策略 seed=1702 为 0/1，robot-table impulse 约 7.143484838552882 N s。
+绝对目标阶段条件 round12：在 6 维视觉位置特征后加入 episode progress，BC 选中第 147 轮，holdout action MSE 0.02315350649183637；纯策略 seed=1703 为 0/1，robot-table impulse 约 1.9425681828032308 N s，仍未接触并抬升魔方。
+绝对目标 PPO round14：从 round11 actor 出发做 3×600 步、学习率 2e-5、噪声 0.03 的真实 PPO 更新，actor 每轮均发生非零变化但训练回合 0/3；独立评估 seed=1907 为 0/1，robot-table impulse 约 30.50106496922773 N s，未保留为最佳模型。
+阶段周期修复 round15：发现示范 episode 实际长度约 391 步，改为按每个示范 episode 的真实长度归一化并保存 phase_horizon_steps=391；BC 选中第 173 轮，holdout action MSE 0.019647211403105096；纯策略 seed=1913 为 0/1，robot-table impulse 约 4.47699148384897 N s。
+open-loop phase round16：去掉全部本体觉、只用位置和阶段输入的离线拟合明显较差，holdout action MSE 2.538872687657364；未进入 Isaac 闭环评估。
+阶段+初始位置 kNN teacher round19：使用真实胸部 RGB 提取的 6 维位置/尺度特征，锁存初始位置并以 episode phase 检索成功示范动作；四个独立种子 1929/1933/1937/1941 均达到成功门槛（[1, 1, 1, 1]），成功步为 389/389/408/409，最高抬升约 11.49/11.50/9.25/9.27 cm，均无机器人-桌面冲量。该结果是可复现的视觉检索教师，不是神经网络或 PPO 已学会。
+阶段+初始位置 MLP 蒸馏 round20：holdout action MSE ?，但纯策略 seed=1931 为 0/1；说明当前映射具有近邻检索式的不连续性，不能用普通 MLP 结果替代 kNN teacher。下一步应先用 teacher rollout 扩充访问状态，再做带记忆/RBF 或分段策略蒸馏，最后重新接 PPO。
+状态感知 phase kNN round21：在 RGB 位置+phase 检索上加入 q、qdot、上一执行动作和 target-q 的加权近邻（q_weight=0.5、action_weight=1.0），输出仍为传统 PD 的 56 维动作；seed=1945 纯闭环 1/1，成功帧高度 0.11275750064849854。这是当前推荐的视觉控制教师候选，仍不是神经 PPO 策略。
+转层阶段：`turning_stage_cpu` 已接入 free-core 模型的外部接触门槛，CPU PhysX 中连续 +Z 90° 与 +X 90° 两面均通过；该结果验证层关节/碰撞模型，不等同于 Revo3/Tianji 双手转层，`robot_hand_turning_validated=False`、`rl_turning_trained=False`。
+Linux 迁移静态检查已通过：新增 run_linux.sh、linux_migration_check.py，并将 USD/魔方资产和 PPO 循环的运行路径改为环境变量/平台默认；尚未在本机实际运行 Linux Isaac Sim。
+Actor 输入为真实胸部 RGB + 224 维本体觉，视觉只提取魔方位置/尺度和阶段进度；输出 56 维绝对关节目标，再转为 PD 目标增量；不读取魔方真值。
+当前策略把本体觉协议中的上一动作槽屏蔽，目标误差按单步动作尺度归一化；预处理随 checkpoint 保存。
+PPO 奖励采用折扣一致的潜势差、动作/速度/时间惩罚和一次成功/掉落奖。
+每轮训练后验证，只保留较好的检查点；固定验证种子用于选模型，仍需要独立最终测试。
+低模仿误差、非零图像敏感度、PPO 参数更新均不代表已经学会视觉抓取。
+
+PPO absolute_ppo_round14：completed，已记录 3 次更新，完整环境动作数 1800。
+PPO ppo_v3_check：completed，已记录 10 次更新，完整环境动作数 320。
+PPO visual_iterations\cycle_001_train：completed，已记录 50 次更新，完整环境动作数 3200。
+PPO visual_iterations\cycle_002_train：completed，已记录 50 次更新，完整环境动作数 3200。
+PPO visual_iterations\cycle_003_train：completed，已记录 50 次更新，完整环境动作数 3200。
+PPO visual_iterations_cont1\cycle_001_train：completed，已记录 50 次更新，完整环境动作数 3200。
+PPO visual_iterations_cont1\cycle_002_train：completed，已记录 50 次更新，完整环境动作数 3200。
+PPO visual_iterations_cont1\cycle_003_train：completed，已记录 50 次更新，完整环境动作数 3200。
+PPO visual_ppo_round2：completed，已记录 50 次更新，完整环境动作数 3200。
+循环 visual_iterations：completed；当前 None。最新进度以 runs/visual_iterations/status.json 为准。
+循环 visual_iterations_cont1：completed；当前 None。最新进度以 runs/visual_iterations_cont1/status.json 为准。
+循环 visual_iterations_explore06：aborted；当前 None。最新进度以 runs/visual_iterations_explore06/status.json 为准。
+循环 visual_iterations_probe：aborted；当前 None。最新进度以 runs/visual_iterations_probe/status.json 为准。
+续训队列 visual_iterations_cont1：completed。最新进度以 continuations/visual_iterations_cont1/status.json 为准。
+
+当前魔方是原始 26 块网格组合的自由刚体，内部层锁定；没有在控制中改写魔方位姿或绑定机器人。
+尚未完成：自由核心转层接入、换抓/重定向策略、连续跨面转动、54 色块视觉识别与三阶还原。
+当前结果仅为仿真研究，不是已标定的实机控制器。
+视觉 teacher 可视化回放（seed=1945）：completed，真实胸部 RGB + 状态感知 kNN，600 控制步，1/1 成功；成功时抬升 11.28 cm、连续保持 30 步、机器人-桌面冲量 0。overview_rollout.gif/chest_rollout.gif 和 success PNG 已保存。该结果仍是检索 teacher，不是 PPO。
+双手接触转层 probe：已成功启动 Revo3/Tianji 56DOF + free-core 26 小块场景，但首轮物理接触扫掠超过有界运行窗口，未写入结果；因此 robot_hand_turning_validated=false、rl_turning_trained=false，不能把它算作转层成功。
+
+
+状态快照：2026-11-02T03:17:47+08:00
+用户指定 Revo3 双臂软限位已成为当前配置：J1/J3/J5 ±178°，J2 ±120°，J4 [-145°, +60°]，J5 ±178°，J6 ±60°，J7 ±90°；左右臂各 7 轴均生效。J4 下限与导入 URDF 硬限位存在微小浮点差异，运行时取安全交集。动作每个控制步最多变化 0.04 rad，机械臂速度上限缩放 0.5。
+限位静态审计、USD/PhysX 硬限位一致性、home 姿态检查、Linux 迁移检查、奖励测试和 Python 编译均通过。
+新限位下 state-aware kNN 视觉教师回放：600 步，1/1 成功；这只是教师回放，不是 PPO 学会。
+新限位下 RGB warm-start：`runs/user_softlimit_warmstart`，120 epoch，独立 episode holdout；最佳 epoch 118，holdout MSE 0.003978353386902604，未宣称任务成功。
+新限位下 PPO round1：`runs/user_softlimit_ppo_round1`，40×64=2560 步，4 个 episode，0/4 成功；真实胸部 RGB、56 维动作、PhysX 训练正常，没有 NaN 或限位安全异常。
+PPO round1 独立闭环：`runs/user_softlimit_ppo_round1_eval`，600 步，0/1 成功，最高抬升约 0 m，魔方仍在桌面；rollout GIF 已保存。当前 learned_visual_skill_validated=false。
+
+
+阶段感知 RGB actor：`runs/phase_rgb_warmstart`，显式加入 episode phase 后 holdout MSE 0.0006989993271417916，仍不代表闭环成功。
+阶段感知 RGB actor 独立闭环：`runs/phase_rgb_warmstart_eval`，600 步 0/1，最高抬升约 0 m，机器人-桌面接触冲量约 1.455 N s；该候选不进入 PPO。
+当前结论：离线拟合误差不能替代闭环接触分布；下一轮采用成功 kNN teacher 的在线蒸馏/残差策略，继续保留用户软限位和传统 PD 安全层。
+
+
+Teacher-guided residual PPO round1：20×64=1280 步、2 个 episode，残差缩放 0.1，0/2 成功。
+把残差缩放降到 0.01 的完整闭环仍为 0/1；说明 kNN teacher 的成功接触轨迹对动作偏差很敏感。该分支不作为独立策略，也不继续盲目增大 residual；下一阶段改为接触/phase 门控的 teacher 权重退火蒸馏。
+
+
+抓取 FSM 已加入 `StagedDownwardController`：raise→orient→lower→settle→close→lift→hold；orient/lower/settle 保持预抓姿态，末端误差/速度稳定后才闭合五指和拇指。
+平行 staged seed=17：预抓 35% 可抬升 10.8 cm、保持 30 步，但机器人-桌面冲量 55.64 N s；预抓 50%/65% 分别未抓起，冲量 31.91/17.01 N s，均未晋级 teacher。
+斜抓 12°：当前目标在用户软限位下 IK 不可行，位置误差约 6.83 mm；需要重算接触点和腕部目标后再试。DAgger 默认仍使用 legacy_downward，避免把未通过安全门的 staged 轨迹送进训练。
+
+Linux 迁移材料（2026-11-02）
+已新增 LINUX_MIGRATION.md、MIGRATION_AUDIT_20261102.md 和 linux_env_check.py。run_linux.sh 支持官方 isaaclab.sh -p（ISAACLAB_LAUNCHER）与直接 Isaac Python（ISAACLAB_PYTHON），并提供 check、env-check、smoke、evaluate、train、dagger、sweep、turn 入口。资产通过 REVOTRON_USD_PATH / ISAAC_MUJOCO_CUBE_ROOT 注入，manifest.json 记录迁移文件哈希。
+Windows 侧静态迁移检查、奖励测试 8/8、软限位安全测试和 Python 编译均通过；本机没有 Linux Isaac runtime，因此尚未宣称 Linux 实际启动通过。linux_env_check 在当前 Windows Python 下因缺 Isaac/tensordict/rsl_rl 按预期失败，不能替代 Linux GPU 检查。
+Staged 控制器 sweep_controller.py 现在可显式传入 --pregrasp-scale、--approach-height、--tilt-deg；由于尚无候选同时满足抬升/保持和机器人-桌面冲量门槛，DAgger 默认 teacher 仍保持 legacy_downward。
+
+
+Linux deployment update 2026-11-02:
+Isaac Sim 6.2 / Lab 3.0 conda migration validated. NVIDIA 595.99.02 unchanged.
+64-step real RGB smoke passed. Downward teacher seed 17 passed with 0.1151 m
+lift, 30 hold steps and zero cumulative robot-table impulse.
+PPO 16-step update and independent seed 19 checkpoint reload passed.
+These are framework integration checks; no learned visual grasp or solved-cube
+claim is made. Default launcher: ../run.sh. Details: ../DEPLOYMENT.txt and
+../work/upgrade_6_2/upgrade_status.json.
+
+2026-11-02 方法迁移安全阶段更新：
+staged teacher 的高位预成形/拇指 home/双侧接触门修正后，开发 17/23 为 2/2，独立 3101–3105 为 5/5。
+所有独立回合机器人-桌面冲量、软限位命中、硬限位越界均为 0，抬升 9.21–11.55 cm 并保持 1 秒。
+旧转层探针存在 kinematic Core 和世界系转角误判，已经撤销其转层验证声明。
+dynamic_core_v2 通过独立 480 步被动落体/稳定检查；不代表机器人转层成功。
+未启动 PPO/DAgger。状态单面策略未验收，视觉训练入口按新路线保持关闭。
+详见 METHOD_TRANSFER.txt、pipeline_status.json、runs/staged_clearance_heldout_v1/。
+
+2026-11-02 状态策略训练与独立演示更新：
+安全 teacher 持续保持数据 8/8；BC v4 开发 1/3，独立测试 4201–4205 为 1/5。
+通过回合 seed 4203 抬升 11.49 cm、保持 1 秒；五组均无碰桌/软限位/硬限位违规。
+状态 PPO 完成 24x600=14400 控制步（前4轮 critic 预热），训练 0/16、开发 0/3，未替换 BC。
+未达到稳定抓取阶段验收；视觉策略、转层、复原与实机均未完成。
+完整证据：runs/state_selected_independent_test/；选用权重：runs/state_bc_v4/checkpoint.pt。
+4201–4205 已用于测试，后续调参必须登记新的独立种子。
+
+2026-11-02 自然侧夹更新：BC 关键帧模型 + 接触/到位监督，新 seed 6201–6206：6/6，保持门槛 3 秒。
+侧夹 teacher 独立 5/5；新控制器开发 9/9。运行时无 IK/teacher 动作；不是端到端 PPO 成功声明。
+详见 SIDE_GRASP_TRAINING.txt 和 runs/side_bc_waypoints_v2/independent_test.json。
+
+2026-11-02 Noro-inspired thumb-opposition teacher v20
+Left thumb/corner versus four opposing fingers; right hand supports after lift.
+Development/regression 4/4; fresh independent seeds 7301-7305 5/5.
+Lift 18.54-18.94 cm, 3 s bilateral hold, no table/self contact or soft/hard-limit hit.
+Primary lift uses J1-J4 with nominal J5-J7 fixed. Right J2 planner posture floor -100 deg; original global soft limits unchanged.
+Traditional privileged-state teacher only; no new neural-policy checkpoint or face-turn success.
+See OPPOSITION_TEACHER_RESULT.txt and opposition_gate_certificate.json.

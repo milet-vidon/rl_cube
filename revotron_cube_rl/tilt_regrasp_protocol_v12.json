@@ -1,0 +1,44 @@
+{
+  "created_utc": "2026-11-02T10:42:02.379661+00:00",
+  "method": "state_based_traditional_teacher",
+  "task": "left_pickup_whole_cube_rightward_90deg_tilt_mirrored_right_opposition_hold",
+  "development_seeds": [
+    8101
+  ],
+  "reserved_independent_seeds": [
+    8201,
+    8202,
+    8203
+  ],
+  "reset_distribution": "project reset: xy +/- 0.015 m, yaw +/- 0.15 rad",
+  "shift_after_tilt_m": [
+    -0.12,
+    -0.08,
+    0.0
+  ],
+  "motion": "whole cube Rx(+90 degrees), not a layer turn",
+  "hold_seconds": 3.0,
+  "rotation_error_max_deg": 5.0,
+  "robot_table_impulse_max_Ns": 1e-06,
+  "self_contact_impulse_max_Ns": 1e-06,
+  "soft_hard_limit_hits_allowed": 0,
+  "dropped_allowed": false,
+  "contacts": "thumb versus all four fingers on both hands; post-step face contact audit",
+  "independent_must_start_from_table": true,
+  "resumed_debug_runs_eligible": false,
+  "rrt_seed": 1945,
+  "neural_policy_trained": false,
+  "source_sha256": {
+    "tilt_regrasp.py": "764f7058a9861a285d3baea18a7d4f902d6440db010eb1f119655557fb5d5a1a",
+    "tilt_collision_plan.py": "e8c9b88e91097c4071bf5a1f31e45fb726b30b40e685cdc83d1daa70322ab6e9",
+    "tilt_experiment.py": "356985e2c5039deb29a08af59361ebb9adf2c801c206b3039f9141613f4b6843",
+    "tilt_audit.py": "57ff304500abcc58b92fa25908259438793ddc91bab0b93ecb6d05a70085d3eb",
+    "opposition_teacher.py": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1",
+    "opposition_feedback.py": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883",
+    "opposition_grasp_v20.json": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a",
+    "environment.py": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7",
+    "joint_safety.py": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887",
+    "kinematics.py": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212",
+    "config.json": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4"
+  }
+}

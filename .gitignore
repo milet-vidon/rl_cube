@@ -1,0 +1,11 @@
+/.conda/
+/vendor/
+/work/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+*.log
+# 已提交的历史验收文件继续跟踪；新实验默认留在本机。
+/revotron_cube_rl/runs/

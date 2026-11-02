@@ -1,0 +1,227 @@
+{
+  "trials": [
+    {
+      "seed": 4201,
+      "kind": "BC_waypoint_network_with_contact_supervisor",
+      "split": "development",
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 320,
+        "max_joint_velocity_rad_s": 1.3846304416656494,
+        "max_position_error_rad": 0.025355398654937744,
+        "dropped": false,
+        "continuous_hold_seconds": 3.0
+      },
+      "controller_failure": null,
+      "max_height_m": 0.10950427913665772,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "returned_after_any_lift": false,
+      "steps": 475,
+      "initial_xyz": [
+        0.46767088770866394,
+        0.012486319057643414,
+        0.9285000562667847
+      ]
+    },
+    {
+      "seed": 4202,
+      "kind": "BC_waypoint_network_with_contact_supervisor",
+      "split": "development",
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 321,
+        "max_joint_velocity_rad_s": 2.2457587718963623,
+        "max_position_error_rad": 0.025357425212860107,
+        "dropped": false,
+        "continuous_hold_seconds": 3.0
+      },
+      "controller_failure": null,
+      "max_height_m": 0.11365526580810548,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "returned_after_any_lift": false,
+      "steps": 452,
+      "initial_xyz": [
+        0.48947107791900635,
+        -0.008067785762250423,
+        0.9284999966621399
+      ]
+    },
+    {
+      "seed": 4203,
+      "kind": "BC_waypoint_network_with_contact_supervisor",
+      "split": "development",
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 320,
+        "max_joint_velocity_rad_s": 1.4754905700683594,
+        "max_position_error_rad": 0.025356292724609375,
+        "dropped": false,
+        "continuous_hold_seconds": 3.0
+      },
+      "controller_failure": null,
+      "max_height_m": 0.1142759885787964,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "returned_after_any_lift": false,
+      "steps": 462,
+      "initial_xyz": [
+        0.4741554856300354,
+        0.006029495969414711,
+        0.9284999966621399
+      ]
+    },
+    {
+      "seed": 4204,
+      "kind": "BC_waypoint_network_with_contact_supervisor",
+      "split": "development",
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 318,
+        "max_joint_velocity_rad_s": 1.9968022108078003,
+        "max_position_error_rad": 0.025355875492095947,
+        "dropped": false,
+        "continuous_hold_seconds": 3.0
+      },
+      "controller_failure": null,
+      "max_height_m": 0.11093157196044923,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "returned_after_any_lift": false,
+      "steps": 452,
+      "initial_xyz": [
+        0.46782922744750977,
+        0.004232578910887241,
+        0.9284999966621399
+      ]
+    },
+    {
+      "seed": 4205,
+      "kind": "BC_waypoint_network_with_contact_supervisor",
+      "split": "development",
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 321,
+        "max_joint_velocity_rad_s": 2.153080940246582,
+        "max_position_error_rad": 0.025356948375701904,
+        "dropped": false,
+        "continuous_hold_seconds": 3.0
+      },
+      "controller_failure": null,
+      "max_height_m": 0.11441558265686036,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "returned_after_any_lift": false,
+      "steps": 452,
+      "initial_xyz": [
+        0.48412173986434937,
+        -0.003087075427174568,
+        0.9284999966621399
+      ]
+    },
+    {
+      "seed": 5101,
+      "kind": "BC_waypoint_network_with_contact_supervisor",
+      "split": "development",
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 321,
+        "max_joint_velocity_rad_s": 1.8069815635681152,
+        "max_position_error_rad": 0.025355875492095947,
+        "dropped": false,
+        "continuous_hold_seconds": 3.0
+      },
+      "controller_failure": null,
+      "max_height_m": 0.11169308090209962,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "returned_after_any_lift": true,
+      "steps": 479,
+      "initial_xyz": [
+        0.47296851873397827,
+        0.014330518431961536,
+        0.9285000562667847
+      ]
+    },
+    {
+      "seed": 5102,
+      "kind": "BC_waypoint_network_with_contact_supervisor",
+      "split": "development",
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 321,
+        "max_joint_velocity_rad_s": 1.594162106513977,
+        "max_position_error_rad": 0.02535766363143921,
+        "dropped": false,
+        "continuous_hold_seconds": 3.0
+      },
+      "controller_failure": null,
+      "max_height_m": 0.11358707809448243,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "returned_after_any_lift": false,
+      "steps": 454,
+      "initial_xyz": [
+        0.4948502779006958,
+        -0.012196160852909088,
+        0.9285000562667847
+      ]
+    },
+    {
+      "seed": 5103,
+      "kind": "BC_waypoint_network_with_contact_supervisor",
+      "split": "development",
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 321,
+        "max_joint_velocity_rad_s": 1.2441614866256714,
+        "max_position_error_rad": 0.025356292724609375,
+        "dropped": false,
+        "continuous_hold_seconds": 3.0
+      },
+      "controller_failure": null,
+      "max_height_m": 0.11434536838531495,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "returned_after_any_lift": false,
+      "steps": 454,
+      "initial_xyz": [
+        0.47769320011138916,
+        0.01033507939428091,
+        0.9285000562667847
+      ]
+    }
+  ],
+  "accepted": 8,
+  "total": 8,
+  "checkpoint_sha256": "b5d67408ae2b8cb3f862a9c0d7017ea53e5ac2d827434cff40374871735001d7",
+  "elapsed_s": 198.12244585199915,
+  "split": "development",
+  "runtime_teacher_or_IK": false,
+  "pure_end_to_end_PPO": false
+}

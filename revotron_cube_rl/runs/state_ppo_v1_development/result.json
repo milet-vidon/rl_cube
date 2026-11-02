@@ -1,0 +1,88 @@
+{
+  "kind": "pure_state_policy_evaluation",
+  "split": "development",
+  "trials": [
+    {
+      "seed": 4101,
+      "split": "development",
+      "kind": "pure_state_policy",
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "hard_limit",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 1,
+        "cube_table_contact_steps": 467,
+        "max_joint_velocity_rad_s": 3.20432710647583,
+        "max_position_error_rad": 0.05610761046409607,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      },
+      "steps": 531,
+      "max_height_m": 0.07696491146087647,
+      "robot_table_impulse_sum": 0.0,
+      "returned_to_table_after_lift": false,
+      "drop_flag_definition": "Environment drop flag means below table minus 12 cm or excessive lateral escape; return to tabletop is reported separately."
+    },
+    {
+      "seed": 4102,
+      "split": "development",
+      "kind": "pure_state_policy",
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "hard_limit",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 1,
+        "cube_table_contact_steps": 830,
+        "max_joint_velocity_rad_s": 3.529848337173462,
+        "max_position_error_rad": 0.05560614913702011,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      },
+      "steps": 875,
+      "max_height_m": 0.04279493951797486,
+      "robot_table_impulse_sum": 0.0,
+      "returned_to_table_after_lift": false,
+      "drop_flag_definition": "Environment drop flag means below table minus 12 cm or excessive lateral escape; return to tabletop is reported separately."
+    },
+    {
+      "seed": 4103,
+      "split": "development",
+      "kind": "pure_state_policy",
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 819,
+        "max_joint_velocity_rad_s": 5.078200817108154,
+        "max_position_error_rad": 0.0660199522972107,
+        "dropped": false,
+        "continuous_hold_seconds": 0.03333333333333333
+      },
+      "steps": 900,
+      "max_height_m": 0.09479862117767335,
+      "robot_table_impulse_sum": 0.0,
+      "returned_to_table_after_lift": true,
+      "drop_flag_definition": "Environment drop flag means below table minus 12 cm or excessive lateral escape; return to tabletop is reported separately."
+    }
+  ],
+  "accepted": 0,
+  "total": 3,
+  "elapsed_s": 77.9726532299992,
+  "checkpoint_sha256": "7c5ad1b4381d60609d5a08c35e9a4943075979b58444c2d99cb9e12e479451c4",
+  "actor_observation": "privileged simulator state, own control history, initial cube position and clock; no teacher actions"
+}

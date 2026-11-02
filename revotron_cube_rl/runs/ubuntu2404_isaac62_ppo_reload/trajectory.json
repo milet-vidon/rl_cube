@@ -1,0 +1,802 @@
+[
+  {
+    "iteration": 0,
+    "step": 0,
+    "height_m": -3.3378600994282692e-09,
+    "bilateral_contact": false,
+    "contact_impulse": [
+      0.0,
+      0.0
+    ],
+    "table_impulse": 0.022410485021493187,
+    "robot_table_impulse": 0.0,
+    "hold_steps": 0,
+    "success": false,
+    "drop": false,
+    "reward": -0.002159891951891306,
+    "terms": {
+      "reach": 0.4072481888125356,
+      "bilateral_contact": 0.0,
+      "lift": 0.0,
+      "hold": 0.0,
+      "hold_progress": 0.0,
+      "success_once": 0.0,
+      "action_rate": 4.5819706429028884e-05,
+      "joint_speed": 3.1343202522293723e-07,
+      "drop": 0.0,
+      "timeout": 0.0,
+      "terminal": 0.0,
+      "potential": 0.08144963776250713,
+      "raw_potential": 0.08144963776250713,
+      "raw_component": {
+        "reach": 0.08144963776250713,
+        "bilateral_contact": 0.0,
+        "lift": 0.0,
+        "hold_progress": 0.0
+      },
+      "potential_difference": -0.00015966253992713564,
+      "step_penalty": -0.002,
+      "success_bonus": 0.0,
+      "drop_penalty": -0.0,
+      "action_rate_penalty": -2.2909853214514442e-07,
+      "joint_speed_penalty": -3.134320252229372e-10
+    },
+    "cube_position": [
+      0.4776113033294678,
+      0.012776040472090244,
+      0.9284999966621399
+    ],
+    "linear_speed": 0.0006155273295007646,
+    "angular_speed": 0.012509851716458797
+  },
+  {
+    "iteration": 0,
+    "step": 1,
+    "height_m": -3.3378600994282692e-09,
+    "bilateral_contact": false,
+    "contact_impulse": [
+      0.0,
+      0.0
+    ],
+    "table_impulse": 0.02239733973967847,
+    "robot_table_impulse": 0.0,
+    "hold_steps": 0,
+    "success": false,
+    "drop": false,
+    "reward": -0.00215614707694762,
+    "terms": {
+      "reach": 0.4072820212798503,
+      "bilateral_contact": 0.0,
+      "lift": 0.0,
+      "hold": 0.0,
+      "hold_progress": 0.0,
+      "success_once": 0.0,
+      "action_rate": 6.198718871530673e-09,
+      "joint_speed": 7.309050147341623e-07,
+      "drop": 0.0,
+      "timeout": 0.0,
+      "terminal": 0.0,
+      "potential": 0.08145640425597006,
+      "raw_potential": 0.08145640425597006,
+      "raw_component": {
+        "reach": 0.08145640425597006,
+        "bilateral_contact": 0.0,
+        "lift": 0.0,
+        "hold_progress": 0.0
+      },
+      "potential_difference": -0.00015614631504901055,
+      "step_penalty": -0.002,
+      "success_bonus": 0.0,
+      "drop_penalty": -0.0,
+      "action_rate_penalty": -3.099359435765336e-11,
+      "joint_speed_penalty": -7.309050147341623e-10
+    },
+    "cube_position": [
+      0.4776113033294678,
+      0.012776045128703117,
+      0.9284999966621399
+    ],
+    "linear_speed": 0.000674080045428127,
+    "angular_speed": 0.0167120099067688
+  },
+  {
+    "iteration": 0,
+    "step": 2,
+    "height_m": -3.3378600994282692e-09,
+    "bilateral_contact": false,
+    "contact_impulse": [
+      0.0,
+      0.0
+    ],
+    "table_impulse": 0.022400955608217425,
+    "robot_table_impulse": 0.0,
+    "hold_steps": 0,
+    "success": false,
+    "drop": false,
+    "reward": -0.0021566922500526,
+    "terms": {
+      "reach": 0.40731319114886955,
+      "bilateral_contact": 0.0,
+      "lift": 0.0,
+      "hold": 0.0,
+      "hold_progress": 0.0,
+      "success_once": 0.0,
+      "action_rate": 1.6351182907659023e-10,
+      "joint_speed": 9.465793482377194e-07,
+      "drop": 0.0,
+      "timeout": 0.0,
+      "terminal": 0.0,
+      "potential": 0.08146263822977391,
+      "raw_potential": 0.08146263822977391,
+      "raw_component": {
+        "reach": 0.08146263822977391,
+        "bilateral_contact": 0.0,
+        "lift": 0.0,
+        "hold_progress": 0.0
+      },
+      "potential_difference": -0.00015669130265569264,
+      "step_penalty": -0.002,
+      "success_bonus": 0.0,
+      "drop_penalty": -0.0,
+      "action_rate_penalty": -8.175591453829512e-13,
+      "joint_speed_penalty": -9.465793482377195e-10
+    },
+    "cube_position": [
+      0.4776113033294678,
+      0.012776043266057968,
+      0.9284999966621399
+    ],
+    "linear_speed": 0.00066943938145414,
+    "angular_speed": 0.016263486817479134
+  },
+  {
+    "iteration": 0,
+    "step": 3,
+    "height_m": -3.3378600994282692e-09,
+    "bilateral_contact": false,
+    "contact_impulse": [
+      0.0,
+      0.0
+    ],
+    "table_impulse": 0.022399152816037066,
+    "robot_table_impulse": 0.0,
+    "hold_steps": 0,
+    "success": false,
+    "drop": false,
+    "reward": -0.002164728021320358,
+    "terms": {
+      "reach": 0.40730416409787046,
+      "bilateral_contact": 0.0,
+      "lift": 0.0,
+      "hold": 0.0,
+      "hold_progress": 0.0,
+      "success_once": 0.0,
+      "action_rate": 7.70296465502085e-11,
+      "joint_speed": 9.45096246596222e-07,
+      "drop": 0.0,
+      "timeout": 0.0,
+      "terminal": 0.0,
+      "potential": 0.0814608328195741,
+      "raw_potential": 0.0814608328195741,
+      "raw_component": {
+        "reach": 0.0814608328195741,
+        "bilateral_contact": 0.0,
+        "lift": 0.0,
+        "hold_progress": 0.0
+      },
+      "potential_difference": -0.0001647270758389635,
+      "step_penalty": -0.002,
+      "success_bonus": 0.0,
+      "drop_penalty": -0.0,
+      "action_rate_penalty": -3.851482327510425e-13,
+      "joint_speed_penalty": -9.450962465962221e-10
+    },
+    "cube_position": [
+      0.4776113033294678,
+      0.01277604978531599,
+      0.9284999966621399
+    ],
+    "linear_speed": 0.0006117441225796938,
+    "angular_speed": 0.016209790483117104
+  },
+  {
+    "iteration": 0,
+    "step": 4,
+    "height_m": -3.3378600994282692e-09,
+    "bilateral_contact": false,
+    "contact_impulse": [
+      0.0,
+      0.0
+    ],
+    "table_impulse": 0.02239909647621475,
+    "robot_table_impulse": 0.0,
+    "hold_steps": 0,
+    "success": false,
+    "drop": false,
+    "reward": -0.0021787276928466664,
+    "terms": {
+      "reach": 0.40722497989729284,
+      "bilateral_contact": 0.0,
+      "lift": 0.0,
+      "hold": 0.0,
+      "hold_progress": 0.0,
+      "success_once": 0.0,
+      "action_rate": 7.508018512458747e-11,
+      "joint_speed": 8.603968240095128e-07,
+      "drop": 0.0,
+      "timeout": 0.0,
+      "terminal": 0.0,
+      "potential": 0.08144499597945858,
+      "raw_potential": 0.08144499597945858,
+      "raw_component": {
+        "reach": 0.08144499597945858,
+        "bilateral_contact": 0.0,
+        "lift": 0.0,
+        "hold_progress": 0.0
+      },
+      "potential_difference": -0.00017872683207444118,
+      "step_penalty": -0.002,
+      "success_bonus": 0.0,
+      "drop_penalty": -0.0,
+      "action_rate_penalty": -3.7540092562293735e-13,
+      "joint_speed_penalty": -8.603968240095128e-10
+    },
+    "cube_position": [
+      0.4776113033294678,
+      0.01277604978531599,
+      0.9284999966621399
+    ],
+    "linear_speed": 0.0006111184484325349,
+    "angular_speed": 0.016189437359571457
+  },
+  {
+    "iteration": 0,
+    "step": 5,
+    "height_m": -3.3378600994282692e-09,
+    "bilateral_contact": false,
+    "contact_impulse": [
+      0.0,
+      0.0
+    ],
+    "table_impulse": 0.022390072472193805,
+    "robot_table_impulse": 0.0,
+    "hold_steps": 0,
+    "success": false,
+    "drop": false,
+    "reward": -0.0021968725078305752,
+    "terms": {
+      "reach": 0.40705473104150597,
+      "bilateral_contact": 0.0,
+      "lift": 0.0,
+      "hold": 0.0,
+      "hold_progress": 0.0,
+      "success_once": 0.0,
+      "action_rate": 5.6774546869364784e-11,
+      "joint_speed": 8.439727139375464e-07,
+      "drop": 0.0,
+      "timeout": 0.0,
+      "terminal": 0.0,
+      "potential": 0.0814109462083012,
+      "raw_potential": 0.0814109462083012,
+      "raw_component": {
+        "reach": 0.0814109462083012,
+        "bilateral_contact": 0.0,
+        "lift": 0.0,
+        "hold_progress": 0.0
+      },
+      "potential_difference": -0.00019687166357398866,
+      "step_penalty": -0.002,
+      "success_bonus": 0.0,
+      "drop_penalty": -0.0,
+      "action_rate_penalty": -2.838727343468239e-13,
+      "joint_speed_penalty": -8.439727139375464e-10
+    },
+    "cube_position": [
+      0.4776112735271454,
+      0.012776060029864311,
+      0.9284999966621399
+    ],
+    "linear_speed": 0.0007881763158366084,
+    "angular_speed": 0.013145215809345245
+  },
+  {
+    "iteration": 0,
+    "step": 6,
+    "height_m": -3.3378600994282692e-09,
+    "bilateral_contact": false,
+    "contact_impulse": [
+      0.0,
+      0.0
+    ],
+    "table_impulse": 0.02241239438519842,
+    "robot_table_impulse": 0.0,
+    "hold_steps": 0,
+    "success": false,
+    "drop": false,
+    "reward": -0.002213271218159851,
+    "terms": {
+      "reach": 0.40680198354560054,
+      "bilateral_contact": 0.0,
+      "lift": 0.0,
+      "hold": 0.0,
+      "hold_progress": 0.0,
+      "success_once": 0.0,
+      "action_rate": 1.8599538575969632e-11,
+      "joint_speed": 9.254675319425587e-07,
+      "drop": 0.0,
+      "timeout": 0.0,
+      "terminal": 0.0,
+      "potential": 0.08136039670912011,
+      "raw_potential": 0.08136039670912011,
+      "raw_component": {
+        "reach": 0.08136039670912011,
+        "bilateral_contact": 0.0,
+        "lift": 0.0,
+        "hold_progress": 0.0
+      },
+      "potential_difference": -0.0002132702925993213,
+      "step_penalty": -0.002,
+      "success_bonus": 0.0,
+      "drop_penalty": -0.0,
+      "action_rate_penalty": -9.299769287984817e-14,
+      "joint_speed_penalty": -9.254675319425588e-10
+    },
+    "cube_position": [
+      0.4776112735271454,
+      0.01277610007673502,
+      0.9284999966621399
+    ],
+    "linear_speed": 0.0007042140350677073,
+    "angular_speed": 0.020376045256853104
+  },
+  {
+    "iteration": 0,
+    "step": 7,
+    "height_m": -3.3378600994282692e-09,
+    "bilateral_contact": false,
+    "contact_impulse": [
+      0.0,
+      0.0
+    ],
+    "table_impulse": 0.022399575809216664,
+    "robot_table_impulse": 0.0,
+    "hold_steps": 0,
+    "success": false,
+    "drop": false,
+    "reward": -0.002227935769962806,
+    "terms": {
+      "reach": 0.4064752605959451,
+      "bilateral_contact": 0.0,
+      "lift": 0.0,
+      "hold": 0.0,
+      "hold_progress": 0.0,
+      "success_once": 0.0,
+      "action_rate": 2.938508811278773e-11,
+      "joint_speed": 1.075646423487342e-06,
+      "drop": 0.0,
+      "timeout": 0.0,
+      "terminal": 0.0,
+      "potential": 0.08129505211918903,
+      "raw_potential": 0.08129505211918903,
+      "raw_component": {
+        "reach": 0.08129505211918903,
+        "bilateral_contact": 0.0,
+        "lift": 0.0,
+        "hold_progress": 0.0
+      },
+      "potential_difference": -0.0002279346941694571,
+      "step_penalty": -0.002,
+      "success_bonus": 0.0,
+      "drop_penalty": -0.0,
+      "action_rate_penalty": -1.4692544056393864e-13,
+      "joint_speed_penalty": -1.075646423487342e-09
+    },
+    "cube_position": [
+      0.4776113033294678,
+      0.01277609821408987,
+      0.9284999966621399
+    ],
+    "linear_speed": 0.000632188399322331,
+    "angular_speed": 0.019130133092403412
+  },
+  {
+    "iteration": 0,
+    "step": 8,
+    "height_m": -3.3378600994282692e-09,
+    "bilateral_contact": false,
+    "contact_impulse": [
+      0.0,
+      0.0
+    ],
+    "table_impulse": 0.022399428001281026,
+    "robot_table_impulse": 0.0,
+    "hold_steps": 0,
+    "success": false,
+    "drop": false,
+    "reward": -0.0022387419911238508,
+    "terms": {
+      "reach": 0.40609374443453483,
+      "bilateral_contact": 0.0,
+      "lift": 0.0,
+      "hold": 0.0,
+      "hold_progress": 0.0,
+      "success_once": 0.0,
+      "action_rate": 4.4390529446713956e-11,
+      "joint_speed": 1.2608460338014993e-06,
+      "drop": 0.0,
+      "timeout": 0.0,
+      "terminal": 0.0,
+      "potential": 0.08121874888690697,
+      "raw_potential": 0.08121874888690697,
+      "raw_component": {
+        "reach": 0.08121874888690697,
+        "bilateral_contact": 0.0,
+        "lift": 0.0,
+        "hold_progress": 0.0
+      },
+      "potential_difference": -0.00023874073005586416,
+      "step_penalty": -0.002,
+      "success_bonus": 0.0,
+      "drop_penalty": -0.0,
+      "action_rate_penalty": -2.2195264723356979e-13,
+      "joint_speed_penalty": -1.2608460338014993e-09
+    },
+    "cube_position": [
+      0.4776112735271454,
+      0.012776060029864311,
+      0.9284999966621399
+    ],
+    "linear_speed": 0.0008272339473478496,
+    "angular_speed": 0.01227222103625536
+  },
+  {
+    "iteration": 0,
+    "step": 9,
+    "height_m": -3.3378600994282692e-09,
+    "bilateral_contact": false,
+    "contact_impulse": [
+      0.0,
+      0.0
+    ],
+    "table_impulse": 0.022400432515398666,
+    "robot_table_impulse": 0.0,
+    "hold_steps": 0,
+    "success": false,
+    "drop": false,
+    "reward": -0.0022471070455149333,
+    "terms": {
+      "reach": 0.40566955553324224,
+      "bilateral_contact": 0.0,
+      "lift": 0.0,
+      "hold": 0.0,
+      "hold_progress": 0.0,
+      "success_once": 0.0,
+      "action_rate": 3.398286166356179e-11,
+      "joint_speed": 1.442873212909035e-06,
+      "drop": 0.0,
+      "timeout": 0.0,
+      "terminal": 0.0,
+      "potential": 0.08113391110664846,
+      "raw_potential": 0.08113391110664846,
+      "raw_component": {
+        "reach": 0.08113391110664846,
+        "bilateral_contact": 0.0,
+        "lift": 0.0,
+        "hold_progress": 0.0
+      },
+      "potential_difference": -0.000247105602471806,
+      "step_penalty": -0.002,
+      "success_bonus": 0.0,
+      "drop_penalty": -0.0,
+      "action_rate_penalty": -1.6991430831780897e-13,
+      "joint_speed_penalty": -1.442873212909035e-09
+    },
+    "cube_position": [
+      0.4776112735271454,
+      0.01277609821408987,
+      0.9284999966621399
+    ],
+    "linear_speed": 0.0006406741449609399,
+    "angular_speed": 0.018766317516565323
+  },
+  {
+    "iteration": 0,
+    "step": 10,
+    "height_m": 5.6266784675962356e-08,
+    "bilateral_contact": false,
+    "contact_impulse": [
+      0.0,
+      0.0
+    ],
+    "table_impulse": 0.02239420820747711,
+    "robot_table_impulse": 0.0,
+    "hold_steps": 0,
+    "success": false,
+    "drop": false,
+    "reward": -0.0022533596076273884,
+    "terms": {
+      "reach": 0.40521319177668913,
+      "bilateral_contact": 0.0,
+      "lift": 0.0,
+      "hold": 0.0,
+      "hold_progress": 0.0,
+      "success_once": 0.0,
+      "action_rate": 3.838219672647192e-11,
+      "joint_speed": 1.5794141745573143e-06,
+      "drop": 0.0,
+      "timeout": 0.0,
+      "terminal": 0.0,
+      "potential": 0.08104263835533783,
+      "raw_potential": 0.08104263835533783,
+      "raw_component": {
+        "reach": 0.08104263835533783,
+        "bilateral_contact": 0.0,
+        "lift": 0.0,
+        "hold_progress": 0.0
+      },
+      "potential_difference": -0.0002533580280213027,
+      "step_penalty": -0.002,
+      "success_bonus": 0.0,
+      "drop_penalty": -0.0,
+      "action_rate_penalty": -1.919109836323596e-13,
+      "joint_speed_penalty": -1.5794141745573144e-09
+    },
+    "cube_position": [
+      0.4776112735271454,
+      0.012776101008057594,
+      0.9285000562667847
+    ],
+    "linear_speed": 0.0006342240376397967,
+    "angular_speed": 0.01940811052918434
+  },
+  {
+    "iteration": 0,
+    "step": 11,
+    "height_m": -3.3378600994282692e-09,
+    "bilateral_contact": false,
+    "contact_impulse": [
+      0.0,
+      0.0
+    ],
+    "table_impulse": 0.022399945226682857,
+    "robot_table_impulse": 0.0,
+    "hold_steps": 0,
+    "success": false,
+    "drop": false,
+    "reward": -0.002260384620669537,
+    "terms": {
+      "reach": 0.40472071836632895,
+      "bilateral_contact": 0.0,
+      "lift": 0.0,
+      "hold": 0.0,
+      "hold_progress": 0.0,
+      "success_once": 0.0,
+      "action_rate": 2.831192572050334e-11,
+      "joint_speed": 1.6511094145243987e-06,
+      "drop": 0.0,
+      "timeout": 0.0,
+      "terminal": 0.0,
+      "potential": 0.0809441436732658,
+      "raw_potential": 0.0809441436732658,
+      "raw_component": {
+        "reach": 0.0809441436732658,
+        "bilateral_contact": 0.0,
+        "lift": 0.0,
+        "hold_progress": 0.0
+      },
+      "potential_difference": -0.00026038296941856276,
+      "step_penalty": -0.002,
+      "success_bonus": 0.0,
+      "drop_penalty": -0.0,
+      "action_rate_penalty": -1.415596286025167e-13,
+      "joint_speed_penalty": -1.6511094145243987e-09
+    },
+    "cube_position": [
+      0.477611243724823,
+      0.012776096351444721,
+      0.9284999966621399
+    ],
+    "linear_speed": 0.0007886558887548745,
+    "angular_speed": 0.020351260900497437
+  },
+  {
+    "iteration": 0,
+    "step": 12,
+    "height_m": -3.3378600994282692e-09,
+    "bilateral_contact": false,
+    "contact_impulse": [
+      0.0,
+      0.0
+    ],
+    "table_impulse": 0.02240266652258327,
+    "robot_table_impulse": 0.0,
+    "hold_steps": 0,
+    "success": false,
+    "drop": false,
+    "reward": -0.002265833141063664,
+    "terms": {
+      "reach": 0.40419996091911503,
+      "bilateral_contact": 0.0,
+      "lift": 0.0,
+      "hold": 0.0,
+      "hold_progress": 0.0,
+      "success_once": 0.0,
+      "action_rate": 2.8934256032786543e-11,
+      "joint_speed": 1.6671085631969618e-06,
+      "drop": 0.0,
+      "timeout": 0.0,
+      "terminal": 0.0,
+      "potential": 0.08083999218382301,
+      "raw_potential": 0.08083999218382301,
+      "raw_component": {
+        "reach": 0.08083999218382301,
+        "bilateral_contact": 0.0,
+        "lift": 0.0,
+        "hold_progress": 0.0
+      },
+      "potential_difference": -0.0002658314738104295,
+      "step_penalty": -0.002,
+      "success_bonus": 0.0,
+      "drop_penalty": -0.0,
+      "action_rate_penalty": -1.4467128016393272e-13,
+      "joint_speed_penalty": -1.6671085631969617e-09
+    },
+    "cube_position": [
+      0.4776112735271454,
+      0.012776099145412445,
+      0.9284999966621399
+    ],
+    "linear_speed": 0.0007222111453302205,
+    "angular_speed": 0.02141757868230343
+  },
+  {
+    "iteration": 0,
+    "step": 13,
+    "height_m": -3.3378600994282692e-09,
+    "bilateral_contact": false,
+    "contact_impulse": [
+      0.0,
+      0.0
+    ],
+    "table_impulse": 0.022396893985975615,
+    "robot_table_impulse": 0.0,
+    "hold_steps": 0,
+    "success": false,
+    "drop": false,
+    "reward": -0.0022657178071051804,
+    "terms": {
+      "reach": 0.4036787375560504,
+      "bilateral_contact": 0.0,
+      "lift": 0.0,
+      "hold": 0.0,
+      "hold_progress": 0.0,
+      "success_once": 0.0,
+      "action_rate": 2.6082958709539028e-11,
+      "joint_speed": 1.6393394162150798e-06,
+      "drop": 0.0,
+      "timeout": 0.0,
+      "terminal": 0.0,
+      "potential": 0.08073574751121008,
+      "raw_potential": 0.08073574751121008,
+      "raw_component": {
+        "reach": 0.08073574751121008,
+        "bilateral_contact": 0.0,
+        "lift": 0.0,
+        "hold_progress": 0.0
+      },
+      "potential_difference": -0.0002657161676353492,
+      "step_penalty": -0.002,
+      "success_bonus": 0.0,
+      "drop_penalty": -0.0,
+      "action_rate_penalty": -1.3041479354769513e-13,
+      "joint_speed_penalty": -1.63933941621508e-09
+    },
+    "cube_position": [
+      0.4776112735271454,
+      0.01277607586234808,
+      0.9284999966621399
+    ],
+    "linear_speed": 0.0006108637317083776,
+    "angular_speed": 0.01590932346880436
+  },
+  {
+    "iteration": 0,
+    "step": 14,
+    "height_m": -3.3378600994282692e-09,
+    "bilateral_contact": false,
+    "contact_impulse": [
+      0.0,
+      0.0
+    ],
+    "table_impulse": 0.022402636715533303,
+    "robot_table_impulse": 0.0,
+    "hold_steps": 0,
+    "success": false,
+    "drop": false,
+    "reward": -0.0022617019064806775,
+    "terms": {
+      "reach": 0.4031765890237321,
+      "bilateral_contact": 0.0,
+      "lift": 0.0,
+      "hold": 0.0,
+      "hold_progress": 0.0,
+      "success_once": 0.0,
+      "action_rate": 3.056181349658793e-11,
+      "joint_speed": 1.564254716868163e-06,
+      "drop": 0.0,
+      "timeout": 0.0,
+      "terminal": 0.0,
+      "potential": 0.08063531780474642,
+      "raw_potential": 0.08063531780474642,
+      "raw_component": {
+        "reach": 0.08063531780474642,
+        "bilateral_contact": 0.0,
+        "lift": 0.0,
+        "hold_progress": 0.0
+      },
+      "potential_difference": -0.0002617003420731512,
+      "step_penalty": -0.002,
+      "success_bonus": 0.0,
+      "drop_penalty": -0.0,
+      "action_rate_penalty": -1.5280906748293967e-13,
+      "joint_speed_penalty": -1.564254716868163e-09
+    },
+    "cube_position": [
+      0.4776113033294678,
+      0.01277609821408987,
+      0.9284999966621399
+    ],
+    "linear_speed": 0.0007110313745215535,
+    "angular_speed": 0.02062743529677391
+  },
+  {
+    "iteration": 0,
+    "step": 15,
+    "height_m": -3.3378600994282692e-09,
+    "bilateral_contact": false,
+    "contact_impulse": [
+      0.0,
+      0.0
+    ],
+    "table_impulse": 0.022397512114265966,
+    "robot_table_impulse": 0.0,
+    "hold_steps": 0,
+    "success": false,
+    "drop": false,
+    "reward": -0.002256496192842424,
+    "terms": {
+      "reach": 0.4026995144107978,
+      "bilateral_contact": 0.0,
+      "lift": 0.0,
+      "hold": 0.0,
+      "hold_progress": 0.0,
+      "success_once": 0.0,
+      "action_rate": 2.040005143977286e-11,
+      "joint_speed": 1.4643892427557148e-06,
+      "drop": 0.0,
+      "timeout": 0.0,
+      "terminal": 0.0,
+      "potential": 0.08053990288215956,
+      "raw_potential": 0.08053990288215956,
+      "raw_component": {
+        "reach": 0.08053990288215956,
+        "bilateral_contact": 0.0,
+        "lift": 0.0,
+        "hold_progress": 0.0
+      },
+      "potential_difference": -0.0002564947283511809,
+      "step_penalty": -0.002,
+      "success_bonus": 0.0,
+      "drop_penalty": -0.0,
+      "action_rate_penalty": -1.020002571988643e-13,
+      "joint_speed_penalty": -1.4643892427557149e-09
+    },
+    "cube_position": [
+      0.4776113033294678,
+      0.012776065617799759,
+      0.9284999966621399
+    ],
+    "linear_speed": 0.0005925120203755796,
+    "angular_speed": 0.0156343262642622
+  }
+]

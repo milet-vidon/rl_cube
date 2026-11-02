@@ -1,0 +1,4236 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="revotron_bimanual">
+  <material name="tron_silver_10077c_approx">
+    <color rgba="0.76 0.78 0.80 1" />
+  </material>
+  <material name="tron_cool_gray_11c_approx">
+    <color rgba="0.25 0.26 0.28 1" />
+  </material>
+  <material name="tron_433c_approx">
+    <color rgba="0.12 0.14 0.16 1" />
+  </material>
+  <material name="tron_black_pc">
+    <color rgba="0.025 0.030 0.035 1" />
+  </material>
+  <material name="tron_rear_pc_approx">
+    <color rgba="0.58 0.61 0.64 1" />
+  </material>
+  <material name="tron_light_2985c_approx">
+    <color rgba="0.22 0.78 0.90 1" />
+  </material>
+  <material name="tron_display_white">
+    <color rgba="0.88 0.90 0.92 1" />
+  </material>
+  <material name="tron_emergency_red">
+    <color rgba="0.78 0.025 0.025 1" />
+  </material>
+  <material name="tron_art_50_51_51">
+    <color rgba="0.196000 0.200000 0.200000 1.000000" />
+  </material>
+  <material name="tron_art_222_100_18">
+    <color rgba="0.871000 0.392000 0.071000 1.000000" />
+  </material>
+  <material name="tron_art_237_182_31">
+    <color rgba="0.929000 0.714000 0.122000 1.000000" />
+  </material>
+  <material name="tron_art_26_110_174">
+    <color rgba="0.102000 0.431000 0.682000 1.000000" />
+  </material>
+  <material name="tron_art_135_185_58">
+    <color rgba="0.529000 0.725000 0.227000 1.000000" />
+  </material>
+  <material name="tron_art_32_168_193">
+    <color rgba="0.125000 0.659000 0.757000 1.000000" />
+  </material>
+  <material name="tron_art_23_153_59">
+    <color rgba="0.090000 0.600000 0.231000 1.000000" />
+  </material>
+  <material name="tron_art_217_65_48">
+    <color rgba="0.851000 0.255000 0.188000 1.000000" />
+  </material>
+  <material name="tron_art_255_255_255">
+    <color rgba="1.000000 1.000000 1.000000 1.000000" />
+  </material>
+  <material name="tron_transfer_0">
+    <color rgba="0.1 0.43 0.68 1" />
+  </material>
+  <material name="tron_transfer_1">
+    <color rgba="0.13 0.66 0.76 1" />
+  </material>
+  <material name="tron_transfer_2">
+    <color rgba="0.09 0.6 0.23 1" />
+  </material>
+  <material name="tron_transfer_3">
+    <color rgba="0.53 0.73 0.23 1" />
+  </material>
+  <material name="tron_transfer_4">
+    <color rgba="0.93 0.71 0.12 1" />
+  </material>
+  <material name="tron_transfer_5">
+    <color rgba="0.87 0.39 0.07 1" />
+  </material>
+  <material name="tron_transfer_6">
+    <color rgba="0.85 0.25 0.19 1" />
+  </material>
+  <link name="world" />
+  <link name="base_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.22592 -0.0064003 -0.87338" />
+      <mass value="98.763" />
+      <inertia ixx="12.27388983" ixy="-0.046583573" ixz="-0.069506158" iyy="1.276063803" iyz="0.043562988" izz="5.58237037" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/collision/base_link.STL" />
+      </geometry>
+    </collision>
+    <visual name="base_link__tron_433c_approx">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/base_link__tron_433c_approx.stl" />
+      </geometry>
+      <material name="tron_433c_approx">
+        <color rgba="0.12 0.14 0.16 1" />
+      </material>
+    </visual>
+    <visual name="base_link__tron_cool_gray_11c_approx">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/base_link__tron_cool_gray_11c_approx.stl" />
+      </geometry>
+      <material name="tron_cool_gray_11c_approx">
+        <color rgba="0.25 0.26 0.28 1" />
+      </material>
+    </visual>
+    <visual name="base_link__tron_silver_10077c_approx">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/base_link__tron_silver_10077c_approx.stl" />
+      </geometry>
+      <material name="tron_silver_10077c_approx">
+        <color rgba="0.76 0.78 0.80 1" />
+      </material>
+    </visual>
+    <visual name="base_link__tron_light_2985c_approx">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/base_link__tron_light_2985c_approx.stl" />
+      </geometry>
+      <material name="tron_light_2985c_approx">
+        <color rgba="0.22 0.78 0.90 1" />
+      </material>
+    </visual>
+    <visual name="base_link__tron_black_pc">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/base_link__tron_black_pc.stl" />
+      </geometry>
+      <material name="tron_black_pc">
+        <color rgba="0.025 0.030 0.035 1" />
+      </material>
+    </visual>
+    <visual name="base_link_column_-1_tron_art_222_100_18">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/base_link_column_-1_tron_art_222_100_18.stl" />
+      </geometry>
+      <material name="tron_art_222_100_18">
+        <color rgba="0.871000 0.392000 0.071000 1.000000" />
+      </material>
+    </visual>
+    <visual name="base_link_column_-1_tron_art_237_182_31">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/base_link_column_-1_tron_art_237_182_31.stl" />
+      </geometry>
+      <material name="tron_art_237_182_31">
+        <color rgba="0.929000 0.714000 0.122000 1.000000" />
+      </material>
+    </visual>
+    <visual name="base_link_column_-1_tron_art_26_110_174">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/base_link_column_-1_tron_art_26_110_174.stl" />
+      </geometry>
+      <material name="tron_art_26_110_174">
+        <color rgba="0.102000 0.431000 0.682000 1.000000" />
+      </material>
+    </visual>
+    <visual name="base_link_column_-1_tron_art_135_185_58">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/base_link_column_-1_tron_art_135_185_58.stl" />
+      </geometry>
+      <material name="tron_art_135_185_58">
+        <color rgba="0.529000 0.725000 0.227000 1.000000" />
+      </material>
+    </visual>
+    <visual name="base_link_column_-1_tron_art_32_168_193">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/base_link_column_-1_tron_art_32_168_193.stl" />
+      </geometry>
+      <material name="tron_art_32_168_193">
+        <color rgba="0.125000 0.659000 0.757000 1.000000" />
+      </material>
+    </visual>
+    <visual name="base_link_column_-1_tron_art_23_153_59">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/base_link_column_-1_tron_art_23_153_59.stl" />
+      </geometry>
+      <material name="tron_art_23_153_59">
+        <color rgba="0.090000 0.600000 0.231000 1.000000" />
+      </material>
+    </visual>
+    <visual name="base_link_column_-1_tron_art_217_65_48">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/base_link_column_-1_tron_art_217_65_48.stl" />
+      </geometry>
+      <material name="tron_art_217_65_48">
+        <color rgba="0.851000 0.255000 0.188000 1.000000" />
+      </material>
+    </visual>
+    <visual name="column_logo_ring_-1">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/column_logo_ring_-1.stl" />
+      </geometry>
+      <material name="tron_display_white">
+        <color rgba="0.88 0.90 0.92 1" />
+      </material>
+    </visual>
+    <visual name="base_link_column_1_tron_art_222_100_18">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/base_link_column_1_tron_art_222_100_18.stl" />
+      </geometry>
+      <material name="tron_art_222_100_18">
+        <color rgba="0.871000 0.392000 0.071000 1.000000" />
+      </material>
+    </visual>
+    <visual name="base_link_column_1_tron_art_237_182_31">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/base_link_column_1_tron_art_237_182_31.stl" />
+      </geometry>
+      <material name="tron_art_237_182_31">
+        <color rgba="0.929000 0.714000 0.122000 1.000000" />
+      </material>
+    </visual>
+    <visual name="base_link_column_1_tron_art_26_110_174">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/base_link_column_1_tron_art_26_110_174.stl" />
+      </geometry>
+      <material name="tron_art_26_110_174">
+        <color rgba="0.102000 0.431000 0.682000 1.000000" />
+      </material>
+    </visual>
+    <visual name="base_link_column_1_tron_art_135_185_58">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/base_link_column_1_tron_art_135_185_58.stl" />
+      </geometry>
+      <material name="tron_art_135_185_58">
+        <color rgba="0.529000 0.725000 0.227000 1.000000" />
+      </material>
+    </visual>
+    <visual name="base_link_column_1_tron_art_32_168_193">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/base_link_column_1_tron_art_32_168_193.stl" />
+      </geometry>
+      <material name="tron_art_32_168_193">
+        <color rgba="0.125000 0.659000 0.757000 1.000000" />
+      </material>
+    </visual>
+    <visual name="base_link_column_1_tron_art_23_153_59">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/base_link_column_1_tron_art_23_153_59.stl" />
+      </geometry>
+      <material name="tron_art_23_153_59">
+        <color rgba="0.090000 0.600000 0.231000 1.000000" />
+      </material>
+    </visual>
+    <visual name="base_link_column_1_tron_art_217_65_48">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/base_link_column_1_tron_art_217_65_48.stl" />
+      </geometry>
+      <material name="tron_art_217_65_48">
+        <color rgba="0.851000 0.255000 0.188000 1.000000" />
+      </material>
+    </visual>
+    <visual name="column_logo_ring_1">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/column_logo_ring_1.stl" />
+      </geometry>
+      <material name="tron_display_white">
+        <color rgba="0.88 0.90 0.92 1" />
+      </material>
+    </visual>
+    <visual name="base_link_type_c_-1_0_tron_art_255_255_255">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/base_link_type_c_-1_0_tron_art_255_255_255.stl" />
+      </geometry>
+      <material name="tron_art_255_255_255">
+        <color rgba="1.000000 1.000000 1.000000 1.000000" />
+      </material>
+    </visual>
+    <visual name="base_link_type_c_-1_1_tron_art_255_255_255">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/base_link_type_c_-1_1_tron_art_255_255_255.stl" />
+      </geometry>
+      <material name="tron_art_255_255_255">
+        <color rgba="1.000000 1.000000 1.000000 1.000000" />
+      </material>
+    </visual>
+    <visual name="base_link_type_a_-1_2_tron_art_255_255_255">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/base_link_type_a_-1_2_tron_art_255_255_255.stl" />
+      </geometry>
+      <material name="tron_art_255_255_255">
+        <color rgba="1.000000 1.000000 1.000000 1.000000" />
+      </material>
+    </visual>
+    <visual name="base_link_wan_-1_3_tron_art_255_255_255">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/base_link_wan_-1_3_tron_art_255_255_255.stl" />
+      </geometry>
+      <material name="tron_art_255_255_255">
+        <color rgba="1.000000 1.000000 1.000000 1.000000" />
+      </material>
+    </visual>
+    <visual name="base_link_lan_-1_4_tron_art_255_255_255">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/base_link_lan_-1_4_tron_art_255_255_255.stl" />
+      </geometry>
+      <material name="tron_art_255_255_255">
+        <color rgba="1.000000 1.000000 1.000000 1.000000" />
+      </material>
+    </visual>
+    <visual name="emergency_stop_cap">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/emergency_stop_cap.stl" />
+      </geometry>
+      <material name="tron_emergency_red">
+        <color rgba="0.78 0.025 0.025 1" />
+      </material>
+    </visual>
+    <visual name="power_indicator">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/power_indicator.stl" />
+      </geometry>
+      <material name="tron_light_2985c_approx">
+        <color rgba="0.22 0.78 0.90 1" />
+      </material>
+    </visual>
+    <visual name="column_height_ruler">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/column_height_ruler.stl" />
+      </geometry>
+      <material name="tron_display_white">
+        <color rgba="0.88 0.90 0.92 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="waist_Link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.023776 0.0026557 0.18311" />
+      <mass value="6.6733" />
+      <inertia ixx="0.08797568" ixy="0.00013997" ixz="-0.00096627" iyy="0.07267912" iyz="-2.804E-05" izz="0.04516045" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/collision/waist_pitch_Link.STL" />
+      </geometry>
+    </collision>
+    <visual name="waist_Link__tron_silver_10077c_approx">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/waist_Link__tron_silver_10077c_approx.stl" />
+      </geometry>
+      <material name="tron_silver_10077c_approx">
+        <color rgba="0.76 0.78 0.80 1" />
+      </material>
+    </visual>
+    <visual name="waist_Link__tron_cool_gray_11c_approx">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/waist_Link__tron_cool_gray_11c_approx.stl" />
+      </geometry>
+      <material name="tron_cool_gray_11c_approx">
+        <color rgba="0.25 0.26 0.28 1" />
+      </material>
+    </visual>
+    <visual name="waist_Link_chest_1_tron_art_50_51_51">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/waist_Link_chest_1_tron_art_50_51_51.stl" />
+      </geometry>
+      <material name="tron_art_50_51_51">
+        <color rgba="0.196000 0.200000 0.200000 1.000000" />
+      </material>
+    </visual>
+  </link>
+  <joint name="waist_pitch_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="base_link" />
+    <child link="waist_Link" />
+    </joint>
+  <link name="neck_Link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.010438 -0.0040437 0.040336" />
+      <mass value="0.19858" />
+      <inertia ixx="7.375E-05" ixy="3E-08" ixz="-6.5E-06" iyy="7.51E-05" iyz="-1.43E-06" izz="4.984E-05" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/collision/neck_yaw_Link.STL" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/visual/neck_yaw_Link.STL" />
+      </geometry>
+      <material name="tron_cool_gray_11c_approx">
+        <color rgba="0.25 0.26 0.28 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="neck_yaw_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0.0415 0 0.339" />
+    <parent link="waist_Link" />
+    <child link="neck_Link" />
+    </joint>
+  <link name="head_Link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0070209 0.00047278 0.052183" />
+      <mass value="1.245" />
+      <inertia ixx="0.00326963" ixy="-2.24E-06" ixz="0.0002391" iyy="0.00468723" iyz="4.376E-05" izz="0.00457145" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/collision/neck_pitch_Link.STL" />
+      </geometry>
+    </collision>
+    <visual name="head_Link__tron_silver_10077c_approx">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/head_Link__tron_silver_10077c_approx.stl" />
+      </geometry>
+      <material name="tron_silver_10077c_approx">
+        <color rgba="0.76 0.78 0.80 1" />
+      </material>
+    </visual>
+    <visual name="head_Link__tron_rear_pc_approx">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/head_Link__tron_rear_pc_approx.stl" />
+      </geometry>
+      <material name="tron_rear_pc_approx">
+        <color rgba="0.58 0.61 0.64 1" />
+      </material>
+    </visual>
+    <visual name="head_Link__tron_black_pc">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/head_Link__tron_black_pc.stl" />
+      </geometry>
+      <material name="tron_black_pc">
+        <color rgba="0.025 0.030 0.035 1" />
+      </material>
+    </visual>
+    <visual name="head_Link__tron_cool_gray_11c_approx">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/head_Link__tron_cool_gray_11c_approx.stl" />
+      </geometry>
+      <material name="tron_cool_gray_11c_approx">
+        <color rgba="0.25 0.26 0.28 1" />
+      </material>
+    </visual>
+    <visual name="head_Link__tron_433c_approx">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/head_Link__tron_433c_approx.stl" />
+      </geometry>
+      <material name="tron_433c_approx">
+        <color rgba="0.12 0.14 0.16 1" />
+      </material>
+    </visual>
+    <visual name="head_Link__tron_light_2985c_approx">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/head_Link__tron_light_2985c_approx.stl" />
+      </geometry>
+      <material name="tron_light_2985c_approx">
+        <color rgba="0.22 0.78 0.90 1" />
+      </material>
+    </visual>
+    <visual name="head_display_expression">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/head_display_expression.stl" />
+      </geometry>
+      <material name="tron_display_white">
+        <color rgba="0.88 0.90 0.92 1" />
+      </material>
+    </visual>
+    <visual name="head_Link_brand_-1_tron_art_50_51_51">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/head_Link_brand_-1_tron_art_50_51_51.stl" />
+      </geometry>
+      <material name="tron_art_50_51_51">
+        <color rgba="0.196000 0.200000 0.200000 1.000000" />
+      </material>
+    </visual>
+    <visual name="head_Link_brand_-1_tron_art_222_100_18">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/head_Link_brand_-1_tron_art_222_100_18.stl" />
+      </geometry>
+      <material name="tron_art_222_100_18">
+        <color rgba="0.871000 0.392000 0.071000 1.000000" />
+      </material>
+    </visual>
+    <visual name="head_Link_brand_-1_tron_art_237_182_31">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/head_Link_brand_-1_tron_art_237_182_31.stl" />
+      </geometry>
+      <material name="tron_art_237_182_31">
+        <color rgba="0.929000 0.714000 0.122000 1.000000" />
+      </material>
+    </visual>
+    <visual name="head_Link_brand_-1_tron_art_26_110_174">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/head_Link_brand_-1_tron_art_26_110_174.stl" />
+      </geometry>
+      <material name="tron_art_26_110_174">
+        <color rgba="0.102000 0.431000 0.682000 1.000000" />
+      </material>
+    </visual>
+    <visual name="head_Link_brand_-1_tron_art_135_185_58">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/head_Link_brand_-1_tron_art_135_185_58.stl" />
+      </geometry>
+      <material name="tron_art_135_185_58">
+        <color rgba="0.529000 0.725000 0.227000 1.000000" />
+      </material>
+    </visual>
+    <visual name="head_Link_brand_-1_tron_art_32_168_193">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/head_Link_brand_-1_tron_art_32_168_193.stl" />
+      </geometry>
+      <material name="tron_art_32_168_193">
+        <color rgba="0.125000 0.659000 0.757000 1.000000" />
+      </material>
+    </visual>
+    <visual name="head_Link_brand_-1_tron_art_23_153_59">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/head_Link_brand_-1_tron_art_23_153_59.stl" />
+      </geometry>
+      <material name="tron_art_23_153_59">
+        <color rgba="0.090000 0.600000 0.231000 1.000000" />
+      </material>
+    </visual>
+    <visual name="head_Link_brand_-1_tron_art_217_65_48">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/head_Link_brand_-1_tron_art_217_65_48.stl" />
+      </geometry>
+      <material name="tron_art_217_65_48">
+        <color rgba="0.851000 0.255000 0.188000 1.000000" />
+      </material>
+    </visual>
+    <visual name="head_Link_brand_1_tron_art_50_51_51">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/head_Link_brand_1_tron_art_50_51_51.stl" />
+      </geometry>
+      <material name="tron_art_50_51_51">
+        <color rgba="0.196000 0.200000 0.200000 1.000000" />
+      </material>
+    </visual>
+    <visual name="head_Link_brand_1_tron_art_222_100_18">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/head_Link_brand_1_tron_art_222_100_18.stl" />
+      </geometry>
+      <material name="tron_art_222_100_18">
+        <color rgba="0.871000 0.392000 0.071000 1.000000" />
+      </material>
+    </visual>
+    <visual name="head_Link_brand_1_tron_art_237_182_31">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/head_Link_brand_1_tron_art_237_182_31.stl" />
+      </geometry>
+      <material name="tron_art_237_182_31">
+        <color rgba="0.929000 0.714000 0.122000 1.000000" />
+      </material>
+    </visual>
+    <visual name="head_Link_brand_1_tron_art_26_110_174">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/head_Link_brand_1_tron_art_26_110_174.stl" />
+      </geometry>
+      <material name="tron_art_26_110_174">
+        <color rgba="0.102000 0.431000 0.682000 1.000000" />
+      </material>
+    </visual>
+    <visual name="head_Link_brand_1_tron_art_135_185_58">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/head_Link_brand_1_tron_art_135_185_58.stl" />
+      </geometry>
+      <material name="tron_art_135_185_58">
+        <color rgba="0.529000 0.725000 0.227000 1.000000" />
+      </material>
+    </visual>
+    <visual name="head_Link_brand_1_tron_art_32_168_193">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/head_Link_brand_1_tron_art_32_168_193.stl" />
+      </geometry>
+      <material name="tron_art_32_168_193">
+        <color rgba="0.125000 0.659000 0.757000 1.000000" />
+      </material>
+    </visual>
+    <visual name="head_Link_brand_1_tron_art_23_153_59">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/head_Link_brand_1_tron_art_23_153_59.stl" />
+      </geometry>
+      <material name="tron_art_23_153_59">
+        <color rgba="0.090000 0.600000 0.231000 1.000000" />
+      </material>
+    </visual>
+    <visual name="head_Link_brand_1_tron_art_217_65_48">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/head_Link_brand_1_tron_art_217_65_48.stl" />
+      </geometry>
+      <material name="tron_art_217_65_48">
+        <color rgba="0.851000 0.255000 0.188000 1.000000" />
+      </material>
+    </visual>
+    <visual name="tron_transfer_0">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/tron_transfer_0.stl" />
+      </geometry>
+      <material name="tron_transfer_0">
+        <color rgba="0.1 0.43 0.68 1" />
+      </material>
+    </visual>
+    <visual name="tron_transfer_1">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/tron_transfer_1.stl" />
+      </geometry>
+      <material name="tron_transfer_1">
+        <color rgba="0.13 0.66 0.76 1" />
+      </material>
+    </visual>
+    <visual name="tron_transfer_2">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/tron_transfer_2.stl" />
+      </geometry>
+      <material name="tron_transfer_2">
+        <color rgba="0.09 0.6 0.23 1" />
+      </material>
+    </visual>
+    <visual name="tron_transfer_3">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/tron_transfer_3.stl" />
+      </geometry>
+      <material name="tron_transfer_3">
+        <color rgba="0.53 0.73 0.23 1" />
+      </material>
+    </visual>
+    <visual name="tron_transfer_4">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/tron_transfer_4.stl" />
+      </geometry>
+      <material name="tron_transfer_4">
+        <color rgba="0.93 0.71 0.12 1" />
+      </material>
+    </visual>
+    <visual name="tron_transfer_5">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/tron_transfer_5.stl" />
+      </geometry>
+      <material name="tron_transfer_5">
+        <color rgba="0.87 0.39 0.07 1" />
+      </material>
+    </visual>
+    <visual name="tron_transfer_6">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/body/visual/appearance/tron_transfer_6.stl" />
+      </geometry>
+      <material name="tron_transfer_6">
+        <color rgba="0.85 0.25 0.19 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="head_pitch_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0.0115 0 0.045" />
+    <parent link="neck_Link" />
+    <child link="head_Link" />
+    </joint>
+  <link name="head_oak_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.009928 -0.0001623 -0.0045844" />
+      <mass value="0.10003" />
+      <inertia ixx="8.475E-05" ixy="-2.4E-07" ixz="-1.64E-06" iyy="1.21E-05" iyz="-1.9E-07" izz="8.485E-05" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/collision/Head_Oak_Link.STL" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/visual/Head_Oak_Link.STL" />
+      </geometry>
+      <material name="tron_cool_gray_11c_approx">
+        <color rgba="0.25 0.26 0.28 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="head_oak_joint" type="fixed">
+    <origin rpy="0 0.78539 0" xyz="0.085038 0 0.092986" />
+    <parent link="head_Link" />
+    <child link="head_oak_link" />
+  </joint>
+  <joint name="world_to_base" type="fixed">
+    <parent link="world" />
+    <child link="base_link" />
+    <origin rpy="0 0 0" xyz="0 0 0" />
+  </joint>
+  <link name="Base_L">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00032267 4.798E-05 0.04066353" />
+      <mass value="1.1962" />
+      <inertia ixx="0.00107329" ixy="-1.68E-06" ixz="-1.05E-05" iyy="0.00107003" iyz="-3.43E-06" izz="0.00127315" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/collision/Base_L.STL" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/visual/Base_L.STL" />
+      </geometry>
+      <material name="tron_silver_10077c_approx">
+        <color rgba="0.76 0.78 0.80 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="Link1_L">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00002347 0.00557150 -0.03075998" />
+      <mass value="1.9705" />
+      <inertia ixx="0.00492293" ixy="0.00000550" ixz="0.00000193" iyy="0.00526513" iyz="0.00033232" izz="0.00188107" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/collision/Link1_L.STL" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/visual/Link1_L.STL" />
+      </geometry>
+      <material name="tron_silver_10077c_approx">
+        <color rgba="0.76 0.78 0.80 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="Joint1_L" type="revolute">
+    <origin rpy="0 0 1.5707963" xyz="0 0 0.1745" />
+    <parent link="Base_L" />
+    <child link="Link1_L" />
+    <axis xyz="0 0 1" />
+    <limit effort="108" lower="-3.1067" upper="3.1067" velocity="3.1416" />
+  </joint>
+  <link name="Link2_L">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00013483 0.06170460 0.00950639" />
+      <mass value="2.24398" />
+      <inertia ixx="0.01194933" ixy="0.00000336" ixz="0.00000091" iyy="0.00361581" iyz="-0.00132804" izz="0.01098356" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/collision/Link2_L.STL" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/visual/Link2_L.STL" />
+      </geometry>
+      <material name="tron_silver_10077c_approx">
+        <color rgba="0.76 0.78 0.80 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="Joint2_L" type="revolute">
+    <origin rpy="1.5708 -0.0 0" xyz="0 0 0" />
+    <parent link="Link1_L" />
+    <child link="Link2_L" />
+    <axis xyz="0 0 1" />
+    <limit effort="108" lower="-2.0944" upper="2.0944" velocity="3.1416" />
+  </joint>
+  <link name="Link3_L">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00968562 0.00246599 -0.04627302" />
+      <mass value="1.9242" />
+      <inertia ixx="0.00718224" ixy="0.00004413" ixz="0.00089552" iyy="0.00762563" iyz="0.00022096" izz="0.00178597" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/collision/Link3_L.STL" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/visual/Link3_L.STL" />
+      </geometry>
+      <material name="tron_silver_10077c_approx">
+        <color rgba="0.76 0.78 0.80 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="Joint3_L" type="revolute">
+    <origin rpy="-1.5708 0.0 0" xyz="0 0.287 0" />
+    <parent link="Link2_L" />
+    <child link="Link3_L" />
+    <axis xyz="0 0 1" />
+    <limit effort="66" lower="-3.1067" upper="3.1067" velocity="3.1416" />
+  </joint>
+  <link name="Link4_L">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00850411 -0.04718223 0.00941509" />
+      <mass value="1.6085" />
+      <inertia ixx="0.00580480" ixy="-0.00066669" ixz="-0.00012722" iyy="0.00223807" iyz="0.00070523" izz="0.00533060" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/collision/Link4_L.STL" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/visual/Link4_L.STL" />
+      </geometry>
+      <material name="tron_silver_10077c_approx">
+        <color rgba="0.76 0.78 0.80 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="Joint4_L" type="revolute">
+    <origin rpy="-1.5708 0.0 3.1416" xyz="0.018 0 0" />
+    <parent link="Link3_L" />
+    <child link="Link4_L" />
+    <axis xyz="0 0 1" />
+    <limit effort="66" lower="-2.5307" upper="1.0472" velocity="3.1416" />
+  </joint>
+  <link name="Link5_L">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00051127 0.00101064 -0.11271739" />
+      <mass value="2.0883" />
+      <inertia ixx="0.00626603" ixy="0.00004009" ixz="0.00005338" iyy="0.00564387" iyz="-0.00006193" izz="0.00243632" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/collision/Link5_L.STL" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/visual/Link5_L.STL" />
+      </geometry>
+      <material name="tron_silver_10077c_approx">
+        <color rgba="0.76 0.78 0.80 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="Joint5_L" type="revolute">
+    <origin rpy="-1.5708 0.0 3.1416" xyz="0.018 -0.314 0" />
+    <parent link="Link4_L" />
+    <child link="Link5_L" />
+    <axis xyz="0 0 1" />
+    <limit effort="18" lower="-3.1067" upper="3.1067" velocity="3.1416" />
+  </joint>
+  <link name="Link6_L">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00032659 0.00531336 -0.00030182" />
+      <mass value="0.72496" />
+      <inertia ixx="0.00046040" ixy="0.00000189" ixz="0.00000083" iyy="0.00051716" iyz="-0.00000346" izz="0.00042521" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/collision/Link6_L.STL" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/visual/Link6_L.STL" />
+      </geometry>
+      <material name="tron_silver_10077c_approx">
+        <color rgba="0.76 0.78 0.80 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="Joint6_L" type="revolute">
+    <origin rpy="1.5708 -1.5708 0" xyz="0 0 0" />
+    <parent link="Link5_L" />
+    <child link="Link6_L" />
+    <axis xyz="0 0 1" />
+    <limit effort="18" lower="-1.0472" upper="1.0472" velocity="3.1416" />
+  </joint>
+  <link name="Link7_L">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.00009108 -0.03153255 0.00889371" />
+      <mass value="0.68606" />
+      <inertia ixx="0.00173687" ixy="-0.00000345" ixz="-0.00000116" iyy="0.00089035" iyz="0.00030680" izz="0.00139406" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/collision/Link7_L.STL" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/visual/Link7_L.STL" />
+      </geometry>
+      <material name="tron_silver_10077c_approx">
+        <color rgba="0.76 0.78 0.80 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="Joint7_L" type="revolute">
+    <origin rpy="1.5708 -1.5708 0" xyz="0 0 0" />
+    <parent link="Link6_L" />
+    <child link="Link7_L" />
+    <axis xyz="0 0 1" />
+    <limit effort="18" lower="-1.5708" upper="1.5708" velocity="3.1416" />
+  </joint>
+  <joint name="base_to_left_arm" type="fixed">
+    <parent link="waist_Link" />
+    <child link="Base_L" />
+    <origin rpy="-1.518436449 -1.57079 0" xyz="0.03084701594 0.07573914619 0.24004072699" />
+  </joint>
+  <link name="Base_R">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00032267 4.798E-05 0.04066353" />
+      <mass value="1.1962" />
+      <inertia ixx="0.00107329" ixy="-1.68E-06" ixz="-1.05E-05" iyy="0.00107003" iyz="-3.43E-06" izz="0.00127315" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/collision/Base_R.STL" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/visual/Base_R.STL" />
+      </geometry>
+      <material name="tron_silver_10077c_approx">
+        <color rgba="0.76 0.78 0.80 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="Link1_R">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00002347 0.00557150 -0.03075998" />
+      <mass value="1.9705" />
+      <inertia ixx="0.00492293" ixy="0.00000550" ixz="0.00000193" iyy="0.00526513" iyz="0.00033232" izz="0.00188107" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/collision/Link1_R.STL" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/visual/Link1_R.STL" />
+      </geometry>
+      <material name="tron_silver_10077c_approx">
+        <color rgba="0.76 0.78 0.80 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="Joint1_R" type="revolute">
+    <origin rpy="0 0 -1.5707963" xyz="0 0 0.1745" />
+    <parent link="Base_R" />
+    <child link="Link1_R" />
+    <axis xyz="0 0 -1" />
+    <limit effort="108" lower="-3.1067" upper="3.1067" velocity="3.1416" />
+  </joint>
+  <link name="Link2_R">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00013483 0.06170460 0.00950639" />
+      <mass value="2.24398" />
+      <inertia ixx="0.01194933" ixy="0.00000336" ixz="0.00000091" iyy="0.00361581" iyz="-0.00132804" izz="0.01098356" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/collision/Link2_R.STL" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/visual/Link2_R.STL" />
+      </geometry>
+      <material name="tron_silver_10077c_approx">
+        <color rgba="0.76 0.78 0.80 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="Joint2_R" type="revolute">
+    <origin rpy="1.5708 -0.0 0" xyz="0 0 0" />
+    <parent link="Link1_R" />
+    <child link="Link2_R" />
+    <axis xyz="0 0 1" />
+    <limit effort="108" lower="-2.0944" upper="2.0944" velocity="3.1416" />
+  </joint>
+  <link name="Link3_R">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00968562 0.00246599 -0.04627302" />
+      <mass value="1.9242" />
+      <inertia ixx="0.00718224" ixy="0.00004413" ixz="0.00089552" iyy="0.00762563" iyz="0.00022096" izz="0.00178597" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/collision/Link3_R.STL" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/visual/Link3_R.STL" />
+      </geometry>
+      <material name="tron_silver_10077c_approx">
+        <color rgba="0.76 0.78 0.80 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="Joint3_R" type="revolute">
+    <origin rpy="-1.5708 0.0 0" xyz="0 0.287 0" />
+    <parent link="Link2_R" />
+    <child link="Link3_R" />
+    <axis xyz="0 0 -1" />
+    <limit effort="66" lower="-3.1067" upper="3.1067" velocity="3.1416" />
+  </joint>
+  <link name="Link4_R">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00850411 -0.04718223 0.00941509" />
+      <mass value="1.6085" />
+      <inertia ixx="0.00580480" ixy="-0.00066669" ixz="-0.00012722" iyy="0.00223807" iyz="0.00070523" izz="0.00533060" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/collision/Link4_R.STL" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/visual/Link4_R.STL" />
+      </geometry>
+      <material name="tron_silver_10077c_approx">
+        <color rgba="0.76 0.78 0.80 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="Joint4_R" type="revolute">
+    <origin rpy="-1.5708 0.0 3.1416" xyz="0.018 0 0" />
+    <parent link="Link3_R" />
+    <child link="Link4_R" />
+    <axis xyz="0 0 1" />
+    <limit effort="66" lower="-2.5307" upper="1.0472" velocity="3.1416" />
+  </joint>
+  <link name="Link5_R">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.00051127 -0.00101064 -0.11271739" />
+      <mass value="2.0883" />
+      <inertia ixx="0.00626603" ixy="0.00004009" ixz="-0.00005338" iyy="0.00564387" iyz="0.00006193" izz="0.00243632" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/collision/Link5_R.STL" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/visual/Link5_R.STL" />
+      </geometry>
+      <material name="tron_silver_10077c_approx">
+        <color rgba="0.76 0.78 0.80 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="Joint5_R" type="revolute">
+    <origin rpy="-1.5708 0.0 3.1416" xyz="0.018 -0.314 0" />
+    <parent link="Link4_R" />
+    <child link="Link5_R" />
+    <axis xyz="0 0 -1" />
+    <limit effort="18" lower="-3.1067" upper="3.1067" velocity="3.1416" />
+  </joint>
+  <link name="Link6_R">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00032659 -0.00531336 0.00030182" />
+      <mass value="0.72496" />
+      <inertia ixx="0.00046040" ixy="-0.00000189" ixz="-0.00000083" iyy="0.00051716" iyz="-0.00000346" izz="0.00042521" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/collision/Link6_R.STL" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/visual/Link6_R.STL" />
+      </geometry>
+      <material name="tron_silver_10077c_approx">
+        <color rgba="0.76 0.78 0.80 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="Joint6_R" type="revolute">
+    <origin rpy="1.5708 -1.5708 0" xyz="0 0 0" />
+    <parent link="Link5_R" />
+    <child link="Link6_R" />
+    <axis xyz="0 0 1" />
+    <limit effort="18" lower="-1.0472" upper="1.0472" velocity="3.1416" />
+  </joint>
+  <link name="Link7_R">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.00009108 -0.03153255 0.00889371" />
+      <mass value="0.68606" />
+      <inertia ixx="0.00173687" ixy="-0.00000345" ixz="-0.00000116" iyy="0.00089035" iyz="0.00030680" izz="0.00139406" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/collision/Link7_R.STL" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/visual/Link7_R.STL" />
+      </geometry>
+      <material name="tron_silver_10077c_approx">
+        <color rgba="0.76 0.78 0.80 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="Joint7_R" type="revolute">
+    <origin rpy="1.5708 -1.5708 0" xyz="0 0 0" />
+    <parent link="Link6_R" />
+    <child link="Link7_R" />
+    <axis xyz="0 0 -1" />
+    <limit effort="18" lower="-1.5708" upper="1.5708" velocity="3.1416" />
+  </joint>
+  <joint name="base_to_right_arm" type="fixed">
+    <parent link="waist_Link" />
+    <child link="Base_R" />
+    <origin rpy="1.518436449 -1.57079 0" xyz="0.03084701594 -0.07573914619 0.24004072699" />
+  </joint>
+  <link name="left_connector_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.021579 0.012376 0.0042454" />
+      <mass value="0.25057" />
+      <inertia ixx="0.00018951" ixy="-0.0001147" ixz="-3.085E-05" iyy="0.0002902" iyz="-2.691E-05" izz="0.00042284" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/connector/collision/left_connector_wrist_link.STL" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/connector/visual/left_connector_wrist_link.STL" />
+      </geometry>
+      <material name="tron_silver_10077c_approx">
+        <color rgba="0.76 0.78 0.80 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="left_connector_mount" type="fixed">
+    <parent link="Link7_L" />
+    <child link="left_connector_link" />
+    <origin rpy="-1.5707963267948966 0 3.141592653589793" xyz="0 -0.10695 0" />
+  </joint>
+  <link name="left_connector_tip" />
+  <joint name="left_connector_tip_joint" type="fixed">
+    <parent link="left_connector_link" />
+    <child link="left_connector_tip" />
+    <origin rpy="0 0 0" xyz="0 0 0" />
+  </joint>
+  <link name="left_wrist_camera_frame">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00015466 3.5904E-06 -0.018703" />
+      <mass value="0.049871" />
+      <inertia ixx="5.88E-06" ixy="-7E-08" ixz="9E-08" iyy="5.47E-06" iyz="7.7E-07" izz="4.56E-06" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/collision/left_wrist_camera_link.STL" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/visual/left_wrist_camera_link.STL" />
+      </geometry>
+      <material name="tron_black_pc">
+        <color rgba="0.025 0.030 0.035 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="left_wrist_camera_joint" type="fixed">
+    <origin rpy="0.51561 0 0" xyz="0.072095 0.035586 0.030977" />
+    <parent link="left_connector_link" />
+    <child link="left_wrist_camera_frame" />
+  </joint>
+  <link name="right_connector_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.012345 0.021702 0.0041649" />
+      <mass value="0.25057" />
+      <inertia ixx="0.00018891" ixy="0.00011511" ixz="-3.031E-05" iyy="0.00029199" iyz="2.64E-05" izz="0.00042456" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/connector/collision/right_connector_wrist_link.STL" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/connector/visual/right_connector_wrist_link.STL" />
+      </geometry>
+      <material name="tron_silver_10077c_approx">
+        <color rgba="0.76 0.78 0.80 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="right_connector_mount" type="fixed">
+    <parent link="Link7_R" />
+    <child link="right_connector_link" />
+    <origin rpy="1.5707963267948966 1.5707963267948966 0" xyz="0 -0.10695 0" />
+  </joint>
+  <link name="right_connector_tip" />
+  <joint name="right_connector_tip_joint" type="fixed">
+    <parent link="right_connector_link" />
+    <child link="right_connector_tip" />
+    <origin rpy="0 0 1.5707963267948966" xyz="0 0 0" />
+  </joint>
+  <link name="right_wrist_camera_frame">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00015467 3.4615E-06 -0.018703" />
+      <mass value="0.049871" />
+      <inertia ixx="5.88E-06" ixy="4E-08" ixz="1.1E-07" iyy="5.47E-06" iyz="-7.6E-07" izz="4.55E-06" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/collision/right_wrist_camera_link.STL" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/arm/visual/right_wrist_camera_link.STL" />
+      </geometry>
+      <material name="tron_black_pc">
+        <color rgba="0.025 0.030 0.035 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="right_wrist_camera_joint" type="fixed">
+    <origin rpy="-0.51560789253163 0 1.5707963267949" xyz="0.035478911816555 0.0724666383278956 0.0307759368724696" />
+    <parent link="right_connector_link" />
+    <child link="right_wrist_camera_frame" />
+  </joint>
+  <joint name="left_hand_base_joint" type="fixed">
+    <parent link="left_connector_tip" />
+    <child link="left_hand_base_link" />
+    <origin rpy="0 0 0" xyz="0 0 0" />
+  </joint>
+  <material name="left_revo3_white_pc">
+    <color rgba="0.94 0.95 0.97 1" />
+  </material>
+  <material name="left_revo3_aluminum">
+    <color rgba="0.72 0.74 0.78 1" />
+  </material>
+  <material name="left_revo3_polished_aluminum">
+    <color rgba="0.86 0.88 0.92 1" />
+  </material>
+  <material name="left_revo3_silicone_2162u_approx">
+    <color rgba="0.60 0.61 0.67 1" />
+  </material>
+  <material name="left_revo3_led_cyan">
+    <color rgba="0.04 0.80 1.0 1" />
+  </material>
+  <material name="left_revo3_finger_taxel_muted">
+    <color rgba="0.32 0.40 0.44 1" />
+  </material>
+  <link name="left_hand_base_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.00143242 0.00300504 0.03174006" />
+      <mass value="0.462" />
+      <inertia ixx="0.00068956" ixy="2.06e-06" ixz="1.674e-05" iyy="0.00052166" iyz="-1.226e-05" izz="0.00038263" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_hand_base_link.STL" />
+      </geometry>
+      <material name="left_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_hand_base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="left_middle_MPR_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.00069304700318718 -0.0005683416302923 0.008156938659092" />
+      <mass value="0.013" />
+      <inertia ixx="1.01e-06" ixy="0" ixz="7e-08" iyy="1.02e-06" iyz="0" izz="1.14e-06" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_middle_MPR_link.STL" />
+      </geometry>
+      <material name="left_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_middle_MPR_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_middle_MPR_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="-0.00794102299681282 -0.0125316383697077 0.107927151340908" />
+    <parent link="left_hand_base_link" />
+    <child link="left_middle_MPR_link" />
+    <axis xyz="0.999807814707845 0.019186925647608 -0.00402436744312752" />
+    <limit effort="0" lower="-0.3491" upper="0.4363" velocity="0" />
+  </joint>
+  <link name="left_middle_MCP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00095254361601051 -0.000463450161563415 0.0235220393059525" />
+      <mass value="0.0658" />
+      <inertia ixx="1.605e-05" ixy="1e-08" ixz="-4.3e-07" iyy="1.574e-05" iyz="2.1e-07" izz="4.93e-06" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_middle_MCP_link.STL" />
+      </geometry>
+      <material name="left_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_middle_MCP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_middle_MCP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0.00187499938080231 -0.000291231468728885 0.0159999493531395" />
+    <parent link="left_middle_MPR_link" />
+    <child link="left_middle_MCP_link" />
+    <axis xyz="-0.0191008584448429 0.999608742349558 0.0204332920745991" />
+    <limit effort="0" lower="-0.0925" upper="1.583" velocity="0" />
+  </joint>
+  <link name="left_middle_PIP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00254217311458799 -0.000315568620252455 0.0177761307995258" />
+      <mass value="0.0332" />
+      <inertia ixx="3.1e-06" ixy="1e-08" ixz="-1e-07" iyy="2.62e-06" iyz="0" izz="2.36e-06" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_middle_PIP_link.STL" />
+      </geometry>
+      <material name="left_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_middle_PIP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_middle_PIP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0.000264150501422523 -0.00095565154131096 0.0469979185064267" />
+    <parent link="left_middle_MCP_link" />
+    <child link="left_middle_PIP_link" />
+    <axis xyz="-0.0191008584448413 0.999608742349558 0.0204332920745958" />
+    <limit effort="0" lower="-0.1452" upper="1.6001" velocity="0" />
+  </joint>
+  <link name="left_middle_DIP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00180519864244628 -0.000280604695299522 0.0155984574286491" />
+      <mass value="0.011" />
+      <inertia ixx="5.95061118577545e-07" ixy="-2.74499061054545e-09" ixz="1.00403375621818e-08" iyy="6.26795190360727e-07" iyz="1.91205801236363e-09" izz="4.72943845799364e-07" />
+    </inertial>
+    <visual name="left_middle_DIP_link__revo3_silicone_2162u_approx">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_middle_DIP_link__revo3_silicone_2162u_approx.stl" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <visual name="left_middle_DIP_link__revo3_polished_aluminum">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_middle_DIP_link__revo3_polished_aluminum.stl" />
+      </geometry>
+      <material name="left_revo3_polished_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_middle_DIP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_middle_DIP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0.000167169017596249 -0.000600164834043841 0.0295166870072403" />
+    <parent link="left_middle_PIP_link" />
+    <child link="left_middle_DIP_link" />
+    <axis xyz="-0.0191008584448469 0.999608742349558 0.0204332920745917" />
+    <limit effort="0" lower="-0.322" upper="1.5978" velocity="0" />
+  </joint>
+  <link name="left_middle_DIP_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_middle_DIP_rubber_link.STL" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_middle_DIP_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_middle_DIP_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="-0.000167169017596249 0.000600164834043841 -0.0295166870072403" />
+    <parent link="left_middle_DIP_link" />
+    <child link="left_middle_DIP_rubber_link" />
+  </joint>
+  <link name="left_middle_PIP_touch_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_middle_PIP_touch_link.STL" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_middle_PIP_touch_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_middle_PIP_touch_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="left_middle_PIP_link" />
+    <child link="left_middle_PIP_touch_link" />
+  </joint>
+  <link name="left_middle_PIP_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_middle_PIP_rubber_link.STL" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_middle_PIP_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_middle_PIP_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="left_middle_PIP_link" />
+    <child link="left_middle_PIP_rubber_link" />
+  </joint>
+  <link name="left_middle_MCP_touch_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_middle_MCP_touch_link.STL" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_middle_MCP_touch_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_middle_MCP_touch_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="left_middle_MCP_link" />
+    <child link="left_middle_MCP_touch_link" />
+  </joint>
+  <link name="left_middle_MCP_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_middle_MCP_rubber_link.STL" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_middle_MCP_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_middle_MCP_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="left_middle_MCP_link" />
+    <child link="left_middle_MCP_rubber_link" />
+  </joint>
+  <link name="left_thumb_CMP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="2.16329908803983e-06 0.000303181927606498 0.0010430763453628" />
+      <mass value="0.026" />
+      <inertia ixx="2.03e-06" ixy="0" ixz="0" iyy="2.29e-06" iyz="0" izz="2.22e-06" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_thumb_CMP_link.STL" />
+      </geometry>
+      <material name="left_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_thumb_CMP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_thumb_CMP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0.00199783670091196 -0.0195358719276065 0.0520279736546372" />
+    <parent link="left_hand_base_link" />
+    <child link="left_thumb_CMP_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="0" lower="0" upper="1.92" velocity="0" />
+  </joint>
+  <link name="left_thumb_CMR_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.00128415629306084 -0.0060156407181731 -4.05556997605012e-06" />
+      <mass value="0.012" />
+      <inertia ixx="9.29999771710957e-07" ixy="-1.99999936586367e-08" ixz="2.86677524967629e-10" iyy="9.5e-07" iyz="-1.59265342146653e-11" izz="5.70000228289043e-07" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_thumb_CMR_link.STL" />
+      </geometry>
+      <material name="left_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_00.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_01.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_02.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_03.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_04.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_05.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_06.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_07.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_08.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_09.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_10.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_11.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_12.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_13.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_14.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_15.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_16.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_17.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_18.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_19.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_20.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_21.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_22.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_23.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_24.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_25.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_26.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_27.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_28.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_29.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_30.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/cmr_v4_31.obj" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_thumb_CMR_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0 -0.0094641273542204 -3.19424156356996E-05" />
+    <parent link="left_thumb_CMP_link" />
+    <child link="left_thumb_CMR_link" />
+    <axis xyz="0 -0.999999985457346 0.000170544153169872" />
+    <limit effort="0" lower="-0.4224" upper="1.4277" velocity="0" />
+  </joint>
+  <link name="left_thumb_MCP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.00233556591800921 -0.0225090785571215 -1.75028398080197e-05" />
+      <mass value="0.067" />
+      <inertia ixx="1.42200002409718e-05" ixy="-7.99983819811253e-07" ixz="-3.02604054132499e-10" iyy="6.6e-06" iyz="-2.06370550272233e-08" izz="1.45999997590282e-05" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_thumb_MCP_link.STL" />
+      </geometry>
+      <material name="left_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_thumb_MCP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_thumb_MCP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0 -0.0119999521610516 0" />
+    <parent link="left_thumb_CMR_link" />
+    <child link="left_thumb_MCP_link" />
+    <axis xyz="-0.142628833818122 0.000168800639916136 0.989776230907788" />
+    <limit effort="0" lower="-0.0845" upper="1.3292" velocity="0" />
+  </joint>
+  <link name="left_thumb_PIP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.00100809586583825 -0.0191325988665076 -9.23857636907672e-05" />
+      <mass value="0.035" />
+      <inertia ixx="4.06999951805647e-06" ixy="3.0023880289277e-08" ixz="6.05208108264995e-10" iyy="2.69e-06" iyz="-2.9976100686633e-08" izz="3.31000048194354e-06" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_thumb_PIP_link.STL" />
+      </geometry>
+      <material name="left_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_thumb_PIP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_thumb_PIP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0 -0.0426092196906139 0" />
+    <parent link="left_thumb_MCP_link" />
+    <child link="left_thumb_PIP_link" />
+    <axis xyz="-0.142628833818122 0.000168800639916073 0.989776230907788" />
+    <limit effort="0" lower="-0.2618" upper="1.5533" velocity="0" />
+  </joint>
+  <link name="left_thumb_DIP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.00296474682348623 -0.014835350247522 -0.000223840534941878" />
+      <mass value="0.011" />
+      <inertia ixx="1.57714408406842e-06" ixy="1.86206200481739e-07" ixz="-1.61976706686575e-09" iyy="1.07085115079727e-06" iyz="1.93808641172937e-08" izz="1.62694504202776e-06" />
+    </inertial>
+    <visual name="left_thumb_DIP_link__revo3_silicone_2162u_approx">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_thumb_DIP_link__revo3_silicone_2162u_approx.stl" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <visual name="left_thumb_DIP_link__revo3_polished_aluminum">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_thumb_DIP_link__revo3_polished_aluminum.stl" />
+      </geometry>
+      <material name="left_revo3_polished_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_thumb_DIP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_thumb_DIP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0.000494631282394927 -0.0320003149826219 7.5667780971081E-05" />
+    <parent link="left_thumb_PIP_link" />
+    <child link="left_thumb_DIP_link" />
+    <axis xyz="-0.142628833818122 0.000168800639915566 0.989776230907788" />
+    <limit effort="0" lower="-0.16" upper="1.7616" velocity="0" />
+  </joint>
+  <link name="left_thumb_DIP_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_thumb_DIP_rubber_link.STL" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_thumb_DIP_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_thumb_DIP_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="left_thumb_DIP_link" />
+    <child link="left_thumb_DIP_rubber_link" />
+  </joint>
+  <link name="left_thumb_PIP_touch_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_thumb_PIP_touch_link.STL" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_thumb_PIP_touch_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_thumb_PIP_touch_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="left_thumb_PIP_link" />
+    <child link="left_thumb_PIP_touch_link" />
+  </joint>
+  <link name="left_thumb_PIP_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_thumb_PIP_rubber_link.STL" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_thumb_PIP_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_thumb_PIP_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="left_thumb_PIP_link" />
+    <child link="left_thumb_PIP_rubber_link" />
+  </joint>
+  <link name="left_thumb_MCP_touch_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_thumb_MCP_touch_link.STL" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_thumb_MCP_touch_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_thumb_MCP_touch_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="left_thumb_MCP_link" />
+    <child link="left_thumb_MCP_touch_link" />
+  </joint>
+  <link name="left_thumb_MCP_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_thumb_MCP_rubber_link.STL" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_thumb_MCP_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_thumb_MCP_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="left_thumb_MCP_link" />
+    <child link="left_thumb_MCP_rubber_link" />
+  </joint>
+  <link name="left_index_MPR_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.00071603001233764 -0.000929936755381998 0.00813548184659271" />
+      <mass value="0.013" />
+      <inertia ixx="1.01e-06" ixy="0" ixz="7e-08" iyy="1.02e-06" iyz="0" izz="1.14e-06" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_index_MPR_link.STL" />
+      </geometry>
+      <material name="left_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_index_MPR_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_index_MPR_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="-0.00729368998766236 -0.036976393244618 0.0978111781534073" />
+    <parent link="left_hand_base_link" />
+    <child link="left_index_MPR_link" />
+    <axis xyz="0.99835714347749 0.0572975918787191 0" />
+    <limit effort="0" lower="-0.1745" upper="0.5236" velocity="0" />
+  </joint>
+  <link name="left_index_MCP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00103075494362832 -0.00138437375108857 0.0234830846547815" />
+      <mass value="0.0658" />
+      <inertia ixx="1.605e-05" ixy="5e-08" ixz="-4.6e-07" iyy="1.571e-05" iyz="6.4e-07" izz="4.97e-06" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_index_MCP_link.STL" />
+      </geometry>
+      <material name="left_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_index_MCP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_index_MCP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0.00185797304403404 -0.000875573004293424 0.0159806171918112" />
+    <parent link="left_index_MPR_link" />
+    <child link="left_index_MCP_link" />
+    <axis xyz="-0.0571896789948211 0.996482943134821 0.0612460991234106" />
+    <limit effort="0" lower="-0.0925" upper="1.583" velocity="0" />
+  </joint>
+  <link name="left_index_PIP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.0027887703894048 -0.000930845049017148 0.0177465923761013" />
+      <mass value="0.0332" />
+      <inertia ixx="3.09e-06" ixy="3e-08" ixz="-1e-07" iyy="2.62e-06" iyz="1e-08" izz="2.36e-06" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_index_PIP_link.STL" />
+      </geometry>
+      <material name="left_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_index_PIP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_index_PIP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0.000221764554223515 -0.00287108870207142 0.0469200922786802" />
+    <parent link="left_index_MCP_link" />
+    <child link="left_index_PIP_link" />
+    <axis xyz="-0.0571896789948195 0.996482943134821 0.0612460991234103" />
+    <limit effort="0" lower="-0.1452" upper="1.6001" velocity="0" />
+  </joint>
+  <link name="left_index_DIP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00234140341681414 -0.000855644874272921 0.0154493695277692" />
+      <mass value="0.011" />
+      <inertia ixx="5.94123605446044e-07" ixy="-4.0696894448e-09" ixz="8.43434809919992e-09" iyy="6.23320647110489e-07" iyz="2.83878643697777e-09" izz="4.70674098945156e-07" />
+    </inertial>
+    <visual name="left_index_DIP_link__revo3_silicone_2162u_approx">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_index_DIP_link__revo3_silicone_2162u_approx.stl" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <visual name="left_index_DIP_link__revo3_polished_aluminum">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_index_DIP_link__revo3_polished_aluminum.stl" />
+      </geometry>
+      <material name="left_revo3_polished_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_index_DIP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_index_DIP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0.000140546972590664 -0.00180309239696645 0.0294678139594432" />
+    <parent link="left_index_PIP_link" />
+    <child link="left_index_DIP_link" />
+    <axis xyz="-0.057189678994825 0.996482943134821 0.061246099123401" />
+    <limit effort="0" lower="-0.322" upper="1.5978" velocity="0" />
+  </joint>
+  <link name="left_index_DIP_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_index_DIP_rubber_link.STL" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_index_DIP_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_index_DIP_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="left_index_DIP_link" />
+    <child link="left_index_DIP_rubber_link" />
+  </joint>
+  <link name="left_index_PIP_touch_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_index_PIP_touch_link.STL" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_index_PIP_touch_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_index_PIP_touch_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="left_index_PIP_link" />
+    <child link="left_index_PIP_touch_link" />
+  </joint>
+  <link name="left_index_PIP_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_index_PIP_rubber_link.STL" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_index_PIP_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_index_PIP_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="left_index_PIP_link" />
+    <child link="left_index_PIP_rubber_link" />
+  </joint>
+  <link name="left_index_MCP_touch_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_index_MCP_touch_link.STL" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_index_MCP_touch_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_index_MCP_touch_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="left_index_MCP_link" />
+    <child link="left_index_MCP_touch_link" />
+  </joint>
+  <link name="left_index_MCP_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_index_MCP_rubber_link.STL" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_index_MCP_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_index_MCP_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="left_index_MCP_link" />
+    <child link="left_index_MCP_rubber_link" />
+  </joint>
+  <link name="left_ring_MPR_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.000734737341222711 -0.000207035053863401 0.008173786612671" />
+      <mass value="0.013" />
+      <inertia ixx="1.01e-06" ixy="0" ixz="7e-08" iyy="1.02e-06" iyz="0" izz="1.14e-06" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_ring_MPR_link.STL" />
+      </geometry>
+      <material name="left_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_ring_MPR_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_ring_MPR_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="-0.00808842265877729 0.0124508350538634 0.103836133387329" />
+    <parent link="left_hand_base_link" />
+    <child link="left_ring_MPR_link" />
+    <axis xyz="0.999813819455818 -0.0191527157615282 -0.00234518743967805" />
+    <limit effort="0" lower="-0.4363" upper="0.3491" velocity="0" />
+  </joint>
+  <link name="left_ring_MCP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.000952527934724249 0.000461696216749999 0.0235199212682061" />
+      <mass value="0.0658" />
+      <inertia ixx="1.605e-05" ixy="1e-08" ixz="-4.3e-07" iyy="1.574e-05" iyz="2.1e-07" izz="4.93e-06" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_ring_MCP_link.STL" />
+      </geometry>
+      <material name="left_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_ring_MCP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_ring_MCP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0.00184812472405304 0.000291808729386601 0.0160030653444649" />
+    <parent link="left_ring_MPR_link" />
+    <child link="left_ring_MCP_link" />
+    <axis xyz="0.0191008584234173 0.999608742351176 -0.0204332920154781" />
+    <limit effort="0" lower="-0.0925" upper="1.583" velocity="0" />
+  </joint>
+  <link name="left_ring_PIP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00262109457222195 0.000312411119183715 0.017773686190877" />
+      <mass value="0.0332" />
+      <inertia ixx="3.1e-06" ixy="1e-08" ixz="-1e-07" iyy="2.62e-06" iyz="0" izz="2.36e-06" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_ring_PIP_link.STL" />
+      </geometry>
+      <material name="left_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_ring_PIP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_ring_PIP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0.000185213362502299 0.000957165097566284 0.0469982650773291" />
+    <parent link="left_ring_MCP_link" />
+    <child link="left_ring_PIP_link" />
+    <axis xyz="0.0191008584234188 0.999608742351175 -0.0204332920154819" />
+    <limit effort="0" lower="-0.1452" upper="1.6001" velocity="0" />
+  </joint>
+  <link name="left_ring_DIP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00193370413291422 0.000294401755245758 0.0155957657750394" />
+      <mass value="0.011" />
+      <inertia ixx="5.94978020293273e-07" ixy="1.26076786781819e-09" ixz="1.00399825390908e-08" iyy="6.26794529358273e-07" iyz="-8.78201564090911e-10" izz="4.72860762010636e-07" />
+    </inertial>
+    <visual name="left_ring_DIP_link__revo3_silicone_2162u_approx">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_ring_DIP_link__revo3_silicone_2162u_approx.stl" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <visual name="left_ring_DIP_link__revo3_polished_aluminum">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_ring_DIP_link__revo3_polished_aluminum.stl" />
+      </geometry>
+      <material name="left_revo3_polished_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_ring_DIP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_ring_DIP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0.00011759316658046 0.00060111663666523 0.0295169067794739" />
+    <parent link="left_ring_PIP_link" />
+    <child link="left_ring_DIP_link" />
+    <axis xyz="0.0191008584234135 0.999608742351175 -0.0204332920154918" />
+    <limit effort="0" lower="-0.322" upper="1.5978" velocity="0" />
+  </joint>
+  <link name="left_ring_DIP_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_ring_DIP_rubber_link.STL" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_ring_DIP_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_ring_DIP_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="left_ring_DIP_link" />
+    <child link="left_ring_DIP_rubber_link" />
+  </joint>
+  <link name="left_ring_PIP_touch_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_ring_PIP_touch_link.STL" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_ring_PIP_touch_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_ring_PIP_touch_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="left_ring_PIP_link" />
+    <child link="left_ring_PIP_touch_link" />
+  </joint>
+  <link name="left_ring_PIP_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_ring_PIP_rubber_link.STL" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_ring_PIP_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_ring_PIP_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="left_ring_PIP_link" />
+    <child link="left_ring_PIP_rubber_link" />
+  </joint>
+  <link name="left_ring_MCP_touch_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_ring_MCP_touch_link.STL" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_ring_MCP_touch_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_ring_MCP_touch_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="left_ring_MCP_link" />
+    <child link="left_ring_MCP_touch_link" />
+  </joint>
+  <link name="left_ring_MCP_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_ring_MCP_rubber_link.STL" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_ring_MCP_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_ring_MCP_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="left_ring_MCP_link" />
+    <child link="left_ring_MCP_rubber_link" />
+  </joint>
+  <link name="left_little_MPR_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.00080857465758031 0.000160681007000896 0.0081883083007066" />
+      <mass value="0.013" />
+      <inertia ixx="4.2e-07" ixy="0" ixz="0" iyy="4.2e-07" iyz="0" izz="4.2e-07" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_little_MPR_link.STL" />
+      </geometry>
+      <material name="left_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_little_MPR_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_little_MPR_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="-0.00702324534241969 0.0365118989929991 0.0905157916992934" />
+    <parent link="left_hand_base_link" />
+    <child link="left_little_MPR_link" />
+    <axis xyz="0.998363207212642 -0.0571125018185487 0.00301141496872135" />
+    <limit effort="0" lower="-0.5236" upper="0.1745" velocity="0" />
+  </joint>
+  <link name="left_little_MCP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00103081685679207 0.00138377539702107 0.0234830889934214" />
+      <mass value="0.0658" />
+      <inertia ixx="1.605e-05" ixy="1e-08" ixz="-4.3e-07" iyy="1.574e-05" iyz="2.1e-07" izz="4.93e-06" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_little_MCP_link.STL" />
+      </geometry>
+      <material name="left_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_little_MCP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_little_MCP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0.00180966648562762 0.000878675609979826 0.0159859893072852" />
+    <parent link="left_little_MPR_link" />
+    <child link="left_little_MCP_link" />
+    <axis xyz="0.0571896789757587 0.996482943139 -0.0612460990732217" />
+    <limit effort="0" lower="-0.0925" upper="1.583" velocity="0" />
+  </joint>
+  <link name="left_little_PIP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00293070519122728 0.000922229475309861 0.0177466393013321" />
+      <mass value="0.0332" />
+      <inertia ixx="3.1e-06" ixy="1e-08" ixz="-1e-07" iyy="2.62e-06" iyz="0" izz="2.36e-06" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_little_PIP_link.STL" />
+      </geometry>
+      <material name="left_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_little_PIP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_little_PIP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="7.99016655647876E-05 0.00287922592171121 0.0469200496920893" />
+    <parent link="left_little_MCP_link" />
+    <child link="left_little_PIP_link" />
+    <axis xyz="0.0571896789757601 0.996482943138999 -0.0612460990732252" />
+    <limit effort="0" lower="-0.1452" upper="1.6001" velocity="0" />
+  </joint>
+  <link name="left_little_DIP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00239393679952957 0.000918788781556669 0.0155739237786977" />
+      <mass value="0.011" />
+      <inertia ixx="5.94688074308727e-07" ixy="-1.60003558909089e-09" ixz="9.53409363636355e-09" iyy="6.25664549309091e-07" iyz="1.11608918181817e-09" izz="4.72048578163273e-07" />
+    </inertial>
+    <visual name="left_little_DIP_link__revo3_silicone_2162u_approx">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_little_DIP_link__revo3_silicone_2162u_approx.stl" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <visual name="left_little_DIP_link__revo3_polished_aluminum">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_little_DIP_link__revo3_polished_aluminum.stl" />
+      </geometry>
+      <material name="left_revo3_polished_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_little_DIP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_little_DIP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="5.14511189704386E-05 0.00180820433011683 0.0294677909771798" />
+    <parent link="left_little_PIP_link" />
+    <child link="left_little_DIP_link" />
+    <axis xyz="0.0571896789757549 0.996482943138999 -0.0612460990732302" />
+    <limit effort="0" lower="-0.322" upper="1.5978" velocity="0" />
+  </joint>
+  <link name="left_little_DIP_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_little_DIP_rubber_link.STL" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_little_DIP_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_little_DIP_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="left_little_DIP_link" />
+    <child link="left_little_DIP_rubber_link" />
+  </joint>
+  <link name="left_little_PIP_touch_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_little_PIP_touch_link.STL" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_little_PIP_touch_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_little_PIP_touch_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="left_little_PIP_link" />
+    <child link="left_little_PIP_touch_link" />
+  </joint>
+  <link name="left_little_PIP_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_little_PIP_rubber_link.STL" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_little_PIP_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_little_PIP_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="left_little_PIP_link" />
+    <child link="left_little_PIP_rubber_link" />
+  </joint>
+  <link name="left_little_MCP_touch_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_little_MCP_touch_link.STL" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_little_MCP_touch_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_little_MCP_touch_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="left_little_MCP_link" />
+    <child link="left_little_MCP_touch_link" />
+  </joint>
+  <link name="left_little_MCP_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_little_MCP_rubber_link.STL" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_little_MCP_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_little_MCP_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="left_little_MCP_link" />
+    <child link="left_little_MCP_rubber_link" />
+  </joint>
+  <link name="left_palm_touch_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_palm_touch_link.STL" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_palm_touch_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_palm_touch_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="left_hand_base_link" />
+    <child link="left_palm_touch_link" />
+  </joint>
+  <link name="left_palm_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_palm_rubber_link.STL" />
+      </geometry>
+      <material name="left_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_palm_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_palm_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="left_hand_base_link" />
+    <child link="left_palm_rubber_link" />
+  </joint>
+  <link name="left_palm_link">
+    <visual name="left_palm_link__revo3_white_pc">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_palm_link__revo3_white_pc.stl" />
+      </geometry>
+      <material name="left_revo3_white_pc" />
+    </visual>
+    <visual name="left_palm_link__revo3_aluminum">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_palm_link__revo3_aluminum.stl" />
+      </geometry>
+      <material name="left_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_palm_backtrim_v2.obj" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_palm_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="left_hand_base_link" />
+    <child link="left_palm_link" />
+  </joint>
+  <link name="left_palm_led_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/left/left_palm_led_link.dae" />
+      </geometry>
+      <material name="left_revo3_screen_texture">
+        <color rgba="1 1 1 1" />
+        <texture filename="../meshes/hands/visual/textures/revo3_screen.png" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/left/left_palm_led_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_palm_led_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="left_palm_link" />
+    <child link="left_palm_led_link" />
+  </joint>
+  <link name="left_palm" />
+  <joint name="left_palm_center" type="fixed">
+    <parent link="left_hand_base_link" />
+    <child link="left_palm" />
+    <origin rpy="0 0 0" xyz="0.0155 0 0.055" />
+  </joint>
+  <link name="left_thumb_tip_Link" />
+  <joint name="left_thumb_tip_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 -0.01 0.0098" />
+    <parent link="left_thumb_DIP_link" />
+    <child link="left_thumb_tip_Link" />
+  </joint>
+  <link name="left_index_tip_Link" />
+  <joint name="left_index_tip_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0.0084 -0.0005 0.01" />
+    <parent link="left_index_DIP_link" />
+    <child link="left_index_tip_Link" />
+  </joint>
+  <link name="left_middle_tip_Link" />
+  <joint name="left_middle_tip_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0.0084 -0.0 0.01" />
+    <parent link="left_middle_DIP_link" />
+    <child link="left_middle_tip_Link" />
+  </joint>
+  <link name="left_ring_tip_Link" />
+  <joint name="left_ring_tip_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0.0084 0.000185 0.01" />
+    <parent link="left_ring_DIP_link" />
+    <child link="left_ring_tip_Link" />
+  </joint>
+  <link name="left_little_tip_Link" />
+  <joint name="left_little_tip_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0.0084 0.0012185 0.01" />
+    <parent link="left_little_DIP_link" />
+    <child link="left_little_tip_Link" />
+  </joint>
+  <joint name="right_hand_base_joint" type="fixed">
+    <parent link="right_connector_tip" />
+    <child link="right_hand_base_link" />
+    <origin rpy="0 0 0" xyz="0 0 0" />
+  </joint>
+  <material name="right_revo3_white_pc">
+    <color rgba="0.94 0.95 0.97 1" />
+  </material>
+  <material name="right_revo3_aluminum">
+    <color rgba="0.72 0.74 0.78 1" />
+  </material>
+  <material name="right_revo3_polished_aluminum">
+    <color rgba="0.86 0.88 0.92 1" />
+  </material>
+  <material name="right_revo3_silicone_2162u_approx">
+    <color rgba="0.60 0.61 0.67 1" />
+  </material>
+  <material name="right_revo3_led_cyan">
+    <color rgba="0.04 0.80 1.0 1" />
+  </material>
+  <material name="right_revo3_finger_taxel_muted">
+    <color rgba="0.32 0.40 0.44 1" />
+  </material>
+  <link name="right_hand_base_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.00345736 0.00054338 0.03983468" />
+      <mass value="0.462" />
+      <inertia ixx="0.00080601" ixy="1.197e-05" ixz="5.633e-05" iyy="0.0006104" iyz="-1.657e-05" izz="0.00041275" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_hand_base_link.STL" />
+      </geometry>
+      <material name="right_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_hand_base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_middle_MPR_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0003435610221717 0.000376462389380952 0.00543917508265978" />
+      <mass value="0.013" />
+      <inertia ixx="4.2e-07" ixy="0" ixz="0" iyy="4.2e-07" iyz="0" izz="4.2e-07" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_middle_MPR_link.STL" />
+      </geometry>
+      <material name="right_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_middle_MPR_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_middle_MPR_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="-0.00794102299681282 0.0125316383697077 0.107927151340908" />
+    <parent link="right_hand_base_link" />
+    <child link="right_middle_MPR_link" />
+    <axis xyz="-0.999807814707845 0.019186925647608 0.00402436744312752" />
+    <limit effort="0" lower="-0.3491" upper="0.4363" velocity="0" />
+  </joint>
+  <link name="right_middle_MCP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-5.20948131824111e-05 0.000470873041596889 0.0229470327024819" />
+      <mass value="0.0658" />
+      <inertia ixx="1.192e-05" ixy="3e-08" ixz="3e-08" iyy="1.167e-05" iyz="-1.4e-07" izz="3.74e-06" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_middle_MCP_link.STL" />
+      </geometry>
+      <material name="right_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_middle_MCP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_middle_MCP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0.00187499938080231 0.000291231468728885 0.0159999493531395" />
+    <parent link="right_middle_MPR_link" />
+    <child link="right_middle_MCP_link" />
+    <axis xyz="0.0191008584448429 0.999608742349558 -0.0204332920745991" />
+    <limit effort="0" lower="-0.0925" upper="1.583" velocity="0" />
+  </joint>
+  <link name="right_middle_PIP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.000695275446102113 0.00030720942651229 0.0182735652647584" />
+      <mass value="0.0332" />
+      <inertia ixx="2.52e-06" ixy="0" ixz="-3e-08" iyy="2.33e-06" iyz="0" izz="1.83e-06" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_middle_PIP_link.STL" />
+      </geometry>
+      <material name="right_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_middle_PIP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_middle_PIP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0.000264150501422523 0.00095565154131096 0.0469979185064267" />
+    <parent link="right_middle_MCP_link" />
+    <child link="right_middle_PIP_link" />
+    <axis xyz="0.0191008584448413 0.999608742349558 -0.0204332920745958" />
+    <limit effort="0" lower="-0.1452" upper="1.6001" velocity="0" />
+  </joint>
+  <link name="right_middle_DIP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00182168872586989 0.00024886630450651 0.0150427073363963" />
+      <mass value="0.011" />
+      <inertia ixx="6.6849793577859e-07" ixy="2.45765488587939e-09" ixz="7.49983264122844e-08" iyy="6.69928867313995e-07" iyz="-1.54638542883475e-09" izz="5.52599848115538e-07" />
+    </inertial>
+    <visual name="right_middle_DIP_link__revo3_silicone_2162u_approx">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_middle_DIP_link__revo3_silicone_2162u_approx.stl" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <visual name="right_middle_DIP_link__revo3_polished_aluminum">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_middle_DIP_link__revo3_polished_aluminum.stl" />
+      </geometry>
+      <material name="right_revo3_polished_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_middle_DIP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_middle_DIP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0.000167169017596249 0.000600164834043841 0.0295166870072403" />
+    <parent link="right_middle_PIP_link" />
+    <child link="right_middle_DIP_link" />
+    <axis xyz="0.0191008584448469 0.999608742349558 -0.0204332920745917" />
+    <limit effort="0" lower="-0.322" upper="1.5978" velocity="0" />
+  </joint>
+  <link name="right_middle_DIP_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_middle_DIP_rubber_link.STL" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_middle_DIP_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_middle_DIP_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="-0.000167169017596249 -0.000600164834043841 -0.0295166870072403" />
+    <parent link="right_middle_DIP_link" />
+    <child link="right_middle_DIP_rubber_link" />
+  </joint>
+  <link name="right_middle_PIP_touch_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_middle_PIP_touch_link.STL" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_middle_PIP_touch_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_middle_PIP_touch_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="right_middle_PIP_link" />
+    <child link="right_middle_PIP_touch_link" />
+  </joint>
+  <link name="right_middle_PIP_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_middle_PIP_rubber_link.STL" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_middle_PIP_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_middle_PIP_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="right_middle_PIP_link" />
+    <child link="right_middle_PIP_rubber_link" />
+  </joint>
+  <link name="right_middle_MCP_touch_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_middle_MCP_touch_link.STL" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_middle_MCP_touch_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_middle_MCP_touch_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="right_middle_MCP_link" />
+    <child link="right_middle_MCP_touch_link" />
+  </joint>
+  <link name="right_middle_MCP_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_middle_MCP_rubber_link.STL" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_middle_MCP_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_middle_MCP_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="right_middle_MCP_link" />
+    <child link="right_middle_MCP_rubber_link" />
+  </joint>
+  <link name="right_thumb_CMP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="2.16329908803983e-06 -3.58719276064984e-05 -3.49736546371993e-05" />
+      <mass value="0.026" />
+      <inertia ixx="2.03e-06" ixy="0" ixz="0" iyy="2.29e-06" iyz="0" izz="2.22e-06" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_thumb_CMP_link.STL" />
+      </geometry>
+      <material name="right_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_thumb_CMP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_thumb_CMP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0.00199783670091196 0.0195358719276065 0.0520279736546372" />
+    <parent link="right_hand_base_link" />
+    <child link="right_thumb_CMP_link" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0" lower="0" upper="1.92" velocity="0" />
+  </joint>
+  <link name="right_thumb_CMR_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.00128421629304181 0.0060157107181731 -4.05561775565276e-06" />
+      <mass value="0.012" />
+      <inertia ixx="9.29999771710957e-07" ixy="1.99999936586367e-08" ixz="2.86677524967629e-10" iyy="9.5e-07" iyz="1.59265342146653e-11" izz="5.70000228289043e-07" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_thumb_CMR_link.STL" />
+      </geometry>
+      <material name="right_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_00.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_01.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_02.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_03.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_04.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_05.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_06.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_07.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_08.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_09.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_10.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_11.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_12.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_13.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_14.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_15.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_16.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_17.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_18.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_19.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_20.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_21.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_22.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_23.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_24.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_25.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_26.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_27.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_28.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_29.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_30.obj" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/cmr_v4_31.obj" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_thumb_CMR_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0.0094641273542204 -3.19424156356996E-05" />
+    <parent link="right_thumb_CMP_link" />
+    <child link="right_thumb_CMR_link" />
+    <axis xyz="0 -0.999999985457346 -0.000170544153169872" />
+    <limit effort="0" lower="-0.4224" upper="1.4277" velocity="0" />
+  </joint>
+  <link name="right_thumb_MCP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.00233557584633663 0.0225088385571215 -1.75928477427507e-05" />
+      <mass value="0.067" />
+      <inertia ixx="1.42200002409718e-05" ixy="7.99983819811253e-07" ixz="-3.02604054132499e-10" iyy="6.6e-06" iyz="2.06370550272233e-08" izz="1.45999997590282e-05" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_thumb_MCP_link.STL" />
+      </geometry>
+      <material name="right_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_thumb_MCP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_thumb_MCP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0.0119999521610516 0" />
+    <parent link="right_thumb_CMR_link" />
+    <child link="right_thumb_MCP_link" />
+    <axis xyz="0.142628833818122 0.000168800639916136 -0.989776230907788" />
+    <limit effort="0" lower="-0.0845" upper="1.3292" velocity="0" />
+  </joint>
+  <link name="right_thumb_PIP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.00232345925271217 0.0196418044049372 -0.000132130077546795" />
+      <mass value="0.035" />
+      <inertia ixx="4.06999951805647e-06" ixy="-3.0023880289277e-08" ixz="6.05208108264995e-10" iyy="2.69e-06" iyz="2.9976100686633e-08" izz="3.31000048194354e-06" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_thumb_PIP_link.STL" />
+      </geometry>
+      <material name="right_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_thumb_PIP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_thumb_PIP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0.0426092196906139 0" />
+    <parent link="right_thumb_MCP_link" />
+    <child link="right_thumb_PIP_link" />
+    <axis xyz="0.142628833818122 0.000168800639916073 -0.989776230907788" />
+    <limit effort="0" lower="-0.2618" upper="1.5533" velocity="0" />
+  </joint>
+  <link name="right_thumb_DIP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.00292748593422889 0.014830241156613 -0.000247774507052835" />
+      <mass value="0.011" />
+      <inertia ixx="1.57690652830195e-06" ixy="-1.84747843371243e-07" ixz="6.13335426857938e-10" iyy="1.07788565393182e-06" iyz="-2.04560022192831e-08" izz="1.63378684199351e-06" />
+    </inertial>
+    <visual name="right_thumb_DIP_link__revo3_silicone_2162u_approx">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_thumb_DIP_link__revo3_silicone_2162u_approx.stl" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <visual name="right_thumb_DIP_link__revo3_polished_aluminum">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_thumb_DIP_link__revo3_polished_aluminum.stl" />
+      </geometry>
+      <material name="right_revo3_polished_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_thumb_DIP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_thumb_DIP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0.000494631282394927 0.0320003149826219 7.5667780971081E-05" />
+    <parent link="right_thumb_PIP_link" />
+    <child link="right_thumb_DIP_link" />
+    <axis xyz="0.142628833818122 0.000168800639915566 -0.989776230907788" />
+    <limit effort="0" lower="-0.16" upper="1.7616" velocity="0" />
+  </joint>
+  <link name="right_thumb_DIP_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_thumb_DIP_rubber_link.STL" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_thumb_DIP_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_thumb_DIP_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="right_thumb_DIP_link" />
+    <child link="right_thumb_DIP_rubber_link" />
+  </joint>
+  <link name="right_thumb_PIP_touch_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_thumb_PIP_touch_link.STL" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_thumb_PIP_touch_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_thumb_PIP_touch_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="right_thumb_PIP_link" />
+    <child link="right_thumb_PIP_touch_link" />
+  </joint>
+  <link name="right_thumb_PIP_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_thumb_PIP_rubber_link.STL" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_thumb_PIP_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_thumb_PIP_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="right_thumb_PIP_link" />
+    <child link="right_thumb_PIP_rubber_link" />
+  </joint>
+  <link name="right_thumb_MCP_touch_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_thumb_MCP_touch_link.STL" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_thumb_MCP_touch_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_thumb_MCP_touch_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="right_thumb_MCP_link" />
+    <child link="right_thumb_MCP_touch_link" />
+  </joint>
+  <link name="right_thumb_MCP_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_thumb_MCP_rubber_link.STL" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_thumb_MCP_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_thumb_MCP_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="right_thumb_MCP_link" />
+    <child link="right_thumb_MCP_rubber_link" />
+  </joint>
+  <link name="right_index_MPR_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.00038049745169347 0.000614192898352905 0.00542755670552386" />
+      <mass value="0.013" />
+      <inertia ixx="4.2e-07" ixy="0" ixz="0" iyy="4.2e-07" iyz="0" izz="4.2e-07" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_index_MPR_link.STL" />
+      </geometry>
+      <material name="right_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_index_MPR_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_index_MPR_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="-0.00729368998766236 0.036976393244618 0.0978111781534073" />
+    <parent link="right_hand_base_link" />
+    <child link="right_index_MPR_link" />
+    <axis xyz="-0.99835714347749 0.0572975918787191 0" />
+    <limit effort="0" lower="-0.1745" upper="0.5236" velocity="0" />
+  </joint>
+  <link name="right_index_MCP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="2.57792996813145e-05 0.0014067468360359 0.0229090459870386" />
+      <mass value="0.0658" />
+      <inertia ixx="1.192e-05" ixy="-1e-08" ixz="0" iyy="1.164e-05" iyz="-4.9e-07" izz="3.76e-06" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_index_MCP_link.STL" />
+      </geometry>
+      <material name="right_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_index_MCP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_index_MCP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0.00185797304403404 0.000875573004293424 0.0159806171918112" />
+    <parent link="right_index_MPR_link" />
+    <child link="right_index_MCP_link" />
+    <axis xyz="0.0571896789948211 0.996482943134821 -0.0612460991234106" />
+    <limit effort="0" lower="-0.0925" upper="1.583" velocity="0" />
+  </joint>
+  <link name="right_index_PIP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.000944062484851667 0.00101335630679797 0.0182453913543243" />
+      <mass value="0.0332" />
+      <inertia ixx="2.52e-06" ixy="-1e-08" ixz="-3e-08" iyy="2.33e-06" iyz="-3e-08" izz="1.84e-06" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_index_PIP_link.STL" />
+      </geometry>
+      <material name="right_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_index_PIP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_index_PIP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0.000221764554223515 0.00287108870207142 0.0469200922786802" />
+    <parent link="right_index_MCP_link" />
+    <child link="right_index_PIP_link" />
+    <axis xyz="0.0571896789948195 0.996482943134821 -0.0612460991234103" />
+    <limit effort="0" lower="-0.1452" upper="1.6001" velocity="0" />
+  </joint>
+  <link name="right_index_DIP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00217658189063865 0.000810607858328783 0.0150194801752339" />
+      <mass value="0.011" />
+      <inertia ixx="6.68344605286329e-07" ixy="3.66457569882118e-09" ixz="7.45489899684097e-08" iyy="6.688954153135e-07" iyz="-2.30777007867799e-09" izz="5.51930481851596e-07" />
+    </inertial>
+    <visual name="right_index_DIP_link__revo3_silicone_2162u_approx">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_index_DIP_link__revo3_silicone_2162u_approx.stl" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <visual name="right_index_DIP_link__revo3_polished_aluminum">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_index_DIP_link__revo3_polished_aluminum.stl" />
+      </geometry>
+      <material name="right_revo3_polished_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_index_DIP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_index_DIP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0.000140546972590664 0.00180309239696645 0.0294678139594432" />
+    <parent link="right_index_PIP_link" />
+    <child link="right_index_DIP_link" />
+    <axis xyz="0.057189678994825 0.996482943134821 -0.061246099123401" />
+    <limit effort="0" lower="-0.322" upper="1.5978" velocity="0" />
+  </joint>
+  <link name="right_index_DIP_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_index_DIP_rubber_link.STL" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_index_DIP_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_index_DIP_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="right_index_DIP_link" />
+    <child link="right_index_DIP_rubber_link" />
+  </joint>
+  <link name="right_index_PIP_touch_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_index_PIP_touch_link.STL" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_index_PIP_touch_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_index_PIP_touch_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="right_index_PIP_link" />
+    <child link="right_index_PIP_touch_link" />
+  </joint>
+  <link name="right_index_PIP_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_index_PIP_rubber_link.STL" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_index_PIP_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_index_PIP_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="right_index_PIP_link" />
+    <child link="right_index_PIP_rubber_link" />
+  </joint>
+  <link name="right_index_MCP_touch_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_index_MCP_touch_link.STL" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_index_MCP_touch_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_index_MCP_touch_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="right_index_MCP_link" />
+    <child link="right_index_MCP_touch_link" />
+  </joint>
+  <link name="right_index_MCP_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_index_MCP_rubber_link.STL" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_index_MCP_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_index_MCP_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="right_index_MCP_link" />
+    <child link="right_index_MCP_rubber_link" />
+  </joint>
+  <link name="right_ring_MPR_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.00038031136159348 0.000139778948725384 0.00545071493807969" />
+      <mass value="0.013" />
+      <inertia ixx="4.2e-07" ixy="0" ixz="0" iyy="4.2e-07" iyz="0" izz="4.2e-07" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_ring_MPR_link.STL" />
+      </geometry>
+      <material name="right_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_ring_MPR_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_ring_MPR_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="-0.00808842265877729 -0.0124508350538634 0.103836133387329" />
+    <parent link="right_hand_base_link" />
+    <child link="right_ring_MPR_link" />
+    <axis xyz="-0.999813819455818 -0.0191527157615282 0.00234518743967805" />
+    <limit effort="0" lower="-0.4363" upper="0.3491" velocity="0" />
+  </joint>
+  <link name="right_ring_MCP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-5.212483211719e-05 -0.000469196078867097 0.0229449420637444" />
+      <mass value="0.0658" />
+      <inertia ixx="1.192e-05" ixy="0" ixz="3e-08" iyy="1.166e-05" iyz="1.6e-07" izz="3.74e-06" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_ring_MCP_link.STL" />
+      </geometry>
+      <material name="right_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_ring_MCP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_ring_MCP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0.00184812472405304 -0.000291808729386601 0.0160030653444649" />
+    <parent link="right_ring_MPR_link" />
+    <child link="right_ring_MCP_link" />
+    <axis xyz="-0.0191008584234173 0.999608742351176 0.0204332920154781" />
+    <limit effort="0" lower="-0.0925" upper="1.583" velocity="0" />
+  </joint>
+  <link name="right_ring_PIP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.000776232188227917 -0.000411658197564868 0.0182689187857183" />
+      <mass value="0.0332" />
+      <inertia ixx="2.52e-06" ixy="0" ixz="-3e-08" iyy="2.33e-06" iyz="0" izz="1.83e-06" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_ring_PIP_link.STL" />
+      </geometry>
+      <material name="right_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_ring_PIP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_ring_PIP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0.000185213362502299 -0.000957165097566284 0.0469982650773291" />
+    <parent link="right_ring_MCP_link" />
+    <child link="right_ring_PIP_link" />
+    <axis xyz="-0.0191008584234188 0.999608742351175 0.0204332920154819" />
+    <limit effort="0" lower="-0.1452" upper="1.6001" velocity="0" />
+  </joint>
+  <link name="right_ring_DIP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00195094737950979 -0.000302290825550794 0.0150392149063066" />
+      <mass value="0.011" />
+      <inertia ixx="6.68428955066266e-07" ixy="-1.32945616014836e-09" ixz="7.49866222980656e-08" iyy="6.69905766278688e-07" iyz="8.36454015385696e-10" izz="5.52526249418121e-07" />
+    </inertial>
+    <visual name="right_ring_DIP_link__revo3_silicone_2162u_approx">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_ring_DIP_link__revo3_silicone_2162u_approx.stl" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <visual name="right_ring_DIP_link__revo3_polished_aluminum">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_ring_DIP_link__revo3_polished_aluminum.stl" />
+      </geometry>
+      <material name="right_revo3_polished_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_ring_DIP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_ring_DIP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0.00011759316658046 -0.00060111663666523 0.0295169067794739" />
+    <parent link="right_ring_PIP_link" />
+    <child link="right_ring_DIP_link" />
+    <axis xyz="-0.0191008584234135 0.999608742351175 0.0204332920154918" />
+    <limit effort="0" lower="-0.322" upper="1.5978" velocity="0" />
+  </joint>
+  <link name="right_ring_DIP_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_ring_DIP_rubber_link.STL" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_ring_DIP_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_ring_DIP_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="right_ring_DIP_link" />
+    <child link="right_ring_DIP_rubber_link" />
+  </joint>
+  <link name="right_ring_PIP_touch_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_ring_PIP_touch_link.STL" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_ring_PIP_touch_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_ring_PIP_touch_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="right_ring_PIP_link" />
+    <child link="right_ring_PIP_touch_link" />
+  </joint>
+  <link name="right_ring_PIP_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_ring_PIP_rubber_link.STL" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_ring_PIP_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_ring_PIP_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="right_ring_PIP_link" />
+    <child link="right_ring_PIP_rubber_link" />
+  </joint>
+  <link name="right_ring_MCP_touch_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_ring_MCP_touch_link.STL" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_ring_MCP_touch_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_ring_MCP_touch_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="right_ring_MCP_link" />
+    <child link="right_ring_MCP_touch_link" />
+  </joint>
+  <link name="right_ring_MCP_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_ring_MCP_rubber_link.STL" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_ring_MCP_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_ring_MCP_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="right_ring_MCP_link" />
+    <child link="right_ring_MCP_rubber_link" />
+  </joint>
+  <link name="right_little_MPR_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.000458194149581521 -0.000103341258326533 0.00546450539392881" />
+      <mass value="0.013" />
+      <inertia ixx="4.2e-07" ixy="0" ixz="0" iyy="4.2e-07" iyz="0" izz="4.2e-07" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_little_MPR_link.STL" />
+      </geometry>
+      <material name="right_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_little_MPR_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_little_MPR_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="-0.00702324534241969 -0.0365118989929991 0.0905157916992934" />
+    <parent link="right_hand_base_link" />
+    <child link="right_little_MPR_link" />
+    <axis xyz="-0.998363207212642 -0.0571125018185487 -0.00301141496872135" />
+    <limit effort="0" lower="-0.5236" upper="0.1745" velocity="0" />
+  </joint>
+  <link name="right_little_MCP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="2.58503662266133e-05 -0.00140628167795138 0.0229090638567875" />
+      <mass value="0.0658" />
+      <inertia ixx="1.192e-05" ixy="1e-08" ixz="0" iyy="1.164e-05" iyz="4.9e-07" izz="3.76e-06" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_little_MCP_link.STL" />
+      </geometry>
+      <material name="right_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_little_MCP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_little_MCP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0.00180966648562762 -0.000878675609979826 0.0159859893072852" />
+    <parent link="right_little_MPR_link" />
+    <child link="right_little_MCP_link" />
+    <axis xyz="-0.0571896789757587 0.996482943139 0.0612460990732217" />
+    <limit effort="0" lower="-0.0925" upper="1.583" velocity="0" />
+  </joint>
+  <link name="right_little_PIP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.0010921637508148 -0.0011120746029774 0.0182388508304438" />
+      <mass value="0.0332" />
+      <inertia ixx="2.52e-06" ixy="1e-08" ixz="-3e-08" iyy="2.33e-06" iyz="3e-08" izz="1.84e-06" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_little_PIP_link.STL" />
+      </geometry>
+      <material name="right_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_little_PIP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_little_PIP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="7.99016655647876E-05 -0.00287922592171121 0.0469200496920893" />
+    <parent link="right_little_MCP_link" />
+    <child link="right_little_PIP_link" />
+    <axis xyz="-0.0571896789757601 0.996482943138999 0.0612460990732252" />
+    <limit effort="0" lower="-0.1452" upper="1.6001" velocity="0" />
+  </joint>
+  <link name="right_little_DIP_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00240993382326676 -0.000902826418012859 0.0150171096742269" />
+      <mass value="0.011" />
+      <inertia ixx="6.68170327032581e-07" ixy="1.73904080776635e-09" ixz="7.45145408895114e-08" iyy="6.68827426000768e-07" iyz="-1.09494681712038e-09" izz="5.5174265111179e-07" />
+    </inertial>
+    <visual name="right_little_DIP_link__revo3_silicone_2162u_approx">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_little_DIP_link__revo3_silicone_2162u_approx.stl" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <visual name="right_little_DIP_link__revo3_polished_aluminum">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_little_DIP_link__revo3_polished_aluminum.stl" />
+      </geometry>
+      <material name="right_revo3_polished_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_little_DIP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_little_DIP_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="5.14511189704386E-05 -0.00180820433011683 0.0294677909771798" />
+    <parent link="right_little_PIP_link" />
+    <child link="right_little_DIP_link" />
+    <axis xyz="-0.0571896789757549 0.996482943138999 0.0612460990732302" />
+    <limit effort="0" lower="-0.322" upper="1.5978" velocity="0" />
+  </joint>
+  <link name="right_little_DIP_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_little_DIP_rubber_link.STL" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_little_DIP_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_little_DIP_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="right_little_DIP_link" />
+    <child link="right_little_DIP_rubber_link" />
+  </joint>
+  <link name="right_little_PIP_touch_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_little_PIP_touch_link.STL" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_little_PIP_touch_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_little_PIP_touch_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="right_little_PIP_link" />
+    <child link="right_little_PIP_touch_link" />
+  </joint>
+  <link name="right_little_PIP_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_little_PIP_rubber_link.STL" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_little_PIP_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_little_PIP_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="right_little_PIP_link" />
+    <child link="right_little_PIP_rubber_link" />
+  </joint>
+  <link name="right_little_MCP_touch_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_little_MCP_touch_link.STL" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_little_MCP_touch_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_little_MCP_touch_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="right_little_MCP_link" />
+    <child link="right_little_MCP_touch_link" />
+  </joint>
+  <link name="right_little_MCP_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_little_MCP_rubber_link.STL" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_little_MCP_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_little_MCP_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="right_little_MCP_link" />
+    <child link="right_little_MCP_rubber_link" />
+  </joint>
+  <link name="right_palm_touch_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_palm_touch_link.STL" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_palm_touch_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_palm_touch_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="right_hand_base_link" />
+    <child link="right_palm_touch_link" />
+  </joint>
+  <link name="right_palm_rubber_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_palm_rubber_link.STL" />
+      </geometry>
+      <material name="right_revo3_silicone_2162u_approx" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_palm_rubber_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_palm_rubber_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="right_hand_base_link" />
+    <child link="right_palm_rubber_link" />
+  </joint>
+  <link name="right_palm_link">
+    <visual name="right_palm_link__revo3_white_pc">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_palm_link__revo3_white_pc.stl" />
+      </geometry>
+      <material name="right_revo3_white_pc" />
+    </visual>
+    <visual name="right_palm_link__revo3_aluminum">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_palm_link__revo3_aluminum.stl" />
+      </geometry>
+      <material name="right_revo3_aluminum" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_palm_backtrim_v2.obj" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_palm_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="right_hand_base_link" />
+    <child link="right_palm_link" />
+  </joint>
+  <link name="right_palm_led_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/visual/right/right_palm_led_link.dae" />
+      </geometry>
+      <material name="right_revo3_screen_texture">
+        <color rgba="1 1 1 1" />
+        <texture filename="../meshes/hands/visual/textures/revo3_screen.png" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/hands/collision/right/right_palm_led_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_palm_led_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="right_palm_link" />
+    <child link="right_palm_led_link" />
+  </joint>
+  <link name="right_palm" />
+  <joint name="right_palm_center" type="fixed">
+    <parent link="right_hand_base_link" />
+    <child link="right_palm" />
+    <origin rpy="0 0 0" xyz="0.0155 0 0.055" />
+  </joint>
+  <link name="right_thumb_tip_Link" />
+  <joint name="right_thumb_tip_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0.01 0.0098" />
+    <parent link="right_thumb_DIP_link" />
+    <child link="right_thumb_tip_Link" />
+  </joint>
+  <link name="right_index_tip_Link" />
+  <joint name="right_index_tip_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0.0084 0.0005 0.01" />
+    <parent link="right_index_DIP_link" />
+    <child link="right_index_tip_Link" />
+  </joint>
+  <link name="right_middle_tip_Link" />
+  <joint name="right_middle_tip_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0.0084 -0.0 0.01" />
+    <parent link="right_middle_DIP_link" />
+    <child link="right_middle_tip_Link" />
+  </joint>
+  <link name="right_ring_tip_Link" />
+  <joint name="right_ring_tip_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0.0084 -0.000185 0.01" />
+    <parent link="right_ring_DIP_link" />
+    <child link="right_ring_tip_Link" />
+  </joint>
+  <link name="right_little_tip_Link" />
+  <joint name="right_little_tip_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0.0084 -0.0012185 0.01" />
+    <parent link="right_little_DIP_link" />
+    <child link="right_little_tip_Link" />
+  </joint>
+</robot>

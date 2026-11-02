@@ -1,0 +1,127 @@
+{
+  "center_palm": [
+    0.06012657824271335,
+    0.014884622427460165,
+    0.1345670075927263
+  ],
+  "cube_rotation_palm": [
+    [
+      0.8514095996897132,
+      -0.5068282680068122,
+      -0.13500666763318395
+    ],
+    [
+      0.4923536449345224,
+      0.8610242895341045,
+      -0.12737763207086494
+    ],
+    [
+      0.1808026047265147,
+      0.041979513831216966,
+      0.9826230907843567
+    ]
+  ],
+  "clearance_m": -0.0005,
+  "contact_geometry": "convex collision mesh support vertices",
+  "joint_targets": {
+    "left_thumb_CMP_joint": 0.8060183718480404,
+    "left_thumb_CMR_joint": 0.5389826263220824,
+    "left_thumb_MCP_joint": 0.7456956433223674,
+    "left_thumb_PIP_joint": 1.2659877829584334,
+    "left_thumb_DIP_joint": 1.017933820530837,
+    "left_index_MPR_joint": -0.0040550016817172685,
+    "left_index_MCP_joint": 0.5737625173503802,
+    "left_index_PIP_joint": 0.7485350457307023,
+    "left_index_DIP_joint": 0.6762313517040994,
+    "left_middle_MPR_joint": -0.02780248074525842,
+    "left_middle_MCP_joint": 0.7910501512122766,
+    "left_middle_PIP_joint": 0.25241127594203366,
+    "left_middle_DIP_joint": 0.6512362487878364,
+    "left_ring_MPR_joint": -0.027730354787579806,
+    "left_ring_MCP_joint": 0.6000670605540329,
+    "left_ring_PIP_joint": 0.5160624667503285,
+    "left_ring_DIP_joint": 0.36902231445439687,
+    "left_little_MPR_joint": -0.04455584046046971,
+    "left_little_MCP_joint": 0.6154308735065536,
+    "left_little_PIP_joint": 0.02236257364829451,
+    "left_little_DIP_joint": 0.02161765770675546
+  },
+  "max_tip_error_m": 0.00017837091862314637,
+  "errors_m": {
+    "thumb": 3.245962567514714e-05,
+    "index": 0.00017837091862314637,
+    "middle": 2.611685638085129e-05,
+    "ring": 9.735487687987515e-06,
+    "little": 0.0001711225083712686
+  },
+  "face_points": {
+    "thumb": [
+      -0.020984674161793084,
+      -0.01601890965964529,
+      -0.028500000000000043
+    ],
+    "index": [
+      -0.02849999999999997,
+      -0.028499999999999977,
+      0.028285019648167067
+    ],
+    "middle": [
+      0.0033629207198925754,
+      -0.021857097810618845,
+      0.028499999999999834
+    ],
+    "ring": [
+      0.006733034855253362,
+      0.005476436376942351,
+      0.028499999999999942
+    ],
+    "little": [
+      -0.0027843277751908105,
+      0.026979597393382515,
+      0.028499999999999862
+    ]
+  },
+  "cost": 0.0024408179178535172,
+  "evaluations": 38,
+  "kind": "kinematic_only",
+  "frame_roll_deg": 90.0,
+  "main_hand": "left",
+  "support_hand": "right",
+  "open_joint_targets": {
+    "left_thumb_CMP_joint": 0.8060183718480404,
+    "left_thumb_CMR_joint": 0.5389826263220824,
+    "left_thumb_MCP_joint": 0.7456956433223674,
+    "left_thumb_PIP_joint": 1.1159877829584335,
+    "left_thumb_DIP_joint": 1.017933820530837,
+    "left_index_MPR_joint": -0.0040550016817172685,
+    "left_index_MCP_joint": 0.4937625173503802,
+    "left_index_PIP_joint": 0.7485350457307023,
+    "left_index_DIP_joint": 0.6262313517040994,
+    "left_middle_MPR_joint": -0.02780248074525842,
+    "left_middle_MCP_joint": 0.7110501512122767,
+    "left_middle_PIP_joint": 0.25241127594203366,
+    "left_middle_DIP_joint": 0.6012362487878363,
+    "left_ring_MPR_joint": -0.027730354787579806,
+    "left_ring_MCP_joint": 0.520067060554033,
+    "left_ring_PIP_joint": 0.5160624667503285,
+    "left_ring_DIP_joint": 0.3190223144543969,
+    "left_little_MPR_joint": -0.04455584046046971,
+    "left_little_MCP_joint": 0.5354308735065536,
+    "left_little_PIP_joint": 0.02236257364829451,
+    "left_little_DIP_joint": 0.02
+  },
+  "collision_distance_min_m": 0.0035604063855684564,
+  "table_clearance_min_m": 0.0034993863627659216,
+  "optimization_evaluations": 26,
+  "elapsed_s": 5.30429407399788,
+  "physics_verified": false,
+  "preshape_path_clearance_m": 0.0032792041865231662,
+  "closing_path_clearance_m": 0.0035604063855684564,
+  "cube_contact_distances_m": {
+    "thumb": -0.000530062342963062,
+    "index": -0.0004416930310429071,
+    "middle": -0.0006061990687393293,
+    "ring": -0.0004532778075047549,
+    "little": -0.0004347682447634893
+  }
+}

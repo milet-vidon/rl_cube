@@ -1,0 +1,4 @@
+# Project-tested subset of Isaac Lab 3.0's official dependency ranges.
+# NumPy also satisfies Isaac Sim 6.2's ABI pin and Numba's upper bound.
+numpy==2.3.1
+packaging==26.0

@@ -1,0 +1,171 @@
+{
+  "kind": "teacher_dataset",
+  "split": "training",
+  "trials": [
+    {
+      "seed": 4001,
+      "split": "training",
+      "kind": "teacher",
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 471,
+        "max_joint_velocity_rad_s": 9.99999713897705,
+        "max_position_error_rad": 0.030451714992523193,
+        "dropped": false,
+        "continuous_hold_seconds": 1.0
+      },
+      "steps": 549,
+      "max_height_m": 0.11500829124450684,
+      "robot_table_impulse_sum": 0.0
+    },
+    {
+      "seed": 4002,
+      "split": "training",
+      "kind": "teacher",
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 468,
+        "max_joint_velocity_rad_s": 5.079010009765625,
+        "max_position_error_rad": 0.03290665149688721,
+        "dropped": false,
+        "continuous_hold_seconds": 1.0
+      },
+      "steps": 548,
+      "max_height_m": 0.11512225532531739,
+      "robot_table_impulse_sum": 0.0
+    },
+    {
+      "seed": 4003,
+      "split": "training",
+      "kind": "teacher",
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 466,
+        "max_joint_velocity_rad_s": 2.1010024547576904,
+        "max_position_error_rad": 0.02750086784362793,
+        "dropped": false,
+        "continuous_hold_seconds": 1.0
+      },
+      "steps": 548,
+      "max_height_m": 0.11484270954132081,
+      "robot_table_impulse_sum": 0.0
+    },
+    {
+      "seed": 4004,
+      "split": "training",
+      "kind": "teacher",
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 469,
+        "max_joint_velocity_rad_s": 8.510736465454102,
+        "max_position_error_rad": 0.029140472412109375,
+        "dropped": false,
+        "continuous_hold_seconds": 1.0
+      },
+      "steps": 549,
+      "max_height_m": 0.1150464382171631,
+      "robot_table_impulse_sum": 0.0
+    },
+    {
+      "seed": 4005,
+      "split": "training",
+      "kind": "teacher",
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 470,
+        "max_joint_velocity_rad_s": 3.481110095977783,
+        "max_position_error_rad": 0.02756977081298828,
+        "dropped": false,
+        "continuous_hold_seconds": 1.0
+      },
+      "steps": 548,
+      "max_height_m": 0.11516564750671388,
+      "robot_table_impulse_sum": 0.0
+    },
+    {
+      "seed": 4006,
+      "split": "training",
+      "kind": "teacher",
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 471,
+        "max_joint_velocity_rad_s": 2.234898567199707,
+        "max_position_error_rad": 0.0328296422958374,
+        "dropped": false,
+        "continuous_hold_seconds": 1.0
+      },
+      "steps": 549,
+      "max_height_m": 0.11429458522796632,
+      "robot_table_impulse_sum": 0.0
+    },
+    {
+      "seed": 4007,
+      "split": "training",
+      "kind": "teacher",
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 469,
+        "max_joint_velocity_rad_s": 2.0829601287841797,
+        "max_position_error_rad": 0.03438520431518555,
+        "dropped": false,
+        "continuous_hold_seconds": 1.0
+      },
+      "steps": 548,
+      "max_height_m": 0.11511140727996827,
+      "robot_table_impulse_sum": 0.0
+    },
+    {
+      "seed": 4008,
+      "split": "training",
+      "kind": "teacher",
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 470,
+        "max_joint_velocity_rad_s": 4.509011745452881,
+        "max_position_error_rad": 0.03324604034423828,
+        "dropped": false,
+        "continuous_hold_seconds": 1.0
+      },
+      "steps": 563,
+      "max_height_m": 0.09390324020385743,
+      "robot_table_impulse_sum": 0.0
+    }
+  ],
+  "accepted": 8,
+  "total": 8,
+  "elapsed_s": 164.5525940389998,
+  "checkpoint_sha256": null,
+  "actor_observation": "privileged simulator state, own control history, initial cube position and clock; no teacher actions"
+}

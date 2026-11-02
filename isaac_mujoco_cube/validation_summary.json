@@ -1,0 +1,108 @@
+{
+  "cpu_passed": true,
+  "negative_control_passed": true,
+  "model_joints": {
+    "revolute": 6,
+    "spherical": 20
+  },
+  "cube_drives": 0,
+  "runs": {
+    "gpu_matched_timing_result.json": {
+      "passed": false,
+      "gpu": true,
+      "physics_steps": null,
+      "phases": [
+        {
+          "axis": "Z",
+          "mean_angle_deg": -16.525292300207468,
+          "max_position_error_m": 0.06704707330641485,
+          "max_orientation_error_deg": 179.22330825633492,
+          "fixture_contact_headers": 101593,
+          "max_released_position_error_m": 0.0675224621538972,
+          "passed": false
+        }
+      ],
+      "termination": "Stopped after first failed face; second face not tested"
+    },
+    "no_contact_result.json": {
+      "passed": false,
+      "gpu": false,
+      "physics_steps": 4380,
+      "phases": [
+        {
+          "axis": "Z",
+          "mean_angle_deg": 2.4557871196534256e-06,
+          "max_position_error_m": 0.0380000018626452,
+          "max_orientation_error_deg": 90.0,
+          "fixture_contact_headers": 0,
+          "max_released_position_error_m": 0.03800000558793582,
+          "passed": false
+        },
+        {
+          "axis": "X",
+          "mean_angle_deg": 3.1459777331844906e-06,
+          "max_position_error_m": 0.038000007450583025,
+          "max_orientation_error_deg": 90.0,
+          "fixture_contact_headers": 0,
+          "max_released_position_error_m": 0.03800001303851774,
+          "passed": false
+        }
+      ]
+    },
+    "validated_cpu_result.json": {
+      "passed": true,
+      "gpu": false,
+      "physics_steps": 4380,
+      "phases": [
+        {
+          "axis": "Z",
+          "mean_angle_deg": 89.79306426171135,
+          "max_position_error_m": 9.926969368410589e-05,
+          "max_orientation_error_deg": 0.21262201139439238,
+          "fixture_contact_headers": 19897,
+          "max_released_position_error_m": 9.847195217516697e-05,
+          "passed": true
+        },
+        {
+          "axis": "X",
+          "mean_angle_deg": 89.75657266358951,
+          "max_position_error_m": 0.0001780878306747807,
+          "max_orientation_error_deg": 0.3878066568654422,
+          "fixture_contact_headers": 19896,
+          "max_released_position_error_m": 0.00017683038024593218,
+          "passed": true
+        }
+      ]
+    },
+    "validated_gpu_result.json": {
+      "passed": false,
+      "gpu": true,
+      "physics_steps": 4380,
+      "phases": [
+        {
+          "axis": "Z",
+          "mean_angle_deg": 39.70694478859827,
+          "max_position_error_m": 0.08013919195476345,
+          "max_orientation_error_deg": 171.75144514831993,
+          "fixture_contact_headers": 28432,
+          "max_released_position_error_m": 0.07503366462818828,
+          "passed": false
+        },
+        {
+          "axis": "X",
+          "mean_angle_deg": -0.4222024900054855,
+          "max_position_error_m": 0.08673369372150733,
+          "max_orientation_error_deg": 173.86132048039568,
+          "fixture_contact_headers": 28662,
+          "max_released_position_error_m": 0.08165297267826992,
+          "passed": false
+        }
+      ]
+    }
+  },
+  "file_sha256": {
+    "contact_test.py": "09c7333819c5711a951082e607a84c6318f37dbd4144e655d7059fcc871c1e0d",
+    "cube_model.usda": "c41baa3cd75db5a497c5878d0e18bb6b3316124e0f1935867de8305b44e4eb11",
+    "cube_contact_scene.usda": "cc758803e22494686deaf6277aa1d87f50875dbccf0594d1817a55e342e08978"
+  }
+}

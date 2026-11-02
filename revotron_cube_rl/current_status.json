@@ -1,0 +1,1641 @@
+{
+  "updated_at": "2026-11-02T17:39:30.653309+08:00",
+  "observation_version": 3,
+  "actions": 56,
+  "traditional_visual": {
+    "run": "traditional_visual_verified",
+    "completed": 8,
+    "successes": 8,
+    "seeds": [
+      17,
+      31,
+      47,
+      59,
+      71,
+      83,
+      97,
+      109
+    ],
+    "max_lift_m": 0.11535077953338624,
+    "minimum_max_hold_steps": 30,
+    "robot_table_impulse_sum": 0.0,
+    "simulation_elapsed_s": 324.67796325683594
+  },
+  "traditional_strict_hold": {
+    "run": "traditional_long_hold",
+    "completed": 5,
+    "successes": 5,
+    "seeds": [
+      101,
+      131,
+      157,
+      181,
+      211
+    ],
+    "max_lift_m": 0.11580365562438966,
+    "minimum_max_hold_steps": 90,
+    "robot_table_impulse_sum": 0.0,
+    "simulation_elapsed_s": 145.22386693954468
+  },
+  "traditional_gate_passed": true,
+  "warmstart": {
+    "status": "completed",
+    "selected_epoch": 78,
+    "selected_holdout": {
+      "mse": 0.0009294411186070935,
+      "active_action_mse": 0.0030428261504986294,
+      "active_action_components": 12299,
+      "samples": 781
+    },
+    "elapsed_s": 48.86977458000183
+  },
+  "warmstart_closed_loop_evaluation": {
+    "status": "completed",
+    "seed": 307,
+    "episodes": 2,
+    "successes": 0,
+    "steps_total": 1200,
+    "elapsed_s": 153.2551760673523,
+    "privileged_actor_leak_max": 0.0
+  },
+  "current_policy_warmstart": {
+    "run": "visual_feedback_policy",
+    "status": "completed",
+    "selected_epoch": 199,
+    "selected_holdout": {
+      "mse": 0.0009465478813213765,
+      "active_action_mse": 0.0029526090052248,
+      "active_action_components": 12262,
+      "samples": 782
+    },
+    "action_history": {
+      "disable_requested": true,
+      "disabled": true,
+      "method": "Zero actor input gains without compensating weights; critic and raw data unchanged.",
+      "stored_in_checkpoint": true
+    },
+    "feedback_scaling": {
+      "requested": true,
+      "nonidentity": true,
+      "target_error_gains": [
+        40.0,
+        40.0,
+        40.0,
+        40.0,
+        40.0,
+        40.0,
+        40.0,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        40.0,
+        40.0,
+        40.0,
+        40.0,
+        40.0,
+        40.0,
+        40.0,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422,
+        16.666667938232422
+      ],
+      "stored_in_checkpoint": true,
+      "raw_observations_modified": false,
+      "initial_function_preserved_by_weight_compensation": true
+    }
+  },
+  "current_policy_closed_loop": {
+    "run": "visual_feedback_evaluation",
+    "status": "completed",
+    "seed": 503,
+    "episodes": 1,
+    "successes": 0,
+    "steps_total": 600,
+    "elapsed_s": 73.37109851837158,
+    "privileged_actor_leak_max": 0.0,
+    "free_bilateral_steps": 14,
+    "max_free_bilateral_height_m": 0.014905866622924813
+  },
+  "dagger_round2": {
+    "status": "completed",
+    "beta": 0.8,
+    "query_transitions": 1173,
+    "combined_transitions": 4299,
+    "query_successes": 3,
+    "elapsed_s": 260.6719999999998,
+    "task_success_claim": false
+  },
+  "warmstart_round2": {
+    "status": "completed",
+    "selected_epoch": 184,
+    "selected_holdout": {
+      "mse": 0.00039100873832119084,
+      "active_action_mse": 0.001208164343177564,
+      "active_action_components": 18431,
+      "samples": 1172
+    },
+    "elapsed_s": 169.12090587615967,
+    "task_success_claim": false
+  },
+  "round2_closed_loop": {
+    "status": "completed",
+    "seed": 503,
+    "episodes": 3,
+    "successes": 0,
+    "steps_total": 1800,
+    "elapsed_s": 218.98917627334595,
+    "black_image_action_delta": 0.7368452548980713,
+    "task_success_claim": false
+  },
+  "ppo_round2_evaluation": {
+    "status": "completed",
+    "seed": 503,
+    "episodes": 1,
+    "successes": 0,
+    "steps_total": 600,
+    "elapsed_s": 94.18402361869812,
+    "black_image_action_delta": 0.6979607343673706,
+    "task_success_claim": false
+  },
+  "dagger_round3_beta05": {
+    "status": "completed",
+    "beta": 0.5,
+    "query_transitions": 1172,
+    "combined_transitions": 4298,
+    "query_successes": 3,
+    "elapsed_s": 299.9840000000004,
+    "task_success_claim": false
+  },
+  "merged_round3_dataset": {
+    "status": "completed",
+    "base_transitions": 3126,
+    "query_transitions": 3127,
+    "combined_transitions": 6253,
+    "episode_count": 16,
+    "task_success_claim": false
+  },
+  "warmstart_round3": {
+    "status": "completed",
+    "selected_epoch": 1,
+    "selected_holdout": {
+      "mse": 0.00029051585745867576,
+      "active_action_mse": 0.0009132648270840289,
+      "active_action_components": 24425,
+      "samples": 1563
+    },
+    "elapsed_s": 180.7025556564331,
+    "task_success_claim": false
+  },
+  "round3_closed_loop": {
+    "status": "completed",
+    "seed": 601,
+    "episodes": 3,
+    "successes": 0,
+    "steps_total": 1800,
+    "elapsed_s": 208.2082462310791,
+    "black_image_action_delta": 0.7896114587783813,
+    "task_success_claim": false
+  },
+  "merged_round4_dataset": {
+    "status": "completed",
+    "base_transitions": 6251,
+    "query_transitions": 3127,
+    "combined_transitions": 9378,
+    "episode_count": 24,
+    "task_success_claim": false
+  },
+  "warmstart_round4": {
+    "status": "completed",
+    "selected_epoch": 99,
+    "selected_holdout": {
+      "mse": 0.00022873983232707268,
+      "active_action_mse": 0.0007195868117943801,
+      "active_action_components": 30683,
+      "samples": 1954
+    },
+    "elapsed_s": 176.93231892585754,
+    "task_success_claim": false
+  },
+  "round4_closed_loop": {
+    "status": "completed",
+    "seed": 901,
+    "episodes": 3,
+    "successes": 0,
+    "steps_total": 1800,
+    "elapsed_s": 203.3522129058838,
+    "black_image_action_delta": 1.0537279844284058,
+    "task_success_claim": false
+  },
+  "dagger_round5_beta03": {
+    "status": "completed",
+    "beta": 0.3,
+    "query_transitions": 1174,
+    "combined_transitions": 4299,
+    "query_successes": 3,
+    "elapsed_s": 279.9849999999997,
+    "task_success_claim": false
+  },
+  "merged_round5_dataset": {
+    "status": "completed",
+    "old_transitions": 9378,
+    "round5_query_transitions": 1174,
+    "combined_transitions": 10552,
+    "episode_count": 27,
+    "task_success_claim": false
+  },
+  "warmstart_round5_rgbaug": {
+    "status": "completed",
+    "selected_epoch": 41,
+    "selected_holdout": {
+      "mse": 0.00039255147070080975,
+      "active_action_mse": 0.0012060838036590488,
+      "active_action_components": 37026,
+      "samples": 2346
+    },
+    "elapsed_s": 263.6162052154541,
+    "task_success_claim": false
+  },
+  "round5_rgbaug_closed_loop": {
+    "status": "completed",
+    "seed": 1021,
+    "episodes": 3,
+    "successes": 0,
+    "steps_total": 1800,
+    "elapsed_s": 238.1777060031891,
+    "black_image_action_delta": 0.5854445695877075,
+    "action_gain": null,
+    "task_success_claim": false
+  },
+  "warmstart_round5_rgbaug_scratch": {
+    "status": "completed",
+    "selected_epoch": 99,
+    "selected_holdout": {
+      "mse": 0.0005459883076967425,
+      "active_action_mse": 0.001735038443360687,
+      "active_action_components": 36925,
+      "samples": 2345
+    },
+    "elapsed_s": 272.6500985622406,
+    "task_success_claim": false
+  },
+  "round5_rgbaug_scratch_closed_loop": {
+    "status": "completed",
+    "seed": 1103,
+    "episodes": 3,
+    "successes": 0,
+    "steps_total": 1800,
+    "elapsed_s": 232.07721543312073,
+    "black_image_action_delta": 0.24970267713069916,
+    "action_gain": 1.0,
+    "task_success_claim": false
+  },
+  "round5_gain05_diagnostic": {
+    "status": "completed",
+    "seed": 1021,
+    "episodes": 1,
+    "successes": 0,
+    "steps_total": 600,
+    "elapsed_s": 76.81576752662659,
+    "action_gain": 0.5,
+    "task_success_claim": false
+  },
+  "round5_warmup_clip_diagnostic": {
+    "status": "completed",
+    "seed": 1021,
+    "episodes": 1,
+    "successes": 0,
+    "steps_total": 600,
+    "elapsed_s": 80.86359190940857,
+    "initial_action_clip": 0.12,
+    "initial_action_steps": 90,
+    "task_success_claim": false
+  },
+  "position_dagger_round6_beta06": {
+    "status": "completed",
+    "beta": 0.6,
+    "query_transitions": 1173,
+    "combined_transitions": 4298,
+    "query_successes": 3,
+    "elapsed_s": 294.59399999999914,
+    "task_success_claim": false,
+    "actor_input": "224 proprioception + 6 explicit cube-position features"
+  },
+  "position_warmstart_round6_beta06_active5": {
+    "status": "completed",
+    "selected_epoch": 145,
+    "selected_holdout": {
+      "mse": 0.0009710012514830887,
+      "active_action_mse": 0.0030661984862418116,
+      "active_action_components": 18496,
+      "samples": 1171
+    },
+    "elapsed_s": 31.772785902023315,
+    "task_success_claim": false,
+    "active_weight": 5.0
+  },
+  "position_round6_closed_loop": {
+    "status": "completed",
+    "seed": 1501,
+    "episodes": 1,
+    "successes": 0,
+    "steps_total": 600,
+    "elapsed_s": 78.22171068191528,
+    "position_feature_dim": 6,
+    "blank_position_action_delta": 0.10859397053718567,
+    "task_success_claim": false
+  },
+  "position_dagger_round7_beta04": {
+    "status": "completed",
+    "beta": 0.4,
+    "query_transitions": 1190,
+    "combined_transitions": 4315,
+    "query_successes": 3,
+    "elapsed_s": 304.3279999999995,
+    "task_success_claim": false,
+    "actor_input": "224 proprioception + 6 explicit cube-position features"
+  },
+  "position_warmstart_round7_beta04_active5": {
+    "status": "completed",
+    "selected_epoch": 149,
+    "selected_holdout": {
+      "mse": 0.0019021630000712907,
+      "active_action_mse": 0.006205484183834689,
+      "active_action_components": 18965,
+      "samples": 1189
+    },
+    "elapsed_s": 31.305696487426758,
+    "task_success_claim": false,
+    "active_weight": 5.0
+  },
+  "absolute_warmstart_round8_beta06": {
+    "status": "completed",
+    "selected_epoch": 146,
+    "selected_holdout": {
+      "mse": 2.5944921302939264e-05,
+      "active_target_mse": 2.6288149741711574e-05,
+      "active_target_components": 64559,
+      "samples": 1172
+    },
+    "elapsed_s": 25.21131944656372,
+    "task_success_claim": false,
+    "output_mode": "absolute_joint_target"
+  },
+  "absolute_round8_closed_loop": {
+    "status": "completed",
+    "seed": 1701,
+    "episodes": 1,
+    "successes": 0,
+    "steps_total": 600,
+    "position_feature_dim": 6,
+    "task_success_claim": false,
+    "robot_table_impulse": 0.636945678244448
+  },
+  "absolute_dagger_round9_beta04": {
+    "status": "completed",
+    "beta": 0.4,
+    "query_transitions": 1710,
+    "combined_transitions": 4835,
+    "query_successes": 0,
+    "elapsed_s": 324.2810000000027,
+    "task_success_claim": false,
+    "actor_output": "absolute joint targets converted to PD increments"
+  },
+  "absolute_dagger_round10_beta08": {
+    "status": "completed",
+    "beta": 0.8,
+    "query_transitions": 1710,
+    "combined_transitions": 4835,
+    "query_successes": 0,
+    "elapsed_s": 329.0310000000027,
+    "task_success_claim": false,
+    "actor_output": "absolute joint targets converted to PD increments"
+  },
+  "absolute_warmstart_round11_actionloss": {
+    "status": "completed",
+    "selected_epoch": 143,
+    "selected_holdout": {
+      "action_mse": 0.014483176649974247,
+      "active_action_mse": 0.03768069500156445,
+      "active_action_components": 18608,
+      "samples": 1173
+    },
+    "elapsed_s": 28.96360421180725,
+    "task_success_claim": false,
+    "output_mode": "absolute_joint_target"
+  },
+  "absolute_round11_closed_loop": {
+    "status": "completed",
+    "seed": 1702,
+    "episodes": 1,
+    "successes": 0,
+    "steps_total": 600,
+    "position_feature_dim": 6,
+    "task_success_claim": false
+  },
+  "absolute_warmstart_round12_phase_actionloss": {
+    "status": "completed",
+    "selected_epoch": 147,
+    "selected_holdout": {
+      "action_mse": 0.02315350649183637,
+      "active_action_mse": 0.05813395940312741,
+      "active_action_components": 18511,
+      "samples": 1172
+    },
+    "elapsed_s": 29.6723575592041,
+    "task_success_claim": false,
+    "output_mode": "absolute_joint_target"
+  },
+  "absolute_round12_phase_closed_loop": {
+    "status": "completed",
+    "seed": 1703,
+    "episodes": 1,
+    "successes": 0,
+    "steps_total": 600,
+    "position_feature_dim": 7,
+    "task_success_claim": false,
+    "robot_table_impulse": 1.9425681828032308
+  },
+  "absolute_ppo_round14": {
+    "status": "completed",
+    "seed": 1901,
+    "episodes": 3,
+    "successes": 0,
+    "steps_total": 1800,
+    "output_mode": "absolute_joint_target",
+    "position_feature_dim": 6,
+    "noise_std": 0.03,
+    "optimizer_resume": "fresh_after_supervised_checkpoint",
+    "task_success_claim": false
+  },
+  "absolute_ppo_round14_closed_loop": {
+    "status": "completed",
+    "seed": 1907,
+    "episodes": 1,
+    "successes": 0,
+    "steps_total": 600,
+    "output_mode": "absolute_joint_target",
+    "position_feature_dim": 6,
+    "task_success_claim": false,
+    "robot_table_impulse": 30.50106496922773
+  },
+  "absolute_warmstart_round15_phasefix": {
+    "status": "completed",
+    "selected_epoch": 173,
+    "selected_holdout": {
+      "action_mse": 0.019647211403105096,
+      "active_action_mse": 0.051482672615853084,
+      "active_action_components": 18507,
+      "samples": 1172
+    },
+    "elapsed_s": 33.796082735061646,
+    "task_success_claim": false,
+    "output_mode": "absolute_joint_target",
+    "phase_horizon_steps": 391
+  },
+  "absolute_round15_phasefix_closed_loop": {
+    "status": "completed",
+    "seed": 1913,
+    "episodes": 1,
+    "successes": 0,
+    "steps_total": 600,
+    "position_feature_dim": 7,
+    "phase_horizon_steps": 391,
+    "task_success_claim": false,
+    "robot_table_impulse": 4.47699148384897
+  },
+  "absolute_warmstart_round16_openloop_phase": {
+    "status": "completed",
+    "selected_epoch": 179,
+    "selected_holdout": {
+      "action_mse": 2.538872687657364,
+      "active_action_mse": 7.192351039237801,
+      "active_action_components": 18495,
+      "samples": 1172
+    },
+    "elapsed_s": 34.97293758392334,
+    "task_success_claim": false,
+    "output_mode": "absolute_joint_target",
+    "phase_horizon_steps": 391,
+    "open_loop_phase": true
+  },
+  "phase_regression_round18": {
+    "status": "completed",
+    "selected_epoch": null,
+    "selected_holdout": null,
+    "elapsed_s": 1.786834716796875,
+    "task_success_claim": false
+  },
+  "phase_knn_round19": {
+    "phase_knn_round19_eval": {
+      "status": "completed",
+      "seed": 1929,
+      "steps_total": 600,
+      "successes": 1,
+      "episodes": 1,
+      "phase_horizon_steps": 391,
+      "task_success_claim": false,
+      "elapsed_s": 72.33261847496033
+    },
+    "phase_knn_round19_seed1933": {
+      "status": "completed",
+      "seed": 1933,
+      "steps_total": 600,
+      "successes": 1,
+      "episodes": 1,
+      "phase_horizon_steps": 391,
+      "task_success_claim": false,
+      "elapsed_s": 63.68893599510193
+    },
+    "phase_knn_round19_seed1937": {
+      "status": "completed",
+      "seed": 1937,
+      "steps_total": 600,
+      "successes": 1,
+      "episodes": 1,
+      "phase_horizon_steps": 391,
+      "task_success_claim": false,
+      "elapsed_s": 58.58303689956665
+    },
+    "phase_knn_round19_seed1941": {
+      "status": "completed",
+      "seed": 1941,
+      "steps_total": 600,
+      "successes": 1,
+      "episodes": 1,
+      "phase_horizon_steps": 391,
+      "task_success_claim": true,
+      "elapsed_s": 57.83932948112488
+    }
+  },
+  "phase_actor_round20": {
+    "status": "completed",
+    "selected_epoch": 294,
+    "selected_holdout": null,
+    "elapsed_s": 11.902226209640503,
+    "task_success_claim": false
+  },
+  "phase_actor_round20_closed_loop": {
+    "status": "completed",
+    "seed": 1931,
+    "steps_total": 600,
+    "successes": 0,
+    "episodes": 1,
+    "task_success_claim": false,
+    "elapsed_s": 78.0276153087616
+  },
+  "state_phase_knn_round21": {
+    "status": "completed",
+    "seed": 1945,
+    "steps_total": 600,
+    "successes": 1,
+    "episodes": 1,
+    "phase_horizon_steps": 391,
+    "q_weight": 0.5,
+    "action_weight": 1.0,
+    "task_success_claim": true,
+    "elapsed_s": 58.97738718986511
+  },
+  "turning_stage_cpu": {
+    "status": "completed",
+    "external_contact_only": true,
+    "robot_hand_turning_validated": false,
+    "rl_turning_trained": false,
+    "sequence": [
+      {
+        "axis": "Z",
+        "mean_angle_deg": 89.79306426171135,
+        "max_position_error_m": 9.926969368410589e-05,
+        "max_orientation_error_deg": 0.21262201139439238,
+        "fixture_contact_headers": 19897,
+        "passed": true
+      },
+      {
+        "axis": "X",
+        "mean_angle_deg": 89.75657266358951,
+        "max_position_error_m": 0.0001780878306747807,
+        "max_orientation_error_deg": 0.3878066568654422,
+        "fixture_contact_headers": 19896,
+        "passed": true
+      }
+    ],
+    "next_gate": "replace external fixtures with Revo3/Tianji bilateral contact and preserve the same layer-angle/error checks"
+  },
+  "ppo_runs_current_config": [
+    {
+      "run": "absolute_ppo_round14",
+      "status": "completed",
+      "updates": 3,
+      "steps_completed": 1800,
+      "successes": 0,
+      "episodes": 3,
+      "elapsed_s": 207.12080216407776
+    },
+    {
+      "run": "ppo_v3_check",
+      "status": "completed",
+      "updates": 10,
+      "steps_completed": 320,
+      "successes": 0,
+      "episodes": 0,
+      "elapsed_s": 34.60705614089966
+    },
+    {
+      "run": "visual_iterations\\cycle_001_train",
+      "status": "completed",
+      "updates": 50,
+      "steps_completed": 3200,
+      "successes": 0,
+      "episodes": 5,
+      "elapsed_s": 376.0103487968445
+    },
+    {
+      "run": "visual_iterations\\cycle_002_train",
+      "status": "completed",
+      "updates": 50,
+      "steps_completed": 3200,
+      "successes": 0,
+      "episodes": 5,
+      "elapsed_s": 377.92772340774536
+    },
+    {
+      "run": "visual_iterations\\cycle_003_train",
+      "status": "completed",
+      "updates": 50,
+      "steps_completed": 3200,
+      "successes": 0,
+      "episodes": 5,
+      "elapsed_s": 344.3038523197174
+    },
+    {
+      "run": "visual_iterations_cont1\\cycle_001_train",
+      "status": "completed",
+      "updates": 50,
+      "steps_completed": 3200,
+      "successes": 0,
+      "episodes": 5,
+      "elapsed_s": 457.87170243263245
+    },
+    {
+      "run": "visual_iterations_cont1\\cycle_002_train",
+      "status": "completed",
+      "updates": 50,
+      "steps_completed": 3200,
+      "successes": 0,
+      "episodes": 5,
+      "elapsed_s": 378.4863224029541
+    },
+    {
+      "run": "visual_iterations_cont1\\cycle_003_train",
+      "status": "completed",
+      "updates": 50,
+      "steps_completed": 3200,
+      "successes": 0,
+      "episodes": 5,
+      "elapsed_s": 435.86500334739685
+    },
+    {
+      "run": "visual_ppo_round2",
+      "status": "completed",
+      "updates": 50,
+      "steps_completed": 3200,
+      "successes": 0,
+      "episodes": 5,
+      "elapsed_s": 355.2493996620178
+    }
+  ],
+  "training_loops": [
+    {
+      "run": "visual_iterations",
+      "status": "completed",
+      "active_job": null,
+      "best_evaluation": {
+        "completed_episodes": 3,
+        "successes": 0,
+        "success_rate": 0.0,
+        "max_hold_steps": 0,
+        "max_height_m": 0.01515352392196656,
+        "max_bilateral_height_m": 0.01515352392196656,
+        "steps_total": 1800,
+        "elapsed_s": 197.44186544418335,
+        "seed": 10001,
+        "config_sha256": "6f3cf2b81389bdba543a43192a616e35a6a63dc82cc8521290e003a0b1cd93d9",
+        "score_basis": "proxy_only_no_success",
+        "task_success_claim": false,
+        "limitation": "Fixed seed is reused for model selection; final independent testing is still required."
+      },
+      "best_checkpoint": "E:\\Codex\\2026-10-30\\w\\outputs\\revotron_cube_rl\\runs\\visual_feedback_policy\\checkpoint.pt",
+      "cost": {
+        "completed_training_steps": 9600,
+        "partial_training_completed_rollout_steps_lower_bound": 0,
+        "completed_evaluation_steps": 7200,
+        "training_child_wall_s": 1224.1090000000113,
+        "evaluation_child_wall_s": 1039.4520000000193,
+        "billing_cost": 0.0,
+        "billing_note": "Local machine only; electricity cost is not estimated."
+      },
+      "updated_at": "2026-10-30T17:49:07+00:00"
+    },
+    {
+      "run": "visual_iterations_cont1",
+      "status": "completed",
+      "active_job": null,
+      "best_evaluation": {
+        "completed_episodes": 3,
+        "successes": 0,
+        "success_rate": 0.0,
+        "max_hold_steps": 0,
+        "max_height_m": 0.0029686059951782306,
+        "max_bilateral_height_m": 0.0,
+        "steps_total": 1800,
+        "elapsed_s": 216.1543047428131,
+        "seed": 10001,
+        "config_sha256": "6f3cf2b81389bdba543a43192a616e35a6a63dc82cc8521290e003a0b1cd93d9",
+        "score_basis": "proxy_only_no_success",
+        "task_success_claim": false,
+        "limitation": "Fixed seed is reused for model selection; final independent testing is still required."
+      },
+      "best_checkpoint": "E:\\Codex\\2026-10-30\\w\\outputs\\revotron_cube_rl\\runs\\visual_feedback_policy\\checkpoint.pt",
+      "cost": {
+        "completed_training_steps": 9600,
+        "partial_training_completed_rollout_steps_lower_bound": 0,
+        "completed_evaluation_steps": 7200,
+        "training_child_wall_s": 1396.9540000000125,
+        "evaluation_child_wall_s": 1141.1399999999994,
+        "billing_cost": 0.0,
+        "billing_note": "Local machine only; electricity cost is not estimated."
+      },
+      "updated_at": "2026-10-30T18:31:29+00:00"
+    },
+    {
+      "run": "visual_iterations_explore06",
+      "status": "aborted",
+      "active_job": null,
+      "best_evaluation": null,
+      "best_checkpoint": "E:\\Codex\\2026-10-30\\w\\outputs\\revotron_cube_rl\\runs\\visual_feedback_policy\\checkpoint.pt",
+      "cost": {
+        "completed_training_steps": 0,
+        "partial_training_completed_rollout_steps_lower_bound": 0,
+        "completed_evaluation_steps": 0,
+        "training_child_wall_s": 0,
+        "evaluation_child_wall_s": 0.0,
+        "billing_cost": 0.0,
+        "billing_note": "Local machine only; electricity cost is not estimated."
+      },
+      "updated_at": "2026-10-31T15:55:50.456045+00:00"
+    },
+    {
+      "run": "visual_iterations_probe",
+      "status": "aborted",
+      "active_job": null,
+      "best_evaluation": null,
+      "best_checkpoint": "E:\\Codex\\2026-10-30\\w\\outputs\\revotron_cube_rl\\runs\\visual_feedback_policy\\checkpoint.pt",
+      "cost": {
+        "completed_training_steps": 0,
+        "partial_training_completed_rollout_steps_lower_bound": 0,
+        "completed_evaluation_steps": 0,
+        "training_child_wall_s": 0,
+        "evaluation_child_wall_s": 0.0,
+        "billing_cost": 0.0,
+        "billing_note": "Local machine only; electricity cost is not estimated."
+      },
+      "updated_at": "2026-10-31T15:55:50.456045+00:00"
+    }
+  ],
+  "continuation_queues": [
+    {
+      "queue": "visual_iterations_cont1",
+      "status": "completed",
+      "updated_at": "2026-10-30T18:31:29+00:00",
+      "elapsed_s": 3858.9219999999914,
+      "after_run": "E:\\Codex\\2026-10-30\\w\\outputs\\revotron_cube_rl\\runs\\visual_iterations",
+      "target_run": "E:\\Codex\\2026-10-30\\w\\outputs\\revotron_cube_rl\\runs\\visual_iterations_cont1",
+      "worker_started": true,
+      "child_pid": 128288,
+      "previous_status": "completed",
+      "previous_heartbeat_age_s": 3.768497,
+      "previous_read_error": null,
+      "started_checkpoint": "E:\\Codex\\2026-10-30\\w\\outputs\\revotron_cube_rl\\runs\\visual_feedback_policy\\checkpoint.pt",
+      "best_checkpoint": "E:\\Codex\\2026-10-30\\w\\outputs\\revotron_cube_rl\\runs\\visual_feedback_policy\\checkpoint.pt",
+      "worker_status": "completed",
+      "worker_active_job": null,
+      "worker_active_job_progress": null,
+      "worker_cost": {
+        "completed_training_steps": 9600,
+        "partial_training_completed_rollout_steps_lower_bound": 0,
+        "completed_evaluation_steps": 7200,
+        "training_child_wall_s": 1396.9540000000125,
+        "evaluation_child_wall_s": 1141.1399999999994,
+        "billing_cost": 0.0,
+        "billing_note": "Local machine only; electricity cost is not estimated."
+      },
+      "stop_forwarded": null,
+      "stop_reason": null,
+      "error": null,
+      "returncode": 0,
+      "task_success_claim": false
+    }
+  ],
+  "linux_migration": {
+    "static_check": "passed",
+    "environment_check_script": "linux_env_check.py",
+    "launcher": "run_linux.sh",
+    "launcher_modes": [
+      "check",
+      "env-check",
+      "smoke",
+      "evaluate",
+      "train",
+      "dagger",
+      "sweep",
+      "turn"
+    ],
+    "isaaclab_launcher_support": "ISAACLAB_LAUNCHER=/path/to/isaaclab.sh -> isaaclab.sh -p script.py",
+    "direct_python_support": "ISAACLAB_PYTHON=/path/to/isaac-python",
+    "asset_env_vars": [
+      "REVOTRON_USD_PATH",
+      "ISAAC_MUJOCO_CUBE_ROOT"
+    ],
+    "migration_docs": [
+      "LINUX_MIGRATION.md",
+      "MIGRATION_AUDIT_20261102.md"
+    ],
+    "integrity_manifest": "manifest.json",
+    "runtime_linux_tested": false,
+    "windows_validation": {
+      "linux_migration_check": "passed",
+      "test_reward_gates": "8/8 passed",
+      "test_arm_safety": "passed",
+      "compileall": "passed",
+      "linux_env_check": "expected failure on Windows Python: Isaac/tensordict/rsl_rl unavailable"
+    },
+    "note": "Requires supported NVIDIA Linux GPU/driver and matching Isaac Python environment; Linux runtime remains unverified in this workspace."
+  },
+  "visual_teacher_knn_validated": true,
+  "learned_visual_skill_validated": false,
+  "cube_layers_locked": true,
+  "free_core_layer_turning_integrated": false,
+  "free_core_external_contact_turning_validated": true,
+  "robot_hand_turning_validated": false,
+  "rl_turning_trained": false,
+  "cube_solving_implemented": false,
+  "state_phase_knn_visual_demo_seed1945": {
+    "status": "completed",
+    "seed": 1945,
+    "steps_total": 600,
+    "successes": 1,
+    "episodes": 1,
+    "phase_horizon_steps": 391,
+    "q_weight": 0.5,
+    "action_weight": 1.0,
+    "task_success_claim": true,
+    "elapsed_s": 72.59829616546631,
+    "artifacts": {
+      "overview_rollout_gif": "overview_rollout.gif",
+      "chest_rollout_gif": "chest_rollout.gif",
+      "overview_final": "overview_final.png",
+      "chest_final": "chest_final.png",
+      "frames": 200,
+      "overview_success": "overview_success.png",
+      "chest_success": "chest_success.png"
+    },
+    "effect": "Real chest-RGB + state-aware kNN teacher; bilateral lift gate passed in Isaac PhysX."
+  },
+  "robot_hand_contact_probe": {
+    "status": "aborted_after_runtime_probe",
+    "name": "robot_hand_turn_stage_seed2041_probe",
+    "external_fixtures": false,
+    "result_written": false,
+    "reason": "Free-core + Revo3 scene launched and simulated, but the first contact sweep exceeded the bounded runtime window; no turning success is claimed.",
+    "robot_hand_turning_validated": false,
+    "rl_turning_trained": false,
+    "next_gate": "optimize free-core scene startup/step cost, then repeat with physical hand contact and measured layer angle."
+  },
+  "arm_soft_limits": {
+    "spec_deg": {
+      "J1": [
+        -178,
+        178
+      ],
+      "J2": [
+        -120,
+        120
+      ],
+      "J3": [
+        -178,
+        178
+      ],
+      "J4": [
+        -145,
+        60
+      ],
+      "J5": [
+        -178,
+        178
+      ],
+      "J6": [
+        -60,
+        60
+      ],
+      "J7": [
+        -90,
+        90
+      ]
+    },
+    "applied_to_both_arms": true,
+    "config_sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+    "constraint_version": "revo3_user_soft_limits_v2",
+    "max_target_step_rad": 0.04,
+    "velocity_limit_scale": 0.5,
+    "audit": "passed",
+    "hard_limit_intersection": "J4 lower bound is clipped by the imported URDF hard limit by a tiny floating point margin."
+  },
+  "arm_limit_audit": {
+    "status": "passed",
+    "joints": 14,
+    "all_home_inside_soft": true,
+    "runtime_usd_physx_hard_limit_parity": "passed"
+  },
+  "state_phase_knn_user_softlimit_seed1945": {
+    "status": "completed",
+    "seed": 1945,
+    "steps_total": 600,
+    "successes": 1,
+    "episodes": 1,
+    "real_rgb": true,
+    "task_success_claim": true,
+    "config_sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+    "elapsed_s": 56.431623480000006,
+    "artifacts": {
+      "run": "runs/state_phase_knn_user_softlimit_seed1945",
+      "overview_rollout_gif": "overview_rollout.gif",
+      "chest_rollout_gif": "chest_rollout.gif",
+      "overview_success": "overview_success.png",
+      "chest_success": "chest_success.png"
+    },
+    "qualification": "state-aware kNN/teacher replay; not evidence that PPO learned the skill"
+  },
+  "user_softlimit_warmstart": {
+    "status": "completed",
+    "run": "runs/user_softlimit_warmstart",
+    "selected_epoch": 118,
+    "selected_holdout_mse": 0.003978353386902604,
+    "selected_active_action_mse": 0.011724023830868405,
+    "independent_episode_holdout": true,
+    "task_success_claim": false,
+    "config_sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+    "elapsed_s": 314.38040590286255
+  },
+  "user_softlimit_ppo_round1": {
+    "status": "completed",
+    "run": "runs/user_softlimit_ppo_round1",
+    "iterations": 40,
+    "steps_total": 2560,
+    "episodes": 4,
+    "successes": 0,
+    "task_success_claim": false,
+    "config_sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+    "elapsed_s": 292.76860451698303,
+    "note": "Real chest RGB + PhysX PPO fine-tuning from the new-limit warm-start; no successful pickup yet."
+  },
+  "user_softlimit_ppo_round1_eval": {
+    "status": "completed",
+    "run": "runs/user_softlimit_ppo_round1_eval",
+    "steps_total": 600,
+    "episodes": 1,
+    "successes": 0,
+    "task_success_claim": false,
+    "config_sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+    "max_lift_m": 0.0,
+    "robot_table_impulse": 0.0,
+    "artifacts": {
+      "overview_final": "overview_chest_final.png",
+      "chest_final": "chest_final.png",
+      "policy_rollout_gif": "policy_rollout.gif"
+    },
+    "note": "Closed-loop learned-policy evaluation; the cube remained on the table."
+  },
+  "soft_limit_safety_active": true,
+  "phase_rgb_warmstart": {
+    "status": "completed",
+    "run": "runs/phase_rgb_warmstart",
+    "selected_epoch": 78,
+    "selected_holdout_mse": 0.0006989993271417916,
+    "selected_active_action_mse": 0.0022503198124468327,
+    "task_success_claim": false,
+    "config_sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+    "note": "Phase was explicitly appended to RGB+proprioception; offline fit improved, but this is not closed-loop success."
+  },
+  "phase_rgb_warmstart_eval": {
+    "status": "completed",
+    "run": "runs/phase_rgb_warmstart_eval",
+    "steps_total": 600,
+    "episodes": 1,
+    "successes": 0,
+    "max_lift_m": 0.0,
+    "robot_table_impulse": 1.4549916784310837,
+    "task_success_claim": false,
+    "config_sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+    "note": "Explicit phase actor remains a failed closed-loop candidate; do not promote to PPO warm-start."
+  },
+  "residual_teacher_ppo_round1": {
+    "status": "completed",
+    "run": "runs/residual_teacher_ppo_round1",
+    "iterations": 20,
+    "steps_total": 1280,
+    "episodes": 2,
+    "successes": 0,
+    "residual_scale": 0.1,
+    "noise_std": 0.1,
+    "task_success_claim": false,
+    "config_sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+    "teacher_guided_only": true,
+    "note": "Direct residual addition disrupted the narrow successful contact trajectory."
+  },
+  "residual_teacher_ppo_round1_eval": {
+    "status": "completed",
+    "run": "runs/residual_teacher_ppo_round1_eval",
+    "steps_total": 600,
+    "episodes": 1,
+    "successes": 0,
+    "residual_scale": 0.01,
+    "task_success_claim": false,
+    "config_sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+    "teacher_guided_only": true,
+    "note": "Even a 0.01 residual changed the sensitive teacher trajectory; use phase/contact-gated teacher annealing next."
+  },
+  "staged_grasp_controller": {
+    "implementation": "traditional_controller.StagedDownwardController",
+    "fsm": [
+      "raise",
+      "orient",
+      "lower",
+      "settle",
+      "close",
+      "lift",
+      "hold"
+    ],
+    "parallel_seed17_pregrasp35": {
+      "success": true,
+      "max_lift_m": 0.10796326065063477,
+      "max_hold_steps": 30,
+      "robot_table_impulse_sum": 55.6365639986784,
+      "promoted": false,
+      "reason": "pickup passed but table collision impulse failed safety gate"
+    },
+    "parallel_seed17_pregrasp50": {
+      "success": false,
+      "robot_table_impulse_sum": 31.911811392808595,
+      "promoted": false
+    },
+    "parallel_seed17_pregrasp65": {
+      "success": false,
+      "robot_table_impulse_sum": 17.006092323870632,
+      "promoted": false
+    },
+    "oblique_12deg": {
+      "status": "ik_infeasible_at_current_target",
+      "static_position_error_m": 0.006833577889999228,
+      "promoted": false,
+      "note": "Need retarget contact point and wrist orientation; do not rotate the parallel target blindly."
+    },
+    "dagger_default_teacher_mode": "legacy_downward_until_staged_collision_gate_passes",
+    "cli_parameters": [
+      "--pregrasp-scale",
+      "--approach-height",
+      "--tilt-deg"
+    ],
+    "dynamic_audit_status": "no_new_safe_candidate_promoted; staged teacher remains behind robot-table-impulse gate"
+  },
+  "linux_deployment_20261102": {
+    "target": {
+      "isaac_sim": "6.2.0.0",
+      "isaac_lab": "3.0.0",
+      "python": "3.12",
+      "torch": "2.11.0+cu130",
+      "rsl_rl": "5.5.1"
+    },
+    "environment": "/home/brainco/rl_cube/.conda/rl_cube_6_2",
+    "old_environment": "/home/brainco/rl_cube/.conda/rl_cube",
+    "driver_change": false,
+    "config_sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+    "status": "validated",
+    "sources": [
+      "https://github.com/isaac-sim/IsaacLab/releases/tag/v3.0.0",
+      "https://isaac-sim.github.io/IsaacLab/v3.0.0/source/isaaclab/installation.html",
+      "https://isaac-sim.github.io/IsaacLab/v3.0.0/source/isaaclab/migrating.html"
+    ],
+    "date": "2026-11-02",
+    "default_launcher": "/home/brainco/rl_cube/run.sh",
+    "runtime_versions": {
+      "isaacsim": "6.2.0.0",
+      "isaaclab": "3.0.0",
+      "torch": "2.11.0+cu130",
+      "rsl-rl-lib": "5.5.1"
+    },
+    "driver": "595.99.02",
+    "validation": {
+      "static_check": "passed",
+      "migration_contract_tests": "3 passed (PPO checks cover RGB, position and absolute actors)",
+      "runtime_rtx_cuda": "passed",
+      "visual_smoke": {
+        "run": "ubuntu2404_isaac62_smoke_v2",
+        "steps": 64,
+        "passed": true
+      },
+      "traditional_teacher": {
+        "run": "ubuntu2404_isaac62_teacher",
+        "seed": 17,
+        "success": true,
+        "max_height_m": 0.11509781742095948,
+        "max_hold_steps": 30,
+        "robot_table_impulse_sum": 0.0
+      },
+      "ppo_update": {
+        "run": "ubuntu2404_isaac62_ppo_integration",
+        "iterations": 1,
+        "steps": 16,
+        "seed": 7,
+        "actor_parameter_max_delta": 0.0005896915681660175,
+        "loss": {
+          "value": 0.0003329634309920948,
+          "surrogate": -0.07018889921406905,
+          "entropy": 1.8276262978712718
+        }
+      },
+      "independent_checkpoint_reload": {
+        "run": "ubuntu2404_isaac62_ppo_reload",
+        "seed": 19,
+        "steps": 16,
+        "passed": true
+      }
+    },
+    "unexpected_dependency_conflicts": [],
+    "official_dependency_overrides": [
+      {
+        "package": "isaacsim-core",
+        "requirement": "newton-usd-schemas==0.5.0",
+        "installed": "0.6.0",
+        "official_override": "newton-usd-schemas>=0.5.0"
+      },
+      {
+        "package": "isaacsim-core",
+        "requirement": "fsspec==2026.2.0",
+        "installed": "2026.9.0",
+        "official_override": "fsspec>=2026.6.0"
+      },
+      {
+        "package": "isaacsim-kernel",
+        "requirement": "urllib3==2.7.0",
+        "installed": "2.8.0",
+        "official_override": "urllib3>=2.8.0"
+      }
+    ],
+    "neural_grasp_skill_validated": false,
+    "long_training_started": false,
+    "limitations": [
+      "Traditional grasp validated for seed 17 only.",
+      "No learned visual grasp, hand turning or cube solving is claimed.",
+      "Historical PPO optimizer state cannot resume across RSL versions; start a new warmstart."
+    ],
+    "evidence_directory": "/home/brainco/rl_cube/work/upgrade_6_2",
+    "input_hashes": "work/upgrade_6_2/input_hashes.json"
+  },
+  "paper_method_transfer_20261102": {
+    "status": "state_pickup_prototype: 1/5 independent; not accepted as stable baseline",
+    "staged_teacher": {
+      "development": "2/2",
+      "heldout": "5/5",
+      "seeds": [
+        3101,
+        3102,
+        3103,
+        3104,
+        3105
+      ],
+      "robot_table_impulse_sum_Ns": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "soft_limit_hit_steps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_limit_hit_steps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "max_lift_m": [
+        0.1150469150543213,
+        0.09209483528137208,
+        0.11535459423065186,
+        0.11507302188873292,
+        0.11545329952239991
+      ],
+      "hold_s": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cube_table_contact_during_hold": false,
+      "drops": 0,
+      "monotonic_total_elapsed_s": 433.2623704530006,
+      "timing_note": "One trial wall-clock elapsed value was distorted by a clock jump; use the monotonic full-run measurement. Future sweeps now use monotonic time.",
+      "gpu_count": 1,
+      "num_envs": 1,
+      "evidence": "revotron_cube_rl/runs/staged_clearance_heldout_v1/independent_test.json"
+    },
+    "pure_state_policy_success_rate": 0.2,
+    "teacher_policy_mixture_success_rate": null,
+    "visual_actor_success_rate": null,
+    "post_ppo_success_rate": null,
+    "single_face_success_rate": null,
+    "two_face_success_rate": null,
+    "dynamic_cube_passive": {
+      "passed": true,
+      "result": "revotron_cube_rl/runs/dynamic_cube_passive_v2/result.json",
+      "runtime_override_version": "dynamic_core_v2",
+      "single_face_environment_ready": false
+    },
+    "tests": "16 passed plus ARM_SAFETY_TESTS_PASSED",
+    "new_policy_training": true,
+    "next_work": [
+      "Broaden demonstrated cube pose/orientation coverage and collect corrective state demonstrations",
+      "Improve bilateral contact retention before increasing PPO steps",
+      "Register fresh heldout seeds before further model tuning; 4201-4205 are now consumed"
+    ],
+    "paper_mapping": "revotron_cube_rl/METHOD_TRANSFER.txt",
+    "state_pickup_training": {
+      "completed": true,
+      "selected": "state_bc_v4",
+      "checkpoint_sha256": "7b9d53ca91fa9524b388b75ad37b3f2e36f5286f89a6f4dec41b27ce5e628a8e",
+      "independent_test": {
+        "accepted": 1,
+        "total": 5,
+        "seeds": [
+          4201,
+          4202,
+          4203,
+          4204,
+          4205
+        ],
+        "max_lift_m": [
+          0.017293449878692635,
+          0.037560340404510506,
+          0.11494570636749268,
+          0.04882180356979371,
+          0.014693554878234871
+        ],
+        "hold_s": [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "robot_table_impulse_sum_Ns": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "soft_limit_hit_steps": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "hard_limit_hit_steps": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "evidence": "runs/state_selected_independent_test/result.json"
+      },
+      "ppo": {
+        "iterations": 24,
+        "steps": 14400,
+        "elapsed_s": 479.7956928950007,
+        "critic_warmup_iterations": 4,
+        "training_accepted": 0,
+        "training_episodes": 16,
+        "development_accepted": 0,
+        "development_total": 3,
+        "promoted": false
+      },
+      "bc": {
+        "teacher_training_seeds": [
+          4001,
+          4002,
+          4003,
+          4004,
+          4005,
+          4006,
+          4007,
+          4008
+        ],
+        "teacher_hold_s": 9.333333333333334,
+        "epochs": 4000,
+        "elapsed_s": 94.81003879700074,
+        "development_accepted": 1,
+        "development_total": 3
+      },
+      "actor_input": "privileged state and clock; not RGB",
+      "teacher_actions_during_evaluation": false,
+      "task": "locked-cube pickup; no layer rotation",
+      "stage_passed": false,
+      "next_work": [
+        "Broaden demonstrated cube pose/orientation coverage and collect corrective state demonstrations",
+        "Improve bilateral contact retention before increasing PPO steps",
+        "Register fresh heldout seeds before further model tuning; 4201-4205 are now consumed"
+      ]
+    }
+  },
+  "state_learning_20261102": {
+    "completed": true,
+    "selected": "state_bc_v4",
+    "checkpoint_sha256": "7b9d53ca91fa9524b388b75ad37b3f2e36f5286f89a6f4dec41b27ce5e628a8e",
+    "independent_test": {
+      "accepted": 1,
+      "total": 5,
+      "seeds": [
+        4201,
+        4202,
+        4203,
+        4204,
+        4205
+      ],
+      "max_lift_m": [
+        0.017293449878692635,
+        0.037560340404510506,
+        0.11494570636749268,
+        0.04882180356979371,
+        0.014693554878234871
+      ],
+      "hold_s": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "robot_table_impulse_sum_Ns": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "soft_limit_hit_steps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_limit_hit_steps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "evidence": "runs/state_selected_independent_test/result.json"
+    },
+    "ppo": {
+      "iterations": 24,
+      "steps": 14400,
+      "elapsed_s": 479.7956928950007,
+      "critic_warmup_iterations": 4,
+      "training_accepted": 0,
+      "training_episodes": 16,
+      "development_accepted": 0,
+      "development_total": 3,
+      "promoted": false
+    },
+    "bc": {
+      "teacher_training_seeds": [
+        4001,
+        4002,
+        4003,
+        4004,
+        4005,
+        4006,
+        4007,
+        4008
+      ],
+      "teacher_hold_s": 9.333333333333334,
+      "epochs": 4000,
+      "elapsed_s": 94.81003879700074,
+      "development_accepted": 1,
+      "development_total": 3
+    },
+    "actor_input": "privileged state and clock; not RGB",
+    "teacher_actions_during_evaluation": false,
+    "task": "locked-cube pickup; no layer rotation",
+    "stage_passed": false,
+    "next_work": [
+      "Broaden demonstrated cube pose/orientation coverage and collect corrective state demonstrations",
+      "Improve bilateral contact retention before increasing PPO steps",
+      "Register fresh heldout seeds before further model tuning; 4201-4205 are now consumed"
+    ]
+  },
+  "side_grasp_stability_20261102": {
+    "controller_kind": "BC waypoint regressor with contact/arrival supervisor",
+    "independent_accepted": 6,
+    "independent_total": 6,
+    "seeds": [
+      6201,
+      6202,
+      6203,
+      6204,
+      6205,
+      6206
+    ],
+    "hold_seconds": 3,
+    "checkpoint_sha256": "aeabb90e7f2086c433772b45513497e368a6e3585c5f95ab25c041a25c9b637b",
+    "teacher": "5/5 new heldout",
+    "development": "9/9",
+    "pure_PPO_claim": false,
+    "runtime_teacher_or_IK": false,
+    "evidence": "runs/side_bc_waypoints_v2/independent_test.json",
+    "wrist_angles_deg": [
+      {
+        "seed": 6201,
+        "grasp": {
+          "Joint6_L": -0.39,
+          "Joint6_R": 0.057,
+          "Joint7_L": 35.515,
+          "Joint7_R": 35.618
+        },
+        "hold_or_final": {
+          "Joint6_L": 23.035,
+          "Joint6_R": 23.244,
+          "Joint7_L": 35.522,
+          "Joint7_R": 35.526
+        }
+      },
+      {
+        "seed": 6202,
+        "grasp": {
+          "Joint6_L": 0.268,
+          "Joint6_R": 0.636,
+          "Joint7_L": 35.546,
+          "Joint7_R": 35.531
+        },
+        "hold_or_final": {
+          "Joint6_L": 23.493,
+          "Joint6_R": 23.704,
+          "Joint7_L": 35.494,
+          "Joint7_R": 35.499
+        }
+      },
+      {
+        "seed": 6203,
+        "grasp": {
+          "Joint6_L": -0.449,
+          "Joint6_R": -0.007,
+          "Joint7_L": 35.587,
+          "Joint7_R": 35.532
+        },
+        "hold_or_final": {
+          "Joint6_L": 22.964,
+          "Joint6_R": 23.264,
+          "Joint7_L": 35.517,
+          "Joint7_R": 35.517
+        }
+      },
+      {
+        "seed": 6204,
+        "grasp": {
+          "Joint6_L": 0.099,
+          "Joint6_R": 0.378,
+          "Joint7_L": 35.503,
+          "Joint7_R": 35.591
+        },
+        "hold_or_final": {
+          "Joint6_L": 23.385,
+          "Joint6_R": 23.553,
+          "Joint7_L": 35.501,
+          "Joint7_R": 35.501
+        }
+      },
+      {
+        "seed": 6205,
+        "grasp": {
+          "Joint6_L": 0.187,
+          "Joint6_R": 0.624,
+          "Joint7_L": 35.514,
+          "Joint7_R": 35.55
+        },
+        "hold_or_final": {
+          "Joint6_L": 23.426,
+          "Joint6_R": 23.7,
+          "Joint7_L": 35.496,
+          "Joint7_R": 35.493
+        }
+      },
+      {
+        "seed": 6206,
+        "grasp": {
+          "Joint6_L": 0.361,
+          "Joint6_R": 0.536,
+          "Joint7_L": 35.502,
+          "Joint7_R": 35.604
+        },
+        "hold_or_final": {
+          "Joint6_L": 23.575,
+          "Joint6_R": 23.621,
+          "Joint7_L": 35.506,
+          "Joint7_R": 35.514
+        }
+      }
+    ]
+  },
+  "opposition_teacher": {
+    "controller": "OppositionTeacher",
+    "reference_archive": "NoroRobot.zip",
+    "main_hand": "left",
+    "support_hand": "right",
+    "grasp_config": "opposition_grasp_v20.json",
+    "certificate": "opposition_gate_certificate.json",
+    "development_accepted": 4,
+    "development_total": 4,
+    "independent_seeds": [
+      7301,
+      7302,
+      7303,
+      7304,
+      7305
+    ],
+    "independent_accepted": 5,
+    "independent_total": 5,
+    "hold_seconds": 3.0,
+    "max_lift_range_m": [
+      0.18536919021606446,
+      0.18939262294769288
+    ],
+    "robot_table_impulse_sum_Ns": 0.0,
+    "self_contact_impulse_sum_Ns": 0.0,
+    "primary_lift_joints": "J1-J4; nominal J5-J7 fixed",
+    "support_joint2_floor_deg": -100.0,
+    "global_soft_limits_unchanged": true,
+    "requires_ground_truth_cube_state": true,
+    "learned_policy": false,
+    "visual_policy": false,
+    "face_turning": false,
+    "previous_independent_result": "v19: 4/5, seed 7204 torso contact; retained, then used for regression",
+    "grasp_config_sha256": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a",
+    "demo_run": "runs/opposition_independent_7305_visual_v20"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "robot_usd": {
+    "path": "/home/brainco/rl_cube/revotron_revo3/source/revotron_system/usd/revotron_bimanual_revo3_56dof.usd",
+    "sha256": "c066a65ff5ac77a8fb0a5fb3658c71f151b64777cdc9a8f66a0739d4033170a2"
+  },
+  "robot_urdf": {
+    "path": "/home/brainco/rl_cube/revotron_revo3/source/revotron_system/urdf/revotron_bimanual_revo3_56dof.urdf",
+    "sha256": "598cc4cc94a37e35517eba4e450b3a3b334214549c7e196bf3f1332940e71325"
+  },
+  "cube_xml": {
+    "path": "/home/brainco/rl_cube/isaac_mujoco_cube/upstream/mujoco_cube-main/cube_3x3x3.xml",
+    "sha256": "b7b32a4a8624241817aafcbdba20217b7250fb9c570440af6fbdcf5ec084c023"
+  },
+  "cube_texture": {
+    "path": "/home/brainco/rl_cube/isaac_mujoco_cube/upstream/mujoco_cube-main/assets/sticker.png",
+    "sha256": "278454a3391b00b997c70f1e3e40f38014e620df9426943d7197191c0338f506"
+  },
+  "config": {
+    "path": "/home/brainco/rl_cube/revotron_cube_rl/config.json",
+    "sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4"
+  }
+}

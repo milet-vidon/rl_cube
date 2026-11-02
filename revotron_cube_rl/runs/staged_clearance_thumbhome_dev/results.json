@@ -1,0 +1,108 @@
+[
+  {
+    "runtime_versions": {
+      "isaacsim": "6.2.0.0",
+      "isaaclab": "3.0.0",
+      "torch": "2.11.0+cu130",
+      "rsl-rl-lib": "5.5.1"
+    },
+    "config_sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+    "candidate": 0,
+    "seed": 17,
+    "grasp": "staged_parallel",
+    "parameters": {
+      "width": 0.096,
+      "relax": 0.0,
+      "approach_height": 0.068
+    },
+    "success_criteria": {
+      "lift_m": 0.08,
+      "linear_speed_max": 0.08,
+      "angular_speed_max": 0.6,
+      "hold_seconds": 1.0,
+      "contact_impulse_min": 1e-05
+    },
+    "success": true,
+    "max_height_m": 0.091991361618042,
+    "max_hold_steps": 30,
+    "robot_table_impulse_sum": 0.0,
+    "contact_pairs": {
+      "/World/Cube | /World/Table/geometry/mesh": 11.74785571384497,
+      "/World/Robot/left_middle_DIP_link | /World/Cube": 5.214290685372622,
+      "/World/Robot/right_middle_DIP_link | /World/Cube": 4.643745056104167,
+      "/World/Robot/right_ring_DIP_link | /World/Cube": 0.35632367727455655,
+      "/World/Robot/left_ring_DIP_link | /World/Cube": 0.008389894612823174,
+      "/World/Robot/left_index_DIP_link | /World/Cube": 0.0
+    },
+    "steps": 565,
+    "elapsed_s": 24.192885398864746,
+    "acceptance": {
+      "accepted": true,
+      "failure_reasons": [],
+      "robot_table_threshold_Ns": 1e-06,
+      "soft_limit_hit_steps": 0,
+      "hard_limit_hit_steps": 0,
+      "cube_table_contact_steps": 470,
+      "max_joint_velocity_rad_s": 4.269336223602295,
+      "max_position_error_rad": 0.030370235443115234,
+      "dropped": false,
+      "continuous_hold_seconds": 1.0
+    },
+    "controller_kind": "traditional_teacher",
+    "controller_failure": null,
+    "controller_sha256": "8894fcffbd5f176f0ccb9b6f67fcfba924cb875bf513f82f382793e09f1c8ee5"
+  },
+  {
+    "runtime_versions": {
+      "isaacsim": "6.2.0.0",
+      "isaaclab": "3.0.0",
+      "torch": "2.11.0+cu130",
+      "rsl-rl-lib": "5.5.1"
+    },
+    "config_sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+    "candidate": 0,
+    "seed": 23,
+    "grasp": "staged_parallel",
+    "parameters": {
+      "width": 0.096,
+      "relax": 0.0,
+      "approach_height": 0.068
+    },
+    "success_criteria": {
+      "lift_m": 0.08,
+      "linear_speed_max": 0.08,
+      "angular_speed_max": 0.6,
+      "hold_seconds": 1.0,
+      "contact_impulse_min": 1e-05
+    },
+    "success": true,
+    "max_height_m": 0.11512750053405763,
+    "max_hold_steps": 30,
+    "robot_table_impulse_sum": 0.0,
+    "contact_pairs": {
+      "/World/Cube | /World/Table/geometry/mesh": 11.573659354323787,
+      "/World/Robot/left_ring_DIP_link | /World/Cube": 1.425326844687705,
+      "/World/Robot/right_middle_DIP_link | /World/Cube": 4.172921193901093,
+      "/World/Robot/left_middle_DIP_link | /World/Cube": 3.0156783467646435,
+      "/World/Robot/right_index_DIP_link | /World/Cube": 0.0,
+      "/World/Robot/right_ring_DIP_link | /World/Cube": 0.0
+    },
+    "steps": 548,
+    "elapsed_s": 23.002652168273926,
+    "acceptance": {
+      "accepted": true,
+      "failure_reasons": [],
+      "robot_table_threshold_Ns": 1e-06,
+      "soft_limit_hit_steps": 0,
+      "hard_limit_hit_steps": 0,
+      "cube_table_contact_steps": 468,
+      "max_joint_velocity_rad_s": 2.0542185306549072,
+      "max_position_error_rad": 0.029462218284606934,
+      "dropped": false,
+      "continuous_hold_seconds": 1.0
+    },
+    "controller_kind": "traditional_teacher",
+    "controller_failure": null,
+    "controller_sha256": "8894fcffbd5f176f0ccb9b6f67fcfba924cb875bf513f82f382793e09f1c8ee5"
+  }
+]

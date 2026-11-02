@@ -1,0 +1,28 @@
+{
+  "name": "opposition_dev_v15",
+  "seeds": "7101",
+  "grasp_config": "revotron_cube_rl/opposition_grasp_v14.json",
+  "record": false,
+  "kind": "experimental_traditional_opposition_teacher",
+  "source_sha256": {
+    "opposition_teacher.py": "0bc2cc2b73f9c9dac5c9829ea6b0f927f859ef84af80ae2d1c5b026c499924fa",
+    "opposition_feedback.py": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883",
+    "proximal_planner.py": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16",
+    "opposition_geometry.py": "e67106f67fddef6cc1c8fe874c109ff6c3ebbea6930b742485491055f95baac5",
+    "opposition_experiment.py": "700800012370d846df04843973656014c2858671283cdd40013321ebc36d9127",
+    "finger_contact_audit.py": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0",
+    "opposition_acceptance.py": "fb63dee7139007709c417e1d531d475dc5d2db2b626438ce1d8fbdb66b47f5b1",
+    "self_contact_audit.py": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c",
+    "side_grasp.py": "f08bd060669d203e7f02c2efd395a2a0a7ccad4625909811307af879350852d8",
+    "config.json": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+    "kinematics.py": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212",
+    "environment.py": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7",
+    "joint_safety.py": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887",
+    "acceptance.py": "8a09cfb4c087e06a2fada695cb5caeab68d32eabbf494fbec0eee69a855fa248",
+    "isaac_compat.py": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825"
+  },
+  "grasp_config_sha256": "f789ba177f0bfa9fec0362d16499295913965b49e3fb5648319c5ac7951d8979",
+  "main_hand": "left",
+  "support_hand": "right",
+  "promoted_for_learning": false
+}

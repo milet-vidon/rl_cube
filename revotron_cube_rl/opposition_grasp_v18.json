@@ -1,0 +1,237 @@
+{
+  "center_palm": [
+    0.07439665313033872,
+    0.00634782452645606,
+    0.13055312776144254
+  ],
+  "cube_rotation_palm": [
+    [
+      0.9051191459491252,
+      -0.4049152289684705,
+      -0.12962634371815393
+    ],
+    [
+      0.39468387570234614,
+      0.9135872567547833,
+      -0.0978926072583847
+    ],
+    [
+      0.15806318324297028,
+      0.03744304534463683,
+      0.9867188294840726
+    ]
+  ],
+  "clearance_m": -0.0005,
+  "contact_geometry": "convex collision mesh support vertices",
+  "joint_targets": {
+    "left_thumb_CMP_joint": 0.6366629155152679,
+    "left_thumb_CMR_joint": 0.4361843631447651,
+    "left_thumb_MCP_joint": 0.5500065349562919,
+    "left_thumb_PIP_joint": 1.0661275481415,
+    "left_thumb_DIP_joint": 1.0962682986744108,
+    "left_index_MPR_joint": 0.01178710422603926,
+    "left_index_MCP_joint": 0.5502442574661962,
+    "left_index_PIP_joint": 0.839887153419277,
+    "left_index_DIP_joint": 0.41641633061359296,
+    "left_middle_MPR_joint": -0.05022935269719288,
+    "left_middle_MCP_joint": 0.7315938548741471,
+    "left_middle_PIP_joint": 0.2896500504117136,
+    "left_middle_DIP_joint": 1.0930080428005235,
+    "left_ring_MPR_joint": -0.04142563490864219,
+    "left_ring_MCP_joint": 0.4834384932515503,
+    "left_ring_PIP_joint": 0.5778508206514145,
+    "left_ring_DIP_joint": 1.0705195175688826,
+    "left_little_MPR_joint": -0.04672420405997384,
+    "left_little_MCP_joint": 0.7132117491748107,
+    "left_little_PIP_joint": 0.3663650306576325,
+    "left_little_DIP_joint": 0.2165504164223748
+  },
+  "face_points": {
+    "thumb": [
+      -0.017992219101146248,
+      -0.017981271837981743,
+      -0.02804530394343661
+    ],
+    "index": [
+      -0.023016107274920747,
+      -0.02368572497069124,
+      0.028229676625795938
+    ],
+    "middle": [
+      -0.005287350847014025,
+      -0.008790663837556636,
+      0.02808310638174898
+    ],
+    "ring": [
+      -0.003963930202397218,
+      0.017016174925510864,
+      0.028090567270748257
+    ],
+    "little": [
+      0.014489914753964129,
+      0.023770068476488902,
+      0.028329883283856338
+    ]
+  },
+  "kind": "kinematic_only",
+  "frame_roll_deg": 90.0,
+  "main_hand": "left",
+  "support_hand": "right",
+  "open_joint_targets": {
+    "left_thumb_CMP_joint": 0.6366629155152679,
+    "left_thumb_CMR_joint": 0.4361843631447651,
+    "left_thumb_MCP_joint": 0.5500065349562919,
+    "left_thumb_PIP_joint": 0.9161275481415,
+    "left_thumb_DIP_joint": 1.0962682986744108,
+    "left_index_MPR_joint": 0.01178710422603926,
+    "left_index_MCP_joint": 0.4702442574661962,
+    "left_index_PIP_joint": 0.839887153419277,
+    "left_index_DIP_joint": 0.36641633061359297,
+    "left_middle_MPR_joint": -0.05022935269719288,
+    "left_middle_MCP_joint": 0.6515938548741471,
+    "left_middle_PIP_joint": 0.2896500504117136,
+    "left_middle_DIP_joint": 1.0430080428005235,
+    "left_ring_MPR_joint": -0.04142563490864219,
+    "left_ring_MCP_joint": 0.4034384932515503,
+    "left_ring_PIP_joint": 0.5778508206514145,
+    "left_ring_DIP_joint": 1.0205195175688826,
+    "left_little_MPR_joint": -0.04672420405997384,
+    "left_little_MCP_joint": 0.6332117491748107,
+    "left_little_PIP_joint": 0.3663650306576325,
+    "left_little_DIP_joint": 0.16655041642237478
+  },
+  "collision_distance_min_m": 0.0035010328989288826,
+  "table_clearance_min_m": 0.0034990770335866783,
+  "optimization_evaluations": 87,
+  "elapsed_s": 5.412529657001869,
+  "physics_verified": false,
+  "preshape_path_clearance_m": 0.0032792041865231662,
+  "closing_path_clearance_m": 0.0035010328989288826,
+  "cube_contact_distances_m": {
+    "thumb": -0.00045469605656331576,
+    "index": -0.004814275029308732,
+    "middle": -0.0004168936182509884,
+    "ring": -0.0004094327292516898,
+    "little": -0.004729931523511082
+  },
+  "arm_damping": 8.0,
+  "arm_integral_tracking": false,
+  "arm_settle_tolerance_rad": 0.02,
+  "support_center_offset": [
+    -0.17289382191006664,
+    -0.10669148071021477,
+    -0.05460248528888309
+  ],
+  "support_rotation": [
+    [
+      -0.00907965358913091,
+      -0.3172438951273455,
+      0.9483005171859453
+    ],
+    [
+      0.999956137104721,
+      -0.0007005922184218916,
+      0.00933986280135244
+    ],
+    [
+      -0.002298642491990119,
+      0.9483437246984731,
+      0.3172363410262461
+    ]
+  ],
+  "support_joint_targets": {
+    "right_middle_MPR_joint": -0.20665253698825836,
+    "right_middle_MCP_joint": 0.6322394013404846,
+    "right_middle_PIP_joint": 0.49839073419570923,
+    "right_middle_DIP_joint": 0.22701875865459442,
+    "right_thumb_CMP_joint": 0.029999999329447746,
+    "right_thumb_CMR_joint": 0.0,
+    "right_thumb_MCP_joint": 0.0,
+    "right_thumb_PIP_joint": 0.0,
+    "right_thumb_DIP_joint": 0.0,
+    "right_index_MPR_joint": -0.08406538839666866,
+    "right_index_MCP_joint": 1.0989256524464381,
+    "right_index_PIP_joint": 1.0999793486302771,
+    "right_index_DIP_joint": 0.800000466761053,
+    "right_ring_MPR_joint": -0.23748736083507538,
+    "right_ring_MCP_joint": 1.100000023841858,
+    "right_ring_PIP_joint": 1.100000023841858,
+    "right_ring_DIP_joint": 0.800000011920929,
+    "right_little_MPR_joint": -0.30000001192092896,
+    "right_little_MCP_joint": 1.100000023841858,
+    "right_little_PIP_joint": 1.100000023841858,
+    "right_little_DIP_joint": 0.800000011920929
+  },
+  "inter_hand_clearance_m": 0.012117076556227733,
+  "contact_anchors": {
+    "thumb": {
+      "link": "left_thumb_DIP_link",
+      "point_local": [
+        -0.010356889106333287,
+        -0.026314638555049903,
+        0.007079325150698443
+      ],
+      "target_cube": [
+        -0.027,
+        -0.017981271837981743,
+        0.017992219101146248
+      ]
+    },
+    "index": {
+      "link": "left_index_DIP_rubber_link",
+      "point_local": [
+        0.002390357200056322,
+        0.00942199770361184,
+        0.013390659354627125
+      ],
+      "target_cube": [
+        0.027,
+        -0.02368572497069124,
+        0.023016107274920747
+      ]
+    },
+    "middle": {
+      "link": "left_middle_DIP_rubber_link",
+      "point_local": [
+        0.004763201344758251,
+        0.0020287090446799933,
+        0.05441454797983169
+      ],
+      "target_cube": [
+        0.027,
+        -0.008790663837556636,
+        0.005287350847014025
+      ]
+    },
+    "ring": {
+      "link": "left_ring_DIP_rubber_link",
+      "point_local": [
+        0.004670785274356619,
+        0.003467301139608027,
+        0.02478103339672088
+      ],
+      "target_cube": [
+        0.027,
+        0.017016174925510864,
+        0.003963930202397218
+      ]
+    },
+    "little": {
+      "link": "left_little_DIP_rubber_link",
+      "point_local": [
+        0.0009415548993275853,
+        -0.007106082048267107,
+        0.02395599149167533
+      ],
+      "target_cube": [
+        0.027,
+        0.023770068476488902,
+        -0.014489914753964129
+      ]
+    }
+  },
+  "primary_lift_before_support": true,
+  "lift_height_m": 0.18,
+  "lift_forward_m": 0.08,
+  "replan_support_after_lift": true
+}

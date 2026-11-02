@@ -1,0 +1,21 @@
+Upstream: https://github.com/kevinzakka/mujoco_cube
+Downloaded: 2026-10-30 (Asia/Shanghai)
+Archive URL: https://codeload.github.com/kevinzakka/mujoco_cube/zip/refs/heads/main
+Archive SHA256: A74201239CA7FE71D00D9E26B6866018226E916E3B5B7ADA113C4DDB10AB3F67
+Snapshot: upstream/mujoco_cube-main (unmodified source, including Apache-2.0 LICENSE)
+
+Port: contact_test.py
+- Parses upstream MJCF meshes, UVs, cubelet positions and hinge axes.
+- Creates 26 PhysX dynamic rigid bodies, 6 revolute and 20 spherical joints.
+- Uses the upstream fixed core. No articulation root is added.
+- Uses upstream total mass convention, 0.0685/27 kg per cubelet plus core.
+- Preserves mesh geometry via convex-hull collision; preserves sticker texture.
+- Does NOT import the upstream six actuators. No cube drives are authored.
+- Uses PhysX angular damping 0.2/s; does not claim exact MuJoCo frictionloss or armature equivalence.
+- Internal/external contact material is frictionless for this geometric-contact bench test.
+- External kinematic fixtures provide form closure and normal contact forces.
+- Cube poses and velocities are never assigned after physics begins.
+- No per-turn joint rewiring or cubelet permutation is performed.
+
+Scope: fixed-core bench test, not a floating cube held by actual robot hands.
+Camera rendering, tactile properties, real-cube torque matching, and randomized training are not validated here.

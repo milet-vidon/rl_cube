@@ -1,0 +1,73 @@
+{
+  "trials": [
+    {
+      "seed": 4201,
+      "candidate": 0,
+      "width": 0.096,
+      "offset": 0.0,
+      "steps": 17,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "robot_table_contact",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 17,
+        "max_joint_velocity_rad_s": 1.1677793264389038,
+        "max_position_error_rad": 0.08213436603546143,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      },
+      "controller_failure": null,
+      "max_height_m": 5.6266784675962356e-08,
+      "robot_table_impulse_sum_Ns": 0.03459010273218248,
+      "contact_pairs": {
+        "/World/Cube | /World/Table/geometry/mesh": 0.40315733079512367,
+        "/World/Robot/left_little_DIP_link | /World/Table/geometry/mesh": 0.03459010273218248
+      },
+      "kind": "traditional_side_teacher",
+      "elapsed_s": 5.332580535001398
+    },
+    {
+      "seed": 4201,
+      "candidate": 1,
+      "width": 0.092,
+      "offset": 0.0,
+      "steps": 17,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "robot_table_contact",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 17,
+        "max_joint_velocity_rad_s": 1.2811506986618042,
+        "max_position_error_rad": 0.08390867710113525,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      },
+      "controller_failure": null,
+      "max_height_m": 5.6266784675962356e-08,
+      "robot_table_impulse_sum_Ns": 0.022401718422772002,
+      "contact_pairs": {
+        "/World/Cube | /World/Table/geometry/mesh": 0.3808041095387339,
+        "/World/Robot/left_little_DIP_link | /World/Table/geometry/mesh": 0.022401718422772002
+      },
+      "kind": "traditional_side_teacher",
+      "elapsed_s": 7.851919554001142
+    }
+  ],
+  "accepted": 0,
+  "total": 2,
+  "controller_sha256": "a2424ae4d7c6785a4d97992db1097c2b0e294cccc4eceaf814bcf31a44d243b9",
+  "config_sha256": "171b28aaca88d392e025e1204e0ce1fed9195080f305d8ee7c1df31f868d11ec",
+  "elapsed_s": 7.858113280000907
+}

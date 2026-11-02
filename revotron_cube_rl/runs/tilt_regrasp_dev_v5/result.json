@@ -1,0 +1,38 @@
+{
+  "trials": [
+    {
+      "seed": 8101,
+      "accepted": false,
+      "tilt_only_accepted": false,
+      "right_regrasp_validated": false,
+      "steps": 1621,
+      "failure": "safety_gate",
+      "self_contact_impulse_sum_Ns": 0.0526395014736383,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "final_tilt_error_deg": 1.5340676946991492,
+      "tilt_hold_seconds": 6.333333333333333,
+      "right_hold_seconds": 0.0,
+      "final_self_pairs": {
+        "/World/Robot/right_ring_DIP_link | /World/Robot/left_index_MPR_link": 0.0526395014736383
+      },
+      "measured_audit": {
+        "accepted": false,
+        "scope": "whole_cube_tilt_and_mirrored_right_grasp",
+        "failures": [
+          "self_contact_impulse",
+          "no_3s_measured_opposition_hold_at_90deg"
+        ],
+        "final_tilt_error_deg": 1.5340676946991492,
+        "longest_measured_hold_seconds": 0.0,
+        "contact_coverage_in_qualifying_window": null,
+        "maximum_lift_m": 0.1900382604598999,
+        "final_lift_m": 0.18359285259246827,
+        "robot_table_impulse_sum_Ns": 0.0,
+        "self_contact_impulse_sum_Ns": 0.0526395014736383
+      }
+    }
+  ],
+  "accepted": 0,
+  "total": 1,
+  "elapsed_s": 118.42917631899763
+}

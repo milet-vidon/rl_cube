@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "kind": "traditional_side_teacher",
+  "heldout_seeds": [
+    5211,
+    5212,
+    5213,
+    5214,
+    5215
+  ],
+  "accepted": 5,
+  "total": 5,
+  "required_hold_seconds": 3.0,
+  "source_sha256": {
+    "side_grasp.py": "f08bd060669d203e7f02c2efd395a2a0a7ccad4625909811307af879350852d8",
+    "side_control.py": "0f9db235ffa63d6c007bb3cba7310cc23fe3710731ba2b2e42e73b2216908714",
+    "side_experiment.py": "ae1190e2907187ad8a46efff39030759079269c5bb2e27c1e6a19847f3d8cd24",
+    "self_contact_audit.py": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c",
+    "side_gate.py": "ee86f5baccf6ad4dec2e7d5714340bcd8690d659503b08e673929fe42efd0a89",
+    "kinematics.py": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212",
+    "config.json": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+    "environment.py": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7",
+    "joint_safety.py": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887",
+    "acceptance.py": "8a09cfb4c087e06a2fada695cb5caeab68d32eabbf494fbec0eee69a855fa248",
+    "isaac_compat.py": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825"
+  },
+  "assets_sha256": {
+    "/home/brainco/rl_cube/revotron_revo3/source/revotron_system/usd/revotron_bimanual_revo3_56dof.usd": "c066a65ff5ac77a8fb0a5fb3658c71f151b64777cdc9a8f66a0739d4033170a2",
+    "/home/brainco/rl_cube/revotron_revo3/source/revotron_system/urdf/revotron_bimanual_revo3_56dof.urdf": "598cc4cc94a37e35517eba4e450b3a3b334214549c7e196bf3f1332940e71325",
+    "/home/brainco/rl_cube/isaac_mujoco_cube/upstream/mujoco_cube-main/cube_3x3x3.xml": "b7b32a4a8624241817aafcbdba20217b7250fb9c570440af6fbdcf5ec084c023",
+    "/home/brainco/rl_cube/isaac_mujoco_cube/upstream/mujoco_cube-main/assets/sticker.png": "278454a3391b00b997c70f1e3e40f38014e620df9426943d7197191c0338f506"
+  },
+  "evidence_sha256": {
+    "/home/brainco/rl_cube/revotron_cube_rl/runs/side_teacher_development_v7/trajectory_0_4201.json": "c1e0d1ff9fd11277f794309027200e6ce1407205f3e501054554c40705d9dcd2",
+    "/home/brainco/rl_cube/revotron_cube_rl/runs/side_teacher_development_v7/trajectory_1_4202.json": "e3d1e8757334754847f869005158558c196a633c3bc7e28810f9bffdd7757231",
+    "/home/brainco/rl_cube/revotron_cube_rl/runs/side_teacher_development_v7/trajectory_2_4203.json": "2789c1aa51bec720e44950412409f3f5fafdfd7753933ce0dc169e22c0f44ea3",
+    "/home/brainco/rl_cube/revotron_cube_rl/runs/side_teacher_development_v7/trajectory_3_4204.json": "55e9bd58cb805d909eee6c7a9b52a36928cb7616a5a6e3f411c37f284db3bf08",
+    "/home/brainco/rl_cube/revotron_cube_rl/runs/side_teacher_development_v7/trajectory_4_4205.json": "2c43d9fc41ce2715a0f04d7cca91c3ec6e223b80284be147db6111dc99258c08",
+    "/home/brainco/rl_cube/revotron_cube_rl/runs/side_teacher_development_v7/trajectory_5_5101.json": "22008bc517b363b916c3a368c77a8230d8a5bab6fb16680c5f9afc51aee2b1d2",
+    "/home/brainco/rl_cube/revotron_cube_rl/runs/side_teacher_development_v7/trajectory_6_5102.json": "381d36e72ebcf834e860d446f4e354987ab3af83bed8180bee7f21816dece1e4",
+    "/home/brainco/rl_cube/revotron_cube_rl/runs/side_teacher_development_v7/trajectory_7_5103.json": "87d4b9ff22df252cf00fcc138e100bb37c68a1e6d73d6181f6ff6068b44bd63d",
+    "/home/brainco/rl_cube/revotron_cube_rl/runs/side_teacher_development_v7/trajectory_8_6105.json": "2549a26e772c4bea8204aa2a5bb9dac0306a48ae9c2c70106d07911a128b2bb8",
+    "/home/brainco/rl_cube/revotron_cube_rl/runs/side_teacher_development_v7/result.json": "4f18ea7195d5f151532a4c7e4fe02da974bf6c9d332f374b414f595f52e83a1d",
+    "/home/brainco/rl_cube/revotron_cube_rl/runs/side_teacher_development_v7/runtime_config.json": "171b28aaca88d392e025e1204e0ce1fed9195080f305d8ee7c1df31f868d11ec",
+    "/home/brainco/rl_cube/revotron_cube_rl/runs/side_teacher_development_v7/experiment.json": "9800f2de1e60f30adec325fab561ca84d9b121ffdbf95a9e7b535efee62e25fe",
+    "/home/brainco/rl_cube/revotron_cube_rl/runs/side_teacher_heldout_5211_5215/trajectory_0_5211.json": "ca8d1a8e5b876ee7cd2f7b661d1c947e1334d5bd5b5c3c97d582b4f6f25fa064",
+    "/home/brainco/rl_cube/revotron_cube_rl/runs/side_teacher_heldout_5211_5215/trajectory_1_5212.json": "4b28d15534fd30f21147e5ff337c9a94152d1a722bf1cffc16684c00f13190d6",
+    "/home/brainco/rl_cube/revotron_cube_rl/runs/side_teacher_heldout_5211_5215/trajectory_2_5213.json": "f83e7a4421a8e00bd9a73ee4180fd7a419f9d8e29be9a00f17359d1c05ca1408",
+    "/home/brainco/rl_cube/revotron_cube_rl/runs/side_teacher_heldout_5211_5215/trajectory_3_5214.json": "fac5dccac68c433048b95217bb437fa1e54ea293eaad8de24bab6ef36ed0191e",
+    "/home/brainco/rl_cube/revotron_cube_rl/runs/side_teacher_heldout_5211_5215/trajectory_4_5215.json": "16858b50cc22c8444324e4cdf30b22d278d8b5d4114d2d003553e1cf5d7b77e0",
+    "/home/brainco/rl_cube/revotron_cube_rl/runs/side_teacher_heldout_5211_5215/result.json": "091d2081a2c42e358cc6dc0ba7210b249b37362d6ffc11cbd9262de117726069",
+    "/home/brainco/rl_cube/revotron_cube_rl/runs/side_teacher_heldout_5211_5215/runtime_config.json": "171b28aaca88d392e025e1204e0ce1fed9195080f305d8ee7c1df31f868d11ec",
+    "/home/brainco/rl_cube/revotron_cube_rl/runs/side_teacher_heldout_5211_5215/experiment.json": "f8ff41b81cf72e3f9b1ee7e1326cde9c503f73454a2ba82c2f9abc2a8f5fdc8d"
+  },
+  "parameters": {
+    "width": 0.096,
+    "palm_offset": 0.025,
+    "wrist_deg": 35.0,
+    "tilt_deg": 15.0,
+    "finger_mode": "curled",
+    "lift_forward_m": 0.035,
+    "finger_tip_pitch_m": 0.028,
+    "little_MPR_rad": -0.3,
+    "thumb_CMP_rad": 0.03
+  },
+  "robot_self_contact_impulse_sum_max_Ns": 1e-06
+}

@@ -1,0 +1,43 @@
+Revo3 / Tianji 拇指对掌主抓 + 另一只手支撑：验收记录
+
+结果：已完成传统控制 teacher 的抓取、抬升、支撑和 3 秒保持。未训练新版神经网络，未宣称 PPO/视觉策略或转层成功。
+开发种子：[7204, 7101, 7102, 7103]；全部通过。
+独立种子：[7301, 7302, 7303, 7304, 7305]；5/5 通过。这些种子未用于选取本版参数。
+独立测试最大抬升高度：18.54–18.94 cm；每回合连续双手保持 3.00 秒。
+所有独立回合：机器人—桌面冲量 0 Ns，自碰撞冲量 0 Ns，保持期间魔方—桌面接触 0，软/硬限位命中 0。
+左手：拇指顶在魔方角落，食指、中指、无名指、小指在对侧；右手中指提供支撑，其余手指避让。
+首轮独立测试 7201–7205 为 4/5；7204 右上臂触碰胸部。保留失败记录，加入任务内右肩 J2 不低于 -100° 的姿态约束后，换用全新 7301–7305 验证。全局用户软限位仍为 J2 ±120°。
+主抓稳定后先抬离桌面，再依据魔方实际位姿重新规划右手从侧下方加入。
+抬升时左臂 J1–J4 产生运动，J5–J7 的名义目标保持不变；实际关节仍有接触载荷下的微小偏差。接近阶段仍需腕部调整姿态。
+
+NoroRobot 参考方法
+审阅了 planning_pinkw.py、tianji_pink_ik.py、tianji_planner.py 和 planning_pink.py。
+原 PinkW 权重 [5,5,3,3,0.3,0.3,0.3] 更限制肩肘姿态变化，不能直接用作“上臂优先”。本实现采用相反方向的关节代价，并在主抓抬升中固定 J5–J7 名义目标。
+迁移了按关节名映射、任务/姿态代价、五次时间进度、速度/加速度重定时和到位检查。使用当前 Revo3 URDF 与碰撞网格重新求解；未运行压缩包的硬件控制代码。
+增加了全手指/硅胶/腕壳几何检查、真实分指接触审计、限幅指尖到位反馈和支撑手动态重规划。采用保形插值，避免安全 IK 节点之间的软限位超调。
+本版机械臂 PD 阻尼为 8；原基线为 1。原侧夹基线、资产、软限位和碰撞检测未被覆盖或关闭。
+
+验证与范围
+6 项控制/接触验收回归测试通过；随机初始范围 8 个边角姿态通过运动学检查。物理成功率只来自下面列出的实际回合。
+场景初始 XY 扰动为 ±1.5 cm，yaw 为 ±0.15 rad；魔方为锁定层的自由刚体，尚未进行接触转层。
+固定版本验收仿真耗时：718.5 秒（不含此前探索、离线几何优化和文件打包）；GPU RTX 5070 Laptop 8 GB，单环境 CPU PhysX，演示启用 RTX 渲染。
+运行环境：conda rl_cube_6_2，Isaac Sim 6.2 / Isaac Lab 3.0。
+checkpoint.pt：不适用（本轮是传统控制器参数优化，无新神经网络 checkpoint）；配置、源码、trajectory、seed、独立验收、资产和哈希均已保存。
+
+逐回合：seed | split | accepted | 最大抬升 cm | 双手保持 s | 最后 3 秒五指接触覆盖率
+7204 | development | True | 18.675 | 3.00 | thumb:100%, index:100%, middle:100%, ring:100%, little:100%
+7101 | development | True | 18.705 | 3.00 | thumb:100%, index:100%, middle:100%, ring:100%, little:100%
+7102 | development | True | 18.656 | 3.00 | thumb:100%, index:100%, middle:100%, ring:100%, little:100%
+7103 | development | True | 19.080 | 3.00 | thumb:100%, index:100%, middle:100%, ring:100%, little:100%
+7301 | independent | True | 18.861 | 3.00 | thumb:100%, index:98%, middle:100%, ring:100%, little:100%
+7302 | independent | True | 18.939 | 3.00 | thumb:100%, index:99%, middle:100%, ring:100%, little:100%
+7303 | independent | True | 18.537 | 3.00 | thumb:100%, index:100%, middle:100%, ring:100%, little:100%
+7304 | independent | True | 18.667 | 3.00 | thumb:100%, index:100%, middle:100%, ring:100%, little:100%
+7305 | independent | True | 18.797 | 3.00 | thumb:100%, index:100%, middle:100%, ring:100%, little:100%
+
+配置 SHA256：77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a
+基础配置 SHA256：bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4
+软限位版本：revo3_user_soft_limits_v2
+视频为独立种子 7305 的真实仿真录制，末尾增加 1.5 秒定格便于观察；定格不计入物理保持时间。
+重放命令（使用新名称避免覆盖）：./run.sh opposition-teacher --name opposition_demo_new --seeds 7305 --record --closeup
+完整证据：opposition_teacher_evidence.tar.gz；新教师结果与历史侧夹 BC 的 6/6 结果分别记录。

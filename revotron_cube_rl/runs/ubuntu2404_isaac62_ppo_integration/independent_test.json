@@ -1,0 +1,7 @@
+{
+  "kind": "short checkpoint reload integration test; not a task skill evaluation",
+  "result_path": "/home/brainco/rl_cube/revotron_cube_rl/runs/ubuntu2404_isaac62_ppo_reload/result.json",
+  "seed": 19,
+  "status": "passed",
+  "task_success_claim": false
+}

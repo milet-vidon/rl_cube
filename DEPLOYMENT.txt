@@ -1,0 +1,68 @@
+Revo3 魔方强化学习框架：本机部署完成（2026-11-02）
+
+目录：/home/brainco/rl_cube
+默认 conda 环境：/home/brainco/rl_cube/.conda/rl_cube_6_2
+Python 3.12.16 / Isaac Sim 6.2.0.0 / Isaac Lab 3.0.0
+PyTorch 2.11.0+cu130 / RSL-RL 5.5.1 / NumPy 2.3.1
+系统 NVIDIA 驱动仍为 595.99.02，没有更换驱动或重启。
+
+使用：
+  cd /home/brainco/rl_cube
+  source activate.sh
+
+也可以直接调用自动激活环境的启动器：
+  ./run.sh check
+  ./run.sh env-check --runtime --render
+  ./run.sh smoke --steps 64 --seed 7 --name my_smoke_001
+  ./run.sh sweep --grasp downward --widths 0.096 --seeds 17 --visual --name my_teacher_001
+  ./run.sh train --iterations 10 --steps 32 --seed 7 --name my_ppo_001
+
+请使用新的 run 名称保存每次实验；同一时间运行一个 Isaac 进程。
+训练命令会从头建立视觉策略；当前仅验证了训练流程，尚未训练出抓取技能。
+本项目目前使用单环境 CPU PhysX 和 CPU PPO，RTX GPU 负责真实相机渲染。
+没有将项目扩展为并行 GPU 训练。8 GB 显存下已通过 128×128 胸部相机和预览相机测试。
+
+本次验证：
+- 静态检查、RTX/CUDA 启动检查通过，原 5.1 RTX 启动崩溃没有复现。
+- 3 项迁移测试通过，包括三种 actor 的 PPO 更新、观测隔离、四元数和错误退出码。
+- 64 步真实 RGB smoke 通过：runs/ubuntu2404_isaac62_smoke_v2/。
+- 传统 downward teacher，width=0.096、seed=17：抓取成功；抬升 0.1151 m；
+  保持 30 步；robot-table impulse 累计为 0。
+  证据：runs/ubuntu2404_isaac62_teacher/，含轨迹、GIF、相机图像、demonstrations.npz。
+- PPO 1 次迭代、16 步：loss 有限、actor 参数发生更新、checkpoint 已保存。
+  证据：runs/ubuntu2404_isaac62_ppo_integration/。
+- 独立 seed=19 的 16 步 checkpoint 重载推理通过：runs/ubuntu2404_isaac62_ppo_reload/。
+  这是一项集成测试，不是独立抓取成功率测试。
+- 以上 runs/ 路径均相对 revotron_cube_rl/。
+
+配置与限制：
+- 奖励、56 维动作顺序、双臂软限位、成功判据未改变。
+- config SHA256: bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4
+- 传统抓取仅验证 seed 17，不能推导其他种子的成功率。
+- 未开始长时间训练，神经网络视觉抓取、双手转动、魔方复原均未验证成功。
+- 跨 RSL 版本的 PPO optimizer 不允许直接续训，需在当前环境重新 warmstart。
+- 依赖审计无意外冲突。NVIDIA 官方 overrides 保留了 newton-usd-schemas、fsspec、
+  urllib3 与 Isaac Sim 原始 metadata 的三处差异，普通 pip check 会报告这些差异。
+- 非阻断的 Kit/RTX 警告见验证日志；本次未修改原机器人碰撞网格参数。
+
+代码适配：
+- Lab 3 显式 PhysX 配置与单场景 ClonePlan。
+- ProxyArray 到 Torch 的边界转换，以及 xyzw/wxyz 四元数转换。
+- Linux Vulkan、旧 USD 材质贴图路径的运行时修正（原资产文件保留）。
+- RSL-RL 5 的 actor/critic 分离接口；训练器仍使用官方 PPO。
+- 关闭应用时保留异常退出码，运行检查保留超时日志。
+
+记录与恢复：
+- MIGRATION_6_2.txt：迁移细节。
+- work/upgrade_6_2/upgrade_status.json：机器可读验收结果。
+- work/upgrade_6_2/input_hashes.json：机器人 USD/URDF、魔方 XML/贴图及配置哈希。
+- work/upgrade_6_2/requirements.lock.txt、package_versions.json：完整包版本记录。
+- install_6_2.sh：按官方配套版本安装；constraints_6_2.txt：项目兼容约束。
+- work/upgrade_6_2/project_before_upgrade/：升级前项目备份。
+- .conda/rl_cube：旧 5.1 环境保留；./run_5_1.sh 为旧环境入口，旧版相机崩溃仍可能复现。
+- /home/brainco/env_isaaclab、/home/brainco/IsaacLab 原安装未修改。
+
+2026-11-02 后续交接约束更新：
+上述部署 PPO 命令仅代表此前集成测试入口；按新的阶段路线，现在视觉 train/DAgger 需要
+状态单面策略验收，尚未满足时会明确退出。不要绕过 stage_gate.py。
+安全 staged teacher 的独立 5-seed 验收已通过；详细进度见 revotron_cube_rl/pipeline_status.json。

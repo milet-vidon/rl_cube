@@ -1,0 +1,39 @@
+{
+  "trials": [
+    {
+      "seed": 8201,
+      "development_resume": true,
+      "full_episode_verified": false,
+      "accepted": false,
+      "tilt_only_accepted": false,
+      "right_regrasp_validated": false,
+      "steps": 1079,
+      "failure": "right_grasp_hold_timeout",
+      "self_contact_impulse_sum_Ns": 0,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "final_tilt_error_deg": 1.5862822350749668,
+      "tilt_hold_seconds": 35.96666666666667,
+      "right_hold_seconds": 0.0,
+      "final_self_pairs": {},
+      "measured_audit": {
+        "accepted": false,
+        "scope": "whole_cube_tilt_and_mirrored_right_grasp",
+        "full_episode": false,
+        "failures": [
+          "no_3s_measured_opposition_hold_at_90deg"
+        ],
+        "final_tilt_error_deg": 1.5862822350749668,
+        "longest_measured_hold_seconds": 0.0,
+        "contact_coverage_in_qualifying_window": null,
+        "maximum_lift_m": 0.1808573570251465,
+        "final_lift_m": 0.18085425758361817,
+        "cube_returned_to_table_after_lift": false,
+        "robot_table_impulse_sum_Ns": 0.0,
+        "self_contact_impulse_sum_Ns": 0
+      }
+    }
+  ],
+  "accepted": 0,
+  "total": 1,
+  "elapsed_s": 135.30370421800035
+}

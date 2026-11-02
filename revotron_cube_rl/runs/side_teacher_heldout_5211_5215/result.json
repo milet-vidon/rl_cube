@@ -1,0 +1,166 @@
+{
+  "trials": [
+    {
+      "seed": 5211,
+      "candidate": 0,
+      "width": 0.096,
+      "offset": 0.025,
+      "steps": 452,
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 319,
+        "max_joint_velocity_rad_s": 1.6723018884658813,
+        "max_position_error_rad": 0.025356650352478027,
+        "dropped": false,
+        "continuous_hold_seconds": 3.0
+      },
+      "controller_failure": null,
+      "max_height_m": 0.1141626205444336,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "arm_body_impulse_sum_Ns": 0,
+      "self_contact_impulse_sum_Ns": 0,
+      "contact_pairs": {
+        "/World/Cube | /World/Table/geometry/mesh": 8.12344310353214,
+        "/World/Robot/right_middle_DIP_link | /World/Cube": 7.872721440071141,
+        "/World/Robot/left_middle_DIP_link | /World/Cube": 7.725829399751359
+      },
+      "kind": "traditional_side_teacher",
+      "elapsed_s": 25.82254950400238
+    },
+    {
+      "seed": 5212,
+      "candidate": 1,
+      "width": 0.096,
+      "offset": 0.025,
+      "steps": 452,
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 319,
+        "max_joint_velocity_rad_s": 1.7291069030761719,
+        "max_position_error_rad": 0.02535611391067505,
+        "dropped": false,
+        "continuous_hold_seconds": 3.0
+      },
+      "controller_failure": null,
+      "max_height_m": 0.1138485040664673,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "arm_body_impulse_sum_Ns": 0,
+      "self_contact_impulse_sum_Ns": 0,
+      "contact_pairs": {
+        "/World/Cube | /World/Table/geometry/mesh": 8.307316745002453,
+        "/World/Robot/left_middle_DIP_link | /World/Cube": 8.36120259751992,
+        "/World/Robot/right_middle_DIP_link | /World/Cube": 7.64125179089547,
+        "/World/Robot/right_ring_DIP_link | /World/Cube": 0.0
+      },
+      "kind": "traditional_side_teacher",
+      "elapsed_s": 48.912028835002275
+    },
+    {
+      "seed": 5213,
+      "candidate": 2,
+      "width": 0.096,
+      "offset": 0.025,
+      "steps": 452,
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 321,
+        "max_joint_velocity_rad_s": 1.6198605298995972,
+        "max_position_error_rad": 0.02535557746887207,
+        "dropped": false,
+        "continuous_hold_seconds": 3.0
+      },
+      "controller_failure": null,
+      "max_height_m": 0.11365419292449952,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "arm_body_impulse_sum_Ns": 0,
+      "self_contact_impulse_sum_Ns": 0,
+      "contact_pairs": {
+        "/World/Cube | /World/Table/geometry/mesh": 8.244616543890741,
+        "/World/Robot/right_middle_DIP_link | /World/Cube": 7.991770268906028,
+        "/World/Robot/left_middle_DIP_link | /World/Cube": 7.701578948539854
+      },
+      "kind": "traditional_side_teacher",
+      "elapsed_s": 72.9777083930021
+    },
+    {
+      "seed": 5214,
+      "candidate": 3,
+      "width": 0.096,
+      "offset": 0.025,
+      "steps": 452,
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 320,
+        "max_joint_velocity_rad_s": 1.6517542600631714,
+        "max_position_error_rad": 0.02535700798034668,
+        "dropped": false,
+        "continuous_hold_seconds": 3.0
+      },
+      "controller_failure": null,
+      "max_height_m": 0.11389070415496827,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "arm_body_impulse_sum_Ns": 0,
+      "self_contact_impulse_sum_Ns": 0,
+      "contact_pairs": {
+        "/World/Cube | /World/Table/geometry/mesh": 8.295207301719165,
+        "/World/Robot/left_middle_DIP_link | /World/Cube": 8.485827346545307,
+        "/World/Robot/right_middle_DIP_link | /World/Cube": 7.71175516721331,
+        "/World/Robot/right_ring_DIP_link | /World/Cube": 0.0
+      },
+      "kind": "traditional_side_teacher",
+      "elapsed_s": 96.37928949200068
+    },
+    {
+      "seed": 5215,
+      "candidate": 4,
+      "width": 0.096,
+      "offset": 0.025,
+      "steps": 452,
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 321,
+        "max_joint_velocity_rad_s": 2.0339603424072266,
+        "max_position_error_rad": 0.025356590747833252,
+        "dropped": false,
+        "continuous_hold_seconds": 3.0
+      },
+      "controller_failure": null,
+      "max_height_m": 0.11352353954315186,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "arm_body_impulse_sum_Ns": 0,
+      "self_contact_impulse_sum_Ns": 0,
+      "contact_pairs": {
+        "/World/Cube | /World/Table/geometry/mesh": 8.115931040633884,
+        "/World/Robot/right_middle_DIP_link | /World/Cube": 8.251083050461528,
+        "/World/Robot/left_middle_DIP_link | /World/Cube": 7.730425588205369
+      },
+      "kind": "traditional_side_teacher",
+      "elapsed_s": 119.43605891100015
+    }
+  ],
+  "accepted": 5,
+  "total": 5,
+  "controller_sha256": "f08bd060669d203e7f02c2efd395a2a0a7ccad4625909811307af879350852d8",
+  "config_sha256": "171b28aaca88d392e025e1204e0ce1fed9195080f305d8ee7c1df31f868d11ec",
+  "elapsed_s": 119.6069519119992
+}

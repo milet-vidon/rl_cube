@@ -1,0 +1,11 @@
+{
+  "name": "side_teacher_development_v5",
+  "seeds": "4201,4202,4203,4204,4205,5101,5102,5103",
+  "widths": ".096",
+  "offsets": ".025",
+  "record": false,
+  "wrist": 35.0,
+  "tilt": 15.0,
+  "finger_mode": "curled",
+  "hold": 3.0
+}

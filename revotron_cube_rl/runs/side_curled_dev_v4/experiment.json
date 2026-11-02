@@ -1,0 +1,11 @@
+{
+  "name": "side_curled_dev_v4",
+  "seeds": "4201",
+  "widths": ".096,.092,.088",
+  "offsets": ".025",
+  "record": false,
+  "wrist": 35.0,
+  "tilt": 15.0,
+  "finger_mode": "curled",
+  "hold": 3.0
+}

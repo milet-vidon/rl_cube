@@ -1,0 +1,11 @@
+{
+  "name": "side_pressure_dev_6105",
+  "seeds": "6105",
+  "widths": ".096,.094,.092",
+  "offsets": ".025",
+  "record": false,
+  "wrist": 35.0,
+  "tilt": 15.0,
+  "finger_mode": "curled",
+  "hold": 3.0
+}

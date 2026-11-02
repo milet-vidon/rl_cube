@@ -1,0 +1,127 @@
+{
+  "center_palm": [
+    0.05286580012030004,
+    0.012401416719806296,
+    0.13704011583439396
+  ],
+  "cube_rotation_palm": [
+    [
+      0.7414625841101943,
+      -0.6709942148518371,
+      0.0
+    ],
+    [
+      0.6709942148518371,
+      0.7414625841101943,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "clearance_m": -0.0005,
+  "contact_geometry": "convex collision mesh support vertices",
+  "joint_targets": {
+    "left_thumb_CMP_joint": 0.8365638935174838,
+    "left_thumb_CMR_joint": 0.695336868114605,
+    "left_thumb_MCP_joint": 0.7779829337159461,
+    "left_thumb_PIP_joint": 1.284607650552491,
+    "left_thumb_DIP_joint": 1.022029055661555,
+    "left_index_MPR_joint": -0.0006817681735671183,
+    "left_index_MCP_joint": 0.4719801373658991,
+    "left_index_PIP_joint": 0.6572326252987083,
+    "left_index_DIP_joint": 0.5729363900557266,
+    "left_middle_MPR_joint": -0.015472366008426197,
+    "left_middle_MCP_joint": 0.7496516267883139,
+    "left_middle_PIP_joint": 0.2392687656755329,
+    "left_middle_DIP_joint": 0.6141859921229832,
+    "left_ring_MPR_joint": -0.01570660721040672,
+    "left_ring_MCP_joint": 0.6022593426813935,
+    "left_ring_PIP_joint": 0.4918340196631273,
+    "left_ring_DIP_joint": 0.3154037841666715,
+    "left_little_MPR_joint": -0.03513892509826641,
+    "left_little_MCP_joint": 0.5580457187687998,
+    "left_little_PIP_joint": 0.020130938768210153,
+    "left_little_DIP_joint": 0.021597155966219275
+  },
+  "max_tip_error_m": 0.00017837091862314637,
+  "errors_m": {
+    "thumb": 3.245962567514714e-05,
+    "index": 0.00017837091862314637,
+    "middle": 2.611685638085129e-05,
+    "ring": 9.735487687987515e-06,
+    "little": 0.0001711225083712686
+  },
+  "face_points": {
+    "thumb": [
+      -0.019102638930075265,
+      -0.014202308340523051,
+      -0.028499999999999907
+    ],
+    "index": [
+      -0.028499999999999977,
+      -0.028499999999999987,
+      0.028499999999999994
+    ],
+    "middle": [
+      -0.008938625221800264,
+      -0.024170539002153716,
+      0.028500000000000098
+    ],
+    "ring": [
+      0.007490803130289021,
+      -0.0022924459574501536,
+      0.028499999999999925
+    ],
+    "little": [
+      0.0007825735205431363,
+      0.02708588550659019,
+      0.02849999999999999
+    ]
+  },
+  "cost": 0.0024408179178535172,
+  "evaluations": 38,
+  "kind": "kinematic_only",
+  "frame_roll_deg": 90.0,
+  "main_hand": "left",
+  "support_hand": "right",
+  "open_joint_targets": {
+    "left_thumb_CMP_joint": 0.8365638935174838,
+    "left_thumb_CMR_joint": 0.695336868114605,
+    "left_thumb_MCP_joint": 0.7779829337159461,
+    "left_thumb_PIP_joint": 1.1346076505524911,
+    "left_thumb_DIP_joint": 1.022029055661555,
+    "left_index_MPR_joint": -0.0006817681735671183,
+    "left_index_MCP_joint": 0.3919801373658991,
+    "left_index_PIP_joint": 0.6572326252987083,
+    "left_index_DIP_joint": 0.5229363900557266,
+    "left_middle_MPR_joint": -0.015472366008426197,
+    "left_middle_MCP_joint": 0.6696516267883139,
+    "left_middle_PIP_joint": 0.2392687656755329,
+    "left_middle_DIP_joint": 0.5641859921229831,
+    "left_ring_MPR_joint": -0.01570660721040672,
+    "left_ring_MCP_joint": 0.5222593426813935,
+    "left_ring_PIP_joint": 0.4918340196631273,
+    "left_ring_DIP_joint": 0.2654037841666715,
+    "left_little_MPR_joint": -0.03513892509826641,
+    "left_little_MCP_joint": 0.4780457187687998,
+    "left_little_PIP_joint": 0.020130938768210153,
+    "left_little_DIP_joint": 0.02
+  },
+  "collision_distance_min_m": 0.003498599177379666,
+  "table_clearance_min_m": 0.0034983820419278895,
+  "optimization_evaluations": 33,
+  "elapsed_s": 6.700730446002126,
+  "physics_verified": false,
+  "preshape_path_clearance_m": 0.0032792041865231662,
+  "closing_path_clearance_m": 0.003498599177379666,
+  "cube_contact_distances_m": {
+    "thumb": -0.0004509464079548234,
+    "index": -0.00030881213569203036,
+    "middle": -0.000534482881546615,
+    "ring": -0.0005251821281326303,
+    "little": -0.00037892023527964433
+  }
+}

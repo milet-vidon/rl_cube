@@ -1,0 +1,11 @@
+{
+  "name": "side_bc_development_v1",
+  "checkpoint": "revotron_cube_rl/runs/side_bc_waypoints_v1/checkpoint.pt",
+  "seeds": "4201,4202,4203,4204,4205,5101,5102,5103",
+  "split": "development",
+  "record": false,
+  "kind": "BC_waypoint_network_with_contact_supervisor",
+  "runtime_teacher_or_IK": false,
+  "pure_end_to_end_PPO": false,
+  "checkpoint_sha256": "b5d67408ae2b8cb3f862a9c0d7017ea53e5ac2d827434cff40374871735001d7"
+}

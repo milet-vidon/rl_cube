@@ -1,0 +1,1561 @@
+{
+  "source": "https://raw.githubusercontent.com/BrainCoTech/brainco-description/main/",
+  "files": [
+    {
+      "path": "revotron_system/meshes/arm/collision/Base_L.STL",
+      "sha256": "f22c309ed8cacd2fc776e2f72a2fc5618d9da84315267377edd3205e91ebbcb5"
+    },
+    {
+      "path": "revotron_system/meshes/arm/collision/Base_R.STL",
+      "sha256": "f22c309ed8cacd2fc776e2f72a2fc5618d9da84315267377edd3205e91ebbcb5"
+    },
+    {
+      "path": "revotron_system/meshes/arm/collision/Head_Oak_Link.STL",
+      "sha256": "0fcafd7f0c4b0469ce135beef814227c6f61af6a06ede4c77addf5ea0ad0e52e"
+    },
+    {
+      "path": "revotron_system/meshes/arm/collision/left_wrist_camera_link.STL",
+      "sha256": "acf5ee700e491fc3999124f45c03232c004e36a1e49565164410b173ca88ea36"
+    },
+    {
+      "path": "revotron_system/meshes/arm/collision/Link1_L.STL",
+      "sha256": "d00097eec49600a4111ee5a124d6636f50ea09a7a1dc8486d98f4370dde7a932"
+    },
+    {
+      "path": "revotron_system/meshes/arm/collision/Link1_R.STL",
+      "sha256": "fdb1075fe0b41e5c2cb7c2fe13c9d2e62ff4dd6eb540ea841b8603db28369dd0"
+    },
+    {
+      "path": "revotron_system/meshes/arm/collision/Link2_L.STL",
+      "sha256": "4776a6a2086ddc61b1643aff93386e545baccef2751db29d863fe027a76f325e"
+    },
+    {
+      "path": "revotron_system/meshes/arm/collision/Link2_R.STL",
+      "sha256": "53eb9fc69c939d2ebd4f32c1df341c1c42bc3d9d0911db0c9fcee70aa2701b34"
+    },
+    {
+      "path": "revotron_system/meshes/arm/collision/Link3_L.STL",
+      "sha256": "d58f1039bd3eb2ccc1a1959b89d2de7ae714344ad8cb8b78ef97b92dcd317d26"
+    },
+    {
+      "path": "revotron_system/meshes/arm/collision/Link3_R.STL",
+      "sha256": "122456d8fc3e81694f352fc1f29d0bc19066f7f3d7572857a1be1e7c030dec9c"
+    },
+    {
+      "path": "revotron_system/meshes/arm/collision/Link4_L.STL",
+      "sha256": "77f18566339f38acac1785fae517b05ff1e5247b95404ce26536d215bbed9cd7"
+    },
+    {
+      "path": "revotron_system/meshes/arm/collision/Link4_R.STL",
+      "sha256": "77f18566339f38acac1785fae517b05ff1e5247b95404ce26536d215bbed9cd7"
+    },
+    {
+      "path": "revotron_system/meshes/arm/collision/Link5_L.STL",
+      "sha256": "573f15ee62b0a9b2d62aceeb756800fd86969a685535e91416b73d51f1c57613"
+    },
+    {
+      "path": "revotron_system/meshes/arm/collision/Link5_R.STL",
+      "sha256": "2de51a340695c89b2fd58b1171dfacc4d85aa4e6cd50879e021a2d0bde8599a8"
+    },
+    {
+      "path": "revotron_system/meshes/arm/collision/Link6_L.STL",
+      "sha256": "b6b7570d8ebf1d2acb01baf8941b892f5a5f72aaa05503ab8340da8a2a7b2c13"
+    },
+    {
+      "path": "revotron_system/meshes/arm/collision/Link6_R.STL",
+      "sha256": "49722d14b9ac34a84a41c95f49bd0b2a8859d4a05f66b247822bf36b0a703cd5"
+    },
+    {
+      "path": "revotron_system/meshes/arm/collision/Link7_L.STL",
+      "sha256": "126cc7d41c37049ce34d2636bfe2d460c21e3429ed080877d1c5e983109ef798"
+    },
+    {
+      "path": "revotron_system/meshes/arm/collision/Link7_R.STL",
+      "sha256": "6eb75b059ff383e90a153be840bcce84b23d8f8afd074b1bc9dfec1b18c2351f"
+    },
+    {
+      "path": "revotron_system/meshes/arm/collision/neck_pitch_Link.STL",
+      "sha256": "99f1f49ac3493984ccae7f08064e61c43ec8a65c6da73c0883cb162df3a4997e"
+    },
+    {
+      "path": "revotron_system/meshes/arm/collision/neck_yaw_Link.STL",
+      "sha256": "48fc9e75c43e657b8a0a88afd8c76d76950c951ff5a7eef51e71eef4ca6e6201"
+    },
+    {
+      "path": "revotron_system/meshes/arm/collision/right_wrist_camera_link.STL",
+      "sha256": "fd606feed372ad0a7d17da0218cbff619c7465c1c31e5802f692e22eaeba5df8"
+    },
+    {
+      "path": "revotron_system/meshes/arm/collision/waist_pitch_Link.STL",
+      "sha256": "d9153093912138ad0d9415c323047a469a38224236f959741196b70dac6b1ac2"
+    },
+    {
+      "path": "revotron_system/meshes/arm/visual/Base_L.STL",
+      "sha256": "f22c309ed8cacd2fc776e2f72a2fc5618d9da84315267377edd3205e91ebbcb5"
+    },
+    {
+      "path": "revotron_system/meshes/arm/visual/Base_R.STL",
+      "sha256": "f22c309ed8cacd2fc776e2f72a2fc5618d9da84315267377edd3205e91ebbcb5"
+    },
+    {
+      "path": "revotron_system/meshes/arm/visual/Head_Oak_Link.STL",
+      "sha256": "0fcafd7f0c4b0469ce135beef814227c6f61af6a06ede4c77addf5ea0ad0e52e"
+    },
+    {
+      "path": "revotron_system/meshes/arm/visual/left_wrist_camera_link.STL",
+      "sha256": "acf5ee700e491fc3999124f45c03232c004e36a1e49565164410b173ca88ea36"
+    },
+    {
+      "path": "revotron_system/meshes/arm/visual/Link1_L.STL",
+      "sha256": "d00097eec49600a4111ee5a124d6636f50ea09a7a1dc8486d98f4370dde7a932"
+    },
+    {
+      "path": "revotron_system/meshes/arm/visual/Link1_R.STL",
+      "sha256": "fdb1075fe0b41e5c2cb7c2fe13c9d2e62ff4dd6eb540ea841b8603db28369dd0"
+    },
+    {
+      "path": "revotron_system/meshes/arm/visual/Link2_L.STL",
+      "sha256": "4776a6a2086ddc61b1643aff93386e545baccef2751db29d863fe027a76f325e"
+    },
+    {
+      "path": "revotron_system/meshes/arm/visual/Link2_R.STL",
+      "sha256": "53eb9fc69c939d2ebd4f32c1df341c1c42bc3d9d0911db0c9fcee70aa2701b34"
+    },
+    {
+      "path": "revotron_system/meshes/arm/visual/Link3_L.STL",
+      "sha256": "d58f1039bd3eb2ccc1a1959b89d2de7ae714344ad8cb8b78ef97b92dcd317d26"
+    },
+    {
+      "path": "revotron_system/meshes/arm/visual/Link3_R.STL",
+      "sha256": "122456d8fc3e81694f352fc1f29d0bc19066f7f3d7572857a1be1e7c030dec9c"
+    },
+    {
+      "path": "revotron_system/meshes/arm/visual/Link4_L.STL",
+      "sha256": "77f18566339f38acac1785fae517b05ff1e5247b95404ce26536d215bbed9cd7"
+    },
+    {
+      "path": "revotron_system/meshes/arm/visual/Link4_R.STL",
+      "sha256": "77f18566339f38acac1785fae517b05ff1e5247b95404ce26536d215bbed9cd7"
+    },
+    {
+      "path": "revotron_system/meshes/arm/visual/Link5_L.STL",
+      "sha256": "573f15ee62b0a9b2d62aceeb756800fd86969a685535e91416b73d51f1c57613"
+    },
+    {
+      "path": "revotron_system/meshes/arm/visual/Link5_R.STL",
+      "sha256": "2de51a340695c89b2fd58b1171dfacc4d85aa4e6cd50879e021a2d0bde8599a8"
+    },
+    {
+      "path": "revotron_system/meshes/arm/visual/Link6_L.STL",
+      "sha256": "b6b7570d8ebf1d2acb01baf8941b892f5a5f72aaa05503ab8340da8a2a7b2c13"
+    },
+    {
+      "path": "revotron_system/meshes/arm/visual/Link6_R.STL",
+      "sha256": "49722d14b9ac34a84a41c95f49bd0b2a8859d4a05f66b247822bf36b0a703cd5"
+    },
+    {
+      "path": "revotron_system/meshes/arm/visual/Link7_L.STL",
+      "sha256": "126cc7d41c37049ce34d2636bfe2d460c21e3429ed080877d1c5e983109ef798"
+    },
+    {
+      "path": "revotron_system/meshes/arm/visual/Link7_R.STL",
+      "sha256": "6eb75b059ff383e90a153be840bcce84b23d8f8afd074b1bc9dfec1b18c2351f"
+    },
+    {
+      "path": "revotron_system/meshes/arm/visual/neck_yaw_Link.STL",
+      "sha256": "48fc9e75c43e657b8a0a88afd8c76d76950c951ff5a7eef51e71eef4ca6e6201"
+    },
+    {
+      "path": "revotron_system/meshes/arm/visual/right_wrist_camera_link.STL",
+      "sha256": "fd606feed372ad0a7d17da0218cbff619c7465c1c31e5802f692e22eaeba5df8"
+    },
+    {
+      "path": "revotron_system/meshes/body/collision/base_link.STL",
+      "sha256": "224df8e72abb902de435f22ece3efac43fcd6a36db224e8b8a4ca6c0660b811e"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/base_link__tron_433c_approx.stl",
+      "sha256": "360e2daa0741500cfa1efb25014f9737a45a7526dd44eb3bd69c906a04fb66d5"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/base_link__tron_black_pc.stl",
+      "sha256": "ddeb11e06a234af0b4854e163f2e471be820bf779b3bf1ad593f21c951544608"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/base_link__tron_cool_gray_11c_approx.stl",
+      "sha256": "436785956247e4163dde73a5aaab0035d828e30f264559909c1e137ce7b4bec9"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/base_link__tron_light_2985c_approx.stl",
+      "sha256": "48d9abb1953d73d67ad3223d55473ef9e1c83fe1f0129f40191d5aa9d9d51d83"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/base_link__tron_silver_10077c_approx.stl",
+      "sha256": "8d93e3bf6cdc6a45fabd16b194ae6719cb1129a162575e7a438e3e0dfd1d4d57"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/base_link_column_-1_tron_art_135_185_58.stl",
+      "sha256": "374f246d42b52f3bfd872f9a45b03ca233ed87cb78962c208bf2c4a82cf1216c"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/base_link_column_-1_tron_art_217_65_48.stl",
+      "sha256": "880c1dcaac0cb2ec4e2f6426dda19da1fc3bd7ad590ef5a42549aebc813e3a8d"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/base_link_column_-1_tron_art_222_100_18.stl",
+      "sha256": "ae348b0f6734f4a59b369b2857a7b43b0ac1082334b85e5c4caebb977ee94196"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/base_link_column_-1_tron_art_237_182_31.stl",
+      "sha256": "642d560a804037c6435a078198b1522afd7c9e0cedf49c77e3d5c43337e1e30e"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/base_link_column_-1_tron_art_23_153_59.stl",
+      "sha256": "874f10b6490a3df9d74f28b0c9ab883fe711b2fc48d00d1ef216137f46654352"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/base_link_column_-1_tron_art_26_110_174.stl",
+      "sha256": "960985b264572e1af88687d8e7936257baebb916a938b03d2efaa8e56c27f0c8"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/base_link_column_-1_tron_art_32_168_193.stl",
+      "sha256": "4003ee93912a7fb4689770fbbe7e9bb9e0992385ce7fd6dde2f14b15fa09febc"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/base_link_column_1_tron_art_135_185_58.stl",
+      "sha256": "0b93066798c6caa1a606242d1ef796b4f85bf084ebf50759dcd189a1c7225ebb"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/base_link_column_1_tron_art_217_65_48.stl",
+      "sha256": "08b2e3e5e98ece2fa78b48c7778b672cceeaa543fc28386b75fac24b7e6d3f1d"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/base_link_column_1_tron_art_222_100_18.stl",
+      "sha256": "9cb290dcb89cba2404bc5e3c8b1c65ca607326e6688729064a76317235d50ac5"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/base_link_column_1_tron_art_237_182_31.stl",
+      "sha256": "cb94c18b6de3e70a98702d12ab2164bfd55f3209592c9908a868861c5fa66a14"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/base_link_column_1_tron_art_23_153_59.stl",
+      "sha256": "5be1d9473efbf32a17099b0708f8e9637825798ae8b0b4dac5b971fef394ee30"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/base_link_column_1_tron_art_26_110_174.stl",
+      "sha256": "bc7be8a699df5bc146961ec478ad86a9abd2b8f906af2989e8e9dbc6708f47df"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/base_link_column_1_tron_art_32_168_193.stl",
+      "sha256": "57957d01967304f83d8914ae0f33af099dcbc01c9d46c3f3e940c58d6500f62f"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/base_link_lan_-1_4_tron_art_255_255_255.stl",
+      "sha256": "3132b19ef84b54ef020bddf1deccb9f405f6479e503befa2125abd3fe3d0c167"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/base_link_type_a_-1_2_tron_art_255_255_255.stl",
+      "sha256": "6811acff6d03b00dbe845a45028c25b8cfda06b78934aa49c4149381c4a6884d"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/base_link_type_c_-1_0_tron_art_255_255_255.stl",
+      "sha256": "738be8307667ed4c2476f5281f7e6013f1ce4d6e16f8e721eec7e54528a4953f"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/base_link_type_c_-1_1_tron_art_255_255_255.stl",
+      "sha256": "812d6941e21cff52973c22a0a3fe55ff32aac9e4e1d974fffb57f3f59bbbd7f6"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/base_link_wan_-1_3_tron_art_255_255_255.stl",
+      "sha256": "bc169a7d631a256aa23b91f742d56264f977d09b09a1c3fefca1def1132511d8"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/column_height_ruler.stl",
+      "sha256": "86fe34597c8b8df64d443e0f4f70cdaa764c50f6435bc1a6d55d1771c79dbc79"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/column_logo_ring_-1.stl",
+      "sha256": "bdda6143983f4f1e779d2f86c4f2a56f12081fb6f2ec18e6e05ed0332a90633b"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/column_logo_ring_1.stl",
+      "sha256": "4b2a95124d9f4ca4ff0e39a56d5b9118833c9d07d1fdab7e894ed30341dc5e35"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/emergency_stop_cap.stl",
+      "sha256": "6df7a7a6eb125b1b59d36b16984c78f88a0c0bfb90595ef3efd5d28f5c6da4ae"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/head_display_expression.stl",
+      "sha256": "58d296a9684acebfe6b37f23c64f9b171a3af4abf080a5a6a85af85b23f7bd89"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/head_Link__tron_433c_approx.stl",
+      "sha256": "a542b532e9f965b6c1fa2b7229c4f7079b056d9169bbe9d4e5689cd3df7f78f3"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/head_Link__tron_black_pc.stl",
+      "sha256": "b1c3f3baff6d8c52c41112570eda879e5cc9196d1619d42b491fe5df2b64cfd8"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/head_Link__tron_cool_gray_11c_approx.stl",
+      "sha256": "7ba4d8cb0cf03401713c0b0364e29bea5588bd3898cffea58fa4d815358a332b"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/head_Link__tron_light_2985c_approx.stl",
+      "sha256": "6813108e72606a88a487402101bf5a33786fbe13d854226bc139c228132b4648"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/head_Link__tron_rear_pc_approx.stl",
+      "sha256": "87b633535457693cc6dded42aa92b76307e2725325a3f39bd5c2e28ebc51d560"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/head_Link__tron_silver_10077c_approx.stl",
+      "sha256": "ccf4149835a4fdc1a76c0eb8fed22ac1b49b36b64f14ccf653b6f4ec2f079798"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/head_Link_brand_-1_tron_art_135_185_58.stl",
+      "sha256": "a17c27b73ee71f857a889727200063f9db781fb5c73dbc57909c96ccb545dd9c"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/head_Link_brand_-1_tron_art_217_65_48.stl",
+      "sha256": "99bf4d7c8cdb2a80f971224552efb684a3c1b92f82cd00d4427ea761e68953ac"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/head_Link_brand_-1_tron_art_222_100_18.stl",
+      "sha256": "60054ec9503f17992cfaf00f86415b4fe97924cbc2e0dc3f4457be0fa278577f"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/head_Link_brand_-1_tron_art_237_182_31.stl",
+      "sha256": "7292ace0c15b92b7b83e73fdb533daf17860051ca5880b6653394d1fabf7987e"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/head_Link_brand_-1_tron_art_23_153_59.stl",
+      "sha256": "9a0eea7c80d9dac7b47434baff6bd0473cacc67c9a726526948d946e42c81f13"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/head_Link_brand_-1_tron_art_26_110_174.stl",
+      "sha256": "40d8ccf7db49d71b9266af27b13947a56d2c4b1e1d9a502aee9345ffffe58c2f"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/head_Link_brand_-1_tron_art_32_168_193.stl",
+      "sha256": "e45dd8a95f9bcd06c14893a57405fa2fd509596e9b1aabef05510e07c7657951"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/head_Link_brand_-1_tron_art_50_51_51.stl",
+      "sha256": "556faba2e6ba40fc75cbb9ef09e31a8632ca870e5095e7de3ee8bbc9570780cb"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/head_Link_brand_1_tron_art_135_185_58.stl",
+      "sha256": "0598399c8e39943a4f74c148298f5a8cc7bdfaf97af84d02ed0e1afb1132b648"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/head_Link_brand_1_tron_art_217_65_48.stl",
+      "sha256": "62d1b347ae58630850ed7bf9de7b72b5f046ba4b6af91dc03cb14422aa4cf1af"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/head_Link_brand_1_tron_art_222_100_18.stl",
+      "sha256": "40f2613dbb77ac73331d81d82f4fe23f92ce76b0654a91b9b6d5a8f1bfe196f6"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/head_Link_brand_1_tron_art_237_182_31.stl",
+      "sha256": "3b17654fb2d642615349093e1c320daddd57a0e8b94927fd950f1ce384513ca5"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/head_Link_brand_1_tron_art_23_153_59.stl",
+      "sha256": "c9decc3d5e980d30302510020adb6ccec1ff06f0bad27479b88f2a04ac5231c6"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/head_Link_brand_1_tron_art_26_110_174.stl",
+      "sha256": "e6dad08aaca412fe7b34a3549a050000099a44162d927c3ab05034484cba31be"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/head_Link_brand_1_tron_art_32_168_193.stl",
+      "sha256": "4bf08f3406d4ef45cb4d573459ad363e9e3e9983280ac9313dc2171137fd3ddb"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/head_Link_brand_1_tron_art_50_51_51.stl",
+      "sha256": "394796c6e0dccb4e9fcb5833db655378dcbe06d7d62ff5ea24e4a8955dbdc9d3"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/power_indicator.stl",
+      "sha256": "6699fc5e59fdf52d2d61b11f3a3a40c3ae9a2681d861cd9b566d50debec489af"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/tron_transfer_0.stl",
+      "sha256": "4eebcae2d5f71865b5f34477125a877a8d5eae42814a1759b8f4c0097829a9e6"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/tron_transfer_1.stl",
+      "sha256": "57b0374312e5acd733503166e290ea3155cef53135108a187daea3723bb09bf3"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/tron_transfer_2.stl",
+      "sha256": "48a46a11c5491e78a7e6de48a0aa0c98f1043baed853fe5c5de6003665ad1ba0"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/tron_transfer_3.stl",
+      "sha256": "df202ce3b6d51821ac33dbf7d5b8ea0ee3726536242410489f8c4090c7757085"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/tron_transfer_4.stl",
+      "sha256": "3cd10db8c81de452d8a60811a1b54aa2fe4155a53dfe2c11d4ec7c2c6e78d1c3"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/tron_transfer_5.stl",
+      "sha256": "8c8684640334c52a62aee313fcb8378d9d304db0db565a3f30737fecf71561ed"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/tron_transfer_6.stl",
+      "sha256": "2bcc880eff1589336503ffe42cd063931164124675818ff05f6ed253a5d8ff73"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/waist_Link__tron_cool_gray_11c_approx.stl",
+      "sha256": "1e85d23249706aeca483f8021e51e0314ef5fa214bc0ab1eb07a666b02125c43"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/waist_Link__tron_silver_10077c_approx.stl",
+      "sha256": "a24ecd818e1333053bfda16e1f1a951cc0ec03d5e58bd778ca1c140cf440cb1d"
+    },
+    {
+      "path": "revotron_system/meshes/body/visual/appearance/waist_Link_chest_1_tron_art_50_51_51.stl",
+      "sha256": "caf0c81b9c309794730fe73a3bfe5fdf05e620af1f43b7856add3d3b981aa018"
+    },
+    {
+      "path": "revotron_system/meshes/connector/collision/left_connector_wrist_link.STL",
+      "sha256": "8ea6b06c76021c2f0c289197c3c848e04d9f82c4f652c9ce24984746c44cd574"
+    },
+    {
+      "path": "revotron_system/meshes/connector/collision/right_connector_wrist_link.STL",
+      "sha256": "54c3c859cf8a91c85ca680f9133fa510fff7a7e33158541788aa65115cb0047b"
+    },
+    {
+      "path": "revotron_system/meshes/connector/visual/left_connector_wrist_link.STL",
+      "sha256": "8ea6b06c76021c2f0c289197c3c848e04d9f82c4f652c9ce24984746c44cd574"
+    },
+    {
+      "path": "revotron_system/meshes/connector/visual/right_connector_wrist_link.STL",
+      "sha256": "54c3c859cf8a91c85ca680f9133fa510fff7a7e33158541788aa65115cb0047b"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_00.obj",
+      "sha256": "764754d144180c1a2973bd60af4d926d6c1bbedbcf555cfbf056047a6110e026"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_01.obj",
+      "sha256": "c91de561c6481a9904297994fdf3a1850acc9e8ed537bb5ae5dbb5addd853481"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_02.obj",
+      "sha256": "d252bf4cd523fe875d7eb62dbb4ba85b95d835087d516b21b357c178e7f900cf"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_03.obj",
+      "sha256": "ed8ac1e19c36d6a0e8b1f34bf70af828e2d9456822db7d678501183ab9456c88"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_04.obj",
+      "sha256": "68ec1ffab660e9d5e52840a66dee90b896382f711aeb1efb22bf1fdb04f27cf4"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_05.obj",
+      "sha256": "95689b0df530aedb84ff92e7a81052e2083c8fde710eb52a260ee206847a5edc"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_06.obj",
+      "sha256": "466b55e13a0666a353ade34d612f1ae6d734cfb23197f6b2b79617e0a12b2cdb"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_07.obj",
+      "sha256": "ef91fc2296c1b6e5d621ff403a6d6002ae454fc3ff4c8d5b84ec79495706a4e2"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_08.obj",
+      "sha256": "96b55940678842faf8523df144c8136100a30ab3c11e48ff5d9d8e1d75191969"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_09.obj",
+      "sha256": "7ada83d00533d431c2614e85cbd1f132519c72dd0cebe1e3af61633cf92c14aa"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_10.obj",
+      "sha256": "057956355ed3c49189575433b8f40bd3e3e80051dde87bba77cdb36e38b7086d"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_11.obj",
+      "sha256": "683382f00fe1618fa352c42ec508d116034575cfe6f553c36aa3ef49d4403726"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_12.obj",
+      "sha256": "371094f0ae371f8cf35e8cb17b51befa4c8eb4490422980194602d232851ce7b"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_13.obj",
+      "sha256": "2db496b9e2db849169c91e6aeb4c028bfe95b71ac8e7f86baa9d9fd9c693a731"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_14.obj",
+      "sha256": "69e66ef33550553f009a2dd5e817e6b731748012e564867690d347eea0c52504"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_15.obj",
+      "sha256": "65ad15ff4d0443295d7e526e7a186f5e3d1e9a69ac4620718e6ee47183c2acae"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_16.obj",
+      "sha256": "9673e339d64931c8360e6314643ce9a0b5075d50b32d42a21d549ceb84f90a2e"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_17.obj",
+      "sha256": "ce015ad974252f47261b52df7a77fbfe7db9f9f1377f0b916011b518d57daf13"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_18.obj",
+      "sha256": "d91286490b0cf4c185d64b9d4bf31270deede77c1c1bffce6d93d3927c943629"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_19.obj",
+      "sha256": "fe0490d1c3586c18caee40376188cd8082d200cfe5fd0e014baf3a8efe3303b4"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_20.obj",
+      "sha256": "a3aa5a4aed2d8a4cb66e04ea9744ec4873dbbe86c076aab0a3f601f552c549e0"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_21.obj",
+      "sha256": "8545c5539fc98c40d3aaeeaf430acd6a7e841f36feabbe215c2fe63f1c1b2f7c"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_22.obj",
+      "sha256": "1777790345c75438e6a5e5984fd17acd892f7fd3868274caa2f7af26521589a8"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_23.obj",
+      "sha256": "64ee9b770f074b318e89b0a4b41d999da2b1024ddcbb21d8cb4007049f41fd75"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_24.obj",
+      "sha256": "8212e48b37b27dd98e7848b4ce8aa4ca78d7536623bff8c455e76e55bbae9fdc"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_25.obj",
+      "sha256": "ae383bcbb1c287587f7ddc2e26d2067bad1c8aa53e6a9f0f222a64f82bfcb30c"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_26.obj",
+      "sha256": "79dd0b912ae8034987543fff43702f6ead17b0d87c2732c654d80e8c782342b9"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_27.obj",
+      "sha256": "5aecdf1c37b9e9da49b4ba294ad9b36cb9a68ba0943d524c151f0bfc29f01256"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_28.obj",
+      "sha256": "8f1c018683154768e7b9b9a19335a1eb3aee954e08109b28a57d7c6f0aeff270"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_29.obj",
+      "sha256": "2db436f6a932b619e78d44949ac2f790baa0f485c9466df154689f7b3a4d23b2"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_30.obj",
+      "sha256": "27d65d2d5e89bdc12dfae122afadf3470d9ddc53d2500166eea65da98ed9103d"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/cmr_v4_31.obj",
+      "sha256": "8881776ebdf012baa2a86f6d3a7f10c45816bdde2ed5008c7569e8ed49321373"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_hand_base_link.STL",
+      "sha256": "b98409b0fec747c97351843fa9edfae352a7f665d4ddd4dc8938118e2b555843"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_index_DIP_link.STL",
+      "sha256": "2595c289938059a96c7b3c6ed31c1008405ca637bc0debec81522c62ee97929d"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_index_DIP_rubber_link.STL",
+      "sha256": "59f2d5a210a481e9ab528c2bbc093ee141e9bf0cedd7157b4243af297bd73c76"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_index_MCP_link.STL",
+      "sha256": "e7d226c748ef2124298f79eab865b8da8d646eef0e41541c2cfa5dacb34d8105"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_index_MCP_rubber_link.STL",
+      "sha256": "be9bf3425c3e19175cbaa0c53f6c0ee07e9a76dc06bc0b8607991d5d1ef623b4"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_index_MCP_touch_link.STL",
+      "sha256": "af3d94fac311a8e67200b20cc7b530325cb39d546e544039eaf895ea9a76b0f1"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_index_MPR_link.STL",
+      "sha256": "baa43656b147bbf940374cf30222e0b18bc13c3f331c5fa25b29d35694e6ac4e"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_index_PIP_link.STL",
+      "sha256": "af5954666de937642e5e592fc8a6bc7596ceb5b0c67d4c0986258a50af71b57e"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_index_PIP_rubber_link.STL",
+      "sha256": "b1d038a6d58aa31aef2359f90a176bd0b4dfe2bf113826f484d5769d5300af95"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_index_PIP_touch_link.STL",
+      "sha256": "5f4c7268403a26b563941d24981eead2080da89f671c0e2a1a3fbaf36b5b4ebf"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_little_DIP_link.STL",
+      "sha256": "b0727dc1a1d335b8ca0952698b3ab12c3a4a9468070ace600087a3252d3c71c7"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_little_DIP_rubber_link.STL",
+      "sha256": "0f644319cc14475e9dc90abdfc7ea4d2bddff40b61c63fa9b21b1190fb90c10a"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_little_MCP_link.STL",
+      "sha256": "47a99a6a5ee1bf4c4305590998aa989f1f0c5ade13d87999b3e64ff3e6c8d2e1"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_little_MCP_rubber_link.STL",
+      "sha256": "16a08ad7a00aa5a5a5178f77e8f6152cf04cb72e5d66082c6e0219e72a2fd85f"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_little_MCP_touch_link.STL",
+      "sha256": "c62a582d11880a807bf01810d3101ca6d0a14676c15bd462aa07913a0a6c9d8f"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_little_MPR_link.STL",
+      "sha256": "b64a34f38bee8d2646dd68ad19d54bad87c23d611edccc98b01021826bfaa97a"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_little_PIP_link.STL",
+      "sha256": "f22f871c7bc4e5679dbac3b95ae3e88647574e835e8b0c81f53d71f7ddaa1a2c"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_little_PIP_rubber_link.STL",
+      "sha256": "938ba99bccfc7ab7e2f6b7cb5e6c8f9833d7554ae474922567ddac451053c51a"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_little_PIP_touch_link.STL",
+      "sha256": "8e35e6051988803729dee402b529d429abb3702f644bacdedb96138c6f17edf7"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_middle_DIP_link.STL",
+      "sha256": "312ab2c2bdd8903d9cc7d1e644a28bc39c5b9913eee533c49a1ca51d2db1375d"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_middle_DIP_rubber_link.STL",
+      "sha256": "faaa821a1d1a560df65f4cbd24206cb520187dbf47f74a5b8e7d5b93ca05ee75"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_middle_MCP_link.STL",
+      "sha256": "957a04df6668b51b286e96f02cbdfa738626736754bdd8c62eade132c6a51678"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_middle_MCP_rubber_link.STL",
+      "sha256": "58359a328990302101c823dd52b73dbb31a4fc97fff20bddc54faa7e6c880b72"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_middle_MCP_touch_link.STL",
+      "sha256": "c46af8ecb4a9e81afe187642dcd6295b344dfc10a42669161d2310a547c5d409"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_middle_MPR_link.STL",
+      "sha256": "9cc1e2a96a5f01feb6d352d4c846e1287dd44a799807039bf2fa0be8b8b56cd3"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_middle_PIP_link.STL",
+      "sha256": "34f699badb462f6ed2857f52b4ef037b34066c6b4eb401a0374477d6b437e214"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_middle_PIP_rubber_link.STL",
+      "sha256": "13f9ac45e3fa256477ed50f1cd7c0b68fbc13b8ba33613dd0e2183dae567278f"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_middle_PIP_touch_link.STL",
+      "sha256": "384087e6b979e92169f9b5f25a1e2ee53b29d645d00221841ad0a58daea37290"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_palm_backtrim_v2.obj",
+      "sha256": "736aeade09055a11165f7e0ac31de37d1dc1b3bd15ca25656756ba12d728aece"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_palm_led_link.STL",
+      "sha256": "47bd7cdfe943ef811d4a93aea76913ba3339244c7dd3850099978d95c4a80971"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_palm_rubber_link.STL",
+      "sha256": "e081e0e7c64c4564c0cdb30cc585829790ab25a25f00b36c80a53ba8242903c4"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_palm_touch_link.STL",
+      "sha256": "33c5aef61f8d0b8aa9061b2ed04a3b06d2ec2bc7967dc23fea82e50def65e584"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_ring_DIP_link.STL",
+      "sha256": "1e75cb3f02887d6a4d2a616842f62b4340f6efef86e34a47903665c8240c196e"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_ring_DIP_rubber_link.STL",
+      "sha256": "e7eab86043f512f029e28d19d5c22fe3fee55f1026f98f9930b36ccd31811d8c"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_ring_MCP_link.STL",
+      "sha256": "e303d228065a57475dc18a3afbb0291c1c57500ad7a5d508aab3640ed3f740e0"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_ring_MCP_rubber_link.STL",
+      "sha256": "75211ad1953dbb9b935ad29e5987b679236169e9951bd463e2c677343c15577d"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_ring_MCP_touch_link.STL",
+      "sha256": "1572f7f21fe737a5dd2434e2cf9c4a23f286c32ab914d20eefd628c232e1ef9f"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_ring_MPR_link.STL",
+      "sha256": "ec68b4a05b484d8bcbc740b6f4060f89f34b87d26ee45ccd6ceb6f90c09edb30"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_ring_PIP_link.STL",
+      "sha256": "8cac6ed3659bea24804f45479c84ac701322028fe129694f1e815b508d720540"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_ring_PIP_rubber_link.STL",
+      "sha256": "031b3a000836371d1c39304dc23ae4d8423950d2e2a2014f8c9a91ba71252278"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_ring_PIP_touch_link.STL",
+      "sha256": "0ab15dd9441d250a922ec05b370e03589e61e88b604dc4feeb82f048ecbb2663"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_thumb_CMP_link.STL",
+      "sha256": "f14ca5545c96f650ab30314357f2044c54fba2d4b2ee0bb591018ead1202a699"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_thumb_DIP_link.STL",
+      "sha256": "23c9268f0b0336c0d5b5d5ea802f014ec6e9ad69e7f182adfb7883a56d14cf60"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_thumb_DIP_rubber_link.STL",
+      "sha256": "6cd394bee7597fe09469233c11998ec42924668157aa2710fec501120e6d33a5"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_thumb_MCP_link.STL",
+      "sha256": "1d7641a478f236671218a2f5c5a8cd321da4193740a1e8b2bd8b1bb2cdbe53bd"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_thumb_MCP_rubber_link.STL",
+      "sha256": "870deba8f5d45606aa7d56e9b166756e4c4679b2e2b35de72ab30fcaed883b53"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_thumb_MCP_touch_link.STL",
+      "sha256": "693380326c14a2d070db88f3c237d18c8e2f30a2d766ce4b8a70bb6f5d4e56d2"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_thumb_PIP_link.STL",
+      "sha256": "ec7fde7e0fb131b648f91b57ab7d61fdbb7f643d4fc7a2781a09e44b85404160"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_thumb_PIP_rubber_link.STL",
+      "sha256": "835b155a627658b2e6b02debe678bf60200677e7805867de017cf6db87b1e828"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/left/left_thumb_PIP_touch_link.STL",
+      "sha256": "1a360d9ac335d29460e6efd74bc5273ec9a69646cfd7d825ba45cf646bc30851"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_00.obj",
+      "sha256": "845d8bd245ee9d3d5655f5d591b591d68b0c37d58fc934c2b7b8381711d147ca"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_01.obj",
+      "sha256": "d8d5f85a9956f9bf8081538acb283c5060d1e729152907332b4880a9afebbace"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_02.obj",
+      "sha256": "8627cf2fcddc2fbcfd4700c32bdc593bef1a6edbbf3dea84d39703b6f99b3149"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_03.obj",
+      "sha256": "50d250f0a04da68ba9877c3c364372bfb789ca14af8bf5740f940ac2e301a9ff"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_04.obj",
+      "sha256": "c58beb287ba27abf60c0d862ae8586b4b2af7ebb1b596d2dbb2f03bdd4b325bb"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_05.obj",
+      "sha256": "d6a5b9b7d12b372f3345c3269218ff361ca5c95e6eefca1af462fac9ef4a9498"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_06.obj",
+      "sha256": "8b816a518db3d29375e8b75ab3310c7117f5990347bf2f7fc623769db459275d"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_07.obj",
+      "sha256": "42dd3356bea6d4fa8aee455bd299a1ef3fcebc5c9222e9641c11cec5b07b05b8"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_08.obj",
+      "sha256": "59b9ed095061f5b339873e65556d1b84c72598178837ac9433b67c5fde238e57"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_09.obj",
+      "sha256": "06d8d761552044608f097dd2c12543027551ee24cc3b4cf92692e203f916a6d8"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_10.obj",
+      "sha256": "351cb98d4866e2751a07cec23a472ed8c52c20cfebf91c64464f90709098c60d"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_11.obj",
+      "sha256": "f6348235fd8f58d2d651814714f54631a434f9d07d59c38a9404bd2adfe761c8"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_12.obj",
+      "sha256": "e306b02d54141e343378b688e218ecc181975641dc349b0ee6f0102ba409da33"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_13.obj",
+      "sha256": "8846c578041942cb30fcc5ef5bd7d619fd54a6a097dbb88728a2841ec3fef998"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_14.obj",
+      "sha256": "9051a3eb721b5ac61c381ccc3fdf69a775cb53d7bba21288d03183c334383f2d"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_15.obj",
+      "sha256": "321107873975a213adbeb0d09d3abaf4747ff2f1b9fd9a08d35828d33cb935d3"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_16.obj",
+      "sha256": "3ba231eb8e6abe011fcc2df55f64226a0da4a71ea6dc2dac467afbe6bf896c07"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_17.obj",
+      "sha256": "706b773586c1c89e61e12eee19f9a10aa19e0e0cf0c7005273ff3838fd163838"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_18.obj",
+      "sha256": "5b87a50010ca3ca9d9d79bba11b01efb49fc3c4ba79f42390d23a6517a2f6c9b"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_19.obj",
+      "sha256": "992f298947052bf7aebe8bad830363217e079e2aa893925528b4f1608c029789"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_20.obj",
+      "sha256": "b688d6f0fe73790fa95faa8fd05a8c2203731a42a1ea52ebdf11a2559bfa3eef"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_21.obj",
+      "sha256": "15d865f12d7716e690ad48cfd8cda43672cf89cd3e88e253551e149dd291bc6f"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_22.obj",
+      "sha256": "9817a070c8b76065bed2bcad09bf905748de0616289002c8e328f15b39b3875b"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_23.obj",
+      "sha256": "546320c6858a466ad0059c49ae71d57f28f9f85a5583e138c1e8adda966ff2b3"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_24.obj",
+      "sha256": "4f8c5b75990e2ce3d77c83e0501b0afb25755a334c80d43ba93124084c42d46b"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_25.obj",
+      "sha256": "b7a7dac2940cf22892936167aa616c72e5e658070c1e4b0ac20f5b2b94206f05"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_26.obj",
+      "sha256": "ef0bc46e67964458cb75727d2dfecf9c59d731e56ab5b943976de282dc2f1d85"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_27.obj",
+      "sha256": "c6aedb94631918a88d5fd5b4bad885a3e68b340d91f5d724fec99b30828a6489"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_28.obj",
+      "sha256": "0eecd9ae94133f84687437b72bb71bb150b713af445a21cb3b59607d85fdfd4c"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_29.obj",
+      "sha256": "498bce9323422780d7a1f53ace44d815f91bff25cef277d413204c9e0cf18b6e"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_30.obj",
+      "sha256": "801d385f1e65232ec85ed81d5ff0d3b6b0b5b0fe084ed43b3828b566311b6b57"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/cmr_v4_31.obj",
+      "sha256": "8f5f31d9396688475e48bbeda2c29e027cd05681316a9b782c182be069b8c023"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_hand_base_link.STL",
+      "sha256": "d332f29ea1d9369309edce23e29ba48a61872cc9d5a86f1410ea459f0bbf26a7"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_index_DIP_link.STL",
+      "sha256": "fea9d19ab47ea51465e5fa31cb198725c936b28d20ed7fa48059d6dd27ffffed"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_index_DIP_rubber_link.STL",
+      "sha256": "ab641140de4029d2be1f2c2ca0ba0d199740fefa617a6ea7781556fc90833fe2"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_index_MCP_link.STL",
+      "sha256": "6ef66f9a169a18c6ff2b262a3d6868ae7b9d4f238dfc78f33b3f5e829ecf738c"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_index_MCP_rubber_link.STL",
+      "sha256": "3f2ef234e2f5718c1d90d5862cbe70fde07ba6cde75db53cb540db9f447480a0"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_index_MCP_touch_link.STL",
+      "sha256": "8a1c14d697f2d191dc6c38773756a9454661332dc5f3f889df8451ca275bb4f7"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_index_MPR_link.STL",
+      "sha256": "778f65f9c4df37b63c8475e7f0073eef6f921841975655864fbb0ef74be0211a"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_index_PIP_link.STL",
+      "sha256": "514cc2b12fe11d35f2d1a09b7d5b0a6d1a32d728cb36707b90cfe5ac9c7c4538"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_index_PIP_rubber_link.STL",
+      "sha256": "69904c0bd24587db0c69f69fd9bc2752977e7a24c7eac78b21d46fc44ae81dc9"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_index_PIP_touch_link.STL",
+      "sha256": "2d1330a0de328e945ae6813f84976d85ede18f0468b48f9e3b0a53bcd6a749b9"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_little_DIP_link.STL",
+      "sha256": "53d3bfb23894c535cd5e38428b6582197d153568a6d3a04fec78a56841584af9"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_little_DIP_rubber_link.STL",
+      "sha256": "db7e6ec93553f9e4d0b04f937492c0732e3ebd66810587bdab1ba9ec0e191d46"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_little_MCP_link.STL",
+      "sha256": "f81317250e274bdb0500860356fb78daf5e0657166fad789c532680c2627b1a5"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_little_MCP_rubber_link.STL",
+      "sha256": "59e13548dfae5e83fb8583b3b70c0998f0cdad85064e97278ff1381577c9228a"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_little_MCP_touch_link.STL",
+      "sha256": "50f11f719380358990e780c1dd82a94a43ae172a7950eff641a1ee4fbd0e209a"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_little_MPR_link.STL",
+      "sha256": "9c436c602f583844edff98c820bc98d73a4dba9b12d6ee5b398e451318613b07"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_little_PIP_link.STL",
+      "sha256": "02e21a063d03351f89bc61c2354cc369c44badda63e5cf70df2611b0acba09d8"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_little_PIP_rubber_link.STL",
+      "sha256": "43fac09a38f07a7da825bd7a2a94446b22411c54a5f0bce81966b3222552318d"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_little_PIP_touch_link.STL",
+      "sha256": "d29535353cc65d3c7f971b3e6099da595ce421e93f22765176ce59d53899b12f"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_middle_DIP_link.STL",
+      "sha256": "f32529ce2794f631c5b66174891d5e1142aee79448955b1dd40c94a4db36025a"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_middle_DIP_rubber_link.STL",
+      "sha256": "c448a39f0f914fcbcab2f2174c5b707b3c6f7bf31378508fac85944fc7385bdf"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_middle_MCP_link.STL",
+      "sha256": "49b9cdbe908c96ad92670dc98d98bdc7ba01d1d145aec3cf0fcef02c26827052"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_middle_MCP_rubber_link.STL",
+      "sha256": "95436c9a139808047b849e161354ebb794b29d757808ae721f1f353ad506c2b3"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_middle_MCP_touch_link.STL",
+      "sha256": "45dac741f853bf1d4d556e467b837983ac199ffa07398d57a115e604fd912058"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_middle_MPR_link.STL",
+      "sha256": "b57621c37f0c1b70dc3cf0ac051a6fb6a912ab240cd317771ac7a08beb64e70f"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_middle_PIP_link.STL",
+      "sha256": "f18059ffa62d0027f8434129cc938d255d400b8409bcb5d837b72b9d80f7bf9e"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_middle_PIP_rubber_link.STL",
+      "sha256": "d1232020169b8ac5c17498aafd2ef08b41f97592350067e36885977df2b99cdf"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_middle_PIP_touch_link.STL",
+      "sha256": "5de1ca17b80badae80ca841623a4e76d50eae72d3a90515044ea51d7c2c9833b"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_palm_backtrim_v2.obj",
+      "sha256": "40f1ac643a99467032a0982b9ad9eee5f9e9aa062d5177a55f310da7dbd6921c"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_palm_led_link.STL",
+      "sha256": "d73eecd624eb3745f5b3661a3ac3c73bec639ee21f0ca8b085aedf1f8a9f46a8"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_palm_rubber_link.STL",
+      "sha256": "92d4cc77ffb062c292bf26f1f04d1b586dba3680d07d813ec23a4b56a043fe99"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_palm_touch_link.STL",
+      "sha256": "a4c8358c4e4270576863c6de550d51df98e793ada46b2d1c5df2e60cce00fe01"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_ring_DIP_link.STL",
+      "sha256": "d5cd6de138939d85fa4b8b62d5903c74f8fb7a1459e3d76f85a695d6f4597ea6"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_ring_DIP_rubber_link.STL",
+      "sha256": "ce328de52beaff3b2fb44fbb5c1e4160c3db71fe16369dc2864c56d4a6eb5856"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_ring_MCP_link.STL",
+      "sha256": "e369d9c6caae6f0705c7f5857bb838e2c1d4fe960a7af97ca1d076ce22d141ef"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_ring_MCP_rubber_link.STL",
+      "sha256": "d5bde395df6bd537c3f1e62b9b6e50499acd7408349bbee31b6ff91213962387"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_ring_MCP_touch_link.STL",
+      "sha256": "b794b6837e086d0d1c31c46ee1925433ffe1125860398182664cb357cdabda00"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_ring_MPR_link.STL",
+      "sha256": "b4a8dd29ebe584a488fb44ac9911cc4dca013dcfc2ee00c2f5f5489fe30a6dd5"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_ring_PIP_link.STL",
+      "sha256": "b435796cc43eea205d772462e2449cd87c08ef7bb2e642f7d44695c15040610b"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_ring_PIP_rubber_link.STL",
+      "sha256": "b6f16e17b3f9f2c7dcac8a8cbc5a3daafdefc9cd6554ceed4ff361553a67ffeb"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_ring_PIP_touch_link.STL",
+      "sha256": "7919e404d1b60bb007fc99b4ec0f2dbda17ece6bfbaa817d97b02eff4f811d1a"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_thumb_CMP_link.STL",
+      "sha256": "ac621ea35f14435378aa4adc9c167b9fc52186b43609479e05d3d2d0385ea14e"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_thumb_DIP_link.STL",
+      "sha256": "8b1795ea62709d485a6521650696980c357fba98e7cc27eca87b92d4f4904d47"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_thumb_DIP_rubber_link.STL",
+      "sha256": "e337c981f8725838c8ebb6e4dc08d0a9914d5fb27a8cb47b39c71aa267a2754b"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_thumb_MCP_link.STL",
+      "sha256": "699531f1c2d34cd03bb3977ebc95d988f80bc5fa4a6734975dd8a5428b0d2f68"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_thumb_MCP_rubber_link.STL",
+      "sha256": "c94d0dcc48dae67ff1e9ff71ddfe92a59519e3a889bae8cac132e4ca47bfdb12"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_thumb_MCP_touch_link.STL",
+      "sha256": "a6d1ebdcd5a0829a9a1786e702cd09f4b7a225e4a928caaeb9662233fb5b2157"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_thumb_PIP_link.STL",
+      "sha256": "21b6e1a7f57889c4ba6462ff940bfcc88c7d07bde6f8a2516000221063191ee6"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_thumb_PIP_rubber_link.STL",
+      "sha256": "5fa3c29ab83767467884f16fce2020b335a61acd28270918fb4b3161ad1503d4"
+    },
+    {
+      "path": "revotron_system/meshes/hands/collision/right/right_thumb_PIP_touch_link.STL",
+      "sha256": "e247b2d5660334d7c2e24ff62ca028800fb5216bbbf31b49213f2b7cb4c43eb1"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_hand_base_link.STL",
+      "sha256": "b98409b0fec747c97351843fa9edfae352a7f665d4ddd4dc8938118e2b555843"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_index_DIP_link__revo3_polished_aluminum.stl",
+      "sha256": "e61eeffcc4642271a97732dce25788618c103bdfaf0264899615f6def1ce72a4"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_index_DIP_link__revo3_silicone_2162u_approx.stl",
+      "sha256": "7115e9f3468a95aa7018a04415c7f877ac65755a8e43420ab98896c74866de28"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_index_DIP_rubber_link.STL",
+      "sha256": "59f2d5a210a481e9ab528c2bbc093ee141e9bf0cedd7157b4243af297bd73c76"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_index_MCP_link.STL",
+      "sha256": "e7d226c748ef2124298f79eab865b8da8d646eef0e41541c2cfa5dacb34d8105"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_index_MCP_rubber_link.STL",
+      "sha256": "be9bf3425c3e19175cbaa0c53f6c0ee07e9a76dc06bc0b8607991d5d1ef623b4"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_index_MCP_touch_link.STL",
+      "sha256": "af3d94fac311a8e67200b20cc7b530325cb39d546e544039eaf895ea9a76b0f1"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_index_MPR_link.STL",
+      "sha256": "baa43656b147bbf940374cf30222e0b18bc13c3f331c5fa25b29d35694e6ac4e"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_index_PIP_link.STL",
+      "sha256": "af5954666de937642e5e592fc8a6bc7596ceb5b0c67d4c0986258a50af71b57e"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_index_PIP_rubber_link.STL",
+      "sha256": "b1d038a6d58aa31aef2359f90a176bd0b4dfe2bf113826f484d5769d5300af95"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_index_PIP_touch_link.STL",
+      "sha256": "5f4c7268403a26b563941d24981eead2080da89f671c0e2a1a3fbaf36b5b4ebf"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_little_DIP_link__revo3_polished_aluminum.stl",
+      "sha256": "9f2fbc8db05c9b81d9d66d68d2f4ec9bb122ec74b1aef4efcacf837953521135"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_little_DIP_link__revo3_silicone_2162u_approx.stl",
+      "sha256": "aeba5c55ae28c8cc6f8689693c29a0c1a24741350058de03ecdb23f9c17b8620"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_little_DIP_rubber_link.STL",
+      "sha256": "0f644319cc14475e9dc90abdfc7ea4d2bddff40b61c63fa9b21b1190fb90c10a"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_little_MCP_link.STL",
+      "sha256": "47a99a6a5ee1bf4c4305590998aa989f1f0c5ade13d87999b3e64ff3e6c8d2e1"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_little_MCP_rubber_link.STL",
+      "sha256": "16a08ad7a00aa5a5a5178f77e8f6152cf04cb72e5d66082c6e0219e72a2fd85f"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_little_MCP_touch_link.STL",
+      "sha256": "c62a582d11880a807bf01810d3101ca6d0a14676c15bd462aa07913a0a6c9d8f"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_little_MPR_link.STL",
+      "sha256": "b64a34f38bee8d2646dd68ad19d54bad87c23d611edccc98b01021826bfaa97a"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_little_PIP_link.STL",
+      "sha256": "f22f871c7bc4e5679dbac3b95ae3e88647574e835e8b0c81f53d71f7ddaa1a2c"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_little_PIP_rubber_link.STL",
+      "sha256": "938ba99bccfc7ab7e2f6b7cb5e6c8f9833d7554ae474922567ddac451053c51a"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_little_PIP_touch_link.STL",
+      "sha256": "8e35e6051988803729dee402b529d429abb3702f644bacdedb96138c6f17edf7"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_middle_DIP_link__revo3_polished_aluminum.stl",
+      "sha256": "d6beda8809a4bf29305d1927cd244ee08a900ad11e6447d46b99337db3dcb54b"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_middle_DIP_link__revo3_silicone_2162u_approx.stl",
+      "sha256": "eb365cdc89c288c13e1a1ec1d35ba05962c2378be3acdfce150ab141d1053ebb"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_middle_DIP_rubber_link.STL",
+      "sha256": "faaa821a1d1a560df65f4cbd24206cb520187dbf47f74a5b8e7d5b93ca05ee75"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_middle_MCP_link.STL",
+      "sha256": "957a04df6668b51b286e96f02cbdfa738626736754bdd8c62eade132c6a51678"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_middle_MCP_rubber_link.STL",
+      "sha256": "58359a328990302101c823dd52b73dbb31a4fc97fff20bddc54faa7e6c880b72"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_middle_MCP_touch_link.STL",
+      "sha256": "c46af8ecb4a9e81afe187642dcd6295b344dfc10a42669161d2310a547c5d409"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_middle_MPR_link.STL",
+      "sha256": "9cc1e2a96a5f01feb6d352d4c846e1287dd44a799807039bf2fa0be8b8b56cd3"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_middle_PIP_link.STL",
+      "sha256": "34f699badb462f6ed2857f52b4ef037b34066c6b4eb401a0374477d6b437e214"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_middle_PIP_rubber_link.STL",
+      "sha256": "13f9ac45e3fa256477ed50f1cd7c0b68fbc13b8ba33613dd0e2183dae567278f"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_middle_PIP_touch_link.STL",
+      "sha256": "384087e6b979e92169f9b5f25a1e2ee53b29d645d00221841ad0a58daea37290"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_palm_led_link.dae",
+      "sha256": "aa9688a159c643befee15a72ba8d59bbb566759b818207eabd1799af5b008e49"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_palm_link__revo3_aluminum.stl",
+      "sha256": "5d95324b119504f0c4ccc98f4c502f4cb1695fedb746da27570d5243e6bb5c17"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_palm_link__revo3_white_pc.stl",
+      "sha256": "70508572fd1a4ee071732c75c80496d23e5771fec54446fb27338150761355f3"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_palm_rubber_link.STL",
+      "sha256": "e081e0e7c64c4564c0cdb30cc585829790ab25a25f00b36c80a53ba8242903c4"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_palm_touch_link.STL",
+      "sha256": "33c5aef61f8d0b8aa9061b2ed04a3b06d2ec2bc7967dc23fea82e50def65e584"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_ring_DIP_link__revo3_polished_aluminum.stl",
+      "sha256": "9636ba495c382c19dc796e205d52c78e763387bafee5ad790decdbf55bf794f1"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_ring_DIP_link__revo3_silicone_2162u_approx.stl",
+      "sha256": "8c0503d8ded9b31cd4f9c2d77dcd63316803a012bd375e894bc70b426f6d8807"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_ring_DIP_rubber_link.STL",
+      "sha256": "e7eab86043f512f029e28d19d5c22fe3fee55f1026f98f9930b36ccd31811d8c"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_ring_MCP_link.STL",
+      "sha256": "e303d228065a57475dc18a3afbb0291c1c57500ad7a5d508aab3640ed3f740e0"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_ring_MCP_rubber_link.STL",
+      "sha256": "75211ad1953dbb9b935ad29e5987b679236169e9951bd463e2c677343c15577d"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_ring_MCP_touch_link.STL",
+      "sha256": "1572f7f21fe737a5dd2434e2cf9c4a23f286c32ab914d20eefd628c232e1ef9f"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_ring_MPR_link.STL",
+      "sha256": "ec68b4a05b484d8bcbc740b6f4060f89f34b87d26ee45ccd6ceb6f90c09edb30"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_ring_PIP_link.STL",
+      "sha256": "8cac6ed3659bea24804f45479c84ac701322028fe129694f1e815b508d720540"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_ring_PIP_rubber_link.STL",
+      "sha256": "031b3a000836371d1c39304dc23ae4d8423950d2e2a2014f8c9a91ba71252278"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_ring_PIP_touch_link.STL",
+      "sha256": "0ab15dd9441d250a922ec05b370e03589e61e88b604dc4feeb82f048ecbb2663"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_thumb_CMP_link.STL",
+      "sha256": "f14ca5545c96f650ab30314357f2044c54fba2d4b2ee0bb591018ead1202a699"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_thumb_CMR_link.STL",
+      "sha256": "11344ca98fbe4b82211d73ee94f22c9d170eddc43fe5902e95c26ea5600cefe3"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_thumb_DIP_link__revo3_polished_aluminum.stl",
+      "sha256": "2c02e1776bfbddd39cd34af4245047f3c325f1b2ef3824ec8e1e5721baf29e4b"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_thumb_DIP_link__revo3_silicone_2162u_approx.stl",
+      "sha256": "76a91487483a21457210fb2e01f5f79b4ccc54d548234ed49d209a2dd8a6c0a5"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_thumb_DIP_rubber_link.STL",
+      "sha256": "6cd394bee7597fe09469233c11998ec42924668157aa2710fec501120e6d33a5"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_thumb_MCP_link.STL",
+      "sha256": "1d7641a478f236671218a2f5c5a8cd321da4193740a1e8b2bd8b1bb2cdbe53bd"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_thumb_MCP_rubber_link.STL",
+      "sha256": "870deba8f5d45606aa7d56e9b166756e4c4679b2e2b35de72ab30fcaed883b53"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_thumb_MCP_touch_link.STL",
+      "sha256": "693380326c14a2d070db88f3c237d18c8e2f30a2d766ce4b8a70bb6f5d4e56d2"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_thumb_PIP_link.STL",
+      "sha256": "ec7fde7e0fb131b648f91b57ab7d61fdbb7f643d4fc7a2781a09e44b85404160"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_thumb_PIP_rubber_link.STL",
+      "sha256": "835b155a627658b2e6b02debe678bf60200677e7805867de017cf6db87b1e828"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/left/left_thumb_PIP_touch_link.STL",
+      "sha256": "1a360d9ac335d29460e6efd74bc5273ec9a69646cfd7d825ba45cf646bc30851"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_hand_base_link.STL",
+      "sha256": "d332f29ea1d9369309edce23e29ba48a61872cc9d5a86f1410ea459f0bbf26a7"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_index_DIP_link__revo3_polished_aluminum.stl",
+      "sha256": "df10a0c3a5338633822c8d8c7f68a73b5c1a5c83c2d5fa82afaa44190be9875f"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_index_DIP_link__revo3_silicone_2162u_approx.stl",
+      "sha256": "1cbad86aaedf5f525b9f9f8b774a6426d770d8d67af7965bf5eba5162ff5a325"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_index_DIP_rubber_link.STL",
+      "sha256": "ab641140de4029d2be1f2c2ca0ba0d199740fefa617a6ea7781556fc90833fe2"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_index_MCP_link.STL",
+      "sha256": "6ef66f9a169a18c6ff2b262a3d6868ae7b9d4f238dfc78f33b3f5e829ecf738c"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_index_MCP_rubber_link.STL",
+      "sha256": "3f2ef234e2f5718c1d90d5862cbe70fde07ba6cde75db53cb540db9f447480a0"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_index_MCP_touch_link.STL",
+      "sha256": "8a1c14d697f2d191dc6c38773756a9454661332dc5f3f889df8451ca275bb4f7"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_index_MPR_link.STL",
+      "sha256": "778f65f9c4df37b63c8475e7f0073eef6f921841975655864fbb0ef74be0211a"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_index_PIP_link.STL",
+      "sha256": "514cc2b12fe11d35f2d1a09b7d5b0a6d1a32d728cb36707b90cfe5ac9c7c4538"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_index_PIP_rubber_link.STL",
+      "sha256": "69904c0bd24587db0c69f69fd9bc2752977e7a24c7eac78b21d46fc44ae81dc9"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_index_PIP_touch_link.STL",
+      "sha256": "2d1330a0de328e945ae6813f84976d85ede18f0468b48f9e3b0a53bcd6a749b9"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_little_DIP_link__revo3_polished_aluminum.stl",
+      "sha256": "22aaba8f3925455eaf69b21fe9d67d59b1dd02950e19039b403347ed4fe112a6"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_little_DIP_link__revo3_silicone_2162u_approx.stl",
+      "sha256": "9358f21849f53a5731f6c71e58d8690fd50aa84bea76c96c9a1bcd6a11a27fdf"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_little_DIP_rubber_link.STL",
+      "sha256": "db7e6ec93553f9e4d0b04f937492c0732e3ebd66810587bdab1ba9ec0e191d46"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_little_MCP_link.STL",
+      "sha256": "f81317250e274bdb0500860356fb78daf5e0657166fad789c532680c2627b1a5"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_little_MCP_rubber_link.STL",
+      "sha256": "59e13548dfae5e83fb8583b3b70c0998f0cdad85064e97278ff1381577c9228a"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_little_MCP_touch_link.STL",
+      "sha256": "50f11f719380358990e780c1dd82a94a43ae172a7950eff641a1ee4fbd0e209a"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_little_MPR_link.STL",
+      "sha256": "9c436c602f583844edff98c820bc98d73a4dba9b12d6ee5b398e451318613b07"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_little_PIP_link.STL",
+      "sha256": "02e21a063d03351f89bc61c2354cc369c44badda63e5cf70df2611b0acba09d8"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_little_PIP_rubber_link.STL",
+      "sha256": "43fac09a38f07a7da825bd7a2a94446b22411c54a5f0bce81966b3222552318d"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_little_PIP_touch_link.STL",
+      "sha256": "d29535353cc65d3c7f971b3e6099da595ce421e93f22765176ce59d53899b12f"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_middle_DIP_link__revo3_polished_aluminum.stl",
+      "sha256": "b75c0c460bdc5db48706c16cd6667f1c43bad9ee06594ca92ce3119f1b1aab59"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_middle_DIP_link__revo3_silicone_2162u_approx.stl",
+      "sha256": "e5b9a048dafd81b9205f541f89df269e62ee862a12f713e03fb1f9796b79358e"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_middle_DIP_rubber_link.STL",
+      "sha256": "c448a39f0f914fcbcab2f2174c5b707b3c6f7bf31378508fac85944fc7385bdf"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_middle_MCP_link.STL",
+      "sha256": "49b9cdbe908c96ad92670dc98d98bdc7ba01d1d145aec3cf0fcef02c26827052"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_middle_MCP_rubber_link.STL",
+      "sha256": "95436c9a139808047b849e161354ebb794b29d757808ae721f1f353ad506c2b3"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_middle_MCP_touch_link.STL",
+      "sha256": "45dac741f853bf1d4d556e467b837983ac199ffa07398d57a115e604fd912058"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_middle_MPR_link.STL",
+      "sha256": "b57621c37f0c1b70dc3cf0ac051a6fb6a912ab240cd317771ac7a08beb64e70f"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_middle_PIP_link.STL",
+      "sha256": "f18059ffa62d0027f8434129cc938d255d400b8409bcb5d837b72b9d80f7bf9e"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_middle_PIP_rubber_link.STL",
+      "sha256": "d1232020169b8ac5c17498aafd2ef08b41f97592350067e36885977df2b99cdf"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_middle_PIP_touch_link.STL",
+      "sha256": "5de1ca17b80badae80ca841623a4e76d50eae72d3a90515044ea51d7c2c9833b"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_palm_led_link.dae",
+      "sha256": "5676d42bceaea4d21d6710960b56db89467e5e2620dce6198cb56daac9dd74a5"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_palm_link__revo3_aluminum.stl",
+      "sha256": "2c42677839335f8c4f93b1760ddd27c1474bfbd5f2c4ecdb73d2d5177e14c585"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_palm_link__revo3_white_pc.stl",
+      "sha256": "3daf2fc0fdf3918ab9352442b0f072961ffb034616a56a8ef537bdd5f8054a8c"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_palm_rubber_link.STL",
+      "sha256": "92d4cc77ffb062c292bf26f1f04d1b586dba3680d07d813ec23a4b56a043fe99"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_palm_touch_link.STL",
+      "sha256": "a4c8358c4e4270576863c6de550d51df98e793ada46b2d1c5df2e60cce00fe01"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_ring_DIP_link__revo3_polished_aluminum.stl",
+      "sha256": "c4f1f2c13ad390e995dbd864258b388281f4268fc9e8219a06009820b59ebda3"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_ring_DIP_link__revo3_silicone_2162u_approx.stl",
+      "sha256": "9b4d47a113f7ebe77b0fed625632ae8753172c97823ed6d042aae096913f5521"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_ring_DIP_rubber_link.STL",
+      "sha256": "ce328de52beaff3b2fb44fbb5c1e4160c3db71fe16369dc2864c56d4a6eb5856"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_ring_MCP_link.STL",
+      "sha256": "e369d9c6caae6f0705c7f5857bb838e2c1d4fe960a7af97ca1d076ce22d141ef"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_ring_MCP_rubber_link.STL",
+      "sha256": "d5bde395df6bd537c3f1e62b9b6e50499acd7408349bbee31b6ff91213962387"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_ring_MCP_touch_link.STL",
+      "sha256": "b794b6837e086d0d1c31c46ee1925433ffe1125860398182664cb357cdabda00"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_ring_MPR_link.STL",
+      "sha256": "b4a8dd29ebe584a488fb44ac9911cc4dca013dcfc2ee00c2f5f5489fe30a6dd5"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_ring_PIP_link.STL",
+      "sha256": "b435796cc43eea205d772462e2449cd87c08ef7bb2e642f7d44695c15040610b"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_ring_PIP_rubber_link.STL",
+      "sha256": "b6f16e17b3f9f2c7dcac8a8cbc5a3daafdefc9cd6554ceed4ff361553a67ffeb"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_ring_PIP_touch_link.STL",
+      "sha256": "7919e404d1b60bb007fc99b4ec0f2dbda17ece6bfbaa817d97b02eff4f811d1a"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_thumb_CMP_link.STL",
+      "sha256": "ac621ea35f14435378aa4adc9c167b9fc52186b43609479e05d3d2d0385ea14e"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_thumb_CMR_link.STL",
+      "sha256": "4ee7ae2c28d6994665c0bd3dd603dfa3ae4dd6e86e0e3b84137a377baddf15a7"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_thumb_DIP_link__revo3_polished_aluminum.stl",
+      "sha256": "52454b1a59eeb8b2cc1fe1b6bf089922e1eeb0995a115d0b6a4b3dc459697a5f"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_thumb_DIP_link__revo3_silicone_2162u_approx.stl",
+      "sha256": "55898e692e0326e875d2852fa701c22a8af4831f91e69a92a0dda1e44b484110"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_thumb_DIP_rubber_link.STL",
+      "sha256": "e337c981f8725838c8ebb6e4dc08d0a9914d5fb27a8cb47b39c71aa267a2754b"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_thumb_MCP_link.STL",
+      "sha256": "699531f1c2d34cd03bb3977ebc95d988f80bc5fa4a6734975dd8a5428b0d2f68"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_thumb_MCP_rubber_link.STL",
+      "sha256": "c94d0dcc48dae67ff1e9ff71ddfe92a59519e3a889bae8cac132e4ca47bfdb12"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_thumb_MCP_touch_link.STL",
+      "sha256": "a6d1ebdcd5a0829a9a1786e702cd09f4b7a225e4a928caaeb9662233fb5b2157"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_thumb_PIP_link.STL",
+      "sha256": "21b6e1a7f57889c4ba6462ff940bfcc88c7d07bde6f8a2516000221063191ee6"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_thumb_PIP_rubber_link.STL",
+      "sha256": "5fa3c29ab83767467884f16fce2020b335a61acd28270918fb4b3161ad1503d4"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/right/right_thumb_PIP_touch_link.STL",
+      "sha256": "e247b2d5660334d7c2e24ff62ca028800fb5216bbbf31b49213f2b7cb4c43eb1"
+    },
+    {
+      "path": "revotron_system/meshes/hands/visual/textures/revo3_screen.png",
+      "sha256": "6af300a065bc2e03bd48490ec14f286d2ba5a7d5633d0cf9fc07b711854e48a3"
+    },
+    {
+      "path": "revotron_system/urdf/revotron_bimanual_revo3.urdf",
+      "sha256": "85133e3d3ab8ab0db9de9fa5e982249b462b32e82b68627de2a6eb1908f200c4"
+    }
+  ]
+}

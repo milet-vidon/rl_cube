@@ -1,0 +1,6 @@
+{
+  "terminated_by_assistant": true,
+  "reason": "Repeated insufficient grip; stopped remaining width sweep to redesign finger-pad orientation. SIGINT was caught by Isaac callback, then SIGTERM ended process.",
+  "completed_results_preserved": true,
+  "partial_last_trial_not_counted": true
+}

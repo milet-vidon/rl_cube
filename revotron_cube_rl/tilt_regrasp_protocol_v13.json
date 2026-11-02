@@ -1,0 +1,51 @@
+{
+  "created_utc": "2026-11-02T10:49:09.648447+00:00",
+  "method": "state_based_traditional_teacher",
+  "task": "left_pickup_whole_cube_rightward_90deg_tilt_mirrored_right_opposition_hold",
+  "development_seeds": [
+    8201
+  ],
+  "reserved_independent_seeds": [
+    8301,
+    8302,
+    8303
+  ],
+  "reset_distribution": "project reset: xy +/- 0.015 m, yaw +/- 0.15 rad",
+  "shift_after_tilt_m": [
+    -0.12,
+    -0.08,
+    0.0
+  ],
+  "motion": "whole cube Rx(+90 degrees), not a layer turn",
+  "hold_seconds": 3.0,
+  "rotation_error_max_deg": 5.0,
+  "robot_table_impulse_max_Ns": 1e-06,
+  "self_contact_impulse_max_Ns": 1e-06,
+  "soft_hard_limit_hits_allowed": 0,
+  "dropped_allowed": false,
+  "contacts": "thumb versus all four fingers on both hands; post-step face contact audit",
+  "independent_must_start_from_table": true,
+  "resumed_debug_runs_eligible": false,
+  "rrt_seed": 1945,
+  "neural_policy_trained": false,
+  "source_sha256": {
+    "tilt_regrasp.py": "d5949ba82f142e0fa193e7314a6c1425f05c91b5a541b5a47e4f1a0ac95f7a76",
+    "tilt_collision_plan.py": "cd456e46e0a0083aa0a59af2eac55033f6c94946c39248d51f38dc335617a0a7",
+    "tilt_experiment.py": "356985e2c5039deb29a08af59361ebb9adf2c801c206b3039f9141613f4b6843",
+    "tilt_audit.py": "57ff304500abcc58b92fa25908259438793ddc91bab0b93ecb6d05a70085d3eb",
+    "opposition_teacher.py": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1",
+    "opposition_feedback.py": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883",
+    "opposition_grasp_v20.json": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a",
+    "environment.py": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7",
+    "joint_safety.py": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887",
+    "kinematics.py": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212",
+    "config.json": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4"
+  },
+  "previous_version_trials": {
+    "v12_full_development_8101": "passed",
+    "v12_independent_8201": "failed right-arm IK",
+    "v12_seed_8202": "interrupted after cohort failure; not eligible as fresh seed",
+    "v12_seed_8203": "not run"
+  },
+  "posture_envelope": "Original user arm soft limits; post-lift right-shoulder task-specific -100 degree floor replaced by full-body convex collision planning. Baseline pickup retains its existing controller."
+}

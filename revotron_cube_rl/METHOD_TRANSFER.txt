@@ -1,0 +1,77 @@
+Revo3/Tianji 56 DoF 论文方法迁移记录，2026-11-02
+
+工作目录保持 /home/brainco/rl_cube/revotron_cube_rl；使用已验证的 Isaac Sim 6.2 / Lab 3.0。
+本文区分论文事实、工程迁移设计和实测验收，绝不继承论文成功率。
+
+已核对的方法来源（算法章节；这里只保存简要方法映射）：
+1. DexPBT，III-C/D：联合手臂 PD 目标；PBT 按表现选择、复制和变异策略及超参数。
+   原文 top/middle/bottom 为 30/40/30%，变异后有适应窗口。
+   迁移设计：保留本机软限位和安全判据；状态策略通过后才扩展 8 个成员；
+   PBT 选择用验证种子，最终测试种子永不进入选择。成员数量不等于同时占用 GPU 的进程数。
+   https://arxiv.org/html/2305.12127v1
+   https://github.com/isaac-sim/IsaacGymEnvs/blob/main/docs/rl_examples.md
+2. Bi-DexHands，§3：双手 Dec-POMDP、多智能体划分与协作任务。
+   迁移设计：首先使用单一 56 维 actor 和 centralized critic，之后再消融左右手/手指 agent；
+   不搬用浮动手基座动作，也不声称已实现多智能体训练。
+   https://arxiv.org/html/2206.08686v2
+   https://github.com/PKU-MARL/DexterousHands
+3. OpenAI Rubik's Cube，§5.2：按随机化边界采样和成功缓冲区扩张/收缩 ADR，结合记忆策略和视觉估计。
+   迁移设计：稳定状态控制后加入质量、摩擦、延迟和相机随机化；ADR 不能改动验收门槛。
+   https://arxiv.org/html/1910.07113v1
+   https://github.com/openai/robogym
+4. Learning to Solve a Rubik's Cube，§III：规划器与原子操作器解耦。
+   原论文是二阶魔方、IDA*；三阶 Kociemba 是本项目的工程选择。
+   迁移设计：一个面动作完成、停止并恢复稳定后，高层才派发下一个动作。
+   https://arxiv.org/html/1907.11388v1
+5. Humanoid recipe，§3.2–3.4：接触目标、任务相关初始化、专用策略到通用策略蒸馏、混合视觉表征。
+   迁移设计：状态 actor 可读取真值；视觉 actor 禁止真值，phase 必须来自可部署的状态机；
+   224 维本体觉已经包含 target-q，添加 phase 时必须升级观测 schema 与 checkpoint 契约。
+   https://arxiv.org/html/2502.20396v2
+   https://toruowo.github.io/recipe/
+6. ADEPT，§3.3–3.5：BC 转移 actor、冻结 actor 暖启动 critic、保守 PPO、joint-space fabric。
+   本项目的限幅器只是安全边界，不等于完整 Geometric Fabric，也没有避障保证。
+   https://arxiv.org/html/2608.19182v2
+   https://adept-dexterity.github.io/
+7. SERNF，§4：可计算似然的 NF action chunk、chunk critic、模仿/critic warm-up/offline/online 顺序。
+   保留为后期方案；本次没有实现 NF，也不把普通 Gaussian PPO 当成 SERNF。
+   https://arxiv.org/html/2602.09580v4
+   https://srl-ethz.github.io/SERNF/
+
+本轮工程范围与验收：
+- joint_safety.project_target：软限位 → 每步变化限制 → 目标速度限制 → 现有 PD。
+  实际关节速度仍取决于动力学，单靠目标限速不保证实际速度，也不保证无碰撞。
+- environment：逐步保存 requested/applied target、软限位、实际硬限位越界、qdot、target-q、接触。
+- acceptance：把任务成功和安全验收分开；不安全 teacher 禁止导出成功示范。
+- staged teacher：高位预成形 → 稳定后闭手 → 下降 → 横向夹紧 → 双侧接触确认 → 抬升。
+  六指抓取保留未参与抓取的拇指 home 姿态。超时或撞桌失败，不越过阶段门。
+- 开发 seeds 17/23；预登记独立 seeds 3101–3105。阈值见 transfer_protocol.json。
+  这 5 个测试只构成有限样本验收；观察后不能再用于调参后的独立成功率证明。
+- audit_teacher.py 记录源代码、配置、资产、软限位版本、轨迹和测试结果的 SHA256。
+  scripted teacher 没有 checkpoint.pt，明确写 null/原因；禁止伪造空 checkpoint。
+- stage_gate.py：PPO/DAgger 启动前检查当前证据；配置、代码、资产或证据变化即失效。
+
+单面转层发现的前置问题：
+- cube_model.usda 的 /World/Core 实际 kinematicEnabled=true。
+- 原 robot_hand_turn_stage.py 没有解除这个外部支撑，且用世界系 cubelet 转角 >5° 判断转动。
+  这种统计不能证明自由魔方单面转动；已取消验证成功声明并标明 fixture。
+- cube_state.py 提供带符号的核心相对转角，测试排除整块魔方旋转冒充转层；
+  这只是测量基础，还需要 9 块目标层一致性、非目标层稳定性和物理环境验证。
+- 未建立合格的状态版自由核心单面环境之前，不开始 PBT 或视觉蒸馏主线。
+
+后续依赖顺序：
+A. staged 独立安全验收（本轮）
+B. 动态核心与单物理场景建模；被动落下/稳定/接触测试；状态抓取 baseline 与独立评估
+C. 状态版单面 ±90°：检查有符号误差、其它层、接触、速度、时间、掉落和无支撑
+D. 状态 baseline 通过后 PBT（8+成员）；同一不可变验收任务下比较，不用奖励值代替成功
+E. 成功状态 teacher → BC/DAgger → 视觉闭环独立验收 → critic warm-up → 保守 PPO
+F. U+90 → R-90，必须重抓并对第二面的坐标系进行更新
+G. 胸部相机多视角扫描/主动重定向、颜色一致性与合法性检查 → 三阶求解器
+H. 参数标定、随机化、真实接口时序/力矩/急停与低速测试；本机当前没有配置真实机器人接口
+
+不可声称：状态 PPO 已会抓取、单面转层成功、完整复原、PBT/ADR/ADEPT/SERNF 已复现或 sim-to-real 已完成。
+
+实测更新：staged 独立视觉测试 5/5 通过；完整单调时钟耗时 433.26 s，1 GPU/1 环境。
+动态核心版本 dynamic_core_v2 通过 480 步被动落体：core z=1.09863→0.92850 m，
+末 60 步高度范围约 3.58e-7 m。修复了 XformCommonAPI 对既有 quaternion 变换组合的平移失效，
+以现有 translate op 写入位置；保留源资产不变，仅在仿真 stage 上覆盖。
+这仍不是完整状态转层环境，也没有放开视觉训练；require_visual_training_gate 要求独立状态单面验收。

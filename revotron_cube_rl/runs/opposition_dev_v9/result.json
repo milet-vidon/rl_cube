@@ -1,0 +1,64 @@
+{
+  "kind": "experimental_traditional_teacher",
+  "trials": [
+    {
+      "seed": 7101,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "independent_contact_hold_gate",
+          "robot_self_contact",
+          "thumb_four_finger_topology"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 468,
+        "max_joint_velocity_rad_s": 1.6032240390777588,
+        "max_position_error_rad": 0.02417933940887451,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      },
+      "opposition": {
+        "passed": false,
+        "main_hand": "left",
+        "support_hand": "right",
+        "hold_contact_coverage": {
+          "thumb": 1.0,
+          "index": 0.0,
+          "middle": 0.0,
+          "ring": 0.0,
+          "little": 0.7555555555555555
+        },
+        "correct_face_contact_coverage": {
+          "thumb": 1.0,
+          "index": 0.0,
+          "middle": 0.0,
+          "ring": 0.0,
+          "little": 0.7555555555555555
+        },
+        "thumb_corner_contact_coverage": 1.0,
+        "required_thumb_coverage": 0.9,
+        "required_each_four_finger_coverage": 0.5,
+        "expected_faces": "thumb on cube -X corner, four fingers on cube +X",
+        "corner_distance_max_m": 0.018,
+        "face_position_tolerance_m": 0.006
+      },
+      "controller_failure": null,
+      "max_height_m": 0.0013314452171325764,
+      "steps": 468,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "self_contact_impulse_sum_Ns": 0.2143053988665956,
+      "contact_pairs": {
+        "/World/Cube | /World/Table/geometry/mesh": 18.146845711698564,
+        "/World/Robot/left_thumb_DIP_link | /World/Cube": 7.519200100735327,
+        "/World/Robot/left_little_PIP_link | /World/Cube": 5.411318128099616
+      }
+    }
+  ],
+  "accepted": 0,
+  "total": 1,
+  "elapsed_s": 95.1867734160005,
+  "promoted_for_learning": false
+}

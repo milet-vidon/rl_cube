@@ -1,0 +1,35 @@
+#usda 1.0
+(
+    defaultPrim = "World"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "World"
+{
+    def Xform "Robot" (
+        prepend references = @source/revotron_system/usd/revotron_bimanual_revo3_56dof.usd@
+    )
+    {
+    }
+
+    def DomeLight "Light"
+    {
+        float inputs:intensity = 800
+    }
+
+    def DistantLight "Sun"
+    {
+        float inputs:intensity = 1800
+        float3 xformOp:rotateXYZ = (-35, 25, -30)
+        uniform token[] xformOpOrder = ["xformOp:rotateXYZ"]
+    }
+
+    def Camera "OverviewCamera"
+    {
+        float focalLength = 35
+        matrix4d xformOp:transform = ( (0.7071067811865476, 0.7071067811865476, 0, 0), (-0.26300542306392466, 0.26300542306392466, 0.9282544343432635, -0), (0.6563750051906044, -0.6563750051906044, 0.3719458362746758, 0), (3, -3, 1.3999999999999997, 1.0000000000000002) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
+}
+

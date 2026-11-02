@@ -1,0 +1,60 @@
+Isaac Sim 6.2 / Isaac Lab 3.0 migration
+
+Target environment: /home/brainco/rl_cube/.conda/rl_cube_6_2
+Original environment preserved: /home/brainco/rl_cube/.conda/rl_cube
+Original project snapshot: work/upgrade_6_2/project_before_upgrade/
+System NVIDIA driver: unchanged (595.99.02).
+
+Matched stack:
+  Isaac Sim 6.2.0.0; Isaac Lab 3.0.0; Python 3.12;
+  PyTorch 2.11.0 CUDA 13.0; RSL-RL 5.5.1.
+Installation uses the official uv-overrides.txt from the v3.0.0 tag.
+
+Entrypoints:
+  source /home/brainco/rl_cube/activate_6_2.sh
+  /home/brainco/rl_cube/run_6_2.sh check
+  /home/brainco/rl_cube/run_6_2.sh env-check --runtime --render
+  /home/brainco/rl_cube/run_6_2.sh smoke --steps 64 --seed 7 --name UNIQUE_NAME
+  /home/brainco/rl_cube/run_6_2.sh sweep --grasp downward --widths 0.096 --seeds 17 --visual --name UNIQUE_NAME
+Use fresh run names. The original run folders are preserved.
+
+Project adaptations:
+- isaac_compat.py maps the old SimulationCfg.physx argument to the new explicit
+  Isaac Sim PhysX backend, without switching the task to Newton.
+- Lab 3 ProxyArray data is explicitly exposed as Torch tensors.
+- Lab 3 native xyzw quaternions are converted at the API boundary. Project
+  critic observations and camera calibration continue to use wxyz.
+- Camera rotations and cube reset rotations follow the new native convention.
+- rsl_compat.py delegates PPO to RSL-RL 5.5.1's separate actor/critic API while
+  preserving the project's CNN, position and absolute-target actor networks.
+- New runtime versions are recorded in asset contracts and results. Cross-RSL
+  PPO optimizer restoration is rejected; create a new warmstart for that stack.
+- Reward formula, 56 action order, soft limits, control rate and task success
+  criteria have not been changed. Historical success claims remain historical.
+- test_migration_contract.py checks quaternion orientation, PPO updates for all
+  three actors, optimizer parameter ownership, state restoration and actor
+  isolation from privileged critic observations.
+
+Validation completed on 2026-11-02. activate.sh / run.sh now select 6.2.
+- RTX/CUDA probe: passed; 64-step real RGB smoke: passed.
+- Seed 17 downward teacher: passed, max lift 0.1151 m, hold 30 steps,
+  cumulative robot-table impulse 0.
+- One PPO update (16 steps): finite losses and actor parameter update.
+- Checkpoint reload on independent seed 19 (16 steps): passed.
+- Three offline migration tests passed; no unexpected dependency conflicts.
+- No trained visual grasp policy or cube-solving capability is claimed.
+See work/upgrade_6_2/upgrade_status.json for evidence paths.
+
+Additional runtime adaptations:
+- Explicit single-world ClonePlan for Lab 3 renderer geometry discovery.
+- Windows backslash texture references resolved on the runtime stage;
+  source USD assets remain unchanged and overrides are recorded.
+- Lab 3 application close preserves exception exit codes.
+- NumPy 2.3.1 satisfies Isaac Sim's ABI pin and Numba's version bound;
+  packaging 26.0 and typeguard 4.6.0 complete the compatible environment.
+- Package versions and original asset/config hashes are retained in work/upgrade_6_2/.
+
+Official references:
+https://github.com/isaac-sim/IsaacLab/releases/tag/v3.0.0
+https://isaac-sim.github.io/IsaacLab/v3.0.0/source/isaaclab/installation.html
+https://isaac-sim.github.io/IsaacLab/v3.0.0/source/isaaclab/migrating.html

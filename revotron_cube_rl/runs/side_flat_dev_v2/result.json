@@ -1,0 +1,99 @@
+{
+  "trials": [
+    {
+      "seed": 4201,
+      "candidate": 0,
+      "width": 0.062,
+      "offset": 0.03,
+      "steps": 420,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 420,
+        "max_joint_velocity_rad_s": 0.7771456837654114,
+        "max_position_error_rad": 0.047364771366119385,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      },
+      "controller_failure": "settle_or_contact_timeout",
+      "max_height_m": 1.1587142945135298e-07,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "contact_pairs": {
+        "/World/Cube | /World/Table/geometry/mesh": 9.430187089069179
+      },
+      "kind": "traditional_side_teacher",
+      "elapsed_s": 26.89628795200042
+    },
+    {
+      "seed": 4201,
+      "candidate": 1,
+      "width": 0.056,
+      "offset": 0.03,
+      "steps": 420,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 420,
+        "max_joint_velocity_rad_s": 0.7771461009979248,
+        "max_position_error_rad": 0.05750519037246704,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      },
+      "controller_failure": "settle_or_contact_timeout",
+      "max_height_m": -3.3378600994282692e-09,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "contact_pairs": {
+        "/World/Cube | /World/Table/geometry/mesh": 9.430170982578286
+      },
+      "kind": "traditional_side_teacher",
+      "elapsed_s": 50.24351138400016
+    },
+    {
+      "seed": 4201,
+      "candidate": 2,
+      "width": 0.05,
+      "offset": 0.03,
+      "steps": 420,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 420,
+        "max_joint_velocity_rad_s": 0.777145504951477,
+        "max_position_error_rad": 0.06756967306137085,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      },
+      "controller_failure": "settle_or_contact_timeout",
+      "max_height_m": -3.3378600994282692e-09,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "contact_pairs": {
+        "/World/Cube | /World/Table/geometry/mesh": 9.40779606866701
+      },
+      "kind": "traditional_side_teacher",
+      "elapsed_s": 74.16139581599964
+    }
+  ],
+  "accepted": 0,
+  "total": 3,
+  "controller_sha256": "5e024dd9fc09629928ce41001f2075e8266f00dfba2bf8eeb3a7542446ae0e5f",
+  "config_sha256": "171b28aaca88d392e025e1204e0ce1fed9195080f305d8ee7c1df31f868d11ec",
+  "elapsed_s": 74.31737670099938
+}

@@ -1,0 +1,277 @@
+{
+  "status": "opposed-side BC waypoint controller with contact supervision: 6/6 heldout at 3 s hold",
+  "staged_teacher": {
+    "development": "2/2",
+    "heldout": "5/5",
+    "seeds": [
+      3101,
+      3102,
+      3103,
+      3104,
+      3105
+    ],
+    "robot_table_impulse_sum_Ns": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "soft_limit_hit_steps": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "hard_limit_hit_steps": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "max_lift_m": [
+      0.1150469150543213,
+      0.09209483528137208,
+      0.11535459423065186,
+      0.11507302188873292,
+      0.11545329952239991
+    ],
+    "hold_s": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "cube_table_contact_during_hold": false,
+    "drops": 0,
+    "monotonic_total_elapsed_s": 433.2623704530006,
+    "timing_note": "One trial wall-clock elapsed value was distorted by a clock jump; use the monotonic full-run measurement. Future sweeps now use monotonic time.",
+    "gpu_count": 1,
+    "num_envs": 1,
+    "evidence": "revotron_cube_rl/runs/staged_clearance_heldout_v1/independent_test.json"
+  },
+  "pure_state_policy_success_rate": 0.2,
+  "teacher_policy_mixture_success_rate": null,
+  "visual_actor_success_rate": null,
+  "post_ppo_success_rate": null,
+  "single_face_success_rate": null,
+  "two_face_success_rate": null,
+  "dynamic_cube_passive": {
+    "passed": true,
+    "result": "revotron_cube_rl/runs/dynamic_cube_passive_v2/result.json",
+    "runtime_override_version": "dynamic_core_v2",
+    "single_face_environment_ready": false
+  },
+  "tests": "16 passed plus ARM_SAFETY_TESTS_PASSED",
+  "new_policy_training": true,
+  "next_work": [
+    "Validate wider pose and disturbance conditions using fresh seeds before further learning claims",
+    "Preserve separate results for pure neural policies, supervised waypoint control and PPO",
+    "State-only single-face environment and contact control remain unvalidated"
+  ],
+  "paper_mapping": "revotron_cube_rl/METHOD_TRANSFER.txt",
+  "state_pickup_training": {
+    "completed": true,
+    "selected": "state_bc_v4",
+    "checkpoint_sha256": "7b9d53ca91fa9524b388b75ad37b3f2e36f5286f89a6f4dec41b27ce5e628a8e",
+    "independent_test": {
+      "accepted": 1,
+      "total": 5,
+      "seeds": [
+        4201,
+        4202,
+        4203,
+        4204,
+        4205
+      ],
+      "max_lift_m": [
+        0.017293449878692635,
+        0.037560340404510506,
+        0.11494570636749268,
+        0.04882180356979371,
+        0.014693554878234871
+      ],
+      "hold_s": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "robot_table_impulse_sum_Ns": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "soft_limit_hit_steps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hard_limit_hit_steps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "evidence": "runs/state_selected_independent_test/result.json"
+    },
+    "ppo": {
+      "iterations": 24,
+      "steps": 14400,
+      "elapsed_s": 479.7956928950007,
+      "critic_warmup_iterations": 4,
+      "training_accepted": 0,
+      "training_episodes": 16,
+      "development_accepted": 0,
+      "development_total": 3,
+      "promoted": false
+    },
+    "bc": {
+      "teacher_training_seeds": [
+        4001,
+        4002,
+        4003,
+        4004,
+        4005,
+        4006,
+        4007,
+        4008
+      ],
+      "teacher_hold_s": 9.333333333333334,
+      "epochs": 4000,
+      "elapsed_s": 94.81003879700074,
+      "development_accepted": 1,
+      "development_total": 3
+    },
+    "actor_input": "privileged state and clock; not RGB",
+    "teacher_actions_during_evaluation": false,
+    "task": "locked-cube pickup; no layer rotation",
+    "stage_passed": false,
+    "next_work": [
+      "Broaden demonstrated cube pose/orientation coverage and collect corrective state demonstrations",
+      "Improve bilateral contact retention before increasing PPO steps",
+      "Register fresh heldout seeds before further model tuning; 4201-4205 are now consumed"
+    ]
+  },
+  "side_grasp_controller": {
+    "controller_kind": "BC waypoint regressor with contact/arrival supervisor",
+    "independent_accepted": 6,
+    "independent_total": 6,
+    "seeds": [
+      6201,
+      6202,
+      6203,
+      6204,
+      6205,
+      6206
+    ],
+    "hold_seconds": 3,
+    "checkpoint_sha256": "aeabb90e7f2086c433772b45513497e368a6e3585c5f95ab25c041a25c9b637b",
+    "teacher": "5/5 new heldout",
+    "development": "9/9",
+    "pure_PPO_claim": false,
+    "runtime_teacher_or_IK": false,
+    "evidence": "runs/side_bc_waypoints_v2/independent_test.json",
+    "wrist_angles_deg": [
+      {
+        "seed": 6201,
+        "grasp": {
+          "Joint6_L": -0.39,
+          "Joint6_R": 0.057,
+          "Joint7_L": 35.515,
+          "Joint7_R": 35.618
+        },
+        "hold_or_final": {
+          "Joint6_L": 23.035,
+          "Joint6_R": 23.244,
+          "Joint7_L": 35.522,
+          "Joint7_R": 35.526
+        }
+      },
+      {
+        "seed": 6202,
+        "grasp": {
+          "Joint6_L": 0.268,
+          "Joint6_R": 0.636,
+          "Joint7_L": 35.546,
+          "Joint7_R": 35.531
+        },
+        "hold_or_final": {
+          "Joint6_L": 23.493,
+          "Joint6_R": 23.704,
+          "Joint7_L": 35.494,
+          "Joint7_R": 35.499
+        }
+      },
+      {
+        "seed": 6203,
+        "grasp": {
+          "Joint6_L": -0.449,
+          "Joint6_R": -0.007,
+          "Joint7_L": 35.587,
+          "Joint7_R": 35.532
+        },
+        "hold_or_final": {
+          "Joint6_L": 22.964,
+          "Joint6_R": 23.264,
+          "Joint7_L": 35.517,
+          "Joint7_R": 35.517
+        }
+      },
+      {
+        "seed": 6204,
+        "grasp": {
+          "Joint6_L": 0.099,
+          "Joint6_R": 0.378,
+          "Joint7_L": 35.503,
+          "Joint7_R": 35.591
+        },
+        "hold_or_final": {
+          "Joint6_L": 23.385,
+          "Joint6_R": 23.553,
+          "Joint7_L": 35.501,
+          "Joint7_R": 35.501
+        }
+      },
+      {
+        "seed": 6205,
+        "grasp": {
+          "Joint6_L": 0.187,
+          "Joint6_R": 0.624,
+          "Joint7_L": 35.514,
+          "Joint7_R": 35.55
+        },
+        "hold_or_final": {
+          "Joint6_L": 23.426,
+          "Joint6_R": 23.7,
+          "Joint7_L": 35.496,
+          "Joint7_R": 35.493
+        }
+      },
+      {
+        "seed": 6206,
+        "grasp": {
+          "Joint6_L": 0.361,
+          "Joint6_R": 0.536,
+          "Joint7_L": 35.502,
+          "Joint7_R": 35.604
+        },
+        "hold_or_final": {
+          "Joint6_L": 23.575,
+          "Joint6_R": 23.621,
+          "Joint7_L": 35.506,
+          "Joint7_R": 35.514
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,1124 @@
+{
+  "status": "validated on six new seeds",
+  "controller": "BC waypoint regressor with contact/arrival supervisor",
+  "successes": 6,
+  "trials": 6,
+  "independent_trials": [
+    {
+      "seed": 6201,
+      "kind": "BC_waypoint_network_with_contact_supervisor",
+      "split": "test",
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 321,
+        "max_joint_velocity_rad_s": 2.8286170959472656,
+        "max_position_error_rad": 0.025355875492095947,
+        "dropped": false,
+        "continuous_hold_seconds": 3.0
+      },
+      "controller_failure": null,
+      "max_height_m": 0.1135823097229004,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "arm_body_impulse_sum_Ns": 0,
+      "self_contact_impulse_sum_Ns": 0,
+      "returned_after_any_lift": false,
+      "steps": 452,
+      "initial_xyz": [
+        0.4758717715740204,
+        0.014879736118018627,
+        0.9284999966621399
+      ]
+    },
+    {
+      "seed": 6202,
+      "kind": "BC_waypoint_network_with_contact_supervisor",
+      "split": "test",
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 321,
+        "max_joint_velocity_rad_s": 2.0064446926116943,
+        "max_position_error_rad": 0.025357067584991455,
+        "dropped": false,
+        "continuous_hold_seconds": 3.0
+      },
+      "controller_failure": null,
+      "max_height_m": 0.11372321510314942,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "arm_body_impulse_sum_Ns": 0,
+      "self_contact_impulse_sum_Ns": 0,
+      "returned_after_any_lift": false,
+      "steps": 452,
+      "initial_xyz": [
+        0.4933187961578369,
+        0.011961523443460464,
+        0.9284999966621399
+      ]
+    },
+    {
+      "seed": 6203,
+      "kind": "BC_waypoint_network_with_contact_supervisor",
+      "split": "test",
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 321,
+        "max_joint_velocity_rad_s": 1.4999116659164429,
+        "max_position_error_rad": 0.025355935096740723,
+        "dropped": false,
+        "continuous_hold_seconds": 3.0
+      },
+      "controller_failure": null,
+      "max_height_m": 0.1136433448791504,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "arm_body_impulse_sum_Ns": 0,
+      "self_contact_impulse_sum_Ns": 0,
+      "returned_after_any_lift": false,
+      "steps": 452,
+      "initial_xyz": [
+        0.47474417090415955,
+        0.013951867818832397,
+        0.9284999966621399
+      ]
+    },
+    {
+      "seed": 6204,
+      "kind": "BC_waypoint_network_with_contact_supervisor",
+      "split": "test",
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 321,
+        "max_joint_velocity_rad_s": 1.2991796731948853,
+        "max_position_error_rad": 0.025356769561767578,
+        "dropped": false,
+        "continuous_hold_seconds": 3.0
+      },
+      "controller_failure": null,
+      "max_height_m": 0.11359816455841065,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "arm_body_impulse_sum_Ns": 0,
+      "self_contact_impulse_sum_Ns": 0,
+      "returned_after_any_lift": false,
+      "steps": 452,
+      "initial_xyz": [
+        0.4864296019077301,
+        0.00973251461982727,
+        0.9284999966621399
+      ]
+    },
+    {
+      "seed": 6205,
+      "kind": "BC_waypoint_network_with_contact_supervisor",
+      "split": "test",
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 321,
+        "max_joint_velocity_rad_s": 1.9013268947601318,
+        "max_position_error_rad": 0.02535688877105713,
+        "dropped": false,
+        "continuous_hold_seconds": 3.0
+      },
+      "controller_failure": null,
+      "max_height_m": 0.11395162010192872,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "arm_body_impulse_sum_Ns": 0,
+      "self_contact_impulse_sum_Ns": 0,
+      "returned_after_any_lift": false,
+      "steps": 452,
+      "initial_xyz": [
+        0.49245133996009827,
+        0.014273446053266525,
+        0.9284999966621399
+      ]
+    },
+    {
+      "seed": 6206,
+      "kind": "BC_waypoint_network_with_contact_supervisor",
+      "split": "test",
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 322,
+        "max_joint_velocity_rad_s": 2.3182926177978516,
+        "max_position_error_rad": 0.025357306003570557,
+        "dropped": false,
+        "continuous_hold_seconds": 3.0
+      },
+      "controller_failure": null,
+      "max_height_m": 0.11329859161376954,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "arm_body_impulse_sum_Ns": 0,
+      "self_contact_impulse_sum_Ns": 0,
+      "returned_after_any_lift": false,
+      "steps": 452,
+      "initial_xyz": [
+        0.4915672540664673,
+        0.006332621909677982,
+        0.9284999966621399
+      ]
+    }
+  ],
+  "wrist_angles_deg": [
+    {
+      "seed": 6201,
+      "grasp": {
+        "Joint6_L": -0.39,
+        "Joint6_R": 0.057,
+        "Joint7_L": 35.515,
+        "Joint7_R": 35.618
+      },
+      "hold_or_final": {
+        "Joint6_L": 23.035,
+        "Joint6_R": 23.244,
+        "Joint7_L": 35.522,
+        "Joint7_R": 35.526
+      }
+    },
+    {
+      "seed": 6202,
+      "grasp": {
+        "Joint6_L": 0.268,
+        "Joint6_R": 0.636,
+        "Joint7_L": 35.546,
+        "Joint7_R": 35.531
+      },
+      "hold_or_final": {
+        "Joint6_L": 23.493,
+        "Joint6_R": 23.704,
+        "Joint7_L": 35.494,
+        "Joint7_R": 35.499
+      }
+    },
+    {
+      "seed": 6203,
+      "grasp": {
+        "Joint6_L": -0.449,
+        "Joint6_R": -0.007,
+        "Joint7_L": 35.587,
+        "Joint7_R": 35.532
+      },
+      "hold_or_final": {
+        "Joint6_L": 22.964,
+        "Joint6_R": 23.264,
+        "Joint7_L": 35.517,
+        "Joint7_R": 35.517
+      }
+    },
+    {
+      "seed": 6204,
+      "grasp": {
+        "Joint6_L": 0.099,
+        "Joint6_R": 0.378,
+        "Joint7_L": 35.503,
+        "Joint7_R": 35.591
+      },
+      "hold_or_final": {
+        "Joint6_L": 23.385,
+        "Joint6_R": 23.553,
+        "Joint7_L": 35.501,
+        "Joint7_R": 35.501
+      }
+    },
+    {
+      "seed": 6205,
+      "grasp": {
+        "Joint6_L": 0.187,
+        "Joint6_R": 0.624,
+        "Joint7_L": 35.514,
+        "Joint7_R": 35.55
+      },
+      "hold_or_final": {
+        "Joint6_L": 23.426,
+        "Joint6_R": 23.7,
+        "Joint7_L": 35.496,
+        "Joint7_R": 35.493
+      }
+    },
+    {
+      "seed": 6206,
+      "grasp": {
+        "Joint6_L": 0.361,
+        "Joint6_R": 0.536,
+        "Joint7_L": 35.502,
+        "Joint7_R": 35.604
+      },
+      "hold_or_final": {
+        "Joint6_L": 23.575,
+        "Joint6_R": 23.621,
+        "Joint7_L": 35.506,
+        "Joint7_R": 35.514
+      }
+    }
+  ],
+  "old_four_failure_analysis": [
+    {
+      "seed": 4201,
+      "max_lift_cm": 1.7293449878692635,
+      "bilateral_contact_steps": 70,
+      "returned_to_table_after_small_lift": true,
+      "legacy_drop_flag": false
+    },
+    {
+      "seed": 4202,
+      "max_lift_cm": 3.7560340404510506,
+      "bilateral_contact_steps": 74,
+      "returned_to_table_after_small_lift": true,
+      "legacy_drop_flag": false
+    },
+    {
+      "seed": 4204,
+      "max_lift_cm": 4.8821803569793705,
+      "bilateral_contact_steps": 85,
+      "returned_to_table_after_small_lift": true,
+      "legacy_drop_flag": false
+    },
+    {
+      "seed": 4205,
+      "max_lift_cm": 1.4693554878234871,
+      "bilateral_contact_steps": 63,
+      "returned_to_table_after_small_lift": true,
+      "legacy_drop_flag": false
+    }
+  ],
+  "failure_interpretation": "All four old cases briefly lifted then returned to the table. The old drop flag did not represent tabletop slips. Old network continued its timed lift despite loss of grip. Pose/control redesign and better geometric coverage were changed together, so improvement cannot be attributed to one isolated change.",
+  "intermediate_v1_failure": {
+    "accepted": 4,
+    "total": 5,
+    "failed_seed": 6105,
+    "root_cause": "Link5_L/torso contact during vertical lift; increasing squeeze did not resolve it",
+    "resolution": "Add 35 mm forward travel while lifting, spread fingertips and little finger to prevent self collision; add all robot-self contact gate"
+  },
+  "teacher_independent": {
+    "accepted": 5,
+    "total": 5,
+    "seeds": [
+      5211,
+      5212,
+      5213,
+      5214,
+      5215
+    ]
+  },
+  "learning_development": {
+    "trials": [
+      {
+        "seed": 4201,
+        "kind": "BC_waypoint_network_with_contact_supervisor",
+        "split": "development",
+        "acceptance": {
+          "accepted": true,
+          "failure_reasons": [],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 320,
+          "max_joint_velocity_rad_s": 1.5939453840255737,
+          "max_position_error_rad": 0.02535557746887207,
+          "dropped": false,
+          "continuous_hold_seconds": 3.0
+        },
+        "controller_failure": null,
+        "max_height_m": 0.11378651523590089,
+        "robot_table_impulse_sum_Ns": 0.0,
+        "arm_body_impulse_sum_Ns": 0,
+        "self_contact_impulse_sum_Ns": 0,
+        "returned_after_any_lift": false,
+        "steps": 452,
+        "initial_xyz": [
+          0.46767088770866394,
+          0.012486319057643414,
+          0.9285000562667847
+        ]
+      },
+      {
+        "seed": 4202,
+        "kind": "BC_waypoint_network_with_contact_supervisor",
+        "split": "development",
+        "acceptance": {
+          "accepted": true,
+          "failure_reasons": [],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 321,
+          "max_joint_velocity_rad_s": 1.7323639392852783,
+          "max_position_error_rad": 0.025357306003570557,
+          "dropped": false,
+          "continuous_hold_seconds": 3.0
+        },
+        "controller_failure": null,
+        "max_height_m": 0.11393135452270509,
+        "robot_table_impulse_sum_Ns": 0.0,
+        "arm_body_impulse_sum_Ns": 0,
+        "self_contact_impulse_sum_Ns": 0,
+        "returned_after_any_lift": false,
+        "steps": 452,
+        "initial_xyz": [
+          0.48947104811668396,
+          -0.008067787624895573,
+          0.9285000562667847
+        ]
+      },
+      {
+        "seed": 4203,
+        "kind": "BC_waypoint_network_with_contact_supervisor",
+        "split": "development",
+        "acceptance": {
+          "accepted": true,
+          "failure_reasons": [],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 319,
+          "max_joint_velocity_rad_s": 1.4793758392333984,
+          "max_position_error_rad": 0.025356292724609375,
+          "dropped": false,
+          "continuous_hold_seconds": 3.0
+        },
+        "controller_failure": null,
+        "max_height_m": 0.11382776165008546,
+        "robot_table_impulse_sum_Ns": 0.0,
+        "arm_body_impulse_sum_Ns": 0,
+        "self_contact_impulse_sum_Ns": 0,
+        "returned_after_any_lift": false,
+        "steps": 452,
+        "initial_xyz": [
+          0.4741555452346802,
+          0.0060294927097857,
+          0.9284999966621399
+        ]
+      },
+      {
+        "seed": 4204,
+        "kind": "BC_waypoint_network_with_contact_supervisor",
+        "split": "development",
+        "acceptance": {
+          "accepted": true,
+          "failure_reasons": [],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 319,
+          "max_joint_velocity_rad_s": 1.4640390872955322,
+          "max_position_error_rad": 0.0253562331199646,
+          "dropped": false,
+          "continuous_hold_seconds": 3.0
+        },
+        "controller_failure": null,
+        "max_height_m": 0.11398988628387452,
+        "robot_table_impulse_sum_Ns": 0.0,
+        "arm_body_impulse_sum_Ns": 0,
+        "self_contact_impulse_sum_Ns": 0,
+        "returned_after_any_lift": false,
+        "steps": 452,
+        "initial_xyz": [
+          0.4678291976451874,
+          0.0042326683178544044,
+          0.9284999966621399
+        ]
+      },
+      {
+        "seed": 4205,
+        "kind": "BC_waypoint_network_with_contact_supervisor",
+        "split": "development",
+        "acceptance": {
+          "accepted": true,
+          "failure_reasons": [],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 321,
+          "max_joint_velocity_rad_s": 1.3935967683792114,
+          "max_position_error_rad": 0.025357067584991455,
+          "dropped": false,
+          "continuous_hold_seconds": 3.0
+        },
+        "controller_failure": null,
+        "max_height_m": 0.1141079034805298,
+        "robot_table_impulse_sum_Ns": 0.0,
+        "arm_body_impulse_sum_Ns": 0,
+        "self_contact_impulse_sum_Ns": 0,
+        "returned_after_any_lift": false,
+        "steps": 452,
+        "initial_xyz": [
+          0.4841216504573822,
+          -0.0030870242044329643,
+          0.9285000562667847
+        ]
+      },
+      {
+        "seed": 5101,
+        "kind": "BC_waypoint_network_with_contact_supervisor",
+        "split": "development",
+        "acceptance": {
+          "accepted": true,
+          "failure_reasons": [],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 320,
+          "max_joint_velocity_rad_s": 1.6734219789505005,
+          "max_position_error_rad": 0.025355815887451172,
+          "dropped": false,
+          "continuous_hold_seconds": 3.0
+        },
+        "controller_failure": null,
+        "max_height_m": 0.1127578582763672,
+        "robot_table_impulse_sum_Ns": 0.0,
+        "arm_body_impulse_sum_Ns": 0,
+        "self_contact_impulse_sum_Ns": 0,
+        "returned_after_any_lift": false,
+        "steps": 452,
+        "initial_xyz": [
+          0.47296854853630066,
+          0.01433058176189661,
+          0.9284999966621399
+        ]
+      },
+      {
+        "seed": 5102,
+        "kind": "BC_waypoint_network_with_contact_supervisor",
+        "split": "development",
+        "acceptance": {
+          "accepted": true,
+          "failure_reasons": [],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 321,
+          "max_joint_velocity_rad_s": 1.2473064661026,
+          "max_position_error_rad": 0.025357484817504883,
+          "dropped": false,
+          "continuous_hold_seconds": 3.0
+        },
+        "controller_failure": null,
+        "max_height_m": 0.1138496961593628,
+        "robot_table_impulse_sum_Ns": 0.0,
+        "arm_body_impulse_sum_Ns": 0,
+        "self_contact_impulse_sum_Ns": 0,
+        "returned_after_any_lift": false,
+        "steps": 452,
+        "initial_xyz": [
+          0.4948503077030182,
+          -0.012196123600006104,
+          0.9284999966621399
+        ]
+      },
+      {
+        "seed": 5103,
+        "kind": "BC_waypoint_network_with_contact_supervisor",
+        "split": "development",
+        "acceptance": {
+          "accepted": true,
+          "failure_reasons": [],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 321,
+          "max_joint_velocity_rad_s": 0.9930015206336975,
+          "max_position_error_rad": 0.02535635232925415,
+          "dropped": false,
+          "continuous_hold_seconds": 3.0
+        },
+        "controller_failure": null,
+        "max_height_m": 0.11408978366851807,
+        "robot_table_impulse_sum_Ns": 0.0,
+        "arm_body_impulse_sum_Ns": 0,
+        "self_contact_impulse_sum_Ns": 0,
+        "returned_after_any_lift": false,
+        "steps": 452,
+        "initial_xyz": [
+          0.47769322991371155,
+          0.01033505517989397,
+          0.9284999966621399
+        ]
+      },
+      {
+        "seed": 6105,
+        "kind": "BC_waypoint_network_with_contact_supervisor",
+        "split": "development",
+        "acceptance": {
+          "accepted": true,
+          "failure_reasons": [],
+          "robot_table_threshold_Ns": 1e-06,
+          "soft_limit_hit_steps": 0,
+          "hard_limit_hit_steps": 0,
+          "cube_table_contact_steps": 322,
+          "max_joint_velocity_rad_s": 1.2928389310836792,
+          "max_position_error_rad": 0.025356650352478027,
+          "dropped": false,
+          "continuous_hold_seconds": 3.0
+        },
+        "controller_failure": null,
+        "max_height_m": 0.11218434238433839,
+        "robot_table_impulse_sum_Ns": 0.0,
+        "arm_body_impulse_sum_Ns": 0,
+        "self_contact_impulse_sum_Ns": 0,
+        "returned_after_any_lift": false,
+        "steps": 462,
+        "initial_xyz": [
+          0.4662638306617737,
+          -0.0014476493233814836,
+          0.9284999966621399
+        ]
+      }
+    ],
+    "accepted": 9,
+    "total": 9,
+    "checkpoint_sha256": "aeabb90e7f2086c433772b45513497e368a6e3585c5f95ab25c041a25c9b637b",
+    "elapsed_s": 196.6246774020001,
+    "split": "development",
+    "runtime_teacher_or_IK": false,
+    "pure_end_to_end_PPO": false
+  },
+  "training": {
+    "history": [
+      {
+        "epoch": -1,
+        "geometry_validation_rmse_rad": 1.9009748741142458e-07,
+        "geometry_validation_max_joint_error_rad": 2.086162567138672e-06,
+        "kind": "fitted cubic initialization"
+      },
+      {
+        "epoch": 0,
+        "train_loss": 5.414917225721183e-08,
+        "validation_rmse_rad": 1.8652755076027938e-05,
+        "validation_max_joint_error_rad": 0.00016033649444580078
+      },
+      {
+        "epoch": 100,
+        "train_loss": 3.983651808425748e-08,
+        "validation_rmse_rad": 1.5792932336484548e-07,
+        "validation_max_joint_error_rad": 2.086162567138672e-06
+      },
+      {
+        "epoch": 200,
+        "train_loss": 2.918866748302662e-08,
+        "validation_rmse_rad": 1.324012354558055e-07,
+        "validation_max_joint_error_rad": 1.7881393432617188e-06
+      },
+      {
+        "epoch": 300,
+        "train_loss": 2.586013536642895e-08,
+        "validation_rmse_rad": 1.2329408318283445e-07,
+        "validation_max_joint_error_rad": 1.7285346984863281e-06
+      },
+      {
+        "epoch": 400,
+        "train_loss": 2.300468970872771e-08,
+        "validation_rmse_rad": 1.1541211212726028e-07,
+        "validation_max_joint_error_rad": 1.6093254089355469e-06
+      },
+      {
+        "epoch": 500,
+        "train_loss": 2.091772088874677e-08,
+        "validation_rmse_rad": 1.0932056945311586e-07,
+        "validation_max_joint_error_rad": 1.5497207641601562e-06
+      },
+      {
+        "epoch": 600,
+        "train_loss": 1.917003800144812e-08,
+        "validation_rmse_rad": 1.0400095710340866e-07,
+        "validation_max_joint_error_rad": 1.4901161193847656e-06
+      },
+      {
+        "epoch": 700,
+        "train_loss": 1.773091007351013e-08,
+        "validation_rmse_rad": 9.996219313051538e-08,
+        "validation_max_joint_error_rad": 1.3709068298339844e-06
+      },
+      {
+        "epoch": 800,
+        "train_loss": 1.6588392881544678e-08,
+        "validation_rmse_rad": 9.683793916821591e-08,
+        "validation_max_joint_error_rad": 1.3113021850585938e-06
+      },
+      {
+        "epoch": 900,
+        "train_loss": 1.566914953343712e-08,
+        "validation_rmse_rad": 9.446168159917607e-08,
+        "validation_max_joint_error_rad": 1.1920928955078125e-06
+      },
+      {
+        "epoch": 1000,
+        "train_loss": 1.490491463584931e-08,
+        "validation_rmse_rad": 9.255861417251329e-08,
+        "validation_max_joint_error_rad": 1.1920928955078125e-06
+      },
+      {
+        "epoch": 1100,
+        "train_loss": 1.4179392771040966e-08,
+        "validation_rmse_rad": 9.118917475097333e-08,
+        "validation_max_joint_error_rad": 1.1324882507324219e-06
+      },
+      {
+        "epoch": 1200,
+        "train_loss": 1.3682408983584082e-08,
+        "validation_rmse_rad": 8.953815079842409e-08,
+        "validation_max_joint_error_rad": 1.0728836059570312e-06
+      },
+      {
+        "epoch": 1300,
+        "train_loss": 1.3196265413739638e-08,
+        "validation_rmse_rad": 8.848616059435769e-08,
+        "validation_max_joint_error_rad": 1.0728836059570312e-06
+      },
+      {
+        "epoch": 1400,
+        "train_loss": 1.29331887421813e-08,
+        "validation_rmse_rad": 8.739637508575074e-08,
+        "validation_max_joint_error_rad": 1.0728836059570312e-06
+      },
+      {
+        "epoch": 1500,
+        "train_loss": 1.2673428528842123e-08,
+        "validation_rmse_rad": 8.663467790642399e-08,
+        "validation_max_joint_error_rad": 1.0728836059570312e-06
+      },
+      {
+        "epoch": 1600,
+        "train_loss": 1.2504567159510316e-08,
+        "validation_rmse_rad": 8.615010100504604e-08,
+        "validation_max_joint_error_rad": 1.0728836059570312e-06
+      },
+      {
+        "epoch": 1700,
+        "train_loss": 1.237417279753572e-08,
+        "validation_rmse_rad": 8.59652418398385e-08,
+        "validation_max_joint_error_rad": 1.0132789611816406e-06
+      },
+      {
+        "epoch": 1800,
+        "train_loss": 1.234523772097873e-08,
+        "validation_rmse_rad": 8.580300849999493e-08,
+        "validation_max_joint_error_rad": 1.0132789611816406e-06
+      },
+      {
+        "epoch": 1900,
+        "train_loss": 1.2319592457288309e-08,
+        "validation_rmse_rad": 8.573626375870461e-08,
+        "validation_max_joint_error_rad": 1.0132789611816406e-06
+      },
+      {
+        "epoch": 1999,
+        "train_loss": 1.2266598403698481e-08,
+        "validation_rmse_rad": 8.567307083309596e-08,
+        "validation_max_joint_error_rad": 1.0132789611816406e-06
+      }
+    ],
+    "elapsed_s": 3.9558845449973887,
+    "physical_success_claim": false,
+    "training_plans": 49,
+    "geometry_validation_plans": 36
+  },
+  "labels": {
+    "names": [
+      "ready",
+      "ready",
+      "ready",
+      "ready",
+      "ready",
+      "ready",
+      "ready",
+      "ready",
+      "ready",
+      "ready",
+      "ready",
+      "ready",
+      "preshape",
+      "preshape",
+      "preshape",
+      "preshape",
+      "preshape",
+      "preshape",
+      "preshape",
+      "preshape",
+      "preshape",
+      "preshape",
+      "preshape",
+      "preshape",
+      "lower",
+      "lower",
+      "lower",
+      "lower",
+      "lower",
+      "lower",
+      "lower",
+      "lower",
+      "lower",
+      "lower",
+      "lower",
+      "lower",
+      "approach",
+      "approach",
+      "approach",
+      "approach",
+      "approach",
+      "approach",
+      "approach",
+      "approach",
+      "approach",
+      "approach",
+      "approach",
+      "approach",
+      "squeeze",
+      "squeeze",
+      "squeeze",
+      "squeeze",
+      "squeeze",
+      "squeeze",
+      "squeeze",
+      "squeeze",
+      "squeeze",
+      "squeeze",
+      "squeeze",
+      "squeeze",
+      "contact",
+      "lift",
+      "lift",
+      "lift",
+      "lift",
+      "lift",
+      "lift",
+      "lift",
+      "lift",
+      "lift",
+      "lift",
+      "lift",
+      "lift",
+      "hold"
+    ],
+    "steps": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      12,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      120
+    ],
+    "home": [
+      1.2191720672560493,
+      -1.1777890713800714,
+      -0.28858646227766604,
+      -1.3614347048928055,
+      -0.49717972513623765,
+      -0.4351255135759076,
+      0.997698818769737,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.219904960552384,
+      -1.1779913405018247,
+      -0.28966276162866833,
+      -1.3614324308539418,
+      -0.4965776851192724,
+      -0.4348114341863246,
+      0.9970671009493555,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "parameters": {
+      "width": 0.096,
+      "palm_offset": 0.025,
+      "wrist_deg": 35.0,
+      "tilt_deg": 15.0,
+      "finger_mode": "curled"
+    },
+    "source_sha256": {
+      "side_grasp.py": "f08bd060669d203e7f02c2efd395a2a0a7ccad4625909811307af879350852d8",
+      "side_control.py": "0f9db235ffa63d6c007bb3cba7310cc23fe3710731ba2b2e42e73b2216908714",
+      "kinematics.py": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212",
+      "config.json": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4"
+    },
+    "label_kind": "offline IK teacher plans; not claims of physical success at each grid point",
+    "elapsed_s": 127.27691251400029
+  },
+  "test_execution": "6201-6205 headless; 6206 with camera recording; all fixed before any final test",
+  "checkpoint_sha256": "aeabb90e7f2086c433772b45513497e368a6e3585c5f95ab25c041a25c9b637b",
+  "base_config_sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+  "runtime_config_sha256": "171b28aaca88d392e025e1204e0ce1fed9195080f305d8ee7c1df31f868d11ec",
+  "assets_sha256": {
+    "/home/brainco/rl_cube/revotron_revo3/source/revotron_system/usd/revotron_bimanual_revo3_56dof.usd": "c066a65ff5ac77a8fb0a5fb3658c71f151b64777cdc9a8f66a0739d4033170a2",
+    "/home/brainco/rl_cube/revotron_revo3/source/revotron_system/urdf/revotron_bimanual_revo3_56dof.urdf": "598cc4cc94a37e35517eba4e450b3a3b334214549c7e196bf3f1332940e71325",
+    "/home/brainco/rl_cube/isaac_mujoco_cube/upstream/mujoco_cube-main/cube_3x3x3.xml": "b7b32a4a8624241817aafcbdba20217b7250fb9c570440af6fbdcf5ec084c023",
+    "/home/brainco/rl_cube/isaac_mujoco_cube/upstream/mujoco_cube-main/assets/sticker.png": "278454a3391b00b997c70f1e3e40f38014e620df9426943d7197191c0338f506"
+  },
+  "source_sha256": {
+    "side_grasp.py": "f08bd060669d203e7f02c2efd395a2a0a7ccad4625909811307af879350852d8",
+    "side_control.py": "0f9db235ffa63d6c007bb3cba7310cc23fe3710731ba2b2e42e73b2216908714",
+    "side_experiment.py": "ae1190e2907187ad8a46efff39030759079269c5bb2e27c1e6a19847f3d8cd24",
+    "self_contact_audit.py": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c",
+    "side_gate.py": "ee86f5baccf6ad4dec2e7d5714340bcd8690d659503b08e673929fe42efd0a89",
+    "kinematics.py": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212",
+    "config.json": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+    "environment.py": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7",
+    "joint_safety.py": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887",
+    "acceptance.py": "8a09cfb4c087e06a2fada695cb5caeab68d32eabbf494fbec0eee69a855fa248",
+    "isaac_compat.py": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825"
+  },
+  "runtime_versions": {
+    "isaacsim": "6.2.0.0",
+    "isaaclab": "3.0.0",
+    "torch": "2.11.0+cu130",
+    "rsl-rl-lib": "5.5.1"
+  },
+  "hardware": "1 environment, RTX 5070 Laptop GPU 8 GB, CPU PhysX/BC and RTX rendering",
+  "evidence_sha256": {
+    "revotron_cube_rl/runs/side_bc_independent_6201_6205/trajectory_6201.json": "c229b1e9a59cf774514d077dd49ec4a279174ed9ea7d7eb42a53dd96d2829d70",
+    "revotron_cube_rl/runs/side_bc_independent_6201_6205/trajectory_6202.json": "5a4b1e406e21b44d2cfd09dc79151dd39ff8749309aa513b9bffa08038f78c68",
+    "revotron_cube_rl/runs/side_bc_independent_6201_6205/trajectory_6203.json": "f3762c445ca5183cd307974ca3852182b7c24a1b4f54b5484f40cfcda541d0ce",
+    "revotron_cube_rl/runs/side_bc_independent_6201_6205/trajectory_6204.json": "fc510f3af0d1ab56fdeac6560a61aaa8ba2f51df74f1c66708473289d332e8ec",
+    "revotron_cube_rl/runs/side_bc_independent_6201_6205/trajectory_6205.json": "390c68678680e05ad497808c78b152791a95d5da2bdd047ca343699caa441d1f",
+    "revotron_cube_rl/runs/side_bc_independent_6201_6205/result.json": "09aeaa562c87c471a2b1366b57ecf6d65fe34305033fc9f392515b2b44271d62",
+    "revotron_cube_rl/runs/side_bc_independent_6201_6205/runtime_config.json": "171b28aaca88d392e025e1204e0ce1fed9195080f305d8ee7c1df31f868d11ec",
+    "revotron_cube_rl/runs/side_bc_independent_6201_6205/evaluation_config.json": "5fa0ff7a212e578e4d5a1879709c87648980fd63e0e0af0cc7d19951414c914b",
+    "revotron_cube_rl/runs/side_bc_visual_test_6206/trajectory_6206.json": "7c16fef0e0c80b10dd81566fc885e5009332828659e690a5126ba924b62df8ce",
+    "revotron_cube_rl/runs/side_bc_visual_test_6206/result.json": "b7ab6e05148c938ac37b33f1e22975c044bf14a75904eb918811250ee7a327a1",
+    "revotron_cube_rl/runs/side_bc_visual_test_6206/runtime_config.json": "171b28aaca88d392e025e1204e0ce1fed9195080f305d8ee7c1df31f868d11ec",
+    "revotron_cube_rl/runs/side_bc_visual_test_6206/evaluation_config.json": "bf01f9d30d8ba05090f0fcdf239bc129694f1c4ee9f3f95e0b087fc522400ae3"
+  },
+  "selection": {
+    "selected": "side_bc_waypoints_v2",
+    "checkpoint_sha256": "aeabb90e7f2086c433772b45513497e368a6e3585c5f95ab25c041a25c9b637b",
+    "development": "9/9 at 3 seconds hold, zero robot-table and robot-self contact",
+    "test_seeds": [
+      6201,
+      6202,
+      6203,
+      6204,
+      6205,
+      6206
+    ],
+    "test_data_observed": false,
+    "locked_at": "2026-11-02T14:44:02.894464+08:00",
+    "controller_kind": "BC waypoint regressor plus contact/arrival supervision; no runtime IK/teacher; not end-to-end PPO",
+    "discarded_v1": "4/5 on 6101-6105; these seeds are consumed and not counted in v2 independent results"
+  },
+  "limitations": [
+    "This is a learned waypoint controller with deterministic contact/arrival supervision, not an end-to-end PPO success claim.",
+    "Validated for the configured small initial pose distribution and a 3 second hold; disturbance and sim-to-real robustness are not established.",
+    "Visual actor, cube face turns and full solving are not validated."
+  ],
+  "video_seed": 6206,
+  "video_result": {
+    "seed": 6206,
+    "kind": "BC_waypoint_network_with_contact_supervisor",
+    "split": "test",
+    "acceptance": {
+      "accepted": true,
+      "failure_reasons": [],
+      "robot_table_threshold_Ns": 1e-06,
+      "soft_limit_hit_steps": 0,
+      "hard_limit_hit_steps": 0,
+      "cube_table_contact_steps": 322,
+      "max_joint_velocity_rad_s": 2.3182926177978516,
+      "max_position_error_rad": 0.025357306003570557,
+      "dropped": false,
+      "continuous_hold_seconds": 3.0
+    },
+    "controller_failure": null,
+    "max_height_m": 0.11329859161376954,
+    "robot_table_impulse_sum_Ns": 0.0,
+    "arm_body_impulse_sum_Ns": 0,
+    "self_contact_impulse_sum_Ns": 0,
+    "returned_after_any_lift": false,
+    "steps": 452,
+    "initial_xyz": [
+      0.4915672540664673,
+      0.006332621909677982,
+      0.9284999966621399
+    ]
+  },
+  "task": "Locked rigid cube pickup and hold; articulated layer turns are not part of this evaluation",
+  "evaluation_scope": {
+    "initial_xy_randomization_m": [
+      -0.015,
+      0.015
+    ],
+    "initial_yaw_randomization_rad": [
+      -0.15,
+      0.15
+    ],
+    "minimum_height_m": 0.08,
+    "continuous_contact_hold_seconds": 3.0,
+    "policy_is_vision_based": false,
+    "optimizer_seed": 1945,
+    "environments": 1,
+    "physics_device": "CPU",
+    "neural_training_device": "CPU",
+    "rendering_device": "RTX 5070 Laptop"
+  },
+  "metrics_summary": {
+    "max_height_range_m": [
+      0.11329859161376954,
+      0.11395162010192872
+    ],
+    "minimum_hold_seconds": 3.0,
+    "robot_table_impulse_sum_Ns": 0.0,
+    "arm_body_impulse_sum_Ns": 0,
+    "self_contact_impulse_sum_Ns": 0,
+    "soft_limit_hit_steps": 0,
+    "hard_limit_hit_steps": 0,
+    "cube_table_contact_steps_during_verified_hold": 0,
+    "returned_to_table_after_lift": 0
+  },
+  "video_validation": {
+    "decoder": "system libavcodec H264",
+    "decoded_frames": 166,
+    "width": 640,
+    "height": 512,
+    "fps": 10.0,
+    "duration_s": 16.6,
+    "all_frames_decoded": true,
+    "capture_stride_control_steps": 3,
+    "last_video_sample_step": 450,
+    "final_trajectory_step": 451,
+    "last_video_sample_hold_s": 2.966666666666667,
+    "final_trajectory_hold_s": 3.0,
+    "final_still_frames": 15,
+    "note": "Video samples every third control step. Last sampled overlay is 2.97 s; the next recorded physics step satisfies 3.00 s. Final 15 frames repeat the last camera sample."
+  },
+  "verification": {
+    "side_control_unit_tests": 3,
+    "python_compilation": "passed",
+    "Linux_static_migration_check": "passed",
+    "independent_acceptance_recomputed_from_raw_trajectories": true
+  },
+  "soft_limit_version": {
+    "source": "joint_safety.py",
+    "sha256": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887",
+    "config_sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4"
+  },
+  "elapsed_s": {
+    "geometry_label_generation": 127.27691251400029,
+    "BC_optimization": 3.9558845449973887,
+    "development_evaluation": 196.6246774020001,
+    "independent_evaluation": 188.4722088669987
+  }
+}

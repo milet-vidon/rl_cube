@@ -1,0 +1,10 @@
+{
+  "name": "side_flat_dev_v1",
+  "seeds": "4201",
+  "widths": ".068,.062,.056",
+  "offsets": ".015",
+  "record": false,
+  "wrist": 35.0,
+  "tilt": 15.0,
+  "hold": 3.0
+}

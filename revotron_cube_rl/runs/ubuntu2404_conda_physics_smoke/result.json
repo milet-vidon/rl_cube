@@ -1,0 +1,78 @@
+{
+  "mode": "smoke",
+  "seed": 7,
+  "real_rgb": false,
+  "action_dim": 56,
+  "action_gain": 1.0,
+  "initial_action_clip": 1.0,
+  "initial_action_steps": 0,
+  "config_sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+  "iterations": [
+    {
+      "iteration": 0,
+      "mean_reward": -0.002162319840863347,
+      "loss": {},
+      "actor_parameter_max_delta": 0.0,
+      "successes": 0,
+      "episodes": 0,
+      "elapsed_s": 1.8626129627227783
+    }
+  ],
+  "task_success_claim": false,
+  "privileged_actor_leak_max": 0.0,
+  "black_image_action_delta": 0.0,
+  "steps_total": 64,
+  "successes": 0,
+  "episodes": 0,
+  "elapsed_s": 1.8629975318908691,
+  "contact_events": 4698,
+  "last_metrics": {
+    "height_m": -6.29425048748189e-08,
+    "bilateral_contact": false,
+    "contact_impulse": [
+      0.0,
+      0.0
+    ],
+    "table_impulse": 0.022399471500377466,
+    "robot_table_impulse": 0.0,
+    "hold_steps": 0,
+    "success": false,
+    "drop": false,
+    "reward": -0.0021623231558817856,
+    "terms": {
+      "reach": 0.4057985186459875,
+      "bilateral_contact": 0.0,
+      "lift": 0.0,
+      "hold": 0.0,
+      "hold_progress": 0.0,
+      "success_once": 0.0,
+      "action_rate": 0.0,
+      "joint_speed": 0.0,
+      "drop": 0.0,
+      "timeout": 0.0,
+      "terminal": 0.0,
+      "potential": 0.08115970372919751,
+      "raw_potential": 0.08115970372919751,
+      "raw_component": {
+        "reach": 0.08115970372919751,
+        "bilateral_contact": 0.0,
+        "lift": 0.0,
+        "hold_progress": 0.0
+      },
+      "potential_difference": -0.00016232315588178559,
+      "step_penalty": -0.002,
+      "success_bonus": 0.0,
+      "drop_penalty": -0.0,
+      "action_rate_penalty": -0.0,
+      "joint_speed_penalty": -0.0
+    },
+    "cube_position": [
+      0.4837528169155121,
+      0.011916414834558964,
+      0.9284999370574951
+    ],
+    "linear_speed": 1.8684766018850496e-06,
+    "angular_speed": 7.147847645683214e-05
+  },
+  "status": "completed"
+}

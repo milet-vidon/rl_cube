@@ -1,0 +1,83 @@
+{
+  "kind": "pure_state_policy_evaluation",
+  "split": "development",
+  "trials": [
+    {
+      "seed": 4101,
+      "split": "development",
+      "kind": "pure_state_policy",
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "arm_soft_limit",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 1,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 128,
+        "max_joint_velocity_rad_s": 0.8938084244728088,
+        "max_position_error_rad": 0.023702755570411682,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      },
+      "steps": 128,
+      "max_height_m": 1.1587142945135298e-07,
+      "robot_table_impulse_sum": 0.0
+    },
+    {
+      "seed": 4102,
+      "split": "development",
+      "kind": "pure_state_policy",
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "arm_soft_limit",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 1,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 127,
+        "max_joint_velocity_rad_s": 0.8758226633071899,
+        "max_position_error_rad": 0.023710161447525024,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      },
+      "steps": 127,
+      "max_height_m": 1.754760742267436e-07,
+      "robot_table_impulse_sum": 0.0
+    },
+    {
+      "seed": 4103,
+      "split": "development",
+      "kind": "pure_state_policy",
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "arm_soft_limit",
+          "independent_contact_hold_gate"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 1,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 135,
+        "max_joint_velocity_rad_s": 0.8486176133155823,
+        "max_position_error_rad": 0.023847654461860657,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      },
+      "steps": 135,
+      "max_height_m": -3.3378600994282692e-09,
+      "robot_table_impulse_sum": 0.0
+    }
+  ],
+  "accepted": 0,
+  "total": 3,
+  "elapsed_s": 13.789533506000225,
+  "checkpoint_sha256": "65993ca9fb5ca2421d7281ac46f71f694f956ec5ca8940d4b696bd2c7e2d78ab",
+  "actor_observation": "privileged simulator state, own control history, initial cube position and clock; no teacher actions"
+}

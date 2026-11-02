@@ -1,0 +1,68 @@
+{
+  "trials": [
+    {
+      "seed": 6105,
+      "candidate": 0,
+      "width": 0.096,
+      "offset": 0.025,
+      "steps": 454,
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 322,
+        "max_joint_velocity_rad_s": 2.1319119930267334,
+        "max_position_error_rad": 0.03563922271132469,
+        "dropped": false,
+        "continuous_hold_seconds": 3.0
+      },
+      "controller_failure": null,
+      "max_height_m": 0.11260610485076905,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "contact_pairs": {
+        "/World/Cube | /World/Table/geometry/mesh": 8.16669422002717,
+        "/World/Robot/left_middle_DIP_link | /World/Cube": 8.618450047689766,
+        "/World/Robot/right_middle_DIP_link | /World/Cube": 7.820130940964786
+      },
+      "kind": "traditional_side_teacher",
+      "elapsed_s": 41.75515187500059
+    },
+    {
+      "seed": 4201,
+      "candidate": 1,
+      "width": 0.096,
+      "offset": 0.025,
+      "steps": 452,
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 320,
+        "max_joint_velocity_rad_s": 2.0437583923339844,
+        "max_position_error_rad": 0.035632748156785965,
+        "dropped": false,
+        "continuous_hold_seconds": 3.0
+      },
+      "controller_failure": null,
+      "max_height_m": 0.11379581356048585,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "contact_pairs": {
+        "/World/Cube | /World/Table/geometry/mesh": 8.31460963741614,
+        "/World/Robot/left_middle_DIP_link | /World/Cube": 8.658432994821943,
+        "/World/Robot/right_middle_DIP_link | /World/Cube": 7.7424177544134025,
+        "/World/Robot/right_ring_DIP_link | /World/Cube": 0.0
+      },
+      "kind": "traditional_side_teacher",
+      "elapsed_s": 80.64070783399984
+    }
+  ],
+  "accepted": 2,
+  "total": 2,
+  "controller_sha256": "7e12c843172600190b14240aaef6dd52590d6cad45ecc451ac71786579bca829",
+  "config_sha256": "171b28aaca88d392e025e1204e0ce1fed9195080f305d8ee7c1df31f868d11ec",
+  "elapsed_s": 80.81655397300165
+}

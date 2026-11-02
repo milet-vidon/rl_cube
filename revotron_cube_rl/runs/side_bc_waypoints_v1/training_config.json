@@ -1,0 +1,8 @@
+{
+  "mode": "train",
+  "name": "side_bc_waypoints_v1",
+  "data": "revotron_cube_rl/runs/side_geometry_labels_v1/plans.npz",
+  "epochs": 2000,
+  "architecture": "cubic skip + 2x64 tanh residual neural waypoint map",
+  "actor_input": "initial cube XY; all joint goals predicted; contact and proprioception used by phase supervisor"
+}

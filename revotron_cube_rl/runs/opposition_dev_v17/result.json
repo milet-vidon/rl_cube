@@ -1,0 +1,66 @@
+{
+  "kind": "experimental_traditional_teacher",
+  "trials": [
+    {
+      "seed": 7101,
+      "acceptance": {
+        "accepted": false,
+        "failure_reasons": [
+          "pickup_gate_failed",
+          "independent_contact_hold_gate",
+          "robot_self_contact"
+        ],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 519,
+        "max_joint_velocity_rad_s": 2.323075532913208,
+        "max_position_error_rad": 0.07202291488647461,
+        "dropped": false,
+        "continuous_hold_seconds": 0.0
+      },
+      "opposition": {
+        "passed": true,
+        "main_hand": "left",
+        "support_hand": "right",
+        "hold_contact_coverage": {
+          "thumb": 1.0,
+          "index": 1.0,
+          "middle": 1.0,
+          "ring": 1.0,
+          "little": 1.0
+        },
+        "correct_face_contact_coverage": {
+          "thumb": 1.0,
+          "index": 1.0,
+          "middle": 1.0,
+          "ring": 1.0,
+          "little": 1.0
+        },
+        "thumb_corner_contact_coverage": 1.0,
+        "required_thumb_coverage": 0.9,
+        "required_each_four_finger_coverage": 0.5,
+        "expected_faces": "thumb on cube -X corner, four fingers on cube +X",
+        "corner_distance_max_m": 0.018,
+        "face_position_tolerance_m": 0.006
+      },
+      "controller_failure": null,
+      "max_height_m": 0.21424775981903077,
+      "steps": 675,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "self_contact_impulse_sum_Ns": 0.043431816581888875,
+      "contact_pairs": {
+        "/World/Cube | /World/Table/geometry/mesh": 22.789168625003462,
+        "/World/Robot/left_little_DIP_link | /World/Cube": 34.97180611887641,
+        "/World/Robot/left_thumb_DIP_link | /World/Cube": 43.57476318378218,
+        "/World/Robot/left_ring_DIP_link | /World/Cube": 7.616753051449426,
+        "/World/Robot/left_middle_DIP_link | /World/Cube": 2.3738584030012846,
+        "/World/Robot/left_index_DIP_link | /World/Cube": 3.870755121870048
+      }
+    }
+  ],
+  "accepted": 0,
+  "total": 1,
+  "elapsed_s": 128.796768436001,
+  "promoted_for_learning": false
+}

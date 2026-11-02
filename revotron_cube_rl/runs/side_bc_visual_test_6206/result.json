@@ -1,0 +1,40 @@
+{
+  "trials": [
+    {
+      "seed": 6206,
+      "kind": "BC_waypoint_network_with_contact_supervisor",
+      "split": "test",
+      "acceptance": {
+        "accepted": true,
+        "failure_reasons": [],
+        "robot_table_threshold_Ns": 1e-06,
+        "soft_limit_hit_steps": 0,
+        "hard_limit_hit_steps": 0,
+        "cube_table_contact_steps": 322,
+        "max_joint_velocity_rad_s": 2.3182926177978516,
+        "max_position_error_rad": 0.025357306003570557,
+        "dropped": false,
+        "continuous_hold_seconds": 3.0
+      },
+      "controller_failure": null,
+      "max_height_m": 0.11329859161376954,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "arm_body_impulse_sum_Ns": 0,
+      "self_contact_impulse_sum_Ns": 0,
+      "returned_after_any_lift": false,
+      "steps": 452,
+      "initial_xyz": [
+        0.4915672540664673,
+        0.006332621909677982,
+        0.9284999966621399
+      ]
+    }
+  ],
+  "accepted": 1,
+  "total": 1,
+  "checkpoint_sha256": "aeabb90e7f2086c433772b45513497e368a6e3585c5f95ab25c041a25c9b637b",
+  "elapsed_s": 78.31589670899848,
+  "split": "test",
+  "runtime_teacher_or_IK": false,
+  "pure_end_to_end_PPO": false
+}
