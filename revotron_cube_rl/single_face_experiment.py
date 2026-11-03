@@ -10,13 +10,20 @@ def stop_handler(signum,frame):
     print('INTERRUPTION_REQUESTED',signum,flush=True)
 signal.signal(signal.SIGTERM,stop_handler)
 ROOT=Path(__file__).resolve().parent
-p=argparse.ArgumentParser();p.add_argument('--name',required=True);p.add_argument('--seed',type=int,default=9501);p.add_argument('--record',action='store_true');p.add_argument('--max-steps',type=int,default=3500);p.add_argument('--friction',default='.9,.8');p.add_argument('--hand-friction',default=None);p.add_argument('--push-degrees',type=float,default=0.);p.add_argument('--contact-style',choices=['face','edge'],default='face');p.add_argument('--controller',choices=['index','opposed'],default='opposed');p.add_argument('--center-only',action='store_true');p.add_argument('--center-style',choices=['j56','legacy'],default='j56');p.add_argument('--split',choices=['development','independent'],default='development');p.add_argument('--opposition-planner',choices=['baseline','joint'],default='baseline');p.add_argument('--ring-inset',type=float,default=0.);p.add_argument('--adaptive-wrist',action='store_true');p.add_argument('--settled-hold',action='store_true');p.add_argument('--right-hand-friction');p.add_argument('--right-finger-stiffness',type=int,choices=[10,20,30]);a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--name',required=True);p.add_argument('--seed',type=int,default=9501);p.add_argument('--record',action='store_true');p.add_argument('--max-steps',type=int,default=3500);p.add_argument('--friction',default='.9,.8');p.add_argument('--hand-friction',default=None);p.add_argument('--push-degrees',type=float,default=0.);p.add_argument('--contact-style',choices=['face','edge'],default='face');p.add_argument('--controller',choices=['index','opposed'],default='opposed');p.add_argument('--center-only',action='store_true');p.add_argument('--center-style',choices=['j56','legacy'],default='j56');p.add_argument('--split',choices=['development','independent'],default='development');p.add_argument('--opposition-planner',choices=['baseline','joint'],default='baseline');p.add_argument('--ring-inset',type=float,default=0.);p.add_argument('--adaptive-wrist',action='store_true');p.add_argument('--settled-hold',action='store_true');p.add_argument('--right-hand-friction');p.add_argument('--right-finger-stiffness',type=int,choices=[10,20,30]);p.add_argument('--source-core-inertia',action='store_true');p.add_argument('--position-iterations',type=int,choices=[32,64]);p.add_argument('--cube-clearance-refinement',action='store_true');p.add_argument('--matched-internal-friction');a=p.parse_args()
 if a.right_finger_stiffness is not None and (a.controller!='opposed' or a.center_only):p.error('--right-finger-stiffness requires the full opposed controller')
 if a.right_hand_friction and a.hand_friction:p.error('Choose either bilateral or right-only hand friction')
 if a.settled_hold and not a.adaptive_wrist:p.error('--settled-hold requires --adaptive-wrist')
 if a.ring_inset and (a.opposition_planner!='joint' or not 0<=a.ring_inset<=.0015):p.error('--ring-inset requires joint planner and 0..0.0015 m')
 if a.center_only and a.controller!='opposed':p.error('--center-only requires --controller opposed')
 if a.push_degrees not in (0.,15.,30.,90.):p.error('Use 0 for transfer, 15/30 for contact probes, or 90 for one face')
+if a.cube_clearance_refinement and a.opposition_planner!='joint':p.error('--cube-clearance-refinement requires joint planner')
+if a.matched_internal_friction:
+    from matched_cube_material import pair_coefficients
+    try:pair_coefficients(tuple(map(float,a.matched_internal_friction.split(','))))
+    except ValueError as e:p.error(str(e))
+    if a.hand_friction or tuple(map(float,a.friction.split(',')))!=(.9,.8):p.error('Matched materials require baseline cube friction and no bilateral hand material')
+    if not a.right_hand_friction:p.error('Matched materials require explicit right-only hand friction')
 from evidence_paths import local_path,raw_sha
 from stage_gate import require_staged_gate
 from side_gate import require_side_gate
@@ -40,10 +47,12 @@ if a.controller=='opposed':
     sources+=['centered_transport_plan.py','centered_opposition_runtime.py','torso_collision.py','centered_transport_audit.py']
     if a.center_style=='j56':sources+=['center_j56_plan.py','center_j56_audit.py','center_j56_protocol_v3.json']
     if not a.center_only:sources+=['opposed_grasp_plan.py','opposed_grasp_runtime.py','opposed_grasp_audit.py','opposed_actuation.py']
-if a.controller=='opposed' and not a.center_only and a.opposition_planner=='joint':sources+=['opposed_joint_plan.py','opposed_joint_fit.py']
+if a.controller=='opposed' and not a.center_only and a.opposition_planner=='joint':sources+=['opposed_joint_plan.py','opposed_joint_fit.py','opposed_cube_clearance.py']
 if a.adaptive_wrist:sources+=['adaptive_wrist_teacher.py','bounded_wrist_recovery.py']
 if a.settled_hold:sources+=['settled_wrist_teacher.py']
 if a.right_hand_friction:sources+=['right_contact_environment.py','right_contact_material.py']
+sources+=['cube_core_inertia.py','solver_precision.py','matched_cube_material.py','right_contact_material.py']
+sources=list(dict.fromkeys(sources))
 archive_paths={n:('source_config.json'if n=='config.json'else n)for n in sources}
 for n in sources:shutil.copy2(ROOT/n,run/archive_paths[n])
 write('experiment.json',vars(a)|{'split':a.split,'precondition_certificate_sha256':raw_sha(ROOT/'wrist_direction_gate_certificate.json'),'source_sha256':{n:raw_sha(ROOT/n)for n in sources},'source_archive_paths':archive_paths,'direct_cube_control':False})
@@ -71,7 +80,17 @@ try:
     from finger_contact_audit import FingerContactAudit
     from palm_contact_audit import DetailedSelfContactAudit
     from layer_turn_metrics import measure_layers
-    env=DynamicPickupEnv(run,friction=tuple(map(float,a.friction.split(','))),hand_friction=tuple(map(float,a.hand_friction.split(',')))if a.hand_friction else None,seed=a.seed,vision=a.record,preview=a.record,auto_reset=False,arm_damping=8.)
+    from cube_core_inertia import source_core_inertia,verify_core_inertia
+    from solver_precision import position_iterations,verify_solver
+    from matched_cube_material import matched_cube_material
+    internal=tuple(map(float,a.matched_internal_friction.split(',')))if a.matched_internal_friction else None
+    with source_core_inertia(a.source_core_inertia),position_iterations(a.position_iterations),matched_cube_material(internal):
+        env=DynamicPickupEnv(run,friction=tuple(map(float,a.friction.split(','))),hand_friction=tuple(map(float,a.hand_friction.split(',')))if a.hand_friction else None,seed=a.seed,vision=a.record,preview=a.record,auto_reset=False,arm_damping=8.)
+    if internal is not None:
+        env.cube.model.update(runtime_model_version='dynamic_grasp_matched_internal_friction_v1',friction_basis='uncalibrated internal friction development; left/cube and table/cube pair coefficients matched to baseline; explicit right-only material')
+        write('matched_material_verification.json',env.cube.model['matched_contact_materials'])
+    if a.source_core_inertia:write('core_inertia_verification.json',verify_core_inertia(env))
+    if a.position_iterations:write('solver_verification.json',verify_solver(env,a.position_iterations))
     env.max_episode_length=a.max_steps;env.cfg['success']['hold_seconds']=3.
     write('config.json',env.cfg);write('asset_contract.json',env.contract)
     from importlib.metadata import version,PackageNotFoundError

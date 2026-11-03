@@ -12,7 +12,7 @@ FINGERS=('thumb','index','middle','ring','little')
 
 class OppositionScene(CollisionScene):
  def __init__(self,request):
-  super().__init__(request['initial'],{},request['cube_position'],request['cube_quaternion'],True);self.refinement_options=request.get('refinement_options',{})
+  super().__init__(request['initial'],{},request['cube_position'],request['cube_quaternion'],True);self.refinement_options=request.get('refinement_options',{});self.turn_degrees=float(request.get('target_deg',15.))
   self.fixed=[b for b in self.fixed if b[0]!='cube_route_envelope']+collision_objects(request['torso_colliders']);self.C=R.from_quat(np.array(request['cube_quaternion'])[[1,2,3,0]]).as_matrix();self.center=np.array(request['cube_position'])-[0,0,1.15];self.contact=False;self.theta=0.
  def valid(self,x):
   if not super().valid(x):return False

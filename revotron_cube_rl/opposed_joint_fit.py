@@ -12,6 +12,10 @@ def refine(q,scene,calibration,goals,names):
     lo=limits[:,0]+.02;hi=limits[:,1]-.02
     lo[variables.index('Joint2_R')]=max(lo[variables.index('Joint2_R')],np.radians(-100))
     left=scene.k.fk_link(q,'left_palm_link')
+    cube_clearance=None
+    if getattr(scene,'refinement_options',{}).get('cube_clearance',False):
+        from opposed_cube_clearance import CubeClearance
+        cube_clearance=CubeClearance(scene)
     def residual(v):
         state=q|dict(zip(variables,v));frames=scene.k.fk(state)
         shapes=[(n,m,frames[n]@t,c,r) for n,m,t,c,r in scene.moving]
@@ -39,6 +43,7 @@ def refine(q,scene,calibration,goals,names):
             if a[0]=='Link1_R':continue
             distance=min(scene.distance(a,b) for b in scene.fixed)
             errors.append(400*max(.0035-distance,0))
+        if cube_clearance is not None:errors.extend(cube_clearance.residual(shapes))
         errors.extend(.015*(v-reference))
         return np.asarray(errors)
     fit=least_squares(residual,np.clip(reference,lo+1e-6,hi-1e-6),bounds=(lo,hi),

@@ -22,7 +22,7 @@ class OppositionContacts(LayerContacts):
 
 def execute(env,teacher,fingers,audit,rows,frames,run,args,center,stopped=lambda:False):
  names=env.cfg['joint_names'];initial=rows[-1];request={'initial':dict(zip(names,initial['q'])),'joint_names':names,'cube_position':initial['cube_position'],'cube_quaternion':initial['cube_quaternion_wxyz'],'left_contacts':initial['finger_contact_points'],'target_deg':args.push_degrees}
- request['refinement_options']={'ring_inset_m':getattr(args,'ring_inset',0.)}
+ request['refinement_options']={'ring_inset_m':getattr(args,'ring_inset',0.),'cube_clearance':getattr(args,'cube_clearance_refinement',False)}
  from torso_collision import export_fixed_colliders
  request['torso_colliders']=export_fixed_colliders(env.stage,'/World/Robot')
  print('OPPOSITION_PREFLIGHT_BEGIN',flush=True);planner='opposed_joint_plan.py' if getattr(args,'opposition_planner','baseline')=='joint' else 'opposed_grasp_plan.py';plan=host_plan(planner,request,run,'opposition',420)
