@@ -1,3 +1,9 @@
+## 当前持续训练：GPU v2 已训练，v15 仿真与 v2 闭环队列进行中
+
+用户明确要求有效利用远端资源并持续迭代到可用模型。GPU v1 8900 updates 后闭环失败（851 步自碰、未拿起）；已据增量漂移改为 v2 绝对目标，完成 20000 updates/51.58 秒。v2 checkpoint 已保存，闭环未验收。v14 五指保持 4.033 秒、转层 0.117° 后停滞。
+
+当前单 Isaac：v15 `teacher_joint_ring_support_v15_20261103` PID 575572，日志 `work/teacher_optimization_20261103/ring_support_v15.log`。它增加预检后左无名指支持反馈，并采集 cProfile。随后队列 PID 584920 自动跑 `teacher_phase_absolute_gpu_v2_eval_9501`，状态 `work/teacher_optimization_20261103/phase_gpu_eval_queue_v2.json`。检查结果后继续修正，不能重复启动 Isaac或把离线loss当任务成功。91项相关测试通过，12CPU worker完成13671项几何检查。详细参数/证据/复现见 GPU_CONTINUOUS_TRAINING_UPDATE.md。尚无合格自由转层策略或视觉复原成功。
+
 ## 2026-11-03 当前续跑：v13 完成，v14 运行中
 
 v13（源阻尼 + 右指刚度 10）完成 3175 步，左手抓取和居中通过；右手保持阶段五指接触 121/121，核心角速度最大 0.1278 rad/s，但左无名指 121/121 失触，合格保持 0 秒，未执行转层。反馈控制调用 0 步，不能评价其转层作用。

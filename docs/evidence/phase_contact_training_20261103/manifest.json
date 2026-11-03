@@ -1,0 +1,25 @@
+{
+  "sha256": {
+    "teacher_phase_contact_gpu_v1_20261103/last.pt": "f90e7b2a371c12829e121236e3f10fb6da1164ed8d67376efe832de5b9891fa6",
+    "teacher_phase_contact_gpu_v1_20261103/result.json": "a8d5705b3def88ad0e0c7a20ca9a6ce2917162e61ef2724cfce01c26f0217c01",
+    "teacher_phase_contact_gpu_v1_20261103/metrics.jsonl": "683061875d15299b2d2f3af05d8ee8e60668e28ed9143e317b1a75071ce1145a",
+    "teacher_phase_contact_gpu_v1_20261103/source_snapshot.tar.gz": "2ed9d47228920297dd418787fe9fffd421b084f51b4e5a2193ad1627285ade0d",
+    "teacher_phase_contact_gpu_v1_20261103/best.pt": "d81a5ffba1786e2f60e598ad2bfa0ea3d3e0f4494323c388cdc90e841dfdf3cc",
+    "teacher_phase_contact_gpu_v1_20261103/experiment.json": "c0dc6ed1f6c4e9144cfd0e1ba152a2d828a30bf884a539e8d960acd95331df4c",
+    "diagnostics/phase_gpu_eval_queue_v1.py": "1e8b0600f4fbce76ff67e7aaf0c2e4160f982d4c679e6b14b502e576aaec1c80",
+    "diagnostics/phase_gpu_eval_queue_v2.py": "09fb7f31d0b764fe77c91a7289308c226219c009b542c8fc115b696bb322d7c2",
+    "diagnostics/phase_absolute_v2_offline_audit.json": "8179fce94fd00ebded5ce81f9b5d998fcca0a82612fdf0cce1426e019776bcac",
+    "diagnostics/phase_contact_v1_closed_loop_diagnosis.json": "e7ed66cff96e4c9eee1b3f2e04636213816ef7b5797a71904a2b57cb654bc975",
+    "teacher_phase_absolute_gpu_v2_20261103/last.pt": "fce06cd2d9d90f9cf96ddd157d76ffc49b2c9d56893426c08bd1d31fc58749f2",
+    "teacher_phase_absolute_gpu_v2_20261103/result.json": "d20dc49b0a0a6e5a0e71cdf2567b9037ba853722de062ee4f1c534ee658e461b",
+    "teacher_phase_absolute_gpu_v2_20261103/metrics.jsonl": "3b46f79796912ae9dc87474a2498c3589267c8c79b294356e2e3447029e53760",
+    "teacher_phase_absolute_gpu_v2_20261103/source_snapshot.tar.gz": "8929c8b63479358b2430f26598e8582781a8d302d8fa2c9365e7343d51a0e866",
+    "teacher_phase_absolute_gpu_v2_20261103/best.pt": "bd5e799cbc401459473c96eb32d87f8392e0bf7d588ac3dc67b504f00e00aadb",
+    "teacher_phase_absolute_gpu_v2_20261103/experiment.json": "12e866e779e37c46005b893f45a32145eaa5917f79dc24f88248f1567e30fecc",
+    "teacher_phase_contact_gpu_v1_eval_9501/trajectory.jsonl.gz": "48f4faa41f6a63744c9c86963547ea7ad68d9e02595b952260322998bdf39ff9",
+    "teacher_phase_contact_gpu_v1_eval_9501/result.json": "e9c06d0d5ef37f1ecad85d9fe901b841dc4479b6b5a84e5b2b2dcaddc7bfa0bf",
+    "teacher_phase_contact_gpu_v1_eval_9501/config.json": "d3c6084f638ed96ea299dbf76c386537051d3857c61675ddfc4abd5e9d925ae1",
+    "teacher_phase_contact_gpu_v1_eval_9501/source_snapshot.tar.gz": "2970dbee30ec210c132d6d9681c93b873cc0a89ced80c31194f51c01461e364a",
+    "teacher_phase_contact_gpu_v1_eval_9501/asset_contract.json": "3367c3d471d25bb668b2f67fb9eca3ba34a28328b967ffbb63aef39cf1a365c7"
+  }
+}
