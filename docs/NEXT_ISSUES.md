@@ -1,10 +1,8 @@
-## 2026-11-04 当前：native完整teacher与状态反馈训练准备
+## 2026-11-04 当前：v5已完成GPU训练，完整闭环对照继续
 
-当前唯一Isaac teacher_native_fulltask_v18_20261104，PID1178403，日志work/teacher_optimization_20261103/native_fulltask_v18.log，状态native_fulltask_v18_queue.json（队列PID1159021）。已安装显式FullTask终止与可选native关节接入，固定4500总控制步、15度目标，原安全与最终gate不变。29项安装后host测试及两项120步native集成smoke通过；完整teacher尚未验收，运行源码不得改。
+v5两轮200/2000epoch GPU训练完成，long模型SHA1c663e17…db98c，单开发轨迹原投影RMSE8.07e-6rad。此为BC离线拟合，无闭环或泛化成功。首eval因启动资产路径错配在0policy控制步终止；已仅修launch路径/资产SHA，严格asset contract不变。唯一Isaac队列PID1329608串行执行v5long_v2和同adapter v4对照，状态work/teacher_optimization_20261103/state_feedback_matched_eval_queue.json；启动其他Isaac前先核进程。
 
-v2采集验证1647帧与原target/q/cube逐值相同，wrist3.033s。v3 mixture1648帧通过原wrist gate，1419teacher/229student，纠正标签与native动作逐bit复核通过；不是纯student或泛化成功。正在准备v5状态历史残差模型，先做BC transition资格和残差可达性审查，再GPU训练，与native物理并行。源码/状态详情见FULL_TASK_AND_DAGGER_UPDATE.md。普通/D6/native物理域禁止混训。
-
-旧v11–v17的转动段均在generic pickup done之后，仅作物理诊断，不计有效完整任务。FullTask显式区分pickup milestone和15/30/90子任务terminal，reward0非PPO，drop/timeout/安全后拒绝下一step。仍无合格自由转面模型、六面复原或视觉模型成功，持续训练目标未完成。下文为历史状态。
+v18 native完整teacher3017步正常失败：先index失触，后右little接触导致ring失触，未开始转层；FullTask终止/3017审计步/无postterminal核验通过。90°native初态v2已通过24步被动验证，不是机器人转90°。原index反馈接续候选正在12CPU联合index/ring整路径预检，尚未应用/物理验收。详情见STATE_FEEDBACK_V5_UPDATE.md；用户持续训练目标未完成。
 
 ## 2026-11-04 当前持续训练
 

@@ -218,3 +218,17 @@ revotron_cube_rl/left_dagger_baseline_runtime_v1.py text eol=lf
 
 # Preserve the already frozen collector bytes, including its final blank line.
 revotron_cube_rl/dagger_projected_collection_v3.py whitespace=-blank-at-eof
+
+# Frozen v5 state-feedback training evidence.
+docs/evidence/state_feedback_v5_20261104/** -text -whitespace
+docs/evidence/state_feedback_v5_20261104/**/*.gz filter=lfs diff=lfs merge=lfs -text
+revotron_cube_rl/phase_residual_policy_v5.py text eol=lf
+revotron_cube_rl/dagger_residual_dataset_v5.py text eol=lf
+revotron_cube_rl/train_phase_residual_v5.py text eol=lf
+revotron_cube_rl/test_phase_residual_v5.py text eol=lf
+
+revotron_cube_rl/state_residual_eval_runtime_v5.py text eol=lf
+revotron_cube_rl/evaluate_state_residual_v5.py text eol=lf
+revotron_cube_rl/test_state_residual_eval_v5.py text eol=lf
+
+docs/evidence/state_feedback_v5_init_failure_20261104/** -text -whitespace

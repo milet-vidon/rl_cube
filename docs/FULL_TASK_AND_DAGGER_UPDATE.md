@@ -23,3 +23,5 @@ v3首次真实DAgger混合采样完成1648步，1419 teacher、229 student，原
 同一时间准备v5状态历史反馈残差模型，冻结v4基线、使用真实mixture的expert projected标签；训练前先审查各关节残差范围/原projection可达性与独立BC资格清单。单次开发轨迹不支持泛化结论，尚无新v5通过。
 
 源码入口：full_task_episode.py、passive_cube_articulation.py、collect_left_dagger_baseline_v2.py/v3.py、dagger_projected_collection_v3.py。完整命令在各run protocol/experiment。证据：docs/evidence/teacher_optimization_20261103与docs/evidence/left_dagger_training_20261104；后者156项索引含三run、gzip轨迹/transition、源码/plan快照和独立审计。旧v11–v17的post-done数据仅为物理诊断，原文件不改。
+
+后续结果：v18已在3017步正常失败终止，未开始转层；v5两轮GPU训练完成，闭环对照继续。详见[状态反馈v5更新](STATE_FEEDBACK_V5_UPDATE.md)。

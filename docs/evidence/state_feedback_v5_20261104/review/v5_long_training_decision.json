@@ -1,0 +1,11 @@
+{
+  "first_checkpoint_sha256": "ae36280b13d74fe840e88fd748c618c76cc9ea9b8d7fd98dd337e456cc39e3c5",
+  "first_rmse_rad": 0.00011942606215598062,
+  "first_max_error_rad": 0.004390835762023926,
+  "reason": "Training score still improving at epoch199 and largest contact-transition correction remains underfit; retain first checkpoint for actual closed-loop and train separate longer candidate.",
+  "qualification_sha256": "71f98935291201335bfe24f8a19b133ee475f7e0dc5060ce553c97f93fd617d5",
+  "epochs": 2000,
+  "new_data": false,
+  "independent_success_claim": false,
+  "script_sha256": "51ad0267b02a18b26ffa4fd4e3b20afa15f8e1ad3bcd4690392c49d995fdf213"
+}
