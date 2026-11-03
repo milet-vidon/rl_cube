@@ -106,3 +106,7 @@ revotron_cube_rl/right_contact_material.py text eol=lf
 revotron_cube_rl/right_contact_environment.py text eol=lf
 
 revotron_cube_rl/test_right_contact_material.py text eol=lf
+
+revotron_cube_rl/opposed_actuation.py text eol=lf
+
+revotron_cube_rl/test_opposed_actuation.py text eol=lf

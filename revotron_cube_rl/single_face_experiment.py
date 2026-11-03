@@ -10,7 +10,8 @@ def stop_handler(signum,frame):
     print('INTERRUPTION_REQUESTED',signum,flush=True)
 signal.signal(signal.SIGTERM,stop_handler)
 ROOT=Path(__file__).resolve().parent
-p=argparse.ArgumentParser();p.add_argument('--name',required=True);p.add_argument('--seed',type=int,default=9501);p.add_argument('--record',action='store_true');p.add_argument('--max-steps',type=int,default=3500);p.add_argument('--friction',default='.9,.8');p.add_argument('--hand-friction',default=None);p.add_argument('--push-degrees',type=float,default=0.);p.add_argument('--contact-style',choices=['face','edge'],default='face');p.add_argument('--controller',choices=['index','opposed'],default='opposed');p.add_argument('--center-only',action='store_true');p.add_argument('--center-style',choices=['j56','legacy'],default='j56');p.add_argument('--split',choices=['development','independent'],default='development');p.add_argument('--opposition-planner',choices=['baseline','joint'],default='baseline');p.add_argument('--ring-inset',type=float,default=0.);p.add_argument('--adaptive-wrist',action='store_true');p.add_argument('--settled-hold',action='store_true');p.add_argument('--right-hand-friction');a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--name',required=True);p.add_argument('--seed',type=int,default=9501);p.add_argument('--record',action='store_true');p.add_argument('--max-steps',type=int,default=3500);p.add_argument('--friction',default='.9,.8');p.add_argument('--hand-friction',default=None);p.add_argument('--push-degrees',type=float,default=0.);p.add_argument('--contact-style',choices=['face','edge'],default='face');p.add_argument('--controller',choices=['index','opposed'],default='opposed');p.add_argument('--center-only',action='store_true');p.add_argument('--center-style',choices=['j56','legacy'],default='j56');p.add_argument('--split',choices=['development','independent'],default='development');p.add_argument('--opposition-planner',choices=['baseline','joint'],default='baseline');p.add_argument('--ring-inset',type=float,default=0.);p.add_argument('--adaptive-wrist',action='store_true');p.add_argument('--settled-hold',action='store_true');p.add_argument('--right-hand-friction');p.add_argument('--right-finger-stiffness',type=int,choices=[10,20,30]);a=p.parse_args()
+if a.right_finger_stiffness is not None and (a.controller!='opposed' or a.center_only):p.error('--right-finger-stiffness requires the full opposed controller')
 if a.right_hand_friction and a.hand_friction:p.error('Choose either bilateral or right-only hand friction')
 if a.settled_hold and not a.adaptive_wrist:p.error('--settled-hold requires --adaptive-wrist')
 if a.ring_inset and (a.opposition_planner!='joint' or not 0<=a.ring_inset<=.0015):p.error('--ring-inset requires joint planner and 0..0.0015 m')
@@ -38,7 +39,7 @@ sources=list(cert['source_sha256'])+['articulated_cube_env.py','layer_turn_metri
 if a.controller=='opposed':
     sources+=['centered_transport_plan.py','centered_opposition_runtime.py','torso_collision.py','centered_transport_audit.py']
     if a.center_style=='j56':sources+=['center_j56_plan.py','center_j56_audit.py','center_j56_protocol_v3.json']
-    if not a.center_only:sources+=['opposed_grasp_plan.py','opposed_grasp_runtime.py','opposed_grasp_audit.py']
+    if not a.center_only:sources+=['opposed_grasp_plan.py','opposed_grasp_runtime.py','opposed_grasp_audit.py','opposed_actuation.py']
 if a.controller=='opposed' and not a.center_only and a.opposition_planner=='joint':sources+=['opposed_joint_plan.py','opposed_joint_fit.py']
 if a.adaptive_wrist:sources+=['adaptive_wrist_teacher.py','bounded_wrist_recovery.py']
 if a.settled_hold:sources+=['settled_wrist_teacher.py']

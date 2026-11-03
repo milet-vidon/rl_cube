@@ -7,6 +7,7 @@ from centered_opposition_runtime import host_plan,append_row,safety_failure,fram
 from layer_turn_metrics import measure_layers
 from opposed_grasp_audit import qualified,right_contacts
 from tilt_audit import contact_topology
+from opposed_actuation import configure_right_fingers
 
 class OppositionContacts(LayerContacts):
  def callback(self,headers,data):
@@ -27,6 +28,9 @@ def execute(env,teacher,fingers,audit,rows,frames,run,args,center,stopped=lambda
  print('OPPOSITION_PREFLIGHT_BEGIN',flush=True);planner='opposed_joint_plan.py' if getattr(args,'opposition_planner','baseline')=='joint' else 'opposed_grasp_plan.py';plan=host_plan(planner,request,run,'opposition',420)
  if not plan['passed']:return {'executed':True,'qualified':False,'center':center,'opposition_grasp_passed':False,'failure':'opposition_preflight_rejected','detail':plan}
  print('OPPOSITION_PREFLIGHT_PASSED',plan['checks'],flush=True)
+ actuation=configure_right_fingers(env,getattr(args,'right_finger_stiffness',None))
+ (run/'opposition_actuation.json').write_text(json.dumps(actuation,indent=2))
+ print('RIGHT_FINGER_ACTUATION',actuation['right_finger_stiffness'],flush=True)
  fixed=env.targets[0].numpy().copy();right=[i for i,n in enumerate(names)if n.endswith('_R')or n.startswith('right_')];contacts=OppositionContacts();hold=0;longest=0;turn_hold=0;turn_longest=0;grasp_passed=False;turn_started=False;failure=None;lost=0;reset=env.cube.pose_reset_count;start=time.monotonic();core0=np.array(initial['cube_position'])
  for phase,path in plan['phases']:
   if phase=='opposed_face_turn':
@@ -56,4 +60,4 @@ def execute(env,teacher,fingers,audit,rows,frames,run,args,center,stopped=lambda
   if failure:break
  passed=bool(not failure and grasp_passed and turn_longest>=90)
  if failure is None and not passed:failure='opposed_face_turn_hold_gate_not_met'
- return {'executed':True,'qualified':passed,'center':center,'opposition_grasp_passed':grasp_passed,'opposition_hold_s':longest/30,'turn_started':turn_started,'turn_hold_s':turn_longest/30,'target_face':'nZ','target_degrees':args.push_degrees,'failure':failure,'elapsed_s':time.monotonic()-start,'final_layers':rows[-1]['layer_measurement'],'cube_pose_writes_during_push':env.cube.pose_reset_count-reset}
+ return {'executed':True,'qualified':passed,'center':center,'opposition_grasp_passed':grasp_passed,'opposition_hold_s':longest/30,'turn_started':turn_started,'turn_hold_s':turn_longest/30,'target_face':'nZ','target_degrees':args.push_degrees,'right_finger_actuation':actuation,'failure':failure,'elapsed_s':time.monotonic()-start,'final_layers':rows[-1]['layer_measurement'],'cube_pose_writes_during_push':env.cube.pose_reset_count-reset}

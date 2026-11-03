@@ -10,7 +10,7 @@
 
 `trajectory.jsonl` 中通用记录器默认以 90° 计算误差；本次正确的 15° 指标以最终 `trajectory.json`、`opposition_contacts.jsonl` 和 `result.json` 为准。
 
-`teacher_joint_traction_v3_20261103` 已完成 1992 步，在左手保持阶段因 `tilt_hold_timeout` 失败，未进入右手接近或转层。该实验：仅将手部接触材质设为静/动摩擦 1.2/1.0，魔方内部材质仍为 0.9/0.8。它是未标定的仿真对照，不代表真实材料参数，也未通过左手前置门禁。为消除对左手抓持材质的影响，新增 `--right-hand-friction`：通过初始化工厂在第一次 PhysX reset 前仅绑定右手碰撞体材质，检查左手材质绑定不变，记录实际绑定路径及参数；下一轮 `teacher_joint_right_traction_v4_20261103` 已实际启动，运行时确认绑定 77 个右手碰撞体，左手材质绑定未变；仍须重新完成原全部前置验收。源 MJCF 的关节 damping/frictionloss 与 USD 的刚体 angularDamping 不可当作等价参数；本轮没有添加魔方驱动或改动内部动力学来制造转动。
+`teacher_joint_traction_v3_20261103` 已完成 1992 步，在左手保持阶段因 `tilt_hold_timeout` 失败，未进入右手接近或转层。该实验：仅将手部接触材质设为静/动摩擦 1.2/1.0，魔方内部材质仍为 0.9/0.8。它是未标定的仿真对照，不代表真实材料参数，也未通过左手前置门禁。为消除对左手抓持材质的影响，新增 `--right-hand-friction`：通过初始化工厂在第一次 PhysX reset 前仅绑定右手碰撞体材质，检查左手材质绑定不变，记录实际绑定路径及参数；`teacher_joint_right_traction_v4_20261103` 已完成：左手居中通过，77 个右手材质绑定生效且左手未变，但高摩擦下角速度抖动使五指合格保持只有 0.1 秒，未进入转层。后续右手刚度对照与新的优先级见 CUBE_SOLVE_ROADMAP.md。源 MJCF 的关节 damping/frictionloss 与 USD 的刚体 angularDamping 不可当作等价参数；本轮没有添加魔方驱动或改动内部动力学来制造转动。
 
 ## 左手示范覆盖与腕肘恢复
 

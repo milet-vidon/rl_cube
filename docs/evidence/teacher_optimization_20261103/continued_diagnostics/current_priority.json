@@ -7,5 +7,6 @@
     "formula_solver_and_verified_execution"
   ],
   "queued_bc_evaluation_cancelled": true,
-  "active_rotation_run": "teacher_joint_right_traction_v4_20261103"
+  "active_rotation_run": "teacher_joint_right_compliance_v5_20261103",
+  "active_pid": 335891
 }
