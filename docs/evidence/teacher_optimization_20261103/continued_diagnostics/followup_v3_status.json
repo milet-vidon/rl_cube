@@ -6,5 +6,9 @@
   {
     "name": "teacher_left_bc_applied_v7_eval_9501",
     "returncode": 2
+  },
+  {
+    "name": "teacher_joint_traction_v3_20261103",
+    "returncode": 0
   }
 ]

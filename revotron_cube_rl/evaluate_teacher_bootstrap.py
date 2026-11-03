@@ -50,7 +50,7 @@ try:
     env.rng=np.random.default_rng(a.seed);env.reset();env.metrics={};env.pair_impulses={}
     names=env.cfg['joint_names'];assert names==checkpoint['metadata']['joint_names']
     fingers=FingerContactAudit();audit=DetailedSelfContactAudit();resets=env.cube.pose_reset_count
-    longest=0;hold=0;failure=None;started=time.monotonic();left=checkpoint['metadata']['output_indices']
+    longest=0;hold=0;failure=None;lifted=False;maximum_lift=0.;returned_to_table=False;started=time.monotonic();left=checkpoint['metadata']['output_indices']
     hold_gain_step=next(i for i,r in enumerate(rows) if r['phase']=='tilt_hold')
     finger_ids=[env.ids[i] for i,n in enumerate(names) if n.startswith('left_')]
     with (a.output/'trajectory.jsonl').open('w') as journal:
@@ -75,6 +75,9 @@ try:
                        measured_hand_frames=measured_hand_frames(env),measured_elbow=measured_elbow(env))
             row['layer_measurement']=measure_layers(env.cube.states())
             if row['self_contact_impulse']>1e-6 or row['robot_table_impulse']>1e-6 or row['arm_soft_limit_hit'] or row['actual_arm_soft_limit_violation'] or any(row['hard_limit_hit']):failure='robot_safety_gate'
+            maximum_lift=max(maximum_lift,float(row['height_m']));lifted=lifted or row['height_m']>=.08
+            if lifted and row['height_m']<.05:
+                returned_to_table=True;failure='cube_returned_to_table_after_lift'
             if row['drop']:failure='cube_drop'
             if env.cube.pose_reset_count!=resets:raise RuntimeError('Unexpected cube pose write')
             if row['phase']=='center_hold':
@@ -86,7 +89,7 @@ try:
             if failure:break
     result=dict(scope='development_learned_left_recorded_right',seed=a.seed,steps=step+1,
                 accepted=bool(not failure and longest>=90),failure=failure or ('center_hold_gate_not_met' if longest<90 else None),
-                qualified_center_hold_s=longest/30.,elapsed_s=time.monotonic()-started,
+                qualified_center_hold_s=longest/30.,maximum_lift_m=maximum_lift,cube_returned_to_table_after_lift=returned_to_table,elapsed_s=time.monotonic()-started,
                 checkpoint_sha256=sha(a.checkpoint),source_manifest_sha256=sha(a.source/'artifact_manifest.json'),
                 evaluator_sha256=source_hashes['evaluate_teacher_bootstrap.py'],evaluation_source_sha256=source_hashes,right_turn_trained=False,stage_gate_unlocked=False,
                 right_schedule_source=str(schedule.resolve()),right_schedule_seed=schedule_result['seed'],

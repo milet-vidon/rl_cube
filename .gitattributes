@@ -100,3 +100,9 @@ revotron_cube_rl/test_settled_wrist.py text eol=lf
 
 # Evidence manifests cover exact bytes, including source line endings.
 docs/evidence/teacher_optimization_20261103/** -text whitespace=cr-at-eol
+
+revotron_cube_rl/right_contact_material.py text eol=lf
+
+revotron_cube_rl/right_contact_environment.py text eol=lf
+
+revotron_cube_rl/test_right_contact_material.py text eol=lf
