@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "checks": 1,
+  "minimum_clearance_m": 0.003,
+  "all_nominal_targets_and_interpolation_checked": true,
+  "physics_validated": false
+}

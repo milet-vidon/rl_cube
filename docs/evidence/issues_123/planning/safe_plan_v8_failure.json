@@ -1,0 +1,17 @@
+{
+  "error": "Full regrasp geometry rejected: {\"passed\": false, \"phase\": \"right_close\", \"step\": 20, \"interpolation\": 1.0, \"pair\": [\"right_ring_DIP_link\", \"right_little_DIP_link\", 0.002712266984390441], \"checks\": 1387, \"minimum_clearance_m\": 0.003, \"physics_validated\": false}",
+  "audit": {
+    "passed": false,
+    "phase": "right_close",
+    "step": 20,
+    "interpolation": 1.0,
+    "pair": [
+      "right_ring_DIP_link",
+      "right_little_DIP_link",
+      0.002712266984390441
+    ],
+    "checks": 1387,
+    "minimum_clearance_m": 0.003,
+    "physics_validated": false
+  }
+}

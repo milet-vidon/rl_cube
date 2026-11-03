@@ -6,7 +6,7 @@
 
 ## 本次更新
 
-[左掌朝右翻转修正与演示](docs/PALM_DIRECTION_UPDATE.md)：传统 teacher 完成左手抓起、整块反向翻转和保持，新独立 seed 9501–9503 为 3/3。**[左肘应朝外，当前朝内的姿态仍待修复](https://github.com/milet-vidon/rl_cube/issues/1)；[右手完整接抓也未验收](https://github.com/milet-vidon/rl_cube/issues/2)。** 不应将该 3/3 理解为完整交接、自然姿态或 PPO 成功。
+[左肘外展修正与证据迁移](docs/ISSUES_123_UPDATE.md)：传统 teacher 的左肘实测外展约 39°，冻结后独立 9601–9605 为 5/5，保持 3 秒。默认 `tilt-teacher` 已切换至该实现。跨工作区证据解析及隔离负向测试通过。**右手完整接抓仍在开发中，issue #2 保持未验收。**
 
 ## 接手入口
 
@@ -46,6 +46,6 @@ python revotron_cube_rl/test_arm_safety.py
 - `isaac_mujoco_cube/`：魔方资产、上游快照与物理探针。
 - `docs/`：交接、Issue 草稿、环境与发布清单。
 
-大型资产、轨迹和权重由 Git LFS 保存。原工作区的环境、缓存、视频和大量历史训练数据未全部打包；参见 [制品说明](docs/ARTIFACTS.md)。源码和历史记录内仍有原机绝对路径，证书迁移是首个建议 Issue。
+大型资产、轨迹和权重由 Git LFS 保存。原工作区的环境、缓存、视频和大量历史训练数据未全部打包；参见 [制品说明](docs/ARTIFACTS.md)。原证书中的历史绝对路径由受约束解析器映射到当前克隆；缺失证据仍会失败。
 
 第三方来源见 [THIRD_PARTY.md](THIRD_PARTY.md)。未为自有代码或机器人资产擅自添加开源授权。

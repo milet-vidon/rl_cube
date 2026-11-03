@@ -1,5 +1,6 @@
 """Build a reproducible certificate from complete, frozen teacher episodes."""
 from pathlib import Path
+from evidence_paths import local_path, verified_sha, verify_source
 import argparse
 import hashlib
 import json
@@ -11,11 +12,13 @@ ROOT = Path(__file__).resolve().parent
 
 
 def sha256(path):
-    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+    return verified_sha(path,ROOT)
 
 
 def build_certificate(protocol_path, runs):
-    protocol = json.loads(Path(protocol_path).read_text())
+    protocol_path = local_path(protocol_path,ROOT)
+    runs = [local_path(run,ROOT) for run in runs]
+    protocol = json.loads(protocol_path.read_text())
     failures, trials, seen = [], [], set()
     sources = protocol['source_sha256']
     for name, expected in sources.items():
@@ -63,8 +66,8 @@ def build_certificate(protocol_path, runs):
                                hard_limit_hit_steps=sum(any(r['hard_limit_hit']) for r in rows),
                                dropped=any(r['drop'] for r in rows)))
     required = set(protocol['reserved_independent_seeds']) | set(protocol['development_seeds'])
-    if not required <= seen:
-        failures.append('missing_required_seeds:' + str(sorted(required - seen)))
+    if required != seen:
+        failures.append('protocol_seed_mismatch:' + str(sorted(required ^ seen)))
     baseline = json.loads((ROOT / 'opposition_gate_certificate.json').read_text())
     for path, expected in baseline['assets_sha256'].items():
         if sha256(path) != expected:

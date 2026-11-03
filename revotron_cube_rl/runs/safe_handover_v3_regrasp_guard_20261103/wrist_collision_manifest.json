@@ -1,0 +1,148 @@
+{
+  "kind": "USD_collision_schema_attachment_fix",
+  "original_asset": "revotron_revo3/source/revotron_system/usd/revotron_bimanual_revo3_56dof.usd",
+  "original_asset_sha256": "c066a65ff5ac77a8fb0a5fb3658c71f151b64777cdc9a8f66a0739d4033170a2",
+  "override_asset": "revotron_revo3/source/revotron_system/usd/revotron_bimanual_revo3_wrist_mesh_v1.usda",
+  "override_asset_sha256": "1ea674035491ae19875c61813ef8cfb1fd26c4b0b58de3ae3a2a3f04b741a143",
+  "changes": [
+    {
+      "old_collider": "/revotron_bimanual/Link7_L/collisions/left_connector_wrist_link/node_STL_BINARY_",
+      "new_collider": "/revotron_bimanual/Link7_L/collisions/left_connector_wrist_link/node_STL_BINARY_/mesh",
+      "approximation": "convexDecomposition",
+      "geometry_before": {
+        "points_sha256": "8f0fcd1212fc01587dbfb129e583be61241e416803d3fb4e24f757d26fadedc4",
+        "indices_sha256": "08186c309881eca25c010d7b7a80d6edd27b3f07afa685e7043219345d88df9f",
+        "counts_sha256": "6235669510f06b864870ee272443e2ac1e7dee3a79990193c5b350d8e51d09db",
+        "world_transform": [
+          [
+            -1.71165506773151e-05,
+            3.0961207700445455e-06,
+            -0.9999999998487193,
+            0.0
+          ],
+          [
+            -0.9986287758923837,
+            -0.052350431450191734,
+            1.693099679505948e-05,
+            0.0
+          ],
+          [
+            -0.05235043138985212,
+            0.9986287760311103,
+            3.987934107516504e-06,
+            0.0
+          ],
+          [
+            -0.015338445227922541,
+            0.9569798011155214,
+            0.24004374437202,
+            1.0
+          ]
+        ]
+      },
+      "geometry_after": {
+        "points_sha256": "8f0fcd1212fc01587dbfb129e583be61241e416803d3fb4e24f757d26fadedc4",
+        "indices_sha256": "08186c309881eca25c010d7b7a80d6edd27b3f07afa685e7043219345d88df9f",
+        "counts_sha256": "6235669510f06b864870ee272443e2ac1e7dee3a79990193c5b350d8e51d09db",
+        "world_transform": [
+          [
+            -1.71165506773151e-05,
+            3.0961207700445455e-06,
+            -0.9999999998487193,
+            0.0
+          ],
+          [
+            -0.9986287758923837,
+            -0.052350431450191734,
+            1.693099679505948e-05,
+            0.0
+          ],
+          [
+            -0.05235043138985212,
+            0.9986287760311103,
+            3.987934107516504e-06,
+            0.0
+          ],
+          [
+            -0.015338445227922541,
+            0.9569798011155214,
+            0.24004374437202,
+            1.0
+          ]
+        ]
+      },
+      "collision_enabled": true
+    },
+    {
+      "old_collider": "/revotron_bimanual/Link7_R/collisions/right_connector_wrist_link/node_STL_BINARY_",
+      "new_collider": "/revotron_bimanual/Link7_R/collisions/right_connector_wrist_link/node_STL_BINARY_/mesh",
+      "approximation": "convexDecomposition",
+      "geometry_before": {
+        "points_sha256": "d176294e32992bb2f9cc30303ddd7900ec09c591a53e56d1c9b83b39bfafeaec",
+        "indices_sha256": "f39164e86b31ae0593b7716aae021eb1555edc8dba2df324ae106838d779480a",
+        "counts_sha256": "222a9bd618e419b03369c1746370bb44a1719a7b66b84e02799e2c87614278e1",
+        "world_transform": [
+          [
+            -0.9986287679449463,
+            0.05235058553813662,
+            -5.154936059440843e-06,
+            0.0
+          ],
+          [
+            5.319137661011408e-06,
+            2.9972507073386752e-06,
+            -0.9999999999813619,
+            0.0
+          ],
+          [
+            -0.05235058552171034,
+            -0.998628767953753,
+            -3.2716007522980094e-06,
+            0.0
+          ],
+          [
+            -0.015338468644029305,
+            -0.9569799792880209,
+            0.24003830900139064,
+            1.0
+          ]
+        ]
+      },
+      "geometry_after": {
+        "points_sha256": "d176294e32992bb2f9cc30303ddd7900ec09c591a53e56d1c9b83b39bfafeaec",
+        "indices_sha256": "f39164e86b31ae0593b7716aae021eb1555edc8dba2df324ae106838d779480a",
+        "counts_sha256": "222a9bd618e419b03369c1746370bb44a1719a7b66b84e02799e2c87614278e1",
+        "world_transform": [
+          [
+            -0.9986287679449463,
+            0.05235058553813662,
+            -5.154936059440843e-06,
+            0.0
+          ],
+          [
+            5.319137661011408e-06,
+            2.9972507073386752e-06,
+            -0.9999999999813619,
+            0.0
+          ],
+          [
+            -0.05235058552171034,
+            -0.998628767953753,
+            -3.2716007522980094e-06,
+            0.0
+          ],
+          [
+            -0.015338468644029305,
+            -0.9569799792880209,
+            0.24003830900139064,
+            1.0
+          ]
+        ]
+      },
+      "collision_enabled": true
+    }
+  ],
+  "mesh_geometry_unchanged": true,
+  "filtered_collision_pairs_changed": false,
+  "physics_validation_pending": true
+}

@@ -1,3 +1,9 @@
+# 2026-11-03 新增制品
+
+新增左肘外展源码、协议、证书、开发/录像/五个独立 PhysX 回合及正侧面图；腕部 schema 左手回归、右手接抓开发失败回合；原 gate 源码快照、迁移清单和隔离验证结果。大轨迹/计划/视频使用 Git LFS，历史证书保持原字节。见 [实施记录](ISSUES_123_UPDATE.md)。
+
+以下为先前发布记录，里面“运行时 gate 路径迁移待办”已由本轮替代。
+
 # 打包范围
 
 本次新增掌心方向修正 v5 的源码、协议和证书，六个完整物理回合（9301、9402、9403、9501、9502、9503），两个右手接抓失败回合（`palm_facing_dev_v1`、`palm_facing_resume_v4_spacing`），以及 seed 9501 的视频和最终姿态图。详见 [证据索引](evidence/palm_direction_v5/index.json) 与 [更新说明](PALM_DIRECTION_UPDATE.md)。

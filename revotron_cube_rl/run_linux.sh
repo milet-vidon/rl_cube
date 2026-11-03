@@ -28,7 +28,7 @@ run_isaac() {
 }
 
 if [[ $# -lt 1 ]]; then
-  echo "usage: $0 {check|env-check|smoke|evaluate|train|state|side-policy|opposition-teacher|tilt-teacher|tilt-replay|dagger|sweep|turn|script.py} [arguments...]" >&2
+  echo "usage: $0 {check|env-check|smoke|evaluate|train|state|side-policy|opposition-teacher|tilt-teacher|tilt-replay|elbow-check|evidence-check|dagger|sweep|turn|script.py} [arguments...]" >&2
   exit 2
 fi
 ENTRY="$1"
@@ -59,7 +59,20 @@ case "$ENTRY" in
     run_isaac opposition_experiment.py --grasp-config "${ROOT}/opposition_grasp_v20.json" "$@"
     ;;
   tilt-teacher)
-    run_isaac palm_handover_experiment.py "$@"
+    for argument in "$@"; do
+      if [[ "$argument" == "--regrasp" ]]; then
+        echo "Right regrasp is experimental and has no acceptance certificate." >&2
+        export REVOTRON_USD_PATH="${ROOT}/../revotron_revo3/source/revotron_system/usd/revotron_bimanual_revo3_wrist_mesh_v1.usda"
+        run_isaac safe_handover_experiment.py "$@"
+      fi
+    done
+    run_isaac elbow_handover_experiment.py "$@"
+    ;;
+  evidence-check)
+    exec "$PYTHON_BIN" "${ROOT}/verify_portable_evidence.py" "$@"
+    ;;
+  elbow-check)
+    exec "$PYTHON_BIN" "${ROOT}/elbow_gate.py" --protocol elbow_out_protocol_v1.json --runs runs/elbow_out_dev_v1_20261103 runs/elbow_out_independent_v1_20261103 "$@"
     ;;
   tilt-replay)
     run_isaac palm_handover_replay.py "$@"

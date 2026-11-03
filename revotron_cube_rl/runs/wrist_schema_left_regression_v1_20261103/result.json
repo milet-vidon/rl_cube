@@ -1,0 +1,103 @@
+{
+  "trials": [
+    {
+      "seed": 9501,
+      "development_resume": false,
+      "full_episode_verified": true,
+      "accepted": true,
+      "tilt_only_accepted": true,
+      "right_regrasp_validated": false,
+      "steps": 1388,
+      "failure": null,
+      "self_contact_impulse_sum_Ns": 0,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "final_tilt_error_deg": 0.5147474655913502,
+      "tilt_hold_seconds": 3.0,
+      "right_hold_seconds": 0.0,
+      "final_self_pairs": {},
+      "measured_audit": {
+        "accepted": true,
+        "scope": "whole_cube_tilt_only",
+        "full_episode": true,
+        "failures": [],
+        "final_tilt_error_deg": 0.5147474655913502,
+        "longest_measured_hold_seconds": 3.1,
+        "contact_coverage_in_qualifying_window": {
+          "left": {
+            "thumb": 1.0,
+            "index": 1.0,
+            "middle": 1.0,
+            "ring": 1.0,
+            "little": 1.0
+          }
+        },
+        "maximum_lift_m": 0.24410193824768067,
+        "final_lift_m": 0.2377513017654419,
+        "cube_returned_to_table_after_lift": false,
+        "robot_table_impulse_sum_Ns": 0.0,
+        "self_contact_impulse_sum_Ns": 0,
+        "semantic_task": "left_palm_toward_right_hand_uncrossed_opposition_handover",
+        "longest_palm_facing_hold_seconds": 3.033333333333333,
+        "final_hand_geometry": {
+          "left_palm_position_root": [
+            0.4109432849419429,
+            0.24678823215278659,
+            -0.0015081518999200405
+          ],
+          "right_palm_position_root": [
+            0.3166225704299619,
+            -0.22905384445236093,
+            -0.1261206738419811
+          ],
+          "left_palm_normal_world": [
+            0.21186157890067336,
+            -0.8180675650478965,
+            0.5346775948198311
+          ],
+          "right_palm_normal_world": [
+            -0.047759425041266575,
+            0.9988561610617992,
+            -0.0023252588271120353
+          ],
+          "left_facing_right_cos": 0.6042941575691645,
+          "right_facing_left_cos": 0.9394103438316028,
+          "palm_normal_dot": -0.8284934785065605,
+          "wrist_y_separation_m": 0.47584207660514755,
+          "elbow_y_separation_m": 0.8051814436912537,
+          "left_wrist_from_cube_y_m": 0.05587616426261935,
+          "right_wrist_from_cube_y_m": 0.41996591234252817
+        },
+        "elbow_posture": {
+          "accepted": true,
+          "failures": [],
+          "longest_outward_hold_seconds": 3.1,
+          "minimum_outward_m": 0.16,
+          "minimum_outward_degrees": 35.0,
+          "final": {
+            "shoulder_root_m": [
+              0.021714407950639725,
+              0.25000008940696716,
+              0.2400409936904908
+            ],
+            "elbow_root_m": [
+              0.06350037455558777,
+              0.43004512786865234,
+              0.01974377632141122
+            ],
+            "wrist_root_m": [
+              0.30652570724487305,
+              0.23045778274536133,
+              0.01488051414489755
+            ],
+            "outward_from_shoulder_m": 0.18004503846168518,
+            "upper_arm_outward_deg": 39.258524545755094,
+            "outward_from_shoulder_wrist_axis_m": 0.18861679823736793
+          }
+        }
+      }
+    }
+  ],
+  "accepted": 1,
+  "total": 1,
+  "elapsed_s": 110.75382924999576
+}

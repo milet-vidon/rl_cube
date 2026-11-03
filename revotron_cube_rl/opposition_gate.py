@@ -1,12 +1,13 @@
 """Recompute asymmetric-teacher acceptance and bind it to frozen evidence."""
 from pathlib import Path
+from evidence_paths import local_path, verified_sha, verify_source
 import argparse,json,hashlib
 import numpy as np
 from acceptance import assess_pickup
 from opposition_acceptance import assess_opposition
 
 ROOT=Path(__file__).resolve().parent
-def sha(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+def sha(path):return verified_sha(path,ROOT)
 
 def require_opposition_gate():
     certificate=json.loads((ROOT/'opposition_gate_certificate.json').read_text())
@@ -20,11 +21,11 @@ def require_opposition_gate():
     return certificate
 
 def audit(development,independent,protocol):
-    protocol_path=Path(protocol);plan=json.loads(protocol_path.read_text())
+    protocol_path=local_path(protocol,ROOT);plan=json.loads(protocol_path.read_text())
     reports=[];evidence={};sources=None;grasp_sha=None;failures=[]
     for split,folders in [('development',development),('independent',independent)]:
         for folder in folders:
-            folder=Path(folder).resolve();experiment=json.loads((folder/'experiment.json').read_text())
+            folder=local_path(folder,ROOT);experiment=json.loads((folder/'experiment.json').read_text())
             cfg=json.loads((folder/'runtime_config.json').read_text())
             result=json.loads((folder/'result.json').read_text())
             if sources is None:sources=experiment['source_sha256'];grasp_sha=experiment['grasp_config_sha256']

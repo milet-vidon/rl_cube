@@ -1730,5 +1730,21 @@
       "right_regrasp": "https://github.com/milet-vidon/rl_cube/issues/2",
       "portable_gates": "https://github.com/milet-vidon/rl_cube/issues/3"
     }
+  },
+  "latest_issue_fix_20261103": {
+    "issue_1": "validated_independent_5_of_5_elbow_outward",
+    "independent_seeds": [
+      9601,
+      9602,
+      9603,
+      9604,
+      9605
+    ],
+    "issue_3": "clone_local_verified_with_isolated_reads",
+    "issue_2": "development_not_accepted",
+    "default_entry": "elbow_handover_experiment.py",
+    "neural_policy_trained": false,
+    "certificate": "elbow_out_gate_certificate.json",
+    "report": "../docs/ISSUES_123_UPDATE.md"
   }
 }

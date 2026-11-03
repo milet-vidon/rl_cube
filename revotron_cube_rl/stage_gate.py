@@ -1,12 +1,12 @@
 """Fail closed: a passing integration smoke is never permission for task training."""
 from pathlib import Path
+from evidence_paths import local_path, verified_sha, verify_source
 import hashlib
 import json
 ROOT=Path(__file__).resolve().parent
 
 def sha256(path):
-    with Path(path).open('rb') as f:
-        return hashlib.file_digest(f,'sha256').hexdigest()
+    return verified_sha(path,ROOT)
 
 def code_identity():
     return {name:sha256(ROOT/name) for name in ('config.json','transfer_protocol.json','traditional_controller.py','environment.py','joint_safety.py','acceptance.py','isaac_compat.py')}
