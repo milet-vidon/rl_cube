@@ -174,3 +174,15 @@ revotron_cube_rl/test_turn_feedback_frame.py text eol=lf
 # Preserve the exact bytes covered by the standalone index-envelope audit.
 revotron_cube_rl/left_index_support.py -text -whitespace
 revotron_cube_rl/test_left_index_support.py -text -whitespace
+
+# Diagnostic replay and full-frame compression sources frozen before evaluation.
+revotron_cube_rl/phase_basis_policy_v4.py text eol=lf
+revotron_cube_rl/train_phase_basis_v4.py text eol=lf
+revotron_cube_rl/evaluate_phase_basis_v4.py text eol=lf
+revotron_cube_rl/test_phase_basis_v4.py text eol=lf
+revotron_cube_rl/evaluate_reference_replay.py text eol=lf
+revotron_cube_rl/test_evaluate_reference_replay.py text eol=lf
+revotron_cube_rl/contact_event_cache.py text eol=lf
+revotron_cube_rl/test_contact_event_cache.py text eol=lf
+revotron_cube_rl/benchmark_contact_event_cache.py text eol=lf
+revotron_cube_rl/benchmark_contact_cache_float3.py text eol=lf

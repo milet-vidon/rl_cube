@@ -1,0 +1,18 @@
+{
+  "status": "failed",
+  "sequential_processes": true,
+  "probe_sha256": "bcaab9b5d6af193bbe30f0e52edae4bbd31a583bc80b4f96caa5d7c59997a480",
+  "phases": [
+    {
+      "phase": "baseline",
+      "returncode": 0,
+      "result": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/articulation_floor_contact_probe_v1_20261103/baseline/result.json"
+    },
+    {
+      "phase": "articulation",
+      "returncode": 1,
+      "result": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/articulation_floor_contact_probe_v1_20261103/articulation/result.json"
+    }
+  ],
+  "error": "Traceback (most recent call last):\n  File \"/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/cube_articulation_probe.py\", line 467, in main\n    raise RuntimeError(f\"{phase} process failed; inspect {args.output / (phase + '.log')}\")\nRuntimeError: articulation process failed; inspect /home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/articulation_floor_contact_probe_v1_20261103/articulation.log\n"
+}

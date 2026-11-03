@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "parameters": {
+    "joint": "left_ring_PIP_joint",
+    "lower_offset_rad": 0.0,
+    "upper_offset_rad": 0.004,
+    "step_rad": 5e-05,
+    "minimum_impulse_Ns": 0.0005,
+    "maximum_impulse_Ns": 0.002
+  },
+  "absolute_ring_samples_rad": [
+    0.5704467296600342,
+    0.5713616001946585,
+    0.5722764707292829,
+    0.5728508234024048,
+    0.5731913412639073,
+    0.5741062117985317,
+    0.5750210823331561,
+    0.5759359528677804,
+    0.5768508234024048
+  ],
+  "initial_ring_rad": 0.5704467296600342,
+  "baseline_ring_rad": 0.5728508234024048,
+  "checks": 13671,
+  "failure": null,
+  "workers": 12,
+  "elapsed_s": 104.216426080995,
+  "physics_validated": false
+}

@@ -1,3 +1,11 @@
+## 2026-11-04 当前持续训练
+
+v16完成：3447步，右手五指保持4.033秒，真实转层0.621°后右手由5指降到2指，15°验收未通过。v3 dense神经模型完整闭环在1647步被原腕部门槛拒绝，未稳定抓起。没有自由旋转、视觉复原或PPO成功。
+
+精确reference回放2129帧已全部重现，target/q/cube位置逐值完全一致，合格居中保持8.033秒；这是诊断，不是神经模型。当前单Isaac为teacher_phase_basis_gpu_v4_fullframe_eval_9501（PID908010），其模型已完成GPU拟合、全帧最大动作误差2.384e-7rad；明确是无holdout的单轨迹压缩对照，不算鲁棒策略或独立成功。检查远端进程和result.json后再启动下一Isaac。
+
+4项free-base articulation短探针已通过原质量/惯量/质心和native66DOF参数读回，含freefall、hinge/ball扰动、实际地面碰撞；尚未验证完整机器人或有限大角度转动。新opt-in facade正在准备，默认环境未替换。详情见GPU_CONTINUOUS_TRAINING_UPDATE.md。用户要求持续训练，目标未完成。
+
 ## 持续训练进行中：v16 与高精度 v3 闭环队列
 
 当前Isaac：teacher_joint_supported_open_v16_20261103，PID704085；日志work/teacher_optimization_20261103/supported_open_v16.log。相对v15保留所有接触支持和物理数值，仅取消旧pacer，同时用逐点等价验证的12CPU并行最终路径检查。随后队列PID742854（phase_gpu_eval_queue_v3_dense.json）评估teacher_phase_expert_gpu_v3_dense_eval_9501；不要同时启动第二个Isaac。
