@@ -1,8 +1,10 @@
-"""Opt-in passive relative damping from the source MJCF, with zero actuation targets.
+"""Opt-in linear passive relative damping approximation from the source MJCF, with zero actuation targets.
 
 Ordinary USD spherical joints ignore drives. Replace only unlimited spherical
 joints by D6 joints with locked translation and free rotation before PhysX reset.
-This does not migrate armature or Coulomb friction, or command a cube turn.
+Only the linear coefficient is applied. MJCF damping triples are linear,
+quadratic and cubic velocity coefficients, not xyz axes. Higher-order damping,
+armature and Coulomb friction are not migrated. No cube turn is commanded.
 """
 from contextlib import contextmanager
 from pathlib import Path
@@ -21,16 +23,16 @@ def source_joint_parameters(path):
         attrs=default.attrib|joints[0].attrib
         if attrs.get('type') not in ('hinge','ball'):raise ValueError('Unsupported source joint type')
         values=[float(v) for v in attrs['damping'].split()]
-        if len(values) not in (1,3) or any(not math.isfinite(v) or v<=0 for v in values):
-            raise ValueError('Expected positive finite source damping')
-        if max(values)-min(values)>1e-12:raise ValueError('Only isotropic damping is supported')
+        if len(values) not in (1,3) or any(not math.isfinite(v) or v<0 for v in values) or values[0]<=0:
+            raise ValueError('Expected positive linear and nonnegative finite polynomial damping')
+        coefficients=(values+[0.,0.])[:3]
         name=body.get('name')
         if name in result or attrs['name']!=name:raise ValueError('Unexpected source joint naming')
-        result[name]={'type':attrs['type'],'damping_Nm_per_rad_s':values[0],
+        result[name]={'type':attrs['type'],'source_polynomial_coefficients_abc':coefficients,'omitted_quadratic_and_cubic_coefficients':coefficients[1:],'damping_Nm_per_rad_s':values[0],
                       'usd_damping_Nm_per_deg_s':values[0]*math.pi/180}
     if sum(j['type']=='hinge' for j in result.values())!=6 or sum(j['type']=='ball' for j in result.values())!=20:
         raise ValueError('Expected 6 hinge and 20 ball joints')
-    return {'source_mjcf_sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'joints':result}
+    return {'source_mjcf_sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'source_damping_interpretation':'linear_quadratic_cubic_velocity_coefficients','joints':result}
 
 def apply_source_joint_damping(stage,cube_path):
     from pxr import UsdPhysics
@@ -73,7 +75,7 @@ def apply_source_joint_damping(stage,cube_path):
             count+=1
         report['joints'][name].update(usd_path=str(prim.GetPath()),drive_axes=list(axes))
     report.update(converted_spherical_joints=20,passive_axes=count,
-                  scope='passive relative damping only; zero stiffness and velocity targets; armature/frictionloss not migrated')
+                  scope='linear passive relative damping only; zero stiffness and velocity targets; nonlinear damping/armature/frictionloss not migrated')
     verify_passive_joint_damping(stage,report)
     print('SOURCE_JOINT_DAMPING',count,'axes',flush=True)
     return report

@@ -42,3 +42,21 @@ python evaluate_phase_absolute_v2.py \
 ```
 
 训练配置与完整来源以 `docs/evidence/phase_contact_training_20261103/*/experiment.json` 为准；模型、指标、闭环失败轨迹和源码快照使用 LFS 归档。转层与接触证据在 `docs/evidence/teacher_optimization_20261103/`。继续接手时先读两个运行状态，不要重复启动 Isaac；结果失败则按诊断继续修正，不声明自由旋转模型或视觉复原完成。
+
+
+## 后续真实结果与当前续跑
+
+v15 完成3294步。支持反馈最大偏置0.00115rad、非零199步；保持121/121和转动119/119帧双手十指都接触，核心角速度均在原门槛内，五指合格保持4.033秒。不过层角仅0.027°、pacer连续保持90步后明确停滞，没有转层成功。左食指候选另做了9084项预检，但v15已经不失触，因此暂不把该候选混入下一单变量实验。
+
+v2 神经模型闭环1886步失败，最高举升0.374m；进入center后落桌。进一步逐帧核验发现tilt_hold 94帧从未五指同时接触，不能称为已通过原腕部阶段验收。误差分解显示：427步采用示范实测状态时target误差约0.00128rad，采用模型自身状态时约0.01991rad，有界state feedback饱和扩大了误差。v3正改为同一基线物理源的高精度阶段策略，并添加原腕部接触晋级要求，待完整验证。
+
+v2另保留独立继续训练副本teacher_phase_absolute_gpu_v2_extended_20261103，从20000到32000updates后因验证平台期停止；最佳scaled验证loss仅从.002171改善到.002139，不能视为已解决闭环问题。resume_parent.json记录父checkpoint哈希和命令，原v2保持冻结。
+
+v16 teacher_joint_supported_open_v16_20261103，PID704085，日志work/teacher_optimization_20261103/supported_open_v16.log：保留v15源线性阻尼近似、ring支持和右指刚度10，仅取消turn-feedback-pacing以测量实际驱动与失触边界；原最终验收不变。另启用--preflight-workers 12，v13/v14逐检查bool/角度/失败对、全部关节路径点已验证与原串行一致，最终检查由约75–78秒降至约16–17秒。新原生退出前flush的profile_simulation.py记录该必要回合热点；v15直接用python -m cProfile的尝试因Lab3原生退出没有留下profile文件，不能报告其热点数据。
+
+当前相关单测97项通过（原96加多项式系数语义测试）；v16已冻结本回合源码。更完整的free-base articulation动力学迁移仅做独立审计和probe准备，未替换当前机器人环境。
+
+
+v3先使用分块holdout时在缺标签区间出现约.097rad最大误差，该run保留但未送闭环。v3 dense使用单轨迹每5帧留1帧的邻帧插值验证，明确不是独立泛化测试；采用12个阶段输出头、关闭未经学会的state correction。完成20700updates/52.54秒，同基线各阶段最大误差≤.003554rad、center_hold RMSE约4.31e-5rad。checkpoint SHA256 354a63778a0f846b09873374c3b36989152d43c0b2ab976ed406bd6b84e27050，等待v16后自动闭环；新eval在进入center前按原腕部/五指连续保持及assembly门槛拒绝不合格轨迹。不能把该版本称为自适应状态策略。
+
+v15反馈坐标审计另发现计划掌角与current Core相对层角并非同一参考系。新增独立turn_feedback_frame helper及回放/单测，目前尚未集成到活动控制；映射保留夹持时基线偏移，不能把固定旧轨迹上允许推进的状态当作新控制器成功。左食指候选和完整动力学probe同样保留为未集成/未验证候选。

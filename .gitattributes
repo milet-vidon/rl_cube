@@ -155,3 +155,18 @@ revotron_cube_rl/test_left_ring_support.py -text -whitespace
 revotron_cube_rl/left_ring_support_preflight.py -text -whitespace
 docs/evidence/phase_contact_training_20261103/** -text -whitespace
 revotron_cube_rl/opposed_grasp_runtime.py whitespace=-blank-at-eof
+
+# New experimental modules use LF before their source snapshots are taken.
+revotron_cube_rl/opposed_path_validation.py text eol=lf
+revotron_cube_rl/test_opposed_path_validation.py text eol=lf
+revotron_cube_rl/benchmark_opposed_path_validation.py text eol=lf
+revotron_cube_rl/check_opposed_path_rejection.py text eol=lf
+revotron_cube_rl/phase_expert_policy_v3.py text eol=lf
+revotron_cube_rl/train_phase_expert_v3.py text eol=lf
+revotron_cube_rl/train_phase_expert_v3_dense.py text eol=lf
+revotron_cube_rl/evaluate_phase_expert_v3.py text eol=lf
+revotron_cube_rl/test_phase_expert_v3.py text eol=lf
+revotron_cube_rl/left_index_support.py text eol=lf
+revotron_cube_rl/test_left_index_support.py text eol=lf
+revotron_cube_rl/turn_feedback_frame.py text eol=lf
+revotron_cube_rl/test_turn_feedback_frame.py text eol=lf

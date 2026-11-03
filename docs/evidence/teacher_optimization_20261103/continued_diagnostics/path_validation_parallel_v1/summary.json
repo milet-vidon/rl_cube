@@ -1,0 +1,32 @@
+[
+  {
+    "run": "teacher_joint_paced_passive_v13_20261103",
+    "request_sha256": "a3afeb03b6daff753bab838a9eeacb4fc7c48d06469baaf54051a39b4f3f24d3",
+    "plan_sha256": "113277845b08e3533baa63f72b14e498f35ea14b7bda73116f3ffa0a7131a921",
+    "target_derivation": "joint refiner assigns exact FK(closed opposition_hold target); validated against every saved turn angle",
+    "checks": 1519,
+    "original_loop_s_excluding_scene_init": 77.58634319200064,
+    "new_serial_s_including_scene_init": 95.99307607600349,
+    "parallel_s_including_scene_init": 16.762846783996793,
+    "workers": 12,
+    "speedup_vs_new_serial": 5.726537819796007,
+    "all_predicates_exact_match": true,
+    "turn_angles_exact_match": true,
+    "input_fingerprint": "07f50eb8bbd979ce8b227a247a959b60a41f9ea4929b60b4b831763c3793adaf"
+  },
+  {
+    "run": "teacher_joint_paced_baseline_v14_20261103",
+    "request_sha256": "611f58dfd9ec8bf2cb5bf55dcd49e2a5468cf0546c887f5a9abd4fb15bad7d68",
+    "plan_sha256": "0deea5b4617be2f901d15dbcbc18b85776833f962f09527690192f320291f8aa",
+    "target_derivation": "joint refiner assigns exact FK(closed opposition_hold target); validated against every saved turn angle",
+    "checks": 1514,
+    "original_loop_s_excluding_scene_init": 74.74713857698953,
+    "new_serial_s_including_scene_init": 77.10626091598533,
+    "parallel_s_including_scene_init": 16.640178363013547,
+    "workers": 12,
+    "speedup_vs_new_serial": 4.633740049768393,
+    "all_predicates_exact_match": true,
+    "turn_angles_exact_match": true,
+    "input_fingerprint": "62de1ead12b70758439ca27bd0455ca0f9d958ccbffacc379589826fe1d7003f"
+  }
+]

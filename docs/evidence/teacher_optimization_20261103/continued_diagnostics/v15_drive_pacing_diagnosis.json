@@ -1,0 +1,302 @@
+{
+  "scope": "read-only contact/pacing diagnosis, no physical success claim",
+  "runs": {
+    "v11": {
+      "run": "teacher_joint_soft_fingers_v11_20261103",
+      "trajectory_sha256": "544eeb682039fccb1490f8d413fe24c304bfc3f280450d7199642d23e2524d44",
+      "turn_frames": 151,
+      "right_first_loss_step": {
+        "thumb": null,
+        "index": 3276,
+        "middle": null,
+        "ring": 3270,
+        "little": 3240
+      },
+      "left_missing_turn_frames": {
+        "thumb": 0,
+        "index": 136,
+        "middle": 0,
+        "ring": 0,
+        "little": 0
+      },
+      "minimum_selected_raw_angular_speed_max": 1.5162451317795174,
+      "maximum_selected_raw_angular_speed_max": 90.83573806929495,
+      "selected_raw_speed_gate_violation_frames": 151,
+      "before_turn": {
+        "step": 3201,
+        "layer_angle_deg": 0.07745200410952177,
+        "layer_delta_deg": 0.0,
+        "world_palm_delta_about_initial_cube_axis_deg": -2.087239009710431e-15,
+        "core_delta_about_initial_cube_axis_deg": -0.0,
+        "palm_relative_core_delta_deg": -2.087239009710431e-15,
+        "palm_relative_core_lead_over_layer_delta_deg": -2.087239009710431e-15,
+        "pacing": null,
+        "right_impulses_Ns": {
+          "thumb": 0.05420992281840784,
+          "index": 0.011185785716249464,
+          "middle": 0.015381812373834593,
+          "ring": 0.01999973059358008,
+          "little": 0.004141889886652956
+        },
+        "right_force_magnitude_sum_N": 3.147574241661748,
+        "layer_axis_torque_magnitude_bound_Nm": 0.10013435317882992,
+        "core_raw_angular_speed": 0.11647827923297882,
+        "selected_raw_angular_speed_max": 1.7629785705548366,
+        "ring_support": null
+      },
+      "first_pacing_hold": null,
+      "final_turn": {
+        "step": 3352,
+        "layer_angle_deg": 2.026492193862167,
+        "layer_delta_deg": 1.9490401897526453,
+        "world_palm_delta_about_initial_cube_axis_deg": 14.672288004897801,
+        "core_delta_about_initial_cube_axis_deg": 3.0182403894326137,
+        "palm_relative_core_delta_deg": 11.654413874503923,
+        "palm_relative_core_lead_over_layer_delta_deg": 9.705373684751278,
+        "pacing": null,
+        "right_impulses_Ns": {
+          "thumb": 0.05060259197169381,
+          "index": 0,
+          "middle": 0.05170499204109944,
+          "ring": 0,
+          "little": 0
+        },
+        "right_force_magnitude_sum_N": 3.0692275203837975,
+        "layer_axis_torque_magnitude_bound_Nm": 0.09929951316156913,
+        "core_raw_angular_speed": 0.4713442623615265,
+        "selected_raw_angular_speed_max": 19.21239123323994,
+        "ring_support": null
+      },
+      "final_episode_face_angle_deg": 2.3047257880461673
+    },
+    "v14": {
+      "run": "teacher_joint_paced_baseline_v14_20261103",
+      "trajectory_sha256": "b1a58f8552864c01ab0d57f82670fa6a952e31a016a224990cc22eb255308d6e",
+      "turn_frames": 120,
+      "right_first_loss_step": {
+        "thumb": null,
+        "index": null,
+        "middle": null,
+        "ring": null,
+        "little": null
+      },
+      "left_missing_turn_frames": {
+        "thumb": 0,
+        "index": 105,
+        "middle": 0,
+        "ring": 0,
+        "little": 0
+      },
+      "minimum_selected_raw_angular_speed_max": 1.5162451317795174,
+      "maximum_selected_raw_angular_speed_max": 12.884615533491207,
+      "selected_raw_speed_gate_violation_frames": 120,
+      "before_turn": {
+        "step": 3201,
+        "layer_angle_deg": 0.07745200410952177,
+        "layer_delta_deg": 0.0,
+        "world_palm_delta_about_initial_cube_axis_deg": -2.087239009710431e-15,
+        "core_delta_about_initial_cube_axis_deg": -0.0,
+        "palm_relative_core_delta_deg": -2.087239009710431e-15,
+        "palm_relative_core_lead_over_layer_delta_deg": -2.087239009710431e-15,
+        "pacing": null,
+        "right_impulses_Ns": {
+          "thumb": 0.05420992281840784,
+          "index": 0.011185785716249464,
+          "middle": 0.015381812373834593,
+          "ring": 0.01999973059358008,
+          "little": 0.004141889886652956
+        },
+        "right_force_magnitude_sum_N": 3.147574241661748,
+        "layer_axis_torque_magnitude_bound_Nm": 0.10013435317882992,
+        "core_raw_angular_speed": 0.11647827923297882,
+        "selected_raw_angular_speed_max": 1.7629785705548366,
+        "ring_support": null
+      },
+      "first_pacing_hold": {
+        "step": 3232,
+        "layer_angle_deg": 0.09674739207705078,
+        "layer_delta_deg": 0.019295387967529012,
+        "world_palm_delta_about_initial_cube_axis_deg": 0.599272600337793,
+        "core_delta_about_initial_cube_axis_deg": 0.3043013976623658,
+        "palm_relative_core_delta_deg": 0.2950016298024961,
+        "palm_relative_core_lead_over_layer_delta_deg": 0.2757062418349671,
+        "pacing": {
+          "path_index": 29,
+          "planned_palm_angle_deg": 0.793944563059478,
+          "held_ticks": 1
+        },
+        "right_impulses_Ns": {
+          "thumb": 0.05017044284587641,
+          "index": 0.011539160814944906,
+          "middle": 0.016251039391684388,
+          "ring": 0.01773493984194072,
+          "little": 0.002300217549192194
+        },
+        "right_force_magnitude_sum_N": 2.9398740133091588,
+        "layer_axis_torque_magnitude_bound_Nm": 0.09356878286140655,
+        "core_raw_angular_speed": 0.15302155911922455,
+        "selected_raw_angular_speed_max": 1.6418968969314909,
+        "ring_support": null
+      },
+      "final_turn": {
+        "step": 3321,
+        "layer_angle_deg": 0.11695281588071836,
+        "layer_delta_deg": 0.03950081177119659,
+        "world_palm_delta_about_initial_cube_axis_deg": 0.7538658237584474,
+        "core_delta_about_initial_cube_axis_deg": 0.39868559552177185,
+        "palm_relative_core_delta_deg": 0.35517842381414005,
+        "palm_relative_core_lead_over_layer_delta_deg": 0.3156776120429435,
+        "pacing": {
+          "path_index": 29,
+          "planned_palm_angle_deg": 0.793944563059478,
+          "held_ticks": 90
+        },
+        "right_impulses_Ns": {
+          "thumb": 0.05020273495661051,
+          "index": 0.011725870828187906,
+          "middle": 0.016264314675664963,
+          "ring": 0.0179281718975542,
+          "little": 0.004185278903157111
+        },
+        "right_force_magnitude_sum_N": 3.009191137835241,
+        "layer_axis_torque_magnitude_bound_Nm": 0.0962088321349457,
+        "core_raw_angular_speed": 0.0905066654086113,
+        "selected_raw_angular_speed_max": 1.9021909625390108,
+        "ring_support": null
+      },
+      "final_episode_face_angle_deg": 0.11695281588071836,
+      "pacing_stall": {
+        "last_path_index": 29,
+        "next_planned_angle_deg": 0.8688197334602756,
+        "final_layer_plus_lead_limit_deg": 0.8669528158807184,
+        "next_angle_excess_deg": 0.001866917579557259,
+        "all_right_contacts_at_every_hold": true
+      }
+    },
+    "v15": {
+      "run": "teacher_joint_ring_support_v15_20261103",
+      "trajectory_sha256": "1054682e1b2403e5a49bf1b0a23d9199010e4207dadf9752b74c3c27c2852d84",
+      "turn_frames": 119,
+      "right_first_loss_step": {
+        "thumb": null,
+        "index": null,
+        "middle": null,
+        "ring": null,
+        "little": null
+      },
+      "left_missing_turn_frames": {
+        "thumb": 0,
+        "index": 0,
+        "middle": 0,
+        "ring": 0,
+        "little": 0
+      },
+      "minimum_selected_raw_angular_speed_max": 1.963683320276768,
+      "maximum_selected_raw_angular_speed_max": 11.255608466110953,
+      "selected_raw_speed_gate_violation_frames": 119,
+      "before_turn": {
+        "step": 3174,
+        "layer_angle_deg": -0.005126067094331991,
+        "layer_delta_deg": 0.0,
+        "world_palm_delta_about_initial_cube_axis_deg": 3.9756933518293955e-16,
+        "core_delta_about_initial_cube_axis_deg": -0.0,
+        "palm_relative_core_delta_deg": 3.9756933518293955e-16,
+        "palm_relative_core_lead_over_layer_delta_deg": 3.9756933518293955e-16,
+        "pacing": null,
+        "right_impulses_Ns": {
+          "thumb": 0.05436902922919156,
+          "index": 0.0059278827361781495,
+          "middle": 0.014874280147305642,
+          "ring": 0.016995780627457678,
+          "little": 0.01720684104130331
+        },
+        "right_force_magnitude_sum_N": 3.28121441344309,
+        "layer_axis_torque_magnitude_bound_Nm": 0.11480157893018106,
+        "core_raw_angular_speed": 0.05539964884519577,
+        "selected_raw_angular_speed_max": 2.235218916330119,
+        "ring_support": {
+          "applied_offset_rad": 0.0010500000000000002,
+          "measured_impulse_Ns": 0.000524777125709174,
+          "next_offset_rad": 0.0010500000000000002
+        }
+      },
+      "first_pacing_hold": {
+        "step": 3204,
+        "layer_angle_deg": 0.025080711568319387,
+        "layer_delta_deg": 0.03020677866265138,
+        "world_palm_delta_about_initial_cube_axis_deg": 0.5333123156432757,
+        "core_delta_about_initial_cube_axis_deg": 0.36500649949209096,
+        "palm_relative_core_delta_deg": 0.16829132621888,
+        "palm_relative_core_lead_over_layer_delta_deg": 0.13808454755622862,
+        "pacing": {
+          "path_index": 28,
+          "planned_palm_angle_deg": 0.7228967413498751,
+          "held_ticks": 1
+        },
+        "right_impulses_Ns": {
+          "thumb": 0.04930240546166368,
+          "index": 0.005959724589698944,
+          "middle": 0.014481733405071587,
+          "ring": 0.014700183329298818,
+          "little": 0.016096040076483544
+        },
+        "right_force_magnitude_sum_N": 3.0162026058664972,
+        "layer_axis_torque_magnitude_bound_Nm": 0.09985386066483654,
+        "core_raw_angular_speed": 0.14753016829490662,
+        "selected_raw_angular_speed_max": 4.8445924093109465,
+        "ring_support": {
+          "applied_offset_rad": 0.0006500000000000001,
+          "measured_impulse_Ns": 0.0046500528068260764,
+          "next_offset_rad": 0.0006000000000000001
+        }
+      },
+      "final_turn": {
+        "step": 3293,
+        "layer_angle_deg": 0.027019275789810976,
+        "layer_delta_deg": 0.03214534288414297,
+        "world_palm_delta_about_initial_cube_axis_deg": 0.6771564559796256,
+        "core_delta_about_initial_cube_axis_deg": 0.4650010280507017,
+        "palm_relative_core_delta_deg": 0.21215964853468017,
+        "palm_relative_core_lead_over_layer_delta_deg": 0.1800143056505372,
+        "pacing": {
+          "path_index": 28,
+          "planned_palm_angle_deg": 0.7228967413498751,
+          "held_ticks": 90
+        },
+        "right_impulses_Ns": {
+          "thumb": 0.04940392441395585,
+          "index": 0.006127660135352006,
+          "middle": 0.014402104086683392,
+          "ring": 0.014830389836867823,
+          "little": 0.016639499857560778
+        },
+        "right_force_magnitude_sum_N": 3.0421073499125955,
+        "layer_axis_torque_magnitude_bound_Nm": 0.10064486300104637,
+        "core_raw_angular_speed": 0.08206352591514587,
+        "selected_raw_angular_speed_max": 2.1648342574292183,
+        "ring_support": {
+          "applied_offset_rad": 0.0,
+          "measured_impulse_Ns": 0.005380612638907468,
+          "next_offset_rad": 0.0
+        }
+      },
+      "final_episode_face_angle_deg": 0.027019275789810976,
+      "pacing_stall": {
+        "last_path_index": 28,
+        "next_planned_angle_deg": 0.7939495487756656,
+        "final_layer_plus_lead_limit_deg": 0.777019275789811,
+        "next_angle_excess_deg": 0.01693027298585459,
+        "all_right_contacts_at_every_hold": true
+      }
+    }
+  },
+  "source_sha256": {
+    "finger_contact_audit.py": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0",
+    "tilt_audit.py": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995",
+    "opposed_grasp_audit.py": "ee6190758ddd71487508edaae7d18f8b9d0890bee971b9d419d61c32aed00af3",
+    "turn_pacer.py": "3013551fcbf66ad08d1611c69662b5f8bc43e2e3e7571756ab0879287a8b7743"
+  },
+  "force_torque_limitations": "Contact logs contain impulse magnitude and normal, not full impulse vector or actor-order mapping. force_magnitude_sum_N and torque_magnitude_bound_Nm are triangle-inequality upper bounds over a 1/30s control interval, NOT net force or measured driving torque. Normal*norm(impulse) cannot recover friction impulse.",
+  "next_single_variable": "Supported v16: remove turn-feedback-pacing only; preserve damping, ring support, right stiffness10, original checked path and all final acceptance/safety gates. Inspect layer response, first contact loss and raw layer velocity before changing grip stiffness. No cube drives or material changes.",
+  "future_observability": "For subsequent uniquely archived runs, optionally record raw per-contact impulse_world vector plus actor0/actor1 and substep timing before interpreting net layer torque; do not mutate an active run."
+}

@@ -1,0 +1,125 @@
+{
+  "usd_version": [
+    0,
+    26,
+    8
+  ],
+  "schema_plugin": "/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaacsim/extscache/omni.usd.schema.physx-110.4.4+110.4.0.lx64.r.cp312.u7f4/plugins/PhysxSchemaAddition/resources",
+  "offline_schema_authoring_passed": true,
+  "isaac_launched": false,
+  "physics_backend_tested": false,
+  "records": [
+    {
+      "joint_type": "PhysicsRevoluteJoint",
+      "axis": "angular",
+      "can_apply": true,
+      "applied": true,
+      "attributes": {
+        "armature": {
+          "valid": true,
+          "custom": false,
+          "default": 0.0
+        },
+        "staticFrictionEffort": {
+          "valid": true,
+          "custom": false,
+          "default": 0.0
+        },
+        "dynamicFrictionEffort": {
+          "valid": true,
+          "custom": false,
+          "default": 0.0
+        },
+        "viscousFrictionCoefficient": {
+          "valid": true,
+          "custom": false,
+          "default": 0.0
+        }
+      }
+    },
+    {
+      "joint_type": "PhysicsSphericalJoint",
+      "axis": "rotX",
+      "can_apply": true,
+      "applied": true,
+      "attributes": {
+        "armature": {
+          "valid": true,
+          "custom": false,
+          "default": 0.0
+        },
+        "staticFrictionEffort": {
+          "valid": true,
+          "custom": false,
+          "default": 0.0
+        },
+        "dynamicFrictionEffort": {
+          "valid": true,
+          "custom": false,
+          "default": 0.0
+        },
+        "viscousFrictionCoefficient": {
+          "valid": true,
+          "custom": false,
+          "default": 0.0
+        }
+      }
+    },
+    {
+      "joint_type": "PhysicsSphericalJoint",
+      "axis": "rotY",
+      "can_apply": true,
+      "applied": true,
+      "attributes": {
+        "armature": {
+          "valid": true,
+          "custom": false,
+          "default": 0.0
+        },
+        "staticFrictionEffort": {
+          "valid": true,
+          "custom": false,
+          "default": 0.0
+        },
+        "dynamicFrictionEffort": {
+          "valid": true,
+          "custom": false,
+          "default": 0.0
+        },
+        "viscousFrictionCoefficient": {
+          "valid": true,
+          "custom": false,
+          "default": 0.0
+        }
+      }
+    },
+    {
+      "joint_type": "PhysicsSphericalJoint",
+      "axis": "rotZ",
+      "can_apply": true,
+      "applied": true,
+      "attributes": {
+        "armature": {
+          "valid": true,
+          "custom": false,
+          "default": 0.0
+        },
+        "staticFrictionEffort": {
+          "valid": true,
+          "custom": false,
+          "default": 0.0
+        },
+        "dynamicFrictionEffort": {
+          "valid": true,
+          "custom": false,
+          "default": 0.0
+        },
+        "viscousFrictionCoefficient": {
+          "valid": true,
+          "custom": false,
+          "default": 0.0
+        }
+      }
+    }
+  ]
+}

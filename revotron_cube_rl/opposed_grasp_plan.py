@@ -70,6 +70,9 @@ def closure_path(scene,opened,end,names,k):
 
 
 def plan(request, refine=None):
+ preflight_workers=request.get('refinement_options',{}).get('preflight_workers',1)
+ if type(preflight_workers) is not int or preflight_workers not in (1,12):raise ValueError('preflight_workers must be 1 or 12')
+ path_validation=None
  started=time.monotonic();initial=request['initial'];names=request['joint_names'];scene=OppositionScene(request);k=scene.k
  cube=np.eye(4);cube[:3,:3]=scene.C;cube[:3,3]=scene.center;mirror=np.diag([1.,-1.,1.,1.]);flip=np.diag([1.,1.,-1.,1.]);roll=np.eye(4);roll[:3,:3]=R.from_euler('z',90,degrees=True).as_matrix()
  lp=np.linalg.inv(cube)@k.fk_link(initial,'left_palm_link');relative=roll@flip@lp@mirror
@@ -142,18 +145,25 @@ def plan(request, refine=None):
    for angle in np.linspace(0,request.get('target_deg',15.),16):
     t=np.eye(4);t[:3,:3]=R.from_euler('z',-angle,degrees=True).as_matrix();q=fit_arm(q,cube@t@local);turn.append(np.array([q[n]for n in names]))
    phases.append(('opposed_face_turn',timed(turn,5.,names,k)));phases.append(('opposed_face_hold',np.repeat(turn[-1][None],121,axis=0)))
-   previous=np.array([initial[n]for n in names]);checks=0;turn_path_angles=[]
-   for phase,path in phases:
-    for step,point in enumerate(path):
-     for u in np.linspace(0,1,max(1,int(np.ceil(np.max(np.abs(point-previous))/.01)))+1)[1:]:
-      state=(1-u)*previous+u*point;scene.q=dict(zip(names,state));scene.contact=phase in ('right_close','opposition_hold','opposed_face_turn','opposed_face_hold');scene.theta=0.
-      if phase in ('opposed_face_turn','opposed_face_hold'):
-       p=k.fk_link(scene.q,'right_palm_link');delta=scene.C.T@p[:3,:3]@target[:3,:3].T@scene.C;scene.theta=float(-R.from_matrix(delta).as_rotvec()[2]*180/np.pi)
-      checks+=1
-      if not scene.valid(np.array([scene.q[n]for n in arm])):raise ValueError(f'{phase} step {step}: {scene.last_pair}')
-     if phase=='opposed_face_turn':turn_path_angles.append(scene.theta)
-     previous=point
-   return {'passed':True,'phases':[(p,x.tolist())for p,x in phases],'turn_path_angles_deg':turn_path_angles,'checks':checks,'contact_anchors':calibration,'right_contact_axis':1,'right_thumb_sign':-1,'hand_style':'thumb_opposed_to_four_fingers','target_face':'nZ','target_deg':request.get('target_deg',15.),'offset_cube':offset,'closure_schedule':closure_schedule,'failures_before_selection':failures,'elapsed_s':time.monotonic()-started,'physics_validated':False}
+   if preflight_workers==12:
+    from opposed_path_validation import validate_paths,require_valid,provenance
+    validation=validate_paths(request,phases,target,workers=12)
+    checks,turn_path_angles=require_valid(validation)
+    path_validation={key:value for key,value in validation.items()if key!='predicate_results'}
+    path_validation['provenance']=provenance(request,phases,target)
+   else:
+    previous=np.array([initial[n]for n in names]);checks=0;turn_path_angles=[]
+    for phase,path in phases:
+     for step,point in enumerate(path):
+      for u in np.linspace(0,1,max(1,int(np.ceil(np.max(np.abs(point-previous))/.01)))+1)[1:]:
+       state=(1-u)*previous+u*point;scene.q=dict(zip(names,state));scene.contact=phase in ('right_close','opposition_hold','opposed_face_turn','opposed_face_hold');scene.theta=0.
+       if phase in ('opposed_face_turn','opposed_face_hold'):
+        p=k.fk_link(scene.q,'right_palm_link');delta=scene.C.T@p[:3,:3]@target[:3,:3].T@scene.C;scene.theta=float(-R.from_matrix(delta).as_rotvec()[2]*180/np.pi)
+       checks+=1
+       if not scene.valid(np.array([scene.q[n]for n in arm])):raise ValueError(f'{phase} step {step}: {scene.last_pair}')
+      if phase=='opposed_face_turn':turn_path_angles.append(scene.theta)
+      previous=point
+   return {'passed':True,'path_validation':path_validation,'phases':[(p,x.tolist())for p,x in phases],'turn_path_angles_deg':turn_path_angles,'checks':checks,'contact_anchors':calibration,'right_contact_axis':1,'right_thumb_sign':-1,'hand_style':'thumb_opposed_to_four_fingers','target_face':'nZ','target_deg':request.get('target_deg',15.),'offset_cube':offset,'closure_schedule':closure_schedule,'failures_before_selection':failures,'elapsed_s':time.monotonic()-started,'physics_validated':False}
   except ValueError as e:failures.append({'offset':offset,'failure':str(e)});print('REJECT',failures[-1],flush=True)
  return {'passed':False,'failures':failures,'elapsed_s':time.monotonic()-started,'physics_validated':False}
 

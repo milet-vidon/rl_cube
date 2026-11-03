@@ -1,0 +1,1638 @@
+{
+  "test": "deliberately invalid arm endpoint, full original interpolation",
+  "request_input_sha256": "d80c3348fd45ee00fef5eae76b93bea8445c9651c02c8ff3689d2ee5767a74ae",
+  "path_input_sha256": "5a284a09fe7659f5e1b02ac4eacec1461b8d818452c64b860236cc6be943ed75",
+  "exact_predicate_match": true,
+  "exact_first_failure_match": true,
+  "first_failure": {
+    "index": 20,
+    "phase": "right_preshape",
+    "step": 0,
+    "theta_deg": 0.0,
+    "valid": false,
+    "failure_pair": [
+      "Link7_R",
+      "table",
+      0.0035466933307710946
+    ]
+  },
+  "failure": "right_preshape step 0: ('Link7_R', 'table', 0.0035466933307710946)",
+  "checks": 21,
+  "executed_checks": 141,
+  "original_s": 2.4831081380252726,
+  "parallel_s": 6.191058479016647,
+  "predicate_results": [
+    {
+      "index": 0,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": true,
+      "failure_pair": null
+    },
+    {
+      "index": 1,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": true,
+      "failure_pair": null
+    },
+    {
+      "index": 2,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": true,
+      "failure_pair": null
+    },
+    {
+      "index": 3,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": true,
+      "failure_pair": null
+    },
+    {
+      "index": 4,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": true,
+      "failure_pair": null
+    },
+    {
+      "index": 5,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": true,
+      "failure_pair": null
+    },
+    {
+      "index": 6,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": true,
+      "failure_pair": null
+    },
+    {
+      "index": 7,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": true,
+      "failure_pair": null
+    },
+    {
+      "index": 8,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": true,
+      "failure_pair": null
+    },
+    {
+      "index": 9,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": true,
+      "failure_pair": null
+    },
+    {
+      "index": 10,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": true,
+      "failure_pair": null
+    },
+    {
+      "index": 11,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": true,
+      "failure_pair": null
+    },
+    {
+      "index": 12,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": true,
+      "failure_pair": null
+    },
+    {
+      "index": 13,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": true,
+      "failure_pair": null
+    },
+    {
+      "index": 14,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": true,
+      "failure_pair": null
+    },
+    {
+      "index": 15,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": true,
+      "failure_pair": null
+    },
+    {
+      "index": 16,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": true,
+      "failure_pair": null
+    },
+    {
+      "index": 17,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": true,
+      "failure_pair": null
+    },
+    {
+      "index": 18,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": true,
+      "failure_pair": null
+    },
+    {
+      "index": 19,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": true,
+      "failure_pair": null
+    },
+    {
+      "index": 20,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        0.0035466933307710946
+      ]
+    },
+    {
+      "index": 21,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        0.0026293311209337755
+      ]
+    },
+    {
+      "index": 22,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        0.0017601069172471506
+      ]
+    },
+    {
+      "index": 23,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        0.0009391065665255716
+      ]
+    },
+    {
+      "index": 24,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        0.00016191832914574933
+      ]
+    },
+    {
+      "index": 25,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.0005682545845204778
+      ]
+    },
+    {
+      "index": 26,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.0012561625229320916
+      ]
+    },
+    {
+      "index": 27,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.0019016621439947312
+      ]
+    },
+    {
+      "index": 28,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.0025089775694654426
+      ]
+    },
+    {
+      "index": 29,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.0031225999915049374
+      ]
+    },
+    {
+      "index": 30,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.00372418281554987
+      ]
+    },
+    {
+      "index": 31,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.004300195741660073
+      ]
+    },
+    {
+      "index": 32,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.00485636025235936
+      ]
+    },
+    {
+      "index": 33,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.005391157726698792
+      ]
+    },
+    {
+      "index": 34,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.005897621020338695
+      ]
+    },
+    {
+      "index": 35,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.006410680965443449
+      ]
+    },
+    {
+      "index": 36,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.006908351585490302
+      ]
+    },
+    {
+      "index": 37,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.00736671339210937
+      ]
+    },
+    {
+      "index": 38,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.0077814154935955115
+      ]
+    },
+    {
+      "index": 39,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.008151335812743632
+      ]
+    },
+    {
+      "index": 40,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.008474397660970134
+      ]
+    },
+    {
+      "index": 41,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.008751687422448862
+      ]
+    },
+    {
+      "index": 42,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.008979715159161294
+      ]
+    },
+    {
+      "index": 43,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.00915859543671188
+      ]
+    },
+    {
+      "index": 44,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.00929559508810135
+      ]
+    },
+    {
+      "index": 45,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.009383512587558984
+      ]
+    },
+    {
+      "index": 46,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.0094221056616266
+      ]
+    },
+    {
+      "index": 47,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.009411370498752958
+      ]
+    },
+    {
+      "index": 48,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.00935130815917029
+      ]
+    },
+    {
+      "index": 49,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.009241924574790006
+      ]
+    },
+    {
+      "index": 50,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.009083230548615151
+      ]
+    },
+    {
+      "index": 51,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.00887552075095499
+      ]
+    },
+    {
+      "index": 52,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.00862092038456408
+      ]
+    },
+    {
+      "index": 53,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.008665440952768555
+      ]
+    },
+    {
+      "index": 54,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.009000415573210907
+      ]
+    },
+    {
+      "index": 55,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.009286124795953532
+      ]
+    },
+    {
+      "index": 56,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.009522653204465215
+      ]
+    },
+    {
+      "index": 57,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link7_R",
+        "table",
+        -0.0097098434460543
+      ]
+    },
+    {
+      "index": 58,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        0.0021918917748130155
+      ]
+    },
+    {
+      "index": 59,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        0.0004132867319494479
+      ]
+    },
+    {
+      "index": 60,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.0013499915834794401
+      ]
+    },
+    {
+      "index": 61,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.003097769025578588
+      ]
+    },
+    {
+      "index": 62,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.0048298729793596964
+      ]
+    },
+    {
+      "index": 63,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.006546132377788054
+      ]
+    },
+    {
+      "index": 64,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.008246377718677776
+      ]
+    },
+    {
+      "index": 65,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.00993044108143272
+      ]
+    },
+    {
+      "index": 66,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.01159815614363014
+      ]
+    },
+    {
+      "index": 67,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.013249358197447873
+      ]
+    },
+    {
+      "index": 68,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.014883884165930457
+      ]
+    },
+    {
+      "index": 69,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.016501572619095725
+      ]
+    },
+    {
+      "index": 70,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.018102263789877553
+      ]
+    },
+    {
+      "index": 71,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.019685799589905344
+      ]
+    },
+    {
+      "index": 72,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.0212520236251168
+      ]
+    },
+    {
+      "index": 73,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.022800781211203436
+      ]
+    },
+    {
+      "index": 74,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.024308923430301888
+      ]
+    },
+    {
+      "index": 75,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.02554861286553442
+      ]
+    },
+    {
+      "index": 76,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.026643540162809842
+      ]
+    },
+    {
+      "index": 77,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.02751730884562431
+      ]
+    },
+    {
+      "index": 78,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.028374669991183432
+      ]
+    },
+    {
+      "index": 79,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.02921777048396726
+      ]
+    },
+    {
+      "index": 80,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.0300465270572062
+      ]
+    },
+    {
+      "index": 81,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.030709192422037623
+      ]
+    },
+    {
+      "index": 82,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.031093238967883796
+      ]
+    },
+    {
+      "index": 83,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.031191153403992394
+      ]
+    },
+    {
+      "index": 84,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.03114887417782536
+      ]
+    },
+    {
+      "index": 85,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.031027285908876323
+      ]
+    },
+    {
+      "index": 86,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.03089781251899118
+      ]
+    },
+    {
+      "index": 87,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.03076046679530639
+      ]
+    },
+    {
+      "index": 88,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.030615262302435747
+      ]
+    },
+    {
+      "index": 89,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.030462213381147712
+      ]
+    },
+    {
+      "index": 90,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.030301335146947078
+      ]
+    },
+    {
+      "index": 91,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.030132621330116405
+      ]
+    },
+    {
+      "index": 92,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.029957297493168555
+      ]
+    },
+    {
+      "index": 93,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.029775467933843114
+      ]
+    },
+    {
+      "index": 94,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.029585547428696124
+      ]
+    },
+    {
+      "index": 95,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.029387918796233536
+      ]
+    },
+    {
+      "index": 96,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.02918260155476643
+      ]
+    },
+    {
+      "index": 97,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.028969615981952912
+      ]
+    },
+    {
+      "index": 98,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.028748983112795057
+      ]
+    },
+    {
+      "index": 99,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.02852072473756201
+      ]
+    },
+    {
+      "index": 100,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.028284863399636373
+      ]
+    },
+    {
+      "index": 101,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.02804142239329016
+      ]
+    },
+    {
+      "index": 102,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.027790425761382354
+      ]
+    },
+    {
+      "index": 103,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.027531898292984636
+      ]
+    },
+    {
+      "index": 104,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.027265865520933685
+      ]
+    },
+    {
+      "index": 105,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.02699235371930958
+      ]
+    },
+    {
+      "index": 106,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.026711389900840043
+      ]
+    },
+    {
+      "index": 107,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.026423001814233404
+      ]
+    },
+    {
+      "index": 108,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.02612721794143763
+      ]
+    },
+    {
+      "index": 109,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.025824067494827685
+      ]
+    },
+    {
+      "index": 110,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.025513580414320114
+      ]
+    },
+    {
+      "index": 111,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.0251957873644163
+      ]
+    },
+    {
+      "index": 112,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.024870719731174107
+      ]
+    },
+    {
+      "index": 113,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.02453840961910775
+      ]
+    },
+    {
+      "index": 114,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.024198889848017324
+      ]
+    },
+    {
+      "index": 115,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.023852193949747247
+      ]
+    },
+    {
+      "index": 116,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.023498356164875223
+      ]
+    },
+    {
+      "index": 117,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.02313741143932868
+      ]
+    },
+    {
+      "index": 118,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.02276939542093659
+      ]
+    },
+    {
+      "index": 119,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.022394344455905657
+      ]
+    },
+    {
+      "index": 120,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.022012295585232045
+      ]
+    },
+    {
+      "index": 121,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.021623286541043896
+      ]
+    },
+    {
+      "index": 122,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.021227355742873044
+      ]
+    },
+    {
+      "index": 123,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.02082371242069664
+      ]
+    },
+    {
+      "index": 124,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.020414307603649207
+      ]
+    },
+    {
+      "index": 125,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.01998047872843481
+      ]
+    },
+    {
+      "index": 126,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.01945973276804669
+      ]
+    },
+    {
+      "index": 127,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.0139124614510579
+      ]
+    },
+    {
+      "index": 128,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.01240189149981169
+      ]
+    },
+    {
+      "index": 129,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.016853752084143886
+      ]
+    },
+    {
+      "index": 130,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.006721755219011291
+      ]
+    },
+    {
+      "index": 131,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "Link5_R",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh",
+        -0.0046227613887581676
+      ]
+    },
+    {
+      "index": 132,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "right_arm",
+        "soft_limits",
+        0.0
+      ]
+    },
+    {
+      "index": 133,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "right_arm",
+        "soft_limits",
+        0.0
+      ]
+    },
+    {
+      "index": 134,
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "right_arm",
+        "soft_limits",
+        0.0
+      ]
+    },
+    {
+      "index": 135,
+      "phase": "right_route",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "right_arm",
+        "soft_limits",
+        0.0
+      ]
+    },
+    {
+      "index": 136,
+      "phase": "right_approach",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "right_arm",
+        "soft_limits",
+        0.0
+      ]
+    },
+    {
+      "index": 137,
+      "phase": "right_close",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "right_arm",
+        "soft_limits",
+        0.0
+      ]
+    },
+    {
+      "index": 138,
+      "phase": "opposition_hold",
+      "step": 0,
+      "theta_deg": 0.0,
+      "valid": false,
+      "failure_pair": [
+        "right_arm",
+        "soft_limits",
+        0.0
+      ]
+    },
+    {
+      "index": 139,
+      "phase": "opposed_face_turn",
+      "step": 0,
+      "theta_deg": 13.818790052844525,
+      "valid": false,
+      "failure_pair": [
+        "right_arm",
+        "soft_limits",
+        0.0
+      ]
+    },
+    {
+      "index": 140,
+      "phase": "opposed_face_hold",
+      "step": 0,
+      "theta_deg": 13.818790052844525,
+      "valid": false,
+      "failure_pair": [
+        "right_arm",
+        "soft_limits",
+        0.0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "scope": "Isolated candidate design and static/offline USD validation only. No Isaac session was launched by this audit and no task source was changed.",
+  "candidate_status": "Ready for coordinator-scheduled single-process PhysX probe; not ready for task integration.",
+  "probe": {
+    "remote_path": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/cube_articulation_probe.py",
+    "sha256": "436349b136bbd53ce55698cfe2167df212ef4708a97882ed2a8716f9407f5204",
+    "static_compile_passed": true,
+    "runtime_tested": false,
+    "first_run_arguments": "--execute-physics --scenario freefall --steps 48 --output /home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/articulation_freefall_probe_v1",
+    "subsequent_scenarios": ["kick: initial-condition-only velocity 0.05 rad/s, no per-step drive or state write", "floor-contact: actual cube-floor contact events with original cube collision shapes"]
+  },
+  "source_semantics": {
+    "installed_mujoco": "3.12.0",
+    "upstream_requirement": "mujoco>=3.1.0 in pyproject and README; this broad minimum does not establish old-version support for current polynomial syntax",
+    "original_xml_compilation": "Succeeded on installed MuJoCo 3.12.0 without mj_step",
+    "nq_nv_njnt": [86, 66, 26],
+    "dof_damping": "66 entries, each 0.0005",
+    "dof_dampingpoly": "shape [66,2], each [0.0005,0.0005]",
+    "equation": "f(v) = -(a*v + b*v*abs(v) + c*v^3)",
+    "damping_triple_is_not_axes": true,
+    "ported": "linear coefficient a=0.0005 only; b and c omitted",
+    "armature_each_angular_dof": 0.0001,
+    "dry_friction_each_angular_dof": 0.001,
+    "evidence": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/source_mujoco_damping_semantics_audit.json"
+  },
+  "topology": {
+    "root": "/World/Core",
+    "bodies": 27,
+    "tree_joints": 26,
+    "revolute": 6,
+    "spherical": 20,
+    "angular_dofs_expected": 66,
+    "free_base_dofs_additional": 6,
+    "usd_relationships_form_star_tree": true,
+    "root_api_applied_to_core_rigid_body": true,
+    "world_fixed_joint_added": false,
+    "body_paths_changed": false,
+    "sphere_to_D6_conversion_needed": false,
+    "self_collision": "Enabled at articulation; retain original joint collisionEnabled=false between Core and each child. Sibling collision response still requires actual validation.",
+    "core_inertia": "Preserve current USD Core mass/inertia. Do not combine with the separate source-Core-inertia override that previously failed left grasp.",
+    "evidence": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/cube_articulation_topology_audit.json"
+  },
+  "passive_properties": {
+    "schema": "PhysxJointAxisAPI, codeless PhysxSchemaAddition in installed 110.4.4 package",
+    "application": "prim.CanApplyAPI('PhysxJointAxisAPI', axis); prim.ApplyAPI('PhysxJointAxisAPI', axis); registered GetAttribute(...), require IsCustom()==false",
+    "hinge_instance": "angular",
+    "sphere_instances": ["rotX", "rotY", "rotZ"],
+    "armature_USD_and_backend": 0.0001,
+    "staticFrictionEffort_USD_and_backend_Nm": 0.001,
+    "dynamicFrictionEffort_USD_and_backend_Nm": 0.001,
+    "viscousFrictionCoefficient_USD_Nm_s_per_degree": 0.000008726646259971648,
+    "expected_backend_viscous_Nm_s_per_radian": 0.0005,
+    "backend_friction_tensor_order": ["static effort", "dynamic effort", "viscous coefficient"],
+    "legacy_dimensionless_jointFriction_used": false,
+    "DriveAPI_added": false,
+    "actuator_cfg": {},
+    "per_step_cube_write_data_to_sim": "Never call; only passive authored properties and physics stepping.",
+    "schema_authoring_evidence": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/cube_articulation_schema_authoring_audit.json",
+    "schema_authoring_is_not_backend_confirmation": true
+  },
+  "facade_integration_requirements": [
+    "Construct original USD first, then one Articulation rooted at Core. Never construct 27 RigidObjects before adding RootAPI.",
+    "Expose data.default_root_state/root_state_w/root_pos_w with existing project quaternion convention and root link pose plus root COM velocity semantics.",
+    "Keep model, allow_pose_reset, pose_reset_count, reset(), update(dt), states(), and no-op write_data_to_sim() public behavior.",
+    "At episode reset only, write root link pose, root COM velocity and all 66 joint q/qd. Never write non-root world poses independently.",
+    "states() maps original body paths/names to articulation body_link_pose_w plus body_com_vel_w, preserving current link-origin position and COM velocity convention.",
+    "Use actual backend names/paths; Lab3 joint_ordering=None and body_ordering=None preserve backend ordering. Do not assume 26 USD joints equal 66 backend DOFs.",
+    "Expose Core-only body_inertia slice if retaining cube_core_inertia.verify_core_inertia compatibility; do not silently return the whole 27-body tensor.",
+    "Apply threshold-zero PhysxContactReportAPI to all 27 original body prims and preserve current callback actor paths. Validate actual callback events after integration.",
+    "Reject simultaneous source_joint_damping legacy option: that path authors DriveAPI and converts spheres to D6, which would double-count damping and change this candidate topology.",
+    "Keep robot's 56 DOFs, limits, safety/contact gates, scene precision settings and task evidence contracts unchanged. Candidate must repeat actual held-out task gates."
+  ],
+  "runtime_validation_order": [
+    "On single Isaac slot, run default freefall. Require one floating articulation, root Core, original 27 body paths, 66 rotational DOFs and no split tree.",
+    "Read actual tensor view armature, three friction properties, masses, inertias, COMs, joint types, paths and targets. Fail mismatch; never patch in constants after a failed readback.",
+    "Require drive stiffness/damping, targets and actuation force all zero. Preserve Core mass/principal inertia. Save implementation/source/asset hashes.",
+    "Validate mass-center ballistic fall and zero-internal-velocity stability for 48 steps. Save every step; no per-step cube commands.",
+    "Run isolated initial-velocity kick and floor-contact scenarios to observe passive response and actual contact callbacks. Coupled individual DOF speeds need not decay monotonically.",
+    "Verify sibling self-collision response and all spherical axes at larger rotations before promoting the candidate. Small-angle zero-state probe alone does not prove 90-degree face turns.",
+    "Only then build new facade and repeat robot grasp/turn development and independent gates. No task success claim from this probe."
+  ],
+  "primary_sources": [
+    {"url": "https://mujoco.readthedocs.io/en/stable/XMLreference.html#body-joint-damping", "supports": "polynomial damping semantics and armature/frictionloss"},
+    {"url": "https://docs.omniverse.nvidia.com/kit/docs/omni_physics/110.1/dev_guide/joints/physx_joint_schema.html", "supports": "articulation-only per-axis passive properties and degree-based USD units"},
+    {"url": "https://docs.omniverse.nvidia.com/kit/docs/omni_physics/110.0/dev_guide/rigid_bodies_articulations/articulations.html", "supports": "floating-root placement, articulation topology, non-root pose-write limitation"},
+    {"url": "https://nvidia-omniverse.github.io/PhysX/ovphysx/latest/population/PhysxJointAxisAPI.html", "supports": "supplementary modern parser mapping and conversion only; not proof of installed Isaac backend behavior"}
+  ]
+}

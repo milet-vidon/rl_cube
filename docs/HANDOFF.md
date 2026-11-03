@@ -1,3 +1,11 @@
+## 持续训练进行中：v16 与高精度 v3 闭环队列
+
+当前Isaac：teacher_joint_supported_open_v16_20261103，PID704085；日志work/teacher_optimization_20261103/supported_open_v16.log。相对v15保留所有接触支持和物理数值，仅取消旧pacer，同时用逐点等价验证的12CPU并行最终路径检查。随后队列PID742854（phase_gpu_eval_queue_v3_dense.json）评估teacher_phase_expert_gpu_v3_dense_eval_9501；不要同时启动第二个Isaac。
+
+已完成：v15双手十指在保持121帧/转动119帧全部接触、保持4.033秒，但层角0.027°后pacer停滞；v2神经模型举升0.374m后在center搬运落桌，审计确认此前食指/中指本就缺失，不得称原腕部门槛通过。v3 dense改为单基线高精度阶段神经轨迹，20700updates/52.54秒，推理不读取左手示范目标，且晋级居中前必须通过原五指/腕部保持。待真实闭环，尚无成功自由转层模型。
+
+源damping三数已核验为速度多项式系数，不是xyz轴；当前仍仅施加线性.0005，非线性/armature/frictionloss未完整迁移。独立free-base articulation probe仍在审查，尚未运行、不可默认替换环境。源说明与完整结果见GPU_CONTINUOUS_TRAINING_UPDATE.md及PASSIVE_JOINT_DAMPING_UPDATE.md。用户要求持续迭代仍有效，任务未完成。
+
 ## 当前持续训练：GPU v2 已训练，v15 仿真与 v2 闭环队列进行中
 
 用户明确要求有效利用远端资源并持续迭代到可用模型。GPU v1 8900 updates 后闭环失败（851 步自碰、未拿起）；已据增量漂移改为 v2 绝对目标，完成 20000 updates/51.58 秒。v2 checkpoint 已保存，闭环未验收。v14 五指保持 4.033 秒、转层 0.117° 后停滞。

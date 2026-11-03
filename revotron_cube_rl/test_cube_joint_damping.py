@@ -16,6 +16,14 @@ class PassiveJointTests(unittest.TestCase):
         for spec in specs.values():
             # Same torque for a 1 rad/s relative angular velocity.
             self.assertAlmostEqual(spec['usd_damping_Nm_per_deg_s']*180/math.pi,.0005)
+    def test_polynomial_coefficients_are_not_xyz_axes(self):
+        with tempfile.TemporaryDirectory() as d:
+            path=Path(d)/'polynomial.xml';path.write_text(SOURCE.read_text().replace('0.0005 0.0005 0.0005','0.0005 0.001 0.002'))
+            specs=source_joint_parameters(path)['joints']
+            for spec in specs.values():
+                self.assertEqual(spec['source_polynomial_coefficients_abc'],[.0005,.001,.002])
+                self.assertEqual(spec['omitted_quadratic_and_cubic_coefficients'],[.001,.002])
+                self.assertAlmostEqual(spec['usd_damping_Nm_per_deg_s']*180/math.pi,.0005)
     def test_reject_nonpassive_source(self):
         with tempfile.TemporaryDirectory() as d:
             path=Path(d)/'bad.xml';path.write_text(SOURCE.read_text().replace('0.0005 0.0005 0.0005','-0.0005 -0.0005 -0.0005'))
