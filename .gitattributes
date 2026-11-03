@@ -170,3 +170,7 @@ revotron_cube_rl/left_index_support.py text eol=lf
 revotron_cube_rl/test_left_index_support.py text eol=lf
 revotron_cube_rl/turn_feedback_frame.py text eol=lf
 revotron_cube_rl/test_turn_feedback_frame.py text eol=lf
+
+# Preserve the exact bytes covered by the standalone index-envelope audit.
+revotron_cube_rl/left_index_support.py -text -whitespace
+revotron_cube_rl/test_left_index_support.py -text -whitespace
