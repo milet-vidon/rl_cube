@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "minimum_observed_m": 0.04821456047880034,
+  "closest_pair": [
+    733,
+    "Link2_L",
+    "Base_L"
+  ],
+  "checks": 343175,
+  "sampling_stride_control_steps": 5,
+  "scope": "left_arm_new_adjustment_vs_body_right_arm_and_nonadjacent_left_arm",
+  "not_a_physics_or_contact_certificate": true
+}

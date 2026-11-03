@@ -1,0 +1,13 @@
+{
+  "source": "wrist_demo.mp4",
+  "output": "wrist_change_clip.mp4",
+  "source_sha256": "5779bae4b0665689dc87b9087235e8884feceb4d4f2a90841138fb7813caa0e0",
+  "output_sha256": "f468321564d8c7082dd50b89543796b891c78ea4137c5e5ad5e31d0fdcd1d4fe",
+  "start_s": 40,
+  "duration_s": 12.4,
+  "images_synthesized": false,
+  "used_for_acceptance": false,
+  "source_run": "runs/wrist_direction_dev_v1_20261103",
+  "seed": 9501,
+  "split": "development"
+}

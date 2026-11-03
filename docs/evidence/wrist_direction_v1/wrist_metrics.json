@@ -1,0 +1,140 @@
+[
+  {
+    "seed": 9501,
+    "split": "development",
+    "J6_before_deg": -17.94892776137686,
+    "J6_after_deg": 12.114908875205778,
+    "bend_before_deg": 26.634469780716284,
+    "bend_after_deg": -15.321102482854803,
+    "wrist_inside_elbow_cm": 10.240909457206726,
+    "hold_s": 3.033333333333333,
+    "palm_rotation_delta_deg": 0.14152203149462006,
+    "palm_displacement_m": [
+      -0.005860116151376993,
+      0.0967931879374355,
+      0.13022974042264712
+    ],
+    "max_lift_cm": 36.88252534866333,
+    "self_impulse_Ns": 0,
+    "table_impulse_Ns": 0.0,
+    "soft_limit_hit_steps": 0,
+    "hard_limit_hit_steps": 0,
+    "drop": false,
+    "tilt_error_deg": 0.38545557750650666
+  },
+  {
+    "seed": 9701,
+    "split": "independent",
+    "J6_before_deg": -15.495279632245454,
+    "J6_after_deg": 12.126531295852201,
+    "bend_before_deg": 21.766622806731345,
+    "bend_after_deg": -14.381846694109676,
+    "wrist_inside_elbow_cm": 8.828654885292053,
+    "hold_s": 3.033333333333333,
+    "palm_rotation_delta_deg": 0.12107338637685763,
+    "palm_displacement_m": [
+      -0.005761670584821577,
+      0.08586858396443325,
+      0.12374615395551558
+    ],
+    "max_lift_cm": 36.21641960144043,
+    "self_impulse_Ns": 0,
+    "table_impulse_Ns": 0.0,
+    "soft_limit_hit_steps": 0,
+    "hard_limit_hit_steps": 0,
+    "drop": false,
+    "tilt_error_deg": 0.7652887868102846
+  },
+  {
+    "seed": 9702,
+    "split": "independent",
+    "J6_before_deg": -8.18615759763141,
+    "J6_after_deg": 12.135781079535692,
+    "bend_before_deg": 12.791540624822273,
+    "bend_after_deg": -15.3697595237891,
+    "wrist_inside_elbow_cm": 9.995725750923157,
+    "hold_s": 3.033333333333333,
+    "palm_rotation_delta_deg": 0.09710462241493295,
+    "palm_displacement_m": [
+      -0.005123976937423724,
+      0.07135869133517553,
+      0.08428866555563608
+    ],
+    "max_lift_cm": 32.20711317062378,
+    "self_impulse_Ns": 0,
+    "table_impulse_Ns": 0.0,
+    "soft_limit_hit_steps": 0,
+    "hard_limit_hit_steps": 0,
+    "drop": false,
+    "tilt_error_deg": 0.8774961415882079
+  },
+  {
+    "seed": 9703,
+    "split": "independent",
+    "J6_before_deg": -10.76888008037678,
+    "J6_after_deg": 12.137262376811938,
+    "bend_before_deg": 15.917618685129973,
+    "bend_after_deg": -14.807163715148596,
+    "wrist_inside_elbow_cm": 9.331169724464417,
+    "hold_s": 3.033333333333333,
+    "palm_rotation_delta_deg": 0.10568220038908198,
+    "palm_displacement_m": [
+      -0.005449427297303189,
+      0.0763664767130306,
+      0.09867293547210032
+    ],
+    "max_lift_cm": 33.682983779907225,
+    "self_impulse_Ns": 0,
+    "table_impulse_Ns": 0.0,
+    "soft_limit_hit_steps": 0,
+    "hard_limit_hit_steps": 0,
+    "drop": false,
+    "tilt_error_deg": 0.48532496435285766
+  },
+  {
+    "seed": 9704,
+    "split": "independent",
+    "J6_before_deg": -25.454171847818653,
+    "J6_after_deg": 12.10263417149362,
+    "bend_before_deg": 34.390749321298706,
+    "bend_after_deg": -14.217265518335193,
+    "wrist_inside_elbow_cm": 9.119367599487305,
+    "hold_s": 3.033333333333333,
+    "palm_rotation_delta_deg": 0.18422166194022746,
+    "palm_displacement_m": [
+      -0.01192901613573183,
+      0.10566482615787776,
+      0.1707218113715172
+    ],
+    "max_lift_cm": 40.53409662246704,
+    "self_impulse_Ns": 0,
+    "table_impulse_Ns": 0.0,
+    "soft_limit_hit_steps": 0,
+    "hard_limit_hit_steps": 0,
+    "drop": false,
+    "tilt_error_deg": 0.38046298598490547
+  },
+  {
+    "seed": 9705,
+    "split": "independent",
+    "J6_before_deg": -8.351756387832015,
+    "J6_after_deg": 12.138251046694297,
+    "bend_before_deg": 13.001785712560272,
+    "bend_after_deg": -15.284323849553767,
+    "wrist_inside_elbow_cm": 9.56476628780365,
+    "hold_s": 3.033333333333333,
+    "palm_rotation_delta_deg": 0.09079854984598491,
+    "palm_displacement_m": [
+      -0.00039605345113802315,
+      0.07015550032226392,
+      0.08914078745319975
+    ],
+    "max_lift_cm": 32.895689868927,
+    "self_impulse_Ns": 0,
+    "table_impulse_Ns": 0.0,
+    "soft_limit_hit_steps": 0,
+    "hard_limit_hit_steps": 0,
+    "drop": false,
+    "tilt_error_deg": 0.3943569187056676
+  }
+]

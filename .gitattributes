@@ -36,3 +36,8 @@ docs/evidence/issues_123/*.mp4 filter=lfs diff=lfs merge=lfs -text
 # Preserve the USD writer's canonical byte representation and asset hash.
 revotron_revo3/source/revotron_system/usd/revotron_bimanual_revo3_wrist_mesh_v1.usda whitespace=-blank-at-eof
 revotron_cube_rl/runs/safe_handover_*/rejected_or_checked_right_plan_*.json filter=lfs diff=lfs merge=lfs -text
+
+# Measured reversed-wrist teacher evidence, frozen 2026-11-03.
+revotron_cube_rl/runs/wrist_direction_*/trajectory_*.json filter=lfs diff=lfs merge=lfs -text
+revotron_cube_rl/runs/wrist_direction_*/tilt_plan_*.json filter=lfs diff=lfs merge=lfs -text
+docs/evidence/wrist_direction_v1/*.mp4 filter=lfs diff=lfs merge=lfs -text

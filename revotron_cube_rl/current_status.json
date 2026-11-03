@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T20:08:01.553514+08:00",
+  "updated_at": "2026-11-03T14:35:55.622282+08:00",
   "observation_version": 3,
   "actions": 56,
   "traditional_visual": {
@@ -1746,5 +1746,33 @@
     "neural_policy_trained": false,
     "certificate": "elbow_out_gate_certificate.json",
     "report": "../docs/ISSUES_123_UPDATE.md"
+  },
+  "latest_wrist_direction_correction_20261103": {
+    "updated_at": "2026-11-03T14:35:55.622282+08:00",
+    "user_clarification": "手腕弯折换到另一侧，掌心仍朝右手",
+    "axis": "J6 side bend; J7 flexion unchanged",
+    "default_entry": "wrist_direction_experiment.py",
+    "certificate": "wrist_direction_gate_certificate.json",
+    "protocol": "wrist_direction_protocol_v1.json",
+    "development_accepted": 1,
+    "development_total": 1,
+    "independent_accepted": 5,
+    "independent_total": 5,
+    "independent_seeds": [
+      9701,
+      9702,
+      9703,
+      9704,
+      9705
+    ],
+    "previous_elbow_cohort_reused": false,
+    "elbow_outward_preserved": true,
+    "palm_orientation_preserved": true,
+    "right_regrasp_validated": false,
+    "neural_policy_trained": false,
+    "layer_turn_validated": false,
+    "real_robot_tested": false,
+    "report": "../docs/WRIST_DIRECTION_UPDATE.md",
+    "next_step": "Replan right receiving path for raised and left-shifted cube; issue #2 remains unvalidated"
   }
 }

@@ -120,6 +120,91 @@
     "sha256": "996aae985e918e2397e54fc7ecff204c06a1aeb390f386868b6e4eae065a8d36"
   },
   {
+    "path": "docs/evidence/wrist_direction_v1/clip_manifest.json",
+    "bytes": 443,
+    "sha256": "b496d973602574ab6c287b28764928bba51b2708df97b760c2776dfdebb2440c"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/development_result.json",
+    "bytes": 4655,
+    "sha256": "a67140b1e9faf013e25029c2a6a365a440fa121ac2e429f2b071874cf4fdf8f9"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/geometry_preflight.json",
+    "bytes": 314,
+    "sha256": "785170a4dbe640e9479d426a54d8158b9a25df92d1c642d1263d92b63eb5de0e"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/geometry_preflight.py",
+    "bytes": 1806,
+    "sha256": "6448435a92d72433b227ec427f162ac5d49a0b6a9f6d50fa0aa47f54e50ed7bd"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/independent_result.json",
+    "bytes": 23141,
+    "sha256": "96ffa704d86c281c4da5be8472def22891600f1dbb70b45bd58afc6d32d101e5"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/interrupted_batch.log",
+    "bytes": 25579,
+    "sha256": "3ee1bf61bc257ccc57d15bace41075e91cb6d181cf0bd587c78c56f0ec8f5723"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/offline_tests_61.txt",
+    "bytes": 837,
+    "sha256": "6af30155b60d39e8edc324a63a04bb575e86136f45843868ae14136f2f43de5f"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/primary_reaudit.json",
+    "bytes": 33909,
+    "sha256": "bdd0a571c4242e76294bd6257d18192026b0a5198f5ebcfa82790b65fa0cd401"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/protocol.json",
+    "bytes": 3907,
+    "sha256": "7a9d04f76118e45996b5008d00228d5000c53f5eb0f5841dffa9eff0cb16b1ba"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/remaining_batch.log",
+    "bytes": 20880,
+    "sha256": "0b983e8f4ff04ba29dcc54e9620338e6f15b153ff6cc09c2b4b4bfa016d01c91"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/wrist_change_clip.mp4",
+    "bytes": 114628,
+    "sha256": "f468321564d8c7082dd50b89543796b891c78ea4137c5e5ad5e31d0fdcd1d4fe"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/wrist_demo.mp4",
+    "bytes": 5620517,
+    "sha256": "5779bae4b0665689dc87b9087235e8884feceb4d4f2a90841138fb7813caa0e0"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/wrist_direction_gate_certificate.json",
+    "bytes": 33909,
+    "sha256": "bdd0a571c4242e76294bd6257d18192026b0a5198f5ebcfa82790b65fa0cd401"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/wrist_front.png",
+    "bytes": 150232,
+    "sha256": "cb5a668c7f455fe472eb33f1430429ed38de0136ea2b89dfa00329b6986ee9bd"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/wrist_metrics.json",
+    "bytes": 4128,
+    "sha256": "b90b1a9b3ab2ec4528d69904dd0736b1af913a59fe499ef4be5907b4d519a3e4"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/wrist_metrics.png",
+    "bytes": 107445,
+    "sha256": "36d9091b6a15ce3c7f0242ac1f32fcece6df4c7dc7c1ea8a3243b4537c298775"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/wrist_side.png",
+    "bytes": 121591,
+    "sha256": "8cfdb10133c70c346565760302d627d7bd4befdfd6ebeb0d978b2efec8e68210"
+  },
+  {
     "path": "isaac_mujoco_cube/README.txt",
     "bytes": 4253,
     "sha256": "d9551e1c54e933c76d1b7480551bbbc60cfaeb565adfeefbbc28a79ce7d3d492"
@@ -336,8 +421,8 @@
   },
   {
     "path": "revotron_cube_rl/STATUS.txt",
-    "bytes": 17085,
-    "sha256": "6b996e27b8675306537a073f4475dbdf711321ecbb18162c119d03c728f56603"
+    "bytes": 17762,
+    "sha256": "8a8beee612f25db9af99a59d3cb86570f316c435bd55e7e76687f3322d56188d"
   },
   {
     "path": "revotron_cube_rl/TILT_REGRASP.txt",
@@ -436,8 +521,8 @@
   },
   {
     "path": "revotron_cube_rl/current_status.json",
-    "bytes": 52378,
-    "sha256": "9743db34cfa1a4fe20ff364c07ea4cf022eabbf55edfa64d522c176f49cd56d1"
+    "bytes": 53415,
+    "sha256": "d39dc3284cb6c1661a2c3fc8ff2ebe4600147ebd7033391c564a5184981bfd8e"
   },
   {
     "path": "revotron_cube_rl/curriculum.json",
@@ -781,8 +866,8 @@
   },
   {
     "path": "revotron_cube_rl/run_linux.sh",
-    "bytes": 4014,
-    "sha256": "9d6e898da26f70aeb59ecc798c6b30afb83ef5a6e046fe2ff5283f7e107844b9"
+    "bytes": 4386,
+    "sha256": "a1361969976c781a3a0a52a080012157684a6fa2a6e2d98c48f9e5d1f16f97ce"
   },
   {
     "path": "revotron_cube_rl/runs/dynamic_cube_passive_v1/config.json",
@@ -6140,6 +6225,556 @@
     "sha256": "a6a81b2425fab3e68a3396829e761e14602552c0640549a939a1a479fbc3f378"
   },
   {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/asset_contract.json",
+    "bytes": 6432,
+    "sha256": "1b419bb3040a5ba54299b6ef6e2a2549690889ca33057bdd8d8707c50bad345f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/config.json",
+    "bytes": 7670,
+    "sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/elbow_audit.py",
+    "bytes": 1906,
+    "sha256": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/elbow_gate.py",
+    "bytes": 3947,
+    "sha256": "6473a2deec9034d4fa57079fe917d248c40db68f9768001456474bdc8eb6c526"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/elbow_handover.py",
+    "bytes": 4103,
+    "sha256": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/elbow_handover_experiment.py",
+    "bytes": 13870,
+    "sha256": "0c403b1fba0f01c48fc9fc068b28545ec82d5c348a480d4608e2035ddab91cf1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/environment.py",
+    "bytes": 20264,
+    "sha256": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/evidence_paths.py",
+    "bytes": 3539,
+    "sha256": "0339eb9b1149cba69af15aa27d605b3ef172b335932d49c41193360059f434fd"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/experiment.json",
+    "bytes": 3014,
+    "sha256": "d396ee7939c5f1c49fbfe1d749d2fdf9cba031c2246391c17207c4de9fd9cda7"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/final_front_9501.png",
+    "bytes": 150232,
+    "sha256": "cb5a668c7f455fe472eb33f1430429ed38de0136ea2b89dfa00329b6986ee9bd"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/final_side_9501.png",
+    "bytes": 121591,
+    "sha256": "8cfdb10133c70c346565760302d627d7bd4befdfd6ebeb0d978b2efec8e68210"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/finger_contact_audit.py",
+    "bytes": 2054,
+    "sha256": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/isaac_compat.py",
+    "bytes": 3227,
+    "sha256": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/joint_safety.py",
+    "bytes": 4195,
+    "sha256": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/kinematics.py",
+    "bytes": 3543,
+    "sha256": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/opposition_feedback.py",
+    "bytes": 2483,
+    "sha256": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/opposition_grasp_v20.json",
+    "bytes": 6996,
+    "sha256": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/opposition_teacher.py",
+    "bytes": 13679,
+    "sha256": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/palm_contact_audit.py",
+    "bytes": 1379,
+    "sha256": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/palm_handover.py",
+    "bytes": 6505,
+    "sha256": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/palm_handover_audit.py",
+    "bytes": 4553,
+    "sha256": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/palm_handover_experiment.py",
+    "bytes": 12617,
+    "sha256": "74db8145fa76937b33fbfd2a37b41bcd7f3b132af94defad4bbe9379e4377c40"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/portability_migration.json",
+    "bytes": 2624,
+    "sha256": "6f9b6b908966280c0c04ec5b23ae6b042cad01d3c1a612eb2576ad8cb79fef8b"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/proximal_planner.py",
+    "bytes": 3030,
+    "sha256": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/result.json",
+    "bytes": 4655,
+    "sha256": "a67140b1e9faf013e25029c2a6a365a440fa121ac2e429f2b071874cf4fdf8f9"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/runtime_config.json",
+    "bytes": 7944,
+    "sha256": "31691164c56b3f1b57c13f2ad0f441a197d3888183d5a115466c1a9c3317e576"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/self_contact_audit.py",
+    "bytes": 1093,
+    "sha256": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/tilt_audit.py",
+    "bytes": 5068,
+    "sha256": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/tilt_collision_plan.py",
+    "bytes": 7133,
+    "sha256": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/tilt_experiment.py",
+    "bytes": 10878,
+    "sha256": "d345f965ec3f93a1c662eaf736bf9f25f4fb50733fee6784ff5fe9798154081d"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/tilt_plan_9501.json",
+    "bytes": 1113400,
+    "sha256": "408135eae4e45bd84bf731bd2cecebe90a1c7f3906931631c2e987e26c92de08"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/tilt_regrasp.py",
+    "bytes": 21716,
+    "sha256": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/trajectory_9501.json",
+    "bytes": 47684666,
+    "sha256": "69bbbe67c32cec52bd60060374d2157c61edae5cde3ea8e9edbd2df0308ba777"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/wrist_audit.py",
+    "bytes": 1467,
+    "sha256": "e0dcf531d4f9e74cce3293ff2f954486fd1277609a832becdcefbd4b4e36398f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/wrist_direction.py",
+    "bytes": 4361,
+    "sha256": "0aa5858caf39dabbd92af4396370121de30dc673675a5c24f11ca8ff0c0c0ed5"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/wrist_direction_experiment.py",
+    "bytes": 14534,
+    "sha256": "23d3784eeab1d5f560ad603939a30bce5cf2d4d26cb94b83bf9921a4413e4d8e"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/asset_contract.json",
+    "bytes": 6432,
+    "sha256": "1b419bb3040a5ba54299b6ef6e2a2549690889ca33057bdd8d8707c50bad345f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/config.json",
+    "bytes": 7670,
+    "sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/elbow_audit.py",
+    "bytes": 1906,
+    "sha256": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/elbow_gate.py",
+    "bytes": 3947,
+    "sha256": "6473a2deec9034d4fa57079fe917d248c40db68f9768001456474bdc8eb6c526"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/elbow_handover.py",
+    "bytes": 4103,
+    "sha256": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/elbow_handover_experiment.py",
+    "bytes": 13870,
+    "sha256": "0c403b1fba0f01c48fc9fc068b28545ec82d5c348a480d4608e2035ddab91cf1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/environment.py",
+    "bytes": 20264,
+    "sha256": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/evidence_paths.py",
+    "bytes": 3539,
+    "sha256": "0339eb9b1149cba69af15aa27d605b3ef172b335932d49c41193360059f434fd"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/experiment.json",
+    "bytes": 3038,
+    "sha256": "ff1314eb415c8abd4812d3aceec98e6df7f2755ba178870cb35624d94ec63a7c"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/finger_contact_audit.py",
+    "bytes": 2054,
+    "sha256": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/isaac_compat.py",
+    "bytes": 3227,
+    "sha256": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/joint_safety.py",
+    "bytes": 4195,
+    "sha256": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/kinematics.py",
+    "bytes": 3543,
+    "sha256": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/opposition_feedback.py",
+    "bytes": 2483,
+    "sha256": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/opposition_grasp_v20.json",
+    "bytes": 6996,
+    "sha256": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/opposition_teacher.py",
+    "bytes": 13679,
+    "sha256": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/palm_contact_audit.py",
+    "bytes": 1379,
+    "sha256": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/palm_handover.py",
+    "bytes": 6505,
+    "sha256": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/palm_handover_audit.py",
+    "bytes": 4553,
+    "sha256": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/palm_handover_experiment.py",
+    "bytes": 12617,
+    "sha256": "74db8145fa76937b33fbfd2a37b41bcd7f3b132af94defad4bbe9379e4377c40"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/portability_migration.json",
+    "bytes": 2624,
+    "sha256": "6f9b6b908966280c0c04ec5b23ae6b042cad01d3c1a612eb2576ad8cb79fef8b"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/proximal_planner.py",
+    "bytes": 3030,
+    "sha256": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/result.json",
+    "bytes": 9226,
+    "sha256": "dcf7843193d23caa9c8e14c3f8d90b2f5e7b72327042405ed51e131d58d93f10"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/runtime_config.json",
+    "bytes": 7944,
+    "sha256": "31691164c56b3f1b57c13f2ad0f441a197d3888183d5a115466c1a9c3317e576"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/self_contact_audit.py",
+    "bytes": 1093,
+    "sha256": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/tilt_audit.py",
+    "bytes": 5068,
+    "sha256": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/tilt_collision_plan.py",
+    "bytes": 7133,
+    "sha256": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/tilt_experiment.py",
+    "bytes": 10878,
+    "sha256": "d345f965ec3f93a1c662eaf736bf9f25f4fb50733fee6784ff5fe9798154081d"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/tilt_plan_9704.json",
+    "bytes": 809092,
+    "sha256": "672a8c43a96b0b8597729461ad6ca812952dd4e36b32458900d0775f2b31e860"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/tilt_plan_9705.json",
+    "bytes": 1122112,
+    "sha256": "c8031c08313ff8e70bbcd1ae0f4648520edd199571bdb68cfeb733276f10d433"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/tilt_regrasp.py",
+    "bytes": 21716,
+    "sha256": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/trajectory_9704.json",
+    "bytes": 40818245,
+    "sha256": "c6d438f30d4a0149129a2bfa61f62a2700dfdb20457fb46e188f5de1f43f5524"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/trajectory_9705.json",
+    "bytes": 47519363,
+    "sha256": "09d136ced8cf2012a04b215e8dfbd9becdabfac3da4ad7e94fb65f05889b5068"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/wrist_audit.py",
+    "bytes": 1467,
+    "sha256": "e0dcf531d4f9e74cce3293ff2f954486fd1277609a832becdcefbd4b4e36398f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/wrist_direction.py",
+    "bytes": 4361,
+    "sha256": "0aa5858caf39dabbd92af4396370121de30dc673675a5c24f11ca8ff0c0c0ed5"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/wrist_direction_experiment.py",
+    "bytes": 14534,
+    "sha256": "23d3784eeab1d5f560ad603939a30bce5cf2d4d26cb94b83bf9921a4413e4d8e"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/asset_contract.json",
+    "bytes": 6432,
+    "sha256": "1b419bb3040a5ba54299b6ef6e2a2549690889ca33057bdd8d8707c50bad345f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/config.json",
+    "bytes": 7670,
+    "sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/elbow_audit.py",
+    "bytes": 1906,
+    "sha256": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/elbow_gate.py",
+    "bytes": 3947,
+    "sha256": "6473a2deec9034d4fa57079fe917d248c40db68f9768001456474bdc8eb6c526"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/elbow_handover.py",
+    "bytes": 4103,
+    "sha256": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/elbow_handover_experiment.py",
+    "bytes": 13870,
+    "sha256": "0c403b1fba0f01c48fc9fc068b28545ec82d5c348a480d4608e2035ddab91cf1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/environment.py",
+    "bytes": 20264,
+    "sha256": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/evidence_paths.py",
+    "bytes": 3539,
+    "sha256": "0339eb9b1149cba69af15aa27d605b3ef172b335932d49c41193360059f434fd"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/experiment.json",
+    "bytes": 3043,
+    "sha256": "f28d945938679d222cf219f5f12c375e87432710c8d9b156faf0625ad1248f45"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/finger_contact_audit.py",
+    "bytes": 2054,
+    "sha256": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/isaac_compat.py",
+    "bytes": 3227,
+    "sha256": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/joint_safety.py",
+    "bytes": 4195,
+    "sha256": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/kinematics.py",
+    "bytes": 3543,
+    "sha256": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/opposition_feedback.py",
+    "bytes": 2483,
+    "sha256": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/opposition_grasp_v20.json",
+    "bytes": 6996,
+    "sha256": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/opposition_teacher.py",
+    "bytes": 13679,
+    "sha256": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/palm_contact_audit.py",
+    "bytes": 1379,
+    "sha256": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/palm_handover.py",
+    "bytes": 6505,
+    "sha256": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/palm_handover_audit.py",
+    "bytes": 4553,
+    "sha256": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/palm_handover_experiment.py",
+    "bytes": 12617,
+    "sha256": "74db8145fa76937b33fbfd2a37b41bcd7f3b132af94defad4bbe9379e4377c40"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/portability_migration.json",
+    "bytes": 2624,
+    "sha256": "6f9b6b908966280c0c04ec5b23ae6b042cad01d3c1a612eb2576ad8cb79fef8b"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/proximal_planner.py",
+    "bytes": 3030,
+    "sha256": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/result.json",
+    "bytes": 13739,
+    "sha256": "9048d7b36804ff0d9990c061c9594b286f2b4f338d50c77e679bf42e52971cf2"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/runtime_config.json",
+    "bytes": 7944,
+    "sha256": "31691164c56b3f1b57c13f2ad0f441a197d3888183d5a115466c1a9c3317e576"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/self_contact_audit.py",
+    "bytes": 1093,
+    "sha256": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/tilt_audit.py",
+    "bytes": 5068,
+    "sha256": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/tilt_collision_plan.py",
+    "bytes": 7133,
+    "sha256": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/tilt_experiment.py",
+    "bytes": 10878,
+    "sha256": "d345f965ec3f93a1c662eaf736bf9f25f4fb50733fee6784ff5fe9798154081d"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/tilt_plan_9701.json",
+    "bytes": 1404586,
+    "sha256": "b31ddcce3deffe9781e99212cce51d382fe05d30e73dbcc9e5ddf046f4765410"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/tilt_plan_9702.json",
+    "bytes": 1118861,
+    "sha256": "46ae634c9f3bb11219305ff3bb1fd4c9c5c09646f17dc539725900ae4c12baa9"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/tilt_plan_9703.json",
+    "bytes": 995209,
+    "sha256": "31d83bf0c6bb935aeb15ac4c226d5c84fe331a86b83b20889fdecee84a055f1f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/tilt_regrasp.py",
+    "bytes": 21716,
+    "sha256": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/trajectory_9701.json",
+    "bytes": 51982739,
+    "sha256": "9d443b5c5e04e10e6a56781d45d7ac76bb6a51d1f8906e8329229f8bac9f5684"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/trajectory_9702.json",
+    "bytes": 45084897,
+    "sha256": "c31c323862788e2b27f44f1f1d46eb7ce7abb42d7f54772e31a6f2b321d28aa1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/trajectory_9703.json",
+    "bytes": 44840568,
+    "sha256": "5ce2d1049e53fbe72aa78e0cb79c43c7c4c2f41c4d0debac9b7cf4533cc521df"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/wrist_audit.py",
+    "bytes": 1467,
+    "sha256": "e0dcf531d4f9e74cce3293ff2f954486fd1277609a832becdcefbd4b4e36398f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/wrist_direction.py",
+    "bytes": 4361,
+    "sha256": "0aa5858caf39dabbd92af4396370121de30dc673675a5c24f11ca8ff0c0c0ed5"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/wrist_direction_experiment.py",
+    "bytes": 14534,
+    "sha256": "23d3784eeab1d5f560ad603939a30bce5cf2d4d26cb94b83bf9921a4413e4d8e"
+  },
+  {
     "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/asset_contract.json",
     "bytes": 6432,
     "sha256": "1b419bb3040a5ba54299b6ef6e2a2549690889ca33057bdd8d8707c50bad345f"
@@ -6480,6 +7115,11 @@
     "sha256": "25f6154a789b24fcef6ddace361b089ded37f9e1a716a94da94a513282870052"
   },
   {
+    "path": "revotron_cube_rl/test_wrist_audit.py",
+    "bytes": 1429,
+    "sha256": "bf3012d74b2c78baa8017c62e9a927b9ea2c140342aa16896a1edcc1aff2c9b2"
+  },
+  {
     "path": "revotron_cube_rl/tilt_audit.py",
     "bytes": 5068,
     "sha256": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995"
@@ -6590,6 +7230,11 @@
     "sha256": "373bd7e540683b6f4fd673e950982304cf5009e6af4c75d699a28b80ebba0ac7"
   },
   {
+    "path": "revotron_cube_rl/wrist_audit.py",
+    "bytes": 1467,
+    "sha256": "e0dcf531d4f9e74cce3293ff2f954486fd1277609a832becdcefbd4b4e36398f"
+  },
+  {
     "path": "revotron_cube_rl/wrist_collision_manifest.json",
     "bytes": 4903,
     "sha256": "8a0103fd97ef573addca3c2980dddf6eb56cf1d6ccc2b93279037af6fa7a5e7c"
@@ -6603,6 +7248,31 @@
     "path": "revotron_cube_rl/wrist_collision_validation.json",
     "bytes": 526,
     "sha256": "33055444c1662331c207c3b37d7a5ba7d9d2295909dc5b7fff4efba09e0f1194"
+  },
+  {
+    "path": "revotron_cube_rl/wrist_direction.py",
+    "bytes": 4361,
+    "sha256": "0aa5858caf39dabbd92af4396370121de30dc673675a5c24f11ca8ff0c0c0ed5"
+  },
+  {
+    "path": "revotron_cube_rl/wrist_direction_experiment.py",
+    "bytes": 14534,
+    "sha256": "23d3784eeab1d5f560ad603939a30bce5cf2d4d26cb94b83bf9921a4413e4d8e"
+  },
+  {
+    "path": "revotron_cube_rl/wrist_direction_gate_certificate.json",
+    "bytes": 33909,
+    "sha256": "bdd0a571c4242e76294bd6257d18192026b0a5198f5ebcfa82790b65fa0cd401"
+  },
+  {
+    "path": "revotron_cube_rl/wrist_direction_protocol_v1.json",
+    "bytes": 3907,
+    "sha256": "7a9d04f76118e45996b5008d00228d5000c53f5eb0f5841dffa9eff0cb16b1ba"
+  },
+  {
+    "path": "revotron_cube_rl/wrist_gate.py",
+    "bytes": 2020,
+    "sha256": "37f90513eada82e467686e451fd863e2ec64d870fd3bea9b4f32ac4b8ecdeddd"
   },
   {
     "path": "revotron_revo3/README.txt",
