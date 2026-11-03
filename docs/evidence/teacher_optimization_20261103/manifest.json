@@ -62,6 +62,7 @@
     "continued_diagnostics/coverage_selection_v2.json": "6d79ab8965b92c30f537d1db1f22ca006c15ba64da894c1fc63ee7a9627e9bca",
     "continued_diagnostics/bounded_wrist_recovery_audit.json": "79625183726a49590c12aa35fd69e299a217eaa40c7b8b04628b0575560811fe",
     "continued_diagnostics/turn_dynamics_v8.json": "8e0be2b1037dcb7782272aa2381037d0213caf7360aeeee2e012e2fdb49cbfb9",
+    "continued_diagnostics/paced_v13_diagnosis.json": "76b507c3d0137b551794127c7e2e748d33753f0883e8f1c64b28ac80be3182cd",
     "continued_diagnostics/right_traction_after_settled.sh": "cecb00a6b2b75bfdfa699149683362447f66102978e4d45f9ec00ec3f0d82b4e",
     "continued_diagnostics/clearance_preflight_plan_v2.json.gz": "2c8fb967edbef7fedbf0daf3c56250eb2e1fce1f21fde3433897cce21509f01e",
     "continued_diagnostics/followup_v3.py": "f6f4f2f7854c31489eaf1170e7235a15c5b511acf5f137616ac27c6057a05bbd",
@@ -343,6 +344,24 @@
     "teacher_joint_passive_damping_v12_20261103/center_result.json": "ff79d2ade99f5bdc419967d05189624d78be2832b6691d2eaa96167a66dab91c",
     "teacher_joint_passive_damping_v12_20261103/opposition_actuation.json": "374747b610507b25c94aac056ffc1ad6e21b899cd646cf850a705e8c63a6cba5",
     "teacher_joint_passive_damping_v12_20261103/opposition_contacts.jsonl.gz": "1a058f6f7ce28db19ffe1249fb2647986f69d9c4150dc0443b7efff0f8ec10ff",
-    "teacher_joint_passive_damping_v12_20261103/experiment.json": "aff7720c40ee50bbfa2e6f3368fbe6891bb8ffcb2e4181151f87a2c500fc797a"
+    "teacher_joint_passive_damping_v12_20261103/experiment.json": "aff7720c40ee50bbfa2e6f3368fbe6891bb8ffcb2e4181151f87a2c500fc797a",
+    "teacher_joint_paced_passive_v13_20261103/runtime_robot_asset.json": "4f60a3af5d6d4beb81eea9a0d3115068b4472981ec4eb7349d97eca9f988c850",
+    "teacher_joint_paced_passive_v13_20261103/result.json": "a0810a02cfd8f72318ab1b4c919fac61524c6b0254580d6e3ec736330a56d315",
+    "teacher_joint_paced_passive_v13_20261103/planner_diagnostics.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "teacher_joint_paced_passive_v13_20261103/trajectory.json.gz": "c417a64c65fa2f1691c633b541ad04c11c9714011782cb2e54b727646293afe4",
+    "teacher_joint_paced_passive_v13_20261103/solver_verification.json": "6d049b9087c7e51076d1e3a3a5497842cef35ed60b147a799928a34f8c1d0b37",
+    "teacher_joint_paced_passive_v13_20261103/config.json": "d3c6084f638ed96ea299dbf76c386537051d3857c61675ddfc4abd5e9d925ae1",
+    "teacher_joint_paced_passive_v13_20261103/opposition_request.json.gz": "34e0b3a38da8ba831c9aaca2ac276ecf3b753c6863a4015b68ce78a73ca89913",
+    "teacher_joint_paced_passive_v13_20261103/source_snapshot.tar.gz": "779f30f4103b85966b11e52d31fa328bab0bb52a5efc4ce64603b5a1c75ca850",
+    "teacher_joint_paced_passive_v13_20261103/cube_asset.json": "39f521175d6593a587c076ac6dd28d685db1a7185d368ac2a549463d2a0e68c6",
+    "teacher_joint_paced_passive_v13_20261103/opposition_plan.json.gz": "7af638229ecd8cf733092abd290ed50d74458fd43d388c146b4caf5ab0d13ccf",
+    "teacher_joint_paced_passive_v13_20261103/asset_contract.json": "b9af3894457226766c814bd7f8776332517b86f28d046f4a52bd04eb051bc767",
+    "teacher_joint_paced_passive_v13_20261103/artifact_manifest.json": "1141c3ef0dff9bb411db6dbcb72e7a6d818c27c801ca724b95ad5c59d5661c84",
+    "teacher_joint_paced_passive_v13_20261103/center_plan.json.gz": "6e141425b3a1c1f15d69bfbbdbbcdb996215ed13598a1e41ae02c39390436210",
+    "teacher_joint_paced_passive_v13_20261103/passive_joint_verification.json": "3915853498a684ae32ffef680ba857f42a34426704566a3da0601345055d60e9",
+    "teacher_joint_paced_passive_v13_20261103/center_result.json": "ff79d2ade99f5bdc419967d05189624d78be2832b6691d2eaa96167a66dab91c",
+    "teacher_joint_paced_passive_v13_20261103/opposition_actuation.json": "49c70c868caeb8b7449542fca7c47da5ea74b55ded9af8da720d4aa05453cab7",
+    "teacher_joint_paced_passive_v13_20261103/opposition_contacts.jsonl.gz": "56ff11a8e4e082257656ed5b43f3aecd2db6625379d5c540fff4a5c42963142e",
+    "teacher_joint_paced_passive_v13_20261103/experiment.json": "e3a94b7e533847dde495d57c13db03d8ffb53ffd8a12c7f37cca0821a965b026"
   }
 }

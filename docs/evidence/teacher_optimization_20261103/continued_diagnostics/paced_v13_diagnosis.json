@@ -1,0 +1,40 @@
+{
+  "run": "teacher_joint_paced_passive_v13_20261103",
+  "trajectory_sha256": "1533339276c84b22c50f8de279f27d74d049b68b71aa1588f5409e083bdc2389",
+  "phases": {
+    "right_close": {
+      "frames": 151,
+      "left_missing": {
+        "thumb": 0,
+        "index": 0,
+        "middle": 0,
+        "ring": 34,
+        "little": 0
+      },
+      "right_missing": 114,
+      "core_angular_speed_max": 0.218591570854187,
+      "core_angular_speed_violation_frames": 1,
+      "core_linear_speed_violation_frames": 0,
+      "posture_failure_frames": 0,
+      "assembly_failure_frames": 0,
+      "final_face_angle_deg": -0.008432305537330322
+    },
+    "opposition_hold": {
+      "frames": 121,
+      "left_missing": {
+        "thumb": 0,
+        "index": 0,
+        "middle": 0,
+        "ring": 121,
+        "little": 0
+      },
+      "right_missing": 0,
+      "core_angular_speed_max": 0.12779422104358673,
+      "core_angular_speed_violation_frames": 0,
+      "core_linear_speed_violation_frames": 0,
+      "posture_failure_frames": 0,
+      "assembly_failure_frames": 0,
+      "final_face_angle_deg": -0.00414361006688512
+    }
+  }
+}
