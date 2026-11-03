@@ -1,0 +1,11 @@
+{
+  "priority": "physical_cube_rotation_before_further_policy_training_and_vision",
+  "requested_sequence": [
+    "reliable_face_turns_and_cube_reorientation",
+    "train_validated_manipulation_skills",
+    "vision_state_estimation",
+    "formula_solver_and_verified_execution"
+  ],
+  "queued_bc_evaluation_cancelled": true,
+  "active_rotation_run": "teacher_joint_right_traction_v4_20261103"
+}
