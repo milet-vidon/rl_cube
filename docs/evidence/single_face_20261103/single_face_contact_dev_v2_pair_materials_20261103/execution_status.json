@@ -1,0 +1,8 @@
+{
+  "completed": false,
+  "exit_code": 143,
+  "reason": "Process terminated by SIGTERM; origin unknown. No final result or complete trajectory was produced.",
+  "last_logged_control_step": 1080,
+  "eligible_for_success_rate": false,
+  "log_sha256": "f325b134e17a4fed08369c82acc14ce83e649bc867c17104145a728a033894a5"
+}

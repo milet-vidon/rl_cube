@@ -28,7 +28,7 @@ run_isaac() {
 }
 
 if [[ $# -lt 1 ]]; then
-  echo "usage: $0 {check|env-check|smoke|evaluate|train|state|side-policy|opposition-teacher|tilt-teacher|wrist-teacher|elbow-regression|regrasp-development|wrist-check|tilt-replay|elbow-check|evidence-check|dagger|sweep|turn|script.py} [arguments...]" >&2
+  echo "usage: $0 {check|env-check|smoke|evaluate|train|state|side-policy|opposition-teacher|tilt-teacher|wrist-teacher|elbow-regression|regrasp-development|wrist-check|tilt-replay|elbow-check|evidence-check|dagger|sweep|face-turn|turn|script.py} [arguments...]" >&2
   exit 2
 fi
 ENTRY="$1"
@@ -87,7 +87,11 @@ case "$ENTRY" in
   sweep)
     run_isaac sweep_controller.py "$@"
     ;;
+  face-turn)
+    run_isaac single_face_experiment.py --push-degrees 15 --contact-style edge "$@"
+    ;;
   turn)
+    echo "Legacy fixture-backed turn diagnostic; use face-turn for the free-core robot contact experiment." >&2
     run_isaac robot_hand_turn_stage.py "$@"
     ;;
   *.py)

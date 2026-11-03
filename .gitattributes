@@ -41,3 +41,9 @@ revotron_cube_rl/runs/safe_handover_*/rejected_or_checked_right_plan_*.json filt
 revotron_cube_rl/runs/wrist_direction_*/trajectory_*.json filter=lfs diff=lfs merge=lfs -text
 revotron_cube_rl/runs/wrist_direction_*/tilt_plan_*.json filter=lfs diff=lfs merge=lfs -text
 docs/evidence/wrist_direction_v1/*.mp4 filter=lfs diff=lfs merge=lfs -text
+
+# Free-core robot face-contact development: exact compressed evidence.
+docs/evidence/single_face_20261103/**/*.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/single_face_20261103/*.mp4 filter=lfs diff=lfs merge=lfs -text
+docs/evidence/single_face_20261103/**/source_config.json -text whitespace=cr-at-eol
+docs/evidence/single_face_20261103/**/config.json -text whitespace=cr-at-eol
