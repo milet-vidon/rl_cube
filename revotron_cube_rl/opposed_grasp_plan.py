@@ -142,7 +142,7 @@ def plan(request, refine=None):
    for angle in np.linspace(0,request.get('target_deg',15.),16):
     t=np.eye(4);t[:3,:3]=R.from_euler('z',-angle,degrees=True).as_matrix();q=fit_arm(q,cube@t@local);turn.append(np.array([q[n]for n in names]))
    phases.append(('opposed_face_turn',timed(turn,5.,names,k)));phases.append(('opposed_face_hold',np.repeat(turn[-1][None],121,axis=0)))
-   previous=np.array([initial[n]for n in names]);checks=0
+   previous=np.array([initial[n]for n in names]);checks=0;turn_path_angles=[]
    for phase,path in phases:
     for step,point in enumerate(path):
      for u in np.linspace(0,1,max(1,int(np.ceil(np.max(np.abs(point-previous))/.01)))+1)[1:]:
@@ -151,8 +151,9 @@ def plan(request, refine=None):
        p=k.fk_link(scene.q,'right_palm_link');delta=scene.C.T@p[:3,:3]@target[:3,:3].T@scene.C;scene.theta=float(-R.from_matrix(delta).as_rotvec()[2]*180/np.pi)
       checks+=1
       if not scene.valid(np.array([scene.q[n]for n in arm])):raise ValueError(f'{phase} step {step}: {scene.last_pair}')
+     if phase=='opposed_face_turn':turn_path_angles.append(scene.theta)
      previous=point
-   return {'passed':True,'phases':[(p,x.tolist())for p,x in phases],'checks':checks,'contact_anchors':calibration,'right_contact_axis':1,'right_thumb_sign':-1,'hand_style':'thumb_opposed_to_four_fingers','target_face':'nZ','target_deg':request.get('target_deg',15.),'offset_cube':offset,'closure_schedule':closure_schedule,'failures_before_selection':failures,'elapsed_s':time.monotonic()-started,'physics_validated':False}
+   return {'passed':True,'phases':[(p,x.tolist())for p,x in phases],'turn_path_angles_deg':turn_path_angles,'checks':checks,'contact_anchors':calibration,'right_contact_axis':1,'right_thumb_sign':-1,'hand_style':'thumb_opposed_to_four_fingers','target_face':'nZ','target_deg':request.get('target_deg',15.),'offset_cube':offset,'closure_schedule':closure_schedule,'failures_before_selection':failures,'elapsed_s':time.monotonic()-started,'physics_validated':False}
   except ValueError as e:failures.append({'offset':offset,'failure':str(e)});print('REJECT',failures[-1],flush=True)
  return {'passed':False,'failures':failures,'elapsed_s':time.monotonic()-started,'physics_validated':False}
 

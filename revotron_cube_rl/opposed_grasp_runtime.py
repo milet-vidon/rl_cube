@@ -8,6 +8,7 @@ from layer_turn_metrics import measure_layers
 from opposed_grasp_audit import qualified,right_contacts
 from tilt_audit import contact_topology
 from opposed_actuation import configure_right_fingers
+from turn_pacer import TurnPacer
 
 class OppositionContacts(LayerContacts):
  def callback(self,headers,data):
@@ -27,6 +28,12 @@ def execute(env,teacher,fingers,audit,rows,frames,run,args,center,stopped=lambda
  request['torso_colliders']=export_fixed_colliders(env.stage,'/World/Robot')
  print('OPPOSITION_PREFLIGHT_BEGIN',flush=True);planner='opposed_joint_plan.py' if getattr(args,'opposition_planner','baseline')=='joint' else 'opposed_grasp_plan.py';plan=host_plan(planner,request,run,'opposition',420)
  if not plan['passed']:return {'executed':True,'qualified':False,'center':center,'opposition_grasp_passed':False,'failure':'opposition_preflight_rejected','detail':plan}
+ pacer=None
+ if getattr(args,'turn_feedback_pacing',False):
+  angles=plan.get('turn_path_angles_deg',[]);turn_path=next(path for phase,path in plan['phases'] if phase=='opposed_face_turn')
+  if len(angles)!=len(turn_path):return {'executed':True,'qualified':False,'center':center,'opposition_grasp_passed':False,'failure':'turn_pacing_plan_incomplete'}
+  try:pacer=TurnPacer(angles)
+  except ValueError as error:return {'executed':True,'qualified':False,'center':center,'opposition_grasp_passed':False,'failure':'turn_pacing_plan_invalid','detail':str(error)}
  print('OPPOSITION_PREFLIGHT_PASSED',plan['checks'],flush=True)
  actuation=configure_right_fingers(env,getattr(args,'right_finger_stiffness',None))
  (run/'opposition_actuation.json').write_text(json.dumps(actuation,indent=2))
@@ -36,11 +43,18 @@ def execute(env,teacher,fingers,audit,rows,frames,run,args,center,stopped=lambda
   if phase=='opposed_face_turn':
    if hold<90:failure='right_five_finger_hold_gate_not_met';break
    grasp_passed=True;turn_started=True
-  for tick,point in enumerate(path):
+  paced=phase=='opposed_face_turn'and pacer is not None
+  for tick in range(pacer.budget+1 if paced else len(path)):
+   if paced:
+    previous=rows[-1];index,failure=pacer.next_index(previous['layer_measurement']['face_angle_deg'],previous['opposition_audit']['right_contacts']['all_five'])
+    if failure or index is None:break
+   else:index=tick
+   point=path[index]
    fingers.reset_step();audit.reset_step();contacts.points.clear();target=fixed.copy();target[right]=np.array(point)[right];env.step((torch.from_numpy(target).reshape(1,56)-env.targets)/env.scales)
    row=append_row(env,teacher,fingers,audit,rows,run,phase,target);row['right_cubelet_contacts']=list(contacts.points);row['layer_measurement']=measure_layers(row['cubelets'],target_deg=args.push_degrees)
+   if paced:row['turn_pacing']={'path_index':index,'planned_palm_angle_deg':pacer.angles[index],'held_ticks':pacer.held_ticks}
    # append_row journal is generic; preserve complete contact detail in a second durable stream.
-   with (run/'opposition_contacts.jsonl').open('a')as log:log.write(json.dumps({'step':row['step'],'right_cubelet_contacts':row['right_cubelet_contacts'],'layer_measurement':row['layer_measurement']},allow_nan=False)+'\n')
+   with (run/'opposition_contacts.jsonl').open('a')as log:log.write(json.dumps({'step':row['step'],'right_cubelet_contacts':row['right_cubelet_contacts'],'layer_measurement':row['layer_measurement'],'turn_pacing':row.get('turn_pacing')},allow_nan=False)+'\n')
    failure=safety_failure(row)
    if stopped():failure='execution_interrupted'
    primary=contact_topology(row,'left');retained=primary['thumb']and sum(primary[f]for f in ('index','middle','ring','little'))>=3;lost=0 if retained else lost+1
@@ -60,4 +74,4 @@ def execute(env,teacher,fingers,audit,rows,frames,run,args,center,stopped=lambda
   if failure:break
  passed=bool(not failure and grasp_passed and turn_longest>=90)
  if failure is None and not passed:failure='opposed_face_turn_hold_gate_not_met'
- return {'executed':True,'qualified':passed,'center':center,'opposition_grasp_passed':grasp_passed,'opposition_hold_s':longest/30,'turn_started':turn_started,'turn_hold_s':turn_longest/30,'target_face':'nZ','target_degrees':args.push_degrees,'right_finger_actuation':actuation,'failure':failure,'elapsed_s':time.monotonic()-start,'final_layers':rows[-1]['layer_measurement'],'cube_pose_writes_during_push':env.cube.pose_reset_count-reset}
+ return {'executed':True,'qualified':passed,'center':center,'opposition_grasp_passed':grasp_passed,'opposition_hold_s':longest/30,'turn_started':turn_started,'turn_hold_s':turn_longest/30,'target_face':'nZ','target_degrees':args.push_degrees,'right_finger_actuation':actuation,'turn_pacing':pacer.report()if pacer else None,'failure':failure,'elapsed_s':time.monotonic()-start,'final_layers':rows[-1]['layer_measurement'],'cube_pose_writes_during_push':env.cube.pose_reset_count-reset}

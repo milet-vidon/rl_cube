@@ -122,3 +122,6 @@ revotron_cube_rl/test_opposed_cube_clearance.py text eol=lf
 
 revotron_cube_rl/cube_joint_damping.py text eol=lf
 revotron_cube_rl/test_cube_joint_damping.py text eol=lf
+
+revotron_cube_rl/turn_pacer.py text eol=lf
+revotron_cube_rl/test_turn_pacer.py text eol=lf

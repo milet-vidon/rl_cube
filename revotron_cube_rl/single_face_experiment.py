@@ -10,7 +10,7 @@ def stop_handler(signum,frame):
     print('INTERRUPTION_REQUESTED',signum,flush=True)
 signal.signal(signal.SIGTERM,stop_handler)
 ROOT=Path(__file__).resolve().parent
-p=argparse.ArgumentParser();p.add_argument('--name',required=True);p.add_argument('--seed',type=int,default=9501);p.add_argument('--record',action='store_true');p.add_argument('--max-steps',type=int,default=3500);p.add_argument('--friction',default='.9,.8');p.add_argument('--hand-friction',default=None);p.add_argument('--push-degrees',type=float,default=0.);p.add_argument('--contact-style',choices=['face','edge'],default='face');p.add_argument('--controller',choices=['index','opposed'],default='opposed');p.add_argument('--center-only',action='store_true');p.add_argument('--center-style',choices=['j56','legacy'],default='j56');p.add_argument('--split',choices=['development','independent'],default='development');p.add_argument('--opposition-planner',choices=['baseline','joint'],default='baseline');p.add_argument('--ring-inset',type=float,default=0.);p.add_argument('--adaptive-wrist',action='store_true');p.add_argument('--settled-hold',action='store_true');p.add_argument('--right-hand-friction');p.add_argument('--right-finger-stiffness',type=int,choices=[10,20,30]);p.add_argument('--source-core-inertia',action='store_true');p.add_argument('--position-iterations',type=int,choices=[32,64]);p.add_argument('--cube-clearance-refinement',action='store_true');p.add_argument('--matched-internal-friction');p.add_argument('--source-joint-damping',action='store_true');a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--name',required=True);p.add_argument('--seed',type=int,default=9501);p.add_argument('--record',action='store_true');p.add_argument('--max-steps',type=int,default=3500);p.add_argument('--friction',default='.9,.8');p.add_argument('--hand-friction',default=None);p.add_argument('--push-degrees',type=float,default=0.);p.add_argument('--contact-style',choices=['face','edge'],default='face');p.add_argument('--controller',choices=['index','opposed'],default='opposed');p.add_argument('--center-only',action='store_true');p.add_argument('--center-style',choices=['j56','legacy'],default='j56');p.add_argument('--split',choices=['development','independent'],default='development');p.add_argument('--opposition-planner',choices=['baseline','joint'],default='baseline');p.add_argument('--ring-inset',type=float,default=0.);p.add_argument('--adaptive-wrist',action='store_true');p.add_argument('--settled-hold',action='store_true');p.add_argument('--right-hand-friction');p.add_argument('--right-finger-stiffness',type=int,choices=[10,20,30]);p.add_argument('--source-core-inertia',action='store_true');p.add_argument('--position-iterations',type=int,choices=[32,64]);p.add_argument('--cube-clearance-refinement',action='store_true');p.add_argument('--matched-internal-friction');p.add_argument('--source-joint-damping',action='store_true');p.add_argument('--turn-feedback-pacing',action='store_true');a=p.parse_args()
 if a.right_finger_stiffness is not None and (a.controller!='opposed' or a.center_only):p.error('--right-finger-stiffness requires the full opposed controller')
 if a.right_hand_friction and a.hand_friction:p.error('Choose either bilateral or right-only hand friction')
 if a.settled_hold and not a.adaptive_wrist:p.error('--settled-hold requires --adaptive-wrist')
@@ -24,6 +24,7 @@ if a.matched_internal_friction:
     except ValueError as e:p.error(str(e))
     if a.hand_friction or tuple(map(float,a.friction.split(',')))!=(.9,.8):p.error('Matched materials require baseline cube friction and no bilateral hand material')
     if not a.right_hand_friction:p.error('Matched materials require explicit right-only hand friction')
+if a.turn_feedback_pacing and (a.controller!='opposed' or a.center_only or a.push_degrees not in (15.,30.,90.)):p.error('--turn-feedback-pacing requires a full positive opposed turn')
 from evidence_paths import local_path,raw_sha
 from stage_gate import require_staged_gate
 from side_gate import require_side_gate
@@ -51,7 +52,7 @@ if a.controller=='opposed' and not a.center_only and a.opposition_planner=='join
 if a.adaptive_wrist:sources+=['adaptive_wrist_teacher.py','bounded_wrist_recovery.py']
 if a.settled_hold:sources+=['settled_wrist_teacher.py']
 if a.right_hand_friction:sources+=['right_contact_environment.py','right_contact_material.py']
-sources+=['cube_core_inertia.py','solver_precision.py','matched_cube_material.py','right_contact_material.py','cube_joint_damping.py']
+sources+=['cube_core_inertia.py','solver_precision.py','matched_cube_material.py','right_contact_material.py','cube_joint_damping.py','turn_pacer.py']
 sources=list(dict.fromkeys(sources))
 archive_paths={n:('source_config.json'if n=='config.json'else n)for n in sources}
 for n in sources:shutil.copy2(ROOT/n,run/archive_paths[n])
