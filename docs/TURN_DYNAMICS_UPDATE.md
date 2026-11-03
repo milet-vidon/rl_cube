@@ -18,6 +18,8 @@
 
 | matched friction v9 | 内部摩擦 (.4,.3)，匹配外部接触系数，其余同 v8 | 抓取后最终最大层偏移 5.433°，超过 5° 装配门槛 | 1826 步完整回合，前置抓取未验收，未进入右手控制 |
 
+| matched mid v10 | 内部摩擦 (.6,.5)，其余同 v9 | 初次抬升后丢失左手主抓 | 666 步完整回合，未进入右手控制 |
+
 ## 接触与速度诊断
 
 `audit_turn_dynamics.py` 读取完整轨迹，不修改验收逻辑，输出轨迹 SHA256、逐阶段接触比例和速度统计。
@@ -79,4 +81,10 @@ v6 另加 `--source-core-inertia`；精度对照另加 `--position-iterations 64
 
 配对系数计算依据 [PhysX 材料合成规则](https://nvidia-omniverse.github.io/PhysX/physx/5.1.0/_build/physx/latest/struct_px_combine_mode.html)。
 
-基于 v8 的保持抖动和 v9 的装配偏移，另启动 `teacher_joint_matched_mid_v10_20261103`：内部摩擦 (.6,.5)，左右手与桌面的配对系数、64 次位置迭代、右指刚度 20、间隙优化及全部门槛均保持。该回合正在服务器运行，PID 346251，日志 `work/teacher_optimization_20261103/matched_mid_v10.log`。命令在 v9 参数基础上将 `--matched-internal-friction` 改为 `.6,.5`，使用上述唯一新名称。尚未报告成功或生成新的操作策略 checkpoint。
+基于 v8 的保持抖动和 v9 的装配偏移，另启动 `teacher_joint_matched_mid_v10_20261103`：内部摩擦 (.6,.5)，左右手与桌面的配对系数、64 次位置迭代、右指刚度 20、间隙优化及全部门槛均保持。该回合已结束，666 步时 `lost_primary_grasp`，日志 `work/teacher_optimization_20261103/matched_mid_v10.log`。命令在 v9 参数基础上将 `--matched-internal-friction` 改为 `.6,.5`，使用上述唯一新名称。尚未报告成功或生成新的操作策略 checkpoint。
+
+## 最新运行
+
+两种较低内部摩擦均未通过前置验收，恢复 v8 已通过左手拿持的默认内部摩擦 (.9,.8)，另启动 `teacher_joint_soft_fingers_v11_20261103`，仅把右手指部刚度从 20 降至 10；保留右手摩擦 (1.2,1.0)、64 次位置迭代、扫掠间隙优化和原全部门槛。PID 347163，日志 `work/teacher_optimization_20261103/soft_fingers_v11.log`。这是传统控制开发回合；尚未生成可自由转动的神经策略。
+
+已进一步核对源文件为 6 个 hinge、20 个 ball 关节，均继承各轴阻尼 0.0005。普通 USD SphericalJoint 不支持 drive；因此未尝试只写阻尼属性来假装迁移成功。后续需要单独验证可表达被动阻尼的约束模型，保留平移锁定、旋转自由度、连接坐标系及碰撞。纯被动阻尼不能提供目标转动；也不能替代缺失 armature/frictionloss 的完整迁移。参考 [Omni Physics 关节支持](https://docs.omniverse.nvidia.com/kit/docs/omni_physics/107.3/dev_guide/rigid_bodies_articulations/joints.html)，审计笔记已归档。
