@@ -61,3 +61,17 @@ docs/evidence/j56_center_20261103/**/source_config.json -text whitespace=cr-at-e
 docs/evidence/j56_center_20261103/**/config.json -text whitespace=cr-at-eol
 # Runtime logs are preserved verbatim, including vendor trailing spaces.
 docs/evidence/j56_center_20261103/**/*.log -text -whitespace
+
+docs/evidence/teacher_optimization_20261103/**/*.gz filter=lfs diff=lfs merge=lfs -text
+
+docs/evidence/teacher_optimization_20261103/**/config.json -text whitespace=cr-at-eol
+
+docs/evidence/teacher_optimization_20261103/**/asset_contract.json -text
+
+revotron_cube_rl/opposed_grasp_plan.py text eol=lf
+
+revotron_cube_rl/opposed_grasp_runtime.py text eol=lf
+
+revotron_cube_rl/single_face_experiment.py text eol=lf
+
+revotron_cube_rl/opposed_joint_plan.py text eol=lf

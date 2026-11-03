@@ -12,7 +12,7 @@ FINGERS=('thumb','index','middle','ring','little')
 
 class OppositionScene(CollisionScene):
  def __init__(self,request):
-  super().__init__(request['initial'],{},request['cube_position'],request['cube_quaternion'],True)
+  super().__init__(request['initial'],{},request['cube_position'],request['cube_quaternion'],True);self.refinement_options=request.get('refinement_options',{})
   self.fixed=[b for b in self.fixed if b[0]!='cube_route_envelope']+collision_objects(request['torso_colliders']);self.C=R.from_quat(np.array(request['cube_quaternion'])[[1,2,3,0]]).as_matrix();self.center=np.array(request['cube_position'])-[0,0,1.15];self.contact=False;self.theta=0.
  def valid(self,x):
   if not super().valid(x):return False
@@ -69,7 +69,7 @@ def closure_path(scene,opened,end,names,k):
  print('CLOSURE_MPR_REPAIR_PASSED',flush=True);return path,{'method':'collision_aware_MPR_waypoints','maximum_adjustment_rad':.035}
 
 
-def plan(request):
+def plan(request, refine=None):
  started=time.monotonic();initial=request['initial'];names=request['joint_names'];scene=OppositionScene(request);k=scene.k
  cube=np.eye(4);cube[:3,:3]=scene.C;cube[:3,3]=scene.center;mirror=np.diag([1.,-1.,1.,1.]);flip=np.diag([1.,1.,-1.,1.]);roll=np.eye(4);roll[:3,:3]=R.from_euler('z',90,degrees=True).as_matrix()
  lp=np.linalg.inv(cube)@k.fk_link(initial,'left_palm_link');relative=roll@flip@lp@mirror
@@ -114,6 +114,8 @@ def plan(request):
    local=relative.copy();local[:3,3]+=offset;target=cube@local;q=fit_arm(seed,target)
    goals={'thumb':[.013,-.0282,-.023],'index':[.028,.0282,-.026],'middle':[.005,.0282,-.0265],'ring':[-.021,.0282,-.0265],'little':[-.028,.0282,-.0145]}
    for finger in FINGERS:q=fit_finger(q,finger,np.array(goals[finger]))
+   if refine is not None:
+    q=refine(q,scene,calibration,goals,names);target=k.fk_link(q,"right_palm_link");local=np.linalg.inv(cube)@target
    end=q.copy();scene.q=end;scene.contact=True
    if not scene.valid(np.array([end[n]for n in arm])):raise ValueError('Closed grasp collision: '+str(scene.last_pair))
    measured=k.fk(end);check={'q':[end[n]for n in names],'cube_position':request['cube_position'],'measured_hand_frames':{n:t.tolist()for n,t in measured.items()},'measured_elbow':{'shoulder_root_m':measured['Link2_L'][:3,3].tolist(),'elbow_root_m':measured['Link4_L'][:3,3].tolist(),'wrist_root_m':measured['Link7_L'][:3,3].tolist()}}

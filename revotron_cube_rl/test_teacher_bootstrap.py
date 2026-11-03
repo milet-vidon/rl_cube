@@ -10,7 +10,7 @@ class DatasetTests(unittest.TestCase):
                          failure=None,cube_pose_writes_during_control=0,
                          robot_table_impulse_sum_Ns=0,self_contact_impulse_sum_Ns=0)
         self.rows=[dict(q=[float(i)]*56,cube_position=[0.,0.,1.],cube_quaternion_wxyz=[1.,0.,0.,0.],
-                        step=i,nominal_target=[float(i+10)]*56) for i in range(3)]
+                        step=i,nominal_target=[float(i+10)]*56,applied_target=[float(i+20)]*56) for i in range(3)]
         (self.root/'config.json').write_text(json.dumps({'joint_names':names}))
         self.write()
     def tearDown(self):self.tmp.cleanup()
@@ -36,5 +36,8 @@ class DatasetTests(unittest.TestCase):
     def test_reject_nan(self):
         self.rows[1]['nominal_target'][0]=float('nan');self.write()
         with self.assertRaisesRegex(ValueError,'Non-finite'):dataset(self.root)
+    def test_applied_labels_preserve_pre_action_alignment(self):
+        x,y,_,_,_=dataset(self.root,'applied_target')
+        self.assertEqual(x[0,0],0.);self.assertEqual(y[0,0],21.)
 
 if __name__=='__main__':unittest.main()

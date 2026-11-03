@@ -1,0 +1,14 @@
+{
+  "scope": "development_learned_left_recorded_right",
+  "seed": 9901,
+  "steps": 262,
+  "accepted": false,
+  "failure": "robot_safety_gate",
+  "qualified_center_hold_s": 0.0,
+  "elapsed_s": 29.044260131995543,
+  "checkpoint_sha256": "90cb7b7efcc5811eb9ef939da0faf27755df9bec1dcaa944220bf05b28c5ee8a",
+  "source_manifest_sha256": "e8cb8f154d4e1be1f3ff3694d5a4b0ef3a598261ade2f4461a1b4a0e082ffff6",
+  "evaluator_sha256": "06ab269fc5a6b2261729d8d176259704d886173ad2db6dfe36ba0051dd30bc5d",
+  "right_turn_trained": false,
+  "stage_gate_unlocked": false
+}

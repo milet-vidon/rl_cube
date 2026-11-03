@@ -10,7 +10,8 @@ def stop_handler(signum,frame):
     print('INTERRUPTION_REQUESTED',signum,flush=True)
 signal.signal(signal.SIGTERM,stop_handler)
 ROOT=Path(__file__).resolve().parent
-p=argparse.ArgumentParser();p.add_argument('--name',required=True);p.add_argument('--seed',type=int,default=9501);p.add_argument('--record',action='store_true');p.add_argument('--max-steps',type=int,default=3500);p.add_argument('--friction',default='.9,.8');p.add_argument('--hand-friction',default=None);p.add_argument('--push-degrees',type=float,default=0.);p.add_argument('--contact-style',choices=['face','edge'],default='face');p.add_argument('--controller',choices=['index','opposed'],default='opposed');p.add_argument('--center-only',action='store_true');p.add_argument('--center-style',choices=['j56','legacy'],default='j56');p.add_argument('--split',choices=['development','independent'],default='development');a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--name',required=True);p.add_argument('--seed',type=int,default=9501);p.add_argument('--record',action='store_true');p.add_argument('--max-steps',type=int,default=3500);p.add_argument('--friction',default='.9,.8');p.add_argument('--hand-friction',default=None);p.add_argument('--push-degrees',type=float,default=0.);p.add_argument('--contact-style',choices=['face','edge'],default='face');p.add_argument('--controller',choices=['index','opposed'],default='opposed');p.add_argument('--center-only',action='store_true');p.add_argument('--center-style',choices=['j56','legacy'],default='j56');p.add_argument('--split',choices=['development','independent'],default='development');p.add_argument('--opposition-planner',choices=['baseline','joint'],default='baseline');p.add_argument('--ring-inset',type=float,default=0.);a=p.parse_args()
+if a.ring_inset and (a.opposition_planner!='joint' or not 0<=a.ring_inset<=.0015):p.error('--ring-inset requires joint planner and 0..0.0015 m')
 if a.center_only and a.controller!='opposed':p.error('--center-only requires --controller opposed')
 if a.push_degrees not in (0.,15.,30.,90.):p.error('Use 0 for transfer, 15/30 for contact probes, or 90 for one face')
 from evidence_paths import local_path,raw_sha
@@ -36,6 +37,7 @@ if a.controller=='opposed':
     sources+=['centered_transport_plan.py','centered_opposition_runtime.py','torso_collision.py','centered_transport_audit.py']
     if a.center_style=='j56':sources+=['center_j56_plan.py','center_j56_audit.py','center_j56_protocol_v3.json']
     if not a.center_only:sources+=['opposed_grasp_plan.py','opposed_grasp_runtime.py','opposed_grasp_audit.py']
+if a.controller=='opposed' and not a.center_only and a.opposition_planner=='joint':sources+=['opposed_joint_plan.py','opposed_joint_fit.py']
 archive_paths={n:('source_config.json'if n=='config.json'else n)for n in sources}
 for n in sources:shutil.copy2(ROOT/n,run/archive_paths[n])
 write('experiment.json',vars(a)|{'split':a.split,'precondition_certificate_sha256':raw_sha(ROOT/'wrist_direction_gate_certificate.json'),'source_sha256':{n:raw_sha(ROOT/n)for n in sources},'source_archive_paths':archive_paths,'direct_cube_control':False})

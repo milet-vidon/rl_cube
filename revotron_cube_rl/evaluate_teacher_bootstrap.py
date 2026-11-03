@@ -28,7 +28,7 @@ try:
     checkpoint=torch.load(a.checkpoint,map_location='cpu',weights_only=True)
     if checkpoint['metadata']['source_manifest_sha256']!=sha(a.source/'artifact_manifest.json'):
         raise ValueError('Checkpoint/source mismatch')
-    model=network();model.load_state_dict(checkpoint['state_dict']);model.eval()
+    model=network(checkpoint['metadata'].get('bounded',False),checkpoint['metadata'].get('box_bounds'));model.load_state_dict(checkpoint['state_dict']);model.eval()
     rows=json.loads((a.source/'trajectory.json').read_text())
     plan=json.loads((a.source/'center_plan.json').read_text())
     env=DynamicPickupEnv(a.output,friction=(.9,.8),seed=a.seed,vision=False,preview=False,auto_reset=False,arm_damping=8.)

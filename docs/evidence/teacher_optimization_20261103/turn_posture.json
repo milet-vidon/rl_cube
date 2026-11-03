@@ -1,0 +1,14 @@
+{
+  "opposition_hold": {
+    "all_qualified": true,
+    "minimum_right_facing": 0.6979084314906544
+  },
+  "opposed_face_turn": {
+    "all_qualified": true,
+    "minimum_right_facing": 0.6979084301871595
+  },
+  "opposed_face_hold": {
+    "all_qualified": true,
+    "minimum_right_facing": 0.7396095689217146
+  }
+}

@@ -21,9 +21,10 @@ class OppositionContacts(LayerContacts):
 
 def execute(env,teacher,fingers,audit,rows,frames,run,args,center,stopped=lambda:False):
  names=env.cfg['joint_names'];initial=rows[-1];request={'initial':dict(zip(names,initial['q'])),'joint_names':names,'cube_position':initial['cube_position'],'cube_quaternion':initial['cube_quaternion_wxyz'],'left_contacts':initial['finger_contact_points'],'target_deg':args.push_degrees}
+ request['refinement_options']={'ring_inset_m':getattr(args,'ring_inset',0.)}
  from torso_collision import export_fixed_colliders
  request['torso_colliders']=export_fixed_colliders(env.stage,'/World/Robot')
- print('OPPOSITION_PREFLIGHT_BEGIN',flush=True);plan=host_plan('opposed_grasp_plan.py',request,run,'opposition',420)
+ print('OPPOSITION_PREFLIGHT_BEGIN',flush=True);planner='opposed_joint_plan.py' if getattr(args,'opposition_planner','baseline')=='joint' else 'opposed_grasp_plan.py';plan=host_plan(planner,request,run,'opposition',420)
  if not plan['passed']:return {'executed':True,'qualified':False,'center':center,'opposition_grasp_passed':False,'failure':'opposition_preflight_rejected','detail':plan}
  print('OPPOSITION_PREFLIGHT_PASSED',plan['checks'],flush=True)
  fixed=env.targets[0].numpy().copy();right=[i for i,n in enumerate(names)if n.endswith('_R')or n.startswith('right_')];contacts=OppositionContacts();hold=0;longest=0;turn_hold=0;turn_longest=0;grasp_passed=False;turn_started=False;failure=None;lost=0;reset=env.cube.pose_reset_count;start=time.monotonic();core0=np.array(initial['cube_position'])
