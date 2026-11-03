@@ -81,3 +81,22 @@ docs/evidence/teacher_optimization_20261103/joint_plan.json filter=lfs diff=lfs 
 docs/evidence/teacher_optimization_20261103/ring_plan.json filter=lfs diff=lfs merge=lfs -text
 
 docs/evidence/teacher_optimization_20261103/teacher_joint_opposition_v1_20261103/opposition_plan.json filter=lfs diff=lfs merge=lfs -text
+
+revotron_cube_rl/evaluate_teacher_bootstrap.py text eol=lf
+
+revotron_cube_rl/adaptive_wrist_teacher.py text eol=lf
+
+revotron_cube_rl/bounded_wrist_recovery.py text eol=lf
+
+revotron_cube_rl/teacher_evaluation_sources.py text eol=lf
+
+revotron_cube_rl/test_adaptive_wrist.py text eol=lf
+
+revotron_cube_rl/test_teacher_evaluation_sources.py text eol=lf
+
+revotron_cube_rl/settled_wrist_teacher.py text eol=lf
+
+revotron_cube_rl/test_settled_wrist.py text eol=lf
+
+# Evidence manifests cover exact bytes, including source line endings.
+docs/evidence/teacher_optimization_20261103/** -text whitespace=cr-at-eol
