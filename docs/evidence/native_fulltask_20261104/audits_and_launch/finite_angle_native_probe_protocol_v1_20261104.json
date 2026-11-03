@@ -1,0 +1,43 @@
+{
+  "status": "design_and_host_math_ready_runtime_not_executed",
+  "source_sha256": {
+    "finite_cube_pose_math.py": "1527f6c7e29e28e8264e12c65aed5ef2d4c82330a370f709359157094ce73940",
+    "test_finite_cube_pose_math.py": "282a7e8963e065a9b4fed748fe791eae60a2247102005564f0fcfcdff3fc2724",
+    "finite_angle_cube_native_probe.py": "fc2c49a3464228d8ad2c0d8fb96c123ea1776b297c55a9a959fb0289d0faa870"
+  },
+  "dependencies_sha256": {
+    "cube_articulation_probe_v2.py": "bea19566ff4071dd26882f578703995ed7a74856f3218507fe9b3df8bee77881",
+    "passive_cube_articulation.py": "949c3ede71c6ac4cd32b359b08ab110c72c354888d32541136aa2330edce980c"
+  },
+  "protocol": [
+    "fresh ordinary-body baseline process exits before candidate process starts",
+    "candidate preserves original SI source, original material friction, free Core, 27 body paths and native spherical tree",
+    "66 reset-only epsilon FK perturbations infer actual per-axis direction/sign; stale FK and ambiguous axes fail",
+    "one initial face gets coordinated 90 or180 degree scalar coordinates based on calibration",
+    "actual Core-relative SO(3) poses and transformed local center markers must agree; no actor-origin-as-center approximation",
+    "all initial-condition writes are closed before physics stepping",
+    "zero active drive/effort, passive stability and COM freefall checked for24 steps by default"
+  ],
+  "thresholds": {
+    "epsilon_rad": 0.001,
+    "initial_pose_error_deg": 0.05,
+    "initial_center_error_m": 1e-06,
+    "passive_pose_error_deg": 0.25,
+    "passive_center_error_m": 0.0001,
+    "passive_relative_angular_speed_rad_s": 0.05
+  },
+  "center_marker_scope": "measured local COM marker on this source asset symmetric cubie grid, with pose-transform versus native COM cross-check",
+  "default_face": "nZ",
+  "separate_angle_cases_deg": [
+    90,
+    180
+  ],
+  "control_phase_state_writes_allowed": false,
+  "robot_spawned": false,
+  "teacher_or_formula_success_claim": false,
+  "Isaac_started": false,
+  "geometry_only_prior": "cube_finite_angle_geometry_audit_v1_20261104.json",
+  "host_test_plan": "six pure tests cover all six faces90/180, measured negative signs, quaternion double cover, invalid/stale response, duplicate/missing native axes, and marker transforms/permutation",
+  "host_tests_passed": 6,
+  "calibration_failure_evidence": "Each reset-only DOF probe saves native scalar readback and actual relative quaternion before evaluating axis response."
+}

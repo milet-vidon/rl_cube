@@ -232,3 +232,6 @@ revotron_cube_rl/evaluate_state_residual_v5.py text eol=lf
 revotron_cube_rl/test_state_residual_eval_v5.py text eol=lf
 
 docs/evidence/state_feedback_v5_init_failure_20261104/** -text -whitespace
+
+docs/evidence/native_fulltask_20261104/** -text -whitespace
+docs/evidence/native_fulltask_20261104/**/*.gz filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/finite_angle_cube_native_probe.py", line 322, in <module>
+    main()
+  File "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/finite_angle_cube_native_probe.py", line 272, in main
+    if completed.returncode: raise RuntimeError(phase + " process failed")
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: candidate process failed

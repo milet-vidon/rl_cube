@@ -1,0 +1,78 @@
+{
+  "source_path": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/articulation_freefall_probe_v1_20261103/baseline/result.json",
+  "sha256": "0bc715f5f009a9dcf6b90c7d4f5f97dc22043354aebe403aa5a2ad94ed9615c8",
+  "archive_path": "passive_cube_baseline.json",
+  "matching_fingerprint": {
+    "source_sha256": {
+      "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/cube_articulation_probe.py": "bcaab9b5d6af193bbe30f0e52edae4bbd31a583bc80b4f96caa5d7c59997a480",
+      "/home/brainco/rl_cube/github_project/isaac_mujoco_cube/cube_model.usda": "c41baa3cd75db5a497c5878d0e18bb6b3316124e0f1935867de8305b44e4eb11",
+      "/home/brainco/rl_cube/github_project/isaac_mujoco_cube/upstream/mujoco_cube-main/cube_3x3x3.xml": "b7b32a4a8624241817aafcbdba20217b7250fb9c570440af6fbdcf5ec084c023",
+      "/home/brainco/rl_cube/github_project/revotron_cube_rl/dynamic_cube.py": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de",
+      "/home/brainco/rl_cube/github_project/revotron_cube_rl/isaac_compat.py": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825",
+      "/home/brainco/rl_cube/github_project/revotron_cube_rl/runtime_platform.py": "c08829cde5986256dab4f5448edcecbf8932a3100ed7fab7dbdf0ad2f895772f"
+    },
+    "runtime_versions": {
+      "isaacsim": "6.2.0.0",
+      "isaaclab": "3.0.0",
+      "torch": "2.11.0+cu130",
+      "rsl-rl-lib": "5.5.1"
+    },
+    "usd_version": [
+      0,
+      25,
+      11
+    ],
+    "dt": 0.004166666666666667,
+    "device": "cpu",
+    "scene": {
+      "/physicsScene": {
+        "physics:gravityDirection": "(0, 0, -1)",
+        "physics:gravityMagnitude": "9.8100004196167",
+        "physxScene:bounceThreshold": "0.5",
+        "physxScene:broadphaseType": "MBP",
+        "physxScene:collisionSystem": "PCM",
+        "physxScene:disableSleeping": "False",
+        "physxScene:enableCCD": "False",
+        "physxScene:enableEnhancedDeterminism": "False",
+        "physxScene:enableExternalForcesEveryIteration": "True",
+        "physxScene:enableGPUDynamics": "False",
+        "physxScene:enableSceneQuerySupport": "False",
+        "physxScene:enableStabilization": "False",
+        "physxScene:frictionCorrelationDistance": "0.02500000037252903",
+        "physxScene:frictionOffsetThreshold": "0.03999999910593033",
+        "physxScene:frictionType": "patch",
+        "physxScene:gpuCollisionStackSize": "67108864",
+        "physxScene:gpuFoundLostAggregatePairsCapacity": "33554432",
+        "physxScene:gpuFoundLostPairsCapacity": "2097152",
+        "physxScene:gpuHeapCapacity": "67108864",
+        "physxScene:gpuMaxDeformableSurfaceContacts": "1048576",
+        "physxScene:gpuMaxDeformableVolumeContacts": "1048576",
+        "physxScene:gpuMaxNumPartitions": "8",
+        "physxScene:gpuMaxParticleContacts": "1048576",
+        "physxScene:gpuMaxRigidContactCount": "8388608",
+        "physxScene:gpuMaxRigidPatchCount": "163840",
+        "physxScene:gpuMaxSoftBodyContacts": "1048576",
+        "physxScene:gpuTempBufferCapacity": "16777216",
+        "physxScene:gpuTotalAggregatePairsCapacity": "2097152",
+        "physxScene:invertCollisionGroupFilter": "False",
+        "physxScene:launcherType": "isaaclab_physx.app:KitLauncher",
+        "physxScene:maxBiasCoefficient": "inf",
+        "physxScene:maxPositionIterationCount": "64",
+        "physxScene:maxVelocityIterationCount": "255",
+        "physxScene:minPositionIterationCount": "64",
+        "physxScene:minVelocityIterationCount": "4",
+        "physxScene:reportKinematicKinematicPairs": "False",
+        "physxScene:reportKinematicStaticPairs": "False",
+        "physxScene:solveArticulationContactLast": "False",
+        "physxScene:solverType": "TGS",
+        "physxScene:timeStepsPerSecond": "240",
+        "physxScene:updateType": "Synchronous"
+      }
+    },
+    "physics_implementation_sha256": {
+      "/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaacsim/extscache/omni.physics.tensors-110.4.4+110.4.0.lx64.r.cp312.u7f4/omni/physics/tensors/api.py": "f881469dff4723167fa84046472ca923210c02774dda43dfe0b0809f12211f05",
+      "/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaacsim/extscache/omni.physx-110.4.4+110.4.0.lx64.r.cp312.u7f4/omni/physx/bindings/_physx.cpython-312-x86_64-linux-gnu.so": "473a9720d1ed0985872d594058c05b9b4360949465c2833402c9fd53e6860083"
+    },
+    "mass_geometry_input_sha256": "79b1bc6e4ad4ad888e66511098d523c987d76a664d52ba15cd9dd7d1b716924b"
+  }
+}

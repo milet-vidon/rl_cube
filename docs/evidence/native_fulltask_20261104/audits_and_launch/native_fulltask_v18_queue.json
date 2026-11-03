@@ -1,0 +1,31 @@
+{
+  "state": "complete",
+  "updated_unix": 1793725695.5359106,
+  "returncode": 0,
+  "result_status": {
+    "steps": 3017,
+    "failure": "left_grasp_lost_during_opposition",
+    "face_turn_validated": false,
+    "task_episode": {
+      "task_id": "opposed_nZ_15deg",
+      "target_degrees": 15.0,
+      "scope": "single_target_face_turn_development",
+      "terminated": true,
+      "truncated": false,
+      "done": true,
+      "success": false,
+      "reason": "left_grasp_lost_during_opposition",
+      "reward": 0.0,
+      "eligible_for_ppo": false,
+      "task_episodes": 1,
+      "task_successes": 0,
+      "completed_control_steps": 3017,
+      "step_audit_pending": false,
+      "pickup_milestone_step": null,
+      "raw_pickup_success_frames": 0,
+      "raw_pickup_done_frames": 0,
+      "face_turn_validated": false,
+      "six_face_solution_validated": false
+    }
+  }
+}

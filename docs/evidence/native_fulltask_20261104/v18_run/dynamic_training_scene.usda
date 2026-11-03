@@ -1,0 +1,4465 @@
+#usda 1.0
+(
+    endTimeCode = 100
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    startTimeCode = 0
+    subLayers = [
+        @/home/brainco/rl_cube/github_project/isaac_mujoco_cube/cube_model.usda@
+    ]
+    timeCodesPerSecond = 60
+    upAxis = "Z"
+)
+
+def PhysicsScene "physicsScene" (
+    prepend apiSchemas = ["PhysxSceneAPI", "MaterialBindingAPI"]
+)
+{
+    rel material:binding:physics = </physicsScene/defaultMaterial> (
+        bindMaterialAs = "strongerThanDescendants"
+    )
+    vector3f physics:gravityDirection = (0, 0, -1)
+    float physics:gravityMagnitude = 9.81
+    float physxScene:bounceThreshold = 0.5
+    uniform token physxScene:broadphaseType = "MBP"
+    bool physxScene:enableCCD = 0
+    bool physxScene:enableEnhancedDeterminism = 0
+    bool physxScene:enableExternalForcesEveryIteration = 1
+    bool physxScene:enableGPUDynamics = 0
+    bool physxScene:enableSceneQuerySupport = 0
+    bool physxScene:enableStabilization = 0
+    float physxScene:frictionCorrelationDistance = 0.025
+    float physxScene:frictionOffsetThreshold = 0.04
+    uint physxScene:gpuCollisionStackSize = 67108864
+    uint physxScene:gpuFoundLostAggregatePairsCapacity = 33554432
+    uint physxScene:gpuFoundLostPairsCapacity = 2097152
+    uint physxScene:gpuHeapCapacity = 67108864
+    uint physxScene:gpuMaxNumPartitions = 8
+    uint physxScene:gpuMaxParticleContacts = 1048576
+    uint physxScene:gpuMaxRigidContactCount = 8388608
+    uint physxScene:gpuMaxRigidPatchCount = 163840
+    int physxScene:gpuMaxSoftBodyContacts = 1048576
+    uint64 physxScene:gpuTempBufferCapacity = 16777216
+    uint physxScene:gpuTotalAggregatePairsCapacity = 2097152
+    string physxScene:launcherType = "isaaclab_physx.app:KitLauncher"
+    uniform uint physxScene:maxPositionIterationCount = 64
+    uniform uint physxScene:maxVelocityIterationCount = 255
+    uniform uint physxScene:minPositionIterationCount = 64
+    uniform uint physxScene:minVelocityIterationCount = 4
+    bool physxScene:solveArticulationContactLast = 0
+    uniform token physxScene:solverType = "TGS"
+    uint physxScene:timeStepsPerSecond = 240
+
+    def Material "defaultMaterial" (
+        prepend apiSchemas = ["PhysicsMaterialAPI"]
+    )
+    {
+        float physics:dynamicFriction = 0.5
+        float physics:restitution = 0
+        float physics:staticFriction = 0.5
+    }
+}
+
+def "World"
+{
+    def Xform "Robot" (
+        prepend references = @/home/brainco/rl_cube/github_project/revotron_revo3/source/revotron_system/usd/revotron_bimanual_revo3_wrist_mesh_v1.usda@
+    )
+    {
+        quatd xformOp:orient = (1, 0, 0, 0)
+        double3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0, 0, 1.149999976158142)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        over "world" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (1, 0, 0, 0)
+            double3 xformOp:translate = (2.9802322387695312e-8, 9.313225746154785e-10, 1.1920928955078125e-7)
+
+            over "collisions"
+            {
+                over "base_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["PhysxCollisionAPI"]
+                    )
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "waist_pitch_Link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["PhysxCollisionAPI"]
+                    )
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "Base_L"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["PhysxCollisionAPI"]
+                    )
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "Base_R"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["PhysxCollisionAPI"]
+                    )
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "neck_yaw_Link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["PhysxCollisionAPI"]
+                    )
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "neck_pitch_Link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["PhysxCollisionAPI"]
+                    )
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "Head_Oak_Link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["PhysxCollisionAPI"]
+                    )
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "Link1_L" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (-0.5689489723991055, 0.5901437701576085, -0.38952551316897, -0.419877686881092)
+            double3 xformOp:translate = (0.021714266389608383, 0.25000008940696716, 0.24004113674163818)
+
+            over "collisions"
+            {
+                over "Link1_L"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["PhysxCollisionAPI"]
+                    )
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "Link2_L" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.6934650716323467, -0.3303598454459967, 0.4676042484312458, -0.437395511856136)
+            double3 xformOp:translate = (0.02171427011489868, 0.25000011920928955, 0.24004113674163818)
+
+            over "collisions"
+            {
+                over "Link2_L"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["PhysxCollisionAPI"]
+                    )
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "Link3_L" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (-0.2571562868600421, 0.8084482619586366, -0.5291815055115029, 0.01577929304482482)
+            double3 xformOp:translate = (0.10714893043041229, 0.3645404577255249, -0.008857369422912598)
+
+            over "collisions"
+            {
+                over "Link3_L"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["PhysxCollisionAPI"]
+                    )
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "Link4_L" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.7736747751607435, 0.036786810240293226, 0.5314116575714147, 0.3430389527000092)
+            double3 xformOp:translate = (0.1150587871670723, 0.3489930033683777, -0.013297080993652344)
+
+            over "collisions"
+            {
+                over "Link4_L"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["PhysxCollisionAPI"]
+                    )
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "Link5_L" (
+            prepend apiSchemas = ["PhysxContactReportAPI", "PhysicsFilteredPairsAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            prepend rel physics:filteredPairs = </World/Robot/Link7_L>
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.2573032013994019, 0.7403244135491068, -0.40333534688889877, 0.47226626303686103)
+            double3 xformOp:translate = (0.27305102348327637, 0.12000131607055664, -0.15999847650527954)
+
+            over "collisions"
+            {
+                over "Link5_L"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["PhysxCollisionAPI"]
+                    )
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "Link6_L" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (-0.6209295980672768, 0.620935857219892, -0.3382945656361837, 0.3382925986829063)
+            double3 xformOp:translate = (0.27305102348327637, 0.12000130861997604, -0.15999853610992432)
+
+            over "collisions"
+            {
+                over "Link6_L"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["PhysxCollisionAPI"]
+                    )
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "Link7_L" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.7071084621973568, 0.0000019967555999770246, 0.00000437535345554667, 0.707105100155386)
+            double3 xformOp:translate = (0.27305102348327637, 0.12000130861997604, -0.15999847650527954)
+
+            over "collisions"
+            {
+                over "Link7_L"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["PhysxCollisionAPI"]
+                    )
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_hand_base_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_palm_backtrim_v2"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_palm_led_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_palm_rubber_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_palm_touch_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_wrist_camera_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["PhysxCollisionAPI"]
+                    )
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_connector_wrist_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        over "mesh" (
+                            prepend apiSchemas = ["PhysxCollisionAPI"]
+                        )
+                        {
+                            float physxCollision:contactOffset = 0.001
+                            float physxCollision:restOffset = 0
+                        }
+                    }
+                }
+            }
+
+            over "visuals"
+            {
+                over "left_palm_led_link"
+                {
+                    over "Scene"
+                    {
+                        over "Looks"
+                        {
+                            over "screen"
+                            {
+                                over "screen"
+                                {
+                                    asset inputs:diffuse_texture = @/home/brainco/rl_cube/github_project/revotron_revo3/source/revotron_system/meshes/hands/visual/textures/revo3_screen.png@
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        over "left_index_MPR_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.49999553708401684, -0.5000018849926462, 0.5000027194576359, -0.4999998584348147)
+            double3 xformOp:translate = (0.47781264781951904, 0.12729407846927643, -0.1230238676071167)
+
+            over "collisions"
+            {
+                over "left_index_MPR_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "left_index_MCP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.4999955817869101, -0.5000018998940933, 0.5000027343591076, -0.4999997839292355)
+            double3 xformOp:translate = (0.493793249130249, 0.12543602287769318, -0.12214839458465576)
+
+            over "collisions"
+            {
+                over "left_index_MCP_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_index_MCP_rubber_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_index_MCP_touch_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "left_index_PIP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.49999548492889223, -0.5000019520478547, 0.5000027865128567, -0.49999977647838534)
+            double3 xformOp:translate = (0.540713369846344, 0.12521402537822723, -0.1192777156829834)
+
+            over "collisions"
+            {
+                over "left_index_PIP_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_index_PIP_rubber_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_index_PIP_touch_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "left_index_DIP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.4999956078636835, -0.5000019110702115, 0.5000026859305995, -0.49999979510530623)
+            double3 xformOp:translate = (0.5701811909675598, 0.12507332861423492, -0.11747491359710693)
+
+            over "collisions"
+            {
+                over "left_index_DIP_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_index_DIP_rubber_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "left_little_MPR_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.49999563021610094, -0.5000018440149234, 0.5000026784799442, -0.49999984725933844)
+            double3 xformOp:translate = (0.4705166220664978, 0.12702339887619019, -0.19651222229003906)
+
+            over "collisions"
+            {
+                over "left_little_MPR_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "left_little_MCP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.49999566001857815, -0.5000018440149552, 0.5000026784799756, -0.4999998174570477)
+            double3 xformOp:translate = (0.48650261759757996, 0.1252136528491974, -0.19739103317260742)
+
+            over "collisions"
+            {
+                over "left_little_MCP_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_little_MCP_rubber_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_little_MCP_touch_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "left_little_PIP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.4999955557107135, -0.5000018291134455, 0.5000026635784417, -0.49999995156720506)
+            double3 xformOp:translate = (0.5334226489067078, 0.12513351440429688, -0.2002706527709961)
+
+            over "collisions"
+            {
+                over "left_little_PIP_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_little_PIP_rubber_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_little_PIP_touch_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "left_little_DIP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.49999539552314515, -0.5000019222449408, 0.5000027567098931, -0.4999999254895196)
+            double3 xformOp:translate = (0.5628904104232788, 0.1250818967819214, -0.20207911729812622)
+
+            over "collisions"
+            {
+                over "left_little_DIP_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_little_DIP_rubber_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "left_middle_MPR_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.4999955855131928, -0.5000018291134796, 0.5000026635784753, -0.4999999217649182)
+            double3 xformOp:translate = (0.48792845010757446, 0.12794126570224762, -0.14746880531311035)
+
+            over "collisions"
+            {
+                over "left_middle_MPR_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "left_middle_MCP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.4999957047230861, -0.5000018291136121, 0.5000026635786079, -0.4999998025557653)
+            double3 xformOp:translate = (0.5039284229278564, 0.126066192984581, -0.14717769622802734)
+
+            over "collisions"
+            {
+                over "left_middle_MCP_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_middle_MCP_rubber_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_middle_MCP_touch_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "left_middle_PIP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.4999956525687649, -0.5000018365643318, 0.5000025518200533, -0.4999999590180634)
+            double3 xformOp:translate = (0.5509263277053833, 0.12580181658267975, -0.14622247219085693)
+
+            over "collisions"
+            {
+                over "left_middle_PIP_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_middle_PIP_rubber_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_middle_PIP_touch_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "left_middle_DIP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.49999551100746914, -0.5000018738165667, 0.5000027082815375, -0.49999990686342094)
+            double3 xformOp:translate = (0.5804430246353149, 0.12563449144363403, -0.1456226110458374)
+
+            over "collisions"
+            {
+                over "left_middle_DIP_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_middle_DIP_rubber_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "left_ring_MPR_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.49999556316050014, -0.5000018365640674, 0.5000027902383626, -0.4999998100061901)
+            double3 xformOp:translate = (0.48383715748786926, 0.12808860838413239, -0.17245125770568848)
+
+            over "collisions"
+            {
+                over "left_ring_MPR_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "left_ring_MCP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.49999566001805873, -0.5000017844102067, 0.5000028572938047, -0.49999969824765506)
+            double3 xformOp:translate = (0.49984022974967957, 0.12624040246009827, -0.17274320125579834)
+
+            over "collisions"
+            {
+                over "left_ring_MCP_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_ring_MCP_rubber_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_ring_MCP_touch_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "left_ring_PIP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.49999551845745976, -0.500001881267232, 0.5000027753368572, -0.4999998249070946)
+            double3 xformOp:translate = (0.5468384623527527, 0.12605494260787964, -0.17370080947875977)
+
+            over "collisions"
+            {
+                over "left_ring_PIP_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_ring_PIP_rubber_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_ring_PIP_touch_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "left_ring_DIP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.4999955296333698, -0.5000018775418505, 0.5000028312161104, -0.4999997615770872)
+            double3 xformOp:translate = (0.5763553977012634, 0.12593719363212585, -0.17430216073989868)
+
+            over "collisions"
+            {
+                over "left_ring_DIP_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_ring_DIP_rubber_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "left_thumb_CMP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.4999956711949155, -0.5000018402896608, 0.5000026151500312, -0.4999998733364124)
+            double3 xformOp:translate = (0.43202924728393555, 0.11800271272659302, -0.14046406745910645)
+
+            over "collisions"
+            {
+                over "left_thumb_CMP_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "left_thumb_CMR_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.499995682371043, -0.5000018365643247, 0.5000026114246896, -0.49999986961109133)
+            double3 xformOp:translate = (0.4319973886013031, 0.118002749979496, -0.13099992275238037)
+
+            over "collisions"
+            {
+                over "cmr_v4_00"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_01"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_02"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_03"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_04"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_05"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_06"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_07"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_08"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_09"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_10"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_11"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_12"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_13"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_14"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_15"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_16"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_17"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_18"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_19"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_20"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_21"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_22"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_23"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_24"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_25"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_26"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_27"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_28"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_29"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_30"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_31"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "left_thumb_MCP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.4999956935470187, -0.5000018924436018, 0.5000026076993178, -0.4999998062810971)
+            double3 xformOp:translate = (0.43199747800827026, 0.11800278723239899, -0.11899995803833008)
+
+            over "collisions"
+            {
+                over "left_thumb_MCP_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_thumb_MCP_rubber_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_thumb_MCP_touch_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "left_thumb_PIP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.499995633943326, -0.5000019222453166, 0.5000026375009896, -0.4999998062806164)
+            double3 xformOp:translate = (0.4319978654384613, 0.11800292879343033, -0.07639074325561523)
+
+            over "collisions"
+            {
+                over "left_thumb_PIP_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_thumb_PIP_rubber_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_thumb_PIP_touch_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "left_thumb_DIP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.4999957568768441, -0.5000018514658733, 0.5000025071169707, -0.499999884512581)
+            double3 xformOp:translate = (0.43207383155822754, 0.1175084039568901, -0.04439043998718262)
+
+            over "collisions"
+            {
+                over "left_thumb_DIP_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "left_thumb_DIP_rubber_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "Link1_R" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.5687948278407143, 0.5900010940794201, 0.3897418895353238, -0.42008619633138966)
+            double3 xformOp:translate = (0.02171439491212368, -0.2500000298023224, 0.24004089832305908)
+
+            over "collisions"
+            {
+                over "Link1_R"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["PhysxCollisionAPI"]
+                    )
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "Link2_R" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (-0.33058315510804376, 0.6932443624962573, 0.437351979495497, -0.4678143621751468)
+            double3 xformOp:translate = (0.02171439118683338, -0.2500000298023224, 0.24004089832305908)
+
+            over "collisions"
+            {
+                over "Link2_R"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["PhysxCollisionAPI"]
+                    )
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "Link3_R" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.25686527348259375, 0.8087507926477747, 0.5288629040135363, 0.01569762493748331)
+            double3 xformOp:translate = (0.10697653889656067, -0.3644775152206421, -0.008945584297180176)
+
+            over "collisions"
+            {
+                over "Link3_R"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["PhysxCollisionAPI"]
+                    )
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "Link4_R" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.03638667103153063, 0.7734571071032347, -0.3432276567942348, -0.531634168629404)
+            double3 xformOp:translate = (0.11489861458539963, -0.34893450140953064, -0.013379096984863281)
+
+            over "collisions"
+            {
+                over "Link4_R"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["PhysxCollisionAPI"]
+                    )
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "Link5_R" (
+            prepend apiSchemas = ["PhysxContactReportAPI", "PhysicsFilteredPairsAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            prepend rel physics:filteredPairs = </World/Robot/Link7_R>
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (-0.25721419212935026, 0.7403775042323338, 0.4030611562723089, 0.4724655700666195)
+            double3 xformOp:translate = (0.27305084466934204, -0.12000095844268799, -0.15999877452850342)
+
+            over "collisions"
+            {
+                over "Link5_R"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["PhysxCollisionAPI"]
+                    )
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "Link6_R" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.6210440288695306, -0.6210374759875454, -0.3380942901363732, 0.3380961676826617)
+            double3 xformOp:translate = (0.27305084466934204, -0.12000095099210739, -0.15999877452850342)
+
+            over "collisions"
+            {
+                over "Link6_R"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["PhysxCollisionAPI"]
+                    )
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "Link7_R" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.7071048859174692, 0.000004552304744719849, 0.0000018515274859962368, 0.7071086764334682)
+            double3 xformOp:translate = (0.27305084466934204, -0.12000095099210739, -0.15999877452850342)
+
+            over "collisions"
+            {
+                over "Link7_R"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["PhysxCollisionAPI"]
+                    )
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_hand_base_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_palm_backtrim_v2"
+                {
+                    over "World"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_palm_led_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_palm_rubber_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_palm_touch_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_wrist_camera_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["PhysxCollisionAPI"]
+                    )
+                    {
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_connector_wrist_link"
+                {
+                    over "node_STL_BINARY_"
+                    {
+                        over "mesh" (
+                            prepend apiSchemas = ["PhysxCollisionAPI"]
+                        )
+                        {
+                            float physxCollision:contactOffset = 0.001
+                            float physxCollision:restOffset = 0
+                        }
+                    }
+                }
+            }
+
+            over "visuals"
+            {
+                over "right_palm_led_link"
+                {
+                    over "Scene"
+                    {
+                        over "Looks"
+                        {
+                            over "screen"
+                            {
+                                over "screen"
+                                {
+                                    asset inputs:diffuse_texture = @/home/brainco/rl_cube/github_project/revotron_revo3/source/revotron_system/meshes/hands/visual/textures/revo3_screen.png@
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        over "right_index_MPR_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.4999953731695199, 0.5000018998938588, 0.5000027343588732, 0.49999999254525423)
+            double3 xformOp:translate = (0.47781237959861755, -0.127293661236763, -0.1230243444442749)
+
+            over "collisions"
+            {
+                over "right_index_MPR_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "right_index_MCP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.49999534709297494, 0.5000018887177715, 0.5000027231827672, 0.5000000409738524)
+            double3 xformOp:translate = (0.49379298090934753, -0.12543560564517975, -0.12214887142181396)
+
+            over "collisions"
+            {
+                over "right_index_MCP_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_index_MCP_rubber_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_index_MCP_touch_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "right_index_PIP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.49999532474047614, 0.5000018961684077, 0.5000027902380594, 0.4999999888198179)
+            double3 xformOp:translate = (0.5407131314277649, -0.1252135932445526, -0.1192781925201416)
+
+            over "collisions"
+            {
+                over "right_index_PIP_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_index_PIP_rubber_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_index_PIP_touch_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "right_index_DIP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.4999953731693113, 0.500001899893817, 0.5000027939634754, 0.49999993294056866)
+            double3 xformOp:translate = (0.5701809525489807, -0.1250728964805603, -0.11747539043426514)
+
+            over "collisions"
+            {
+                over "right_index_DIP_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_index_DIP_rubber_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "right_little_MPR_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.4999954588515954, 0.5000018514654738, 0.5000026263258619, 0.5000000633261176)
+            double3 xformOp:translate = (0.4705163538455963, -0.12702298164367676, -0.19651252031326294)
+
+            over "collisions"
+            {
+                over "right_little_MPR_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "right_little_MCP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.4999953955221426, 0.5000018328386053, 0.5000026673036075, 0.5000001043039587)
+            double3 xformOp:translate = (0.48650234937667847, -0.12521323561668396, -0.1973913311958313)
+
+            over "collisions"
+            {
+                over "right_little_MCP_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_little_MCP_rubber_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_little_MCP_touch_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "right_little_PIP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.49999545512731475, 0.5000018328387156, 0.5000026076990747, 0.5000001043040688)
+            double3 xformOp:translate = (0.5334223508834839, -0.12513306736946106, -0.20027101039886475)
+
+            over "collisions"
+            {
+                over "right_little_PIP_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_little_PIP_rubber_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_little_PIP_touch_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "right_little_DIP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.4999954327751568, 0.5000017806847716, 0.5000026151497861, 0.5000001713593867)
+            double3 xformOp:translate = (0.5628901124000549, -0.12508144974708557, -0.20207947492599487)
+
+            over "collisions"
+            {
+                over "right_little_DIP_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_little_DIP_rubber_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "right_middle_MPR_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.49999538434566526, 0.5000018961685201, 0.5000027306335286, 0.49999998881993013)
+            double3 xformOp:translate = (0.4879281222820282, -0.12794086337089539, -0.147469162940979)
+
+            over "collisions"
+            {
+                over "right_middle_MPR_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "right_middle_MCP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.4999952576868837, 0.5000019185194083, 0.5000027529843545, 0.5000000707755995)
+            double3 xformOp:translate = (0.5039280652999878, -0.12606577575206757, -0.147178053855896)
+
+            over "collisions"
+            {
+                over "right_middle_MCP_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_middle_MCP_rubber_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_middle_MCP_touch_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "right_middle_PIP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.4999953731695199, 0.5000018998938588, 0.5000027343588732, 0.49999999254525423)
+            double3 xformOp:translate = (0.5509260296821594, -0.12580138444900513, -0.14622294902801514)
+
+            over "collisions"
+            {
+                over "right_middle_PIP_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_middle_PIP_rubber_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_middle_PIP_touch_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "right_middle_DIP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.4999953321922365, 0.5000019334209166, 0.5000027678858873, 0.499999966467771)
+            double3 xformOp:translate = (0.5804427266120911, -0.1256340593099594, -0.1456230878829956)
+
+            over "collisions"
+            {
+                over "right_middle_DIP_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_middle_DIP_rubber_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "right_ring_MPR_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.49999538434566526, 0.5000018961685201, 0.5000027306335286, 0.49999998881993013)
+            double3 xformOp:translate = (0.4838368892669678, -0.12808820605278015, -0.17245155572891235)
+
+            over "collisions"
+            {
+                over "right_ring_MPR_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "right_ring_MCP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.4999953470928328, 0.5000019483223855, 0.5000027231827388, 0.49999998136918133)
+            double3 xformOp:translate = (0.4998399317264557, -0.12623998522758484, -0.172743558883667)
+
+            over "collisions"
+            {
+                over "right_ring_MCP_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_ring_MCP_rubber_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_ring_MCP_touch_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "right_ring_PIP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.4999953843455987, 0.5000018365638633, 0.5000027902381584, 0.49999998881991675)
+            double3 xformOp:translate = (0.5468382239341736, -0.1260545253753662, -0.17370116710662842)
+
+            over "collisions"
+            {
+                over "right_ring_PIP_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_ring_PIP_rubber_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_ring_PIP_touch_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "right_ring_DIP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.49999538807140226, 0.5000018849924285, 0.5000027790620603, 0.49999994784155993)
+            double3 xformOp:translate = (0.5763550996780396, -0.12593676149845123, -0.17430251836776733)
+
+            over "collisions"
+            {
+                over "right_ring_DIP_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_ring_DIP_rubber_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "right_thumb_CMP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.49999538434586505, 0.5000018961685602, 0.500002671028925, 0.5000000484246135)
+            double3 xformOp:translate = (0.43202900886535645, -0.11800232529640198, -0.14046430587768555)
+
+            over "collisions"
+            {
+                over "right_thumb_CMP_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "right_thumb_CMR_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.49999535826917807, 0.5000019445970869, 0.5000026598527924, 0.5000000372485394)
+            double3 xformOp:translate = (0.431997150182724, -0.11800236254930496, -0.13100016117095947)
+
+            over "collisions"
+            {
+                over "cmr_v4_00"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_01"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_02"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_03"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_04"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_05"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_06"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_07"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_08"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_09"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_10"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_11"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_12"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_13"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_14"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_15"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_16"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_17"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_18"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_19"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_20"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_21"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_22"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_23"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_24"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_25"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_26"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_27"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_28"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_29"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_30"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "cmr_v4_31"
+                {
+                    over "World" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "right_thumb_MCP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.4999954215984988, 0.5000018440146504, 0.5000027380843153, 0.4999999962706762)
+            double3 xformOp:translate = (0.43199726939201355, -0.11800241470336914, -0.11900031566619873)
+
+            over "collisions"
+            {
+                over "right_thumb_MCP_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_thumb_MCP_rubber_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_thumb_MCP_touch_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "right_thumb_PIP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.4999952949395597, 0.5000019259701637, 0.5000027604351223, 0.5000000186216872)
+            double3 xformOp:translate = (0.4319976568222046, -0.11800257861614227, -0.07639098167419434)
+
+            over "collisions"
+            {
+                over "right_thumb_PIP_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_thumb_PIP_rubber_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_thumb_PIP_touch_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "right_thumb_DIP_link" (
+            prepend apiSchemas = ["PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            vector3f physics:velocity = (0, 0, 0)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 1
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            quatd xformOp:orient = (0.49999543277470376, 0.5000018998939687, 0.5000026747543393, 0.4999999925453646)
+            double3 xformOp:translate = (0.4320736229419708, -0.11750806123018265, -0.04439067840576172)
+
+            over "collisions"
+            {
+                over "right_thumb_DIP_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+
+                over "right_thumb_DIP_rubber_link"
+                {
+                    over "node_STL_BINARY_" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding:physics = </World/RightHandContactMaterial> (
+                            bindMaterialAs = "strongerThanDescendants"
+                        )
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "root_joint" (
+            prepend apiSchemas = ["NewtonArticulationRootAPI"]
+        )
+        {
+            bool newton:selfCollisionEnabled = 1
+            bool physxArticulation:enabledSelfCollisions = 1
+            int physxArticulation:solverPositionIterationCount = 32
+            int physxArticulation:solverVelocityIterationCount = 4
+        }
+
+        over "joints"
+        {
+            over "Joint1_L"
+            {
+                float state:angular:physics:position = 69.85342
+                float state:angular:physics:velocity = 0
+            }
+
+            over "Joint1_R"
+            {
+                float state:angular:physics:position = 69.89541
+                float state:angular:physics:velocity = 0
+            }
+
+            over "Joint2_L"
+            {
+                float state:angular:physics:position = -67.482346
+                float state:angular:physics:velocity = 0
+            }
+
+            over "Joint2_R"
+            {
+                float state:angular:physics:position = -67.493935
+                float state:angular:physics:velocity = 0
+            }
+
+            over "Joint3_L"
+            {
+                float state:angular:physics:position = -16.534786
+                float state:angular:physics:velocity = 0
+            }
+
+            over "Joint3_R"
+            {
+                float state:angular:physics:position = -16.596453
+                float state:angular:physics:velocity = 0
+            }
+
+            over "Joint4_L"
+            {
+                float state:angular:physics:position = -78.00446
+                float state:angular:physics:velocity = 0
+            }
+
+            over "Joint4_R"
+            {
+                float state:angular:physics:position = -78.00433
+                float state:angular:physics:velocity = 0
+            }
+
+            over "Joint5_L"
+            {
+                float state:angular:physics:position = -28.4863
+                float state:angular:physics:velocity = 0
+            }
+
+            over "Joint5_R"
+            {
+                float state:angular:physics:position = -28.451805
+                float state:angular:physics:velocity = 0
+            }
+
+            over "Joint6_L"
+            {
+                float state:angular:physics:position = -24.930855
+                float state:angular:physics:velocity = 0
+            }
+
+            over "Joint6_R"
+            {
+                float state:angular:physics:position = -24.91286
+                float state:angular:physics:velocity = 0
+            }
+
+            over "Joint7_L"
+            {
+                float state:angular:physics:position = 57.163933
+                float state:angular:physics:velocity = 0
+            }
+
+            over "Joint7_R"
+            {
+                float state:angular:physics:position = 57.127735
+                float state:angular:physics:velocity = 0
+            }
+
+            over "left_index_MPR_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "left_little_MPR_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "left_middle_MPR_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "left_ring_MPR_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "left_thumb_CMP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "right_index_MPR_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "right_little_MPR_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "right_middle_MPR_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "right_ring_MPR_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "right_thumb_CMP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "left_index_MCP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "left_little_MCP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "left_middle_MCP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "left_ring_MCP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "left_thumb_CMR_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "right_index_MCP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "right_little_MCP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "right_middle_MCP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "right_ring_MCP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "right_thumb_CMR_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "left_index_PIP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "left_little_PIP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "left_middle_PIP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "left_ring_PIP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "left_thumb_MCP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "right_index_PIP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "right_little_PIP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "right_middle_PIP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "right_ring_PIP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "right_thumb_MCP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "left_index_DIP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "left_little_DIP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "left_middle_DIP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "left_ring_DIP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "left_thumb_PIP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "right_index_DIP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "right_little_DIP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "right_middle_DIP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "right_ring_DIP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "right_thumb_PIP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "left_thumb_DIP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+
+            over "right_thumb_DIP_joint"
+            {
+                float state:angular:physics:position = 0
+                float state:angular:physics:velocity = 0
+            }
+        }
+    }
+
+    def Xform "Table"
+    {
+        quatd xformOp:orient = (1, 0, 0, 0)
+        double3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0.6000000238418579, 0, 0.8799999952316284)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        def "geometry"
+        {
+            def Cube "mesh" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI", "MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </World/Table/geometry/material> (
+                    bindMaterialAs = "strongerThanDescendants"
+                )
+                rel material:binding:physics = </World/Table/geometry/material> (
+                    bindMaterialAs = "strongerThanDescendants"
+                )
+                float physxCollision:contactOffset = 0.001
+                double size = 0.04
+                quatd xformOp:orient = (1, 0, 0, 0)
+                double3 xformOp:scale = (20, 22.5, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Material "material" (
+                prepend apiSchemas = ["PhysicsMaterialAPI"]
+            )
+            {
+                token outputs:displacement.connect = </World/Table/geometry/material/Shader.outputs:displacement>
+                token outputs:surface.connect = </World/Table/geometry/material/Shader.outputs:surface>
+                float physics:dynamicFriction = 0.7
+                float physics:restitution = 0
+                float physics:staticFriction = 0.8
+
+                def Shader "Shader"
+                {
+                    uniform token info:id = "UsdPreviewSurface"
+                    custom color3f inputs:diffuseColor = (0.32, 0.35, 0.4)
+                    custom color3f inputs:emissiveColor = (0, 0, 0)
+                    float inputs:metallic = 0
+                    float inputs:opacity = 1
+                    float inputs:roughness = 0.5
+                    token outputs:displacement
+                    token outputs:surface
+                }
+            }
+        }
+    }
+
+    def Xform "Ground"
+    {
+        quatd xformOp:orient = (1, 0, 0, 0)
+        double3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0, 0, -0.010999999940395355)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        def "geometry"
+        {
+            def Cube "mesh" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </World/Ground/geometry/material> (
+                    bindMaterialAs = "strongerThanDescendants"
+                )
+                double size = 0.02
+                quatd xformOp:orient = (1, 0, 0, 0)
+                double3 xformOp:scale = (250, 250, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Material "material"
+            {
+                token outputs:displacement.connect = </World/Ground/geometry/material/Shader.outputs:displacement>
+                token outputs:surface.connect = </World/Ground/geometry/material/Shader.outputs:surface>
+
+                def Shader "Shader"
+                {
+                    uniform token info:id = "UsdPreviewSurface"
+                    custom color3f inputs:diffuseColor = (0.17, 0.19, 0.22)
+                    custom color3f inputs:emissiveColor = (0, 0, 0)
+                    float inputs:metallic = 0
+                    float inputs:opacity = 1
+                    float inputs:roughness = 0.5
+                    token outputs:displacement
+                    token outputs:surface
+                }
+            }
+        }
+    }
+
+    over "Physics" (
+        active = false
+    )
+    {
+    }
+
+    over "Core" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysicsArticulationRootAPI", "PhysxArticulationAPI", "PhysxContactReportAPI"]
+    )
+    {
+        vector3f physics:angularVelocity = (0.051682957, -0.02449869, -0.2153109)
+        bool physics:kinematicEnabled = 0
+        vector3f physics:velocity = (0.00067857496, -0.0005025913, 0.00001313535)
+        bool physxArticulation:enabledSelfCollisions = 1
+        int physxArticulation:solverPositionIterationCount = 64
+        int physxArticulation:solverVelocityIterationCount = 4
+        float physxContactReport:threshold = 0
+        bool physxRigidBody:disableGravity = 0
+        quatf xformOp:orient = (0.99981284, 9.844678e-7, 1.5020991e-7, 0.019346027)
+        float3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0.48132839798927307, -0.013830049894750118, 0.9285001754760742)
+        token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    over "Cube"
+    {
+        double3 xformOp:translate = (0.48, 0, 0.93)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+
+        over "pX" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0.051694352, -0.024498248, -0.2153109)
+            vector3f physics:velocity = (0.000681337, -0.00057393766, 0.00002191635)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+            quatf xformOp:orient = (0.99981284, 8.34465e-7, 1.466833e-7, 0.019346025)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.0013283980078995228, -0.013830050826072693, -0.0014998245751485229)
+            token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        over "nX" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0.05169034, -0.024498405, -0.2153109)
+            vector3f physics:velocity = (0.0006758129, -0.00043124496, 0.0000043543496)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+            quatf xformOp:orient = (0.99981284, -3.480184e-7, 1.2442676e-7, 0.019346027)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.0013283980078995228, -0.013830048963427544, -0.0014998245751485229)
+            token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        over "pY" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0.051688146, -0.02463279, -0.2153109)
+            vector3f physics:velocity = (0.0007499213, -0.00049982924, 0.000029946963)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+            quatf xformOp:orient = (0.99981284, 0.0000010119086, -0.0000012679494, 0.019346027)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.0013283980078995228, -0.013830049894750118, -0.0014998245751485229)
+            token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        over "nY" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0.051688217, -0.024634665, -0.2153109)
+            vector3f physics:velocity = (0.0006072286, -0.0005053534, -0.0000036762633)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+            quatf xformOp:orient = (0.99981284, 9.988153e-7, -5.912804e-7, 0.019346027)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.0013283980078995228, -0.013830050826072693, -0.0014998245751485229)
+            token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        over "pZ" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0.051682957, -0.02449869, -0.21555977)
+            vector3f physics:velocity = (0.00067045074, -0.00051973003, 0.000013135316)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+            quatf xformOp:orient = (0.99981284, 9.844678e-7, 1.5021003e-7, 0.019345911)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.0013283980078995228, -0.013830049894750118, -0.0014998245751485229)
+            token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        over "nZ" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0.051682957, -0.02449869, -0.21557575)
+            vector3f physics:velocity = (0.0006866992, -0.0004854526, 0.000013135384)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+            quatf xformOp:orient = (0.99981284, 9.844682e-7, 1.5020858e-7, 0.019347379)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.0013283980078995228, -0.013830049894750118, -0.0014998245751485229)
+            token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        over "pX_pY" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0.05279213, -0.026096167, -0.21371053)
+            vector3f physics:velocity = (0.0007521325, -0.00057066587, 0.000039618575)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+            quatf xformOp:orient = (0.99981284, -0.000004544689, -0.0000050929284, 0.019345362)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.0013283980078995228, -0.013830049894750118, -0.0014998245751485229)
+            token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        over "nY_pX" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0.050428472, -0.02606392, -0.2155386)
+            vector3f physics:velocity = (0.0006099176, -0.00057677797, 0.0000060429334)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+            quatf xformOp:orient = (0.9998129, 0.0000036263489, -0.000008345052, 0.019343093)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.0013284278102219105, -0.013830048963427544, -0.0014998245751485229)
+            token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        over "nX_pY" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0.051211704, -0.02466787, -0.22228876)
+            vector3f physics:velocity = (0.0007493822, -0.000426081, 0.00002095767)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+            quatf xformOp:orient = (0.99981284, -6.8268093e-7, -0.0000048800644, 0.01934495)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.0013283980078995228, -0.013830049894750118, -0.0014998245751485229)
+            token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        over "nX_nY" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0.051055532, -0.024737142, -0.22399433)
+            vector3f physics:velocity = (0.0006014773, -0.00043124132, -0.000012317342)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+            quatf xformOp:orient = (0.9998128, -0.000003898985, -0.000014694905, 0.019350294)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.0013283980078995228, -0.013830052688717842, -0.0014998245751485229)
+            token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        over "pX_pZ" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0.050128177, -0.027627109, -0.21315013)
+            vector3f physics:velocity = (0.00067214796, -0.00058984477, 0.000022933089)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+            quatf xformOp:orient = (0.99981284, -2.822204e-7, -2.7818717e-7, 0.019346857)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.0013283980078995228, -0.013830049894750118, -0.0014998245751485229)
+            token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        over "nZ_pX" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (-0.055676922, -0.15228654, -0.03367854)
+            vector3f physics:velocity = (0.0007295071, -0.0005322144, 0.00006288341)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+            quatf xformOp:orient = (0.9998128, 3.7526306e-8, -8.3110166e-7, 0.019348899)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.0013284278102219105, -0.013830049894750118, -0.0014998245751485229)
+            token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        over "nX_pZ" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0.052177086, -0.03435617, -0.21494877)
+            vector3f physics:velocity = (0.0006644243, -0.00044866742, 0.0000010815277)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+            quatf xformOp:orient = (0.99981284, 0.0000014268044, -4.782914e-7, 0.019346058)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.0013283980078995228, -0.013830049894750118, -0.0014998245751485229)
+            token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        over "nX_nZ" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0.039178424, -0.0092055695, -0.21573666)
+            vector3f physics:velocity = (0.0006788599, -0.00041811165, 0.0000095823025)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+            quatf xformOp:orient = (0.99981284, 2.0961039e-7, 0.000001587084, 0.019347899)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.0013283980078995228, -0.013830049894750118, -0.0014998245751485229)
+            token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        over "pY_pZ" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0.040372852, -0.027248852, -0.21189888)
+            vector3f physics:velocity = (0.00073975447, -0.00051326037, 0.0000261638)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+            quatf xformOp:orient = (0.99981284, 6.512e-7, -0.0000051806855, 0.019346207)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.0013283980078995228, -0.013830049894750118, -0.0014998245751485229)
+            token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        over "nZ_pY" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0.10041018, -0.08220585, -0.26440918)
+            vector3f physics:velocity = (0.0007934514, -0.000465902, 0.00004535317)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+            quatf xformOp:orient = (0.99981284, 0.0000010516322, 1.2038562e-7, 0.019346427)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.0013283980078995228, -0.013830049894750118, -0.0014998245751485229)
+            token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        over "nY_pZ" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0.051034402, -0.026905222, -0.21675785)
+            vector3f physics:velocity = (0.0005978268, -0.000522295, -0.0000034306202)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+            quatf xformOp:orient = (0.99981284, 0.0000019199874, -0.0000030565975, 0.019345194)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.0013283980078995228, -0.013830050826072693, -0.0014998245751485229)
+            token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        over "nY_nZ" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0.026571073, -0.003948433, -0.29496774)
+            vector3f physics:velocity = (0.0005821429, -0.00049756415, 0.0000043813243)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+            quatf xformOp:orient = (0.99981284, 0.0000019141567, -0.0000010215567, 0.019346256)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.0013283980078995228, -0.013830048963427544, -0.0014998245751485229)
+            token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        over "pX_pY_pZ" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0.048003383, -0.025562005, -0.21288379)
+            vector3f physics:velocity = (0.00074337196, -0.0005863201, 0.000037800233)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+            quatf xformOp:orient = (0.99981284, -0.000005796552, -0.0000065043573, 0.01934502)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.0013283980078995228, -0.013830057345330715, -0.0014998245751485229)
+            token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        over "nZ_pX_pY" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0.046434112, -0.025678823, -0.2219897)
+            vector3f physics:velocity = (0.0007634979, -0.00055790466, 0.000037297294)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+            quatf xformOp:orient = (0.9998128, -0.0000015571716, -0.0000020600858, 0.019349879)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.0013283980078995228, -0.013830055482685566, -0.0014998245751485229)
+            token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        over "nY_pX_pZ" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0.050532904, -0.029163837, -0.21860221)
+            vector3f physics:velocity = (0.0005992709, -0.0005945893, 0.00000707663)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+            quatf xformOp:orient = (0.9998127, 0.000007834286, -0.000011205674, 0.019352527)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.001328368205577135, -0.013830039650201797, -0.0014998841797932982)
+            token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        over "nY_nZ_pX" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0.02732077, 0.017017651, -0.24029449)
+            vector3f physics:velocity = (0.0005963889, -0.00057623925, -0.0000014246991)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+            quatf xformOp:orient = (0.9998128, -0.0000063925986, 0.000002704561, 0.019349588)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.0013283980078995228, -0.013830035924911499, -0.0014998245751485229)
+            token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        over "nX_pY_pZ" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0.039789, -0.034974363, -0.21724187)
+            vector3f physics:velocity = (0.00073617656, -0.00044101183, 0.000013771545)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+            quatf xformOp:orient = (0.99981284, -0.0000013113022, -0.000005401671, 0.019346539)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.0013283980078995228, -0.013830049894750118, -0.0014998245751485229)
+            token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        over "nX_nZ_pY" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0.11211203, 0.014918579, -0.08947659)
+            vector3f physics:velocity = (0.00070212915, -0.00043461617, 0.000053981774)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+            quatf xformOp:orient = (0.9998127, 0.0000039935117, -0.0000041089957, 0.019352334)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.0013283980078995228, -0.013830049894750118, -0.0014998245751485229)
+            token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        over "nX_nY_pZ" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0.056106415, -0.02471597, -0.21201226)
+            vector3f physics:velocity = (0.00059740583, -0.00045366143, -0.000014049194)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+            quatf xformOp:orient = (0.9998127, -0.0000058636074, -0.000017199667, 0.019352311)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.0013283980078995228, -0.013830052688717842, -0.0014998245751485229)
+            token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        over "nX_nY_nZ" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0.07236691, 0.031247191, -0.27128136)
+            vector3f physics:velocity = (0.0005748397, -0.00039218104, -0.0000018195792)
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+            quatf xformOp:orient = (0.99981284, -0.0000010505319, -0.0000027045608, 0.019346189)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.001328368205577135, -0.013830052688717842, -0.0014998245751485229)
+            token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+    }
+
+    over "Material"
+    {
+        float physics:dynamicFriction = 0.8
+        float physics:staticFriction = 0.9
+    }
+
+    over "Joints"
+    {
+        over "pX" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:angular"]
+        )
+        {
+            float physxJointAxis:angular:armature = 0.0001
+            float physxJointAxis:angular:dynamicFrictionEffort = 0.001
+            float physxJointAxis:angular:staticFrictionEffort = 0.001
+            float physxJointAxis:angular:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nX" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:angular"]
+        )
+        {
+            float physxJointAxis:angular:armature = 0.0001
+            float physxJointAxis:angular:dynamicFrictionEffort = 0.001
+            float physxJointAxis:angular:staticFrictionEffort = 0.001
+            float physxJointAxis:angular:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "pY" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:angular"]
+        )
+        {
+            float physxJointAxis:angular:armature = 0.0001
+            float physxJointAxis:angular:dynamicFrictionEffort = 0.001
+            float physxJointAxis:angular:staticFrictionEffort = 0.001
+            float physxJointAxis:angular:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nY" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:angular"]
+        )
+        {
+            float physxJointAxis:angular:armature = 0.0001
+            float physxJointAxis:angular:dynamicFrictionEffort = 0.001
+            float physxJointAxis:angular:staticFrictionEffort = 0.001
+            float physxJointAxis:angular:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "pZ" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:angular"]
+        )
+        {
+            float physxJointAxis:angular:armature = 0.0001
+            float physxJointAxis:angular:dynamicFrictionEffort = 0.001
+            float physxJointAxis:angular:staticFrictionEffort = 0.001
+            float physxJointAxis:angular:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nZ" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:angular"]
+        )
+        {
+            float physxJointAxis:angular:armature = 0.0001
+            float physxJointAxis:angular:dynamicFrictionEffort = 0.001
+            float physxJointAxis:angular:staticFrictionEffort = 0.001
+            float physxJointAxis:angular:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "pX_pY" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nY_pX" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nX_pY" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nX_nY" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "pX_pZ" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nZ_pX" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nX_pZ" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nX_nZ" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "pY_pZ" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nZ_pY" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nY_pZ" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nY_nZ" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "pX_pY_pZ" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nZ_pX_pY" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nY_pX_pZ" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nY_nZ_pX" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nX_pY_pZ" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nX_nZ_pY" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nX_nY_pZ" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nX_nY_nZ" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+    }
+
+    def Material "RightHandContactMaterial" (
+        prepend apiSchemas = ["PhysicsMaterialAPI", "PhysxMaterialAPI"]
+    )
+    {
+        float physics:dynamicFriction = 1
+        float physics:restitution = 0
+        float physics:staticFriction = 1.2
+        uniform token physxMaterial:frictionCombineMode = "max"
+    }
+
+    def DomeLight "Light"
+    {
+        color3f inputs:color = (1, 1, 1)
+        float inputs:colorTemperature = 6500
+        bool inputs:enableColorTemperature = 0
+        float inputs:exposure = 0
+        float inputs:intensity = 1800
+        bool inputs:normalize = 0
+        asset inputs:texture:file
+        token inputs:texture:format = "automatic"
+        bool visibleInPrimaryRay = 1
+        quatd xformOp:orient = (1, 0, 0, 0)
+        double3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+}
+
