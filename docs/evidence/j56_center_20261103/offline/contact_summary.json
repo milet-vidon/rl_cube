@@ -1,0 +1,106 @@
+[
+  {
+    "run": "centered_opposition_center_dev_v2_20261103",
+    "contact_coverage": {
+      "thumb": 1.0,
+      "index": 1.0,
+      "middle": 1.0,
+      "ring": 1.0,
+      "little": 1.0
+    },
+    "linear_speed_quantiles_50_90_100": [
+      0.005187733564525843,
+      0.005341498646885157,
+      0.005483608692884445
+    ],
+    "angular_speed_quantiles_50_90_100": [
+      0.15037313103675842,
+      0.15720199048519135,
+      0.1707700490951538
+    ],
+    "index_impulse_quantiles_0_50_100_Ns": [
+      0.001095291526847768,
+      0.001111889278336786,
+      0.0011297224209795298
+    ],
+    "velocity_gate_failed_steps": 0
+  },
+  {
+    "run": "center_j56_dev_v1_20261103",
+    "contact_coverage": {
+      "thumb": 1.0,
+      "index": 0.0,
+      "middle": 1.0,
+      "ring": 1.0,
+      "little": 1.0
+    },
+    "linear_speed_quantiles_50_90_100": [
+      0.00395444268360734,
+      0.004168044310063124,
+      0.0046388497576117516
+    ],
+    "angular_speed_quantiles_50_90_100": [
+      0.19426226615905762,
+      0.19876480102539062,
+      0.2056085467338562
+    ],
+    "index_impulse_quantiles_0_50_100_Ns": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "velocity_gate_failed_steps": 8
+  },
+  {
+    "run": "center_j56_dev_v2_20261103",
+    "contact_coverage": {
+      "thumb": 1.0,
+      "index": 1.0,
+      "middle": 1.0,
+      "ring": 1.0,
+      "little": 1.0
+    },
+    "linear_speed_quantiles_50_90_100": [
+      0.0063172089867293835,
+      0.007204486522823572,
+      0.007728557102382183
+    ],
+    "angular_speed_quantiles_50_90_100": [
+      0.17016637325286865,
+      0.20590059459209442,
+      0.22492839395999908
+    ],
+    "index_impulse_quantiles_0_50_100_Ns": [
+      0.04078204096305787,
+      0.04081242485196292,
+      0.040867655336973036
+    ],
+    "velocity_gate_failed_steps": 16
+  },
+  {
+    "run": "center_j56_dev_v3_20261103",
+    "contact_coverage": {
+      "thumb": 1.0,
+      "index": 1.0,
+      "middle": 1.0,
+      "ring": 1.0,
+      "little": 1.0
+    },
+    "linear_speed_quantiles_50_90_100": [
+      0.003979841712862253,
+      0.004061463288962841,
+      0.004350997973233461
+    ],
+    "angular_speed_quantiles_50_90_100": [
+      0.1810617297887802,
+      0.18317997455596924,
+      0.1887327879667282
+    ],
+    "index_impulse_quantiles_0_50_100_Ns": [
+      0.0015962458258321453,
+      0.0016245411025102192,
+      0.0016461852391329663
+    ],
+    "velocity_gate_failed_steps": 0
+  }
+]

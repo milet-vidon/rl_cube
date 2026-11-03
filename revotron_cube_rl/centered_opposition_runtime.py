@@ -42,31 +42,49 @@ def safety_failure(row):
 
 def frame(env,frames,args,row,label):
  if not args.record or row['step']%3:return
- im=Image.fromarray(tensor(env.overview.data.output['rgb'])[0,:,:,:3].numpy());d=ImageDraw.Draw(im);d.rectangle((0,0,640,28),fill='black');d.text((6,8),f'FIVE-FINGER OPPOSITION | {row["phase"]} | seed {args.seed}',fill='white');d.rectangle((0,480,640,512),fill='black');d.text((6,490),label,fill='white');frames.append(im)
+ if 'joint_coordination'in row:
+  j5,j6,j7=row['joint_coordination']['actual_j5_j6_j7_deg'];label=f'J5 {j5:+.1f} | J6 {j6:+.1f} | J7 {j7:+.1f} | Y {row["cube_position"][1]:+.3f}m'
+ title='LEFT HAND CENTER'if row['phase']in ('left_center_transport','center_hold')else 'FIVE-FINGER OPPOSITION'
+ im=Image.fromarray(tensor(env.overview.data.output['rgb'])[0,:,:,:3].numpy());d=ImageDraw.Draw(im);d.rectangle((0,0,640,28),fill='black');d.text((6,8),f'{title} | {row["phase"]} | seed {args.seed}',fill='white');d.rectangle((0,480,640,512),fill='black');d.text((6,490),label,fill='white');frames.append(im)
 
 def execute(env,teacher,fingers,audit,rows,frames,run,args,stopped=lambda:False):
  first=len(rows);initial=rows[-1];names=env.cfg['joint_names'];request={'initial':dict(zip(names,initial['q'])),'joint_names':names,'cube_position':initial['cube_position'],'cube_quaternion':initial['cube_quaternion_wxyz'],'center_root':[.50,0.,.15]}
  from torso_collision import export_fixed_colliders
  request['torso_colliders']=export_fixed_colliders(env.stage,'/World/Robot')
- print('CENTER_PREFLIGHT_BEGIN',flush=True);plan=host_plan('centered_transport_plan.py',request,run,'center')
+ style=getattr(args,'center_style','legacy');planner='centered_transport_plan.py'
+ if style=='j56':
+  request['coordination_protocol']=json.loads((ROOT/'center_j56_protocol_v3.json').read_text());planner='center_j56_plan.py'
+ print('CENTER_PREFLIGHT_BEGIN',style,flush=True);plan=host_plan(planner,request,run,'center')
  if not plan['passed']:return {'executed':False,'qualified':False,'failure':'center_preflight_rejected','detail':plan}
  print('CENTER_PREFLIGHT_PASSED',plan['checks'],flush=True);fixed=env.targets[0].numpy().copy();indices=[i for i,n in enumerate(names)if n.endswith('_L')];failure=None;lost=0;hold=0;longest=0;reset=env.cube.pose_reset_count;goal=np.array(plan['center_target_world_m']);rotation=R.from_quat(np.array(plan['cube_target_quaternion_wxyz'])[[1,2,3,0]])
+ feedback=plan.get('finger_contact_feedback');feedback_offset=0.
  for phase,path in plan['phases']:
   for tick,point in enumerate(path):
-   fingers.reset_step();audit.reset_step();target=fixed.copy();target[indices]=np.array(point)[indices];env.step((torch.from_numpy(target).reshape(1,56)-env.targets)/env.scales);row=append_row(env,teacher,fingers,audit,rows,run,phase,target)
+   fingers.reset_step();audit.reset_step();target=fixed.copy();target[indices]=np.array(point)[indices]
+   for joint in plan.get('finger_target_offsets_rad',{}):
+    index=names.index(joint);target[index]=fixed[index]+point[index]-initial['q'][index]
+   if feedback:target[names.index(feedback['joint'])]=fixed[names.index(feedback['joint'])]+feedback_offset
+   env.step((torch.from_numpy(target).reshape(1,56)-env.targets)/env.scales);row=append_row(env,teacher,fingers,audit,rows,run,phase,target)
    failure=safety_failure(row)
    if stopped():failure='execution_interrupted'
    primary=contact_topology(row,'left');retained=primary['thumb']and sum(primary[f]for f in ('index','middle','ring','little'))>=3;lost=0 if retained else lost+1
+   if feedback:
+    from center_j56_audit import next_index_offset
+    impulse=sum(p['impulse_Ns']for p in row['finger_contact_points']if p['side']=='left'and p['finger']=='index')
+    following=next_index_offset(feedback_offset,impulse,primary['index'],feedback);row['index_contact_feedback']={'offset_rad':feedback_offset,'impulse_Ns':impulse,'on_target_face':primary['index'],'next_offset_rad':following};feedback_offset=following
    if lost>=10:failure='left_grasp_lost_during_center_transport'
    if row['layer_measurement']['maximum_relative_rotation_deg']>15:failure='cube_layers_deformed_during_center_transport'
    report=assess_center_row(row,names,goal,plan['cube_target_quaternion_wxyz']);row['center_audit']=report;correct=report['qualified']
+   if style=='j56':
+    from center_j56_audit import joint_coordination
+    row['joint_coordination']=joint_coordination(row['q'],initial['q'],names,request['coordination_protocol']);correct=correct and row['joint_coordination']['qualified']
    hold=hold+1 if phase=='center_hold'and correct and not failure else 0;longest=max(longest,hold)
    if env.cube.pose_reset_count!=reset:raise RuntimeError('Unexpected cube pose write during center transport')
    if tick%90==0 or failure:print('CENTER',row['step'],phase,'y',round(row['cube_position'][1],3),'hold',hold,'failure',failure,flush=True)
    frame(env,frames,args,row,f'CENTER Y {row["cube_position"][1]:+.3f}m | HOLD {hold/30:.1f}s | LAYER DRIFT {row["layer_measurement"]["maximum_relative_rotation_deg"]:.1f}')
    if failure:break
   if failure:break
- center={'passed':not failure and longest>=90,'longest_qualified_hold_s':longest/30,'initial_position_m':initial['cube_position'],'final_position_m':rows[-1]['cube_position'],'target_position_m':goal.tolist(),'plan_checks':plan['checks'],'failure':failure or ('center_hold_gate_not_met'if longest<90 else None),'final_audit':report}
+ center={'passed':not failure and longest>=90,'longest_qualified_hold_s':longest/30,'initial_position_m':initial['cube_position'],'final_position_m':rows[-1]['cube_position'],'target_position_m':goal.tolist(),'plan_checks':plan['checks'],'failure':failure or ('center_hold_gate_not_met'if longest<90 else None),'final_audit':report,'style':style,'joint_coordination':rows[-1].get('joint_coordination'),'finger_target_offsets_rad':plan.get('finger_target_offsets_rad',{}),'finger_contact_feedback':feedback,'final_index_feedback':rows[-1].get('index_contact_feedback')}
  (run/'center_result.json').write_text(json.dumps(center,indent=2))
  if not center['passed']or args.center_only:return {'executed':True,'qualified':False,'center':center,'failure':center['failure'],'scope':'center_transport_only','opposition_grasp_passed':False}
  from opposed_grasp_runtime import execute as execute_right

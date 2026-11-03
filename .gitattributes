@@ -53,3 +53,11 @@ docs/evidence/centered_opposition_20261103/**/*.gz filter=lfs diff=lfs merge=lfs
 docs/evidence/centered_opposition_20261103/*.mp4 filter=lfs diff=lfs merge=lfs -text
 docs/evidence/centered_opposition_20261103/**/source_config.json -text whitespace=cr-at-eol
 docs/evidence/centered_opposition_20261103/**/config.json -text whitespace=cr-at-eol
+
+# J5/J6 centering: exact source/config bytes and large evidence via LFS.
+docs/evidence/j56_center_20261103/**/*.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/j56_center_20261103/*.mp4 filter=lfs diff=lfs merge=lfs -text
+docs/evidence/j56_center_20261103/**/source_config.json -text whitespace=cr-at-eol
+docs/evidence/j56_center_20261103/**/config.json -text whitespace=cr-at-eol
+# Runtime logs are preserved verbatim, including vendor trailing spaces.
+docs/evidence/j56_center_20261103/**/*.log -text -whitespace
