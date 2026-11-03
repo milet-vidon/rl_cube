@@ -1,0 +1,131 @@
+{
+  "scope": "privileged_simulator_state_policy_pickup_through_tilt_hold_only",
+  "steps": 1648,
+  "teacher_interventions": 1419,
+  "original_wrist_gate_qualified": true,
+  "pure_student_episode_claim": false,
+  "center_oracle_implemented": false,
+  "runtime_bridge_validated": false,
+  "physics_identity_sha256": "b2f9feb645c8d92e2da3bb78653165292a5649e59864dee4b1de82e904854192",
+  "kind": "baseline_left_dagger_mixed_rollout_not_pure_student_success",
+  "seed": 9501,
+  "eligible_training_episode": false,
+  "failure": null,
+  "collection_mode": "explicit_teacher_student_mixture",
+  "student_executed_steps": 229,
+  "training_data_acceptance_requires_separate_review": true,
+  "original_grasp_gate": {
+    "teacher_accepted": true,
+    "measured": {
+      "accepted": true,
+      "scope": "whole_cube_tilt_only",
+      "full_episode": true,
+      "failures": [],
+      "final_tilt_error_deg": 0.6120880477447967,
+      "longest_measured_hold_seconds": 3.1666666666666665,
+      "contact_coverage_in_qualifying_window": {
+        "left": {
+          "thumb": 1.0,
+          "index": 1.0,
+          "middle": 1.0,
+          "ring": 1.0,
+          "little": 1.0
+        }
+      },
+      "maximum_lift_m": 0.36868804359436036,
+      "final_lift_m": 0.36804335975646973,
+      "cube_returned_to_table_after_lift": false,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "self_contact_impulse_sum_Ns": 0,
+      "semantic_task": "left_palm_toward_right_hand_uncrossed_opposition_handover",
+      "longest_palm_facing_hold_seconds": 3.033333333333333,
+      "final_hand_geometry": {
+        "left_palm_position_root": [
+          0.40506023940629454,
+          0.3438987863138381,
+          0.1277999937804679
+        ],
+        "right_palm_position_root": [
+          0.3166191782612503,
+          -0.22905415673908433,
+          -0.1261228131017691
+        ],
+        "left_palm_normal_world": [
+          0.21459847264261528,
+          -0.8114979936959901,
+          0.5435241501229173
+        ],
+        "right_palm_normal_world": [
+          -0.047758001661820065,
+          0.9988562295552149,
+          -0.002325071183986263
+        ],
+        "left_facing_right_cos": 0.4865750261262507,
+        "right_facing_left_cos": 0.8966273829882019,
+        "palm_normal_dot": -0.8220823528271397,
+        "wrist_y_separation_m": 0.5729529430529224,
+        "elbow_y_separation_m": 0.8045690059661865,
+        "left_wrist_from_cube_y_m": 0.056567413814372136,
+        "right_wrist_from_cube_y_m": 0.5163855292385503
+      }
+    },
+    "wrist": {
+      "accepted": true,
+      "longest_jointly_qualified_hold_s": 3.033333333333333,
+      "final_elbow": {
+        "shoulder_root_m": [
+          0.021714452654123306,
+          0.24999985098838806,
+          0.24004087448120126
+        ],
+        "elbow_root_m": [
+          0.03257550671696663,
+          0.42943334579467773,
+          0.015588736534118741
+        ],
+        "wrist_root_m": [
+          0.30071038007736206,
+          0.3275608420372009,
+          0.14460716247558603
+        ],
+        "outward_from_shoulder_m": 0.17943349480628967,
+        "upper_arm_outward_deg": 38.63984566999005,
+        "outward_from_shoulder_wrist_axis_m": 0.14742232072877753
+      },
+      "final": {
+        "joint6_deg": 11.886073632348255,
+        "side_bend_deg": -15.084424477245083,
+        "flexion_deg": 42.97194710057463,
+        "forearm_direction_palm_frame": [
+          0.6687594749543703,
+          -0.19348444705672455,
+          0.7178610822477483
+        ],
+        "wrist_inside_elbow_m": 0.1018725037574768
+      },
+      "scope": "J6_side_bend_reversed_with_unchanged_palm_orientation",
+      "failures": []
+    },
+    "assembled_hold_s": 3.1666666666666665,
+    "qualified": true
+  },
+  "last_environment_termination": {
+    "raw_done": false,
+    "raw_truncated": null,
+    "api_return_arity": 4,
+    "derived_timeout_truncated": false,
+    "derived_drop_terminated": false,
+    "generic_pickup_success": false,
+    "done_causes": [],
+    "unknown_done_cause": false,
+    "done_matches_original_causes": true,
+    "sampling_terminal": false,
+    "contract": "baseline_left_v3_stops_on_every_original_done_drop_timeout_not_pure_student_episode"
+  },
+  "max_reference_target_error_rad": 0.004999995231628418,
+  "max_reference_q_error_rad": 0.005028039216995239,
+  "max_reference_cube_position_error_m": 0.0002503395080566406,
+  "cube_pose_writes_during_control": 0,
+  "maximum_lift_m": 0.36868804359436036,
+  "elapsed_s": 348.07315779000055
+}

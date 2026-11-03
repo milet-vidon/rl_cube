@@ -1,0 +1,54 @@
+{
+  "reviewer": "cube_articulation_audit",
+  "scope": "FullTaskEpisode and three runtime candidates, composed with frozen passive-articulation factory; no default-source application or Isaac run",
+  "conclusion": "No remaining deterministic blocker found in reviewed final candidate",
+  "patch_sha256": "7d4fe867339ca7098b3fb8f701c8274bc51ebf479e2e28653440a573a5c7f3e8",
+  "combined_main_sha256": "36d98c64fbeb0110506d11aa93b98a3fa392e198716c5a2d0b86ce815e69917f",
+  "full_task_module_sha256": "937df2b0d02f7a23b69d863a2a7977e86a4b188743bf9c2a7b0cafb46b8e03d4",
+  "facade_sha256": "949c3ede71c6ac4cd32b359b08ab110c72c354888d32541136aa2330edce980c",
+  "reviewed_contract": {
+    "original_four_return_step_API_and_reward_terms_matched_to_source": true,
+    "raw_pickup_success_is_milestone_not_task_termination": true,
+    "timeout_read_independently_from_global_control_step_count": true,
+    "drop_and_timeout_lock_next_physics_before_current_row_audit": true,
+    "every_step_requires_original_stage_audit_before_next_step": true,
+    "all_three_allowed_step_sites_consume_task_status": true,
+    "unsupported_index_and_partial_task_paths_rejected": true,
+    "preflight_and_teacher_query_interruption_adds_no_physics_step": true,
+    "planning_gate_failure_has_final_event_without_fake_transition": true,
+    "durable_task_journal_written_after_all_original_row_audits": true,
+    "task_reward_zero_and_PPO_eligibility_false": true,
+    "frozen_15_30_90_target_subtasks_require_original_full_gates": true,
+    "face_turn_validated_still_requires_90": true,
+    "six_face_solution_validated_always_false": true,
+    "original_controller_physics_and_gate_thresholds_unchanged_by_termination_adapter": true,
+    "native_factory_after_AppLauncher_and_outermost": true,
+    "legacy_D6_joint_damping_and_Core_inertia_combo_rejected": true,
+    "native_readback_before_task_start_and_sources_archived": true
+  },
+  "validation": {
+    "host_unittests": 20,
+    "command": "python -m unittest discover -s work -p test_full_task*.py -v",
+    "result": "all passed",
+    "combined_main_loop_AST_identical_to_termination_only_candidate": true,
+    "both_stage_files_byte_identical_to_termination_candidates": true,
+    "five_modules_pycompile": true,
+    "LF_and_hash_validation": true,
+    "local_scratch_git_apply_exact_output_hashes": true,
+    "remote_current_source_hashes_still_match_original": true,
+    "remote_git_apply_check": true,
+    "local_git_note": "First scratch check exposed host core.autocrlf=true rewriting LF. Only per-command core.autocrlf=false/core.eol=lf was added to validation, then exact bytes passed. No global Git configuration changed."
+  },
+  "integration_notes": [
+    "Patch edits three existing drivers only; both frozen helper modules must also be copied into revotron_cube_rl before use.",
+    "Use both --full-task-episode and --passive-cube-articulation for the next native full teacher, plus the frozen baseline path/hash and explicit --position-iterations 64.",
+    "max_steps is the frozen global horizon across pickup, center and turn; select it before the run, never extend it mid-episode.",
+    "Generic trajectory row reward/done and legacy counters remain raw diagnostic values. Task labels and zero reward are in the dedicated task journal/status, not a PPO reward redesign."
+  ],
+  "not_proven": [
+    "full native teacher task success",
+    "90 degree contact-driven robot face turn",
+    "continuous multi-face rotation",
+    "visual formula-based cube solving"
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Left contact DAgger preparation v1; privileged simulation-state policy",
+  "description": "Host contract only. Original runtime bridge and gates remain unvalidated. Teacher oracle v1 covers ready through tilt_hold, not center transport.",
+  "type": "object",
+  "required": ["schema", "episode", "step", "run_provenance", "pure_student_episode_claim"],
+  "properties": {
+    "schema": {"const": "left_contact_dagger_actual_state_transition_v1"},
+    "episode": {"type": "string"},
+    "step": {"type": "integer", "minimum": 0},
+    "pure_student_episode_claim": {"const": false},
+    "record_type": {"enum": ["abort"]},
+    "reason": {"type": "string"},
+    "actor_observation_pre": {"$ref": "#/$defs/observation"},
+    "actor_observation_post": {"$ref": "#/$defs/observation"},
+    "student_proposed_left_target": {"type": "array", "minItems": 28, "maxItems": 28, "items": {"type": "number"}},
+    "student_proposed_target": {"$ref": "#/$defs/vector56"},
+    "selected_requested_target": {"$ref": "#/$defs/vector56"},
+    "actual_applied_target": {"$ref": "#/$defs/vector56"},
+    "expert_supervision": {
+      "type": "object",
+      "required": ["requested_target", "normalized_action", "teacher_state_before_sync", "teacher_state_after_sync", "teacher_state_after_query", "execution_memory_mode", "execution_memory_changes", "oracle_env_inputs", "control_settings_before", "control_settings_after", "native_target_decoder_id", "public_same_action_schedule"],
+      "properties": {
+        "requested_target": {"$ref": "#/$defs/vector56"},
+        "normalized_action": {"$ref": "#/$defs/vector56"},
+        "execution_memory_mode": {"enum": ["preserve", "sync_actual_applied"]},
+        "execution_memory_changes": {"type": "array"}
+      }
+    },
+    "executed_source": {"enum": ["student", "teacher"]},
+    "right_controller": {"const": "original_teacher"},
+    "teacher_intervention": {"type": "boolean"},
+    "selection_probability": {"type": "number", "minimum": 0, "maximum": 1},
+    "selection_draw": {"type": "number", "minimum": 0, "maximum": 1},
+    "run_provenance": {
+      "type": "object",
+      "required": ["student_checkpoint_sha256", "source_sha256", "policy_observation_scope", "physics_identity", "physics_identity_sha256"],
+      "properties": {
+        "policy_observation_scope": {"const": "privileged_simulator_state_not_vision_actor"},
+        "physics_identity": {
+          "type": "object",
+          "required": ["environment_class", "config_sha256", "assets_sha256", "source_sha256", "cube_constraint_topology", "damping", "armature", "friction", "solver_options"]
+        },
+        "physics_identity_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    }
+  },
+  "oneOf": [
+    {"required": ["record_type", "reason"]},
+    {"not": {"required": ["record_type"]}, "required": ["actor_observation_pre", "actor_observation_post", "expert_supervision", "student_proposed_left_target", "student_proposed_target", "selected_requested_target", "actual_applied_target", "executed_source", "right_controller", "teacher_intervention", "selection_reason", "selection_probability", "selection_draw", "pre_gates", "post_gates", "failure_reason", "terminal"]}
+  ],
+  "$defs": {
+    "vector56": {"type": "array", "minItems": 56, "maxItems": 56, "items": {"type": "number"}},
+    "vector3": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "number"}},
+    "observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["q", "joint_velocity", "applied_target", "cube_position", "cube_quaternion_wxyz", "cube_linear_velocity", "cube_angular_velocity", "finger_contact_impulses", "finger_contact_points", "phase", "phase_progress", "previous_executed_source"],
+      "properties": {
+        "q": {"$ref": "#/$defs/vector56"},
+        "joint_velocity": {"$ref": "#/$defs/vector56"},
+        "applied_target": {"$ref": "#/$defs/vector56"},
+        "cube_position": {"$ref": "#/$defs/vector3"},
+        "cube_quaternion_wxyz": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"type": "number"}},
+        "cube_linear_velocity": {"$ref": "#/$defs/vector3"},
+        "cube_angular_velocity": {"$ref": "#/$defs/vector3"},
+        "finger_contact_impulses": {"type": "object"},
+        "finger_contact_points": {"type": "array"},
+        "phase": {"enum": ["ready", "preshape", "lower", "approach", "squeeze", "primary_lift", "elbow_outward", "tilt_90", "wrist_reconfigure", "tilt_hold"]},
+        "phase_progress": {"type": "number", "minimum": 0, "maximum": 1},
+        "previous_executed_source": {"enum": ["student", "teacher", "reset"]}
+      }
+    }
+  }
+}

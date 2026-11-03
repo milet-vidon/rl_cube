@@ -1,0 +1,14 @@
+{
+  "sha256": {
+    "result.json": "aa82ed3a06b1771e74a9786847195f66bb2536314262ce0196671be030124463",
+    "trajectory.jsonl": "6ad452c4e515061d606e406e032802f14d200d47a7083a49a5f086b3e8891e99",
+    "dynamic_training_scene.usda": "ff16e3e8af8e8e2e0c0f7ff240a2b2f1d688a9c1b3560ff2230033742096c6f8",
+    "config.json": "d3c6084f638ed96ea299dbf76c386537051d3857c61675ddfc4abd5e9d925ae1",
+    "asset_contract.json": "3367c3d471d25bb668b2f67fb9eca3ba34a28328b967ffbb63aef39cf1a365c7",
+    "transitions.jsonl": "8c05f281d4f1d0575ad2ea84c7904a4ab5af3f672d833d9dbaf66dc8433f4bba",
+    "runtime_protocol.json": "6db2eb77b99c3394a9263249e3aaec65902c692170dbda5facb5d32c928a9c5d",
+    "initial_state.json": "9a7c759eb84012d21924c47e2583e3bc60badaed2239608d026b6d95e785c5f3",
+    "trajectory.json": "1f25f6a33e5f549bd1aa412ada770b083734a0244faf1b17311449484d3fe6d0",
+    "physics_identity.json": "57e21f505e1833564889b4b776aac4e04e5eef11d1436e959761465928aae8c7"
+  }
+}

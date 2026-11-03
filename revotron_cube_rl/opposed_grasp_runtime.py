@@ -23,6 +23,17 @@ class OppositionContacts(LayerContacts):
     if impulse>1e-7:self.points.append({'robot_body':robot,'cubelet':cube.rsplit('/',1)[-1],'impulse_Ns':impulse,'position_world_m':list(point.position)})
 
 def execute(env,teacher,fingers,audit,rows,frames,run,args,center,stopped=lambda:False):
+ task=getattr(env,'full_task_episode',None)
+ if task and task.status()['done']:return {'executed':False,'qualified':False,'failure':task.status()['reason']}
+ if task and stopped():
+  task.abort('execution_interrupted',truncated=True);return {'executed':False,'qualified':False,'failure':'execution_interrupted'}
+ result=_execute(env,teacher,fingers,audit,rows,frames,run,args,center,stopped)
+ if task and not result.get('qualified',False) and not task.status()['done']:
+  task.abort(result.get('failure')or 'original_stage_gate_not_met',detail=result)
+ return result
+
+def _execute(env,teacher,fingers,audit,rows,frames,run,args,center,stopped=lambda:False):
+ task=getattr(env,'full_task_episode',None)
  if getattr(args,'turn_feedback_planning_frame',False) and not getattr(args,'turn_feedback_pacing',False):raise ValueError('Planning-frame feedback requires turn pacing')
  names=env.cfg['joint_names'];initial=rows[-1];request={'initial':dict(zip(names,initial['q'])),'joint_names':names,'cube_position':initial['cube_position'],'cube_quaternion':initial['cube_quaternion_wxyz'],'left_contacts':initial['finger_contact_points'],'target_deg':args.push_degrees}
  request['refinement_options']={'ring_inset_m':getattr(args,'ring_inset',0.),'cube_clearance':getattr(args,'cube_clearance_refinement',False),'preflight_workers':getattr(args,'preflight_workers',1)}
@@ -55,6 +66,7 @@ def execute(env,teacher,fingers,audit,rows,frames,run,args,center,stopped=lambda
    grasp_passed=True;turn_started=True
   paced=phase=='opposed_face_turn'and pacer is not None
   for tick in range(pacer.budget+1 if paced else len(path)):
+   if task and stopped():failure='execution_interrupted';task.abort(failure,truncated=True);break
    if paced:
     previous=rows[-1]
     if feedback_adapter is None:index,failure=pacer.next_index(previous['layer_measurement']['face_angle_deg'],previous['opposition_audit']['right_contacts']['all_five'])
@@ -64,7 +76,9 @@ def execute(env,teacher,fingers,audit,rows,frames,run,args,center,stopped=lambda
    point=path[index]
    fingers.reset_step();audit.reset_step();contacts.points.clear();target=fixed.copy();target[right]=np.array(point)[right]
    if support is not None:target[names.index(RING_JOINT)]+=support.offset
-   env.step((torch.from_numpy(target).reshape(1,56)-env.targets)/env.scales)
+   action=(torch.from_numpy(target).reshape(1,56)-env.targets)/env.scales
+   if task:task.step(action,phase=phase,step_id=len(rows))
+   else:env.step(action)
    row=append_row(env,teacher,fingers,audit,rows,run,phase,target);row['right_cubelet_contacts']=list(contacts.points);row['layer_measurement']=measure_layers(row['cubelets'],target_deg=args.push_degrees)
    if paced:row['turn_pacing']={'path_index':index,'planned_palm_angle_deg':pacer.angles[index],'held_ticks':pacer.held_ticks}
    if paced and feedback_adapter is not None:row['turn_pacing']['feedback']=feedback
@@ -86,6 +100,10 @@ def execute(env,teacher,fingers,audit,rows,frames,run,args,center,stopped=lambda
    report=qualified(row,names,turned=turn_started);row['opposition_audit']=report
    if phase=='opposition_hold':hold=hold+1 if report['qualified']and not failure else 0;longest=max(longest,hold)
    if phase=='opposed_face_hold':turn_hold=turn_hold+1 if report['qualified']and not failure else 0;turn_longest=max(turn_longest,turn_hold)
+   if task:
+    status=task.finish_step(row,failure=failure,audit={'original_audits_completed':True,'stage':'opposed_turn','original_report':report})
+    row['task_episode']=status
+    if status['done']:failure=status['reason']
    if tick%90==0 or failure:print('OPPOSED',row['step'],phase,'contacts',sum(topology['fingers'].values()),'hold',hold,'angle',round(row['layer_measurement']['face_angle_deg'],2),'failure',failure,flush=True)
    frame(env,frames,args,row,f'RIGHT FINGERS {sum(topology["fingers"].values())}/5 | GRIP HOLD {hold/30:.1f}s | FACE {row["layer_measurement"]["face_angle_deg"]:.1f}/{args.push_degrees:.0f}')
    if failure:break

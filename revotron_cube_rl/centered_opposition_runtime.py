@@ -48,6 +48,17 @@ def frame(env,frames,args,row,label):
  im=Image.fromarray(tensor(env.overview.data.output['rgb'])[0,:,:,:3].numpy());d=ImageDraw.Draw(im);d.rectangle((0,0,640,28),fill='black');d.text((6,8),f'{title} | {row["phase"]} | seed {args.seed}',fill='white');d.rectangle((0,480,640,512),fill='black');d.text((6,490),label,fill='white');frames.append(im)
 
 def execute(env,teacher,fingers,audit,rows,frames,run,args,stopped=lambda:False):
+ task=getattr(env,'full_task_episode',None)
+ if task and task.status()['done']:return {'executed':False,'qualified':False,'failure':task.status()['reason']}
+ if task and stopped():
+  task.abort('execution_interrupted',truncated=True);return {'executed':False,'qualified':False,'failure':'execution_interrupted'}
+ result=_execute(env,teacher,fingers,audit,rows,frames,run,args,stopped)
+ if task and not result.get('qualified',False) and not task.status()['done']:
+  task.abort(result.get('failure')or 'original_stage_gate_not_met',detail=result)
+ return result
+
+def _execute(env,teacher,fingers,audit,rows,frames,run,args,stopped=lambda:False):
+ task=getattr(env,'full_task_episode',None)
  first=len(rows);initial=rows[-1];names=env.cfg['joint_names'];request={'initial':dict(zip(names,initial['q'])),'joint_names':names,'cube_position':initial['cube_position'],'cube_quaternion':initial['cube_quaternion_wxyz'],'center_root':[.50,0.,.15]}
  from torso_collision import export_fixed_colliders
  request['torso_colliders']=export_fixed_colliders(env.stage,'/World/Robot')
@@ -57,14 +68,18 @@ def execute(env,teacher,fingers,audit,rows,frames,run,args,stopped=lambda:False)
  print('CENTER_PREFLIGHT_BEGIN',style,flush=True);plan=host_plan(planner,request,run,'center')
  if not plan['passed']:return {'executed':False,'qualified':False,'failure':'center_preflight_rejected','detail':plan}
  print('CENTER_PREFLIGHT_PASSED',plan['checks'],flush=True);fixed=env.targets[0].numpy().copy();indices=[i for i,n in enumerate(names)if n.endswith('_L')];failure=None;lost=0;hold=0;longest=0;reset=env.cube.pose_reset_count;goal=np.array(plan['center_target_world_m']);rotation=R.from_quat(np.array(plan['cube_target_quaternion_wxyz'])[[1,2,3,0]])
- feedback=plan.get('finger_contact_feedback');feedback_offset=0.
+ feedback=plan.get('finger_contact_feedback');feedback_offset=0.;report={}
  for phase,path in plan['phases']:
   for tick,point in enumerate(path):
+   if task and stopped():failure='execution_interrupted';task.abort(failure,truncated=True);break
    fingers.reset_step();audit.reset_step();target=fixed.copy();target[indices]=np.array(point)[indices]
    for joint in plan.get('finger_target_offsets_rad',{}):
     index=names.index(joint);target[index]=fixed[index]+point[index]-initial['q'][index]
    if feedback:target[names.index(feedback['joint'])]=fixed[names.index(feedback['joint'])]+feedback_offset
-   env.step((torch.from_numpy(target).reshape(1,56)-env.targets)/env.scales);row=append_row(env,teacher,fingers,audit,rows,run,phase,target)
+   action=(torch.from_numpy(target).reshape(1,56)-env.targets)/env.scales
+   if task:task.step(action,phase=phase,step_id=len(rows))
+   else:env.step(action)
+   row=append_row(env,teacher,fingers,audit,rows,run,phase,target)
    failure=safety_failure(row)
    if stopped():failure='execution_interrupted'
    primary=contact_topology(row,'left');retained=primary['thumb']and sum(primary[f]for f in ('index','middle','ring','little'))>=3;lost=0 if retained else lost+1
@@ -80,6 +95,10 @@ def execute(env,teacher,fingers,audit,rows,frames,run,args,stopped=lambda:False)
     row['joint_coordination']=joint_coordination(row['q'],initial['q'],names,request['coordination_protocol']);correct=correct and row['joint_coordination']['qualified']
    hold=hold+1 if phase=='center_hold'and correct and not failure else 0;longest=max(longest,hold)
    if env.cube.pose_reset_count!=reset:raise RuntimeError('Unexpected cube pose write during center transport')
+   if task:
+    status=task.finish_step(row,failure=failure,audit={'original_audits_completed':True,'stage':'center_transport','original_report':report})
+    row['task_episode']=status
+    if status['done']:failure=status['reason']
    if tick%90==0 or failure:print('CENTER',row['step'],phase,'y',round(row['cube_position'][1],3),'hold',hold,'failure',failure,flush=True)
    frame(env,frames,args,row,f'CENTER Y {row["cube_position"][1]:+.3f}m | HOLD {hold/30:.1f}s | LAYER DRIFT {row["layer_measurement"]["maximum_relative_rotation_deg"]:.1f}')
    if failure:break

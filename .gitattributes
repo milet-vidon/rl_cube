@@ -189,3 +189,32 @@ revotron_cube_rl/benchmark_contact_cache_float3.py text eol=lf
 
 revotron_cube_rl/turn_pacer_frame.py text eol=lf
 revotron_cube_rl/test_turn_pacer_frame.py text eol=lf
+
+# Explicit multistage termination and optional passive articulation.
+revotron_cube_rl/full_task_episode.py text eol=lf
+revotron_cube_rl/test_full_task_episode.py text eol=lf
+revotron_cube_rl/test_full_task_runtime.py text eol=lf
+revotron_cube_rl/passive_cube_articulation.py text eol=lf
+revotron_cube_rl/test_passive_cube_articulation.py text eol=lf
+revotron_cube_rl/centered_opposition_runtime.py text eol=lf
+
+# Exact DAgger experiment evidence and frozen collector sources.
+docs/evidence/left_dagger_training_20261104/** -text -whitespace
+docs/evidence/left_dagger_training_20261104/**/*.gz filter=lfs diff=lfs merge=lfs -text
+revotron_cube_rl/collect_left_dagger_baseline_v2.py text eol=lf
+revotron_cube_rl/test_dagger_projected_collection_v3.py text eol=lf
+revotron_cube_rl/left_dagger_baseline_runtime_v3.py text eol=lf
+revotron_cube_rl/collect_left_dagger_draft_v1.py text eol=lf
+revotron_cube_rl/collect_left_dagger_baseline_v3.py text eol=lf
+revotron_cube_rl/dagger_projected_collection_v3.py text eol=lf
+revotron_cube_rl/collect_left_dagger_baseline_v1.py text eol=lf
+revotron_cube_rl/dagger_collection_core_v1.py text eol=lf
+revotron_cube_rl/test_left_dagger_baseline_runtime_v1.py text eol=lf
+revotron_cube_rl/test_left_dagger_baseline_runtime_v3.py text eol=lf
+revotron_cube_rl/left_dagger_baseline_runtime_v2.py text eol=lf
+revotron_cube_rl/test_left_dagger_baseline_runtime_v2.py text eol=lf
+revotron_cube_rl/test_dagger_collection_core_v1.py text eol=lf
+revotron_cube_rl/left_dagger_baseline_runtime_v1.py text eol=lf
+
+# Preserve the already frozen collector bytes, including its final blank line.
+revotron_cube_rl/dagger_projected_collection_v3.py whitespace=-blank-at-eof

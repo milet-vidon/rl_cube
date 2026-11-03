@@ -1,0 +1,5125 @@
+{
+  "status": "integration_smoke_passed_pending_teacher_validation",
+  "scope": "isolated opt-in robot-environment reset/contact smoke",
+  "teacher_started": false,
+  "face_turn_validated": false,
+  "checks": {
+    "robot_remains_56_DOF": true,
+    "native_cube_backend_verified": true,
+    "one_guarded_cube_write_per_episode_reset": true,
+    "full_reset_state_readback_passed": true,
+    "control_phase_reset_rejected": true,
+    "all_original_body_states_present": true,
+    "finite_body_states": true,
+    "no_control_phase_cube_pose_write": true,
+    "zero_cube_actuation_during_control": true,
+    "callback_has_no_errors": true,
+    "positive_cube_table_contacts_after_reset_observed": true,
+    "source_and_config_unchanged": true
+  },
+  "source_sha256": {
+    "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/passive_cube_env_smoke.py": "7fbbe33222d4fd2e0eed4a4a1f160b611480d968b076d14ec7ece82cdfb3d1b7",
+    "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/passive_cube_articulation.py": "949c3ede71c6ac4cd32b359b08ab110c72c354888d32541136aa2330edce980c",
+    "/home/brainco/rl_cube/github_project/revotron_cube_rl/config.json": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+    "/home/brainco/rl_cube/github_project/revotron_cube_rl/environment.py": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7",
+    "/home/brainco/rl_cube/github_project/revotron_cube_rl/articulated_cube_env.py": "dfad0023f9e2797d6ea8ea3ac08aa1b6889b7dbb4ff8398cd0ca11fa329bc707",
+    "/home/brainco/rl_cube/github_project/revotron_cube_rl/dynamic_cube.py": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de",
+    "/home/brainco/rl_cube/github_project/revotron_cube_rl/isaac_compat.py": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825",
+    "/home/brainco/rl_cube/github_project/revotron_cube_rl/runtime_platform.py": "c08829cde5986256dab4f5448edcecbf8932a3100ed7fab7dbdf0ad2f895772f",
+    "/home/brainco/rl_cube/github_project/revotron_cube_rl/solver_precision.py": "b147e8647ef0199192931926941813e19b099de0be02a76f6df640c3a7567c70",
+    "/home/brainco/rl_cube/github_project/revotron_cube_rl/joint_safety.py": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887",
+    "/home/brainco/rl_cube/github_project/revotron_cube_rl/cube_core_inertia.py": "0eade322d766409cf52145895190c7dd7d66f4efdee5aae1e9d669740b342ffc",
+    "/home/brainco/rl_cube/github_project/revotron_cube_rl/cube_joint_damping.py": "48ca9c94b6453303cddc42d3c6300ad1d9d3886e572702f5252723977bd559e0",
+    "/home/brainco/rl_cube/github_project/revotron_cube_rl/right_contact_environment.py": "920084cb0f7567099655fcbb0d0d5441f904f30bbd1b501961bf8a7b73af3c5f",
+    "/home/brainco/rl_cube/github_project/revotron_cube_rl/right_contact_material.py": "ccd8f4348c5e5a92e467296317d6d894d21860b98a7fc048842b3c8eba372a5d",
+    "/home/brainco/rl_cube/github_project/revotron_cube_rl/matched_cube_material.py": "034e3d25f87c8b4fae110104ba42e30497441391f01644c5fe56eb010ae6ea37"
+  },
+  "assets_sha256": {
+    "/home/brainco/rl_cube/github_project/revotron_revo3/source/revotron_system/usd/revotron_bimanual_revo3_wrist_mesh_v1.usda": "1ea674035491ae19875c61813ef8cfb1fd26c4b0b58de3ae3a2a3f04b741a143",
+    "/home/brainco/rl_cube/github_project/isaac_mujoco_cube/cube_model.usda": "c41baa3cd75db5a497c5878d0e18bb6b3316124e0f1935867de8305b44e4eb11"
+  },
+  "baseline": {
+    "path": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/articulation_freefall_probe_v1_20261103/baseline/result.json",
+    "sha256": "0bc715f5f009a9dcf6b90c7d4f5f97dc22043354aebe403aa5a2ad94ed9615c8"
+  },
+  "args": {
+    "execute_physics": true,
+    "project": "/home/brainco/rl_cube/github_project",
+    "output": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/passive_cube_env_smoke_v1_20261104",
+    "baseline_evidence": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/articulation_freefall_probe_v1_20261103/baseline/result.json",
+    "baseline_sha256": "0bc715f5f009a9dcf6b90c7d4f5f97dc22043354aebe403aa5a2ad94ed9615c8",
+    "steps": 120,
+    "seed": 9501,
+    "cube_position_iterations": 64,
+    "cube_velocity_iterations": 4,
+    "right_hand_friction": null,
+    "matched_internal_friction": null,
+    "source_core_inertia": false,
+    "source_joint_damping": false
+  },
+  "isolated_environment_io": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/passive_cube_env_smoke_v1_20261104/environment_io",
+  "solver": {
+    "scene": {
+      "solverType": "TGS",
+      "minPositionIterationCount": 64,
+      "maxPositionIterationCount": 64,
+      "minVelocityIterationCount": 4,
+      "enableExternalForcesEveryIteration": true,
+      "enableStabilization": false
+    },
+    "physics_hz": 240,
+    "control_hz": 30,
+    "verified": true,
+    "scope": "numerical convergence development probe; no success assertion"
+  },
+  "contacts": {
+    "positive_events": 5097,
+    "table_positive_events": 663,
+    "post_reset_table_positive_events": 633,
+    "callback_errors": [],
+    "subscribed": true
+  },
+  "cube_model": {
+    "runtime_model_version": "passive_articulation_facade_draft_v1",
+    "source_core_kinematic": true,
+    "runtime_core_kinematic": false,
+    "bodies": [
+      "/World/Core",
+      "/World/Cube/pX",
+      "/World/Cube/nX",
+      "/World/Cube/pY",
+      "/World/Cube/nY",
+      "/World/Cube/pZ",
+      "/World/Cube/nZ",
+      "/World/Cube/pX_pY",
+      "/World/Cube/nY_pX",
+      "/World/Cube/nX_pY",
+      "/World/Cube/nX_nY",
+      "/World/Cube/pX_pZ",
+      "/World/Cube/nZ_pX",
+      "/World/Cube/nX_pZ",
+      "/World/Cube/nX_nZ",
+      "/World/Cube/pY_pZ",
+      "/World/Cube/nZ_pY",
+      "/World/Cube/nY_pZ",
+      "/World/Cube/nY_nZ",
+      "/World/Cube/pX_pY_pZ",
+      "/World/Cube/nZ_pX_pY",
+      "/World/Cube/nY_pX_pZ",
+      "/World/Cube/nY_nZ_pX",
+      "/World/Cube/nX_pY_pZ",
+      "/World/Cube/nX_nZ_pY",
+      "/World/Cube/nX_nY_pZ",
+      "/World/Cube/nX_nY_nZ"
+    ],
+    "active_physics_scenes": [
+      "/physicsScene"
+    ],
+    "source_friction": [
+      0.0,
+      0.0
+    ],
+    "runtime_friction": [
+      0.9,
+      0.8
+    ],
+    "friction_basis": "explicit runtime cube friction; unchanged facade behavior",
+    "angular_dofs": 66,
+    "passive_articulation": {
+      "authored_axes": [
+        {
+          "joint": "/World/Joints/pX",
+          "axis": "angular",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nX",
+          "axis": "angular",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/pY",
+          "axis": "angular",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nY",
+          "axis": "angular",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/pZ",
+          "axis": "angular",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nZ",
+          "axis": "angular",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/pX_pY",
+          "axis": "rotX",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/pX_pY",
+          "axis": "rotY",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/pX_pY",
+          "axis": "rotZ",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nY_pX",
+          "axis": "rotX",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nY_pX",
+          "axis": "rotY",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nY_pX",
+          "axis": "rotZ",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nX_pY",
+          "axis": "rotX",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nX_pY",
+          "axis": "rotY",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nX_pY",
+          "axis": "rotZ",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nX_nY",
+          "axis": "rotX",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nX_nY",
+          "axis": "rotY",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nX_nY",
+          "axis": "rotZ",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/pX_pZ",
+          "axis": "rotX",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/pX_pZ",
+          "axis": "rotY",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/pX_pZ",
+          "axis": "rotZ",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nZ_pX",
+          "axis": "rotX",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nZ_pX",
+          "axis": "rotY",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nZ_pX",
+          "axis": "rotZ",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nX_pZ",
+          "axis": "rotX",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nX_pZ",
+          "axis": "rotY",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nX_pZ",
+          "axis": "rotZ",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nX_nZ",
+          "axis": "rotX",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nX_nZ",
+          "axis": "rotY",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nX_nZ",
+          "axis": "rotZ",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/pY_pZ",
+          "axis": "rotX",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/pY_pZ",
+          "axis": "rotY",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/pY_pZ",
+          "axis": "rotZ",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nZ_pY",
+          "axis": "rotX",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nZ_pY",
+          "axis": "rotY",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nZ_pY",
+          "axis": "rotZ",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nY_pZ",
+          "axis": "rotX",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nY_pZ",
+          "axis": "rotY",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nY_pZ",
+          "axis": "rotZ",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nY_nZ",
+          "axis": "rotX",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nY_nZ",
+          "axis": "rotY",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nY_nZ",
+          "axis": "rotZ",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/pX_pY_pZ",
+          "axis": "rotX",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/pX_pY_pZ",
+          "axis": "rotY",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/pX_pY_pZ",
+          "axis": "rotZ",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nZ_pX_pY",
+          "axis": "rotX",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nZ_pX_pY",
+          "axis": "rotY",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nZ_pX_pY",
+          "axis": "rotZ",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nY_pX_pZ",
+          "axis": "rotX",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nY_pX_pZ",
+          "axis": "rotY",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nY_pX_pZ",
+          "axis": "rotZ",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nY_nZ_pX",
+          "axis": "rotX",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nY_nZ_pX",
+          "axis": "rotY",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nY_nZ_pX",
+          "axis": "rotZ",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nX_pY_pZ",
+          "axis": "rotX",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nX_pY_pZ",
+          "axis": "rotY",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nX_pY_pZ",
+          "axis": "rotZ",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nX_nZ_pY",
+          "axis": "rotX",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nX_nZ_pY",
+          "axis": "rotY",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nX_nZ_pY",
+          "axis": "rotZ",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nX_nY_pZ",
+          "axis": "rotX",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nX_nY_pZ",
+          "axis": "rotY",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nX_nY_pZ",
+          "axis": "rotZ",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nX_nY_nZ",
+          "axis": "rotX",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nX_nY_nZ",
+          "axis": "rotY",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        },
+        {
+          "joint": "/World/Joints/nX_nY_nZ",
+          "axis": "rotZ",
+          "usd_values": {
+            "armature": 0.0001,
+            "staticFrictionEffort": 0.001,
+            "dynamicFrictionEffort": 0.001,
+            "viscousFrictionCoefficient": 8.726646259971648e-06
+          }
+        }
+      ],
+      "linear_damping_only": true,
+      "omitted_quadratic_and_cubic_damping": [
+        0.0005,
+        0.0005
+      ],
+      "baseline_path": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/articulation_freefall_probe_v1_20261103/baseline/result.json",
+      "baseline_sha256": "0bc715f5f009a9dcf6b90c7d4f5f97dc22043354aebe403aa5a2ad94ed9615c8",
+      "solver_iterations_requested": [
+        64,
+        4
+      ],
+      "backend_verified": true,
+      "measured_mass_properties": {
+        "/World/Core": {
+          "mass": 0.0025370370130985975,
+          "inertia": [
+            1.0148148248845246e-05,
+            0.0,
+            0.0,
+            0.0,
+            1.0148148248845246e-05,
+            0.0,
+            0.0,
+            0.0,
+            1.0148148248845246e-05
+          ],
+          "local_com": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "/World/Cube/pX": {
+          "mass": 0.0025370370130985975,
+          "inertia": [
+            1.4718969509885937e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.4718966667714994e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.4718966667714994e-07
+          ],
+          "local_com": [
+            0.01899999938905239,
+            7.761021686425451e-11,
+            1.5522043372850902e-10,
+            0.3826834261417389,
+            0.0,
+            0.0,
+            0.9238795638084412
+          ]
+        },
+        "/World/Cube/nX": {
+          "mass": 0.0025370370130985975,
+          "inertia": [
+            1.4718969509885937e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.4718966667714994e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.4718966667714994e-07
+          ],
+          "local_com": [
+            -0.01899999938905239,
+            -7.761021686425451e-11,
+            -7.263680400216128e-20,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "/World/Cube/pY": {
+          "mass": 0.0025370370130985975,
+          "inertia": [
+            1.4718966667714994e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.4718969509885937e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.4718966667714994e-07
+          ],
+          "local_com": [
+            -2.8017051956750295e-19,
+            0.01899999938905239,
+            1.5522043372850902e-10,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "/World/Cube/nY": {
+          "mass": 0.0025370370130985975,
+          "inertia": [
+            1.4718966667714994e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.4718969509885937e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.4718966667714994e-07
+          ],
+          "local_com": [
+            7.761021686425451e-11,
+            -0.01899999938905239,
+            -7.761021686425451e-11,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "/World/Cube/pZ": {
+          "mass": 0.0025370370130985975,
+          "inertia": [
+            1.4718966667714994e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.4718966667714994e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.4718969509885937e-07
+          ],
+          "local_com": [
+            -3.8912575303572614e-21,
+            -2.5293172049007317e-19,
+            0.01899999938905239,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "/World/Cube/nZ": {
+          "mass": 0.0025370370130985975,
+          "inertia": [
+            1.4718966667714994e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.4718966667714994e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.4718969509885937e-07
+          ],
+          "local_com": [
+            7.761021686425451e-11,
+            1.1641532182693481e-10,
+            -0.01899999938905239,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "/World/Cube/pX_pY": {
+          "mass": 0.0025370370130985975,
+          "inertia": [
+            1.4718973773142352e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.4718973773142352e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.471898229965518e-07
+          ],
+          "local_com": [
+            0.01899999938905239,
+            0.01899999938905239,
+            2.1791039261943823e-19,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "/World/Cube/nY_pX": {
+          "mass": 0.0025370370130985975,
+          "inertia": [
+            1.4718973773142352e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.4718973773142352e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.471898229965518e-07
+          ],
+          "local_com": [
+            0.01899999938905239,
+            -0.01899999938905239,
+            -3.281626856778229e-19,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "/World/Cube/nX_pY": {
+          "mass": 0.0025370370130985975,
+          "inertia": [
+            1.4718973773142352e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.4718973773142352e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.471898229965518e-07
+          ],
+          "local_com": [
+            -0.01899999938905239,
+            0.01899999938905239,
+            -1.9715702558654804e-19,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "/World/Cube/nX_nY": {
+          "mass": 0.0025370370130985975,
+          "inertia": [
+            1.4718973773142352e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.4718973773142352e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.471898229965518e-07
+          ],
+          "local_com": [
+            -0.01899999938905239,
+            -0.01899999938905239,
+            -2.0364245763108762e-19,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "/World/Cube/pX_pZ": {
+          "mass": 0.0025370370130985975,
+          "inertia": [
+            1.4718973773142352e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.471898229965518e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.4718973773142352e-07
+          ],
+          "local_com": [
+            0.01899999938905239,
+            1.037668513203223e-20,
+            0.01899999938905239,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "/World/Cube/nZ_pX": {
+          "mass": 0.0025370370130985975,
+          "inertia": [
+            1.4718973773142352e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.471898229965518e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.4718973773142352e-07
+          ],
+          "local_com": [
+            0.01899999938905239,
+            -2.9443845455585355e-19,
+            -0.01899999938905239,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "/World/Cube/nX_pZ": {
+          "mass": 0.0025370370130985975,
+          "inertia": [
+            1.4718973773142352e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.471898229965518e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.4718973773142352e-07
+          ],
+          "local_com": [
+            -0.01899999938905239,
+            -3.3594518862163393e-19,
+            0.01899999938905239,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "/World/Cube/nX_nZ": {
+          "mass": 0.0025370370130985975,
+          "inertia": [
+            1.4718973773142352e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.471898229965518e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.4718973773142352e-07
+          ],
+          "local_com": [
+            -0.01899999938905239,
+            -7.761021686425451e-11,
+            -0.01899999938905239,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "/World/Cube/pY_pZ": {
+          "mass": 0.0025370370130985975,
+          "inertia": [
+            1.4718963825544051e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.471897235205688e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.471897235205688e-07
+          ],
+          "local_com": [
+            7.761021686425451e-11,
+            0.01899999938905239,
+            0.01899999938905239,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "/World/Cube/nZ_pY": {
+          "mass": 0.0025370370130985975,
+          "inertia": [
+            1.4718963825544051e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.471897235205688e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.471897235205688e-07
+          ],
+          "local_com": [
+            -2.0364244470639055e-19,
+            0.01899999938905239,
+            -0.01899999938905239,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "/World/Cube/nY_pZ": {
+          "mass": 0.0025370370130985975,
+          "inertia": [
+            1.4718963825544051e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.471897235205688e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.471897235205688e-07
+          ],
+          "local_com": [
+            -7.761021686425451e-11,
+            -0.01899999938905239,
+            0.01899999938905239,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "/World/Cube/nY_nZ": {
+          "mass": 0.0025370370130985975,
+          "inertia": [
+            1.4718963825544051e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.471897235205688e-07,
+            0.0,
+            0.0,
+            0.0,
+            1.471897235205688e-07
+          ],
+          "local_com": [
+            -2.1142496057489864e-19,
+            -0.01899999938905239,
+            -0.01899999938905239,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "/World/Cube/pX_pY_pZ": {
+          "mass": 0.0025370370130985975,
+          "inertia": [
+            1.4718963825544051e-07,
+            7.105427357601002e-14,
+            7.815970093361102e-14,
+            6.750155989720952e-14,
+            1.471896240445858e-07,
+            7.460698725481052e-14,
+            8.171241461241152e-14,
+            7.460698725481052e-14,
+            1.4718960983373108e-07
+          ],
+          "local_com": [
+            0.01899999938905239,
+            0.01899999938905239,
+            0.01899999938905239,
+            0.11576052010059357,
+            -0.27947062253952026,
+            0.364754855632782,
+            0.8805961608886719
+          ]
+        },
+        "/World/Cube/nZ_pX_pY": {
+          "mass": 0.0025370370130985975,
+          "inertia": [
+            1.4718963825544051e-07,
+            7.105427357601002e-14,
+            -7.815970093361102e-14,
+            6.750155989720952e-14,
+            1.471896240445858e-07,
+            -7.460698725481052e-14,
+            -8.171241461241152e-14,
+            -7.460698725481052e-14,
+            1.4718960983373108e-07
+          ],
+          "local_com": [
+            0.01899999938905239,
+            0.01899999938905239,
+            -0.01899999938905239,
+            -0.11576052010059357,
+            0.27947062253952026,
+            0.364754855632782,
+            0.8805961608886719
+          ]
+        },
+        "/World/Cube/nY_pX_pZ": {
+          "mass": 0.0025370370130985975,
+          "inertia": [
+            1.4718963825544051e-07,
+            -7.105427357601002e-14,
+            9.103828801926284e-14,
+            -7.105427357601002e-14,
+            1.4718963825544051e-07,
+            -8.970602038971265e-14,
+            8.748557434046234e-14,
+            -8.615330671091215e-14,
+            1.4718963825544051e-07
+          ],
+          "local_com": [
+            0.01899999938905239,
+            -0.01899999938905239,
+            0.01899999938905239,
+            -0.45926433801651,
+            0.5131409168243408,
+            0.07888638228178024,
+            0.7207909822463989
+          ]
+        },
+        "/World/Cube/nY_nZ_pX": {
+          "mass": 0.0025370370130985975,
+          "inertia": [
+            1.471896240445858e-07,
+            -9.325873406851315e-14,
+            -7.815970093361102e-14,
+            -8.615330671091215e-14,
+            1.4718963825544051e-07,
+            9.103828801926284e-14,
+            -7.815970093361102e-14,
+            9.50350909079134e-14,
+            1.471896240445858e-07
+          ],
+          "local_com": [
+            0.01899999938905239,
+            -0.01899999938905239,
+            -0.01899999938905239,
+            0.15612226724624634,
+            0.3708782494068146,
+            0.4348677098751068,
+            0.8055837750434875
+          ]
+        },
+        "/World/Cube/nX_pY_pZ": {
+          "mass": 0.0025370370130985975,
+          "inertia": [
+            1.471896240445858e-07,
+            -9.325873406851315e-14,
+            -7.815970093361102e-14,
+            -8.615330671091215e-14,
+            1.4718963825544051e-07,
+            9.103828801926284e-14,
+            -7.815970093361102e-14,
+            9.50350909079134e-14,
+            1.471896240445858e-07
+          ],
+          "local_com": [
+            -0.01899999938905239,
+            0.01899999938905239,
+            0.01899999938905239,
+            0.15612226724624634,
+            0.3708782494068146,
+            0.4348677098751068,
+            0.8055837750434875
+          ]
+        },
+        "/World/Cube/nX_nZ_pY": {
+          "mass": 0.0025370370130985975,
+          "inertia": [
+            1.4718963825544051e-07,
+            -7.105427357601002e-14,
+            9.103828801926284e-14,
+            -7.105427357601002e-14,
+            1.4718963825544051e-07,
+            -8.970602038971265e-14,
+            8.748557434046234e-14,
+            -8.615330671091215e-14,
+            1.4718963825544051e-07
+          ],
+          "local_com": [
+            -0.01899999938905239,
+            0.01899999938905239,
+            -0.01899999938905239,
+            -0.45926433801651,
+            0.5131409168243408,
+            0.07888638228178024,
+            0.7207909822463989
+          ]
+        },
+        "/World/Cube/nX_nY_pZ": {
+          "mass": 0.0025370370130985975,
+          "inertia": [
+            1.4718963825544051e-07,
+            7.105427357601002e-14,
+            -7.815970093361102e-14,
+            6.750155989720952e-14,
+            1.471896240445858e-07,
+            -7.460698725481052e-14,
+            -8.171241461241152e-14,
+            -7.460698725481052e-14,
+            1.4718960983373108e-07
+          ],
+          "local_com": [
+            -0.01899999938905239,
+            -0.01899999938905239,
+            0.01899999938905239,
+            -0.11576052010059357,
+            0.27947062253952026,
+            0.364754855632782,
+            0.8805961608886719
+          ]
+        },
+        "/World/Cube/nX_nY_nZ": {
+          "mass": 0.0025370370130985975,
+          "inertia": [
+            1.4718963825544051e-07,
+            7.105427357601002e-14,
+            7.815970093361102e-14,
+            6.750155989720952e-14,
+            1.471896240445858e-07,
+            7.460698725481052e-14,
+            8.171241461241152e-14,
+            7.460698725481052e-14,
+            1.4718960983373108e-07
+          ],
+          "local_com": [
+            -0.01899999938905239,
+            -0.01899999938905239,
+            -0.01899999938905239,
+            0.11576052010059357,
+            -0.27947062253952026,
+            0.364754855632782,
+            0.8805961608886719
+          ]
+        }
+      },
+      "backend_readback": {
+        "armature": [
+          [
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05
+          ]
+        ],
+        "friction": [
+          [
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ],
+            [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0005000000237487257
+            ]
+          ]
+        ],
+        "dof_types": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "drive_stiffness": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "drive_damping": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "position_targets": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "velocity_targets": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "actuation_forces": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "body_paths": [
+        "/World/Core",
+        "/World/Cube/pX",
+        "/World/Cube/nX",
+        "/World/Cube/pY",
+        "/World/Cube/nY",
+        "/World/Cube/pZ",
+        "/World/Cube/nZ",
+        "/World/Cube/pX_pY",
+        "/World/Cube/nY_pX",
+        "/World/Cube/nX_pY",
+        "/World/Cube/nX_nY",
+        "/World/Cube/pX_pZ",
+        "/World/Cube/nZ_pX",
+        "/World/Cube/nX_pZ",
+        "/World/Cube/nX_nZ",
+        "/World/Cube/pY_pZ",
+        "/World/Cube/nZ_pY",
+        "/World/Cube/nY_pZ",
+        "/World/Cube/nY_nZ",
+        "/World/Cube/pX_pY_pZ",
+        "/World/Cube/nZ_pX_pY",
+        "/World/Cube/nY_pX_pZ",
+        "/World/Cube/nY_nZ_pX",
+        "/World/Cube/nX_pY_pZ",
+        "/World/Cube/nX_nZ_pY",
+        "/World/Cube/nX_nY_pZ",
+        "/World/Cube/nX_nY_nZ"
+      ],
+      "dof_names": [
+        "pX",
+        "nX",
+        "pY",
+        "nY",
+        "pZ",
+        "nZ",
+        "pX_pY:0",
+        "pX_pY:1",
+        "pX_pY:2",
+        "nY_pX:0",
+        "nY_pX:1",
+        "nY_pX:2",
+        "nX_pY:0",
+        "nX_pY:1",
+        "nX_pY:2",
+        "nX_nY:0",
+        "nX_nY:1",
+        "nX_nY:2",
+        "pX_pZ:0",
+        "pX_pZ:1",
+        "pX_pZ:2",
+        "nZ_pX:0",
+        "nZ_pX:1",
+        "nZ_pX:2",
+        "nX_pZ:0",
+        "nX_pZ:1",
+        "nX_pZ:2",
+        "nX_nZ:0",
+        "nX_nZ:1",
+        "nX_nZ:2",
+        "pY_pZ:0",
+        "pY_pZ:1",
+        "pY_pZ:2",
+        "nZ_pY:0",
+        "nZ_pY:1",
+        "nZ_pY:2",
+        "nY_pZ:0",
+        "nY_pZ:1",
+        "nY_pZ:2",
+        "nY_nZ:0",
+        "nY_nZ:1",
+        "nY_nZ:2",
+        "pX_pY_pZ:0",
+        "pX_pY_pZ:1",
+        "pX_pY_pZ:2",
+        "nZ_pX_pY:0",
+        "nZ_pX_pY:1",
+        "nZ_pX_pY:2",
+        "nY_pX_pZ:0",
+        "nY_pX_pZ:1",
+        "nY_pX_pZ:2",
+        "nY_nZ_pX:0",
+        "nY_nZ_pX:1",
+        "nY_nZ_pX:2",
+        "nX_pY_pZ:0",
+        "nX_pY_pZ:1",
+        "nX_pY_pZ:2",
+        "nX_nZ_pY:0",
+        "nX_nZ_pY:1",
+        "nX_nZ_pY:2",
+        "nX_nY_pZ:0",
+        "nX_nY_pZ:1",
+        "nX_nY_pZ:2",
+        "nX_nY_nZ:0",
+        "nX_nY_nZ:1",
+        "nX_nY_nZ:2"
+      ],
+      "dof_paths": [
+        [
+          "/World/Joints/pX",
+          "/World/Joints/nX",
+          "/World/Joints/pY",
+          "/World/Joints/nY",
+          "/World/Joints/pZ",
+          "/World/Joints/nZ",
+          "/World/Joints/pX_pY",
+          "/World/Joints/pX_pY",
+          "/World/Joints/pX_pY",
+          "/World/Joints/nY_pX",
+          "/World/Joints/nY_pX",
+          "/World/Joints/nY_pX",
+          "/World/Joints/nX_pY",
+          "/World/Joints/nX_pY",
+          "/World/Joints/nX_pY",
+          "/World/Joints/nX_nY",
+          "/World/Joints/nX_nY",
+          "/World/Joints/nX_nY",
+          "/World/Joints/pX_pZ",
+          "/World/Joints/pX_pZ",
+          "/World/Joints/pX_pZ",
+          "/World/Joints/nZ_pX",
+          "/World/Joints/nZ_pX",
+          "/World/Joints/nZ_pX",
+          "/World/Joints/nX_pZ",
+          "/World/Joints/nX_pZ",
+          "/World/Joints/nX_pZ",
+          "/World/Joints/nX_nZ",
+          "/World/Joints/nX_nZ",
+          "/World/Joints/nX_nZ",
+          "/World/Joints/pY_pZ",
+          "/World/Joints/pY_pZ",
+          "/World/Joints/pY_pZ",
+          "/World/Joints/nZ_pY",
+          "/World/Joints/nZ_pY",
+          "/World/Joints/nZ_pY",
+          "/World/Joints/nY_pZ",
+          "/World/Joints/nY_pZ",
+          "/World/Joints/nY_pZ",
+          "/World/Joints/nY_nZ",
+          "/World/Joints/nY_nZ",
+          "/World/Joints/nY_nZ",
+          "/World/Joints/pX_pY_pZ",
+          "/World/Joints/pX_pY_pZ",
+          "/World/Joints/pX_pY_pZ",
+          "/World/Joints/nZ_pX_pY",
+          "/World/Joints/nZ_pX_pY",
+          "/World/Joints/nZ_pX_pY",
+          "/World/Joints/nY_pX_pZ",
+          "/World/Joints/nY_pX_pZ",
+          "/World/Joints/nY_pX_pZ",
+          "/World/Joints/nY_nZ_pX",
+          "/World/Joints/nY_nZ_pX",
+          "/World/Joints/nY_nZ_pX",
+          "/World/Joints/nX_pY_pZ",
+          "/World/Joints/nX_pY_pZ",
+          "/World/Joints/nX_pY_pZ",
+          "/World/Joints/nX_nZ_pY",
+          "/World/Joints/nX_nZ_pY",
+          "/World/Joints/nX_nZ_pY",
+          "/World/Joints/nX_nY_pZ",
+          "/World/Joints/nX_nY_pZ",
+          "/World/Joints/nX_nY_pZ",
+          "/World/Joints/nX_nY_nZ",
+          "/World/Joints/nX_nY_nZ",
+          "/World/Joints/nX_nY_nZ"
+        ]
+      ],
+      "solver_iterations": {
+        "requested": [
+          64,
+          4
+        ],
+        "usd_readback": [
+          64,
+          4
+        ],
+        "native_iteration_getter_available": false,
+        "readback_scope": "USD articulation schema; installed tensor/binding API has no native iteration getter",
+        "baseline_scope": "explicit 64/4 candidate and 64/4 development setting; no claim of original default solver equivalence"
+      },
+      "last_reset_readback": {
+        "count": 2,
+        "passed": true,
+        "root_pose": [
+          [
+            0.47706982493400574,
+            0.0066204313188791275,
+            0.9304999709129333,
+            0.0,
+            0.0,
+            -0.004639642778784037,
+            0.9999892115592957
+          ]
+        ],
+        "root_com_velocity": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "all_66_q_and_qd_zero": true
+      }
+    }
+  },
+  "asset_contract": {
+    "action_names": [
+      "Joint1_L",
+      "Joint2_L",
+      "Joint3_L",
+      "Joint4_L",
+      "Joint5_L",
+      "Joint6_L",
+      "Joint7_L",
+      "left_middle_MPR_joint",
+      "left_middle_MCP_joint",
+      "left_middle_PIP_joint",
+      "left_middle_DIP_joint",
+      "left_thumb_CMP_joint",
+      "left_thumb_CMR_joint",
+      "left_thumb_MCP_joint",
+      "left_thumb_PIP_joint",
+      "left_thumb_DIP_joint",
+      "left_index_MPR_joint",
+      "left_index_MCP_joint",
+      "left_index_PIP_joint",
+      "left_index_DIP_joint",
+      "left_ring_MPR_joint",
+      "left_ring_MCP_joint",
+      "left_ring_PIP_joint",
+      "left_ring_DIP_joint",
+      "left_little_MPR_joint",
+      "left_little_MCP_joint",
+      "left_little_PIP_joint",
+      "left_little_DIP_joint",
+      "Joint1_R",
+      "Joint2_R",
+      "Joint3_R",
+      "Joint4_R",
+      "Joint5_R",
+      "Joint6_R",
+      "Joint7_R",
+      "right_middle_MPR_joint",
+      "right_middle_MCP_joint",
+      "right_middle_PIP_joint",
+      "right_middle_DIP_joint",
+      "right_thumb_CMP_joint",
+      "right_thumb_CMR_joint",
+      "right_thumb_MCP_joint",
+      "right_thumb_PIP_joint",
+      "right_thumb_DIP_joint",
+      "right_index_MPR_joint",
+      "right_index_MCP_joint",
+      "right_index_PIP_joint",
+      "right_index_DIP_joint",
+      "right_ring_MPR_joint",
+      "right_ring_MCP_joint",
+      "right_ring_PIP_joint",
+      "right_ring_DIP_joint",
+      "right_little_MPR_joint",
+      "right_little_MCP_joint",
+      "right_little_PIP_joint",
+      "right_little_DIP_joint"
+    ],
+    "sim_joint_indices": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      16,
+      26,
+      36,
+      46,
+      18,
+      28,
+      38,
+      48,
+      54,
+      14,
+      24,
+      34,
+      44,
+      17,
+      27,
+      37,
+      47,
+      15,
+      25,
+      35,
+      45,
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      21,
+      31,
+      41,
+      51,
+      23,
+      33,
+      43,
+      53,
+      55,
+      19,
+      29,
+      39,
+      49,
+      22,
+      32,
+      42,
+      52,
+      20,
+      30,
+      40,
+      50
+    ],
+    "observation_policy": [
+      "chest_rgb",
+      "joint_position",
+      "joint_velocity",
+      "previous_action",
+      "joint_target_error"
+    ],
+    "critic_only": [
+      "cube_pose",
+      "cube_velocity",
+      "palm_to_cube",
+      "contact_impulses",
+      "hold_progress",
+      "remaining_episode_fraction"
+    ],
+    "cube_mode": "free_core_27_body_contact_turn",
+    "cube_gravity": true,
+    "robot_gravity_compensation": true,
+    "self_collision": true,
+    "arm_damping": 8.0,
+    "revolute_dofs": 56,
+    "camera_parent": "/World/Robot/world",
+    "camera_resolution": 128,
+    "upstream_commit": "0fb72da54c2401638f808eb814bbfe55b6f9931f",
+    "asset_override_release": "20261025",
+    "runtime_versions": {
+      "isaacsim": "6.2.0.0",
+      "isaaclab": "3.0.0",
+      "torch": "2.11.0+cu130",
+      "rsl-rl-lib": "5.5.1"
+    },
+    "asset_path_overrides": [
+      {
+        "attribute": "/World/Robot/Link7_L/visuals/left_palm_led_link/Scene/Looks/screen/screen.inputs:diffuse_texture",
+        "source": "..\\meshes\\hands\\visual\\textures\\revo3_screen.png",
+        "resolved": "/home/brainco/rl_cube/github_project/revotron_revo3/source/revotron_system/meshes/hands/visual/textures/revo3_screen.png"
+      },
+      {
+        "attribute": "/World/Robot/Link7_R/visuals/right_palm_led_link/Scene/Looks/screen/screen.inputs:diffuse_texture",
+        "source": "..\\meshes\\hands\\visual\\textures\\revo3_screen.png",
+        "resolved": "/home/brainco/rl_cube/github_project/revotron_revo3/source/revotron_system/meshes/hands/visual/textures/revo3_screen.png"
+      }
+    ],
+    "project_quaternion_convention": "wxyz",
+    "native_quaternion_convention": "xyzw",
+    "joint_limit_safety": {
+      "source": "Revo3 URDF/USD articulation hard limits plus project software soft envelope",
+      "arm_soft_limit_margin_rad": 0.0,
+      "arm_max_step_rad": 0.04,
+      "arm_velocity_limit_scale": 0.5,
+      "hard_limits_rad": {
+        "Joint1_L": [
+          -3.1066997051239014,
+          3.1066997051239014
+        ],
+        "Joint2_L": [
+          -2.0943996906280518,
+          2.0943996906280518
+        ],
+        "Joint3_L": [
+          -3.1066997051239014,
+          3.1066997051239014
+        ],
+        "Joint4_L": [
+          -2.5306997299194336,
+          1.0471998453140259
+        ],
+        "Joint5_L": [
+          -3.1066997051239014,
+          3.1066997051239014
+        ],
+        "Joint6_L": [
+          -1.0471998453140259,
+          1.0471998453140259
+        ],
+        "Joint7_L": [
+          -1.5707999467849731,
+          1.5707999467849731
+        ],
+        "Joint1_R": [
+          -3.1066997051239014,
+          3.1066997051239014
+        ],
+        "Joint2_R": [
+          -2.0943996906280518,
+          2.0943996906280518
+        ],
+        "Joint3_R": [
+          -3.1066997051239014,
+          3.1066997051239014
+        ],
+        "Joint4_R": [
+          -2.5306997299194336,
+          1.0471998453140259
+        ],
+        "Joint5_R": [
+          -3.1066997051239014,
+          3.1066997051239014
+        ],
+        "Joint6_R": [
+          -1.0471998453140259,
+          1.0471998453140259
+        ],
+        "Joint7_R": [
+          -1.5707999467849731,
+          1.5707999467849731
+        ]
+      },
+      "soft_limits_rad": {
+        "Joint1_L": [
+          -3.1066861152648926,
+          3.1066861152648926
+        ],
+        "Joint2_L": [
+          -2.094395160675049,
+          2.094395160675049
+        ],
+        "Joint3_L": [
+          -3.1066861152648926,
+          3.1066861152648926
+        ],
+        "Joint4_L": [
+          -2.5306997299194336,
+          1.0471975803375244
+        ],
+        "Joint5_L": [
+          -3.1066861152648926,
+          3.1066861152648926
+        ],
+        "Joint6_L": [
+          -1.0471975803375244,
+          1.0471975803375244
+        ],
+        "Joint7_L": [
+          -1.5707963705062866,
+          1.5707963705062866
+        ],
+        "Joint1_R": [
+          -3.1066861152648926,
+          3.1066861152648926
+        ],
+        "Joint2_R": [
+          -2.094395160675049,
+          2.094395160675049
+        ],
+        "Joint3_R": [
+          -3.1066861152648926,
+          3.1066861152648926
+        ],
+        "Joint4_R": [
+          -2.5306997299194336,
+          1.0471975803375244
+        ],
+        "Joint5_R": [
+          -3.1066861152648926,
+          3.1066861152648926
+        ],
+        "Joint6_R": [
+          -1.0471975803375244,
+          1.0471975803375244
+        ],
+        "Joint7_R": [
+          -1.5707963705062866,
+          1.5707963705062866
+        ]
+      },
+      "home_inside_soft_limits": true
+    },
+    "dynamic_cube": {
+      "runtime_model_version": "passive_articulation_facade_draft_v1",
+      "source_core_kinematic": true,
+      "runtime_core_kinematic": false,
+      "bodies": [
+        "/World/Core",
+        "/World/Cube/pX",
+        "/World/Cube/nX",
+        "/World/Cube/pY",
+        "/World/Cube/nY",
+        "/World/Cube/pZ",
+        "/World/Cube/nZ",
+        "/World/Cube/pX_pY",
+        "/World/Cube/nY_pX",
+        "/World/Cube/nX_pY",
+        "/World/Cube/nX_nY",
+        "/World/Cube/pX_pZ",
+        "/World/Cube/nZ_pX",
+        "/World/Cube/nX_pZ",
+        "/World/Cube/nX_nZ",
+        "/World/Cube/pY_pZ",
+        "/World/Cube/nZ_pY",
+        "/World/Cube/nY_pZ",
+        "/World/Cube/nY_nZ",
+        "/World/Cube/pX_pY_pZ",
+        "/World/Cube/nZ_pX_pY",
+        "/World/Cube/nY_pX_pZ",
+        "/World/Cube/nY_nZ_pX",
+        "/World/Cube/nX_pY_pZ",
+        "/World/Cube/nX_nZ_pY",
+        "/World/Cube/nX_nY_pZ",
+        "/World/Cube/nX_nY_nZ"
+      ],
+      "active_physics_scenes": [
+        "/physicsScene"
+      ],
+      "source_friction": [
+        0.0,
+        0.0
+      ],
+      "runtime_friction": [
+        0.9,
+        0.8
+      ],
+      "friction_basis": "explicit runtime cube friction; unchanged facade behavior",
+      "angular_dofs": 66,
+      "passive_articulation": {
+        "authored_axes": [
+          {
+            "joint": "/World/Joints/pX",
+            "axis": "angular",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nX",
+            "axis": "angular",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/pY",
+            "axis": "angular",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nY",
+            "axis": "angular",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/pZ",
+            "axis": "angular",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nZ",
+            "axis": "angular",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/pX_pY",
+            "axis": "rotX",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/pX_pY",
+            "axis": "rotY",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/pX_pY",
+            "axis": "rotZ",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nY_pX",
+            "axis": "rotX",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nY_pX",
+            "axis": "rotY",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nY_pX",
+            "axis": "rotZ",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nX_pY",
+            "axis": "rotX",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nX_pY",
+            "axis": "rotY",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nX_pY",
+            "axis": "rotZ",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nX_nY",
+            "axis": "rotX",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nX_nY",
+            "axis": "rotY",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nX_nY",
+            "axis": "rotZ",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/pX_pZ",
+            "axis": "rotX",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/pX_pZ",
+            "axis": "rotY",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/pX_pZ",
+            "axis": "rotZ",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nZ_pX",
+            "axis": "rotX",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nZ_pX",
+            "axis": "rotY",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nZ_pX",
+            "axis": "rotZ",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nX_pZ",
+            "axis": "rotX",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nX_pZ",
+            "axis": "rotY",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nX_pZ",
+            "axis": "rotZ",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nX_nZ",
+            "axis": "rotX",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nX_nZ",
+            "axis": "rotY",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nX_nZ",
+            "axis": "rotZ",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/pY_pZ",
+            "axis": "rotX",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/pY_pZ",
+            "axis": "rotY",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/pY_pZ",
+            "axis": "rotZ",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nZ_pY",
+            "axis": "rotX",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nZ_pY",
+            "axis": "rotY",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nZ_pY",
+            "axis": "rotZ",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nY_pZ",
+            "axis": "rotX",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nY_pZ",
+            "axis": "rotY",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nY_pZ",
+            "axis": "rotZ",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nY_nZ",
+            "axis": "rotX",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nY_nZ",
+            "axis": "rotY",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nY_nZ",
+            "axis": "rotZ",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/pX_pY_pZ",
+            "axis": "rotX",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/pX_pY_pZ",
+            "axis": "rotY",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/pX_pY_pZ",
+            "axis": "rotZ",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nZ_pX_pY",
+            "axis": "rotX",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nZ_pX_pY",
+            "axis": "rotY",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nZ_pX_pY",
+            "axis": "rotZ",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nY_pX_pZ",
+            "axis": "rotX",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nY_pX_pZ",
+            "axis": "rotY",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nY_pX_pZ",
+            "axis": "rotZ",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nY_nZ_pX",
+            "axis": "rotX",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nY_nZ_pX",
+            "axis": "rotY",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nY_nZ_pX",
+            "axis": "rotZ",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nX_pY_pZ",
+            "axis": "rotX",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nX_pY_pZ",
+            "axis": "rotY",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nX_pY_pZ",
+            "axis": "rotZ",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nX_nZ_pY",
+            "axis": "rotX",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nX_nZ_pY",
+            "axis": "rotY",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nX_nZ_pY",
+            "axis": "rotZ",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nX_nY_pZ",
+            "axis": "rotX",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nX_nY_pZ",
+            "axis": "rotY",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nX_nY_pZ",
+            "axis": "rotZ",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nX_nY_nZ",
+            "axis": "rotX",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nX_nY_nZ",
+            "axis": "rotY",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          },
+          {
+            "joint": "/World/Joints/nX_nY_nZ",
+            "axis": "rotZ",
+            "usd_values": {
+              "armature": 0.0001,
+              "staticFrictionEffort": 0.001,
+              "dynamicFrictionEffort": 0.001,
+              "viscousFrictionCoefficient": 8.726646259971648e-06
+            }
+          }
+        ],
+        "linear_damping_only": true,
+        "omitted_quadratic_and_cubic_damping": [
+          0.0005,
+          0.0005
+        ],
+        "baseline_path": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/articulation_freefall_probe_v1_20261103/baseline/result.json",
+        "baseline_sha256": "0bc715f5f009a9dcf6b90c7d4f5f97dc22043354aebe403aa5a2ad94ed9615c8",
+        "solver_iterations_requested": [
+          64,
+          4
+        ],
+        "backend_verified": true,
+        "measured_mass_properties": {
+          "/World/Core": {
+            "mass": 0.0025370370130985975,
+            "inertia": [
+              1.0148148248845246e-05,
+              0.0,
+              0.0,
+              0.0,
+              1.0148148248845246e-05,
+              0.0,
+              0.0,
+              0.0,
+              1.0148148248845246e-05
+            ],
+            "local_com": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "/World/Cube/pX": {
+            "mass": 0.0025370370130985975,
+            "inertia": [
+              1.4718969509885937e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.4718966667714994e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.4718966667714994e-07
+            ],
+            "local_com": [
+              0.01899999938905239,
+              7.761021686425451e-11,
+              1.5522043372850902e-10,
+              0.3826834261417389,
+              0.0,
+              0.0,
+              0.9238795638084412
+            ]
+          },
+          "/World/Cube/nX": {
+            "mass": 0.0025370370130985975,
+            "inertia": [
+              1.4718969509885937e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.4718966667714994e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.4718966667714994e-07
+            ],
+            "local_com": [
+              -0.01899999938905239,
+              -7.761021686425451e-11,
+              -7.263680400216128e-20,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "/World/Cube/pY": {
+            "mass": 0.0025370370130985975,
+            "inertia": [
+              1.4718966667714994e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.4718969509885937e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.4718966667714994e-07
+            ],
+            "local_com": [
+              -2.8017051956750295e-19,
+              0.01899999938905239,
+              1.5522043372850902e-10,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "/World/Cube/nY": {
+            "mass": 0.0025370370130985975,
+            "inertia": [
+              1.4718966667714994e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.4718969509885937e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.4718966667714994e-07
+            ],
+            "local_com": [
+              7.761021686425451e-11,
+              -0.01899999938905239,
+              -7.761021686425451e-11,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "/World/Cube/pZ": {
+            "mass": 0.0025370370130985975,
+            "inertia": [
+              1.4718966667714994e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.4718966667714994e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.4718969509885937e-07
+            ],
+            "local_com": [
+              -3.8912575303572614e-21,
+              -2.5293172049007317e-19,
+              0.01899999938905239,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "/World/Cube/nZ": {
+            "mass": 0.0025370370130985975,
+            "inertia": [
+              1.4718966667714994e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.4718966667714994e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.4718969509885937e-07
+            ],
+            "local_com": [
+              7.761021686425451e-11,
+              1.1641532182693481e-10,
+              -0.01899999938905239,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "/World/Cube/pX_pY": {
+            "mass": 0.0025370370130985975,
+            "inertia": [
+              1.4718973773142352e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.4718973773142352e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.471898229965518e-07
+            ],
+            "local_com": [
+              0.01899999938905239,
+              0.01899999938905239,
+              2.1791039261943823e-19,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "/World/Cube/nY_pX": {
+            "mass": 0.0025370370130985975,
+            "inertia": [
+              1.4718973773142352e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.4718973773142352e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.471898229965518e-07
+            ],
+            "local_com": [
+              0.01899999938905239,
+              -0.01899999938905239,
+              -3.281626856778229e-19,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "/World/Cube/nX_pY": {
+            "mass": 0.0025370370130985975,
+            "inertia": [
+              1.4718973773142352e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.4718973773142352e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.471898229965518e-07
+            ],
+            "local_com": [
+              -0.01899999938905239,
+              0.01899999938905239,
+              -1.9715702558654804e-19,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "/World/Cube/nX_nY": {
+            "mass": 0.0025370370130985975,
+            "inertia": [
+              1.4718973773142352e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.4718973773142352e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.471898229965518e-07
+            ],
+            "local_com": [
+              -0.01899999938905239,
+              -0.01899999938905239,
+              -2.0364245763108762e-19,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "/World/Cube/pX_pZ": {
+            "mass": 0.0025370370130985975,
+            "inertia": [
+              1.4718973773142352e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.471898229965518e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.4718973773142352e-07
+            ],
+            "local_com": [
+              0.01899999938905239,
+              1.037668513203223e-20,
+              0.01899999938905239,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "/World/Cube/nZ_pX": {
+            "mass": 0.0025370370130985975,
+            "inertia": [
+              1.4718973773142352e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.471898229965518e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.4718973773142352e-07
+            ],
+            "local_com": [
+              0.01899999938905239,
+              -2.9443845455585355e-19,
+              -0.01899999938905239,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "/World/Cube/nX_pZ": {
+            "mass": 0.0025370370130985975,
+            "inertia": [
+              1.4718973773142352e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.471898229965518e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.4718973773142352e-07
+            ],
+            "local_com": [
+              -0.01899999938905239,
+              -3.3594518862163393e-19,
+              0.01899999938905239,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "/World/Cube/nX_nZ": {
+            "mass": 0.0025370370130985975,
+            "inertia": [
+              1.4718973773142352e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.471898229965518e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.4718973773142352e-07
+            ],
+            "local_com": [
+              -0.01899999938905239,
+              -7.761021686425451e-11,
+              -0.01899999938905239,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "/World/Cube/pY_pZ": {
+            "mass": 0.0025370370130985975,
+            "inertia": [
+              1.4718963825544051e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.471897235205688e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.471897235205688e-07
+            ],
+            "local_com": [
+              7.761021686425451e-11,
+              0.01899999938905239,
+              0.01899999938905239,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "/World/Cube/nZ_pY": {
+            "mass": 0.0025370370130985975,
+            "inertia": [
+              1.4718963825544051e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.471897235205688e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.471897235205688e-07
+            ],
+            "local_com": [
+              -2.0364244470639055e-19,
+              0.01899999938905239,
+              -0.01899999938905239,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "/World/Cube/nY_pZ": {
+            "mass": 0.0025370370130985975,
+            "inertia": [
+              1.4718963825544051e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.471897235205688e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.471897235205688e-07
+            ],
+            "local_com": [
+              -7.761021686425451e-11,
+              -0.01899999938905239,
+              0.01899999938905239,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "/World/Cube/nY_nZ": {
+            "mass": 0.0025370370130985975,
+            "inertia": [
+              1.4718963825544051e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.471897235205688e-07,
+              0.0,
+              0.0,
+              0.0,
+              1.471897235205688e-07
+            ],
+            "local_com": [
+              -2.1142496057489864e-19,
+              -0.01899999938905239,
+              -0.01899999938905239,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "/World/Cube/pX_pY_pZ": {
+            "mass": 0.0025370370130985975,
+            "inertia": [
+              1.4718963825544051e-07,
+              7.105427357601002e-14,
+              7.815970093361102e-14,
+              6.750155989720952e-14,
+              1.471896240445858e-07,
+              7.460698725481052e-14,
+              8.171241461241152e-14,
+              7.460698725481052e-14,
+              1.4718960983373108e-07
+            ],
+            "local_com": [
+              0.01899999938905239,
+              0.01899999938905239,
+              0.01899999938905239,
+              0.11576052010059357,
+              -0.27947062253952026,
+              0.364754855632782,
+              0.8805961608886719
+            ]
+          },
+          "/World/Cube/nZ_pX_pY": {
+            "mass": 0.0025370370130985975,
+            "inertia": [
+              1.4718963825544051e-07,
+              7.105427357601002e-14,
+              -7.815970093361102e-14,
+              6.750155989720952e-14,
+              1.471896240445858e-07,
+              -7.460698725481052e-14,
+              -8.171241461241152e-14,
+              -7.460698725481052e-14,
+              1.4718960983373108e-07
+            ],
+            "local_com": [
+              0.01899999938905239,
+              0.01899999938905239,
+              -0.01899999938905239,
+              -0.11576052010059357,
+              0.27947062253952026,
+              0.364754855632782,
+              0.8805961608886719
+            ]
+          },
+          "/World/Cube/nY_pX_pZ": {
+            "mass": 0.0025370370130985975,
+            "inertia": [
+              1.4718963825544051e-07,
+              -7.105427357601002e-14,
+              9.103828801926284e-14,
+              -7.105427357601002e-14,
+              1.4718963825544051e-07,
+              -8.970602038971265e-14,
+              8.748557434046234e-14,
+              -8.615330671091215e-14,
+              1.4718963825544051e-07
+            ],
+            "local_com": [
+              0.01899999938905239,
+              -0.01899999938905239,
+              0.01899999938905239,
+              -0.45926433801651,
+              0.5131409168243408,
+              0.07888638228178024,
+              0.7207909822463989
+            ]
+          },
+          "/World/Cube/nY_nZ_pX": {
+            "mass": 0.0025370370130985975,
+            "inertia": [
+              1.471896240445858e-07,
+              -9.325873406851315e-14,
+              -7.815970093361102e-14,
+              -8.615330671091215e-14,
+              1.4718963825544051e-07,
+              9.103828801926284e-14,
+              -7.815970093361102e-14,
+              9.50350909079134e-14,
+              1.471896240445858e-07
+            ],
+            "local_com": [
+              0.01899999938905239,
+              -0.01899999938905239,
+              -0.01899999938905239,
+              0.15612226724624634,
+              0.3708782494068146,
+              0.4348677098751068,
+              0.8055837750434875
+            ]
+          },
+          "/World/Cube/nX_pY_pZ": {
+            "mass": 0.0025370370130985975,
+            "inertia": [
+              1.471896240445858e-07,
+              -9.325873406851315e-14,
+              -7.815970093361102e-14,
+              -8.615330671091215e-14,
+              1.4718963825544051e-07,
+              9.103828801926284e-14,
+              -7.815970093361102e-14,
+              9.50350909079134e-14,
+              1.471896240445858e-07
+            ],
+            "local_com": [
+              -0.01899999938905239,
+              0.01899999938905239,
+              0.01899999938905239,
+              0.15612226724624634,
+              0.3708782494068146,
+              0.4348677098751068,
+              0.8055837750434875
+            ]
+          },
+          "/World/Cube/nX_nZ_pY": {
+            "mass": 0.0025370370130985975,
+            "inertia": [
+              1.4718963825544051e-07,
+              -7.105427357601002e-14,
+              9.103828801926284e-14,
+              -7.105427357601002e-14,
+              1.4718963825544051e-07,
+              -8.970602038971265e-14,
+              8.748557434046234e-14,
+              -8.615330671091215e-14,
+              1.4718963825544051e-07
+            ],
+            "local_com": [
+              -0.01899999938905239,
+              0.01899999938905239,
+              -0.01899999938905239,
+              -0.45926433801651,
+              0.5131409168243408,
+              0.07888638228178024,
+              0.7207909822463989
+            ]
+          },
+          "/World/Cube/nX_nY_pZ": {
+            "mass": 0.0025370370130985975,
+            "inertia": [
+              1.4718963825544051e-07,
+              7.105427357601002e-14,
+              -7.815970093361102e-14,
+              6.750155989720952e-14,
+              1.471896240445858e-07,
+              -7.460698725481052e-14,
+              -8.171241461241152e-14,
+              -7.460698725481052e-14,
+              1.4718960983373108e-07
+            ],
+            "local_com": [
+              -0.01899999938905239,
+              -0.01899999938905239,
+              0.01899999938905239,
+              -0.11576052010059357,
+              0.27947062253952026,
+              0.364754855632782,
+              0.8805961608886719
+            ]
+          },
+          "/World/Cube/nX_nY_nZ": {
+            "mass": 0.0025370370130985975,
+            "inertia": [
+              1.4718963825544051e-07,
+              7.105427357601002e-14,
+              7.815970093361102e-14,
+              6.750155989720952e-14,
+              1.471896240445858e-07,
+              7.460698725481052e-14,
+              8.171241461241152e-14,
+              7.460698725481052e-14,
+              1.4718960983373108e-07
+            ],
+            "local_com": [
+              -0.01899999938905239,
+              -0.01899999938905239,
+              -0.01899999938905239,
+              0.11576052010059357,
+              -0.27947062253952026,
+              0.364754855632782,
+              0.8805961608886719
+            ]
+          }
+        },
+        "backend_readback": {
+          "armature": [
+            [
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05,
+              9.999999747378752e-05
+            ]
+          ],
+          "friction": [
+            [
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ],
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0005000000237487257
+              ]
+            ]
+          ],
+          "dof_types": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "drive_stiffness": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "drive_damping": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "position_targets": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "velocity_targets": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "actuation_forces": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ]
+        },
+        "body_paths": [
+          "/World/Core",
+          "/World/Cube/pX",
+          "/World/Cube/nX",
+          "/World/Cube/pY",
+          "/World/Cube/nY",
+          "/World/Cube/pZ",
+          "/World/Cube/nZ",
+          "/World/Cube/pX_pY",
+          "/World/Cube/nY_pX",
+          "/World/Cube/nX_pY",
+          "/World/Cube/nX_nY",
+          "/World/Cube/pX_pZ",
+          "/World/Cube/nZ_pX",
+          "/World/Cube/nX_pZ",
+          "/World/Cube/nX_nZ",
+          "/World/Cube/pY_pZ",
+          "/World/Cube/nZ_pY",
+          "/World/Cube/nY_pZ",
+          "/World/Cube/nY_nZ",
+          "/World/Cube/pX_pY_pZ",
+          "/World/Cube/nZ_pX_pY",
+          "/World/Cube/nY_pX_pZ",
+          "/World/Cube/nY_nZ_pX",
+          "/World/Cube/nX_pY_pZ",
+          "/World/Cube/nX_nZ_pY",
+          "/World/Cube/nX_nY_pZ",
+          "/World/Cube/nX_nY_nZ"
+        ],
+        "dof_names": [
+          "pX",
+          "nX",
+          "pY",
+          "nY",
+          "pZ",
+          "nZ",
+          "pX_pY:0",
+          "pX_pY:1",
+          "pX_pY:2",
+          "nY_pX:0",
+          "nY_pX:1",
+          "nY_pX:2",
+          "nX_pY:0",
+          "nX_pY:1",
+          "nX_pY:2",
+          "nX_nY:0",
+          "nX_nY:1",
+          "nX_nY:2",
+          "pX_pZ:0",
+          "pX_pZ:1",
+          "pX_pZ:2",
+          "nZ_pX:0",
+          "nZ_pX:1",
+          "nZ_pX:2",
+          "nX_pZ:0",
+          "nX_pZ:1",
+          "nX_pZ:2",
+          "nX_nZ:0",
+          "nX_nZ:1",
+          "nX_nZ:2",
+          "pY_pZ:0",
+          "pY_pZ:1",
+          "pY_pZ:2",
+          "nZ_pY:0",
+          "nZ_pY:1",
+          "nZ_pY:2",
+          "nY_pZ:0",
+          "nY_pZ:1",
+          "nY_pZ:2",
+          "nY_nZ:0",
+          "nY_nZ:1",
+          "nY_nZ:2",
+          "pX_pY_pZ:0",
+          "pX_pY_pZ:1",
+          "pX_pY_pZ:2",
+          "nZ_pX_pY:0",
+          "nZ_pX_pY:1",
+          "nZ_pX_pY:2",
+          "nY_pX_pZ:0",
+          "nY_pX_pZ:1",
+          "nY_pX_pZ:2",
+          "nY_nZ_pX:0",
+          "nY_nZ_pX:1",
+          "nY_nZ_pX:2",
+          "nX_pY_pZ:0",
+          "nX_pY_pZ:1",
+          "nX_pY_pZ:2",
+          "nX_nZ_pY:0",
+          "nX_nZ_pY:1",
+          "nX_nZ_pY:2",
+          "nX_nY_pZ:0",
+          "nX_nY_pZ:1",
+          "nX_nY_pZ:2",
+          "nX_nY_nZ:0",
+          "nX_nY_nZ:1",
+          "nX_nY_nZ:2"
+        ],
+        "dof_paths": [
+          [
+            "/World/Joints/pX",
+            "/World/Joints/nX",
+            "/World/Joints/pY",
+            "/World/Joints/nY",
+            "/World/Joints/pZ",
+            "/World/Joints/nZ",
+            "/World/Joints/pX_pY",
+            "/World/Joints/pX_pY",
+            "/World/Joints/pX_pY",
+            "/World/Joints/nY_pX",
+            "/World/Joints/nY_pX",
+            "/World/Joints/nY_pX",
+            "/World/Joints/nX_pY",
+            "/World/Joints/nX_pY",
+            "/World/Joints/nX_pY",
+            "/World/Joints/nX_nY",
+            "/World/Joints/nX_nY",
+            "/World/Joints/nX_nY",
+            "/World/Joints/pX_pZ",
+            "/World/Joints/pX_pZ",
+            "/World/Joints/pX_pZ",
+            "/World/Joints/nZ_pX",
+            "/World/Joints/nZ_pX",
+            "/World/Joints/nZ_pX",
+            "/World/Joints/nX_pZ",
+            "/World/Joints/nX_pZ",
+            "/World/Joints/nX_pZ",
+            "/World/Joints/nX_nZ",
+            "/World/Joints/nX_nZ",
+            "/World/Joints/nX_nZ",
+            "/World/Joints/pY_pZ",
+            "/World/Joints/pY_pZ",
+            "/World/Joints/pY_pZ",
+            "/World/Joints/nZ_pY",
+            "/World/Joints/nZ_pY",
+            "/World/Joints/nZ_pY",
+            "/World/Joints/nY_pZ",
+            "/World/Joints/nY_pZ",
+            "/World/Joints/nY_pZ",
+            "/World/Joints/nY_nZ",
+            "/World/Joints/nY_nZ",
+            "/World/Joints/nY_nZ",
+            "/World/Joints/pX_pY_pZ",
+            "/World/Joints/pX_pY_pZ",
+            "/World/Joints/pX_pY_pZ",
+            "/World/Joints/nZ_pX_pY",
+            "/World/Joints/nZ_pX_pY",
+            "/World/Joints/nZ_pX_pY",
+            "/World/Joints/nY_pX_pZ",
+            "/World/Joints/nY_pX_pZ",
+            "/World/Joints/nY_pX_pZ",
+            "/World/Joints/nY_nZ_pX",
+            "/World/Joints/nY_nZ_pX",
+            "/World/Joints/nY_nZ_pX",
+            "/World/Joints/nX_pY_pZ",
+            "/World/Joints/nX_pY_pZ",
+            "/World/Joints/nX_pY_pZ",
+            "/World/Joints/nX_nZ_pY",
+            "/World/Joints/nX_nZ_pY",
+            "/World/Joints/nX_nZ_pY",
+            "/World/Joints/nX_nY_pZ",
+            "/World/Joints/nX_nY_pZ",
+            "/World/Joints/nX_nY_pZ",
+            "/World/Joints/nX_nY_nZ",
+            "/World/Joints/nX_nY_nZ",
+            "/World/Joints/nX_nY_nZ"
+          ]
+        ],
+        "solver_iterations": {
+          "requested": [
+            64,
+            4
+          ],
+          "usd_readback": [
+            64,
+            4
+          ],
+          "native_iteration_getter_available": false,
+          "readback_scope": "USD articulation schema; installed tensor/binding API has no native iteration getter",
+          "baseline_scope": "explicit 64/4 candidate and 64/4 development setting; no claim of original default solver equivalence"
+        },
+        "last_reset_readback": {
+          "count": 2,
+          "passed": true,
+          "root_pose": [
+            [
+              0.47706982493400574,
+              0.0066204313188791275,
+              0.9304999709129333,
+              0.0,
+              0.0,
+              -0.004639642778784037,
+              0.9999892115592957
+            ]
+          ],
+          "root_com_velocity": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "all_66_q_and_qd_zero": true
+        }
+      }
+    }
+  },
+  "source_unchanged": true
+}

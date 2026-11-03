@@ -89,3 +89,17 @@ v4完整闭环结果：1647步、最高抬升0.368726m，但原腕部联合保�
 v16/v15逐值同前缀到3203步，首差异3204；v16右小指3240、无名指3241、食指3264失触，首失触时实际掌层超前约3.30°、末约11.95°。此时手指q-target误差已比保持时小，支持先限制推进超前而非直接增大刚度。raw layer速度字段为cubelet与Core世界角速度矢量差的范数，非absolute cubelet速度；v16转动阶段1.407–48.508rad/s，仍不合格。姿态30Hz差分很小不能替代原始速度门槛。
 
 v17 teacher_joint_planning_frame_paced_v17_20261104（PID941226）已启动：相对v15只将pacer反馈映射到原opposition_request Core规划坐标；原0.75°超前限制、五指接触、90帧停滞判定及最终验收不变。C0不改成turn-start、不减去原层偏置。12worker路径检查仍用已逐点等价验证实现。17项相关host测试通过。新--turn-feedback-planning-frame必须与--turn-feedback-pacing同时使用。
+
+
+## 回合终止审计与原生集成 smoke
+
+v17完成3309步、134转动帧十指接触，实际层角0.035734°，规划系layer角0.164089°，实测palm角0.809639°，实际超前0.64555°；坐标修正有效约束推进，但raw相对Core角速度1.867–11.256rad/s仍全部超限，连续90帧停滞后失败。
+
+新增终止审计发现：冻结environment.step的done来自通用双手pickup success/drop/timeout；历史完整转层driver忽略返回done。真实terms.terminal显示v11/v14首次terminal为3119，v12为3090，v13/v15/v16/v17为3092；全部未触及timeout，但之后仍执行物理步。因而这些首次done之后的数据只能作为诊断物理轨迹，不得作为有效任务训练episode或完整转层成功认证。原始result/full_episode字段保留历史字节，解释以本审计为准；这些回合原转层最终本就全部失败。baseline center_j56_dev_v3的2129帧无任何terminal，因此此前精确参考回放的可重复性结论仍成立。
+
+在继续完整转层训练前，正在新增明确多阶段终止适配：通用pickup success单独记录为milestone，drop/timeout/安全立即终止，原最终转层gate才可结束为task success；不改冻结environment/rewards，不扩大碰撞/速度门槛。teacher/BC新task reward明确为0，保留底层原reward/计数仅作诊断，不能拿作PPO reward。终止后的下一physics step必须拒绝，所有阶段要显式收尾。该修订尚未应用或真实验证，完整native teacher等待它完成。
+
+原生关节适配已完成2个独立120物理步环境集成smoke（默认材质、实际right-only 1.2/1.0材质）。27体质量/惯量/完整COM frame、66DOF native参数、reset后root/q/qd读回、控制期写拒绝、零cube actuation、所有body状态finite及真实正冲量table事件均通过。solver64/4按显式USD属性读回，不能冒称native getter。仍未完成完整teacher抓取或真实转层。
+
+
+完整任务终止已显式接入，v2原teacher采集验证与v3真实混合采样已完成；native完整任务v18正在运行，v5状态反馈训练正在准备。最新范围及证据见[完整任务与纠正标签](FULL_TASK_AND_DAGGER_UPDATE.md)。

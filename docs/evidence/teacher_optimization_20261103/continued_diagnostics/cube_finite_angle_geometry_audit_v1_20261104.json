@@ -1,0 +1,1799 @@
+{
+  "scope": "Offline ideal rigid-body orientation / anchor / COM-grid reachability; no physics, contact or teacher acceptance",
+  "source_sha256": {
+    "/home/brainco/rl_cube/github_project/isaac_mujoco_cube/cube_model.usda": "c41baa3cd75db5a497c5878d0e18bb6b3316124e0f1935867de8305b44e4eb11",
+    "/home/brainco/rl_cube/github_project/isaac_mujoco_cube/upstream/mujoco_cube-main/cube_3x3x3.xml": "b7b32a4a8624241817aafcbdba20217b7250fb9c570440af6fbdcf5ec084c023",
+    "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/articulation_freefall_probe_v1_20261103/baseline/result.json": "0bc715f5f009a9dcf6b90c7d4f5f97dc22043354aebe403aa5a2ad94ed9615c8"
+  },
+  "all_joint_origins_coincident": true,
+  "all_joint_frames_identity": true,
+  "all_spherical_cones_unlimited": true,
+  "joint_schema": {
+    "pX": {
+      "path": "/World/Joints/pX",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/pX"
+      ],
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot1_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": "X",
+      "lower_limit": "-inf",
+      "upper_limit": "inf"
+    },
+    "nX": {
+      "path": "/World/Joints/nX",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nX"
+      ],
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot1_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": "X",
+      "lower_limit": "-inf",
+      "upper_limit": "inf"
+    },
+    "pY": {
+      "path": "/World/Joints/pY",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/pY"
+      ],
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot1_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": "Y",
+      "lower_limit": "-inf",
+      "upper_limit": "inf"
+    },
+    "nY": {
+      "path": "/World/Joints/nY",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nY"
+      ],
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot1_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": "Y",
+      "lower_limit": "-inf",
+      "upper_limit": "inf"
+    },
+    "pZ": {
+      "path": "/World/Joints/pZ",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/pZ"
+      ],
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot1_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": "Z",
+      "lower_limit": "-inf",
+      "upper_limit": "inf"
+    },
+    "nZ": {
+      "path": "/World/Joints/nZ",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nZ"
+      ],
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot1_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": "Z",
+      "lower_limit": "-inf",
+      "upper_limit": "inf"
+    },
+    "pX_pY": {
+      "path": "/World/Joints/pX_pY",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/pX_pY"
+      ],
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot1_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": "X",
+      "cone_limits": [
+        -1.0,
+        -1.0
+      ]
+    },
+    "nY_pX": {
+      "path": "/World/Joints/nY_pX",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nY_pX"
+      ],
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot1_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": "X",
+      "cone_limits": [
+        -1.0,
+        -1.0
+      ]
+    },
+    "nX_pY": {
+      "path": "/World/Joints/nX_pY",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nX_pY"
+      ],
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot1_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": "X",
+      "cone_limits": [
+        -1.0,
+        -1.0
+      ]
+    },
+    "nX_nY": {
+      "path": "/World/Joints/nX_nY",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nX_nY"
+      ],
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot1_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": "X",
+      "cone_limits": [
+        -1.0,
+        -1.0
+      ]
+    },
+    "pX_pZ": {
+      "path": "/World/Joints/pX_pZ",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/pX_pZ"
+      ],
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot1_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": "X",
+      "cone_limits": [
+        -1.0,
+        -1.0
+      ]
+    },
+    "nZ_pX": {
+      "path": "/World/Joints/nZ_pX",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nZ_pX"
+      ],
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot1_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": "X",
+      "cone_limits": [
+        -1.0,
+        -1.0
+      ]
+    },
+    "nX_pZ": {
+      "path": "/World/Joints/nX_pZ",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nX_pZ"
+      ],
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot1_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": "X",
+      "cone_limits": [
+        -1.0,
+        -1.0
+      ]
+    },
+    "nX_nZ": {
+      "path": "/World/Joints/nX_nZ",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nX_nZ"
+      ],
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot1_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": "X",
+      "cone_limits": [
+        -1.0,
+        -1.0
+      ]
+    },
+    "pY_pZ": {
+      "path": "/World/Joints/pY_pZ",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/pY_pZ"
+      ],
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot1_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": "X",
+      "cone_limits": [
+        -1.0,
+        -1.0
+      ]
+    },
+    "nZ_pY": {
+      "path": "/World/Joints/nZ_pY",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nZ_pY"
+      ],
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot1_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": "X",
+      "cone_limits": [
+        -1.0,
+        -1.0
+      ]
+    },
+    "nY_pZ": {
+      "path": "/World/Joints/nY_pZ",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nY_pZ"
+      ],
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot1_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": "X",
+      "cone_limits": [
+        -1.0,
+        -1.0
+      ]
+    },
+    "nY_nZ": {
+      "path": "/World/Joints/nY_nZ",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nY_nZ"
+      ],
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot1_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": "X",
+      "cone_limits": [
+        -1.0,
+        -1.0
+      ]
+    },
+    "pX_pY_pZ": {
+      "path": "/World/Joints/pX_pY_pZ",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/pX_pY_pZ"
+      ],
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot1_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": "X",
+      "cone_limits": [
+        -1.0,
+        -1.0
+      ]
+    },
+    "nZ_pX_pY": {
+      "path": "/World/Joints/nZ_pX_pY",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nZ_pX_pY"
+      ],
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot1_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": "X",
+      "cone_limits": [
+        -1.0,
+        -1.0
+      ]
+    },
+    "nY_pX_pZ": {
+      "path": "/World/Joints/nY_pX_pZ",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nY_pX_pZ"
+      ],
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot1_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": "X",
+      "cone_limits": [
+        -1.0,
+        -1.0
+      ]
+    },
+    "nY_nZ_pX": {
+      "path": "/World/Joints/nY_nZ_pX",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nY_nZ_pX"
+      ],
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot1_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": "X",
+      "cone_limits": [
+        -1.0,
+        -1.0
+      ]
+    },
+    "nX_pY_pZ": {
+      "path": "/World/Joints/nX_pY_pZ",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nX_pY_pZ"
+      ],
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot1_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": "X",
+      "cone_limits": [
+        -1.0,
+        -1.0
+      ]
+    },
+    "nX_nZ_pY": {
+      "path": "/World/Joints/nX_nZ_pY",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nX_nZ_pY"
+      ],
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot1_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": "X",
+      "cone_limits": [
+        -1.0,
+        -1.0
+      ]
+    },
+    "nX_nY_pZ": {
+      "path": "/World/Joints/nX_nY_pZ",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nX_nY_pZ"
+      ],
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot1_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": "X",
+      "cone_limits": [
+        -1.0,
+        -1.0
+      ]
+    },
+    "nX_nY_nZ": {
+      "path": "/World/Joints/nX_nY_nZ",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nX_nY_nZ"
+      ],
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot1_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": "X",
+      "cone_limits": [
+        -1.0,
+        -1.0
+      ]
+    }
+  },
+  "source_explicit_joint_axes": {
+    "pX": "1 0 0",
+    "nX": "-1 0 0",
+    "pY": "0 1 0",
+    "nY": "0 -1 0",
+    "pZ": "0 0 1",
+    "nZ": "0 0 -1",
+    "pX_pY": null,
+    "nY_pX": null,
+    "nX_pY": null,
+    "nX_nY": null,
+    "pX_pZ": null,
+    "nZ_pX": null,
+    "nX_pZ": null,
+    "nX_nZ": null,
+    "pY_pZ": null,
+    "nZ_pY": null,
+    "nY_pZ": null,
+    "nY_nZ": null,
+    "pX_pY_pZ": null,
+    "nZ_pX_pY": null,
+    "nY_pX_pZ": null,
+    "nY_nZ_pX": null,
+    "nX_pY_pZ": null,
+    "nX_nZ_pY": null,
+    "nX_nY_pZ": null,
+    "nX_nY_nZ": null
+  },
+  "ideal_face_rotations": {
+    "pX": {
+      "selected_body_count": 9,
+      "selected_bodies": [
+        "nY_nZ_pX",
+        "nY_pX",
+        "nY_pX_pZ",
+        "nZ_pX",
+        "nZ_pX_pY",
+        "pX",
+        "pX_pY",
+        "pX_pY_pZ",
+        "pX_pZ"
+      ],
+      "checks": [
+        {
+          "degrees": 15.0,
+          "anchor_separation_m": 0.0,
+          "center_hinge_axis_preserved": true,
+          "center_hinge_q_magnitude_rad": 0.2617993877991494,
+          "face_grid_permutation": null,
+          "max_grid_error_m": null,
+          "collision_free_path_verified": false,
+          "native_spherical_q_mapping_verified": false
+        },
+        {
+          "degrees": 30.0,
+          "anchor_separation_m": 0.0,
+          "center_hinge_axis_preserved": true,
+          "center_hinge_q_magnitude_rad": 0.5235987755982988,
+          "face_grid_permutation": null,
+          "max_grid_error_m": null,
+          "collision_free_path_verified": false,
+          "native_spherical_q_mapping_verified": false
+        },
+        {
+          "degrees": 90.0,
+          "anchor_separation_m": 0.0,
+          "center_hinge_axis_preserved": true,
+          "center_hinge_q_magnitude_rad": 1.5707963267948966,
+          "face_grid_permutation": {
+            "nY_nZ_pX": {
+              "nearest": "nZ_pX_pY",
+              "distance_m": 0.0
+            },
+            "nY_pX": {
+              "nearest": "nZ_pX",
+              "distance_m": 5.4081328154655735e-19
+            },
+            "nY_pX_pZ": {
+              "nearest": "nY_nZ_pX",
+              "distance_m": 0.0
+            },
+            "nZ_pX": {
+              "nearest": "pX_pY",
+              "distance_m": 1.6757632689555256e-18
+            },
+            "nZ_pX_pY": {
+              "nearest": "pX_pY_pZ",
+              "distance_m": 0.0
+            },
+            "pX": {
+              "nearest": "pX",
+              "distance_m": 2.4542505499065523e-10
+            },
+            "pX_pY": {
+              "nearest": "pX_pZ",
+              "distance_m": 9.351273440287634e-19
+            },
+            "pX_pY_pZ": {
+              "nearest": "nY_pX_pZ",
+              "distance_m": 0.0
+            },
+            "pX_pZ": {
+              "nearest": "nY_pX",
+              "distance_m": 1.501953792590089e-18
+            }
+          },
+          "max_grid_error_m": 2.4542505499065523e-10,
+          "collision_free_path_verified": false,
+          "native_spherical_q_mapping_verified": false
+        },
+        {
+          "degrees": 180.0,
+          "anchor_separation_m": 0.0,
+          "center_hinge_axis_preserved": true,
+          "center_hinge_q_magnitude_rad": 3.141592653589793,
+          "face_grid_permutation": {
+            "nY_nZ_pX": {
+              "nearest": "pX_pY_pZ",
+              "distance_m": 4.9065389333867974e-18
+            },
+            "nY_pX": {
+              "nearest": "pX_pY",
+              "distance_m": 2.216576550502083e-18
+            },
+            "nY_pX_pZ": {
+              "nearest": "nZ_pX_pY",
+              "distance_m": 4.9065389333867974e-18
+            },
+            "nZ_pX": {
+              "nearest": "pX_pZ",
+              "distance_m": 2.610890612984289e-18
+            },
+            "nZ_pX_pY": {
+              "nearest": "nY_pX_pZ",
+              "distance_m": 4.9065389333867974e-18
+            },
+            "pX": {
+              "nearest": "pX",
+              "distance_m": 3.470834413139473e-10
+            },
+            "pX_pY": {
+              "nearest": "nY_pX",
+              "distance_m": 2.4370811366188523e-18
+            },
+            "pX_pY_pZ": {
+              "nearest": "nY_nZ_pX",
+              "distance_m": 4.9065389333867974e-18
+            },
+            "pX_pZ": {
+              "nearest": "nZ_pX",
+              "distance_m": 2.0427670741366463e-18
+            }
+          },
+          "max_grid_error_m": 3.470834413139473e-10,
+          "collision_free_path_verified": false,
+          "native_spherical_q_mapping_verified": false
+        }
+      ]
+    },
+    "nX": {
+      "selected_body_count": 9,
+      "selected_bodies": [
+        "nX",
+        "nX_nY",
+        "nX_nY_nZ",
+        "nX_nY_pZ",
+        "nX_nZ",
+        "nX_nZ_pY",
+        "nX_pY",
+        "nX_pY_pZ",
+        "nX_pZ"
+      ],
+      "checks": [
+        {
+          "degrees": 15.0,
+          "anchor_separation_m": 0.0,
+          "center_hinge_axis_preserved": true,
+          "center_hinge_q_magnitude_rad": 0.2617993877991494,
+          "face_grid_permutation": null,
+          "max_grid_error_m": null,
+          "collision_free_path_verified": false,
+          "native_spherical_q_mapping_verified": false
+        },
+        {
+          "degrees": 30.0,
+          "anchor_separation_m": 0.0,
+          "center_hinge_axis_preserved": true,
+          "center_hinge_q_magnitude_rad": 0.5235987755982988,
+          "face_grid_permutation": null,
+          "max_grid_error_m": null,
+          "collision_free_path_verified": false,
+          "native_spherical_q_mapping_verified": false
+        },
+        {
+          "degrees": 90.0,
+          "anchor_separation_m": 0.0,
+          "center_hinge_axis_preserved": true,
+          "center_hinge_q_magnitude_rad": 1.5707963267948966,
+          "face_grid_permutation": {
+            "nX": {
+              "nearest": "nX",
+              "distance_m": 1.0975742126814582e-10
+            },
+            "nX_nY": {
+              "nearest": "nX_pZ",
+              "distance_m": 1.0311116907896875e-18
+            },
+            "nX_nY_nZ": {
+              "nearest": "nX_nY_pZ",
+              "distance_m": 0.0
+            },
+            "nX_nY_pZ": {
+              "nearest": "nX_pY_pZ",
+              "distance_m": 0.0
+            },
+            "nX_nZ": {
+              "nearest": "nX_nY",
+              "distance_m": 7.761021590448255e-11
+            },
+            "nX_nZ_pY": {
+              "nearest": "nX_nY_nZ",
+              "distance_m": 0.0
+            },
+            "nX_pY": {
+              "nearest": "nX_nZ",
+              "distance_m": 7.761021783051191e-11
+            },
+            "nX_pY_pZ": {
+              "nearest": "nX_nZ_pY",
+              "distance_m": 0.0
+            },
+            "nX_pZ": {
+              "nearest": "nX_pY",
+              "distance_m": 1.6965166359884158e-18
+            }
+          },
+          "max_grid_error_m": 1.0975742126814582e-10,
+          "collision_free_path_verified": false,
+          "native_spherical_q_mapping_verified": false
+        },
+        {
+          "degrees": 180.0,
+          "anchor_separation_m": 0.0,
+          "center_hinge_axis_preserved": true,
+          "center_hinge_q_magnitude_rad": 3.141592653589793,
+          "face_grid_permutation": {
+            "nX": {
+              "nearest": "nX",
+              "distance_m": 1.5522043372850902e-10
+            },
+            "nX_nY": {
+              "nearest": "nX_pY",
+              "distance_m": 2.7276283267781033e-18
+            },
+            "nX_nY_nZ": {
+              "nearest": "nX_pY_pZ",
+              "distance_m": 4.9065389333867974e-18
+            },
+            "nX_nY_pZ": {
+              "nearest": "nX_nZ_pY",
+              "distance_m": 4.9065389333867974e-18
+            },
+            "nX_nZ": {
+              "nearest": "nX_pZ",
+              "distance_m": 7.761021487337085e-11
+            },
+            "nX_nZ_pY": {
+              "nearest": "nX_nY_pZ",
+              "distance_m": 4.9065389333867974e-18
+            },
+            "nX_pY": {
+              "nearest": "nX_nY",
+              "distance_m": 1.926029360342832e-18
+            },
+            "nX_pY_pZ": {
+              "nearest": "nX_nY_nZ",
+              "distance_m": 4.9065389333867974e-18
+            },
+            "nX_pZ": {
+              "nearest": "nX_nZ",
+              "distance_m": 7.761021952702854e-11
+            }
+          },
+          "max_grid_error_m": 1.5522043372850902e-10,
+          "collision_free_path_verified": false,
+          "native_spherical_q_mapping_verified": false
+        }
+      ]
+    },
+    "pY": {
+      "selected_body_count": 9,
+      "selected_bodies": [
+        "nX_nZ_pY",
+        "nX_pY",
+        "nX_pY_pZ",
+        "nZ_pX_pY",
+        "nZ_pY",
+        "pX_pY",
+        "pX_pY_pZ",
+        "pY",
+        "pY_pZ"
+      ],
+      "checks": [
+        {
+          "degrees": 15.0,
+          "anchor_separation_m": 0.0,
+          "center_hinge_axis_preserved": true,
+          "center_hinge_q_magnitude_rad": 0.2617993877991494,
+          "face_grid_permutation": null,
+          "max_grid_error_m": null,
+          "collision_free_path_verified": false,
+          "native_spherical_q_mapping_verified": false
+        },
+        {
+          "degrees": 30.0,
+          "anchor_separation_m": 0.0,
+          "center_hinge_axis_preserved": true,
+          "center_hinge_q_magnitude_rad": 0.5235987755982988,
+          "face_grid_permutation": null,
+          "max_grid_error_m": null,
+          "collision_free_path_verified": false,
+          "native_spherical_q_mapping_verified": false
+        },
+        {
+          "degrees": 90.0,
+          "anchor_separation_m": 0.0,
+          "center_hinge_axis_preserved": true,
+          "center_hinge_q_magnitude_rad": 1.5707963267948966,
+          "face_grid_permutation": {
+            "nX_nZ_pY": {
+              "nearest": "nX_pY_pZ",
+              "distance_m": 0.0
+            },
+            "nX_pY": {
+              "nearest": "pY_pZ",
+              "distance_m": 7.761021822482596e-11
+            },
+            "nX_pY_pZ": {
+              "nearest": "pX_pY_pZ",
+              "distance_m": 0.0
+            },
+            "nZ_pX_pY": {
+              "nearest": "nX_nZ_pY",
+              "distance_m": 0.0
+            },
+            "nZ_pY": {
+              "nearest": "nX_pY",
+              "distance_m": 7.626149514872952e-19
+            },
+            "pX_pY": {
+              "nearest": "nZ_pY",
+              "distance_m": 1.5849672591060626e-18
+            },
+            "pX_pY_pZ": {
+              "nearest": "nZ_pX_pY",
+              "distance_m": 0.0
+            },
+            "pY": {
+              "nearest": "pY",
+              "distance_m": 2.1951484253629166e-10
+            },
+            "pY_pZ": {
+              "nearest": "pX_pY",
+              "distance_m": 7.761021591875048e-11
+            }
+          },
+          "max_grid_error_m": 2.1951484253629166e-10,
+          "collision_free_path_verified": false,
+          "native_spherical_q_mapping_verified": false
+        },
+        {
+          "degrees": 180.0,
+          "anchor_separation_m": 0.0,
+          "center_hinge_axis_preserved": true,
+          "center_hinge_q_magnitude_rad": 3.141592653589793,
+          "face_grid_permutation": {
+            "nX_nZ_pY": {
+              "nearest": "pX_pY_pZ",
+              "distance_m": 4.9065389333867974e-18
+            },
+            "nX_pY": {
+              "nearest": "pX_pY",
+              "distance_m": 2.3060754765275774e-18
+            },
+            "nX_pY_pZ": {
+              "nearest": "nZ_pX_pY",
+              "distance_m": 4.9065389333867974e-18
+            },
+            "nZ_pX_pY": {
+              "nearest": "nX_pY_pZ",
+              "distance_m": 4.9065389333867974e-18
+            },
+            "nZ_pY": {
+              "nearest": "pY_pZ",
+              "distance_m": 7.761021898744091e-11
+            },
+            "pX_pY": {
+              "nearest": "nX_pY",
+              "distance_m": 2.347582210593358e-18
+            },
+            "pX_pY_pZ": {
+              "nearest": "nX_nZ_pY",
+              "distance_m": 4.9065389333867974e-18
+            },
+            "pY": {
+              "nearest": "pY",
+              "distance_m": 3.1044086745701804e-10
+            },
+            "pY_pZ": {
+              "nearest": "nZ_pY",
+              "distance_m": 7.761021433378322e-11
+            }
+          },
+          "max_grid_error_m": 3.1044086745701804e-10,
+          "collision_free_path_verified": false,
+          "native_spherical_q_mapping_verified": false
+        }
+      ]
+    },
+    "nY": {
+      "selected_body_count": 9,
+      "selected_bodies": [
+        "nX_nY",
+        "nX_nY_nZ",
+        "nX_nY_pZ",
+        "nY",
+        "nY_nZ",
+        "nY_nZ_pX",
+        "nY_pX",
+        "nY_pX_pZ",
+        "nY_pZ"
+      ],
+      "checks": [
+        {
+          "degrees": 15.0,
+          "anchor_separation_m": 0.0,
+          "center_hinge_axis_preserved": true,
+          "center_hinge_q_magnitude_rad": 0.2617993877991494,
+          "face_grid_permutation": null,
+          "max_grid_error_m": null,
+          "collision_free_path_verified": false,
+          "native_spherical_q_mapping_verified": false
+        },
+        {
+          "degrees": 30.0,
+          "anchor_separation_m": 0.0,
+          "center_hinge_axis_preserved": true,
+          "center_hinge_q_magnitude_rad": 0.5235987755982988,
+          "face_grid_permutation": null,
+          "max_grid_error_m": null,
+          "collision_free_path_verified": false,
+          "native_spherical_q_mapping_verified": false
+        },
+        {
+          "degrees": 90.0,
+          "anchor_separation_m": 0.0,
+          "center_hinge_axis_preserved": true,
+          "center_hinge_q_magnitude_rad": 1.5707963267948966,
+          "face_grid_permutation": {
+            "nX_nY": {
+              "nearest": "nY_nZ",
+              "distance_m": 7.483470035742476e-19
+            },
+            "nX_nY_nZ": {
+              "nearest": "nY_nZ_pX",
+              "distance_m": 0.0
+            },
+            "nX_nY_pZ": {
+              "nearest": "nX_nY_nZ",
+              "distance_m": 0.0
+            },
+            "nY": {
+              "nearest": "nY",
+              "distance_m": 1.5522043372850902e-10
+            },
+            "nY_nZ": {
+              "nearest": "nY_pX",
+              "distance_m": 1.0466766966773095e-18
+            },
+            "nY_nZ_pX": {
+              "nearest": "nY_pX_pZ",
+              "distance_m": 0.0
+            },
+            "nY_pX": {
+              "nearest": "nY_pZ",
+              "distance_m": 7.761021835583162e-11
+            },
+            "nY_pX_pZ": {
+              "nearest": "nX_nY_pZ",
+              "distance_m": 0.0
+            },
+            "nY_pZ": {
+              "nearest": "nX_nY",
+              "distance_m": 7.761021549719763e-11
+            }
+          },
+          "max_grid_error_m": 1.5522043372850902e-10,
+          "collision_free_path_verified": false,
+          "native_spherical_q_mapping_verified": false
+        },
+        {
+          "degrees": 180.0,
+          "anchor_separation_m": 0.0,
+          "center_hinge_axis_preserved": true,
+          "center_hinge_q_magnitude_rad": 3.141592653589793,
+          "face_grid_permutation": {
+            "nX_nY": {
+              "nearest": "nY_pX",
+              "distance_m": 1.795023700251557e-18
+            },
+            "nX_nY_nZ": {
+              "nearest": "nY_pX_pZ",
+              "distance_m": 4.9065389333867974e-18
+            },
+            "nX_nY_pZ": {
+              "nearest": "nY_nZ_pX",
+              "distance_m": 4.9065389333867974e-18
+            },
+            "nY": {
+              "nearest": "nY",
+              "distance_m": 2.1951484253629166e-10
+            },
+            "nY_nZ": {
+              "nearest": "nY_pZ",
+              "distance_m": 7.761021940250832e-11
+            },
+            "nY_nZ_pX": {
+              "nearest": "nX_nY_pZ",
+              "distance_m": 4.9065389333867974e-18
+            },
+            "nY_pX": {
+              "nearest": "nX_nY",
+              "distance_m": 2.858633986869378e-18
+            },
+            "nY_pX_pZ": {
+              "nearest": "nX_nY_nZ",
+              "distance_m": 4.9065389333867974e-18
+            },
+            "nY_pZ": {
+              "nearest": "nY_nZ",
+              "distance_m": 7.761021474885063e-11
+            }
+          },
+          "max_grid_error_m": 2.1951484253629166e-10,
+          "collision_free_path_verified": false,
+          "native_spherical_q_mapping_verified": false
+        }
+      ]
+    },
+    "pZ": {
+      "selected_body_count": 9,
+      "selected_bodies": [
+        "nX_nY_pZ",
+        "nX_pY_pZ",
+        "nX_pZ",
+        "nY_pX_pZ",
+        "nY_pZ",
+        "pX_pY_pZ",
+        "pX_pZ",
+        "pY_pZ",
+        "pZ"
+      ],
+      "checks": [
+        {
+          "degrees": 15.0,
+          "anchor_separation_m": 0.0,
+          "center_hinge_axis_preserved": true,
+          "center_hinge_q_magnitude_rad": 0.2617993877991494,
+          "face_grid_permutation": null,
+          "max_grid_error_m": null,
+          "collision_free_path_verified": false,
+          "native_spherical_q_mapping_verified": false
+        },
+        {
+          "degrees": 30.0,
+          "anchor_separation_m": 0.0,
+          "center_hinge_axis_preserved": true,
+          "center_hinge_q_magnitude_rad": 0.5235987755982988,
+          "face_grid_permutation": null,
+          "max_grid_error_m": null,
+          "collision_free_path_verified": false,
+          "native_spherical_q_mapping_verified": false
+        },
+        {
+          "degrees": 90.0,
+          "anchor_separation_m": 0.0,
+          "center_hinge_axis_preserved": true,
+          "center_hinge_q_magnitude_rad": 1.5707963267948966,
+          "face_grid_permutation": {
+            "nX_nY_pZ": {
+              "nearest": "nY_pX_pZ",
+              "distance_m": 0.0
+            },
+            "nX_pY_pZ": {
+              "nearest": "nX_nY_pZ",
+              "distance_m": 0.0
+            },
+            "nX_pZ": {
+              "nearest": "nY_pZ",
+              "distance_m": 7.761021603678528e-11
+            },
+            "nY_pX_pZ": {
+              "nearest": "pX_pY_pZ",
+              "distance_m": 0.0
+            },
+            "nY_pZ": {
+              "nearest": "pX_pZ",
+              "distance_m": 7.761021803804562e-11
+            },
+            "pX_pY_pZ": {
+              "nearest": "nX_pY_pZ",
+              "distance_m": 0.0
+            },
+            "pX_pZ": {
+              "nearest": "pY_pZ",
+              "distance_m": 7.761021571121677e-11
+            },
+            "pY_pZ": {
+              "nearest": "nX_pZ",
+              "distance_m": 7.761021836361412e-11
+            },
+            "pZ": {
+              "nearest": "pZ",
+              "distance_m": 3.577417982714239e-19
+            }
+          },
+          "max_grid_error_m": 7.761021836361412e-11,
+          "collision_free_path_verified": false,
+          "native_spherical_q_mapping_verified": false
+        },
+        {
+          "degrees": 180.0,
+          "anchor_separation_m": 0.0,
+          "center_hinge_axis_preserved": true,
+          "center_hinge_q_magnitude_rad": 3.141592653589793,
+          "face_grid_permutation": {
+            "nX_nY_pZ": {
+              "nearest": "pX_pY_pZ",
+              "distance_m": 4.9065389333867974e-18
+            },
+            "nX_pY_pZ": {
+              "nearest": "nY_pX_pZ",
+              "distance_m": 4.9065389333867974e-18
+            },
+            "nX_pZ": {
+              "nearest": "pX_pZ",
+              "distance_m": 2.001260340070866e-18
+            },
+            "nY_pX_pZ": {
+              "nearest": "nX_pY_pZ",
+              "distance_m": 4.9065389333867974e-18
+            },
+            "nY_pZ": {
+              "nearest": "pY_pZ",
+              "distance_m": 2.3268288451699145e-18
+            },
+            "pX_pY_pZ": {
+              "nearest": "nX_nY_pZ",
+              "distance_m": 4.9065389333867974e-18
+            },
+            "pX_pZ": {
+              "nearest": "nX_pZ",
+              "distance_m": 2.6523973470500693e-18
+            },
+            "pY_pZ": {
+              "nearest": "nY_pZ",
+              "distance_m": 2.3268288451699145e-18
+            },
+            "pZ": {
+              "nearest": "pZ",
+              "distance_m": 5.059233029431875e-19
+            }
+          },
+          "max_grid_error_m": 4.9065389333867974e-18,
+          "collision_free_path_verified": false,
+          "native_spherical_q_mapping_verified": false
+        }
+      ]
+    },
+    "nZ": {
+      "selected_body_count": 9,
+      "selected_bodies": [
+        "nX_nY_nZ",
+        "nX_nZ",
+        "nX_nZ_pY",
+        "nY_nZ",
+        "nY_nZ_pX",
+        "nZ",
+        "nZ_pX",
+        "nZ_pX_pY",
+        "nZ_pY"
+      ],
+      "checks": [
+        {
+          "degrees": 15.0,
+          "anchor_separation_m": 0.0,
+          "center_hinge_axis_preserved": true,
+          "center_hinge_q_magnitude_rad": 0.2617993877991494,
+          "face_grid_permutation": null,
+          "max_grid_error_m": null,
+          "collision_free_path_verified": false,
+          "native_spherical_q_mapping_verified": false
+        },
+        {
+          "degrees": 30.0,
+          "anchor_separation_m": 0.0,
+          "center_hinge_axis_preserved": true,
+          "center_hinge_q_magnitude_rad": 0.5235987755982988,
+          "face_grid_permutation": null,
+          "max_grid_error_m": null,
+          "collision_free_path_verified": false,
+          "native_spherical_q_mapping_verified": false
+        },
+        {
+          "degrees": 90.0,
+          "anchor_separation_m": 0.0,
+          "center_hinge_axis_preserved": true,
+          "center_hinge_q_magnitude_rad": 1.5707963267948966,
+          "face_grid_permutation": {
+            "nX_nY_nZ": {
+              "nearest": "nX_nZ_pY",
+              "distance_m": 0.0
+            },
+            "nX_nZ": {
+              "nearest": "nZ_pY",
+              "distance_m": 7.761021782402649e-11
+            },
+            "nX_nZ_pY": {
+              "nearest": "nZ_pX_pY",
+              "distance_m": 0.0
+            },
+            "nY_nZ": {
+              "nearest": "nX_nZ",
+              "distance_m": 7.761021591226505e-11
+            },
+            "nY_nZ_pX": {
+              "nearest": "nX_nY_nZ",
+              "distance_m": 0.0
+            },
+            "nZ": {
+              "nearest": "nZ",
+              "distance_m": 1.9786800104001363e-10
+            },
+            "nZ_pX": {
+              "nearest": "nY_nZ",
+              "distance_m": 1.080400927799279e-18
+            },
+            "nZ_pX_pY": {
+              "nearest": "nY_nZ_pX",
+              "distance_m": 0.0
+            },
+            "nZ_pY": {
+              "nearest": "nZ_pX",
+              "distance_m": 1.661495321042478e-18
+            }
+          },
+          "max_grid_error_m": 1.9786800104001363e-10,
+          "collision_free_path_verified": false,
+          "native_spherical_q_mapping_verified": false
+        },
+        {
+          "degrees": 180.0,
+          "anchor_separation_m": 0.0,
+          "center_hinge_axis_preserved": true,
+          "center_hinge_q_magnitude_rad": 3.141592653589793,
+          "face_grid_permutation": {
+            "nX_nY_nZ": {
+              "nearest": "nZ_pX_pY",
+              "distance_m": 4.9065389333867974e-18
+            },
+            "nX_nZ": {
+              "nearest": "nZ_pX",
+              "distance_m": 7.761021948552181e-11
+            },
+            "nX_nZ_pY": {
+              "nearest": "nY_nZ_pX",
+              "distance_m": 4.9065389333867974e-18
+            },
+            "nY_nZ": {
+              "nearest": "nZ_pY",
+              "distance_m": 1.9117614382791784e-18
+            },
+            "nY_nZ_pX": {
+              "nearest": "nX_nZ_pY",
+              "distance_m": 4.9065389333867974e-18
+            },
+            "nZ": {
+              "nearest": "nZ",
+              "distance_m": 2.79827610630441e-10
+            },
+            "nZ_pX": {
+              "nearest": "nX_nZ",
+              "distance_m": 7.761021483186412e-11
+            },
+            "nZ_pX_pY": {
+              "nearest": "nX_nY_nZ",
+              "distance_m": 4.9065389333867974e-18
+            },
+            "nZ_pY": {
+              "nearest": "nY_nZ",
+              "distance_m": 2.741896248841757e-18
+            }
+          },
+          "max_grid_error_m": 2.79827610630441e-10,
+          "collision_free_path_verified": false,
+          "native_spherical_q_mapping_verified": false
+        }
+      ]
+    }
+  },
+  "native_runtime_evidence": "Existing native probe identifies 6 one-DOF hinges followed by 20 three-DOF spheres; DOF paths for sphere components repeat, so use actual dof_names + joint_dof_offsets/counts.",
+  "remaining_validation": [
+    "Only hinge DOF0 and sphere DOF6 were kicked. No claim that every sphere axis response has been tested.",
+    "PhysX spherical generalized positions are not a portable MuJoCo quaternion vector or assumed Euler convention.",
+    "PhysX documents decomposed-quaternion integration; do not infer gimbal lock at 90 degrees from Euler coordinates.",
+    "At finite rotations validate actual link orientation and angular velocity against commanded initial state, not scalar-DOF angle sums.",
+    "Probe 15/30/90/near180 degrees in a separately scheduled scene, retaining collision and no active cube control during stepping; do not change training reset/control behavior to force success.",
+    "Quaternion sign and scalar angle wrapping must be handled by observers; use core-relative body SO(3) orientations for face progress.",
+    "Exact collision clearance and dynamic response along the full path remain unverified by this ideal geometry audit."
+  ],
+  "official_references": [
+    {
+      "url": "https://nvidia-omniverse.github.io/PhysX/physx/5.6.0/docs/Articulations.html",
+      "supports": "decomposed-quaternion spherical integration and reduced-coordinate state semantics"
+    },
+    {
+      "url": "https://nvidia-omniverse.github.io/PhysX/physx/5.7.0/_api_build/classPxArticulationCache.html",
+      "supports": "documented spherical position domain [-pi,pi]; not evidence that this installed build uses an identical representation in every detail"
+    },
+    {
+      "url": "https://docs.omniverse.nvidia.com/kit/docs/omni_physics/110.0/dev_guide/rigid_bodies_articulations/articulations.html",
+      "supports": "spherical articulation limit geometry and root/link state rules"
+    }
+  ],
+  "Isaac_launched": false,
+  "simulation_stepped": false
+}

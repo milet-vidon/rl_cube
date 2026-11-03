@@ -1,0 +1,33 @@
+{
+  "scope": "remote static validation only; no active source mutation; no Isaac",
+  "checks": {
+    "single_face_experiment.py": {
+      "base_sha256": "c5f26bfb58671861ba21644de2e8cd9b628e6bf5ebd4fb1e8929f383a2ec33ab",
+      "candidate_sha256": "36d98c64fbeb0110506d11aa93b98a3fa392e198716c5a2d0b86ce815e69917f",
+      "LF": true,
+      "pycompile": true
+    },
+    "centered_opposition_runtime.py": {
+      "base_sha256": "95734758ff1c5971b2b534731f3496d00501aa015466e3705ae7ac89f2de7494",
+      "candidate_sha256": "30e22dbb33e1161cf86662e6cd2b98acf850482327df476dffca24d6ea0eaf33",
+      "LF": true,
+      "pycompile": true
+    },
+    "opposed_grasp_runtime.py": {
+      "base_sha256": "eabbc3b3b3e4d42b4380010fbcabf6230c4e7fc58ed97b629131e2aff218f016",
+      "candidate_sha256": "0b3de71cf3c5df1ae30bc046baaae087797d3af3d70a1d243cf24150d84f458c",
+      "LF": true,
+      "pycompile": true
+    },
+    "full_task_episode.py": {
+      "sha256": "937df2b0d02f7a23b69d863a2a7977e86a4b188743bf9c2a7b0cafb46b8e03d4",
+      "pycompile": true
+    },
+    "passive_cube_articulation.py": {
+      "sha256": "949c3ede71c6ac4cd32b359b08ab110c72c354888d32541136aa2330edce980c",
+      "pycompile": true
+    }
+  },
+  "git_apply_check": true,
+  "patch_sha256": "7d4fe867339ca7098b3fb8f701c8274bc51ebf479e2e28653440a573a5c7f3e8"
+}

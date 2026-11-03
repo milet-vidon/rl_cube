@@ -1,0 +1,16 @@
+{
+  "sha256": {
+    "result.json": "80a55f6f488fb1b11ef9799ad18e77508a952a59eda18a5d6074f61a055054dd",
+    "projection_parameters.json": "890108362592dd288cfb1c5bee8eb824645043ed7be0733ada40adf9cb67da66",
+    "trajectory.jsonl": "e1aa961ff3f49536cda40fb47ab21cf8786ba028e30eb3a0a78575ccd89d8542",
+    "dynamic_training_scene.usda": "ff16e3e8af8e8e2e0c0f7ff240a2b2f1d688a9c1b3560ff2230033742096c6f8",
+    "config.json": "d3c6084f638ed96ea299dbf76c386537051d3857c61675ddfc4abd5e9d925ae1",
+    "asset_contract.json": "3367c3d471d25bb668b2f67fb9eca3ba34a28328b967ffbb63aef39cf1a365c7",
+    "transitions.jsonl": "ca4782e6e2d7780c2e7360b251b25c2c23f532c7a75ec810b4d4b6d6d0db7050",
+    "runtime_protocol.json": "eb7b7da1ee6566a60d6b2b282bdad7fbedd6d70e639a153aab7ebf2d9e96ec85",
+    "initial_state.json": "9a7c759eb84012d21924c47e2583e3bc60badaed2239608d026b6d95e785c5f3",
+    "trajectory.json": "ec7a67f6b5fe3c8cf270beaa397a0bf5297d4501766cb00a91ff0cbd251508e6",
+    "collection_provenance.json": "c9c335f0f44e32f24e5a32a3766c6d677b597959b950ffaec7379c6427f0722c",
+    "physics_identity.json": "537007f3847c6acf8285115214d223bec27c131c4c87ab6ccb67e0635a5e74ba"
+  }
+}

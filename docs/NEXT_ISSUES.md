@@ -1,8 +1,10 @@
-## 2026-11-04 当前单Isaac：v17反馈坐标修正
+## 2026-11-04 当前：native完整teacher与状态反馈训练准备
 
-v4全帧神经压缩闭环最高举升0.368726m，但1647步被原腕部门槛拒绝；tilt_hold的58/94帧Core角速度≥0.20rad/s，合格最长0.4667s。精确目标回放则2129帧逐值完全重现、居中8.033s；纯轨迹拟合不足以获得鲁棒性，实际接触/执行历史反馈数据采集正在准备。
+当前唯一Isaac teacher_native_fulltask_v18_20261104，PID1178403，日志work/teacher_optimization_20261103/native_fulltask_v18.log，状态native_fulltask_v18_queue.json（队列PID1159021）。已安装显式FullTask终止与可选native关节接入，固定4500总控制步、15度目标，原安全与最终gate不变。29项安装后host测试及两项120步native集成smoke通过；完整teacher尚未验收，运行源码不得改。
 
-当前teacher_joint_planning_frame_paced_v17_20261104，PID941226，日志work/teacher_optimization_20261103/planning_frame_paced_v17.log：相对v15仅修正pacer输入坐标，原门槛不变，12worker几何预检。结束后依次运行独立passive_cube_env_smoke，禁止同时启动第二Isaac。v16实际层角0.621°失败；尚无合格自由旋转模型，用户持续训练目标未完成。
+v2采集验证1647帧与原target/q/cube逐值相同，wrist3.033s。v3 mixture1648帧通过原wrist gate，1419teacher/229student，纠正标签与native动作逐bit复核通过；不是纯student或泛化成功。正在准备v5状态历史残差模型，先做BC transition资格和残差可达性审查，再GPU训练，与native物理并行。源码/状态详情见FULL_TASK_AND_DAGGER_UPDATE.md。普通/D6/native物理域禁止混训。
+
+旧v11–v17的转动段均在generic pickup done之后，仅作物理诊断，不计有效完整任务。FullTask显式区分pickup milestone和15/30/90子任务terminal，reward0非PPO，drop/timeout/安全后拒绝下一step。仍无合格自由转面模型、六面复原或视觉模型成功，持续训练目标未完成。下文为历史状态。
 
 ## 2026-11-04 当前持续训练
 
