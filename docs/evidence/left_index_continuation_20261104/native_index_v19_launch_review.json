@@ -1,0 +1,16 @@
+{
+  "scope": "native full-task v18 plus original centered index feedback continuation; all gates preserved",
+  "source_sha256": {
+    "single_face_experiment.py": "9a523d098c5276a0f471ee63dcf242e69a574923fc15f789f23dd8ebeee7604b",
+    "opposed_grasp_runtime.py": "26826532ab7a6edd79df77673f2c891279b4b521aec1ec7d59c943d9872ac4a3",
+    "left_index_continuation.py": "564b5d6e6381f57e41613b7c23707f25111a86fee6c25475937625c3cc3719ea",
+    "left_support_envelope_v3.py": "4fd2602d5b87abbe5f081c6b52c9dfdb6f7681096b30f921bfdc091f406ff3c7",
+    "left_support_envelope_preflight_v3.py": "09b8d1d5941a5591ae4360d9f80cdea62aad14c2f4afdd4923ef659ba628e133",
+    "opposed_distance_cache_v1.py": "6c9e269437cc0a7f8b55552115fc903df6037b2ff804807c63b430697960e55e"
+  },
+  "host_tests_passed": 41,
+  "offline_v18_joint_index_ring_envelope_checks": 168224,
+  "offline_envelope_passed": true,
+  "physics_result_pending": true,
+  "selection_split": "development_seen_seed"
+}

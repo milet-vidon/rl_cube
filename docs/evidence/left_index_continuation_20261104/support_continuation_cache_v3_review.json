@@ -1,0 +1,57 @@
+{
+  "schema": "support_continuation_and_cache_review_v3",
+  "decision": "PASS for original opt-in geometric preflight; full actual request still required",
+  "candidate_manifest": {
+    "single_face_experiment.py": {
+      "base_sha256": "36d98c64fbeb0110506d11aa93b98a3fa392e198716c5a2d0b86ce815e69917f",
+      "candidate_sha256": "c5f8eb85b78da4cffce0c9b07b4ad45627a794e434549027b44d3b0f5dcafdf4",
+      "candidate": "work/teacher_optimization_20261103/single_face_experiment.py.index_continuation_candidate"
+    },
+    "opposed_grasp_runtime.py": {
+      "base_sha256": "0b3de71cf3c5df1ae30bc046baaae087797d3af3d70a1d243cf24150d84f458c",
+      "candidate_sha256": "47b4414286ccf59e6300ca2778e426ed6835e671687bae6e2f9ea856eaf551ec",
+      "candidate": "work/teacher_optimization_20261103/opposed_grasp_runtime.py.index_continuation_candidate"
+    }
+  },
+  "v2_host_tests": 14,
+  "cache_host_tests": 7,
+  "v2_runtime_integration_tests": "Actual candidate execute/_execute AST with real FullTaskEpisode and explicitly fake environment, no physics claims.",
+  "v2_runtime_coverage": [
+    "Rejected joint envelope executes zero new control steps and permanently terminates stage.",
+    "First index target is float32(reference + next_offset), second follows original contact-feedback step without double offset.",
+    "Other 26 left targets and all28 right planned targets unchanged; FullTask timeout stops remaining path and rejects direct/stage re-entry."
+  ],
+  "all_v2_geometry_and_gate_source_preserved_under_cache_wrapper": true,
+  "immutable_geometry_basis": "Fresh OppositionScene builds coal.Convex and static Box once. Reviewed checker updates q, FK and transforms only; no geometry or DistanceRequest setter occurs inside any job. Registry holds strong refs, verifies vertices/extents at begin_job and clears every job. Unknown/new geometry bypasses. This cache must not be used for mutable scenes.",
+  "exact_cache_constraints": [
+    "Explicit max100000 entries per job. Reaching bound bypasses insertion, never the original computation.",
+    "Only registered exact coal.Convex/Box and float64 C-contiguous 4x4 transforms/3d centers with float/float64 radius are cached.",
+    "Exact object identity/name/transform bytes/center bytes/radius type+value key. New coal.Box objects are not inferred equivalent.",
+    "On hit d<.004 restores original last_pair; d>=.004 leaves previous pair unchanged.",
+    "Original scene.valid and every direct threshold execute in their original order."
+  ],
+  "source_sha256": {
+    "left_index_continuation.py": "564b5d6e6381f57e41613b7c23707f25111a86fee6c25475937625c3cc3719ea",
+    "left_support_envelope_v2.py": "dc30370fc2ca7d258a9467205e57dcb8cad0c1034c3c2395af37af66e58f45c2",
+    "left_support_envelope_v3.py": "4fd2602d5b87abbe5f081c6b52c9dfdb6f7681096b30f921bfdc091f406ff3c7",
+    "opposed_distance_cache_v1.py": "6c9e269437cc0a7f8b55552115fc903df6037b2ff804807c63b430697960e55e",
+    "test_index_continuation_runtime.py": "0eb77188502aa3916ceb9b9f8a152694afd6aba37149e6931d2bc785b0f7e873",
+    "test_opposed_distance_cache_v1.py": "9f7a56b8b667115fecb48ba98f26dc746142bbac3341e0f2152a776ddfbfd280",
+    "benchmark_left_support_cache_v3.py": "6c9da24005156abe012fa8c0a4056a3a9814deeacc6b7bbc88ae264203769700"
+  },
+  "benchmark_report_sha256": "43357b06c7a386d278b681474daf3b5e3f17349f1343fbcf867c4f8ad3e5d522",
+  "benchmark_summary": {
+    "checks": 336,
+    "all_original_distance_and_last_pair_trace_equal": true,
+    "all_original_scene_valid_trace_equal": true,
+    "baseline_s": 30.92407472000923,
+    "cache_s": 20.753412585996557,
+    "speedup": 1.4900717938251449,
+    "baseline_peak_rss_kib": 236112,
+    "cache_peak_rss_kib": 237512
+  },
+  "full_request_estimate_s_at12workers": 865.8784917824119,
+  "estimate_limitations": "Three representative selected jobs only; initialization, worker imbalance and CPU contention omitted. 1200-second completion is not guaranteed. Root alone decides whether to interrupt old incomplete check and run full new preflight.",
+  "physical_rollout_validated": false,
+  "runtime_integration_applied_by_reviewer": false
+}

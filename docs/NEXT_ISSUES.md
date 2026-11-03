@@ -1,8 +1,8 @@
-## 2026-11-04 当前：v5已完成GPU训练，完整闭环对照继续
+## 2026-11-04 当前：左手开发模型通过，右接抓v19与v6训练继续
 
-v5两轮200/2000epoch GPU训练完成，long模型SHA1c663e17…db98c，单开发轨迹原投影RMSE8.07e-6rad。此为BC离线拟合，无闭环或泛化成功。首eval因启动资产路径错配在0policy控制步终止；已仅修launch路径/资产SHA，严格asset contract不变。唯一Isaac队列PID1329608串行执行v5long_v2和同adapter v4对照，状态work/teacher_optimization_20261103/state_feedback_matched_eval_queue.json；启动其他Isaac前先核进程。
+matched v4在开发seed9501完成1654步并通过原wrist gate，举升.368716m、左位置动作全模型；右手/阶段/原K20增益日程仍由原控制器负责。v5long619步夹紧失败，正以安全失败prefix和公开phase反馈激活边界准备v6训练；无独立泛化、转层或视觉复原成功。
 
-v18 native完整teacher3017步正常失败：先index失触，后右little接触导致ring失触，未开始转层；FullTask终止/3017审计步/无postterminal核验通过。90°native初态v2已通过24步被动验证，不是机器人转90°。原index反馈接续候选正在12CPU联合index/ring整路径预检，尚未应用/物理验收。详情见STATE_FEEDBACK_V5_UPDATE.md；用户持续训练目标未完成。
+当前唯一Isaac teacher_native_index_continuation_v19_20261104，PID1415628，log work/teacher_optimization_20261103/native_index_v19.log；相对native v18只接续原center index反馈，保持全部原gate。已过168224联合几何检查与41相关host tests，但完整物理结果待验收。运行源码冻结勿改，启动其他Isaac前必须核进程。详情见LEFT_INDEX_CONTINUATION_UPDATE.md和STATE_FEEDBACK_V5_UPDATE.md。用户持续训练目标未完成。
 
 ## 2026-11-04 当前持续训练
 
