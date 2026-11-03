@@ -16,6 +16,8 @@
 
 | swept clearance v8 | 以 v7 为基准，加入闭合及转动扫掠间隙优化 | 1514 次路径检查通过，五指接触比例 100%；121 帧保持中 82 帧核心角速度 ≥0.20 rad/s，最长合格保持 0.133 s | 3202 步完整回合，未执行转层 |
 
+| matched friction v9 | 内部摩擦 (.4,.3)，匹配外部接触系数，其余同 v8 | 抓取后最终最大层偏移 5.433°，超过 5° 装配门槛 | 1826 步完整回合，前置抓取未验收，未进入右手控制 |
+
 ## 接触与速度诊断
 
 `audit_turn_dynamics.py` 读取完整轨迹，不修改验收逻辑，输出轨迹 SHA256、逐阶段接触比例和速度统计。
@@ -73,6 +75,8 @@ v6 另加 `--source-core-inertia`；精度对照另加 `--position-iterations 64
 
 ## 当前单次对照
 
-`continue_contact_comparison.py` 已验证 v8 完整结果、原始 manifest 和当前源码哈希，串行启动 `teacher_joint_matched_friction_v9_20261103`，仅将内部摩擦改为 (.4,.3)，外部接触系数按前述规则匹配。初始化日志确认左右手各 77 个碰撞体的材料绑定，完整物理结果仍待验证。控制脚本只安排这一项对照，不会启动 BC/PPO，不会把失败轨迹加入成功示范；若 v8 因碰撞/前置失败、源码变化或证据损坏，则不会启动。
+`continue_contact_comparison.py` 已验证 v8 完整结果、原始 manifest 和当前源码哈希，串行启动 `teacher_joint_matched_friction_v9_20261103`，仅将内部摩擦改为 (.4,.3)，外部接触系数按前述规则匹配。初始化日志确认左右手各 77 个碰撞体的材料绑定，v9 完整回合已结束：层偏移超过装配门槛，前置抓取未验收。控制脚本已完成，只安排这一项对照，不会启动 BC/PPO，不会把失败轨迹加入成功示范；若 v8 因碰撞/前置失败、源码变化或证据损坏，则不会启动。
 
 配对系数计算依据 [PhysX 材料合成规则](https://nvidia-omniverse.github.io/PhysX/physx/5.1.0/_build/physx/latest/struct_px_combine_mode.html)。
+
+基于 v8 的保持抖动和 v9 的装配偏移，另启动 `teacher_joint_matched_mid_v10_20261103`：内部摩擦 (.6,.5)，左右手与桌面的配对系数、64 次位置迭代、右指刚度 20、间隙优化及全部门槛均保持。该回合正在服务器运行，PID 346251，日志 `work/teacher_optimization_20261103/matched_mid_v10.log`。命令在 v9 参数基础上将 `--matched-internal-friction` 改为 `.6,.5`，使用上述唯一新名称。尚未报告成功或生成新的操作策略 checkpoint。
