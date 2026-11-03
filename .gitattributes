@@ -119,3 +119,6 @@ revotron_cube_rl/matched_cube_material.py text eol=lf
 revotron_cube_rl/test_matched_cube_material.py text eol=lf
 revotron_cube_rl/opposed_cube_clearance.py text eol=lf
 revotron_cube_rl/test_opposed_cube_clearance.py text eol=lf
+
+revotron_cube_rl/cube_joint_damping.py text eol=lf
+revotron_cube_rl/test_cube_joint_damping.py text eol=lf

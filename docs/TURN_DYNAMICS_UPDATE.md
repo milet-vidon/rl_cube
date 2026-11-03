@@ -88,3 +88,5 @@ v6 另加 `--source-core-inertia`；精度对照另加 `--position-iterations 64
 两种较低内部摩擦均未通过前置验收，恢复 v8 已通过左手拿持的默认内部摩擦 (.9,.8)，另启动 `teacher_joint_soft_fingers_v11_20261103`，仅把右手指部刚度从 20 降至 10；保留右手摩擦 (1.2,1.0)、64 次位置迭代、扫掠间隙优化和原全部门槛。PID 347163，日志 `work/teacher_optimization_20261103/soft_fingers_v11.log`。这是传统控制开发回合；尚未生成可自由转动的神经策略。
 
 已进一步核对源文件为 6 个 hinge、20 个 ball 关节，均继承各轴阻尼 0.0005。普通 USD SphericalJoint 不支持 drive；因此未尝试只写阻尼属性来假装迁移成功。后续需要单独验证可表达被动阻尼的约束模型，保留平移锁定、旋转自由度、连接坐标系及碰撞。纯被动阻尼不能提供目标转动；也不能替代缺失 armature/frictionloss 的完整迁移。参考 [Omni Physics 关节支持](https://docs.omniverse.nvidia.com/kit/docs/omni_physics/107.3/dev_guide/rigid_bodies_articulations/joints.html)，审计笔记已归档。
+
+最新 v11 已完成：3474 步，右手保持 4.033 秒，实际面转角 2.305°，转层保持 0 秒；后续被动阻尼修复与 v12 对照见 [专门更新](PASSIVE_JOINT_DAMPING_UPDATE.md)。

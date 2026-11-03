@@ -1,0 +1,14 @@
+{
+  "scene": {
+    "solverType": "TGS",
+    "minPositionIterationCount": 64,
+    "maxPositionIterationCount": 64,
+    "minVelocityIterationCount": 4,
+    "enableExternalForcesEveryIteration": true,
+    "enableStabilization": false
+  },
+  "physics_hz": 240,
+  "control_hz": 30,
+  "verified": true,
+  "scope": "numerical convergence development probe; no success assertion"
+}
