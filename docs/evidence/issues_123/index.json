@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-03",
+  "issue_1": {
+    "status": "independent_physics_accepted",
+    "accepted": 5,
+    "total": 5,
+    "seeds": [
+      9601,
+      9602,
+      9603,
+      9604,
+      9605
+    ],
+    "certificate": "revotron_cube_rl/elbow_out_gate_certificate.json",
+    "certificate_sha256": "798eddd76763c69457cb2f56c28d9f5472e10a82d075262608e4bb5b789ff49e"
+  },
+  "issue_2": {
+    "status": "not_resolved",
+    "right_regrasp_validated": false,
+    "full_reset_attempts": [
+      "runs/safe_handover_v2_dev_20261103",
+      "runs/safe_handover_v3_regrasp_guard_20261103"
+    ],
+    "accepted": 0,
+    "total": 2,
+    "final_failure": "right_index_DIP_link / left_little_DIP_rubber_link clearance 0.0029284695743376997 m < 0.003 m"
+  },
+  "issue_3": {
+    "status": "offline_relocation_passed",
+    "checks": 18,
+    "new_physics_episodes": 0
+  },
+  "offline_tests": 56,
+  "primary_deployment_verified": true,
+  "neural_policy_trained": false,
+  "checkpoint": "not_applicable_traditional_teacher",
+  "demo": {
+    "path": "docs/evidence/issues_123/elbow_out_demo.mp4",
+    "sha256": "be54ea8cd7eff1f6d877ddb85824d5d64234b176f5032dbd39349feced51f245",
+    "source_run": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103",
+    "source_trajectory_sha256": "cb308353835389c7d8f5dce34f20cf589a48a2d7b420e2ed3b565149c2002f89",
+    "source_is_live_PhysX": true
+  }
+}

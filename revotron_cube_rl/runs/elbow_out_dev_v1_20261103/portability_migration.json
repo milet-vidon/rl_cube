@@ -1,0 +1,21 @@
+{
+  "kind": "offline_path_parser_migration_only",
+  "legacy_workspace": "/home/brainco/rl_cube",
+  "no_absolute_path_fallback": true,
+  "no_new_PhysX_success": true,
+  "original_certificates": {
+    "staged_teacher_gate.json": "c9ab518de477cd3ff27fe5219e925161ca7ae4f62712a62a2bd1b290d81098e8",
+    "side_teacher_gate.json": "60d7abc029298f3af7450589211ab1bb9622117f91299b25840578d87ac96139",
+    "opposition_gate_certificate.json": "92729e8eceea5e76c08c27e7f993f2fa064c7196ff55eb21742c06016b3d4fc6",
+    "palm_direction_gate_certificate.json": "c18781379514ee5a11cebdf9ad0d4ecd5645c478426e92d37a9484dcb7f304b4",
+    "tilt_regrasp_gate_certificate.json": "ab3a60ebb5c561f0883f11d8f9d228e9d207bb25029768e4f95cbe8241ac1c9c"
+  },
+  "resolver_sha256": "0339eb9b1149cba69af15aa27d605b3ef172b335932d49c41193360059f434fd",
+  "validator_replacements": {
+    "side_gate.py": {
+      "original_sha256": "ee86f5baccf6ad4dec2e7d5714340bcd8690d659503b08e673929fe42efd0a89",
+      "replacement_sha256": "f2371ef5a182b0fd3e781d0f7341c1afbeb5e057509d1af64d781e397c1b1ef9",
+      "original_snapshot": "certificates/legacy_source/side_gate.py"
+    }
+  }
+}

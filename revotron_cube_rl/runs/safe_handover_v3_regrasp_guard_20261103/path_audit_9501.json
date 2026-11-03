@@ -1,0 +1,14 @@
+{
+  "passed": false,
+  "phase": "right_close",
+  "step": 75,
+  "interpolation": 1.0,
+  "pair": [
+    "right_index_DIP_link",
+    "left_little_DIP_rubber_link",
+    0.0029284695743376997
+  ],
+  "checks": 1450,
+  "minimum_clearance_m": 0.003,
+  "physics_validated": false
+}

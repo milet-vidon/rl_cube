@@ -1,3 +1,17 @@
+# 最新澄清与腕部修正（2026-11-03）
+
+用户明确此前指的是腕部方向，要求“手腕弯折换到另一侧，掌心仍朝右手”。默认入口现为 `wrist_direction_experiment.py`：反转 J6 侧弯，保持肘外展与掌心方向。新独立 9701–9705 为 5/5，五指接触与姿态同窗保持 3 秒，无自碰、碰桌、掉落或限位命中。旧 9601–9605 仅证明旧腕姿的肘外展，未混入新结果。
+
+详见 [腕部修正与验收](WRIST_DIRECTION_UPDATE.md)。持物点向左上方移动，#2 的右手接抓需要重新规划，尚未验收；没有新增 PPO/BC。下文按时间保留历史定义，当前行为以上述腕部修正为准。
+
+# 当前交接更新（2026-11-03）
+
+以 [本轮实施与验收记录](ISSUES_123_UPDATE.md) 为当前入口：#1 左肘外展实测独立 9601–9605 为 5/5；#3 解析和隔离离线验证通过；#2 右手接抓仍未验收。默认 tilt-teacher 已改为 elbow_handover_experiment.py，--regrasp 是 safe_handover_experiment.py 开发路径。
+
+新文件：elbow_handover.py / elbow_audit.py / elbow_gate.py / elbow_out_protocol_v1.json / elbow_out_gate_certificate.json；evidence_paths.py / verify_portable_evidence.py / validate_relocated_evidence.py；safe_handover.py / safe_collision_plan.py / safe_path_audit.py / wrist_collision_schema.py。
+
+9601–9605 已经用于独立验收，后续不能再称新 seed。9501 为开发/回归。右手接抓前置未通过，不继续盲目增加 PPO。下文是 11 月 2 日原交接，保留历史语境，其中“左肘未修复”“证据解析未迁移”不再描述当前实现。
+
 # 项目交接（2026-11-02）
 
 ## 目标与当前结论

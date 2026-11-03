@@ -1,0 +1,55 @@
+#usda 1.0
+(
+    defaultPrim = "revotron_bimanual"
+    subLayers = [
+        @revotron_bimanual_revo3_56dof.usd@
+    ]
+)
+
+over "revotron_bimanual"
+{
+    over "Link7_L"
+    {
+        over "collisions"
+        {
+            over "left_connector_wrist_link"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsMeshCollisionAPI", "PhysicsCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexDecomposition"
+                        bool physics:collisionEnabled = 1
+                    }
+                }
+            }
+        }
+    }
+
+    over "Link7_R"
+    {
+        over "collisions"
+        {
+            over "right_connector_wrist_link"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsMeshCollisionAPI", "PhysicsCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexDecomposition"
+                        bool physics:collisionEnabled = 1
+                    }
+                }
+            }
+        }
+    }
+}
+

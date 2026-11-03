@@ -1,0 +1,46 @@
+{
+  "kind": "offline_path_parser_migration_only",
+  "legacy_workspace": "/home/brainco/rl_cube",
+  "no_absolute_path_fallback": true,
+  "no_new_PhysX_success": true,
+  "original_certificates": {
+    "staged_teacher_gate.json": "c9ab518de477cd3ff27fe5219e925161ca7ae4f62712a62a2bd1b290d81098e8",
+    "side_teacher_gate.json": "60d7abc029298f3af7450589211ab1bb9622117f91299b25840578d87ac96139",
+    "opposition_gate_certificate.json": "92729e8eceea5e76c08c27e7f993f2fa064c7196ff55eb21742c06016b3d4fc6",
+    "palm_direction_gate_certificate.json": "c18781379514ee5a11cebdf9ad0d4ecd5645c478426e92d37a9484dcb7f304b4",
+    "tilt_regrasp_gate_certificate.json": "ab3a60ebb5c561f0883f11d8f9d228e9d207bb25029768e4f95cbe8241ac1c9c"
+  },
+  "resolver_sha256": "0339eb9b1149cba69af15aa27d605b3ef172b335932d49c41193360059f434fd",
+  "validator_replacements": {
+    "side_gate.py": {
+      "original_sha256": "ee86f5baccf6ad4dec2e7d5714340bcd8690d659503b08e673929fe42efd0a89",
+      "replacement_sha256": "f2371ef5a182b0fd3e781d0f7341c1afbeb5e057509d1af64d781e397c1b1ef9",
+      "original_snapshot": "certificates/legacy_source/side_gate.py"
+    },
+    "stage_gate.py": {
+      "original_sha256": "44db3f3d5d596a6d18c61e8d64ebf4ed119d5d88774b2c44b7f189158c4a8bac",
+      "replacement_sha256": "bf266d9b8c27810912d5aac1b17b04145ae7c404b5bea0a6e6deffb94912c6a2",
+      "original_snapshot": "certificates/legacy_source/stage_gate.py"
+    },
+    "opposition_gate.py": {
+      "original_sha256": "befcdffe3ba5fa294cb9d8556d35e08fb1408833e4e21026b7c26310c5b20104",
+      "replacement_sha256": "c57e664cb40afba0b8b79537d1e89f1e3a8b96cf616bea414c8181ac7ef63af8",
+      "original_snapshot": "certificates/legacy_source/opposition_gate.py"
+    },
+    "tilt_gate.py": {
+      "original_sha256": "3729acd300adb96cd86ada04ea23cb6b1b569847f3359e67f282a4c95d4293a1",
+      "replacement_sha256": "8282547685d6f7860d42587f5bc08bfb43a2c5688d6cd1387e28ccf24b0ab7f3",
+      "original_snapshot": "certificates/legacy_source/tilt_gate.py"
+    },
+    "palm_direction_gate.py": {
+      "original_sha256": "21ac737d3296800c46c9d5889416d52faf84362be73969fb83a5a23f9b776e0d",
+      "replacement_sha256": "113f0afb8e338a6a919b0573877831412d7cfda23e022dd9241be1746054be79",
+      "original_snapshot": "certificates/legacy_source/palm_direction_gate.py"
+    },
+    "palm_handover_gate.py": {
+      "original_sha256": "f27bc3fbce6793feb6c7b6da095ae86fd37c5f24417adafcdce2bb098f92ae90",
+      "replacement_sha256": "717da303e59e9d863aa8c11595c860f0e89559d8fef09deaf81ff55277514abc",
+      "original_snapshot": "certificates/legacy_source/palm_handover_gate.py"
+    }
+  }
+}

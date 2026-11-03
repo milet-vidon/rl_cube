@@ -1,5 +1,100 @@
 [
   {
+    "path": "docs/evidence/issues_123/elbow_out_demo.mp4",
+    "bytes": 5025004,
+    "sha256": "be54ea8cd7eff1f6d877ddb85824d5d64234b176f5032dbd39349feced51f245"
+  },
+  {
+    "path": "docs/evidence/issues_123/elbow_out_front.png",
+    "bytes": 108259,
+    "sha256": "51e2884f812dcb826c0f9384194788b3f058263198181c452f5828654ee610e1"
+  },
+  {
+    "path": "docs/evidence/issues_123/elbow_out_side.png",
+    "bytes": 114452,
+    "sha256": "e5932cd83c6850b7b1d87ef63f1a780acb4b30358278a3206dfda153f524acd7"
+  },
+  {
+    "path": "docs/evidence/issues_123/final_guard_reaudit.json",
+    "bytes": 439,
+    "sha256": "3ccd1f194845608bbf25e48c5a7d2ab1b85e6989c70ab62873fe96ca72fb7edf"
+  },
+  {
+    "path": "docs/evidence/issues_123/index.json",
+    "bytes": 1370,
+    "sha256": "75210fb0f0e3e0c27bd5ab4507a20f0ec30cc07ce1611d25d0fd952c5dd28d61"
+  },
+  {
+    "path": "docs/evidence/issues_123/last_regrasp_development_result.json",
+    "bytes": 3711,
+    "sha256": "693449571a14a8bdf0793e257abc0d6a021afab966fa524150347652a562ce22"
+  },
+  {
+    "path": "docs/evidence/issues_123/last_regrasp_path_audit.json",
+    "bytes": 271,
+    "sha256": "465c4b6eb7c1c74dc0099703cf12d8457dcaf9da83ff0af5f0353795331138a4"
+  },
+  {
+    "path": "docs/evidence/issues_123/offline_tests_47.txt",
+    "bytes": 823,
+    "sha256": "4c12c391ee8360d7956928d2e7f5a3a595ad10c1b88ba1dfe11a2d2e0dd68a6b"
+  },
+  {
+    "path": "docs/evidence/issues_123/offline_tests_52.txt",
+    "bytes": 828,
+    "sha256": "8319bd9363caad092b360d4b52f36353ad3288dfe2a62a20ad848b5375773d12"
+  },
+  {
+    "path": "docs/evidence/issues_123/offline_tests_56.txt",
+    "bytes": 832,
+    "sha256": "a0e2cef5de0f151301471a5a6887079e3efcd936d84953efd5dd704e90c6ef8b"
+  },
+  {
+    "path": "docs/evidence/issues_123/planning/nominal_handover_candidate.json",
+    "bytes": 1582464,
+    "sha256": "2d8ece89105832ebf59db8b59cc25b0a59339e3e55cff90b87658c27f9725a7d"
+  },
+  {
+    "path": "docs/evidence/issues_123/planning/safe_final_pose_audit.json",
+    "bytes": 154,
+    "sha256": "3e8a4b9faa7c44deadcc0892357c4682226c1f6ce35820c309292021cab2871d"
+  },
+  {
+    "path": "docs/evidence/issues_123/planning/safe_plan_v5_failure.json",
+    "bytes": 608,
+    "sha256": "4eaf82609b350673f1fc38913d85146475e9eae6ca332e84ca1e164b2671cfca"
+  },
+  {
+    "path": "docs/evidence/issues_123/planning/safe_plan_v7_failure.json",
+    "bytes": 602,
+    "sha256": "024d9b560cd41e242add53dd43e108fc1563ae9a83ab7df661e17b3c0a39181b"
+  },
+  {
+    "path": "docs/evidence/issues_123/planning/safe_plan_v8_failure.json",
+    "bytes": 602,
+    "sha256": "97e31b5bdc448122334a24c1bfb02847aa37f69572879da53ee324aa8af636b1"
+  },
+  {
+    "path": "docs/evidence/issues_123/planning/safe_plan_v9_failure.json",
+    "bytes": 614,
+    "sha256": "096cca7e10680af74f9f01d87490a3690cbf5394364c9f237a229cff2d59e334"
+  },
+  {
+    "path": "docs/evidence/issues_123/planning/safe_v10_close_audit.json",
+    "bytes": 290,
+    "sha256": "81562942a39d410f8bc53c25a2ab8a4a5ba14ac3de1b2ae83be009dce4abc3f1"
+  },
+  {
+    "path": "docs/evidence/issues_123/relocation_validation.json",
+    "bytes": 1033,
+    "sha256": "5b85c8331b2b06c84310f187779d140fe761035225e0734c182afe549134cf1c"
+  },
+  {
+    "path": "docs/evidence/issues_123/right_regrasp_v2_failed.mp4",
+    "bytes": 5539512,
+    "sha256": "052d51e238313087774656e9e2934c48d61a59ab01a62ccb915ec5f0ca496db4"
+  },
+  {
     "path": "docs/evidence/palm_direction_v5/demo.mp4",
     "bytes": 5000931,
     "sha256": "8348bb8ecce476b0e293bda03ed85a172ff79161ff03b25b54eda5de417a82b0"
@@ -23,6 +118,91 @@
     "path": "docs/evidence/palm_direction_v5/replay_manifest.json",
     "bytes": 3627,
     "sha256": "996aae985e918e2397e54fc7ecff204c06a1aeb390f386868b6e4eae065a8d36"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/clip_manifest.json",
+    "bytes": 443,
+    "sha256": "b496d973602574ab6c287b28764928bba51b2708df97b760c2776dfdebb2440c"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/development_result.json",
+    "bytes": 4655,
+    "sha256": "a67140b1e9faf013e25029c2a6a365a440fa121ac2e429f2b071874cf4fdf8f9"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/geometry_preflight.json",
+    "bytes": 314,
+    "sha256": "785170a4dbe640e9479d426a54d8158b9a25df92d1c642d1263d92b63eb5de0e"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/geometry_preflight.py",
+    "bytes": 1806,
+    "sha256": "6448435a92d72433b227ec427f162ac5d49a0b6a9f6d50fa0aa47f54e50ed7bd"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/independent_result.json",
+    "bytes": 23141,
+    "sha256": "96ffa704d86c281c4da5be8472def22891600f1dbb70b45bd58afc6d32d101e5"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/interrupted_batch.log",
+    "bytes": 25579,
+    "sha256": "3ee1bf61bc257ccc57d15bace41075e91cb6d181cf0bd587c78c56f0ec8f5723"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/offline_tests_61.txt",
+    "bytes": 837,
+    "sha256": "6af30155b60d39e8edc324a63a04bb575e86136f45843868ae14136f2f43de5f"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/primary_reaudit.json",
+    "bytes": 33909,
+    "sha256": "bdd0a571c4242e76294bd6257d18192026b0a5198f5ebcfa82790b65fa0cd401"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/protocol.json",
+    "bytes": 3907,
+    "sha256": "7a9d04f76118e45996b5008d00228d5000c53f5eb0f5841dffa9eff0cb16b1ba"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/remaining_batch.log",
+    "bytes": 20880,
+    "sha256": "0b983e8f4ff04ba29dcc54e9620338e6f15b153ff6cc09c2b4b4bfa016d01c91"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/wrist_change_clip.mp4",
+    "bytes": 114628,
+    "sha256": "f468321564d8c7082dd50b89543796b891c78ea4137c5e5ad5e31d0fdcd1d4fe"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/wrist_demo.mp4",
+    "bytes": 5620517,
+    "sha256": "5779bae4b0665689dc87b9087235e8884feceb4d4f2a90841138fb7813caa0e0"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/wrist_direction_gate_certificate.json",
+    "bytes": 33909,
+    "sha256": "bdd0a571c4242e76294bd6257d18192026b0a5198f5ebcfa82790b65fa0cd401"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/wrist_front.png",
+    "bytes": 150232,
+    "sha256": "cb5a668c7f455fe472eb33f1430429ed38de0136ea2b89dfa00329b6986ee9bd"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/wrist_metrics.json",
+    "bytes": 4128,
+    "sha256": "b90b1a9b3ab2ec4528d69904dd0736b1af913a59fe499ef4be5907b4d519a3e4"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/wrist_metrics.png",
+    "bytes": 107445,
+    "sha256": "36d9091b6a15ce3c7f0242ac1f32fcece6df4c7dc7c1ea8a3243b4537c298775"
+  },
+  {
+    "path": "docs/evidence/wrist_direction_v1/wrist_side.png",
+    "bytes": 121591,
+    "sha256": "8cfdb10133c70c346565760302d627d7bd4befdfd6ebeb0d978b2efec8e68210"
   },
   {
     "path": "isaac_mujoco_cube/README.txt",
@@ -241,8 +421,8 @@
   },
   {
     "path": "revotron_cube_rl/STATUS.txt",
-    "bytes": 17085,
-    "sha256": "6b996e27b8675306537a073f4475dbdf711321ecbb18162c119d03c728f56603"
+    "bytes": 17762,
+    "sha256": "8a8beee612f25db9af99a59d3cb86570f316c435bd55e7e76687f3322d56188d"
   },
   {
     "path": "revotron_cube_rl/TILT_REGRASP.txt",
@@ -295,6 +475,36 @@
     "sha256": "2eb7463784dc1911596b4b2c5b06c81c6d3e9018d0e6116c364c4b4673eb4061"
   },
   {
+    "path": "revotron_cube_rl/certificates/legacy_source/opposition_gate.py",
+    "bytes": 5712,
+    "sha256": "befcdffe3ba5fa294cb9d8556d35e08fb1408833e4e21026b7c26310c5b20104"
+  },
+  {
+    "path": "revotron_cube_rl/certificates/legacy_source/palm_direction_gate.py",
+    "bytes": 5418,
+    "sha256": "21ac737d3296800c46c9d5889416d52faf84362be73969fb83a5a23f9b776e0d"
+  },
+  {
+    "path": "revotron_cube_rl/certificates/legacy_source/palm_handover_gate.py",
+    "bytes": 5368,
+    "sha256": "f27bc3fbce6793feb6c7b6da095ae86fd37c5f24417adafcdce2bb098f92ae90"
+  },
+  {
+    "path": "revotron_cube_rl/certificates/legacy_source/side_gate.py",
+    "bytes": 3345,
+    "sha256": "ee86f5baccf6ad4dec2e7d5714340bcd8690d659503b08e673929fe42efd0a89"
+  },
+  {
+    "path": "revotron_cube_rl/certificates/legacy_source/stage_gate.py",
+    "bytes": 2634,
+    "sha256": "44db3f3d5d596a6d18c61e8d64ebf4ed119d5d88774b2c44b7f189158c4a8bac"
+  },
+  {
+    "path": "revotron_cube_rl/certificates/legacy_source/tilt_gate.py",
+    "bytes": 5328,
+    "sha256": "3729acd300adb96cd86ada04ea23cb6b1b569847f3359e67f282a4c95d4293a1"
+  },
+  {
     "path": "revotron_cube_rl/collect_dagger.py",
     "bytes": 20292,
     "sha256": "3a31e3aa34028c9668babc30fd713010757033288c0aa9cf5940e3c6dda1d45f"
@@ -311,8 +521,8 @@
   },
   {
     "path": "revotron_cube_rl/current_status.json",
-    "bytes": 51896,
-    "sha256": "c9386bf381a3e9bd93757139a7aa1bd2fdb780383979e02fa96dc8d8ca3a46a4"
+    "bytes": 53415,
+    "sha256": "d39dc3284cb6c1661a2c3fc8ff2ebe4600147ebd7033391c564a5184981bfd8e"
   },
   {
     "path": "revotron_cube_rl/curriculum.json",
@@ -325,9 +535,44 @@
     "sha256": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de"
   },
   {
+    "path": "revotron_cube_rl/elbow_audit.py",
+    "bytes": 1906,
+    "sha256": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9"
+  },
+  {
+    "path": "revotron_cube_rl/elbow_gate.py",
+    "bytes": 3947,
+    "sha256": "6473a2deec9034d4fa57079fe917d248c40db68f9768001456474bdc8eb6c526"
+  },
+  {
+    "path": "revotron_cube_rl/elbow_handover.py",
+    "bytes": 4103,
+    "sha256": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e"
+  },
+  {
+    "path": "revotron_cube_rl/elbow_handover_experiment.py",
+    "bytes": 13870,
+    "sha256": "0c403b1fba0f01c48fc9fc068b28545ec82d5c348a480d4608e2035ddab91cf1"
+  },
+  {
+    "path": "revotron_cube_rl/elbow_out_gate_certificate.json",
+    "bytes": 23528,
+    "sha256": "798eddd76763c69457cb2f56c28d9f5472e10a82d075262608e4bb5b789ff49e"
+  },
+  {
+    "path": "revotron_cube_rl/elbow_out_protocol_v1.json",
+    "bytes": 3073,
+    "sha256": "0b8445b35fa04a6bef3219ae30b0cc38a7da9c187b0da662ddda42893ba57d6e"
+  },
+  {
     "path": "revotron_cube_rl/environment.py",
     "bytes": 20264,
     "sha256": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7"
+  },
+  {
+    "path": "revotron_cube_rl/evidence_paths.py",
+    "bytes": 3539,
+    "sha256": "0339eb9b1149cba69af15aa27d605b3ef172b335932d49c41193360059f434fd"
   },
   {
     "path": "revotron_cube_rl/finger_contact_audit.py",
@@ -396,8 +641,8 @@
   },
   {
     "path": "revotron_cube_rl/opposition_gate.py",
-    "bytes": 5712,
-    "sha256": "befcdffe3ba5fa294cb9d8556d35e08fb1408833e4e21026b7c26310c5b20104"
+    "bytes": 5763,
+    "sha256": "c57e664cb40afba0b8b79537d1e89f1e3a8b96cf616bea414c8181ac7ef63af8"
   },
   {
     "path": "revotron_cube_rl/opposition_gate_certificate.json",
@@ -506,8 +751,8 @@
   },
   {
     "path": "revotron_cube_rl/palm_direction_gate.py",
-    "bytes": 5418,
-    "sha256": "21ac737d3296800c46c9d5889416d52faf84362be73969fb83a5a23f9b776e0d"
+    "bytes": 5548,
+    "sha256": "113f0afb8e338a6a919b0573877831412d7cfda23e022dd9241be1746054be79"
   },
   {
     "path": "revotron_cube_rl/palm_direction_gate_certificate.json",
@@ -556,8 +801,8 @@
   },
   {
     "path": "revotron_cube_rl/palm_handover_gate.py",
-    "bytes": 5368,
-    "sha256": "f27bc3fbce6793feb6c7b6da095ae86fd37c5f24417adafcdce2bb098f92ae90"
+    "bytes": 5498,
+    "sha256": "717da303e59e9d863aa8c11595c860f0e89559d8fef09deaf81ff55277514abc"
   },
   {
     "path": "revotron_cube_rl/palm_handover_replay.py",
@@ -573,6 +818,11 @@
     "path": "revotron_cube_rl/policy.py",
     "bytes": 4081,
     "sha256": "6838573432b1b7976d40f8a26f330a60a481c40a4bf05ce668a82ecca509c5da"
+  },
+  {
+    "path": "revotron_cube_rl/portability_migration.json",
+    "bytes": 2624,
+    "sha256": "6f9b6b908966280c0c04ec5b23ae6b042cad01d3c1a612eb2576ad8cb79fef8b"
   },
   {
     "path": "revotron_cube_rl/position_policy.py",
@@ -616,8 +866,8 @@
   },
   {
     "path": "revotron_cube_rl/run_linux.sh",
-    "bytes": 3345,
-    "sha256": "fdd9e3d494a3b20d8b47a216c1d2c5399b7dbb5c73ede234c0faf62f94a234b6"
+    "bytes": 4386,
+    "sha256": "a1361969976c781a3a0a52a080012157684a6fa2a6e2d98c48f9e5d1f16f97ce"
   },
   {
     "path": "revotron_cube_rl/runs/dynamic_cube_passive_v1/config.json",
@@ -648,6 +898,506 @@
     "path": "revotron_cube_rl/runs/dynamic_cube_passive_v2/trajectory.json",
     "bytes": 1137000,
     "sha256": "77bdd42d1c938edbe0f4e87b27f27a6e6a3fac0649f3b26a32207bed3ba5cc61"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_dev_v1_20261103/asset_contract.json",
+    "bytes": 6432,
+    "sha256": "1b419bb3040a5ba54299b6ef6e2a2549690889ca33057bdd8d8707c50bad345f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_dev_v1_20261103/config.json",
+    "bytes": 7670,
+    "sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_dev_v1_20261103/elbow_audit.py",
+    "bytes": 1906,
+    "sha256": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_dev_v1_20261103/elbow_handover.py",
+    "bytes": 4103,
+    "sha256": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_dev_v1_20261103/elbow_handover_experiment.py",
+    "bytes": 13870,
+    "sha256": "0c403b1fba0f01c48fc9fc068b28545ec82d5c348a480d4608e2035ddab91cf1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_dev_v1_20261103/environment.py",
+    "bytes": 20264,
+    "sha256": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_dev_v1_20261103/evidence_paths.py",
+    "bytes": 3539,
+    "sha256": "0339eb9b1149cba69af15aa27d605b3ef172b335932d49c41193360059f434fd"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_dev_v1_20261103/experiment.json",
+    "bytes": 2631,
+    "sha256": "7b850b855f352f1ad6c2bba68f89b91d68e2c189f7621111ec90337c3d6a6a1c"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_dev_v1_20261103/finger_contact_audit.py",
+    "bytes": 2054,
+    "sha256": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_dev_v1_20261103/isaac_compat.py",
+    "bytes": 3227,
+    "sha256": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_dev_v1_20261103/joint_safety.py",
+    "bytes": 4195,
+    "sha256": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_dev_v1_20261103/kinematics.py",
+    "bytes": 3543,
+    "sha256": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_dev_v1_20261103/opposition_feedback.py",
+    "bytes": 2483,
+    "sha256": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_dev_v1_20261103/opposition_grasp_v20.json",
+    "bytes": 6996,
+    "sha256": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_dev_v1_20261103/opposition_teacher.py",
+    "bytes": 13679,
+    "sha256": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_dev_v1_20261103/palm_contact_audit.py",
+    "bytes": 1379,
+    "sha256": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_dev_v1_20261103/palm_handover.py",
+    "bytes": 6505,
+    "sha256": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_dev_v1_20261103/palm_handover_audit.py",
+    "bytes": 4553,
+    "sha256": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_dev_v1_20261103/palm_handover_experiment.py",
+    "bytes": 12617,
+    "sha256": "74db8145fa76937b33fbfd2a37b41bcd7f3b132af94defad4bbe9379e4377c40"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_dev_v1_20261103/portability_migration.json",
+    "bytes": 1137,
+    "sha256": "779310e1a0be0dcafa937d47951d61366bf29d432eb77228a97c5fcf19041605"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_dev_v1_20261103/proximal_planner.py",
+    "bytes": 3030,
+    "sha256": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_dev_v1_20261103/result.json",
+    "bytes": 3337,
+    "sha256": "afe36a95cf319b47d2856dfa592137cc7d7130cfcc3336facbac9b5d978f1151"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_dev_v1_20261103/runtime_config.json",
+    "bytes": 7757,
+    "sha256": "56a15fdfa384c0c0013dea985bc4f3d6edcc3a847a302fe4885070f575c4895a"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_dev_v1_20261103/self_contact_audit.py",
+    "bytes": 1093,
+    "sha256": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_dev_v1_20261103/tilt_audit.py",
+    "bytes": 5068,
+    "sha256": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_dev_v1_20261103/tilt_collision_plan.py",
+    "bytes": 7133,
+    "sha256": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_dev_v1_20261103/tilt_experiment.py",
+    "bytes": 10878,
+    "sha256": "d345f965ec3f93a1c662eaf736bf9f25f4fb50733fee6784ff5fe9798154081d"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_dev_v1_20261103/tilt_plan_9501.json",
+    "bytes": 874870,
+    "sha256": "99e95f1f57d2114d1f9168fb13ca83d7b2ec7d9ac6a195b0f3804c8ab6cf8a93"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_dev_v1_20261103/tilt_regrasp.py",
+    "bytes": 21716,
+    "sha256": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_dev_v1_20261103/trajectory_9501.json",
+    "bytes": 40434053,
+    "sha256": "95b25ae94605a7168e5cdb4260c113cb62071e85dfdea892d018cf7f87a0d3e0"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/asset_contract.json",
+    "bytes": 6432,
+    "sha256": "1b419bb3040a5ba54299b6ef6e2a2549690889ca33057bdd8d8707c50bad345f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/config.json",
+    "bytes": 7670,
+    "sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/elbow_audit.py",
+    "bytes": 1906,
+    "sha256": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/elbow_handover.py",
+    "bytes": 4103,
+    "sha256": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/elbow_handover_experiment.py",
+    "bytes": 13870,
+    "sha256": "0c403b1fba0f01c48fc9fc068b28545ec82d5c348a480d4608e2035ddab91cf1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/environment.py",
+    "bytes": 20264,
+    "sha256": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/evidence_paths.py",
+    "bytes": 3539,
+    "sha256": "0339eb9b1149cba69af15aa27d605b3ef172b335932d49c41193360059f434fd"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/experiment.json",
+    "bytes": 2659,
+    "sha256": "518288ec6d7474fe19cdef237633ca1e45cf3915fc56c287e78c7709e4ba4cbd"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/finger_contact_audit.py",
+    "bytes": 2054,
+    "sha256": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/isaac_compat.py",
+    "bytes": 3227,
+    "sha256": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/joint_safety.py",
+    "bytes": 4195,
+    "sha256": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/kinematics.py",
+    "bytes": 3543,
+    "sha256": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/opposition_feedback.py",
+    "bytes": 2483,
+    "sha256": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/opposition_grasp_v20.json",
+    "bytes": 6996,
+    "sha256": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/opposition_teacher.py",
+    "bytes": 13679,
+    "sha256": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/palm_contact_audit.py",
+    "bytes": 1379,
+    "sha256": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/palm_handover.py",
+    "bytes": 6505,
+    "sha256": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/palm_handover_audit.py",
+    "bytes": 4553,
+    "sha256": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/palm_handover_experiment.py",
+    "bytes": 12617,
+    "sha256": "74db8145fa76937b33fbfd2a37b41bcd7f3b132af94defad4bbe9379e4377c40"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/portability_migration.json",
+    "bytes": 2624,
+    "sha256": "6f9b6b908966280c0c04ec5b23ae6b042cad01d3c1a612eb2576ad8cb79fef8b"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/proximal_planner.py",
+    "bytes": 3030,
+    "sha256": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/result.json",
+    "bytes": 16336,
+    "sha256": "18ca8a088926c72f1f6407656303ba32e304e4b122bc3d1a27aee3c1db9555d1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/runtime_config.json",
+    "bytes": 7757,
+    "sha256": "56a15fdfa384c0c0013dea985bc4f3d6edcc3a847a302fe4885070f575c4895a"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/self_contact_audit.py",
+    "bytes": 1093,
+    "sha256": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/tilt_audit.py",
+    "bytes": 5068,
+    "sha256": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/tilt_collision_plan.py",
+    "bytes": 7133,
+    "sha256": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/tilt_experiment.py",
+    "bytes": 10878,
+    "sha256": "d345f965ec3f93a1c662eaf736bf9f25f4fb50733fee6784ff5fe9798154081d"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/tilt_plan_9601.json",
+    "bytes": 908680,
+    "sha256": "1aa588ab8371c36e658940e9fb401347f83d7c9e296f1ab45100748c8a1ec29a"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/tilt_plan_9602.json",
+    "bytes": 1079772,
+    "sha256": "b477e1b233ffd4a2ac4742ef23ca8b43d4cfa7be1fefde8c7f5b873b61199449"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/tilt_plan_9603.json",
+    "bytes": 778142,
+    "sha256": "901df8f33edd92462928ecca7b328b20dfc37f4cd47405315237b64d1bcd9f65"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/tilt_plan_9604.json",
+    "bytes": 753031,
+    "sha256": "9e033b22e3fa5efab7b6d0c2d937f6ee686bc15782d497f5de39020c2d1e1dd9"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/tilt_plan_9605.json",
+    "bytes": 438978,
+    "sha256": "847edd636287d0540ed7b35891b204552382d8444d9318fbcd932e4774138ac3"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/tilt_regrasp.py",
+    "bytes": 21716,
+    "sha256": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/trajectory_9601.json",
+    "bytes": 39311552,
+    "sha256": "2b3f5ded3172b18b6202c0129ae0ed50d1ae5dfe626f28c6899ccbbcb838c6a6"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/trajectory_9602.json",
+    "bytes": 43303305,
+    "sha256": "c5705063260715c60730f195326c604f6aa95447a2fdada01db6152b91d05bad"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/trajectory_9603.json",
+    "bytes": 42594624,
+    "sha256": "3ee926e331474ca2f9765d392d59efbaf140868f61b71781ef7fb0de9588430e"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/trajectory_9604.json",
+    "bytes": 40572974,
+    "sha256": "a70fdc4f5794cf21091732d591850ee40d1172ed3651600e80e9a5016556d033"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_independent_v1_20261103/trajectory_9605.json",
+    "bytes": 31813900,
+    "sha256": "2d1f2c5fada3a7eb93dd399f00461950f3528e71a7b87d3423cede272fa8a6fc"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/asset_contract.json",
+    "bytes": 6432,
+    "sha256": "1b419bb3040a5ba54299b6ef6e2a2549690889ca33057bdd8d8707c50bad345f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/config.json",
+    "bytes": 7670,
+    "sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/elbow_audit.py",
+    "bytes": 1906,
+    "sha256": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/elbow_handover.py",
+    "bytes": 4103,
+    "sha256": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/elbow_handover_experiment.py",
+    "bytes": 13870,
+    "sha256": "0c403b1fba0f01c48fc9fc068b28545ec82d5c348a480d4608e2035ddab91cf1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/environment.py",
+    "bytes": 20264,
+    "sha256": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/evidence_paths.py",
+    "bytes": 3539,
+    "sha256": "0339eb9b1149cba69af15aa27d605b3ef172b335932d49c41193360059f434fd"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/experiment.json",
+    "bytes": 2633,
+    "sha256": "a833a68eebd8a60124f2c9740afc69156ff4bc9cda22e7b71504507dfd671dcc"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/final_front_9501.png",
+    "bytes": 108259,
+    "sha256": "51e2884f812dcb826c0f9384194788b3f058263198181c452f5828654ee610e1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/final_side_9501.png",
+    "bytes": 114452,
+    "sha256": "e5932cd83c6850b7b1d87ef63f1a780acb4b30358278a3206dfda153f524acd7"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/finger_contact_audit.py",
+    "bytes": 2054,
+    "sha256": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/isaac_compat.py",
+    "bytes": 3227,
+    "sha256": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/joint_safety.py",
+    "bytes": 4195,
+    "sha256": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/kinematics.py",
+    "bytes": 3543,
+    "sha256": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/opposition_feedback.py",
+    "bytes": 2483,
+    "sha256": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/opposition_grasp_v20.json",
+    "bytes": 6996,
+    "sha256": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/opposition_teacher.py",
+    "bytes": 13679,
+    "sha256": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/palm_contact_audit.py",
+    "bytes": 1379,
+    "sha256": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/palm_handover.py",
+    "bytes": 6505,
+    "sha256": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/palm_handover_audit.py",
+    "bytes": 4553,
+    "sha256": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/palm_handover_experiment.py",
+    "bytes": 12617,
+    "sha256": "74db8145fa76937b33fbfd2a37b41bcd7f3b132af94defad4bbe9379e4377c40"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/portability_migration.json",
+    "bytes": 1137,
+    "sha256": "779310e1a0be0dcafa937d47951d61366bf29d432eb77228a97c5fcf19041605"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/proximal_planner.py",
+    "bytes": 3030,
+    "sha256": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/result.json",
+    "bytes": 3337,
+    "sha256": "8bcd366d3644dcdd9c9fc00f868775542ab53dd454a34db2ea500028d44d2b0e"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/runtime_config.json",
+    "bytes": 7757,
+    "sha256": "56a15fdfa384c0c0013dea985bc4f3d6edcc3a847a302fe4885070f575c4895a"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/self_contact_audit.py",
+    "bytes": 1093,
+    "sha256": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/tilt_audit.py",
+    "bytes": 5068,
+    "sha256": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/tilt_collision_plan.py",
+    "bytes": 7133,
+    "sha256": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/tilt_experiment.py",
+    "bytes": 10878,
+    "sha256": "d345f965ec3f93a1c662eaf736bf9f25f4fb50733fee6784ff5fe9798154081d"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/tilt_plan_9501.json",
+    "bytes": 874870,
+    "sha256": "99e95f1f57d2114d1f9168fb13ca83d7b2ec7d9ac6a195b0f3804c8ab6cf8a93"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/tilt_regrasp.py",
+    "bytes": 21716,
+    "sha256": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/elbow_out_visual_v1_20261103/trajectory_9501.json",
+    "bytes": 40434028,
+    "sha256": "cb308353835389c7d8f5dce34f20cf589a48a2d7b420e2ed3b565149c2002f89"
   },
   {
     "path": "revotron_cube_rl/runs/opposition_dev_v1/asset_contract.json",
@@ -2648,6 +3398,581 @@
     "path": "revotron_cube_rl/runs/palm_facing_resume_v4_spacing/trajectory_9101.json",
     "bytes": 1591931,
     "sha256": "7e347f916bce925e1cdf94e108c4c68bef52d9b38241f73e646140321967dbb1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/asset_contract.json",
+    "bytes": 6432,
+    "sha256": "1b419bb3040a5ba54299b6ef6e2a2549690889ca33057bdd8d8707c50bad345f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/config.json",
+    "bytes": 7670,
+    "sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/elbow_audit.py",
+    "bytes": 1906,
+    "sha256": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/elbow_handover.py",
+    "bytes": 4103,
+    "sha256": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/elbow_handover_experiment.py",
+    "bytes": 13870,
+    "sha256": "0c403b1fba0f01c48fc9fc068b28545ec82d5c348a480d4608e2035ddab91cf1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/environment.py",
+    "bytes": 20264,
+    "sha256": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/evidence_paths.py",
+    "bytes": 3539,
+    "sha256": "0339eb9b1149cba69af15aa27d605b3ef172b335932d49c41193360059f434fd"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/experiment.json",
+    "bytes": 3335,
+    "sha256": "8c7a81f6327b46c502d1c0fdf77be9b8e2beba4b8943e5fc37e5dd776b6c3603"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/final_front_9501.png",
+    "bytes": 104149,
+    "sha256": "b14a8832c40606d84663e378c9aef0ad87988192edc1dbd662df5f6968e45440"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/final_side_9501.png",
+    "bytes": 115976,
+    "sha256": "f7f6c9efc26e15993ce010b443c3299da756b7f8d28aa4f75314e23e689f3126"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/finger_contact_audit.py",
+    "bytes": 2054,
+    "sha256": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/isaac_compat.py",
+    "bytes": 3227,
+    "sha256": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/joint_safety.py",
+    "bytes": 4195,
+    "sha256": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/kinematics.py",
+    "bytes": 3543,
+    "sha256": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/opposition_feedback.py",
+    "bytes": 2483,
+    "sha256": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/opposition_grasp_v20.json",
+    "bytes": 6996,
+    "sha256": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/opposition_teacher.py",
+    "bytes": 13679,
+    "sha256": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/palm_contact_audit.py",
+    "bytes": 1379,
+    "sha256": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/palm_handover.py",
+    "bytes": 6505,
+    "sha256": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/palm_handover_audit.py",
+    "bytes": 4553,
+    "sha256": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/palm_handover_experiment.py",
+    "bytes": 12617,
+    "sha256": "74db8145fa76937b33fbfd2a37b41bcd7f3b132af94defad4bbe9379e4377c40"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/portability_migration.json",
+    "bytes": 2624,
+    "sha256": "6f9b6b908966280c0c04ec5b23ae6b042cad01d3c1a612eb2576ad8cb79fef8b"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/proximal_planner.py",
+    "bytes": 3030,
+    "sha256": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/result.json",
+    "bytes": 3466,
+    "sha256": "5c05fbebef2a0af76275be4680affbd5ca139416edf77072d874de1f156f9b0c"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/runtime_config.json",
+    "bytes": 7757,
+    "sha256": "56a15fdfa384c0c0013dea985bc4f3d6edcc3a847a302fe4885070f575c4895a"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/safe_collision_plan.py",
+    "bytes": 7100,
+    "sha256": "2ca8f8278d50b03a612ec9e9bbad746900541b86a29eb799042212c4fdd6dda4"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/safe_contact_candidate_v2.json",
+    "bytes": 3075,
+    "sha256": "a88b42702c30c11ebf3c6e88e0fda2fa0b87f60720a051afb94e547568ece21d"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/safe_handover.py",
+    "bytes": 12827,
+    "sha256": "6542da1392f7bc757451ddd08ce0306205663ac5f993f39f15d36aed8bd5df72"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/safe_handover_experiment.py",
+    "bytes": 14692,
+    "sha256": "207bb55f21c4a4bdb087db311cd06534c7546421dd16c1e22c962f0b601c1d86"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/safe_path_audit.py",
+    "bytes": 1958,
+    "sha256": "c47441dca1416aef3a192ad75a9a573f53307e8fe37b60cf782ccf24993b083e"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/self_contact_audit.py",
+    "bytes": 1093,
+    "sha256": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/tilt_audit.py",
+    "bytes": 5068,
+    "sha256": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/tilt_collision_plan.py",
+    "bytes": 7133,
+    "sha256": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/tilt_experiment.py",
+    "bytes": 10878,
+    "sha256": "d345f965ec3f93a1c662eaf736bf9f25f4fb50733fee6784ff5fe9798154081d"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/tilt_plan_9501.json",
+    "bytes": 1073899,
+    "sha256": "aad44ef54de840332b0e25d2f910de93ad0635c7239786a5563a5ad6ce2c8147"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/tilt_regrasp.py",
+    "bytes": 21716,
+    "sha256": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/trajectory_9501.json",
+    "bytes": 46020657,
+    "sha256": "a743113381b11910d31b4d1957cc2cf50fb5e9b5a31a0a2b9175da73685b87e3"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/wrist_collision_manifest.json",
+    "bytes": 4903,
+    "sha256": "8a0103fd97ef573addca3c2980dddf6eb56cf1d6ccc2b93279037af6fa7a5e7c"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v2_dev_20261103/wrist_collision_schema.py",
+    "bytes": 3583,
+    "sha256": "312b465abc9cc44e9c40ac2d206e3c082d3512ff69d724c05e851fa22bd03fb3"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/asset_contract.json",
+    "bytes": 6432,
+    "sha256": "1b419bb3040a5ba54299b6ef6e2a2549690889ca33057bdd8d8707c50bad345f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/config.json",
+    "bytes": 7670,
+    "sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/elbow_audit.py",
+    "bytes": 1906,
+    "sha256": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/elbow_handover.py",
+    "bytes": 4103,
+    "sha256": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/elbow_handover_experiment.py",
+    "bytes": 13870,
+    "sha256": "0c403b1fba0f01c48fc9fc068b28545ec82d5c348a480d4608e2035ddab91cf1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/environment.py",
+    "bytes": 20264,
+    "sha256": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/evidence_paths.py",
+    "bytes": 3539,
+    "sha256": "0339eb9b1149cba69af15aa27d605b3ef172b335932d49c41193360059f434fd"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/experiment.json",
+    "bytes": 3336,
+    "sha256": "86c157c8a688940d403e8d81f91bbb41186b89513783d20934641d761d3e4b21"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/finger_contact_audit.py",
+    "bytes": 2054,
+    "sha256": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/isaac_compat.py",
+    "bytes": 3227,
+    "sha256": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/joint_safety.py",
+    "bytes": 4195,
+    "sha256": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/kinematics.py",
+    "bytes": 3543,
+    "sha256": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/opposition_feedback.py",
+    "bytes": 2483,
+    "sha256": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/opposition_grasp_v20.json",
+    "bytes": 6996,
+    "sha256": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/opposition_teacher.py",
+    "bytes": 13679,
+    "sha256": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/palm_contact_audit.py",
+    "bytes": 1379,
+    "sha256": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/palm_handover.py",
+    "bytes": 6505,
+    "sha256": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/palm_handover_audit.py",
+    "bytes": 4553,
+    "sha256": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/palm_handover_experiment.py",
+    "bytes": 12617,
+    "sha256": "74db8145fa76937b33fbfd2a37b41bcd7f3b132af94defad4bbe9379e4377c40"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/portability_migration.json",
+    "bytes": 2624,
+    "sha256": "6f9b6b908966280c0c04ec5b23ae6b042cad01d3c1a612eb2576ad8cb79fef8b"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/proximal_planner.py",
+    "bytes": 3030,
+    "sha256": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/result.json",
+    "bytes": 3361,
+    "sha256": "fe5332a92d00b0e596843a1f3979bebc8e413181136d2949c7127ff6c0dbe409"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/runtime_config.json",
+    "bytes": 7757,
+    "sha256": "56a15fdfa384c0c0013dea985bc4f3d6edcc3a847a302fe4885070f575c4895a"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/safe_collision_plan.py",
+    "bytes": 7100,
+    "sha256": "2ca8f8278d50b03a612ec9e9bbad746900541b86a29eb799042212c4fdd6dda4"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/safe_contact_candidate_v2.json",
+    "bytes": 3075,
+    "sha256": "a88b42702c30c11ebf3c6e88e0fda2fa0b87f60720a051afb94e547568ece21d"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/safe_handover.py",
+    "bytes": 14838,
+    "sha256": "6c623193bb07f2709293dc96860c033f96e8c1e859b5376e676ae5907b141a0c"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/safe_handover_experiment.py",
+    "bytes": 14877,
+    "sha256": "8e98bda1878ee1833756b27121a5d1b902647cb88421fb622032591a8d3b724b"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/safe_path_audit.py",
+    "bytes": 1958,
+    "sha256": "c47441dca1416aef3a192ad75a9a573f53307e8fe37b60cf782ccf24993b083e"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/self_contact_audit.py",
+    "bytes": 1093,
+    "sha256": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/tilt_audit.py",
+    "bytes": 5068,
+    "sha256": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/tilt_collision_plan.py",
+    "bytes": 7133,
+    "sha256": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/tilt_experiment.py",
+    "bytes": 10878,
+    "sha256": "d345f965ec3f93a1c662eaf736bf9f25f4fb50733fee6784ff5fe9798154081d"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/tilt_plan_9501.json",
+    "bytes": 1073899,
+    "sha256": "aad44ef54de840332b0e25d2f910de93ad0635c7239786a5563a5ad6ce2c8147"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/tilt_regrasp.py",
+    "bytes": 21716,
+    "sha256": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/trajectory_9501.json",
+    "bytes": 46057389,
+    "sha256": "b7fc1014863fc414dfe0e5e1ff96a9f427fb7ecde4c190529d42a8a147cda7f9"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/wrist_collision_manifest.json",
+    "bytes": 4903,
+    "sha256": "8a0103fd97ef573addca3c2980dddf6eb56cf1d6ccc2b93279037af6fa7a5e7c"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_guard_20261103/wrist_collision_schema.py",
+    "bytes": 3583,
+    "sha256": "312b465abc9cc44e9c40ac2d206e3c082d3512ff69d724c05e851fa22bd03fb3"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/asset_contract.json",
+    "bytes": 6432,
+    "sha256": "1b419bb3040a5ba54299b6ef6e2a2549690889ca33057bdd8d8707c50bad345f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/config.json",
+    "bytes": 7670,
+    "sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/elbow_audit.py",
+    "bytes": 1906,
+    "sha256": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/elbow_handover.py",
+    "bytes": 4103,
+    "sha256": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/elbow_handover_experiment.py",
+    "bytes": 13870,
+    "sha256": "0c403b1fba0f01c48fc9fc068b28545ec82d5c348a480d4608e2035ddab91cf1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/environment.py",
+    "bytes": 20264,
+    "sha256": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/evidence_paths.py",
+    "bytes": 3539,
+    "sha256": "0339eb9b1149cba69af15aa27d605b3ef172b335932d49c41193360059f434fd"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/experiment.json",
+    "bytes": 3346,
+    "sha256": "edd54b43b65aa19a376cf37f238ebef354933ed03d4fc146db044f0808d9254d"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/finger_contact_audit.py",
+    "bytes": 2054,
+    "sha256": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/isaac_compat.py",
+    "bytes": 3227,
+    "sha256": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/joint_safety.py",
+    "bytes": 4195,
+    "sha256": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/kinematics.py",
+    "bytes": 3543,
+    "sha256": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/opposition_feedback.py",
+    "bytes": 2483,
+    "sha256": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/opposition_grasp_v20.json",
+    "bytes": 6996,
+    "sha256": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/opposition_teacher.py",
+    "bytes": 13679,
+    "sha256": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/palm_contact_audit.py",
+    "bytes": 1379,
+    "sha256": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/palm_handover.py",
+    "bytes": 6505,
+    "sha256": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/palm_handover_audit.py",
+    "bytes": 4553,
+    "sha256": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/palm_handover_experiment.py",
+    "bytes": 12617,
+    "sha256": "74db8145fa76937b33fbfd2a37b41bcd7f3b132af94defad4bbe9379e4377c40"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/path_audit_9501.json",
+    "bytes": 271,
+    "sha256": "465c4b6eb7c1c74dc0099703cf12d8457dcaf9da83ff0af5f0353795331138a4"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/portability_migration.json",
+    "bytes": 2624,
+    "sha256": "6f9b6b908966280c0c04ec5b23ae6b042cad01d3c1a612eb2576ad8cb79fef8b"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/proximal_planner.py",
+    "bytes": 3030,
+    "sha256": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/rejected_or_checked_right_plan_9501.json",
+    "bytes": 2343278,
+    "sha256": "f9b152e05243c9ab466654c3aeba7cddc4519c7d746cd93939bac48aee94216d"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/result.json",
+    "bytes": 3711,
+    "sha256": "693449571a14a8bdf0793e257abc0d6a021afab966fa524150347652a562ce22"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/runtime_config.json",
+    "bytes": 7757,
+    "sha256": "56a15fdfa384c0c0013dea985bc4f3d6edcc3a847a302fe4885070f575c4895a"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/safe_collision_plan.py",
+    "bytes": 7100,
+    "sha256": "2ca8f8278d50b03a612ec9e9bbad746900541b86a29eb799042212c4fdd6dda4"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/safe_contact_candidate_v2.json",
+    "bytes": 3075,
+    "sha256": "a88b42702c30c11ebf3c6e88e0fda2fa0b87f60720a051afb94e547568ece21d"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/safe_handover.py",
+    "bytes": 14838,
+    "sha256": "6c623193bb07f2709293dc96860c033f96e8c1e859b5376e676ae5907b141a0c"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/safe_handover_experiment.py",
+    "bytes": 14877,
+    "sha256": "8e98bda1878ee1833756b27121a5d1b902647cb88421fb622032591a8d3b724b"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/safe_path_audit.py",
+    "bytes": 1958,
+    "sha256": "c47441dca1416aef3a192ad75a9a573f53307e8fe37b60cf782ccf24993b083e"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/self_contact_audit.py",
+    "bytes": 1093,
+    "sha256": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/tilt_audit.py",
+    "bytes": 5068,
+    "sha256": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/tilt_collision_plan.py",
+    "bytes": 7133,
+    "sha256": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/tilt_experiment.py",
+    "bytes": 10878,
+    "sha256": "d345f965ec3f93a1c662eaf736bf9f25f4fb50733fee6784ff5fe9798154081d"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/tilt_plan_9501.json",
+    "bytes": 1073899,
+    "sha256": "aad44ef54de840332b0e25d2f910de93ad0635c7239786a5563a5ad6ce2c8147"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/tilt_regrasp.py",
+    "bytes": 21716,
+    "sha256": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/trajectory_9501.json",
+    "bytes": 46020657,
+    "sha256": "a743113381b11910d31b4d1957cc2cf50fb5e9b5a31a0a2b9175da73685b87e3"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/wrist_collision_manifest.json",
+    "bytes": 4903,
+    "sha256": "8a0103fd97ef573addca3c2980dddf6eb56cf1d6ccc2b93279037af6fa7a5e7c"
+  },
+  {
+    "path": "revotron_cube_rl/runs/safe_handover_v3_regrasp_guard_20261103/wrist_collision_schema.py",
+    "bytes": 3583,
+    "sha256": "312b465abc9cc44e9c40ac2d206e3c082d3512ff69d724c05e851fa22bd03fb3"
   },
   {
     "path": "revotron_cube_rl/runs/side_bc_development_v1/asset_contract.json",
@@ -4900,9 +6225,759 @@
     "sha256": "a6a81b2425fab3e68a3396829e761e14602552c0640549a939a1a479fbc3f378"
   },
   {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/asset_contract.json",
+    "bytes": 6432,
+    "sha256": "1b419bb3040a5ba54299b6ef6e2a2549690889ca33057bdd8d8707c50bad345f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/config.json",
+    "bytes": 7670,
+    "sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/elbow_audit.py",
+    "bytes": 1906,
+    "sha256": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/elbow_gate.py",
+    "bytes": 3947,
+    "sha256": "6473a2deec9034d4fa57079fe917d248c40db68f9768001456474bdc8eb6c526"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/elbow_handover.py",
+    "bytes": 4103,
+    "sha256": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/elbow_handover_experiment.py",
+    "bytes": 13870,
+    "sha256": "0c403b1fba0f01c48fc9fc068b28545ec82d5c348a480d4608e2035ddab91cf1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/environment.py",
+    "bytes": 20264,
+    "sha256": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/evidence_paths.py",
+    "bytes": 3539,
+    "sha256": "0339eb9b1149cba69af15aa27d605b3ef172b335932d49c41193360059f434fd"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/experiment.json",
+    "bytes": 3014,
+    "sha256": "d396ee7939c5f1c49fbfe1d749d2fdf9cba031c2246391c17207c4de9fd9cda7"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/final_front_9501.png",
+    "bytes": 150232,
+    "sha256": "cb5a668c7f455fe472eb33f1430429ed38de0136ea2b89dfa00329b6986ee9bd"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/final_side_9501.png",
+    "bytes": 121591,
+    "sha256": "8cfdb10133c70c346565760302d627d7bd4befdfd6ebeb0d978b2efec8e68210"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/finger_contact_audit.py",
+    "bytes": 2054,
+    "sha256": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/isaac_compat.py",
+    "bytes": 3227,
+    "sha256": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/joint_safety.py",
+    "bytes": 4195,
+    "sha256": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/kinematics.py",
+    "bytes": 3543,
+    "sha256": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/opposition_feedback.py",
+    "bytes": 2483,
+    "sha256": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/opposition_grasp_v20.json",
+    "bytes": 6996,
+    "sha256": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/opposition_teacher.py",
+    "bytes": 13679,
+    "sha256": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/palm_contact_audit.py",
+    "bytes": 1379,
+    "sha256": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/palm_handover.py",
+    "bytes": 6505,
+    "sha256": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/palm_handover_audit.py",
+    "bytes": 4553,
+    "sha256": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/palm_handover_experiment.py",
+    "bytes": 12617,
+    "sha256": "74db8145fa76937b33fbfd2a37b41bcd7f3b132af94defad4bbe9379e4377c40"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/portability_migration.json",
+    "bytes": 2624,
+    "sha256": "6f9b6b908966280c0c04ec5b23ae6b042cad01d3c1a612eb2576ad8cb79fef8b"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/proximal_planner.py",
+    "bytes": 3030,
+    "sha256": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/result.json",
+    "bytes": 4655,
+    "sha256": "a67140b1e9faf013e25029c2a6a365a440fa121ac2e429f2b071874cf4fdf8f9"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/runtime_config.json",
+    "bytes": 7944,
+    "sha256": "31691164c56b3f1b57c13f2ad0f441a197d3888183d5a115466c1a9c3317e576"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/self_contact_audit.py",
+    "bytes": 1093,
+    "sha256": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/tilt_audit.py",
+    "bytes": 5068,
+    "sha256": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/tilt_collision_plan.py",
+    "bytes": 7133,
+    "sha256": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/tilt_experiment.py",
+    "bytes": 10878,
+    "sha256": "d345f965ec3f93a1c662eaf736bf9f25f4fb50733fee6784ff5fe9798154081d"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/tilt_plan_9501.json",
+    "bytes": 1113400,
+    "sha256": "408135eae4e45bd84bf731bd2cecebe90a1c7f3906931631c2e987e26c92de08"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/tilt_regrasp.py",
+    "bytes": 21716,
+    "sha256": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/trajectory_9501.json",
+    "bytes": 47684666,
+    "sha256": "69bbbe67c32cec52bd60060374d2157c61edae5cde3ea8e9edbd2df0308ba777"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/wrist_audit.py",
+    "bytes": 1467,
+    "sha256": "e0dcf531d4f9e74cce3293ff2f954486fd1277609a832becdcefbd4b4e36398f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/wrist_direction.py",
+    "bytes": 4361,
+    "sha256": "0aa5858caf39dabbd92af4396370121de30dc673675a5c24f11ca8ff0c0c0ed5"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_dev_v1_20261103/wrist_direction_experiment.py",
+    "bytes": 14534,
+    "sha256": "23d3784eeab1d5f560ad603939a30bce5cf2d4d26cb94b83bf9921a4413e4d8e"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/asset_contract.json",
+    "bytes": 6432,
+    "sha256": "1b419bb3040a5ba54299b6ef6e2a2549690889ca33057bdd8d8707c50bad345f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/config.json",
+    "bytes": 7670,
+    "sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/elbow_audit.py",
+    "bytes": 1906,
+    "sha256": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/elbow_gate.py",
+    "bytes": 3947,
+    "sha256": "6473a2deec9034d4fa57079fe917d248c40db68f9768001456474bdc8eb6c526"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/elbow_handover.py",
+    "bytes": 4103,
+    "sha256": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/elbow_handover_experiment.py",
+    "bytes": 13870,
+    "sha256": "0c403b1fba0f01c48fc9fc068b28545ec82d5c348a480d4608e2035ddab91cf1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/environment.py",
+    "bytes": 20264,
+    "sha256": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/evidence_paths.py",
+    "bytes": 3539,
+    "sha256": "0339eb9b1149cba69af15aa27d605b3ef172b335932d49c41193360059f434fd"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/experiment.json",
+    "bytes": 3038,
+    "sha256": "ff1314eb415c8abd4812d3aceec98e6df7f2755ba178870cb35624d94ec63a7c"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/finger_contact_audit.py",
+    "bytes": 2054,
+    "sha256": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/isaac_compat.py",
+    "bytes": 3227,
+    "sha256": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/joint_safety.py",
+    "bytes": 4195,
+    "sha256": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/kinematics.py",
+    "bytes": 3543,
+    "sha256": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/opposition_feedback.py",
+    "bytes": 2483,
+    "sha256": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/opposition_grasp_v20.json",
+    "bytes": 6996,
+    "sha256": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/opposition_teacher.py",
+    "bytes": 13679,
+    "sha256": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/palm_contact_audit.py",
+    "bytes": 1379,
+    "sha256": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/palm_handover.py",
+    "bytes": 6505,
+    "sha256": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/palm_handover_audit.py",
+    "bytes": 4553,
+    "sha256": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/palm_handover_experiment.py",
+    "bytes": 12617,
+    "sha256": "74db8145fa76937b33fbfd2a37b41bcd7f3b132af94defad4bbe9379e4377c40"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/portability_migration.json",
+    "bytes": 2624,
+    "sha256": "6f9b6b908966280c0c04ec5b23ae6b042cad01d3c1a612eb2576ad8cb79fef8b"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/proximal_planner.py",
+    "bytes": 3030,
+    "sha256": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/result.json",
+    "bytes": 9226,
+    "sha256": "dcf7843193d23caa9c8e14c3f8d90b2f5e7b72327042405ed51e131d58d93f10"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/runtime_config.json",
+    "bytes": 7944,
+    "sha256": "31691164c56b3f1b57c13f2ad0f441a197d3888183d5a115466c1a9c3317e576"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/self_contact_audit.py",
+    "bytes": 1093,
+    "sha256": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/tilt_audit.py",
+    "bytes": 5068,
+    "sha256": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/tilt_collision_plan.py",
+    "bytes": 7133,
+    "sha256": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/tilt_experiment.py",
+    "bytes": 10878,
+    "sha256": "d345f965ec3f93a1c662eaf736bf9f25f4fb50733fee6784ff5fe9798154081d"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/tilt_plan_9704.json",
+    "bytes": 809092,
+    "sha256": "672a8c43a96b0b8597729461ad6ca812952dd4e36b32458900d0775f2b31e860"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/tilt_plan_9705.json",
+    "bytes": 1122112,
+    "sha256": "c8031c08313ff8e70bbcd1ae0f4648520edd199571bdb68cfeb733276f10d433"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/tilt_regrasp.py",
+    "bytes": 21716,
+    "sha256": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/trajectory_9704.json",
+    "bytes": 40818245,
+    "sha256": "c6d438f30d4a0149129a2bfa61f62a2700dfdb20457fb46e188f5de1f43f5524"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/trajectory_9705.json",
+    "bytes": 47519363,
+    "sha256": "09d136ced8cf2012a04b215e8dfbd9becdabfac3da4ad7e94fb65f05889b5068"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/wrist_audit.py",
+    "bytes": 1467,
+    "sha256": "e0dcf531d4f9e74cce3293ff2f954486fd1277609a832becdcefbd4b4e36398f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/wrist_direction.py",
+    "bytes": 4361,
+    "sha256": "0aa5858caf39dabbd92af4396370121de30dc673675a5c24f11ca8ff0c0c0ed5"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_remaining_v1_20261103/wrist_direction_experiment.py",
+    "bytes": 14534,
+    "sha256": "23d3784eeab1d5f560ad603939a30bce5cf2d4d26cb94b83bf9921a4413e4d8e"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/asset_contract.json",
+    "bytes": 6432,
+    "sha256": "1b419bb3040a5ba54299b6ef6e2a2549690889ca33057bdd8d8707c50bad345f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/config.json",
+    "bytes": 7670,
+    "sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/elbow_audit.py",
+    "bytes": 1906,
+    "sha256": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/elbow_gate.py",
+    "bytes": 3947,
+    "sha256": "6473a2deec9034d4fa57079fe917d248c40db68f9768001456474bdc8eb6c526"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/elbow_handover.py",
+    "bytes": 4103,
+    "sha256": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/elbow_handover_experiment.py",
+    "bytes": 13870,
+    "sha256": "0c403b1fba0f01c48fc9fc068b28545ec82d5c348a480d4608e2035ddab91cf1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/environment.py",
+    "bytes": 20264,
+    "sha256": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/evidence_paths.py",
+    "bytes": 3539,
+    "sha256": "0339eb9b1149cba69af15aa27d605b3ef172b335932d49c41193360059f434fd"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/experiment.json",
+    "bytes": 3043,
+    "sha256": "f28d945938679d222cf219f5f12c375e87432710c8d9b156faf0625ad1248f45"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/finger_contact_audit.py",
+    "bytes": 2054,
+    "sha256": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/isaac_compat.py",
+    "bytes": 3227,
+    "sha256": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/joint_safety.py",
+    "bytes": 4195,
+    "sha256": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/kinematics.py",
+    "bytes": 3543,
+    "sha256": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/opposition_feedback.py",
+    "bytes": 2483,
+    "sha256": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/opposition_grasp_v20.json",
+    "bytes": 6996,
+    "sha256": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/opposition_teacher.py",
+    "bytes": 13679,
+    "sha256": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/palm_contact_audit.py",
+    "bytes": 1379,
+    "sha256": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/palm_handover.py",
+    "bytes": 6505,
+    "sha256": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/palm_handover_audit.py",
+    "bytes": 4553,
+    "sha256": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/palm_handover_experiment.py",
+    "bytes": 12617,
+    "sha256": "74db8145fa76937b33fbfd2a37b41bcd7f3b132af94defad4bbe9379e4377c40"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/portability_migration.json",
+    "bytes": 2624,
+    "sha256": "6f9b6b908966280c0c04ec5b23ae6b042cad01d3c1a612eb2576ad8cb79fef8b"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/proximal_planner.py",
+    "bytes": 3030,
+    "sha256": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/result.json",
+    "bytes": 13739,
+    "sha256": "9048d7b36804ff0d9990c061c9594b286f2b4f338d50c77e679bf42e52971cf2"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/runtime_config.json",
+    "bytes": 7944,
+    "sha256": "31691164c56b3f1b57c13f2ad0f441a197d3888183d5a115466c1a9c3317e576"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/self_contact_audit.py",
+    "bytes": 1093,
+    "sha256": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/tilt_audit.py",
+    "bytes": 5068,
+    "sha256": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/tilt_collision_plan.py",
+    "bytes": 7133,
+    "sha256": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/tilt_experiment.py",
+    "bytes": 10878,
+    "sha256": "d345f965ec3f93a1c662eaf736bf9f25f4fb50733fee6784ff5fe9798154081d"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/tilt_plan_9701.json",
+    "bytes": 1404586,
+    "sha256": "b31ddcce3deffe9781e99212cce51d382fe05d30e73dbcc9e5ddf046f4765410"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/tilt_plan_9702.json",
+    "bytes": 1118861,
+    "sha256": "46ae634c9f3bb11219305ff3bb1fd4c9c5c09646f17dc539725900ae4c12baa9"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/tilt_plan_9703.json",
+    "bytes": 995209,
+    "sha256": "31d83bf0c6bb935aeb15ac4c226d5c84fe331a86b83b20889fdecee84a055f1f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/tilt_regrasp.py",
+    "bytes": 21716,
+    "sha256": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/trajectory_9701.json",
+    "bytes": 51982739,
+    "sha256": "9d443b5c5e04e10e6a56781d45d7ac76bb6a51d1f8906e8329229f8bac9f5684"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/trajectory_9702.json",
+    "bytes": 45084897,
+    "sha256": "c31c323862788e2b27f44f1f1d46eb7ce7abb42d7f54772e31a6f2b321d28aa1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/trajectory_9703.json",
+    "bytes": 44840568,
+    "sha256": "5ce2d1049e53fbe72aa78e0cb79c43c7c4c2f41c4d0debac9b7cf4533cc521df"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/wrist_audit.py",
+    "bytes": 1467,
+    "sha256": "e0dcf531d4f9e74cce3293ff2f954486fd1277609a832becdcefbd4b4e36398f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/wrist_direction.py",
+    "bytes": 4361,
+    "sha256": "0aa5858caf39dabbd92af4396370121de30dc673675a5c24f11ca8ff0c0c0ed5"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_direction_independent_v1_20261103/wrist_direction_experiment.py",
+    "bytes": 14534,
+    "sha256": "23d3784eeab1d5f560ad603939a30bce5cf2d4d26cb94b83bf9921a4413e4d8e"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/asset_contract.json",
+    "bytes": 6432,
+    "sha256": "1b419bb3040a5ba54299b6ef6e2a2549690889ca33057bdd8d8707c50bad345f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/config.json",
+    "bytes": 7670,
+    "sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/elbow_audit.py",
+    "bytes": 1906,
+    "sha256": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/elbow_handover.py",
+    "bytes": 4103,
+    "sha256": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/elbow_handover_experiment.py",
+    "bytes": 13870,
+    "sha256": "0c403b1fba0f01c48fc9fc068b28545ec82d5c348a480d4608e2035ddab91cf1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/environment.py",
+    "bytes": 20264,
+    "sha256": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/evidence_paths.py",
+    "bytes": 3539,
+    "sha256": "0339eb9b1149cba69af15aa27d605b3ef172b335932d49c41193360059f434fd"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/experiment.json",
+    "bytes": 3145,
+    "sha256": "d6ee9fc385299b28eba6749f9d6679da4b1ae0eb4080ff5465781455e8b641a6"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/finger_contact_audit.py",
+    "bytes": 2054,
+    "sha256": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/isaac_compat.py",
+    "bytes": 3227,
+    "sha256": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/joint_safety.py",
+    "bytes": 4195,
+    "sha256": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/kinematics.py",
+    "bytes": 3543,
+    "sha256": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/opposition_feedback.py",
+    "bytes": 2483,
+    "sha256": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/opposition_grasp_v20.json",
+    "bytes": 6996,
+    "sha256": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/opposition_teacher.py",
+    "bytes": 13679,
+    "sha256": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/palm_contact_audit.py",
+    "bytes": 1379,
+    "sha256": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/palm_handover.py",
+    "bytes": 6505,
+    "sha256": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/palm_handover_audit.py",
+    "bytes": 4553,
+    "sha256": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/palm_handover_experiment.py",
+    "bytes": 12617,
+    "sha256": "74db8145fa76937b33fbfd2a37b41bcd7f3b132af94defad4bbe9379e4377c40"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/portability_migration.json",
+    "bytes": 2624,
+    "sha256": "6f9b6b908966280c0c04ec5b23ae6b042cad01d3c1a612eb2576ad8cb79fef8b"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/proximal_planner.py",
+    "bytes": 3030,
+    "sha256": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/result.json",
+    "bytes": 3337,
+    "sha256": "17b8449003f723347c8c1c0d1151fcfb8b71f54c7e18e24645d4c51a7e20f854"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/runtime_config.json",
+    "bytes": 7757,
+    "sha256": "56a15fdfa384c0c0013dea985bc4f3d6edcc3a847a302fe4885070f575c4895a"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/safe_collision_plan.py",
+    "bytes": 7100,
+    "sha256": "2ca8f8278d50b03a612ec9e9bbad746900541b86a29eb799042212c4fdd6dda4"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/safe_handover.py",
+    "bytes": 8256,
+    "sha256": "a8253b09974e4e90ee75f6eab72abd09eb11935b79b0c5d0a60c692ce953dda9"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/safe_handover_experiment.py",
+    "bytes": 14476,
+    "sha256": "3a135ac1fa41f1745b056ad5aaea655bad9928d0e69e64591d5425a51db65201"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/self_contact_audit.py",
+    "bytes": 1093,
+    "sha256": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/tilt_audit.py",
+    "bytes": 5068,
+    "sha256": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/tilt_collision_plan.py",
+    "bytes": 7133,
+    "sha256": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/tilt_experiment.py",
+    "bytes": 10878,
+    "sha256": "d345f965ec3f93a1c662eaf736bf9f25f4fb50733fee6784ff5fe9798154081d"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/tilt_plan_9501.json",
+    "bytes": 874870,
+    "sha256": "99e95f1f57d2114d1f9168fb13ca83d7b2ec7d9ac6a195b0f3804c8ab6cf8a93"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/tilt_regrasp.py",
+    "bytes": 21716,
+    "sha256": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/trajectory_9501.json",
+    "bytes": 40434040,
+    "sha256": "0d75d0089f22c90580f184c92ab6736cb740250ae4b09d10caf163b33d5bca3a"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/wrist_collision_manifest.json",
+    "bytes": 4903,
+    "sha256": "8a0103fd97ef573addca3c2980dddf6eb56cf1d6ccc2b93279037af6fa7a5e7c"
+  },
+  {
+    "path": "revotron_cube_rl/runs/wrist_schema_left_regression_v1_20261103/wrist_collision_schema.py",
+    "bytes": 3583,
+    "sha256": "312b465abc9cc44e9c40ac2d206e3c082d3512ff69d724c05e851fa22bd03fb3"
+  },
+  {
     "path": "revotron_cube_rl/runtime_platform.py",
     "bytes": 260,
     "sha256": "c08829cde5986256dab4f5448edcecbf8932a3100ed7fab7dbdf0ad2f895772f"
+  },
+  {
+    "path": "revotron_cube_rl/safe_collision_plan.py",
+    "bytes": 7100,
+    "sha256": "2ca8f8278d50b03a612ec9e9bbad746900541b86a29eb799042212c4fdd6dda4"
+  },
+  {
+    "path": "revotron_cube_rl/safe_contact_candidate_v2.json",
+    "bytes": 3075,
+    "sha256": "a88b42702c30c11ebf3c6e88e0fda2fa0b87f60720a051afb94e547568ece21d"
+  },
+  {
+    "path": "revotron_cube_rl/safe_handover.py",
+    "bytes": 14838,
+    "sha256": "6c623193bb07f2709293dc96860c033f96e8c1e859b5376e676ae5907b141a0c"
+  },
+  {
+    "path": "revotron_cube_rl/safe_handover_experiment.py",
+    "bytes": 14877,
+    "sha256": "8e98bda1878ee1833756b27121a5d1b902647cb88421fb622032591a8d3b724b"
+  },
+  {
+    "path": "revotron_cube_rl/safe_path_audit.py",
+    "bytes": 2322,
+    "sha256": "6bce138e8ca571a64f98d16bce58b0e92ce4fa0a3b92e94476d99ae37b9cb8d4"
   },
   {
     "path": "revotron_cube_rl/self_contact_audit.py",
@@ -4921,8 +6996,8 @@
   },
   {
     "path": "revotron_cube_rl/side_gate.py",
-    "bytes": 3345,
-    "sha256": "ee86f5baccf6ad4dec2e7d5714340bcd8690d659503b08e673929fe42efd0a89"
+    "bytes": 3341,
+    "sha256": "f2371ef5a182b0fd3e781d0f7341c1afbeb5e057509d1af64d781e397c1b1ef9"
   },
   {
     "path": "revotron_cube_rl/side_grasp.py",
@@ -4951,8 +7026,8 @@
   },
   {
     "path": "revotron_cube_rl/stage_gate.py",
-    "bytes": 2634,
-    "sha256": "44db3f3d5d596a6d18c61e8d64ebf4ed119d5d88774b2c44b7f189158c4a8bac"
+    "bytes": 2640,
+    "sha256": "bf266d9b8c27810912d5aac1b17b04145ae7c404b5bea0a6e6deffb94912c6a2"
   },
   {
     "path": "revotron_cube_rl/staged_teacher_gate.json",
@@ -4985,6 +7060,16 @@
     "sha256": "7b50cca9b6fc2a51efca512717de1e92f5d69849c84cf5e20a0be61947a95d49"
   },
   {
+    "path": "revotron_cube_rl/test_elbow_audit.py",
+    "bytes": 1494,
+    "sha256": "c473539492cb9f833764ae7f99095e3a4680be2548cbd931184ad774eb513bb7"
+  },
+  {
+    "path": "revotron_cube_rl/test_evidence_paths.py",
+    "bytes": 1859,
+    "sha256": "bff0b44220dab6592282c93f5a2e7a78e9b456518622e0f068fa2d893dc3c29b"
+  },
+  {
     "path": "revotron_cube_rl/test_migration_contract.py",
     "bytes": 4403,
     "sha256": "60f51e1ed269c0dd9af082e7ee119107959442676e9b6fb52d9b66cddf969549"
@@ -5003,6 +7088,11 @@
     "path": "revotron_cube_rl/test_reward_gates.py",
     "bytes": 5616,
     "sha256": "5b22851cbb533938a41967940e9bf6925755df13a59569e60361981121c8b8f2"
+  },
+  {
+    "path": "revotron_cube_rl/test_safe_path_audit.py",
+    "bytes": 1949,
+    "sha256": "81476b9f15c1a1e2435c5bd8c259db5ca6536260115d1a6c0cb8f9770e06bf30"
   },
   {
     "path": "revotron_cube_rl/test_side_control.py",
@@ -5025,6 +7115,11 @@
     "sha256": "25f6154a789b24fcef6ddace361b089ded37f9e1a716a94da94a513282870052"
   },
   {
+    "path": "revotron_cube_rl/test_wrist_audit.py",
+    "bytes": 1429,
+    "sha256": "bf3012d74b2c78baa8017c62e9a927b9ea2c140342aa16896a1edcc1aff2c9b2"
+  },
+  {
     "path": "revotron_cube_rl/tilt_audit.py",
     "bytes": 5068,
     "sha256": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995"
@@ -5041,8 +7136,8 @@
   },
   {
     "path": "revotron_cube_rl/tilt_gate.py",
-    "bytes": 5328,
-    "sha256": "3729acd300adb96cd86ada04ea23cb6b1b569847f3359e67f282a4c95d4293a1"
+    "bytes": 5458,
+    "sha256": "8282547685d6f7860d42587f5bc08bfb43a2c5688d6cd1387e28ccf24b0ab7f3"
   },
   {
     "path": "revotron_cube_rl/tilt_regrasp.py",
@@ -5120,9 +7215,64 @@
     "sha256": "ad8a48b933b0b0998ee31aa33d8ceb3375ed44aa757dcaae901275d059e15ddd"
   },
   {
+    "path": "revotron_cube_rl/validate_relocated_evidence.py",
+    "bytes": 5085,
+    "sha256": "c10ca912debadc2cccc906c72c6b350d879cf2d55892c498718474bd18202ced"
+  },
+  {
+    "path": "revotron_cube_rl/verify_portable_evidence.py",
+    "bytes": 3144,
+    "sha256": "ea02e3dbf7742025f472961ad6b78e1d0dd05c0faac3d2d2c784478ebc88eaa5"
+  },
+  {
     "path": "revotron_cube_rl/warmstart.py",
     "bytes": 27609,
     "sha256": "373bd7e540683b6f4fd673e950982304cf5009e6af4c75d699a28b80ebba0ac7"
+  },
+  {
+    "path": "revotron_cube_rl/wrist_audit.py",
+    "bytes": 1467,
+    "sha256": "e0dcf531d4f9e74cce3293ff2f954486fd1277609a832becdcefbd4b4e36398f"
+  },
+  {
+    "path": "revotron_cube_rl/wrist_collision_manifest.json",
+    "bytes": 4903,
+    "sha256": "8a0103fd97ef573addca3c2980dddf6eb56cf1d6ccc2b93279037af6fa7a5e7c"
+  },
+  {
+    "path": "revotron_cube_rl/wrist_collision_schema.py",
+    "bytes": 3583,
+    "sha256": "312b465abc9cc44e9c40ac2d206e3c082d3512ff69d724c05e851fa22bd03fb3"
+  },
+  {
+    "path": "revotron_cube_rl/wrist_collision_validation.json",
+    "bytes": 526,
+    "sha256": "33055444c1662331c207c3b37d7a5ba7d9d2295909dc5b7fff4efba09e0f1194"
+  },
+  {
+    "path": "revotron_cube_rl/wrist_direction.py",
+    "bytes": 4361,
+    "sha256": "0aa5858caf39dabbd92af4396370121de30dc673675a5c24f11ca8ff0c0c0ed5"
+  },
+  {
+    "path": "revotron_cube_rl/wrist_direction_experiment.py",
+    "bytes": 14534,
+    "sha256": "23d3784eeab1d5f560ad603939a30bce5cf2d4d26cb94b83bf9921a4413e4d8e"
+  },
+  {
+    "path": "revotron_cube_rl/wrist_direction_gate_certificate.json",
+    "bytes": 33909,
+    "sha256": "bdd0a571c4242e76294bd6257d18192026b0a5198f5ebcfa82790b65fa0cd401"
+  },
+  {
+    "path": "revotron_cube_rl/wrist_direction_protocol_v1.json",
+    "bytes": 3907,
+    "sha256": "7a9d04f76118e45996b5008d00228d5000c53f5eb0f5841dffa9eff0cb16b1ba"
+  },
+  {
+    "path": "revotron_cube_rl/wrist_gate.py",
+    "bytes": 2020,
+    "sha256": "37f90513eada82e467686e451fd863e2ec64d870fd3bea9b4f32ac4b8ecdeddd"
   },
   {
     "path": "revotron_revo3/README.txt",
@@ -7168,6 +9318,11 @@
     "path": "revotron_revo3/source/revotron_system/usd/revotron_bimanual_revo3_56dof.usd",
     "bytes": 129195711,
     "sha256": "c066a65ff5ac77a8fb0a5fb3658c71f151b64777cdc9a8f66a0739d4033170a2"
+  },
+  {
+    "path": "revotron_revo3/source/revotron_system/usd/revotron_bimanual_revo3_wrist_mesh_v1.usda",
+    "bytes": 1503,
+    "sha256": "1ea674035491ae19875c61813ef8cfb1fd26c4b0b58de3ae3a2a3f04b741a143"
   },
   {
     "path": "revotron_revo3/usd_audit.json",

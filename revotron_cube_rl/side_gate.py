@@ -1,16 +1,17 @@
 """Hash-bound physical side-teacher gate, separate from historical downward grasp."""
 from pathlib import Path
+from evidence_paths import local_path, verified_sha, verify_source
 import argparse,json,hashlib
 from acceptance import assess_pickup
 ROOT=Path(__file__).resolve().parent
 FILES=['side_grasp.py','side_control.py','side_experiment.py','self_contact_audit.py','side_gate.py','kinematics.py','config.json','environment.py','joint_safety.py','acceptance.py','isaac_compat.py']
 def sha(path):
-    with Path(path).open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
+    return verified_sha(path,ROOT)
 def require_side_gate():
     gate=json.loads((ROOT/'side_teacher_gate.json').read_text())
     if not gate['passed']:raise RuntimeError('Side teacher not validated')
     for f,h in gate['source_sha256'].items():
-        if sha(ROOT/f)!=h:raise RuntimeError('Stale side teacher code: '+f)
+        verify_source(f,h,ROOT,'side_teacher_gate.json')
     for f,h in (gate['assets_sha256']|gate['evidence_sha256']).items():
         if sha(f)!=h:raise RuntimeError('Stale side teacher evidence or asset: '+f)
     return gate

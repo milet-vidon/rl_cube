@@ -1,0 +1,114 @@
+AppLauncher is deprecated; use isaaclab.app.launch_simulation.
+Loading user config located at: '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaacsim/kit/data/Kit/IsaacLab/3.0/user.config.json'
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1793687393.651458  239866 descriptor_database.cc:633] File already exists in database: grpc/health/v1/health.proto
+W0000 00:00:1793687393.651496  239866 message.cc:301] Protobuf GeneratedMessageFactory: File is already registered: grpc/health/v1/health.proto
+2026-11-03T06:29:53Z [0ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+Warning: Possible version incompatibility. Attempting to load carb::ujitso::IFactory with version v0.3 against v0.2.
+Warp 1.17.0 initialized:
+   CUDA Toolkit 12.9, Driver 13.2
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA GeForce RTX 5070 Laptop GPU" (8 GiB, sm_120, mempool enabled)
+   Kernel cache:
+     /home/brainco/.cache/warp/1.17.0
+[ISAACLAB] KitLauncher initialization complete
+2026-11-03T06:29:55Z [1,648ms] [Warning] [carb] Failed to find a plugin with an interface pointer: 0x5b19b0b38ef0. Client: carb.scripting-python.plugin
+[INFO]: Registered backend 'physx' for factory Articulation.
+[INFO]: Registered backend 'physx' for factory RigidObject.
+2026-11-03T06:29:57Z [3,362ms] [Warning] [usdrt.population.plugin] Last global time was not created. Did you call setEnableUsdNoticeHandling?
+[INFO]: Simulation parameters for joints in /World/Robot:
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                            Simulation Joint Information (Prim path: /World/Robot)                                                           |
++-------+------------------------+-----------+---------+----------+-----------------+------------------+------------------+-----------------+-----------------+---------------+
+| Index | Name                   | Stiffness | Damping | Armature | Static Friction | Dynamic Friction | Viscous Friction | Position Limits | Velocity Limits | Effort Limits |
++-------+------------------------+-----------+---------+----------+-----------------+------------------+------------------+-----------------+-----------------+---------------+
+|   0   | Joint1_L               |  100.000  |  8.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-3.107, 3.107] |      1.571      |    108.000    |
+|   1   | Joint1_R               |  100.000  |  8.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-3.107, 3.107] |      1.571      |    108.000    |
+|   2   | Joint2_L               |  100.000  |  8.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-2.094, 2.094] |      1.571      |    108.000    |
+|   3   | Joint2_R               |  100.000  |  8.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-2.094, 2.094] |      1.571      |    108.000    |
+|   4   | Joint3_L               |   64.000  |  8.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-3.107, 3.107] |      1.571      |     66.000    |
+|   5   | Joint3_R               |   64.000  |  8.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-3.107, 3.107] |      1.571      |     66.000    |
+|   6   | Joint4_L               |   64.000  |  8.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-2.531, 1.047] |      1.571      |     66.000    |
+|   7   | Joint4_R               |   64.000  |  8.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-2.531, 1.047] |      1.571      |     66.000    |
+|   8   | Joint5_L               |   48.000  |  8.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-3.107, 3.107] |      1.571      |     18.000    |
+|   9   | Joint5_R               |   48.000  |  8.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-3.107, 3.107] |      1.571      |     18.000    |
+|   10  | Joint6_L               |   40.000  |  8.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-1.047, 1.047] |      1.571      |     18.000    |
+|   11  | Joint6_R               |   40.000  |  8.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-1.047, 1.047] |      1.571      |     18.000    |
+|   12  | Joint7_L               |   40.000  |  8.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-1.571, 1.571] |      1.571      |     18.000    |
+|   13  | Joint7_R               |   40.000  |  8.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-1.571, 1.571] |      1.571      |     18.000    |
+|   14  | left_index_MPR_joint   |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.175, 0.524] |      10.000     |     5.000     |
+|   15  | left_little_MPR_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.524, 0.175] |      10.000     |     5.000     |
+|   16  | left_middle_MPR_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.349, 0.436] |      10.000     |     5.000     |
+|   17  | left_ring_MPR_joint    |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.436, 0.349] |      10.000     |     5.000     |
+|   18  | left_thumb_CMP_joint   |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       |  [0.000, 1.920] |      10.000     |     5.000     |
+|   19  | right_index_MPR_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.175, 0.524] |      10.000     |     5.000     |
+|   20  | right_little_MPR_joint |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.524, 0.175] |      10.000     |     5.000     |
+|   21  | right_middle_MPR_joint |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.349, 0.436] |      10.000     |     5.000     |
+|   22  | right_ring_MPR_joint   |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.436, 0.349] |      10.000     |     5.000     |
+|   23  | right_thumb_CMP_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       |  [0.000, 1.920] |      10.000     |     5.000     |
+|   24  | left_index_MCP_joint   |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.093, 1.583] |      10.000     |     5.000     |
+|   25  | left_little_MCP_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.093, 1.583] |      10.000     |     5.000     |
+|   26  | left_middle_MCP_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.093, 1.583] |      10.000     |     5.000     |
+|   27  | left_ring_MCP_joint    |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.093, 1.583] |      10.000     |     5.000     |
+|   28  | left_thumb_CMR_joint   |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.422, 1.428] |      10.000     |     5.000     |
+|   29  | right_index_MCP_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.093, 1.583] |      10.000     |     5.000     |
+|   30  | right_little_MCP_joint |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.093, 1.583] |      10.000     |     5.000     |
+|   31  | right_middle_MCP_joint |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.093, 1.583] |      10.000     |     5.000     |
+|   32  | right_ring_MCP_joint   |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.093, 1.583] |      10.000     |     5.000     |
+|   33  | right_thumb_CMR_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.422, 1.428] |      10.000     |     5.000     |
+|   34  | left_index_PIP_joint   |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.145, 1.600] |      10.000     |     5.000     |
+|   35  | left_little_PIP_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.145, 1.600] |      10.000     |     5.000     |
+|   36  | left_middle_PIP_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.145, 1.600] |      10.000     |     5.000     |
+|   37  | left_ring_PIP_joint    |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.145, 1.600] |      10.000     |     5.000     |
+|   38  | left_thumb_MCP_joint   |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.084, 1.329] |      10.000     |     5.000     |
+|   39  | right_index_PIP_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.145, 1.600] |      10.000     |     5.000     |
+|   40  | right_little_PIP_joint |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.145, 1.600] |      10.000     |     5.000     |
+|   41  | right_middle_PIP_joint |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.145, 1.600] |      10.000     |     5.000     |
+|   42  | right_ring_PIP_joint   |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.145, 1.600] |      10.000     |     5.000     |
+|   43  | right_thumb_MCP_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.084, 1.329] |      10.000     |     5.000     |
+|   44  | left_index_DIP_joint   |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.322, 1.598] |      10.000     |     5.000     |
+|   45  | left_little_DIP_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.322, 1.598] |      10.000     |     5.000     |
+|   46  | left_middle_DIP_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.322, 1.598] |      10.000     |     5.000     |
+|   47  | left_ring_DIP_joint    |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.322, 1.598] |      10.000     |     5.000     |
+|   48  | left_thumb_PIP_joint   |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.262, 1.553] |      10.000     |     5.000     |
+|   49  | right_index_DIP_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.322, 1.598] |      10.000     |     5.000     |
+|   50  | right_little_DIP_joint |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.322, 1.598] |      10.000     |     5.000     |
+|   51  | right_middle_DIP_joint |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.322, 1.598] |      10.000     |     5.000     |
+|   52  | right_ring_DIP_joint   |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.322, 1.598] |      10.000     |     5.000     |
+|   53  | right_thumb_PIP_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.262, 1.553] |      10.000     |     5.000     |
+|   54  | left_thumb_DIP_joint   |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.160, 1.762] |      10.000     |     5.000     |
+|   55  | right_thumb_DIP_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.160, 1.762] |      10.000     |     5.000     |
++-------+------------------------+-----------+---------+----------+-----------------+------------------+------------------+-----------------+-----------------+---------------+
+/home/brainco/rl_cube/github_project/revotron_cube_rl/wrist_direction_experiment.py:100: DeprecationWarning: The `root_state_w` property will be deprecated in IsaacLab 4.0. Please use `root_link_pose_w` and `root_com_vel_w` instead.
+  row['q']=tensor(env.robot.data.joint_pos)[0,env.ids].tolist();row['cube_quaternion_wxyz']=quaternion_from_native(tensor(env.cube.data.root_state_w)[0,3:7]).numpy().tolist()
+STEP 9704 0 ready height 0.0 tilt_error 90.0 self 0
+STEP 9704 120 ready height 0.0 tilt_error 90.0 self 0
+STEP 9704 240 preshape height 0.0 tilt_error 90.0 self 0
+STEP 9704 360 lower height -0.0 tilt_error 90.0 self 0
+STEP 9704 480 squeeze height 0.001 tilt_error 90.0 self 0
+STEP 9704 600 primary_lift height 0.081 tilt_error 90.0 self 0
+STEP 9704 720 elbow_outward height 0.207 tilt_error 90.68 self 0
+STEP 9704 840 tilt_90 height 0.238 tilt_error 85.99 self 0
+STEP 9704 960 tilt_90 height 0.234 tilt_error 34.89 self 0
+STEP 9704 1080 tilt_90 height 0.234 tilt_error 0.7 self 0
+STEP 9704 1200 wrist_reconfigure height 0.346 tilt_error 0.92 self 0
+STEP 9704 1320 tilt_hold height 0.405 tilt_error 0.38 self 0
+STEP 9704 1364 tilt_hold height 0.405 tilt_error 0.38 self 0
+EPISODE {"seed": 9704, "development_resume": false, "full_episode_verified": true, "accepted": true, "tilt_only_accepted": true, "right_regrasp_validated": false, "steps": 1365, "failure": null, "self_contact_impulse_sum_Ns": 0, "robot_table_impulse_sum_Ns": 0.0, "final_tilt_error_deg": 0.38046298598490547, "tilt_hold_seconds": 3.0, "right_hold_seconds": 0.0, "final_self_pairs": {}, "measured_audit": {"accepted": true, "scope": "whole_cube_tilt_only", "full_episode": true, "failures": [], "final_tilt_error_deg": 0.38046298598490547, "longest_measured_hold_seconds": 3.033333333333333, "contact_coverage_in_qualifying_window": {"left": {"thumb": 1.0, "index": 1.0, "middle": 1.0, "ring": 1.0, "little": 1.0}}, "maximum_lift_m": 0.4053409662246704, "final_lift_m": 0.404743727684021, "cube_returned_to_table_after_lift": false, "robot_table_impulse_sum_Ns": 0.0, "self_contact_impulse_sum_Ns": 0, "semantic_task": "left_palm_toward_right_hand_uncrossed_opposition_handover", "longest_palm_facing_hold_seconds": 3.033333333333333, "final_hand_geometry": {"left_palm_position_root": [0.4095306225866431, 0.3557125011190432, 0.15492464289502417], "right_palm_position_root": [0.30497234802841916, -0.20486233765996417, -0.12612224981787934], "left_palm_normal_world": [0.15798873017736292, -0.8377702537300948, 0.5226667801783057], "right_palm_normal_world": [0.050651693484178285, 0.9987136063683805, -0.002353380940144482], "left_facing_right_cos": 0.48167577183849064, "right_facing_left_cos": 0.887924853152575, "palm_normal_dot": -0.8299201887145561, "wrist_y_separation_m": 0.5605748387790074, "elbow_y_separation_m": 0.7545992732048035, "left_wrist_from_cube_y_m": 0.059787092517282314, "right_wrist_from_cube_y_m": 0.5007877462617251}, "wrist_posture": {"accepted": true, "longest_jointly_qualified_hold_s": 3.033333333333333, "final_elbow": {"shoulder_root_m": [0.02171429805457592, 0.24999992549419403, 0.24004087448120126], "elbow_root_m": [0.03920619562268257, 0.4297281503677368, 0.016244268417358487], "wrist_root_m": [0.3040587306022644, 0.33853447437286377, 0.15927181243896493], "outward_from_shoulder_m": 0.17972822487354279, "upper_arm_outward_deg": 38.76750722636828, "outward_from_shoulder_wrist_axis_m": 0.14309613368050333}, "final": {"joint6_deg": 12.10263417149362, "side_bend_deg": -14.217265518335193, "flexion_deg": 38.7198164502695, "forearm_direction_palm_frame": [0.6136383770677747, -0.19392222682140933, 0.7654032349907165], "wrist_inside_elbow_m": 0.09119367599487305}, "scope": "J6_side_bend_reversed_with_unchanged_palm_orientation", "failures": []}, "elbow_posture": {"accepted": true, "failures": [], "longest_outward_hold_seconds": 3.033333333333333, "minimum_outward_m": 0.16, "minimum_outward_degrees": 35.0, "final": {"shoulder_root_m": [0.02171429805457592, 0.24999992549419403, 0.24004087448120126], "elbow_root_m": [0.03920619562268257, 0.4297281503677368, 0.016244268417358487], "wrist_root_m": [0.3040587306022644, 0.33853447437286377, 0.15927181243896493], "outward_from_shoulder_m": 0.17972822487354279, "upper_arm_outward_deg": 38.76750722636828, "outward_from_shoulder_wrist_axis_m": 0.14309613368050333}}}}
+STEP 9705 0 ready height -0.0 tilt_error 90.0 self 0
+STEP 9705 120 ready height -0.0 tilt_error 90.0 self 0
+STEP 9705 240 ready height -0.0 tilt_error 90.0 self 0
+STEP 9705 360 lower height -0.0 tilt_error 90.0 self 0
+STEP 9705 480 squeeze height 0.003 tilt_error 90.0 self 0
+STEP 9705 600 primary_lift height 0.166 tilt_error 90.0 self 0
+STEP 9705 720 elbow_outward height 0.234 tilt_error 91.05 self 0
+STEP 9705 840 tilt_90 height 0.244 tilt_error 87.69 self 0
+STEP 9705 960 tilt_90 height 0.244 tilt_error 67.12 self 0
+STEP 9705 1080 tilt_90 height 0.239 tilt_error 30.66 self 0
+STEP 9705 1200 tilt_90 height 0.239 tilt_error 4.93 self 0
+STEP 9705 1320 wrist_reconfigure height 0.24 tilt_error 0.75 self 0
+STEP 9705 1440 wrist_reconfigure height 0.321 tilt_error 0.74 self 0
+STEP 9705 1560 tilt_hold height 0.328 tilt_error 0.39 self 0
+STEP 9705 1579 tilt_hold height 0.328 tilt_error 0.39 self 0
+EPISODE {"seed": 9705, "development_resume": false, "full_episode_verified": true, "accepted": true, "tilt_only_accepted": true, "right_regrasp_validated": false, "steps": 1580, "failure": null, "self_contact_impulse_sum_Ns": 0, "robot_table_impulse_sum_Ns": 0.0, "final_tilt_error_deg": 0.3943569187056676, "tilt_hold_seconds": 3.0, "right_hold_seconds": 0.0, "final_self_pairs": {}, "measured_audit": {"accepted": true, "scope": "whole_cube_tilt_only", "full_episode": true, "failures": [], "final_tilt_error_deg": 0.3943569187056676, "longest_measured_hold_seconds": 3.2666666666666666, "contact_coverage_in_qualifying_window": {"left": {"thumb": 1.0, "index": 1.0, "middle": 1.0, "ring": 1.0, "little": 1.0}}, "maximum_lift_m": 0.32895689868927, "final_lift_m": 0.3284147348403931, "cube_returned_to_table_after_lift": false, "robot_table_impulse_sum_Ns": 0.0, "self_contact_impulse_sum_Ns": 0, "semantic_task": "left_palm_toward_right_hand_uncrossed_opposition_handover", "longest_palm_facing_hold_seconds": 3.033333333333333, "final_hand_geometry": {"left_palm_position_root": [0.4057054259492102, 0.3509641559307035, 0.09918062058711707], "right_palm_position_root": [0.3293138951561589, -0.21326686453721647, -0.12612044151776347], "left_palm_normal_world": [0.2594425162886552, -0.8068998722283747, 0.5306620176153973], "right_palm_normal_world": [-0.1214589231494966, 0.9925937373620048, -0.002324335839142116], "left_facing_right_cos": 0.5158949717129893, "right_facing_left_cos": 0.8986110595751362, "palm_normal_dot": -0.8336688052457174, "wrist_y_separation_m": 0.56423102046792, "elbow_y_separation_m": 0.8129245936870575, "left_wrist_from_cube_y_m": 0.054508504409020775, "right_wrist_from_cube_y_m": 0.5097225160588992}, "wrist_posture": {"accepted": true, "longest_jointly_qualified_hold_s": 3.033333333333333, "final_elbow": {"shoulder_root_m": [0.021714283153414726, 0.2500000298023224, 0.2400412321090699], "elbow_root_m": [0.023597918450832367, 0.42978939414024353, 0.01561901569366464], "wrist_root_m": [0.3029996156692505, 0.33414173126220703, 0.12381443977355966], "outward_from_shoulder_m": 0.17978936433792114, "upper_arm_outward_deg": 38.69895276694037, "outward_from_shoulder_wrist_axis_m": 0.14456518483987052}, "final": {"joint6_deg": 12.138251046694297, "side_bend_deg": -15.284323849553767, "flexion_deg": 42.20386828688871, "forearm_direction_palm_frame": [0.6584156676518236, -0.19840660516266695, 0.7260328006491371], "wrist_inside_elbow_m": 0.0956476628780365}, "scope": "J6_side_bend_reversed_with_unchanged_palm_orientation", "failures": []}, "elbow_posture": {"accepted": true, "failures": [], "longest_outward_hold_seconds": 3.2666666666666666, "minimum_outward_m": 0.16, "minimum_outward_degrees": 35.0, "final": {"shoulder_root_m": [0.021714283153414726, 0.2500000298023224, 0.2400412321090699], "elbow_root_m": [0.023597918450832367, 0.42978939414024353, 0.01561901569366464], "wrist_root_m": [0.3029996156692505, 0.33414173126220703, 0.12381443977355966], "outward_from_shoulder_m": 0.17978936433792114, "upper_arm_outward_deg": 38.69895276694037, "outward_from_shoulder_wrist_axis_m": 0.14456518483987052}}}}

@@ -1,0 +1,17 @@
+{
+  "passed": false,
+  "phase": "right_close",
+  "step": 75,
+  "interpolation": 1.0,
+  "pair": [
+    "right_index_DIP_link",
+    "left_little_DIP_rubber_link",
+    0.0029284695743376997
+  ],
+  "checks": 1452,
+  "minimum_clearance_m": 0.003,
+  "physics_validated": false,
+  "kind": "offline_reaudit_of_rejected_nominal_path",
+  "source_sha256": "6bce138e8ca571a64f98d16bce58b0e92ce4fa0a3b92e94476d99ae37b9cb8d4",
+  "new_PhysX_episodes": 0
+}

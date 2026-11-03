@@ -28,7 +28,7 @@ run_isaac() {
 }
 
 if [[ $# -lt 1 ]]; then
-  echo "usage: $0 {check|env-check|smoke|evaluate|train|state|side-policy|opposition-teacher|tilt-teacher|tilt-replay|dagger|sweep|turn|script.py} [arguments...]" >&2
+  echo "usage: $0 {check|env-check|smoke|evaluate|train|state|side-policy|opposition-teacher|tilt-teacher|wrist-teacher|elbow-regression|regrasp-development|wrist-check|tilt-replay|elbow-check|evidence-check|dagger|sweep|turn|script.py} [arguments...]" >&2
   exit 2
 fi
 ENTRY="$1"
@@ -58,8 +58,25 @@ case "$ENTRY" in
   opposition-teacher)
     run_isaac opposition_experiment.py --grasp-config "${ROOT}/opposition_grasp_v20.json" "$@"
     ;;
-  tilt-teacher)
-    run_isaac palm_handover_experiment.py "$@"
+  tilt-teacher|wrist-teacher)
+    run_isaac wrist_direction_experiment.py "$@"
+    ;;
+  elbow-regression)
+    run_isaac elbow_handover_experiment.py "$@"
+    ;;
+  regrasp-development)
+    echo "Legacy right regrasp development: this has not been adapted to the reversed wrist posture." >&2
+    export REVOTRON_USD_PATH="${ROOT}/../revotron_revo3/source/revotron_system/usd/revotron_bimanual_revo3_wrist_mesh_v1.usda"
+    run_isaac safe_handover_experiment.py --regrasp "$@"
+    ;;
+  wrist-check)
+    exec "$PYTHON_BIN" "$ROOT/wrist_gate.py" --protocol wrist_direction_protocol_v1.json --runs runs/wrist_direction_dev_v1_20261103 runs/wrist_direction_independent_v1_20261103 runs/wrist_direction_independent_remaining_v1_20261103 "$@"
+    ;;
+  evidence-check)
+    exec "$PYTHON_BIN" "${ROOT}/verify_portable_evidence.py" "$@"
+    ;;
+  elbow-check)
+    exec "$PYTHON_BIN" "${ROOT}/elbow_gate.py" --protocol elbow_out_protocol_v1.json --runs runs/elbow_out_dev_v1_20261103 runs/elbow_out_independent_v1_20261103 "$@"
     ;;
   tilt-replay)
     run_isaac palm_handover_replay.py "$@"
