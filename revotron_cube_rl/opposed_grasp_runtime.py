@@ -23,13 +23,17 @@ class OppositionContacts(LayerContacts):
     if impulse>1e-7:self.points.append({'robot_body':robot,'cubelet':cube.rsplit('/',1)[-1],'impulse_Ns':impulse,'position_world_m':list(point.position)})
 
 def execute(env,teacher,fingers,audit,rows,frames,run,args,center,stopped=lambda:False):
+ if getattr(args,'turn_feedback_planning_frame',False) and not getattr(args,'turn_feedback_pacing',False):raise ValueError('Planning-frame feedback requires turn pacing')
  names=env.cfg['joint_names'];initial=rows[-1];request={'initial':dict(zip(names,initial['q'])),'joint_names':names,'cube_position':initial['cube_position'],'cube_quaternion':initial['cube_quaternion_wxyz'],'left_contacts':initial['finger_contact_points'],'target_deg':args.push_degrees}
  request['refinement_options']={'ring_inset_m':getattr(args,'ring_inset',0.),'cube_clearance':getattr(args,'cube_clearance_refinement',False),'preflight_workers':getattr(args,'preflight_workers',1)}
  from torso_collision import export_fixed_colliders
  request['torso_colliders']=export_fixed_colliders(env.stage,'/World/Robot')
  print('OPPOSITION_PREFLIGHT_BEGIN',flush=True);planner='opposed_joint_plan.py' if getattr(args,'opposition_planner','baseline')=='joint' else 'opposed_grasp_plan.py';plan=host_plan(planner,request,run,'opposition',420)
  if not plan['passed']:return {'executed':True,'qualified':False,'center':center,'opposition_grasp_passed':False,'failure':'opposition_preflight_rejected','detail':plan}
- pacer=None
+ pacer=None;feedback_adapter=None
+ if getattr(args,'turn_feedback_planning_frame',False):
+  from turn_pacer_frame import PlanningFrameFeedback
+  feedback_adapter=PlanningFrameFeedback(request)
  if getattr(args,'turn_feedback_pacing',False):
   angles=plan.get('turn_path_angles_deg',[]);turn_path=next(path for phase,path in plan['phases'] if phase=='opposed_face_turn')
   if len(angles)!=len(turn_path):return {'executed':True,'qualified':False,'center':center,'opposition_grasp_passed':False,'failure':'turn_pacing_plan_incomplete'}
@@ -52,7 +56,9 @@ def execute(env,teacher,fingers,audit,rows,frames,run,args,center,stopped=lambda
   paced=phase=='opposed_face_turn'and pacer is not None
   for tick in range(pacer.budget+1 if paced else len(path)):
    if paced:
-    previous=rows[-1];index,failure=pacer.next_index(previous['layer_measurement']['face_angle_deg'],previous['opposition_audit']['right_contacts']['all_five'])
+    previous=rows[-1]
+    if feedback_adapter is None:index,failure=pacer.next_index(previous['layer_measurement']['face_angle_deg'],previous['opposition_audit']['right_contacts']['all_five'])
+    else:index,failure,feedback=feedback_adapter.next_index(pacer,previous)
     if failure or index is None:break
    else:index=tick
    point=path[index]
@@ -61,6 +67,7 @@ def execute(env,teacher,fingers,audit,rows,frames,run,args,center,stopped=lambda
    env.step((torch.from_numpy(target).reshape(1,56)-env.targets)/env.scales)
    row=append_row(env,teacher,fingers,audit,rows,run,phase,target);row['right_cubelet_contacts']=list(contacts.points);row['layer_measurement']=measure_layers(row['cubelets'],target_deg=args.push_degrees)
    if paced:row['turn_pacing']={'path_index':index,'planned_palm_angle_deg':pacer.angles[index],'held_ticks':pacer.held_ticks}
+   if paced and feedback_adapter is not None:row['turn_pacing']['feedback']=feedback
    if support is not None:
     applied_offset=support.offset;impulse=ring_impulse(row);support.update(impulse)
     row['left_ring_support']={'applied_offset_rad':applied_offset,'measured_impulse_Ns':impulse,'next_offset_rad':support.offset}
@@ -85,5 +92,5 @@ def execute(env,teacher,fingers,audit,rows,frames,run,args,center,stopped=lambda
   if failure:break
  passed=bool(not failure and grasp_passed and turn_longest>=90)
  if failure is None and not passed:failure='opposed_face_turn_hold_gate_not_met'
- return {'executed':True,'qualified':passed,'center':center,'opposition_grasp_passed':grasp_passed,'opposition_hold_s':longest/30,'turn_started':turn_started,'turn_hold_s':turn_longest/30,'target_face':'nZ','target_degrees':args.push_degrees,'right_finger_actuation':actuation,'turn_pacing':pacer.report()if pacer else None,'left_ring_support':{'parameters':ring_support_parameters(),'preflight':support_check,'final_offset_rad':support.offset}if support else None,'failure':failure,'elapsed_s':time.monotonic()-start,'final_layers':rows[-1]['layer_measurement'],'cube_pose_writes_during_push':env.cube.pose_reset_count-reset}
+ return {'executed':True,'qualified':passed,'center':center,'opposition_grasp_passed':grasp_passed,'opposition_hold_s':longest/30,'turn_started':turn_started,'turn_hold_s':turn_longest/30,'target_face':'nZ','target_degrees':args.push_degrees,'right_finger_actuation':actuation,'turn_pacing':(pacer.report()|({'feedback_reference':feedback_adapter.report()}if feedback_adapter is not None else {}))if pacer else None,'left_ring_support':{'parameters':ring_support_parameters(),'preflight':support_check,'final_offset_rad':support.offset}if support else None,'failure':failure,'elapsed_s':time.monotonic()-start,'final_layers':rows[-1]['layer_measurement'],'cube_pose_writes_during_push':env.cube.pose_reset_count-reset}
 

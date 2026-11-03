@@ -80,3 +80,12 @@ free-base articulation独立配对探针分别完成48物理步自由落体、hi
 精确headless回放现已完成2129帧：所有帧的实际target、机器人q、魔方位置与原参考逐值完全相同（最大差0），五指/腕部/居中门槛通过，居中合格保持8.033秒，最大抬升0.392977m。因此该对照支持将v3失败定位到动作近似，而不是渲染开关或初始物理配置。这是原示范回放，不是新增模型成功。
 
 v4使用学习的多项式/ReLU基函数权重压缩同一开发轨迹，GPU双精度拟合0.97秒，43736系数/1490ReLU节点；所有2129帧经实际float32输出的最大误差2.384e-7rad。明确validation_samples=0、无自适应状态反馈、无独立泛化结论。主模型teacher_phase_basis_gpu_v4_fullframe_20261104已冻结并做完整闭环评估（PID908010，teacher_phase_basis_gpu_v4_fullframe_eval_9501）。另保留更严格tol的独立拟合对照teacher_phase_basis_gpu_v4_exact_20261104，没有替代主模型或启动第二个Isaac。
+
+
+v4完整闭环结果：1647步、最高抬升0.368726m，但原腕部联合保持仅0.4667秒，未进入居中。等长源前缀最高0.368709m，不能把未进入center后的最大高度差解释为提升。tilt_hold阶段核心角速度达到/超过0.20rad/s的帧有58/94（原source为0），index拓扑失联3帧（source2）；其他assembly/姿态/高度/离桌/线速度条件均通过。开始ready阶段约2.38e-7rad动作微扰最终导致接触和速度分叉，静态轨迹压缩不具备实测反馈鲁棒性。
+
+原FingerArrival在squeeze/抬升/tilt中每3tick根据接触阈值决定是否重做IK，未触及时每帧最多0.005rad推进；其tick/IK意图和last-applied为隐状态。source step499与544反馈突变正好落在每5帧插值验证样本内。后续准备实际执行动作同步的expert反馈/DAgger采样，actor只用实际观测历史和自身动作，教师隐状态仅监督字段；尚未运行，不作DAgger成功声称。
+
+v16/v15逐值同前缀到3203步，首差异3204；v16右小指3240、无名指3241、食指3264失触，首失触时实际掌层超前约3.30°、末约11.95°。此时手指q-target误差已比保持时小，支持先限制推进超前而非直接增大刚度。raw layer速度字段为cubelet与Core世界角速度矢量差的范数，非absolute cubelet速度；v16转动阶段1.407–48.508rad/s，仍不合格。姿态30Hz差分很小不能替代原始速度门槛。
+
+v17 teacher_joint_planning_frame_paced_v17_20261104（PID941226）已启动：相对v15只将pacer反馈映射到原opposition_request Core规划坐标；原0.75°超前限制、五指接触、90帧停滞判定及最终验收不变。C0不改成turn-start、不减去原层偏置。12worker路径检查仍用已逐点等价验证实现。17项相关host测试通过。新--turn-feedback-planning-frame必须与--turn-feedback-pacing同时使用。

@@ -186,3 +186,6 @@ revotron_cube_rl/contact_event_cache.py text eol=lf
 revotron_cube_rl/test_contact_event_cache.py text eol=lf
 revotron_cube_rl/benchmark_contact_event_cache.py text eol=lf
 revotron_cube_rl/benchmark_contact_cache_float3.py text eol=lf
+
+revotron_cube_rl/turn_pacer_frame.py text eol=lf
+revotron_cube_rl/test_turn_pacer_frame.py text eol=lf
