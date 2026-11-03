@@ -1,0 +1,5 @@
+JOINT_REFINE 25 cost 0.03830838722458809 maximum_residual 0.19454012019858719
+CLOSED_CANDIDATE [0.0, 0.003, -0.004]
+CLOSURE_SCHEDULE {}
+REJECT {'offset': [0.0, 0.003, -0.004], 'failure': "opposed_face_turn step 70: ('right_middle_DIP_link', 'stationary_layers', 0.0019922174732120703)"}
+JOINT_OPPOSITION_PLAN False
