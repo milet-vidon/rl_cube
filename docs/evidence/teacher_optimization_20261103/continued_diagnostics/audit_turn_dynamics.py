@@ -22,7 +22,12 @@ def audit(run):
         r = {'frames': len(selected), 'final_face_angle_deg': selected[-1]['layer_measurement']['face_angle_deg'],
              'core_angular_speed_rad_s': quantiles([x['angular_speed'] for x in selected]),
              'selected_angular_speed_rad_s': quantiles([x['layer_measurement']['maximum_selected_angular_velocity_rad_s'] for x in selected]),
-             'contacts': {}, 'body_velocity_comparison': {}}
+             'contacts': {}, 'body_velocity_comparison': {},
+             'gate_failure_counts': {
+                 'core_angular_speed_ge_0_20': sum(x['angular_speed'] >= .20 for x in selected),
+                 'core_linear_speed_ge_0_03': sum(x['linear_speed'] >= .03 for x in selected),
+                 'missing_right_finger': sum(not x['opposition_audit']['right_contacts']['all_five'] for x in selected),
+                 'posture': sum(not x['opposition_audit']['posture']['qualified'] for x in selected)}}
         for finger in ('thumb', 'index', 'middle', 'ring', 'little'):
             present = [x['opposition_audit']['right_contacts']['fingers'][finger] for x in selected]
             first = next((x for x, valid in zip(selected, present) if not valid), None)
