@@ -1,0 +1,223 @@
+{
+  "passed": false,
+  "failures": [
+    {
+      "offset": [
+        0.0,
+        0.0,
+        -0.002
+      ],
+      "failure": "Finger goal unreachable: little 0.0026861918519801055"
+    },
+    {
+      "offset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "failure": "Finger goal unreachable: little 0.0033067750753378584"
+    },
+    {
+      "offset": [
+        0.0,
+        0.0,
+        -0.004
+      ],
+      "failure": "Finger goal unreachable: little 0.002291070531088837"
+    },
+    {
+      "offset": [
+        0.0,
+        -0.003,
+        -0.002
+      ],
+      "failure": "Finger goal unreachable: little 0.0029030135601635807"
+    },
+    {
+      "offset": [
+        0.0,
+        -0.003,
+        0.0
+      ],
+      "failure": "Finger goal unreachable: little 0.003579710180122912"
+    },
+    {
+      "offset": [
+        0.0,
+        -0.003,
+        -0.004
+      ],
+      "failure": "Finger goal unreachable: little 0.0024069110676610684"
+    },
+    {
+      "offset": [
+        0.0,
+        0.003,
+        -0.002
+      ],
+      "failure": "Finger goal unreachable: little 0.0025016961427567143"
+    },
+    {
+      "offset": [
+        0.0,
+        0.003,
+        0.0
+      ],
+      "failure": "Finger goal unreachable: little 0.0030512070776012503"
+    },
+    {
+      "offset": [
+        0.0,
+        0.003,
+        -0.004
+      ],
+      "failure": "Closed grasp collision: ('right_middle_PIP_link', 'right_ring_DIP_link', 0.00278720027649374)"
+    },
+    {
+      "offset": [
+        -0.003,
+        0.0,
+        -0.002
+      ],
+      "failure": "Finger goal unreachable: little 0.004801926475166062"
+    },
+    {
+      "offset": [
+        -0.003,
+        0.0,
+        0.0
+      ],
+      "failure": "Finger goal unreachable: little 0.005648848979688179"
+    },
+    {
+      "offset": [
+        -0.003,
+        0.0,
+        -0.004
+      ],
+      "failure": "Finger goal unreachable: little 0.003995006407651653"
+    },
+    {
+      "offset": [
+        -0.003,
+        -0.003,
+        -0.002
+      ],
+      "failure": "Finger goal unreachable: little 0.005121162537080524"
+    },
+    {
+      "offset": [
+        -0.003,
+        -0.003,
+        0.0
+      ],
+      "failure": "Finger goal unreachable: little 0.005978708211606952"
+    },
+    {
+      "offset": [
+        -0.003,
+        -0.003,
+        -0.004
+      ],
+      "failure": "Finger goal unreachable: little 0.0042965477278878545"
+    },
+    {
+      "offset": [
+        -0.003,
+        0.003,
+        -0.002
+      ],
+      "failure": "Finger goal unreachable: little 0.004488371422425993"
+    },
+    {
+      "offset": [
+        -0.003,
+        0.003,
+        0.0
+      ],
+      "failure": "Finger goal unreachable: little 0.005322476680189884"
+    },
+    {
+      "offset": [
+        -0.003,
+        0.003,
+        -0.004
+      ],
+      "failure": "Finger goal unreachable: little 0.003703339794244"
+    },
+    {
+      "offset": [
+        0.003,
+        0.0,
+        -0.002
+      ],
+      "failure": "Finger goal unreachable: index 0.0026670997955904863"
+    },
+    {
+      "offset": [
+        0.003,
+        0.0,
+        0.0
+      ],
+      "failure": "Finger goal unreachable: index 0.002056583102710503"
+    },
+    {
+      "offset": [
+        0.003,
+        0.0,
+        -0.004
+      ],
+      "failure": "Finger goal unreachable: index 0.003313533910191759"
+    },
+    {
+      "offset": [
+        0.003,
+        -0.003,
+        -0.002
+      ],
+      "failure": "Finger goal unreachable: index 0.002658915256524356"
+    },
+    {
+      "offset": [
+        0.003,
+        -0.003,
+        0.0
+      ],
+      "failure": "Finger goal unreachable: index 0.0020490760145935104"
+    },
+    {
+      "offset": [
+        0.003,
+        -0.003,
+        -0.004
+      ],
+      "failure": "Finger goal unreachable: index 0.003305019568150203"
+    },
+    {
+      "offset": [
+        0.003,
+        0.003,
+        -0.002
+      ],
+      "failure": "Finger goal unreachable: index 0.0026753021056238778"
+    },
+    {
+      "offset": [
+        0.003,
+        0.003,
+        0.0
+      ],
+      "failure": "Finger goal unreachable: index 0.0020641162229571804"
+    },
+    {
+      "offset": [
+        0.003,
+        0.003,
+        -0.004
+      ],
+      "failure": "Finger goal unreachable: index 0.0033220632167792366"
+    }
+  ],
+  "elapsed_s": 4.354542613000376,
+  "physics_validated": false
+}

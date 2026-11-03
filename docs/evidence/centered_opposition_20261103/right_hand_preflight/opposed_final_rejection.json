@@ -1,0 +1,15 @@
+{
+  "passed": false,
+  "failures": [
+    {
+      "offset": [
+        0.0,
+        0.003,
+        -0.004
+      ],
+      "failure": "Mirrored palm posture rejected: {\"qualified\": false, \"wrist\": {\"joint6_deg\": 7.996482318918851, \"side_bend_deg\": -15.874743256810797, \"flexion_deg\": 63.017460188097346, \"forearm_direction_palm_frame\": [0.8838180805463287, -0.12796819524656491, 0.4499886015275709], \"wrist_inside_elbow_m\": 0.2816035189624783}, \"elbow\": {\"shoulder_root_m\": [0.021714391534826162, 0.2500000000025263, 0.2400407847702415], \"elbow_root_m\": [0.16192722241651317, 0.42992573124310224, 0.06494048817465084], \"wrist_root_m\": [0.25019838370917846, 0.14832221228062392, 0.17369553491728845], \"outward_from_shoulder_m\": 0.17992573124057593, \"upper_arm_outward_deg\": 45.77870351624886, \"outward_from_shoulder_wrist_axis_m\": 0.21844164814391326}, \"palm_normal_dot\": -0.8389957780754689, \"left_facing_right_cos\": 0.8634955077695355, \"right_facing_left_cos\": 0.4500398761602873}"
+    }
+  ],
+  "elapsed_s": 5.403668179002125,
+  "physics_validated": false
+}

@@ -1,0 +1,47 @@
+{
+  "passed": false,
+  "failures": [
+    {
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "failure": "Finger goal unreachable: little 0.0035066560300711096"
+    },
+    {
+      "offset": [
+        0,
+        0,
+        -0.005
+      ],
+      "failure": "Finger goal unreachable: index 0.0022064781371554177"
+    },
+    {
+      "offset": [
+        0.005,
+        0,
+        -0.005
+      ],
+      "failure": "Finger goal unreachable: index 0.006902884649567806"
+    },
+    {
+      "offset": [
+        -0.005,
+        0,
+        -0.005
+      ],
+      "failure": "Finger goal unreachable: middle 0.002318117899563345"
+    },
+    {
+      "offset": [
+        0,
+        0,
+        0.005
+      ],
+      "failure": "Finger goal unreachable: ring 0.0038728495020936755"
+    }
+  ],
+  "elapsed_s": 3.834891888007405,
+  "physics_validated": false
+}

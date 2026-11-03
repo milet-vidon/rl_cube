@@ -1,0 +1,8 @@
+REJECT {'offset': [0, 0, 0], 'failure': 'Finger goal unreachable: little 0.004721367826481468'}
+REJECT {'offset': [0, 0, -0.003], 'failure': 'Finger goal unreachable: index 0.0017557759479181923'}
+REJECT {'offset': [0, 0, -0.005], 'failure': 'Finger goal unreachable: index 0.0023291906051593095'}
+REJECT {'offset': [0, 0, -0.008], 'failure': 'Finger goal unreachable: index 0.003280908372069672'}
+REJECT {'offset': [0, 0, -0.01], 'failure': 'Finger goal unreachable: index 0.003942213459698452'}
+REJECT {'offset': [0.003, 0, -0.005], 'failure': 'Finger goal unreachable: index 0.0050284849424529305'}
+REJECT {'offset': [-0.003, 0, -0.005], 'failure': 'Finger goal unreachable: little 0.005069480314209405'}
+OPPOSITION_PLAN False

@@ -47,3 +47,9 @@ docs/evidence/single_face_20261103/**/*.gz filter=lfs diff=lfs merge=lfs -text
 docs/evidence/single_face_20261103/*.mp4 filter=lfs diff=lfs merge=lfs -text
 docs/evidence/single_face_20261103/**/source_config.json -text whitespace=cr-at-eol
 docs/evidence/single_face_20261103/**/config.json -text whitespace=cr-at-eol
+
+# Centered left transport and rejected five-finger development evidence.
+docs/evidence/centered_opposition_20261103/**/*.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/centered_opposition_20261103/*.mp4 filter=lfs diff=lfs merge=lfs -text
+docs/evidence/centered_opposition_20261103/**/source_config.json -text whitespace=cr-at-eol
+docs/evidence/centered_opposition_20261103/**/config.json -text whitespace=cr-at-eol

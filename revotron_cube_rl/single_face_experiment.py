@@ -10,7 +10,8 @@ def stop_handler(signum,frame):
     print('INTERRUPTION_REQUESTED',signum,flush=True)
 signal.signal(signal.SIGTERM,stop_handler)
 ROOT=Path(__file__).resolve().parent
-p=argparse.ArgumentParser();p.add_argument('--name',required=True);p.add_argument('--seed',type=int,default=9501);p.add_argument('--record',action='store_true');p.add_argument('--max-steps',type=int,default=3500);p.add_argument('--friction',default='.9,.8');p.add_argument('--hand-friction',default=None);p.add_argument('--push-degrees',type=float,default=0.);p.add_argument('--contact-style',choices=['face','edge'],default='face');a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--name',required=True);p.add_argument('--seed',type=int,default=9501);p.add_argument('--record',action='store_true');p.add_argument('--max-steps',type=int,default=3500);p.add_argument('--friction',default='.9,.8');p.add_argument('--hand-friction',default=None);p.add_argument('--push-degrees',type=float,default=0.);p.add_argument('--contact-style',choices=['face','edge'],default='face');p.add_argument('--controller',choices=['index','opposed'],default='opposed');p.add_argument('--center-only',action='store_true');p.add_argument('--split',choices=['development','independent'],default='development');a=p.parse_args()
+if a.center_only and a.controller!='opposed':p.error('--center-only requires --controller opposed')
 if a.push_degrees not in (0.,15.,30.,90.):p.error('Use 0 for transfer, 15/30 for contact probes, or 90 for one face')
 from evidence_paths import local_path,raw_sha
 from stage_gate import require_staged_gate
@@ -31,9 +32,12 @@ for trial in cert['trials']:
 run=ROOT/'runs'/a.name;run.mkdir(exist_ok=False)
 def write(n,d):(run/n).write_text(json.dumps(d,indent=2,allow_nan=False))
 sources=list(cert['source_sha256'])+['articulated_cube_env.py','layer_turn_metrics.py','single_face_experiment.py','dynamic_cube.py','wrist_gate.py','face_push_plan.py','face_push_runtime.py','safe_collision_plan.py','face_contact_calibration_v1.json']
+if a.controller=='opposed':
+    sources+=['centered_transport_plan.py','centered_opposition_runtime.py','torso_collision.py','centered_transport_audit.py']
+    if not a.center_only:sources+=['opposed_grasp_plan.py','opposed_grasp_runtime.py','opposed_grasp_audit.py']
 archive_paths={n:('source_config.json'if n=='config.json'else n)for n in sources}
 for n in sources:shutil.copy2(ROOT/n,run/archive_paths[n])
-write('experiment.json',vars(a)|{'split':'development','precondition_certificate_sha256':raw_sha(ROOT/'wrist_direction_gate_certificate.json'),'source_sha256':{n:raw_sha(ROOT/n)for n in sources},'source_archive_paths':archive_paths,'direct_cube_control':False})
+write('experiment.json',vars(a)|{'split':a.split,'precondition_certificate_sha256':raw_sha(ROOT/'wrist_direction_gate_certificate.json'),'source_sha256':{n:raw_sha(ROOT/n)for n in sources},'source_archive_paths':archive_paths,'direct_cube_control':False})
 from isaaclab.app import AppLauncher
 from runtime_platform import platform_kit_args
 from isaac_compat import close_application,tensor,quaternion_from_native
@@ -59,6 +63,8 @@ try:
         try:versions[package]=version(package)
         except PackageNotFoundError:versions[package]='not_registered'
     write('runtime.json',{'python':sys.version,'packages':versions,'physics_device':env.device,'num_envs':env.num_envs,'gpu':torch.cuda.get_device_name(0)if torch.cuda.is_available()else None,'control_hz':30,'physics_hz':240})
+    from pxr import Usd
+    robot_source=Path(env.robot.cfg.spawn.usd_path).resolve();robot_stage=Usd.Stage.Open(str(robot_source));write('runtime_robot_asset.json',{'entry':str(robot_source),'usd_layers_sha256':{str(Path(layer.realPath).resolve()):raw_sha(Path(layer.realPath))for layer in robot_stage.GetUsedLayers()if layer.realPath and Path(layer.realPath).is_file()}})
     write('cube_asset.json',{'source_sha256':raw_sha(env.dynamic_source),'model':env.cube.model,'soft_limit_version':'revo3_user_soft_limits_v2'})
     env.rng=np.random.default_rng(a.seed);env.reset();env.metrics={};env.pair_impulses={}
     teacher=WristDirectionTeacher(env,ROOT/'opposition_grasp_v20.json');fingers=FingerContactAudit();audit=DetailedSelfContactAudit();failure=None
@@ -102,18 +108,21 @@ try:
         clean_hold=clean_hold+1 if row['phase']=='tilt_hold'and row['layer_measurement']['assembled_for_grasp']else 0;longest=max(longest,clean_hold)
     grasp_passed=bool(teacher.accepted and not failure and measured['accepted']and wrist['accepted']and longest>=90)
     if not grasp_passed and failure is None:failure='dynamic_grasp_acceptance_gate_not_met'
-    push={'requested':bool(a.push_degrees),'executed':False,'qualified':False,'failure':'grasp_precondition_not_met'if a.push_degrees else 'not_requested'}
-    if grasp_passed and a.push_degrees and not stop_requested:
-        from face_push_runtime import execute
+    push={'requested':bool(a.push_degrees or a.center_only),'executed':False,'qualified':False,'failure':'grasp_precondition_not_met'if a.push_degrees or a.center_only else 'not_requested'}
+    if grasp_passed and (a.push_degrees or a.center_only) and not stop_requested:
+        if a.controller=='opposed':
+            from centered_opposition_runtime import execute
+        else:
+            from face_push_runtime import execute
         push=execute(env,teacher,fingers,audit,rows,frames,run,a,lambda:stop_requested)
-    result={'seed':a.seed,'kind':'single_face_contact_probe'if a.push_degrees else 'dynamic_cube_left_grasp_transfer','split':'development','full_episode':not stop_requested,'execution_interrupted':stop_requested,'dynamic_grasp_passed':grasp_passed,'face_turn_validated':bool(a.push_degrees==90 and push['qualified']),'push':push,'failure':failure or (push['failure']if a.push_degrees else None),'steps':len(rows),'elapsed_s':time.monotonic()-started,'measured':measured,'wrist':wrist,'assembled_hold_s':longest/30,'final_layers':rows[-1]['layer_measurement']if rows else None,'cube_pose_writes_during_control':env.cube.pose_reset_count-initial_reset_count,'checkpoint':None,'neural_policy_trained':False,'robot_table_impulse_sum_Ns':sum(r['robot_table_impulse']for r in rows),'self_contact_impulse_sum_Ns':sum(r['self_contact_impulse']for r in rows)}
+    result={'seed':a.seed,'kind':'centered_left_grasp'if a.center_only else ('opposed_face_contact_probe'if a.controller=='opposed'and a.push_degrees else ('single_face_contact_probe'if a.push_degrees else 'dynamic_cube_left_grasp_transfer')),'split':a.split,'full_episode':not stop_requested,'execution_interrupted':stop_requested,'dynamic_grasp_passed':grasp_passed,'center_transport_passed':bool(push.get('center',{}).get('passed',False)),'face_turn_validated':bool(a.push_degrees==90 and push['qualified']),'push':push,'failure':failure or (push['failure']if a.push_degrees or a.center_only else None),'steps':len(rows),'elapsed_s':time.monotonic()-started,'measured':measured,'wrist':wrist,'assembled_hold_s':longest/30,'final_layers':rows[-1]['layer_measurement']if rows else None,'cube_pose_writes_during_control':env.cube.pose_reset_count-initial_reset_count,'checkpoint':None,'neural_policy_trained':False,'robot_table_impulse_sum_Ns':sum(r['robot_table_impulse']for r in rows),'self_contact_impulse_sum_Ns':sum(r['self_contact_impulse']for r in rows)}
     write('trajectory.json',rows);write('result.json',result)
     if teacher.path is not None:write('left_plan.json',teacher.path.tolist())
     if frames:
         frames[-1].save(run/'final.png')
         from side_video import encode_mp4
         encode_mp4(run/'demo.mp4',frames+[frames[-1]]*15)
-    write('artifact_manifest.json',{'seed':a.seed,'split':'development','full_episode':not stop_requested,'checkpoint':None,'checkpoint_reason':'traditional robot contact controller; no learned policy','sha256':{f.name:raw_sha(f)for f in sorted(run.iterdir())if f.is_file()and f.name!='artifact_manifest.json'}})
+    write('artifact_manifest.json',{'seed':a.seed,'split':a.split,'full_episode':not stop_requested,'checkpoint':None,'checkpoint_reason':'traditional robot contact controller; no learned policy','sha256':{f.name:raw_sha(f)for f in sorted(run.iterdir())if f.is_file()and f.name!='artifact_manifest.json'}})
     print('RESULT',json.dumps(result),flush=True)
 except Exception as e:
     traceback.print_exc();write('error.json',{'type':type(e).__name__,'message':str(e),'traceback':traceback.format_exc()});raise
