@@ -1,0 +1,62 @@
+{
+  "schema": "v7_eval_entry_independent_source_and_host_review_v1",
+  "blocking_findings": [],
+  "decision": "No source or host-boundary blocker to freezing this candidate; real trained checkpoint preflight remains required.",
+  "source_sha256": {
+    "state_zero_gated_eval_runtime_v7.py": "caadc319e816bdb3c00b5a744b71fbaf7c5f60ffd2d8f1893593fe441767b66b",
+    "evaluate_state_zero_gated_v7.py": "6cda789c883a171d565b3a47d5ca5901ad9b4945221b281024eae7f66405b7f0",
+    "test_state_zero_gated_eval_v7.py": "c50812e12b9e3f26e7044ca23aab9c9619d7b9f1539147cb2120bb1239ab209e",
+    "test_state_zero_gated_eval_v7_delta.py": "64a0e1542b0f9b4bcbc9324ca5ac79488756dc3e5c462c265f7ceed5eb8a5da1",
+    "test_v7_eval_prepare_peer_review.py": "5df57a61589dbd5d24a808cbbea78fede14b5c31fab00865737a7493d737df33",
+    "train_zero_gated_residual_v7.py": "9878b9d2c6f769624ba3889ea43797eacd02b203f65d8dcb3d765d90b1f9636e"
+  },
+  "review_builder_sha256": "05d4c95b0ad78cb30b75e962c90d5b52a377eed4b8aa3b5deb743394a4295123",
+  "all_reviewed_sources_lf": true,
+  "host_tests": {
+    "command": [
+      "/home/brainco/rl_cube/.conda/rl_cube_6_2/bin/python",
+      "-m",
+      "unittest",
+      "test_state_zero_gated_eval_v7",
+      "test_state_zero_gated_eval_v7_delta",
+      "test_v7_eval_prepare_peer_review",
+      "-v"
+    ],
+    "exit_code": 0,
+    "passed": 24,
+    "original_tests": 20,
+    "independent_prepare_tests": 4,
+    "independent_negative_variants": 18,
+    "skipped": 0,
+    "log_path": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/v7_eval_entry_independent_host_tests_20261104.log",
+    "log_sha256": "1e14e4bb323d4e5bace40903d3428033988d46ac49dce99c2fb79ab3238be493"
+  },
+  "verified": {
+    "runtime_normalizes_to_entire_frozen_v6_runtime": true,
+    "main_control_and_cleanup_ast_unchanged_except_v7_cli": true,
+    "exact_checkpoint_qualification_authorization_bytes_snapshotted_before_load": true,
+    "snapshot_paths_and_hashes_forwarded_to_strict_loader": true,
+    "qualification_remains_unmodified_training_authorized_false": true,
+    "separate_training_authorization_required": true,
+    "five_histories_unique_and_ordered": true,
+    "named_bounds_schema_feature_count_joint_order_and_family_checked": true,
+    "qualification_authorization_metadata_binding_checked": true,
+    "offline_qualified_training_and_final_cpu_history_proof_required": true,
+    "original_public_gate_and_classification_contract_unchanged": true,
+    "actual_history_actor_replay_from_reset_in_host_test": true,
+    "original_controller_gains_safety_termination_loop_retained": true,
+    "all_source_snapshot_bytes_match_identity_hashes": true
+  },
+  "limits": {
+    "prepare_boundary_loader_mocked": true,
+    "real_trained_checkpoint_executed_by_this_review": false,
+    "real_checkpoint_strict_load_and_preflight_still_required": true,
+    "simulation_started": false,
+    "hardware_access": false,
+    "closed_loop_success_demonstrated": false,
+    "independent_generalization_demonstrated": false,
+    "eligible_for_rl_episode_training": false,
+    "right28_learned": false,
+    "actor_scope": "Privileged simulator state and actual command/contact history; no vision claim."
+  }
+}

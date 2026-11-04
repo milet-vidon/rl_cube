@@ -1,0 +1,25 @@
+{
+  "reviewer": "root",
+  "authorization_sha256": "9e0e019bc579812dd1265c598e7be4cc63f06f202d558f8ab2298a112b06e324",
+  "qualification_sha256": "9dc17535d63a0a7667b1b3aca1853421e6d0a5b8dbf44560462611130582474f",
+  "source_sha256": {
+    "phase_residual_policy_v5.py": "5bb033710c18c21310b526d539251794a37efb31a2f139a68b052983c363f412",
+    "dagger_residual_dataset_v5.py": "69c1cef251a4180f9839a2fc27ecbb738ce6f87828d5a9bc513a19aa40621cb1",
+    "phase_basis_policy_v4.py": "5d4dc98bf0dfc156dbcdd7fd9d3923f475573d03bc46df1e6c1d317625d8a327",
+    "phase_contact_policy.py": "5db8beb4f0dc86d4b6105669ee8da2fee93b319e2ba468a6c0c2c5b21dc94045",
+    "dagger_collection_core_v1.py": "6d4b2a635f98b563c10388153e4116054eb03a383e898ae7c36d572c9b182411",
+    "dagger_projected_collection_v3.py": "268653ef77b2b500d5299ebb377a6311f98ed9d5199f0b345795b26a92669a33",
+    "train_phase_residual_v5.py": "74cc6077ae7bb135260b9fc1f4c0c99765653af8dd243301563e61808a027a6d",
+    "phase_gated_residual_policy_v6.py": "874d82a6ffff395868260f48530b6fa0cfd20111cd133b827ad4809ed4967063",
+    "eval_prefix_dataset_v6.py": "7dfc8f417daeb6916054a96cb5112d78295057d85fb2f43df4d76a267587f0bf",
+    "train_phase_gated_residual_v6.py": "0ca6cc266e1f4275411f70ea75800cdbf97bf7c604565d88b12afc30a753b5b3",
+    "eval_prefix_dataset_v7.py": "61c6b43cf0b2af18144723f6f3b2587dea04299feb75611e1a09c7c073b67883",
+    "zero_gated_residual_policy_v7.py": "714c7d6b6ca151afa052ef426cc27360b61ca62c1914cd7b7bfe84a63233256e",
+    "inspect_residual_dataset_v7.py": "ad88eb44646887898082e3b500db8e9d43f0ab1bc3eb8a71ab53f1f9f6f0c511",
+    "train_zero_gated_residual_v7.py": "9878b9d2c6f769624ba3889ea43797eacd02b203f65d8dcb3d765d90b1f9636e"
+  },
+  "change_from_first_candidate": "training initialization/shuffle seed 20261104 -> 20261105 only; same five development histories, bounds, losses, gates and 5000 epochs",
+  "reason": "measured first run GPU utilization 37%, 284MiB of 8151MiB; use spare capacity for another trained initialization",
+  "independent_physical_test_claim": false,
+  "physical_evaluation_seed_remains_development_9501": true
+}

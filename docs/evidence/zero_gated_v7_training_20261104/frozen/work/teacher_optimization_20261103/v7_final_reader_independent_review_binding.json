@@ -1,0 +1,26 @@
+{
+  "schema": "v7_final_reader_independent_review_binding_v1",
+  "passed": true,
+  "final_reader_sha256": "61c6b43cf0b2af18144723f6f3b2587dea04299feb75611e1a09c7c073b67883",
+  "tested_reader_sha256": "06d1f3d46d1d52012476e0262902a359acb10e46db31896bf02e89f945bebb7e",
+  "entire_source_identical_after_replacing_only_initial_docstring": true,
+  "test_source_sha256": "d1861c9df468153dbfed4b2ed9c5dbcd956d8d80a1947e827759d42e053c80ef",
+  "independent_test_log_sha256": "667d39ec71194a50bc4539f850158bac9ab8a9b19b74f78f0f8c374f9f5899c2",
+  "independent_tests_passed": 24,
+  "real_history_review_sha256": "ff22a02d896c861e574f949340a51dac66b98e88d509c0c84ec3781bdd724fe1",
+  "real_histories": 5,
+  "eligible_actual_transition_count": 5425,
+  "behavior_replay_scope": "Four evaluation histories fully replay actual actor predictions; V4 uses 198 recorded behavior features and separately reconstructed 284 supervision features. Original v3 mixture uses its frozen qualified consumer plus additional query/memory/plan/gate reconciliation, not an additional mixture actor replay in this report.",
+  "original_v5_arrays_and_flags_bitwise_preserved": true,
+  "resealed_gate_negative_test_sha256": "77e7e76903fa95855e93e2dedbbacbcf92e808b7848de7fedc47345531afd1ab",
+  "no_blocker_found_for_reader_integrity": true,
+  "inspection03_or_new_bound_qualification_reviewed_here": false,
+  "training_authorized_by_this_report": false,
+  "original_results_rewritten": false,
+  "simulator_started": false,
+  "limitations": [
+    "Integrity and exact behavior replay do not establish closed-loop improvement or independent generalization.",
+    "The trusted V4 success is the original scoped wrist diagnostic outcome; whole-neural, RL, face-turn and visual claims remain false."
+  ],
+  "source_sha256": "03f928a294959aee348fe9cb0be7d38de79c2210046935755aa22da7969b7f11"
+}

@@ -1,0 +1,125 @@
+{
+  "schema": "native_v20_completed_failure_evidence_v1",
+  "run": "teacher_native_index_extended_v20_20261104",
+  "independent_audit_sha256": "2ee05d65ca3f8d2f00ada2f50689734f0ccf81d6925c831fb02ec2dbba4f45cd",
+  "original_result": {
+    "steps": 3019,
+    "failure": "left_grasp_lost_during_opposition",
+    "dynamic_grasp_passed": true,
+    "center_transport_passed": true,
+    "face_turn_validated": false,
+    "cube_pose_writes_during_control": 0,
+    "checkpoint": null,
+    "neural_policy_trained": false
+  },
+  "full_task_contract": {
+    "passed": true,
+    "counts": {
+      "episode_start": 1,
+      "transition": 3019,
+      "episode_final": 1
+    },
+    "transitions": 3019,
+    "raw_done_frames": 0,
+    "raw_pickup_success_frames": 0,
+    "milestone_steps": [],
+    "first_task_terminal_transition": {
+      "step": 3018,
+      "phase": "right_close",
+      "task": {
+        "completed_control_steps": 3019,
+        "done": true,
+        "eligible_for_ppo": false,
+        "face_turn_validated": false,
+        "pickup_milestone_step": null,
+        "raw_pickup_done_frames": 0,
+        "raw_pickup_success_frames": 0,
+        "reason": "left_grasp_lost_during_opposition",
+        "reward": 0.0,
+        "scope": "single_target_face_turn_development",
+        "six_face_solution_validated": false,
+        "step_audit_pending": false,
+        "success": false,
+        "target_degrees": 15.0,
+        "task_episodes": 1,
+        "task_id": "opposed_nZ_15deg",
+        "task_successes": 0,
+        "terminated": true,
+        "truncated": false
+      }
+    },
+    "final": {
+      "completed_control_steps": 3019,
+      "done": true,
+      "eligible_for_ppo": false,
+      "face_turn_validated": false,
+      "pickup_milestone_step": null,
+      "raw_pickup_done_frames": 0,
+      "raw_pickup_success_frames": 0,
+      "reason": "left_grasp_lost_during_opposition",
+      "reward": 0.0,
+      "scope": "single_target_face_turn_development",
+      "six_face_solution_validated": false,
+      "step_audit_pending": false,
+      "success": false,
+      "target_degrees": 15.0,
+      "task_episodes": 1,
+      "task_id": "opposed_nZ_15deg",
+      "task_successes": 0,
+      "terminated": true,
+      "truncated": false
+    },
+    "no_steps_after_task_terminal": true,
+    "contiguous_step_audit_and_raw_counter_contract": true
+  },
+  "pose_write_evidence": {
+    "all_logged_counts": 2,
+    "logged_control_writes": 0,
+    "reset_only_guard": true,
+    "passive_control_flush_noop": true,
+    "runtime_guards": {
+      "single_face_experiment.py": {
+        "pose_counter_guard_lines": [
+          "if env.cube.pose_reset_count!=initial_reset_count:raise RuntimeError('Unexpected cube pose write during control')"
+        ],
+        "direct_cube_drive_or_force_calls": []
+      },
+      "centered_opposition_runtime.py": {
+        "pose_counter_guard_lines": [
+          "if env.cube.pose_reset_count!=reset:raise RuntimeError('Unexpected cube pose write during center transport')"
+        ],
+        "direct_cube_drive_or_force_calls": []
+      },
+      "opposed_grasp_runtime.py": {
+        "pose_counter_guard_lines": [
+          "if env.cube.pose_reset_count!=reset:raise RuntimeError('Unexpected cube pose write during opposed grasp')"
+        ],
+        "direct_cube_drive_or_force_calls": []
+      }
+    }
+  },
+  "causal_findings": [
+    "The single bound extension first changes targets and physics at step2425; all compared earlier fields match V19.",
+    "The extension causes transient extra index contacts (41 positive-impulse vs2 frames over2425..3018), but late index contact is still absent after tracking the new lower bound.",
+    "Both runs lose ring topology at3009 and reach the unchanged thumb-plus-three-other-fingers retention failure counter10 at3018.",
+    "Actual right applied commands match at every step. Right-contact/body-motion differences after2425 are physical downstream differences, not a changed right trajectory.",
+    "No opposition hold or contact-driven layer turn starts; final small relative layer angle cannot be called15-degree subtask success."
+  ],
+  "limits": [
+    "No left actor-resolved impulse vectors were logged, so these data do not prove a resisting torque.",
+    "One seed9501 development comparison establishes this candidate outcome, not robustness or generalization."
+  ],
+  "passive_readback_limit": "Native 66-DOF armature/friction/zero active drives and effort are initialized backend readings. Runtime passivity follows frozen no-op facade and caller source; no per-step native force readback stream is claimed.",
+  "journal_layer_target_annotation_difference": "Generic append_row records default90-degree layer target; complete opposition task row recomputes explicit15-degree target and maximum_face_error. All other layer fields match; both target-relative errors independently rederived from the same signed angles.",
+  "reference_archives": {
+    "v19_comparison_complete_archive": {
+      "path": "docs/evidence/native_index_continuation_v19_20261104/archive_manifest.json",
+      "manifest_sha256": "4b610fa346b06509964cff3110858afc78867066fe46e0c7edad759555d0b5c1",
+      "scope": "Existing complete original V19 evidence; not duplicated in this V20 archive."
+    }
+  },
+  "all_original_run_files_preserved": true,
+  "runtime_sources_modified": false,
+  "simulation_started": false,
+  "git_stage_commit_push_performed": false
+}

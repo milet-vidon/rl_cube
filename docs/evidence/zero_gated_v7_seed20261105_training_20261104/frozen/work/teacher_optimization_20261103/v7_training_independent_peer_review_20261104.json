@@ -1,0 +1,113 @@
+{
+  "schema": "v7_training_independent_peer_review_v1",
+  "verdict": "no_blocking_findings_for_reviewed_development_BC",
+  "training_started_by_review": false,
+  "isaac_started_by_review": false,
+  "frozen_sources_sha256": {
+    "zero_gated_residual_policy_v7.py": "714c7d6b6ca151afa052ef426cc27360b61ca62c1914cd7b7bfe84a63233256e",
+    "train_zero_gated_residual_v7.py": "9878b9d2c6f769624ba3889ea43797eacd02b203f65d8dcb3d765d90b1f9636e",
+    "test_zero_gated_residual_policy_v7.py": "98670af3187e0ee92a635cb0f610290e4c71eb7cbce0692a191219f9765a6730",
+    "test_train_zero_gated_residual_v7.py": "140030779d51b6f241bb04d62f9ceb84301482f32346ed818add7ba50df69daa",
+    "eval_prefix_dataset_v7.py": "61c6b43cf0b2af18144723f6f3b2587dea04299feb75611e1a09c7c073b67883",
+    "inspect_residual_dataset_v7.py": "ad88eb44646887898082e3b500db8e9d43f0ab1bc3eb8a71ab53f1f9f6f0c511"
+  },
+  "qualification_candidate_sha256": "9dc17535d63a0a7667b1b3aca1853421e6d0a5b8dbf44560462611130582474f",
+  "root_authorization_template_sha256": "bee59f0f281d62029b8fbb9681b0a1a6affeb058f0b441d3e760951d300fd797",
+  "independent_tests": {
+    "model": 15,
+    "trainer": 16,
+    "total_passed": 31
+  },
+  "independently_read_device_proof": {
+    "device": "cuda:0",
+    "elapsed_s": 0.4006991929782089,
+    "cuda_peak_allocated_bytes": 18384384,
+    "optimizer_created": false,
+    "training_started": false,
+    "all_classification_arrays_bitwise_identical": true,
+    "runs": [
+      {
+        "episode_id": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_dagger_baseline_mixture_v3_9501_20261104:left_dagger_v3",
+        "baseline_proposal_different_float32_elements": 0,
+        "baseline_projected_different_float32_elements": 0,
+        "baseline_projected_max_abs_difference_rad": 0.0,
+        "classification_differences": {
+          "correction_target": 0,
+          "classification_mask": 0,
+          "exact_zero": 0,
+          "ambiguous": 0
+        }
+      },
+      {
+        "episode_id": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104_v2:left_state_residual_v5_long_eval_9501_20261104_v2",
+        "baseline_proposal_different_float32_elements": 0,
+        "baseline_projected_different_float32_elements": 0,
+        "baseline_projected_max_abs_difference_rad": 0.0,
+        "classification_differences": {
+          "correction_target": 0,
+          "classification_mask": 0,
+          "exact_zero": 0,
+          "ambiguous": 0
+        }
+      },
+      {
+        "episode_id": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_phase_gated_residual_v6_eval_9501_20261104:left_phase_gated_residual_v6_eval_9501_20261104",
+        "baseline_proposal_different_float32_elements": 0,
+        "baseline_projected_different_float32_elements": 0,
+        "baseline_projected_max_abs_difference_rad": 0.0,
+        "classification_differences": {
+          "correction_target": 0,
+          "classification_mask": 0,
+          "exact_zero": 0,
+          "ambiguous": 0
+        }
+      },
+      {
+        "episode_id": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_phase_gated_residual_v6_long_eval_9501_20261104:left_phase_gated_residual_v6_long_eval_9501_20261104",
+        "baseline_proposal_different_float32_elements": 0,
+        "baseline_projected_different_float32_elements": 0,
+        "baseline_projected_max_abs_difference_rad": 0.0,
+        "classification_differences": {
+          "correction_target": 0,
+          "classification_mask": 0,
+          "exact_zero": 0,
+          "ambiguous": 0
+        }
+      },
+      {
+        "episode_id": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_phase_v4_matched_eval_9501_20261104_v2:left_phase_v4_matched_eval_9501_20261104_v2",
+        "baseline_proposal_different_float32_elements": 0,
+        "baseline_projected_different_float32_elements": 0,
+        "baseline_projected_max_abs_difference_rad": 0.0,
+        "classification_differences": {
+          "correction_target": 0,
+          "classification_mask": 0,
+          "exact_zero": 0,
+          "ambiguous": 0
+        }
+      }
+    ]
+  },
+  "actual_boundary_scope": {
+    "zero_regression_histories": 4,
+    "v5_failed_history_step499_is_not_forced_zero": true,
+    "counterexample_evidence_sha256": "3c0fb144781408c13061891b5f14e5913452d6b62a970c22a594339e3d8a21ed"
+  },
+  "reviewed_properties": [
+    "Actor consumes only actual 284-feature state/phase/history, not expert memory, labels or executed-source identity.",
+    "Every episode is full history and resets the GRU; no frame split is described as independent validation.",
+    "Five original datasets and flags are hash-bound, with frozen actual actor replay and original gates audited.",
+    "Strict-zero and confident-nonzero class targets use original float32 projected execution space; ambiguous labels stay in regression.",
+    "All left28 output bounds are mapped by actual joint names; original environment projection and right28 behavior remain unchanged.",
+    "Frozen baseline and static gate/bound/normalization tensors are checked bitwise during checkpoint restoration.",
+    "Four exact-zero step499 histories are checked with streaming CPU history; the V5 eight-joint recovery labels are retained.",
+    "Selection reports decoded error plus separate gate FP/FN, never only ungated regression error.",
+    "Explicit root authorization binds exact sources, candidate qualification, optimizer configuration and selection contract."
+  ],
+  "limits": [
+    "Approval is for development BC optimization only; no closed-loop physical success or independent generalization established.",
+    "Same-seed privileged-state actor and fixed baseline/public phase clock do not establish vision or varied-initial-state control.",
+    "Expanded arm bounds cover counterfactual expert labels, not independently executed learner safety.",
+    "This bounded development trainer keeps best model and per-epoch logs but has no exact Adam/RNG interruption resume."
+  ]
+}
