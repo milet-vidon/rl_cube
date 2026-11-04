@@ -1,0 +1,11 @@
+# V9 nine-history arm increment candidate
+
+V9 keeps learned BASE/HOLD/UPDATE and the unchanged public phase gate. Only the seven arm UPDATE anchors move from frozen V4 to the previous applied command; their 0.025 rad bounds equal the unchanged original min(step_limit, velocity_limit * control_dt). Eleven recovery fingers and ten remaining fingers keep the V8 definitions. Each dataset and the actual evaluation environment must reproduce the original cap contract.
+
+Nine development histories contain 9,523 eligible frames: the old eight histories plus the complete 1,842-step first V8 failed episode. Its original tilt_hold_timeout and False flags remain unchanged. The second V8 run is excluded because its teacher query raised before producing the original audit record. No query or label is fabricated. Native-articulation data is a different physical family and is not included.
+
+All original labels have an exact float32 branch witness after the original action conversion and projection. The first coverage attempt detected a source change during review and was rejected; its log is retained. The frozen second attempt has zero interval gaps, zero missing execution witnesses, and no genuine correction hidden by the public gate. Finite-network fitting and physical success still require separate verification.
+
+Hidden64 and hidden128 candidates use the same nine histories, initialization seed20261104, 5,000 epochs and optimizer/objective. Separate root authorizations are preserved; the original qualification retains training_authorized=false. Selection requires the existing seven step499 BASE and two step545 ring HOLD regressions, plus the actual first-V8 step560 index HOLD regression. All are original projected-label tests. No actor labels, hidden expert state or hardcoded contact-threshold controller is introduced.
+
+Six production modules and eleven test modules are installed with frozen bytes. Ninety-two installed tests passed with no skips. Twenty-two model/training dependencies are pinned and snapshotted by evaluation. Training logs and changing model files are excluded from this candidate archive. There is no completed V9 model or physical/generalization/vision/PPO success claim in this archive.
