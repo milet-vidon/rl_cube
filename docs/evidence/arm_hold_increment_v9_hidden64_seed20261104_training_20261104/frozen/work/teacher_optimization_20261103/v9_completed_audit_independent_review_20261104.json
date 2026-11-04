@@ -1,0 +1,24 @@
+{
+  "schema": "v9_completed_cpu_audit_narrow_adaptation_independent_review_v1",
+  "audit_source_sha256": "19a1bfbffda935dac166456ed112f0766d0f1f2a5ea9f50901285931677cf223",
+  "frozen_v8_source_after_inverse_sha256": "2ce8b0a3d1c2b67b0fffda0db5c254c548daa34766ccc50b009c3aa552fc1e96",
+  "allowed_delta": [
+    "Import the V9 trainer/loader.",
+    "Require final CPU step560 violations to be zero along with original step499 and step545 when recomputing offline qualification.",
+    "Rename output schema, log prefix and eight-history scope to V9 nine-history scope."
+  ],
+  "entire_inverse_transformed_source_bytes_match_frozen_v8": true,
+  "independent_host_tests_passed": 2,
+  "synthetic_actual_history_inventory": {
+    "histories": 9,
+    "all_class_error_records_equal_full_causal_assessment": true,
+    "step499_errors": 8,
+    "step545_errors": 6,
+    "step560_errors": 3,
+    "total_errors": 17
+  },
+  "blocking_findings": [],
+  "completed_real_v9_checkpoint_audited_in_this_review": false,
+  "optimizer_or_simulator_started": false,
+  "physical_success_or_generalization_claim": false
+}

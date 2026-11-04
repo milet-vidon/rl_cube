@@ -1,0 +1,21 @@
+{
+  "schema": "root_v9_training_launch_v1",
+  "pid": 64669,
+  "started_unix": 1793766046.7410104,
+  "root_review_sha256": "4f0bc359b0c560aaa6ea9a74e28f2ab31b563df1ab2b205a5c01ce6f6cf6f68a",
+  "log": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/v9_hidden64_seed20261104_training_20261104.log",
+  "arguments": [
+    "bash",
+    "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/launch_arm_hold_increment_v9_training_20261104.sh",
+    "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/v9_hidden64_seed20261104_root_training_authorization_20261104.json",
+    "635d6f737a6b174d6e8c73d56a6a0f1708c618643f5e1cbc12a316f95ee5e186",
+    "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/v9_trainer_preflight_20261104_01/qualification_candidate.json",
+    "6283a3d6e1a1feccea809c5150eac49aaa5784299cfb48a8d8b396be07f07cf7",
+    "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/v9_nine_history_branch_coverage_20261104_02.json",
+    "d0e0a64efa5fe73d847187dc24fbe21a013bb2d80b727133e962c25ff9f06d46",
+    "runs/teacher_arm_hold_increment_v9_hidden64_seed20261104_20261104",
+    "20261104",
+    "64",
+    "5000"
+  ]
+}

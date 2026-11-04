@@ -1,0 +1,23 @@
+{
+  "schema": "root_v9_trainer_independent_review_v1",
+  "source_sha256": "e92df59dc5e50a5f003cceea2ab9f2a9023fde3b1c7e49e41832542a924f98ab",
+  "policy_sha256": "27c113212f657aac6e6d3b1caadcf26619e1e8db32d12da4a00f618985948b9c",
+  "coverage_source_sha256": "f0bb25423d56d0c13152522367df7fa720c6d6212ef8f1a116d12d77fcb264a5",
+  "independent_tests_passed": 7,
+  "independent_test_sha256": "584ca4a682ec2d7f4b1427b4ac69465114396c7ee6d5785df7fdf73231847a97",
+  "independent_test_log_sha256": "1b12961efdf972c12eaba0b17144cf484e7c939d4d6bf879d8f2a4a4353c8607",
+  "blocking_findings": [],
+  "reviewed": [
+    "Frozen V8 optimizer/objective/device proof and save functions AST unchanged",
+    "Exactly nine ordered histories, 0 mixture / 1-4 old / 5-7 registry1 / 8 registry2 evidence dispatch",
+    "All nine original projection caps reread in model, qualification and checkpoint loader",
+    "Original seven BASE499 and two ring HOLD545 regressions retained",
+    "New actual-history index560 raw label verified exact projected HOLD and different from BASE; no relabel",
+    "Candidate selection and final loader require all three boundary sets, plus full sequential CPU fit",
+    "One GRU reset per episode and exact sequential boundary prefix through561 frames",
+    "Epoch counter must equal nine optimizer steps per epoch; original sources/config/authorization and frozen tensors enforced"
+  ],
+  "training_started_by_review": false,
+  "physical_success_claim": false,
+  "source_policy_hashes_frozen": true
+}

@@ -1,14 +1,16 @@
-## 2026-11-04 最新：V9 两种容量持续训练，修正真实闭环暴露的问题
+## 2026-11-04 最新：首批 V9 训练完成，闭环实测与追加训练接续
 
-V9 新增7个手臂关节相对上一实际目标的UPDATE表示，0.025rad范围逐项核对原min(step_limit, velocity*dt)，不修改原环境投影、限位、速度或碰撞/阶段验收。11个恢复手指和其余10个手指保持V8表示。原8史加V8首个1842步失败史，共9523帧已逐项保留，分支区间缺口和原float32精确见证缺失均0；第二V8异常query没有完整audit，仍排除，未补造标签。
+V9 hidden64、hidden128 的 seed20261104 对照均完成 5000 epochs / 45000 次更新，完整 CPU 顺序重放与真实检查点预检通过。选中轮次分别 4800 / 4900；九史分类错误 79 / 14，投影 RMSE 1.001233e-4 / 6.864655e-5 rad，最大误差 0.004999995 / 0.002596259 rad。7×499 BASE、2×545 无名指 HOLD、1×560 食指 HOLD 回归均无违反。这些是已见数据拟合指标；两模型的原门槛闭环实测已依次排队，尚无 V9 物理成功结论。
 
-hidden64与hidden128均使用seed20261104、5000epochs。run分别为teacher_arm_hold_increment_v9_hidden64_seed20261104_20261104及teacher_arm_hold_increment_v9_hidden128_seed20261104_20261104，启动PID64669/65604只供记录，须核真实进程/result。新增首04第560步食指精确投影HOLD回归，保留原7×499和2×545回归。两容量预检资格SHA相同6283a3d6e1a1feccea809c5150eac49aaa5784299cfb48a8d8b396be07f07cf7；CPU/CUDA定义逐bit一致，22依赖绑定。6生产模块和11测试模块原字节安装，92项仓库测试通过、无skip。
+两份完成归档位于 docs/evidence/arm_hold_increment_v9_hidden64_seed20261104_training_20261104 和对应 hidden128 目录。每份127文件已独立核对当前来源、解压原字节、完整10文件训练产物、22依赖、选中模型、5000轮shuffle、45000更新及Adam/RNG记录。保存last_state不等于已实现精确resume CLI。原9523帧资格和所有失败标记未改变。
 
-先前V8 hidden64两模型实际均失败：1842步tilt_hold_timeout、1725步后原teacher姿态纠正包络拒绝，最大举升约0.36848/0.36841m。两组hidden128容量对照现已完成5000epochs，均4个开发分类错误；04/05投影RMSE约2.746e-5/2.334e-5rad，完整CPU复核与真实检查点preflight通过。05已排队等待native OFF V3退出再单进程实测，04尚未物理评估。离线拟合不等于完整持握成功。
+追加训练为 hidden128/seed20261105 及 hidden256/seed20261104，均从新初始化按同九史训练5000轮，保持旧模型与数据不变。GPU训练与CPU检查并行，实测仅一个Isaac进程：native ON接触回放结束后先V9 hidden64，再hidden128。检查WORK内各actual_queue及train_audit_queue JSON，不能只按文档中的历史状态启动新仿真。
 
-Native V20 OFF V3已修复严格证据副本路径身份比较并进入原动作实际回放，仍在运行；ON观察与完整进程外比较正在准备，未证明观察不影响物理。单Isaac排期由根协调，不可另开并行物理回合。GPU训练及CPU数据/几何审核并行。
+V8 hidden128/seed20261105 实测已失败：1803完整步骤后，原teacher下一次姿态修正超过15度掌姿包络；原持续90帧持握最长仅19帧。其旧8史只有4个分类错误，但新实际轨迹有8993个active分类错误，说明离线拟合改善仍不够。两条teacher查询异常前的完整prefix正在单独审查，当前V9九史未准入它们，也没有补造异常末查询标签。
 
-目标未完成，继续迭代。没有可靠接触转层、跨初态鲁棒性、纯神经全机器人、视觉复原或PPO成功。见 [V9说明](ARM_HOLD_INCREMENT_POLICY_UPDATE.md)、[V8结果](HOLD_INCREMENT_POLICY_UPDATE.md) 及新证据档案。下文为历史记录。
+Native OFF V3已完整复现原3019步失败回合，原动作/物理/FullTask记录精确匹配。ON原生接触观察回放正在运行；完整进程外检查尚未完成，不能宣称观察无干扰或转层成功。原碰撞、关节、速度、接触和阶段验收保留。
+
+目标未完成，继续训练与实际验证。尚无可靠接触驱动15/90度转层、跨初态鲁棒策略、视觉复原或PPO成功。见 [V9说明](ARM_HOLD_INCREMENT_POLICY_UPDATE.md) 与 [V8结果](HOLD_INCREMENT_POLICY_UPDATE.md)。下文为历史记录。
 
 ## 2026-11-04 当前持续训练
 

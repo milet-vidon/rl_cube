@@ -18,4 +18,13 @@ hidden64和hidden128各5000epochs，初始化seed都为20261104，用相同九�
 
 6个生产模块和11个测试模块按冻结字节安装，92项仓库测试通过、无skip。评估完整快照22项训练依赖。原每步单次actor历史推进、teacher查询、右手/阶段/增益事件、终止和清理顺序保留；新增初始化actual cap检查在actor建立前失败闭锁。
 
-证据在docs/evidence/arm_hold_increment_v9_candidate_20261104。当前档案只含冻结候选、预检、测试、授权与启动记录，不含进行中的checkpoint或训练日志。两组模型仍在训练；尚未新增V9物理成功、独立泛化、接触转层或视觉求解结论。last_state保存Adam/RNG，但没有精确resume CLI或恢复训练证明。
+冻结候选证据保留在docs/evidence/arm_hold_increment_v9_candidate_20261104。首批hidden64和hidden128现均完成5000epochs、45000次更新；新增完整产物分别在docs/evidence/arm_hold_increment_v9_hidden64_seed20261104_training_20261104及对应hidden128目录，每份127文件已由不同于trainer作者的审查者独立核验。
+
+| 容量 | 选中epoch | 九史分类错误 | 投影RMSE(rad) | 最大动作误差(rad) |
+| --- | ---: | ---: | ---: | ---: |
+| 64 | 4800 | 79 | 0.0001001232527 | 0.0049999952 |
+| 128 | 4900 | 14 | 0.0000686465512 | 0.0025962591 |
+
+两模型原499/545/560回归违反均0，完整CPU动作重放、原资格/授权/22依赖、真实checkpoint preflight全部通过。训练日志每轮shuffle、候选选择与Adam/RNG记录已检查。hidden64模型SHA为98460e40cfb66007612d597db8065502f18d48ec9b06c6d9039a9c6ecb3944fe；hidden128为9809d22ed3446cbc9887bf9db9d6a50d3ae708e02da2b0d0277d98617c90046d。
+
+两模型按单Isaac次序等待闭环实测，不能把拟合指标当物理成功。追加hidden128/seed20261105和hidden256/seed20261104仍用原九史做种子/容量对照。尚未新增V9物理成功、独立泛化、接触转层或视觉求解结论。last_state保存Adam/RNG，但没有精确resume CLI或恢复训练证明。
