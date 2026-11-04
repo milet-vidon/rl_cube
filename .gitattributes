@@ -249,3 +249,8 @@ revotron_cube_rl/test_index_continuation_runtime_v3.py text eol=lf
 # Exact matched v5/v4 state-policy evaluation evidence.
 docs/evidence/state_feedback_matched_eval_20261104/** -text -whitespace
 docs/evidence/state_feedback_matched_eval_20261104/**/*.gz filter=lfs diff=lfs merge=lfs -text
+# Exact completed development failure evidence.
+docs/evidence/native_index_continuation_v19_20261104/** -text -whitespace
+docs/evidence/native_index_continuation_v19_20261104/**/*.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/state_feedback_seed9502_eval_20261104/** -text -whitespace
+docs/evidence/state_feedback_seed9502_eval_20261104/**/*.gz filter=lfs diff=lfs merge=lfs -text

@@ -1,8 +1,8 @@
-## 2026-11-04 当前：左手开发模型通过，右接抓v19与v6训练继续
+## 2026-11-04 最新：v6 两模型已训练，长版闭环与物理修复继续
 
-matched v4在开发seed9501完成1654步并通过原wrist gate，举升.368716m、左位置动作全模型；右手/阶段/原K20增益日程仍由原控制器负责。v5long619步夹紧失败，正以安全失败prefix和公开phase反馈激活边界准备v6训练；无独立泛化、转层或视觉复原成功。
+v6短版闭环752步primary_lift timeout，抬升.187796m；长版GPU已完成，当前Isaac为长版评估 PID4042584（runs/left_phase_gated_residual_v6_long_eval_9501_20261104）。启动新Isaac前核对实际进程/终态。v6安装后46 tests通过，离线拟合不代表闭环成功。
 
-当前唯一Isaac teacher_native_index_continuation_v19_20261104，PID1415628，log work/teacher_optimization_20261103/native_index_v19.log；相对native v18只接续原center index反馈，保持全部原gate。已过168224联合几何检查与41相关host tests，但完整物理结果待验收。运行源码冻结勿改，启动其他Isaac前必须核进程。详情见LEFT_INDEX_CONTINUATION_UPDATE.md和STATE_FEEDBACK_V5_UPDATE.md。用户持续训练目标未完成。
+v4开发9501左手验收通过，但9502在ready360步失败，初始cube变化要求新的接近轨迹；没有独立泛化。native v19在3019步左手失触失败，未转层；食指修正方向正确但范围耗尽，[-.032,0]候选又被原几何门槛拒绝，继续求可行范围。详情见 STATE_FEEDBACK_V6_UPDATE.md。用户持续训练目标未完成。
 
 ## 2026-11-04 当前持续训练
 
