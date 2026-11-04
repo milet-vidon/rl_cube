@@ -52,14 +52,18 @@ def _execute(env,teacher,fingers,audit,rows,frames,run,args,center,stopped=lambd
   except ValueError as error:return {'executed':True,'qualified':False,'center':center,'opposition_grasp_passed':False,'failure':'turn_pacing_plan_invalid','detail':str(error)}
  support=None;support_check=None;index_support=None;index_state=None
  if getattr(args,'left_index_continuation',False):
-  from left_index_continuation import initial_state,ContinuedIndexSupport,SETTINGS
+  if getattr(args,'left_index_continuation_v20',False):
+   from left_index_continuation_v20 import initial_state,ContinuedIndexSupport,SETTINGS
+  else:
+   from left_index_continuation import initial_state,ContinuedIndexSupport,SETTINGS
   if not getattr(args,'left_ring_support',False):raise ValueError('Index continuation requires combined index/ring preflight')
   index_state=initial_state(center,initial,names,env.targets[0].tolist())
  if getattr(args,'left_ring_support',False):
   if index_state is None:
    support_check=host_plan('left_ring_support_preflight.py',{'request':request,'plan':plan,'baseline_target':env.targets[0].tolist()},run,'left_ring_support',1200)
   else:
-   support_check=host_plan('left_support_envelope_preflight_v3.py',{'request':request,'plan':plan,'baseline_target':env.targets[0].tolist(),'index_state':index_state},run,'left_index_ring_support',1200)
+   support_planner='left_index_mpr_preflight_v20.py' if getattr(args,'left_index_continuation_v20',False) else 'left_support_envelope_preflight_v3.py'
+   support_check=host_plan(support_planner,{'request':request,'plan':plan,'baseline_target':env.targets[0].tolist(),'index_state':index_state},run,'left_index_ring_support',1200)
   if not support_check['passed']:return {'executed':True,'qualified':False,'center':center,'opposition_grasp_passed':False,'failure':'left_ring_support_preflight_rejected','detail':support_check}
   support=RingSupport();print('LEFT_RING_SUPPORT_PREFLIGHT_PASSED',support_check['checks'],flush=True)
   if index_state is not None:index_support=ContinuedIndexSupport(index_state)

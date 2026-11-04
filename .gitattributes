@@ -257,3 +257,8 @@ docs/evidence/state_feedback_seed9502_eval_20261104/**/*.gz filter=lfs diff=lfs 
 # Exact completed V6 training and evaluation evidence.
 docs/evidence/state_feedback_v6_20261104/** -text -whitespace
 docs/evidence/state_feedback_v6_20261104/**/*.gz filter=lfs diff=lfs merge=lfs -text
+# Exact stopped original teacher query-exception evidence.
+docs/evidence/teacher_initial_state_failures_20261104/** -text -whitespace
+docs/evidence/teacher_initial_state_failures_20261104/**/*.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/native_index_v20_candidate_20261104/** -text -whitespace
+docs/evidence/native_index_v20_candidate_20261104/**/*.gz filter=lfs diff=lfs merge=lfs -text
