@@ -254,3 +254,6 @@ docs/evidence/native_index_continuation_v19_20261104/** -text -whitespace
 docs/evidence/native_index_continuation_v19_20261104/**/*.gz filter=lfs diff=lfs merge=lfs -text
 docs/evidence/state_feedback_seed9502_eval_20261104/** -text -whitespace
 docs/evidence/state_feedback_seed9502_eval_20261104/**/*.gz filter=lfs diff=lfs merge=lfs -text
+# Exact completed V6 training and evaluation evidence.
+docs/evidence/state_feedback_v6_20261104/** -text -whitespace
+docs/evidence/state_feedback_v6_20261104/**/*.gz filter=lfs diff=lfs merge=lfs -text
