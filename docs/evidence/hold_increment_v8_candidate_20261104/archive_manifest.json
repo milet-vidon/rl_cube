@@ -1,0 +1,435 @@
+{
+  "schema": "frozen_v8_training_candidate_archive_v1",
+  "entries": [
+    {
+      "source": "revotron_cube_rl/hold_increment_policy_v8.py",
+      "archive_file": "source/revotron_cube_rl/hold_increment_policy_v8.py.gz",
+      "source_sha256": "b708e69d928bf073f8f7ee5f50edd9e1fe0f96213bfe3a49f51cfeff4c0561ae",
+      "archive_sha256": "309f8391178bf4a4fec25c5651154bd92ab38473e78de3e80dfb28377e1fe720",
+      "source_bytes": 15017,
+      "archive_bytes": 4483,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "revotron_cube_rl/train_hold_increment_v8.py",
+      "archive_file": "source/revotron_cube_rl/train_hold_increment_v8.py.gz",
+      "source_sha256": "055f8f0d6ed724c2932a2effa59d402c2e22472491519f9a1b09fb553e5a42cb",
+      "archive_sha256": "7aeaf6e3614a55f9e5e6f30d40804e6e6859a3d751e43459ed23cd835d9025ef",
+      "source_bytes": 38566,
+      "archive_bytes": 10117,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "revotron_cube_rl/trusted_eval_dataset_registry_v1.py",
+      "archive_file": "source/revotron_cube_rl/trusted_eval_dataset_registry_v1.py.gz",
+      "source_sha256": "e19a5fd879eb9d7e814d14ec1dff906f02d773868b1ff91a1bdd9ce759ff617c",
+      "archive_sha256": "117d64da7cb5319ea88a666aaab7b2fe033b63a4fcad795a9d93cd3cec2b304a",
+      "source_bytes": 9875,
+      "archive_bytes": 3698,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "revotron_cube_rl/inspect_hold_increment_branches_v8.py",
+      "archive_file": "source/revotron_cube_rl/inspect_hold_increment_branches_v8.py.gz",
+      "source_sha256": "e1b8b286b9344648f780d5c7732da71468afe1089995ecc96bc7e9040e9a62fc",
+      "archive_sha256": "228c5687e697c797bdcef57782a27a4faa1f8479546cab9a839f5f5bd761a2dc",
+      "source_bytes": 9426,
+      "archive_bytes": 3526,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "revotron_cube_rl/state_hold_increment_eval_runtime_v8.py",
+      "archive_file": "source/revotron_cube_rl/state_hold_increment_eval_runtime_v8.py.gz",
+      "source_sha256": "8c3c9459254c12b0b992889bd95aea52bf3a12d4143fd40731641a70ee46072c",
+      "archive_sha256": "74a6f1aa4e6a98651006197d43f67407f08527f56db48dc7db04a2a7bd1c55a7",
+      "source_bytes": 15706,
+      "archive_bytes": 4782,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "revotron_cube_rl/evaluate_state_hold_increment_v8.py",
+      "archive_file": "source/revotron_cube_rl/evaluate_state_hold_increment_v8.py.gz",
+      "source_sha256": "54a9f1ae958cacd55434397e72b04c10743c8a16c1be24d74f3518010ed497c3",
+      "archive_sha256": "25d1f8b6d09cc113c07207e9ae4fcd551e49af3da670c797f0a3d3bd102bd0a2",
+      "source_bytes": 16164,
+      "archive_bytes": 4651,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "revotron_cube_rl/test_hold_increment_policy_v8.py",
+      "archive_file": "source/revotron_cube_rl/test_hold_increment_policy_v8.py.gz",
+      "source_sha256": "9631c906e3a1ad6b143505cc9b06b5859c70c3c75423c257e678335c4e7baf57",
+      "archive_sha256": "e33a62fae6db4d9f5fd46e789f2418ad372cc734de8bc1476020e4b521e654a8",
+      "source_bytes": 11397,
+      "archive_bytes": 2946,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "revotron_cube_rl/test_train_hold_increment_v8.py",
+      "archive_file": "source/revotron_cube_rl/test_train_hold_increment_v8.py.gz",
+      "source_sha256": "02a3e31721f306f41d995781c3b45d85ee39d8d9eb7ced7bbd38cd2291613061",
+      "archive_sha256": "c091a5a87e9e66cc2eb674ff0bf9240ad90039c6d89e7ad1e21d540c920bdf35",
+      "source_bytes": 3853,
+      "archive_bytes": 1441,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "revotron_cube_rl/test_train_hold_increment_v8_peer.py",
+      "archive_file": "source/revotron_cube_rl/test_train_hold_increment_v8_peer.py.gz",
+      "source_sha256": "ad815533c10764ea95153e74e7ea0650fd35119b48a0775d9a9ae07ac5114041",
+      "archive_sha256": "8918ccb6c6da1bc8ea4f08591b61e570a0c575f92cd440c400f699c44d3bea2a",
+      "source_bytes": 16921,
+      "archive_bytes": 4504,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "revotron_cube_rl/test_state_hold_increment_eval_v8.py",
+      "archive_file": "source/revotron_cube_rl/test_state_hold_increment_eval_v8.py.gz",
+      "source_sha256": "844f07004620ee72a987edf7cc1fab8b3ff94cdae8a46a0605c78fc27300fac4",
+      "archive_sha256": "d022e34c4126678bea9d09a762ba377faec100cb71f83132965a5927483b79dc",
+      "source_bytes": 13476,
+      "archive_bytes": 3941,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "revotron_cube_rl/test_v8_eval_prepare_independent.py",
+      "archive_file": "source/revotron_cube_rl/test_v8_eval_prepare_independent.py.gz",
+      "source_sha256": "720a84d66d2b7e1ee7d9d388fd18712f3e578da71013120b7a3cf6a149a25103",
+      "archive_sha256": "e3dea57f786b5f8d4c6c07dfe1b1e068240037b64d4a95456af7269a852ecce6",
+      "source_bytes": 3564,
+      "archive_bytes": 1485,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "revotron_cube_rl/test_trusted_eval_dataset_registry_v1.py",
+      "archive_file": "source/revotron_cube_rl/test_trusted_eval_dataset_registry_v1.py.gz",
+      "source_sha256": "a8e3205dfb171fe1b1d0c05bb907066c8113225a6227dddc32bb47c63c86adb9",
+      "archive_sha256": "3f2f4a9e780dcb1897679aadcd8c26da96ff2ff4d626935cd462977d8de70e25",
+      "source_bytes": 14920,
+      "archive_bytes": 4151,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "revotron_cube_rl/test_trusted_registry_peer_boundary.py",
+      "archive_file": "source/revotron_cube_rl/test_trusted_registry_peer_boundary.py.gz",
+      "source_sha256": "1dfbeef1b79f382fa8db089323b6e1df5cea4481b9fa5d67eed7077b24952822",
+      "archive_sha256": "9da0cc7c9c47e4a7e5d82d7af1beb027f7c55ffdb7911cb38635390a8b9346d6",
+      "source_bytes": 2241,
+      "archive_bytes": 913,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "revotron_cube_rl/test_state_hold_increment_eval_v8_prepare.py",
+      "archive_file": "source/revotron_cube_rl/test_state_hold_increment_eval_v8_prepare.py.gz",
+      "source_sha256": "62f661cdc99ebc03998ed07933216ae9996aba0369811db804564dee6506f6ec",
+      "archive_sha256": "be0925ce041c4a2ee6dcd4948e65a9106e352e0fbf24116fa1cae4582c3f710a",
+      "source_bytes": 9958,
+      "archive_bytes": 2804,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "revotron_cube_rl/test_state_hold_increment_eval_v8_delta.py",
+      "archive_file": "source/revotron_cube_rl/test_state_hold_increment_eval_v8_delta.py.gz",
+      "source_sha256": "dae59d651373683fb4a738f6d33a7d4384cda56d8dd752063833d46c39e318d3",
+      "archive_sha256": "20ee5f1177429102ef9d8fb4273367eb89324285930a4e8c3271a1083731f18d",
+      "source_bytes": 6111,
+      "archive_bytes": 2102,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "work/teacher_optimization_20261103/v8_eight_history_branch_coverage_20261104_01.json",
+      "archive_file": "source/work/teacher_optimization_20261103/v8_eight_history_branch_coverage_20261104_01.json.gz",
+      "source_sha256": "c81211be8529ad78db6714d33fc2cecda399a7b492c8dc99109d11df57bcd81e",
+      "archive_sha256": "9ffa895866e43dc7c94c3e65ba2a1e33c550a966737f9685fe2209a32763ed33",
+      "source_bytes": 321736,
+      "archive_bytes": 30244,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "work/teacher_optimization_20261103/v8_registry_and_coverage_root_static_review_20261104.json",
+      "archive_file": "source/work/teacher_optimization_20261103/v8_registry_and_coverage_root_static_review_20261104.json.gz",
+      "source_sha256": "a0a01ca37e44f7a0c1d4af378a0882faf7fc5b285a69927060e1c09ac64e5d7d",
+      "archive_sha256": "2ae23a11baaf1f8ba080dcc812c08036927665ab2cab36c0bd08d0972baaad5a",
+      "source_bytes": 1251,
+      "archive_bytes": 745,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "work/teacher_optimization_20261103/trusted_registry_v1_independent_review_20261104.json",
+      "archive_file": "source/work/teacher_optimization_20261103/trusted_registry_v1_independent_review_20261104.json.gz",
+      "source_sha256": "1d5e9fd505f11e8c098438f326e18fb6834708da1b6748f5f47155539429e2e0",
+      "archive_sha256": "2c20b83efa0eb0ad24462986df774fc9b05fe87d71f94dfbb181004c7cff376e",
+      "source_bytes": 52369,
+      "archive_bytes": 7059,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "work/teacher_optimization_20261103/v8_trainer_independent_review_20261104.json",
+      "archive_file": "source/work/teacher_optimization_20261103/v8_trainer_independent_review_20261104.json.gz",
+      "source_sha256": "e3f03a4e8ecfea39844449188a7e52480f9fd85810d3ead057be03f778a45742",
+      "archive_sha256": "57768aa5f048607b20aa8a94bc2d78a5bb00f52b81c2cd93d5863364cc59444b",
+      "source_bytes": 5001,
+      "archive_bytes": 2392,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "work/teacher_optimization_20261103/v8_trainer_independent_host_tests_20261104.log",
+      "archive_file": "source/work/teacher_optimization_20261103/v8_trainer_independent_host_tests_20261104.log.gz",
+      "source_sha256": "0d97875ee70ed04b2c74afa2237d67af3a6a0558569b953ecaf6459bad9ccbf9",
+      "archive_sha256": "6d98f8f3c04899ca79466f7e542074d00ded7507aa9932190a4aaed1bf07fa91",
+      "source_bytes": 3255,
+      "archive_bytes": 709,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "work/teacher_optimization_20261103/v8_eval_entry_independent_review_20261104.json",
+      "archive_file": "source/work/teacher_optimization_20261103/v8_eval_entry_independent_review_20261104.json.gz",
+      "source_sha256": "ad392332b47a034f44501fde08940de819a9ae326bb0b43264d03a336954f860",
+      "archive_sha256": "41b3c24f86bc9204d1f2d05552e0d0de910955614c8db9a8a03c3b13c443d8a6",
+      "source_bytes": 2450,
+      "archive_bytes": 1265,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "work/teacher_optimization_20261103/v8_eval_independent_host_tests_v2.log",
+      "archive_file": "source/work/teacher_optimization_20261103/v8_eval_independent_host_tests_v2.log.gz",
+      "source_sha256": "819fd70118b2f9c417c0b2cf0ae321e77b91e2289639a5abdd65e8b5ef6d1d08",
+      "archive_sha256": "b9b69297bfa856380879c2a48de71649dc386599c2e5777fa530a3e89d3e0133",
+      "source_bytes": 4727,
+      "archive_bytes": 1025,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "work/teacher_optimization_20261103/v8_initial_host_tests_20261104.log",
+      "archive_file": "source/work/teacher_optimization_20261103/v8_initial_host_tests_20261104.log.gz",
+      "source_sha256": "3d668c73b60a56f5d81f91970d771ebec80792a80c6739ee72f27d80436c40ec",
+      "archive_sha256": "1434e1a5e7b347ea7ea7b509cfe7d502879b527bed89c2c2c16fb5a75c952868",
+      "source_bytes": 116,
+      "archive_bytes": 55,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "work/teacher_optimization_20261103/v8_finite_tanh_witness_diagnostic_20261104.json",
+      "archive_file": "source/work/teacher_optimization_20261103/v8_finite_tanh_witness_diagnostic_20261104.json.gz",
+      "source_sha256": "93c596cf6a1645284fb8b38b95ef028620a440dc6c519884ca565005999ece02",
+      "archive_sha256": "61e03e72e07e2803effce8ff3e4c88fb02b6f88b5c362cfbee0e92872aeb9afc",
+      "source_bytes": 98251,
+      "archive_bytes": 10097,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "work/teacher_optimization_20261103/diagnose_tanh_update_witness_v8.py",
+      "archive_file": "source/work/teacher_optimization_20261103/diagnose_tanh_update_witness_v8.py.gz",
+      "source_sha256": "6774e58e51beed5acd23c63ae057bc9a665c43249de5b8ad15c2b8b25f36d178",
+      "archive_sha256": "9e50c62bd61eec9bc976c8dbde888d8263cfdb9dbc4e23a6b3c46845f187c9c2",
+      "source_bytes": 5225,
+      "archive_bytes": 2180,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "work/teacher_optimization_20261103/audit_completed_hold_increment_v8.py",
+      "archive_file": "source/work/teacher_optimization_20261103/audit_completed_hold_increment_v8.py.gz",
+      "source_sha256": "2ce8b0a3d1c2b67b0fffda0db5c254c548daa34766ccc50b009c3aa552fc1e96",
+      "archive_sha256": "58389980ddecbf6289bcba76152db7251e8e560efa82035b678c0dc2ccecf8cd",
+      "source_bytes": 5578,
+      "archive_bytes": 2155,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "work/teacher_optimization_20261103/launch_hold_increment_v8_training_20261104.sh",
+      "archive_file": "source/work/teacher_optimization_20261103/launch_hold_increment_v8_training_20261104.sh.gz",
+      "source_sha256": "b4e468250c3db547667d745406875e1e642e1b83b6c6efcacb0fea8dab3e0f86",
+      "archive_sha256": "6f3036e1f515c2566ddf32fd2142f8c70934e48209b926ee655ac2f7e204948a",
+      "source_bytes": 3065,
+      "archive_bytes": 1274,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "work/teacher_optimization_20261103/launch_hold_increment_v8_eval_20261104.sh",
+      "archive_file": "source/work/teacher_optimization_20261103/launch_hold_increment_v8_eval_20261104.sh.gz",
+      "source_sha256": "654361c1894d3a6e9a4734bbea76ad1f349b524b9f0fae61050099feb862ec6b",
+      "archive_sha256": "f4a4c59c113e2cca0c92a30b06dd909fb2275e49da56c3745bb74e766f84998c",
+      "source_bytes": 4395,
+      "archive_bytes": 1925,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "work/teacher_optimization_20261103/v8_root_two_training_review_20261104.json",
+      "archive_file": "source/work/teacher_optimization_20261103/v8_root_two_training_review_20261104.json.gz",
+      "source_sha256": "2a672c55227fd58af9210a8a57f5ebf9d160fac8fb9f5238f7b34429fa311618",
+      "archive_sha256": "26493c0d285d8b17c8543e467ce92c7ee094340acdabdbb9bd6f0edd8267fedf",
+      "source_bytes": 5032,
+      "archive_bytes": 2193,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "work/teacher_optimization_20261103/v8_seed20261104_root_training_authorization_20261104.json",
+      "archive_file": "source/work/teacher_optimization_20261103/v8_seed20261104_root_training_authorization_20261104.json.gz",
+      "source_sha256": "55b3bf394fe39e98eb7f277aa96805879186129ead473ad210d9682af9221205",
+      "archive_sha256": "437d351e8ceac8d5edcd7d591d8a6db51519273d094ac65ab9502e2dfec48dfc",
+      "source_bytes": 4063,
+      "archive_bytes": 1801,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "work/teacher_optimization_20261103/v8_seed20261105_root_training_authorization_20261104.json",
+      "archive_file": "source/work/teacher_optimization_20261103/v8_seed20261105_root_training_authorization_20261104.json.gz",
+      "source_sha256": "d6d5961f23215140a21658c51c6105e0ad24eb7db1a2df0c65f688708335e6ef",
+      "archive_sha256": "f063ceaf2a73a69888bac4f232465c9f0f097b6727ddf31d3b5e9d8da3e419cd",
+      "source_bytes": 4063,
+      "archive_bytes": 1800,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "work/teacher_optimization_20261103/v8_two_training_launches_20261104.json",
+      "archive_file": "source/work/teacher_optimization_20261103/v8_two_training_launches_20261104.json.gz",
+      "source_sha256": "6f94d73e0cdb5199a63c216fc913e012d7a8e03960761606d436932b557ba09e",
+      "archive_sha256": "a2e6d1660862df20d857169e38f424c37b7ae1b77f9165fe2452918090e6c46b",
+      "source_bytes": 3064,
+      "archive_bytes": 673,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "work/teacher_optimization_20261103/v8_installed_source_binding_20261104.json",
+      "archive_file": "source/work/teacher_optimization_20261103/v8_installed_source_binding_20261104.json.gz",
+      "source_sha256": "d61ab300f81472881443619384ddfde56e72418b69b06315d8d70a3b8cfb0b44",
+      "archive_sha256": "9021ef8042b5c180fcc5df98a0ee1dd6286b9b233c2ae3abde166ac80f915cf4",
+      "source_bytes": 1678,
+      "archive_bytes": 866,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "work/teacher_optimization_20261103/v8_installed_source_binding_20261104_v2.json",
+      "archive_file": "source/work/teacher_optimization_20261103/v8_installed_source_binding_20261104_v2.json.gz",
+      "source_sha256": "7acefc97748e537f080426918169861e903acf013907b459ce3ffe0286bb03a9",
+      "archive_sha256": "763252c679f5084f5598ed757527de97f08caa99ae2353bdbda3d47375614598",
+      "source_bytes": 2135,
+      "archive_bytes": 1050,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "work/teacher_optimization_20261103/v8_installed_tests_20261104.log",
+      "archive_file": "source/work/teacher_optimization_20261103/v8_installed_tests_20261104.log.gz",
+      "source_sha256": "9a466e473bef4fd84987d03f8f8bf5fbb9c4ec1c3753aff6f5694d53e9c12ae8",
+      "archive_sha256": "f90b7bc6a19dce73364ecd1d9c31d390e226e1cebb55baac64fa647f27c25ac4",
+      "source_bytes": 1022,
+      "archive_bytes": 395,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "work/teacher_optimization_20261103/v8_installed_followup_tests_20261104.log",
+      "archive_file": "source/work/teacher_optimization_20261103/v8_installed_followup_tests_20261104.log.gz",
+      "source_sha256": "663824c9e47216a481c4b1cd14fcf5a2d9af79ec0d69713964c3a2be5524a1c0",
+      "archive_sha256": "3ffa76c8515e7bd6ceca013da14f3b30660c100b4f82a8aa640da302e7333a47",
+      "source_bytes": 111,
+      "archive_bytes": 55,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "work/teacher_optimization_20261103/v8_installed_tests_summary_20261104.json",
+      "archive_file": "source/work/teacher_optimization_20261103/v8_installed_tests_summary_20261104.json.gz",
+      "source_sha256": "fb6f657213a9862c64c4d94947b535e362b57d90d4d924ca8e7027eb1517e38c",
+      "archive_sha256": "8e9fd180b599534dcfc3a58c382e5b6ffae1a74783075155fa7b0ba9cd928842",
+      "source_bytes": 633,
+      "archive_bytes": 382,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "work/teacher_optimization_20261103/v8_trainer_preflight_20261104_01/initial_boundary_metrics.json",
+      "archive_file": "source/work/teacher_optimization_20261103/v8_trainer_preflight_20261104_01/initial_boundary_metrics.json.gz",
+      "source_sha256": "3c6508ebdcd3997445e1fe9002904204474dc0e84654fdb76b25cf29f00951c8",
+      "archive_sha256": "2ca2bf3430fac26205d0d2be7cac7e19272a556bba340d91f846fbd97cdde343",
+      "source_bytes": 15897,
+      "archive_bytes": 1513,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "work/teacher_optimization_20261103/v8_trainer_preflight_20261104_01/qualification_candidate.json",
+      "archive_file": "source/work/teacher_optimization_20261103/v8_trainer_preflight_20261104_01/qualification_candidate.json.gz",
+      "source_sha256": "810b793afb4b827bfcea72778c66f55883552f143b0fda4bd2245eb5aaa2d1b9",
+      "archive_sha256": "f0272bfd4797c6e80c53df9f60347e5bcd428b7a717f33a67a2558cca1e37cc0",
+      "source_bytes": 351809,
+      "archive_bytes": 39446,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "work/teacher_optimization_20261103/v8_trainer_preflight_20261104_01/training_authorization_template.json",
+      "archive_file": "source/work/teacher_optimization_20261103/v8_trainer_preflight_20261104_01/training_authorization_template.json.gz",
+      "source_sha256": "55b3bf394fe39e98eb7f277aa96805879186129ead473ad210d9682af9221205",
+      "archive_sha256": "437d351e8ceac8d5edcd7d591d8a6db51519273d094ac65ab9502e2dfec48dfc",
+      "source_bytes": 4063,
+      "archive_bytes": 1801,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "work/teacher_optimization_20261103/v8_trainer_preflight_20261104_01/training_device_definition.json",
+      "archive_file": "source/work/teacher_optimization_20261103/v8_trainer_preflight_20261104_01/training_device_definition.json.gz",
+      "source_sha256": "97fa6d61deae6a2e659c182572da0d61d7631523f710c8121fe9335646f250ac",
+      "archive_sha256": "3033014d2b356406cb4a85669a2d758dcfb7b1bf618340bf007605fb083196d4",
+      "source_bytes": 4568,
+      "archive_bytes": 531,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    },
+    {
+      "source": "work/teacher_optimization_20261103/v8_trainer_preflight_20261104_01/verified_inputs.json",
+      "archive_file": "source/work/teacher_optimization_20261103/v8_trainer_preflight_20261104_01/verified_inputs.json.gz",
+      "source_sha256": "dd430e51d965068b70368580be8af2b9f075559ecdb59a2ac70123173ec47a95",
+      "archive_sha256": "d670663e1bbba5cf01cbc7f884d7464ff2da33d8eeac0eec817ac5fdec5ab799",
+      "source_bytes": 2170,
+      "archive_bytes": 1114,
+      "encoding": "gzip",
+      "raw_bytes_verified_after_copy_or_decompression": true
+    }
+  ],
+  "generated_files": {
+    "README.md": "ae0b457917e10ff5c10c664cb409f89fc7cf2d20dfefdb4415e5b8d673aef250"
+  },
+  "entry_count": 42,
+  "original_result_files_modified": false,
+  "ongoing_training_artifacts_included": false,
+  "completed_v8_checkpoint_included": false,
+  "physical_success_claim": false,
+  "qualification_sha256": "810b793afb4b827bfcea72778c66f55883552f143b0fda4bd2245eb5aaa2d1b9",
+  "root_training_review_sha256": "2a672c55227fd58af9210a8a57f5ebf9d160fac8fb9f5238f7b34429fa311618"
+}

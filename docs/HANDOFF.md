@@ -1,10 +1,12 @@
-## 2026-11-04 最新：V7 三候选闭环均失败，正在验证 V8 保持与增量表示
+## 2026-11-04 最新：V8 两候选已进入 GPU 训练
 
-V7 三个候选均在752步 primary_lift 原门槛失败。长轮次10000epochs独立CPU复核FP4/FN0、动作RMSE2.29933e-5，但实际仍失败，最大抬升0.187905m。六个V7模块与六个测试按冻结原字节安装，79项测试通过。
+V8 的 BASE/HOLD(previous)/UPDATE 动作结构已覆盖8段完整开发历史的7,681帧。原动作投影与CPU/GPU类别定义逐位一致，qualification SHA810b793afb4b827bfcea72778c66f55883552f143b0fda4bd2245eb5aaa2d1b9。两候选各5000epochs，训练初始化seed20261104/20261105，物理仍已见seed9501；run为teacher_hold_increment_v8_seed20261104_20261104及teacher_hold_increment_v8_seed20261105_20261104，启动PID41176/41177仅供记录，后续须查真实进程/result。
 
-首实际模型从545步偏离成功V4，546步起原teacher保持上一接触目标所需残差超过0.006rad；752帧中297个原投影标签不可达，最大缺口0.00431049rad。V8纯模型草稿新增learned BASE/HOLD(previous)/UPDATE分支和恢复手指previous增量锚点，15项合成测试通过；尚未完成八段实际history资格/可达性审核，未训练。
+最近已确认GPU利用率95%、549MiB、58°C；记录时两候选CPU第2100epoch已满足7史499和2史545回归零违例，但仍在训练，尚无最终资格或物理实测结果。最终须完整CPU回放和7×499/2×545原标签回归全部通过，不能用训练loss代替实际抓持验收。模型/训练器/reader与评测代码均已freeze，禁止修改正在训练的源。
 
-native V20完整3019步失败，无可靠接触转层；独立接触观测探针仍在校准。没有独立状态策略鲁棒性或视觉复原成功。目标未完成，继续改进训练与真实闭环。详见 [本轮训练、失败、命令与边界](ZERO_GATED_STATE_POLICY_UPDATE.md)。下文为历史记录。
+V7三候选实测均在752步primary_lift失败；V8正解决原teacher保持上一接触目标超出移动baseline残差范围的问题。Native V20也未转层；独立48步接触符号/双侧角色/线性动量校准已通过，纯观测机器人回放尚在开发。
+
+尚无可靠接触转层、跨初始状态鲁棒策略或视觉复原成功。目标未完成，继续训练与闭环。最近已推送PR6 commit baeaab9。详见 [V8实现与训练边界](HOLD_INCREMENT_POLICY_UPDATE.md) 和 [V7证据与失败原因](ZERO_GATED_STATE_POLICY_UPDATE.md)。下文为历史记录。
 
 ## 2026-11-04 当前持续训练
 

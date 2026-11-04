@@ -304,3 +304,100 @@ docs/evidence/zero_gated_v7_long_training_20261104/training_run/training.jsonl.g
 # Exact stopped native V20 failure and contact-audit evidence.
 docs/evidence/native_index_extended_v20_20261104/** -text -whitespace
 docs/evidence/native_index_extended_v20_20261104/**/*.gz filter=lfs diff=lfs merge=lfs -text
+
+# Frozen V8 modules and tests retain reviewed LF bytes.
+revotron_cube_rl/hold_increment_policy_v8.py text eol=lf
+revotron_cube_rl/train_hold_increment_v8.py text eol=lf
+revotron_cube_rl/trusted_eval_dataset_registry_v1.py text eol=lf
+revotron_cube_rl/inspect_hold_increment_branches_v8.py text eol=lf
+revotron_cube_rl/state_hold_increment_eval_runtime_v8.py text eol=lf
+revotron_cube_rl/evaluate_state_hold_increment_v8.py text eol=lf
+revotron_cube_rl/test_hold_increment_policy_v8.py text eol=lf
+revotron_cube_rl/test_train_hold_increment_v8.py text eol=lf
+revotron_cube_rl/test_train_hold_increment_v8_peer.py text eol=lf
+revotron_cube_rl/test_state_hold_increment_eval_v8.py text eol=lf
+revotron_cube_rl/test_v8_eval_prepare_independent.py text eol=lf
+revotron_cube_rl/test_trusted_eval_dataset_registry_v1.py text eol=lf
+revotron_cube_rl/test_trusted_registry_peer_boundary.py text eol=lf
+revotron_cube_rl/test_state_hold_increment_eval_v8_prepare.py text eol=lf
+revotron_cube_rl/test_state_hold_increment_eval_v8_delta.py text eol=lf
+# Exact immutable V8 candidate evidence bytes.
+docs/evidence/hold_increment_v8_candidate_20261104/** -text -whitespace
+docs/evidence/hold_increment_v8_candidate_20261104/source/revotron_cube_rl/evaluate_state_hold_increment_v8.py.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/revotron_cube_rl/hold_increment_policy_v8.py.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/revotron_cube_rl/inspect_hold_increment_branches_v8.py.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/revotron_cube_rl/state_hold_increment_eval_runtime_v8.py.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/revotron_cube_rl/test_hold_increment_policy_v8.py.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/revotron_cube_rl/test_state_hold_increment_eval_v8.py.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/revotron_cube_rl/test_state_hold_increment_eval_v8_delta.py.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/revotron_cube_rl/test_state_hold_increment_eval_v8_prepare.py.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/revotron_cube_rl/test_train_hold_increment_v8.py.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/revotron_cube_rl/test_train_hold_increment_v8_peer.py.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/revotron_cube_rl/test_trusted_eval_dataset_registry_v1.py.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/revotron_cube_rl/test_trusted_registry_peer_boundary.py.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/revotron_cube_rl/test_v8_eval_prepare_independent.py.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/revotron_cube_rl/train_hold_increment_v8.py.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/revotron_cube_rl/trusted_eval_dataset_registry_v1.py.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/work/teacher_optimization_20261103/audit_completed_hold_increment_v8.py.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/work/teacher_optimization_20261103/diagnose_tanh_update_witness_v8.py.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/work/teacher_optimization_20261103/launch_hold_increment_v8_eval_20261104.sh.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/work/teacher_optimization_20261103/launch_hold_increment_v8_training_20261104.sh.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/work/teacher_optimization_20261103/trusted_registry_v1_independent_review_20261104.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/work/teacher_optimization_20261103/v8_eight_history_branch_coverage_20261104_01.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/work/teacher_optimization_20261103/v8_eval_entry_independent_review_20261104.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/work/teacher_optimization_20261103/v8_eval_independent_host_tests_v2.log.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/work/teacher_optimization_20261103/v8_finite_tanh_witness_diagnostic_20261104.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/work/teacher_optimization_20261103/v8_initial_host_tests_20261104.log.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/work/teacher_optimization_20261103/v8_installed_followup_tests_20261104.log.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/work/teacher_optimization_20261103/v8_installed_source_binding_20261104.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/work/teacher_optimization_20261103/v8_installed_source_binding_20261104_v2.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/work/teacher_optimization_20261103/v8_installed_tests_20261104.log.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/work/teacher_optimization_20261103/v8_installed_tests_summary_20261104.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/work/teacher_optimization_20261103/v8_registry_and_coverage_root_static_review_20261104.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/work/teacher_optimization_20261103/v8_root_two_training_review_20261104.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/work/teacher_optimization_20261103/v8_seed20261104_root_training_authorization_20261104.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/work/teacher_optimization_20261103/v8_seed20261105_root_training_authorization_20261104.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/work/teacher_optimization_20261103/v8_trainer_independent_host_tests_20261104.log.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/work/teacher_optimization_20261103/v8_trainer_independent_review_20261104.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/work/teacher_optimization_20261103/v8_trainer_preflight_20261104_01/initial_boundary_metrics.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/work/teacher_optimization_20261103/v8_trainer_preflight_20261104_01/qualification_candidate.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/work/teacher_optimization_20261103/v8_trainer_preflight_20261104_01/training_authorization_template.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/work/teacher_optimization_20261103/v8_trainer_preflight_20261104_01/training_device_definition.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/work/teacher_optimization_20261103/v8_trainer_preflight_20261104_01/verified_inputs.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_candidate_20261104/source/work/teacher_optimization_20261103/v8_two_training_launches_20261104.json.gz filter=lfs diff=lfs merge=lfs -text
+# Immutable completed V7 failed actual evaluations.
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/** -text -whitespace
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/launch_logs/v7_closed_loop_eval.log.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/launch_logs/v7_long_closed_loop_eval.log.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/launch_logs/v7_seed20261105_closed_loop_eval.log.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/launch_logs/v7_seed20261105_closed_loop_eval_v2.log.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/runs/left_zero_gated_residual_v7_eval_9501_20261104/checkpoints/evaluated_policy.pt filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/runs/left_zero_gated_residual_v7_eval_9501_20261104/checkpoints/frozen_v4_baseline.pt filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/runs/left_zero_gated_residual_v7_eval_9501_20261104/dynamic_training_scene.usda.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/runs/left_zero_gated_residual_v7_eval_9501_20261104/evaluation_transitions.jsonl.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/runs/left_zero_gated_residual_v7_eval_9501_20261104/physics_identity.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/runs/left_zero_gated_residual_v7_eval_9501_20261104/plans/pickup_fc213888d36eed04e927d5fb24cfede3d575b645e384135b13313bf20ecef1e2.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/runs/left_zero_gated_residual_v7_eval_9501_20261104/reviewed_transition_qualification.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/runs/left_zero_gated_residual_v7_eval_9501_20261104/trajectory.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/runs/left_zero_gated_residual_v7_eval_9501_20261104/trajectory.jsonl.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/runs/left_zero_gated_residual_v7_long_eval_9501_20261104/checkpoints/evaluated_policy.pt filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/runs/left_zero_gated_residual_v7_long_eval_9501_20261104/checkpoints/frozen_v4_baseline.pt filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/runs/left_zero_gated_residual_v7_long_eval_9501_20261104/dynamic_training_scene.usda.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/runs/left_zero_gated_residual_v7_long_eval_9501_20261104/evaluation_transitions.jsonl.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/runs/left_zero_gated_residual_v7_long_eval_9501_20261104/physics_identity.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/runs/left_zero_gated_residual_v7_long_eval_9501_20261104/plans/pickup_fc213888d36eed04e927d5fb24cfede3d575b645e384135b13313bf20ecef1e2.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/runs/left_zero_gated_residual_v7_long_eval_9501_20261104/reviewed_transition_qualification.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/runs/left_zero_gated_residual_v7_long_eval_9501_20261104/trajectory.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/runs/left_zero_gated_residual_v7_long_eval_9501_20261104/trajectory.jsonl.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/runs/left_zero_gated_residual_v7_seed20261105_eval_9501_20261104_v2/checkpoints/evaluated_policy.pt filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/runs/left_zero_gated_residual_v7_seed20261105_eval_9501_20261104_v2/checkpoints/frozen_v4_baseline.pt filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/runs/left_zero_gated_residual_v7_seed20261105_eval_9501_20261104_v2/dynamic_training_scene.usda.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/runs/left_zero_gated_residual_v7_seed20261105_eval_9501_20261104_v2/evaluation_transitions.jsonl.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/runs/left_zero_gated_residual_v7_seed20261105_eval_9501_20261104_v2/physics_identity.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/runs/left_zero_gated_residual_v7_seed20261105_eval_9501_20261104_v2/plans/pickup_fc213888d36eed04e927d5fb24cfede3d575b645e384135b13313bf20ecef1e2.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/runs/left_zero_gated_residual_v7_seed20261105_eval_9501_20261104_v2/reviewed_transition_qualification.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/runs/left_zero_gated_residual_v7_seed20261105_eval_9501_20261104_v2/trajectory.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/runs/left_zero_gated_residual_v7_seed20261105_eval_9501_20261104_v2/trajectory.jsonl.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/support/v7_actual_contact_feedback_diagnosis_20261104.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/support/v7_first_actual_prefix_registry_inspection_20261104.json.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/zero_gated_v7_actual_evaluations_20261104/support/v8_eight_history_branch_coverage_20261104_01.json.gz filter=lfs diff=lfs merge=lfs -text
