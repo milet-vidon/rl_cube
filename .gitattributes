@@ -401,3 +401,26 @@ docs/evidence/zero_gated_v7_actual_evaluations_20261104/runs/left_zero_gated_res
 docs/evidence/zero_gated_v7_actual_evaluations_20261104/support/v7_actual_contact_feedback_diagnosis_20261104.json.gz filter=lfs diff=lfs merge=lfs -text
 docs/evidence/zero_gated_v7_actual_evaluations_20261104/support/v7_first_actual_prefix_registry_inspection_20261104.json.gz filter=lfs diff=lfs merge=lfs -text
 docs/evidence/zero_gated_v7_actual_evaluations_20261104/support/v8_eight_history_branch_coverage_20261104_01.json.gz filter=lfs diff=lfs merge=lfs -text
+# Exact immutable V8 training evidence.
+docs/evidence/hold_increment_v8_seed20261104_training_20261104/** -text -whitespace
+docs/evidence/hold_increment_v8_seed20261104_training_20261104/completion_review/v8_journal_inventory_host_tests_20261104.log.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_seed20261104_training_20261104/completion_review/v8_seed20261104_gpu_train.log.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_seed20261104_training_20261104/evaluation_preflight/checkpoints/evaluated_policy.pt filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_seed20261104_training_20261104/evaluation_preflight/checkpoints/frozen_v4_baseline.pt filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_seed20261104_training_20261104/frozen/work/teacher_optimization_20261103/v8_eval_independent_host_tests.log.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_seed20261104_training_20261104/frozen/work/teacher_optimization_20261103/v8_eval_independent_host_tests_v2.log.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_seed20261104_training_20261104/frozen/work/teacher_optimization_20261103/v8_trainer_independent_host_tests_20261104.log.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_seed20261104_training_20261104/training_run/last_state.pt filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_seed20261104_training_20261104/training_run/model.pt filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_seed20261104_training_20261104/training_run/training.jsonl.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_seed20261105_training_20261104/** -text -whitespace
+docs/evidence/hold_increment_v8_seed20261105_training_20261104/completion_review/v8_journal_inventory_host_tests_20261104.log.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_seed20261105_training_20261104/completion_review/v8_seed20261105_gpu_train.log.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_seed20261105_training_20261104/evaluation_preflight/checkpoints/evaluated_policy.pt filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_seed20261105_training_20261104/evaluation_preflight/checkpoints/frozen_v4_baseline.pt filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_seed20261105_training_20261104/frozen/work/teacher_optimization_20261103/v8_eval_independent_host_tests.log.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_seed20261105_training_20261104/frozen/work/teacher_optimization_20261103/v8_eval_independent_host_tests_v2.log.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_seed20261105_training_20261104/frozen/work/teacher_optimization_20261103/v8_trainer_independent_host_tests_20261104.log.gz filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_seed20261105_training_20261104/training_run/last_state.pt filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_seed20261105_training_20261104/training_run/model.pt filter=lfs diff=lfs merge=lfs -text
+docs/evidence/hold_increment_v8_seed20261105_training_20261104/training_run/training.jsonl.gz filter=lfs diff=lfs merge=lfs -text

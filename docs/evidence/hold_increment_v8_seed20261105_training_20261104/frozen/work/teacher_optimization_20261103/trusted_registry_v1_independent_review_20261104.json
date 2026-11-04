@@ -1,0 +1,693 @@
+{
+  "schema": "trusted_eval_registry_v1_independent_source_and_actual_history_review_v1",
+  "blocking_findings": [],
+  "source_sha256": {
+    "trusted_eval_dataset_registry_v1.py": "e19a5fd879eb9d7e814d14ec1dff906f02d773868b1ff91a1bdd9ce759ff617c",
+    "test_trusted_eval_dataset_registry_v1.py": "a8e3205dfb171fe1b1d0c05bb907066c8113225a6227dddc32bb47c63c86adb9",
+    "test_trusted_registry_peer_boundary.py": "1dfbeef1b79f382fa8db089323b6e1df5cea4481b9fa5d67eed7077b24952822",
+    "audit_trusted_registry_v1_completed.py": "5ec06dfeda1613e7125bfc653c2c0f89890e4fa6de6cfdfc9b8b00044e9ece12"
+  },
+  "host_tests": {
+    "passed": 31,
+    "original_complete_suite": 26,
+    "independent_boundary_tests": 5,
+    "skipped": 0,
+    "log_sha256": "67ea7818bd01f311b5069c591b119bf7d84b916b91d360496b15da24cbad0998"
+  },
+  "frozen_engine_sha256": "61c6b43cf0b2af18144723f6f3b2587dea04299feb75611e1a09c7c073b67883",
+  "actual_three_v7_histories": [
+    {
+      "run": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_eval_9501_20261104",
+      "checkpoint_sha256": "0920f7e4952b5bf534021ce8240a8467a303bffda4b7ec1750eb830b3aea4054",
+      "evidence": {
+        "consumer_schema": "trusted_completed_eval_bc_candidate_registry_v1",
+        "directory": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_eval_9501_20261104",
+        "artifact_manifest_sha256": "eaef5da69f4276e24f639b54a675c88de7052179265477b43bb556f33dcfba9f",
+        "files_sha256": {
+          "result.json": "d4328115842d5827f8ac993225d43b93aaec776ed78000b0c8df996ca6e842c5",
+          "reviewed_transition_qualification.json": "9dc17535d63a0a7667b1b3aca1853421e6d0a5b8dbf44560462611130582474f",
+          "projection_parameters.json": "890108362592dd288cfb1c5bee8eb824645043ed7be0733ada40adf9cb67da66",
+          "evaluation_preflight.json": "11f76c52c79e7a485daa9f331e56b840b2f8e764a2cf015a86d8396057130a7a",
+          "trajectory.jsonl": "aabb42478c7d076f0f8abb94275c051615c9a6c40fd30f5b2ac1d43074e758f9",
+          "dynamic_training_scene.usda": "ff16e3e8af8e8e2e0c0f7ff240a2b2f1d688a9c1b3560ff2230033742096c6f8",
+          "config.json": "d3c6084f638ed96ea299dbf76c386537051d3857c61675ddfc4abd5e9d925ae1",
+          "reviewed_training_authorization.json": "bee59f0f281d62029b8fbb9681b0a1a6affeb058f0b441d3e760951d300fd797",
+          "evaluation_protocol.json": "409254e2dd1117720ab1d89510222cc513eae3417d8823769f1c9a2548d9c5d2",
+          "asset_contract.json": "3367c3d471d25bb668b2f67fb9eca3ba34a28328b967ffbb63aef39cf1a365c7",
+          "evaluation_transitions.jsonl": "249b32ee34c8ab0bac5324c0f2aa70f97912164366719f44551442a678aa68d4",
+          "runtime_protocol.json": "2f2eddaf636ea1f1d72bda1e972f5114f9d23cbaedce2af8d0d8618b0a01ac3b",
+          "initial_state.json": "9a7c759eb84012d21924c47e2583e3bc60badaed2239608d026b6d95e785c5f3",
+          "trajectory.json": "670e151ec67e96abc671b45244859ae5f4d0d7805522dd245d89308837d1002b",
+          "physics_identity.json": "57e21f505e1833564889b4b776aac4e04e5eef11d1436e959761465928aae8c7"
+        },
+        "source_snapshot_sha256": {
+          "evaluation_source_snapshot/phase_residual_policy_v5.py": "5bb033710c18c21310b526d539251794a37efb31a2f139a68b052983c363f412",
+          "evaluation_source_snapshot/train_phase_residual_v5.py": "74cc6077ae7bb135260b9fc1f4c0c99765653af8dd243301563e61808a027a6d",
+          "evaluation_source_snapshot/dagger_residual_dataset_v5.py": "69c1cef251a4180f9839a2fc27ecbb738ce6f87828d5a9bc513a19aa40621cb1",
+          "evaluation_source_snapshot/phase_gated_residual_policy_v6.py": "874d82a6ffff395868260f48530b6fa0cfd20111cd133b827ad4809ed4967063",
+          "evaluation_source_snapshot/train_phase_gated_residual_v6.py": "0ca6cc266e1f4275411f70ea75800cdbf97bf7c604565d88b12afc30a753b5b3",
+          "evaluation_source_snapshot/eval_prefix_dataset_v7.py": "61c6b43cf0b2af18144723f6f3b2587dea04299feb75611e1a09c7c073b67883",
+          "evaluation_source_snapshot/inspect_residual_dataset_v7.py": "ad88eb44646887898082e3b500db8e9d43f0ab1bc3eb8a71ab53f1f9f6f0c511",
+          "evaluation_source_snapshot/zero_gated_residual_policy_v7.py": "714c7d6b6ca151afa052ef426cc27360b61ca62c1914cd7b7bfe84a63233256e",
+          "evaluation_source_snapshot/train_zero_gated_residual_v7.py": "9878b9d2c6f769624ba3889ea43797eacd02b203f65d8dcb3d765d90b1f9636e",
+          "evaluation_source_snapshot/state_zero_gated_eval_runtime_v7.py": "caadc319e816bdb3c00b5a744b71fbaf7c5f60ffd2d8f1893593fe441767b66b",
+          "evaluation_source_snapshot/evaluate_state_zero_gated_v7.py": "6cda789c883a171d565b3a47d5ca5901ad9b4945221b281024eae7f66405b7f0",
+          "source_snapshot/tilt_audit.py": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995",
+          "source_snapshot/config.json": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+          "source_snapshot/palm_handover_audit.py": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1",
+          "source_snapshot/environment.py": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7",
+          "source_snapshot/opposition_teacher.py": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1",
+          "source_snapshot/phase_basis_policy_v4.py": "5d4dc98bf0dfc156dbcdd7fd9d3923f475573d03bc46df1e6c1d317625d8a327",
+          "source_snapshot/runtime_platform.py": "c08829cde5986256dab4f5448edcecbf8932a3100ed7fab7dbdf0ad2f895772f",
+          "source_snapshot/elbow_gate.py": "6473a2deec9034d4fa57079fe917d248c40db68f9768001456474bdc8eb6c526",
+          "source_snapshot/left_dagger_baseline_runtime_v3.py": "49af4b8a660c115a2f3d29826b25d1b5c176e24208dae692838b46398834a516",
+          "source_snapshot/tilt_regrasp.py": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1",
+          "source_snapshot/opposition_feedback.py": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883",
+          "source_snapshot/proximal_planner.py": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16",
+          "source_snapshot/isaac_compat.py": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825",
+          "source_snapshot/elbow_audit.py": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9",
+          "source_snapshot/palm_handover.py": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f",
+          "source_snapshot/collect_left_dagger_draft_v1.py": "fc5dc17bc0f08a4fee1d468ed0b53dec6a6549083cbb7f86827dce96705ac6bf",
+          "source_snapshot/kinematics.py": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212",
+          "source_snapshot/dynamic_cube.py": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de",
+          "source_snapshot/wrist_direction.py": "0aa5858caf39dabbd92af4396370121de30dc673675a5c24f11ca8ff0c0c0ed5",
+          "source_snapshot/left_contact_dagger_schema_v1.json": "164d991f6e05f34a6101d28ea764cfa8428ae5a2692f34ac151335345b2f8ce2",
+          "source_snapshot/articulated_cube_env.py": "dfad0023f9e2797d6ea8ea3ac08aa1b6889b7dbb4ff8398cd0ca11fa329bc707",
+          "source_snapshot/palm_contact_audit.py": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184",
+          "source_snapshot/opposition_grasp_v20.json": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a",
+          "source_snapshot/tilt_collision_plan.py": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd",
+          "source_snapshot/dagger_projected_collection_v3.py": "268653ef77b2b500d5299ebb377a6311f98ed9d5199f0b345795b26a92669a33",
+          "source_snapshot/layer_turn_metrics.py": "c7fc5438c29c20632ad774c7f541d293e5f411ca8fff1454c830989536e1ccb4",
+          "source_snapshot/wrist_audit.py": "e0dcf531d4f9e74cce3293ff2f954486fd1277609a832becdcefbd4b4e36398f",
+          "source_snapshot/collect_left_dagger_baseline_v3.py": "b87d0b1ac0c34e5b5c79678b068c9f55df5fa6baf0c5d0da5a231ff9976ea0e6",
+          "source_snapshot/phase_contact_policy.py": "5db8beb4f0dc86d4b6105669ee8da2fee93b319e2ba468a6c0c2c5b21dc94045",
+          "source_snapshot/joint_safety.py": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887",
+          "source_snapshot/elbow_handover.py": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e",
+          "source_snapshot/self_contact_audit.py": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c",
+          "source_snapshot/finger_contact_audit.py": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0",
+          "source_snapshot/dagger_collection_core_v1.py": "6d4b2a635f98b563c10388153e4116054eb03a383e898ae7c36d572c9b182411"
+        },
+        "checkpoint_sha256": {
+          "evaluated_policy.pt": "0920f7e4952b5bf534021ce8240a8467a303bffda4b7ec1750eb830b3aea4054",
+          "frozen_v4_baseline.pt": "d2493b00df27b8d84ae69da3b399b3beb926b77fdd87a9b51aa6a2b1b23a36a4"
+        },
+        "plan_sha256": {
+          "pickup_fc213888d36eed04e927d5fb24cfede3d575b645e384135b13313bf20ecef1e2.json": "fc213888d36eed04e927d5fb24cfede3d575b645e384135b13313bf20ecef1e2"
+        },
+        "physics_family_sha256": "b2f9feb645c8d92e2da3bb78653165292a5649e59864dee4b1de82e904854192",
+        "evaluation_semantics_proof": {
+          "policy_version": "v7",
+          "runtime_sha256": "caadc319e816bdb3c00b5a744b71fbaf7c5f60ffd2d8f1893593fe441767b66b",
+          "entry_sha256": "6cda789c883a171d565b3a47d5ca5901ad9b4945221b281024eae7f66405b7f0",
+          "runtime_after_only_policy_routing_rename_sha256": "90a1ef7d5d8cfdebd5e05df5ec598d48cea7ae7bcfaf145a357d61a5e7727d64",
+          "same_original_physics_step_projection_right_action_query_order_gates_termination_and_audit": true,
+          "reviewed_checkpoint_sha256": "0920f7e4952b5bf534021ce8240a8467a303bffda4b7ec1750eb830b3aea4054",
+          "reviewed_qualification_sha256": "9dc17535d63a0a7667b1b3aca1853421e6d0a5b8dbf44560462611130582474f",
+          "reviewed_training_authorization_sha256": "bee59f0f281d62029b8fbb9681b0a1a6affeb058f0b441d3e760951d300fd797",
+          "checkpoint_frozen_baseline_and_control_buffers_verified": true,
+          "source_snapshot_resolutions": {
+            "phase_residual_policy_v5.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_eval_9501_20261104/evaluation_source_snapshot/phase_residual_policy_v5.py",
+                "sha256": "5bb033710c18c21310b526d539251794a37efb31a2f139a68b052983c363f412"
+              }
+            ],
+            "dagger_residual_dataset_v5.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_eval_9501_20261104/evaluation_source_snapshot/dagger_residual_dataset_v5.py",
+                "sha256": "69c1cef251a4180f9839a2fc27ecbb738ce6f87828d5a9bc513a19aa40621cb1"
+              }
+            ],
+            "phase_basis_policy_v4.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_eval_9501_20261104/source_snapshot/phase_basis_policy_v4.py",
+                "sha256": "5d4dc98bf0dfc156dbcdd7fd9d3923f475573d03bc46df1e6c1d317625d8a327"
+              }
+            ],
+            "phase_contact_policy.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_eval_9501_20261104/source_snapshot/phase_contact_policy.py",
+                "sha256": "5db8beb4f0dc86d4b6105669ee8da2fee93b319e2ba468a6c0c2c5b21dc94045"
+              }
+            ],
+            "dagger_collection_core_v1.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_eval_9501_20261104/source_snapshot/dagger_collection_core_v1.py",
+                "sha256": "6d4b2a635f98b563c10388153e4116054eb03a383e898ae7c36d572c9b182411"
+              }
+            ],
+            "dagger_projected_collection_v3.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_eval_9501_20261104/source_snapshot/dagger_projected_collection_v3.py",
+                "sha256": "268653ef77b2b500d5299ebb377a6311f98ed9d5199f0b345795b26a92669a33"
+              }
+            ],
+            "train_phase_residual_v5.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_eval_9501_20261104/evaluation_source_snapshot/train_phase_residual_v5.py",
+                "sha256": "74cc6077ae7bb135260b9fc1f4c0c99765653af8dd243301563e61808a027a6d"
+              }
+            ],
+            "phase_gated_residual_policy_v6.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_eval_9501_20261104/evaluation_source_snapshot/phase_gated_residual_policy_v6.py",
+                "sha256": "874d82a6ffff395868260f48530b6fa0cfd20111cd133b827ad4809ed4967063"
+              }
+            ],
+            "eval_prefix_dataset_v6.py": [
+              {
+                "scope": "qualified_training_history_transitive_source",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_phase_gated_residual_v6_eval_9501_20261104/evaluation_source_snapshot/eval_prefix_dataset_v6.py",
+                "sha256": "7dfc8f417daeb6916054a96cb5112d78295057d85fb2f43df4d76a267587f0bf",
+                "training_artifact_manifest_sha256": "d08a6bacf5d2a242489c062c3a77ae44e3c1dc190d0a98088323808a76f585f5"
+              },
+              {
+                "scope": "qualified_training_history_transitive_source",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_phase_gated_residual_v6_long_eval_9501_20261104/evaluation_source_snapshot/eval_prefix_dataset_v6.py",
+                "sha256": "7dfc8f417daeb6916054a96cb5112d78295057d85fb2f43df4d76a267587f0bf",
+                "training_artifact_manifest_sha256": "f306eed599ff5a86adb253c06f0342d6e057331e506525dcb9b985352690e2fe"
+              }
+            ],
+            "train_phase_gated_residual_v6.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_eval_9501_20261104/evaluation_source_snapshot/train_phase_gated_residual_v6.py",
+                "sha256": "0ca6cc266e1f4275411f70ea75800cdbf97bf7c604565d88b12afc30a753b5b3"
+              }
+            ],
+            "eval_prefix_dataset_v7.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_eval_9501_20261104/evaluation_source_snapshot/eval_prefix_dataset_v7.py",
+                "sha256": "61c6b43cf0b2af18144723f6f3b2587dea04299feb75611e1a09c7c073b67883"
+              }
+            ],
+            "zero_gated_residual_policy_v7.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_eval_9501_20261104/evaluation_source_snapshot/zero_gated_residual_policy_v7.py",
+                "sha256": "714c7d6b6ca151afa052ef426cc27360b61ca62c1914cd7b7bfe84a63233256e"
+              }
+            ],
+            "inspect_residual_dataset_v7.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_eval_9501_20261104/evaluation_source_snapshot/inspect_residual_dataset_v7.py",
+                "sha256": "ad88eb44646887898082e3b500db8e9d43f0ab1bc3eb8a71ab53f1f9f6f0c511"
+              }
+            ],
+            "train_zero_gated_residual_v7.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_eval_9501_20261104/evaluation_source_snapshot/train_zero_gated_residual_v7.py",
+                "sha256": "9878b9d2c6f769624ba3889ea43797eacd02b203f65d8dcb3d765d90b1f9636e"
+              }
+            ]
+          },
+          "admitted_outcome_scope": "completed_failed_eval_safe_prefix_only_original_false_flags_preserved"
+        }
+      },
+      "eligible_frames": 752,
+      "unexecuted_abort_excluded": [
+        {
+          "step": 752,
+          "reason": "contact_topology_or_settle_timeout",
+          "type": "unexecuted_abort_no_label"
+        }
+      ],
+      "original_failure": "contact_topology_or_settle_timeout",
+      "actual_full_history_actor_replay_bitwise": true,
+      "all_original_episode_claim_flags_retained": {
+        "eligible_training_episode": false,
+        "runtime_bridge_validated": false,
+        "pure_student_episode_claim": false,
+        "corrective_labels_qualified_for_training": false,
+        "original_wrist_gate_qualified": false,
+        "failure": "contact_topology_or_settle_timeout",
+        "collection_mode": "closed_loop_policy_evaluation_no_left_teacher_takeover"
+      }
+    },
+    {
+      "run": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_seed20261105_eval_9501_20261104_v2",
+      "checkpoint_sha256": "10afd5a60ec587eb040068a520dad171ce412d681d2ff46251ae74b8ea84e7bb",
+      "evidence": {
+        "consumer_schema": "trusted_completed_eval_bc_candidate_registry_v1",
+        "directory": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_seed20261105_eval_9501_20261104_v2",
+        "artifact_manifest_sha256": "56e0eef83e31f8b7cfd6a3823d1fcfb3315453999fb3bec8f460dd8e760eb3e6",
+        "files_sha256": {
+          "result.json": "d1abe58976b70bdb3258d7f49057ba9b542f1ee0a6f23294b6b168267737a361",
+          "reviewed_transition_qualification.json": "9dc17535d63a0a7667b1b3aca1853421e6d0a5b8dbf44560462611130582474f",
+          "projection_parameters.json": "890108362592dd288cfb1c5bee8eb824645043ed7be0733ada40adf9cb67da66",
+          "evaluation_preflight.json": "1b9f2ef1a91e42a567328db5134b30f5f93d812462e949b2925c3358ceae1e29",
+          "trajectory.jsonl": "408d242eaa9c75d2cfdf05b6ea6803fe52babac67268570114cb28df308db061",
+          "dynamic_training_scene.usda": "ff16e3e8af8e8e2e0c0f7ff240a2b2f1d688a9c1b3560ff2230033742096c6f8",
+          "config.json": "d3c6084f638ed96ea299dbf76c386537051d3857c61675ddfc4abd5e9d925ae1",
+          "reviewed_training_authorization.json": "9e0e019bc579812dd1265c598e7be4cc63f06f202d558f8ab2298a112b06e324",
+          "evaluation_protocol.json": "39aa2a58b665e928b37035e54066e943d54f5deb4d527338cba13a4aa551abee",
+          "asset_contract.json": "3367c3d471d25bb668b2f67fb9eca3ba34a28328b967ffbb63aef39cf1a365c7",
+          "evaluation_transitions.jsonl": "320098c03d90d8f36798c6962ca55d6b6ea9b5ca012cc93bd54a2685625c3241",
+          "runtime_protocol.json": "e639e2cf24223edf09c033b2eb9ae7a2a518f79478d00211f5ae0d5917c34196",
+          "initial_state.json": "9a7c759eb84012d21924c47e2583e3bc60badaed2239608d026b6d95e785c5f3",
+          "trajectory.json": "ca1e3e5035abc3846b122658f27ae7bb27964c116c9e2d667bbf4b6cc6d319e7",
+          "physics_identity.json": "57e21f505e1833564889b4b776aac4e04e5eef11d1436e959761465928aae8c7"
+        },
+        "source_snapshot_sha256": {
+          "evaluation_source_snapshot/phase_residual_policy_v5.py": "5bb033710c18c21310b526d539251794a37efb31a2f139a68b052983c363f412",
+          "evaluation_source_snapshot/train_phase_residual_v5.py": "74cc6077ae7bb135260b9fc1f4c0c99765653af8dd243301563e61808a027a6d",
+          "evaluation_source_snapshot/dagger_residual_dataset_v5.py": "69c1cef251a4180f9839a2fc27ecbb738ce6f87828d5a9bc513a19aa40621cb1",
+          "evaluation_source_snapshot/phase_gated_residual_policy_v6.py": "874d82a6ffff395868260f48530b6fa0cfd20111cd133b827ad4809ed4967063",
+          "evaluation_source_snapshot/train_phase_gated_residual_v6.py": "0ca6cc266e1f4275411f70ea75800cdbf97bf7c604565d88b12afc30a753b5b3",
+          "evaluation_source_snapshot/eval_prefix_dataset_v7.py": "61c6b43cf0b2af18144723f6f3b2587dea04299feb75611e1a09c7c073b67883",
+          "evaluation_source_snapshot/inspect_residual_dataset_v7.py": "ad88eb44646887898082e3b500db8e9d43f0ab1bc3eb8a71ab53f1f9f6f0c511",
+          "evaluation_source_snapshot/zero_gated_residual_policy_v7.py": "714c7d6b6ca151afa052ef426cc27360b61ca62c1914cd7b7bfe84a63233256e",
+          "evaluation_source_snapshot/train_zero_gated_residual_v7.py": "9878b9d2c6f769624ba3889ea43797eacd02b203f65d8dcb3d765d90b1f9636e",
+          "evaluation_source_snapshot/state_zero_gated_eval_runtime_v7.py": "caadc319e816bdb3c00b5a744b71fbaf7c5f60ffd2d8f1893593fe441767b66b",
+          "evaluation_source_snapshot/evaluate_state_zero_gated_v7.py": "6cda789c883a171d565b3a47d5ca5901ad9b4945221b281024eae7f66405b7f0",
+          "source_snapshot/collect_left_dagger_baseline_v3.py": "b87d0b1ac0c34e5b5c79678b068c9f55df5fa6baf0c5d0da5a231ff9976ea0e6",
+          "source_snapshot/collect_left_dagger_draft_v1.py": "fc5dc17bc0f08a4fee1d468ed0b53dec6a6549083cbb7f86827dce96705ac6bf",
+          "source_snapshot/opposition_teacher.py": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1",
+          "source_snapshot/joint_safety.py": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887",
+          "source_snapshot/elbow_audit.py": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9",
+          "source_snapshot/palm_handover.py": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f",
+          "source_snapshot/finger_contact_audit.py": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0",
+          "source_snapshot/elbow_gate.py": "6473a2deec9034d4fa57079fe917d248c40db68f9768001456474bdc8eb6c526",
+          "source_snapshot/tilt_regrasp.py": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1",
+          "source_snapshot/isaac_compat.py": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825",
+          "source_snapshot/palm_handover_audit.py": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1",
+          "source_snapshot/dagger_projected_collection_v3.py": "268653ef77b2b500d5299ebb377a6311f98ed9d5199f0b345795b26a92669a33",
+          "source_snapshot/opposition_feedback.py": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883",
+          "source_snapshot/self_contact_audit.py": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c",
+          "source_snapshot/layer_turn_metrics.py": "c7fc5438c29c20632ad774c7f541d293e5f411ca8fff1454c830989536e1ccb4",
+          "source_snapshot/left_contact_dagger_schema_v1.json": "164d991f6e05f34a6101d28ea764cfa8428ae5a2692f34ac151335345b2f8ce2",
+          "source_snapshot/dynamic_cube.py": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de",
+          "source_snapshot/phase_contact_policy.py": "5db8beb4f0dc86d4b6105669ee8da2fee93b319e2ba468a6c0c2c5b21dc94045",
+          "source_snapshot/tilt_audit.py": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995",
+          "source_snapshot/wrist_audit.py": "e0dcf531d4f9e74cce3293ff2f954486fd1277609a832becdcefbd4b4e36398f",
+          "source_snapshot/runtime_platform.py": "c08829cde5986256dab4f5448edcecbf8932a3100ed7fab7dbdf0ad2f895772f",
+          "source_snapshot/articulated_cube_env.py": "dfad0023f9e2797d6ea8ea3ac08aa1b6889b7dbb4ff8398cd0ca11fa329bc707",
+          "source_snapshot/environment.py": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7",
+          "source_snapshot/opposition_grasp_v20.json": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a",
+          "source_snapshot/proximal_planner.py": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16",
+          "source_snapshot/palm_contact_audit.py": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184",
+          "source_snapshot/kinematics.py": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212",
+          "source_snapshot/elbow_handover.py": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e",
+          "source_snapshot/wrist_direction.py": "0aa5858caf39dabbd92af4396370121de30dc673675a5c24f11ca8ff0c0c0ed5",
+          "source_snapshot/left_dagger_baseline_runtime_v3.py": "49af4b8a660c115a2f3d29826b25d1b5c176e24208dae692838b46398834a516",
+          "source_snapshot/dagger_collection_core_v1.py": "6d4b2a635f98b563c10388153e4116054eb03a383e898ae7c36d572c9b182411",
+          "source_snapshot/phase_basis_policy_v4.py": "5d4dc98bf0dfc156dbcdd7fd9d3923f475573d03bc46df1e6c1d317625d8a327",
+          "source_snapshot/tilt_collision_plan.py": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd",
+          "source_snapshot/config.json": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4"
+        },
+        "checkpoint_sha256": {
+          "evaluated_policy.pt": "10afd5a60ec587eb040068a520dad171ce412d681d2ff46251ae74b8ea84e7bb",
+          "frozen_v4_baseline.pt": "d2493b00df27b8d84ae69da3b399b3beb926b77fdd87a9b51aa6a2b1b23a36a4"
+        },
+        "plan_sha256": {
+          "pickup_fc213888d36eed04e927d5fb24cfede3d575b645e384135b13313bf20ecef1e2.json": "fc213888d36eed04e927d5fb24cfede3d575b645e384135b13313bf20ecef1e2"
+        },
+        "physics_family_sha256": "b2f9feb645c8d92e2da3bb78653165292a5649e59864dee4b1de82e904854192",
+        "evaluation_semantics_proof": {
+          "policy_version": "v7",
+          "runtime_sha256": "caadc319e816bdb3c00b5a744b71fbaf7c5f60ffd2d8f1893593fe441767b66b",
+          "entry_sha256": "6cda789c883a171d565b3a47d5ca5901ad9b4945221b281024eae7f66405b7f0",
+          "runtime_after_only_policy_routing_rename_sha256": "90a1ef7d5d8cfdebd5e05df5ec598d48cea7ae7bcfaf145a357d61a5e7727d64",
+          "same_original_physics_step_projection_right_action_query_order_gates_termination_and_audit": true,
+          "reviewed_checkpoint_sha256": "10afd5a60ec587eb040068a520dad171ce412d681d2ff46251ae74b8ea84e7bb",
+          "reviewed_qualification_sha256": "9dc17535d63a0a7667b1b3aca1853421e6d0a5b8dbf44560462611130582474f",
+          "reviewed_training_authorization_sha256": "9e0e019bc579812dd1265c598e7be4cc63f06f202d558f8ab2298a112b06e324",
+          "checkpoint_frozen_baseline_and_control_buffers_verified": true,
+          "source_snapshot_resolutions": {
+            "phase_residual_policy_v5.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_seed20261105_eval_9501_20261104_v2/evaluation_source_snapshot/phase_residual_policy_v5.py",
+                "sha256": "5bb033710c18c21310b526d539251794a37efb31a2f139a68b052983c363f412"
+              }
+            ],
+            "dagger_residual_dataset_v5.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_seed20261105_eval_9501_20261104_v2/evaluation_source_snapshot/dagger_residual_dataset_v5.py",
+                "sha256": "69c1cef251a4180f9839a2fc27ecbb738ce6f87828d5a9bc513a19aa40621cb1"
+              }
+            ],
+            "phase_basis_policy_v4.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_seed20261105_eval_9501_20261104_v2/source_snapshot/phase_basis_policy_v4.py",
+                "sha256": "5d4dc98bf0dfc156dbcdd7fd9d3923f475573d03bc46df1e6c1d317625d8a327"
+              }
+            ],
+            "phase_contact_policy.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_seed20261105_eval_9501_20261104_v2/source_snapshot/phase_contact_policy.py",
+                "sha256": "5db8beb4f0dc86d4b6105669ee8da2fee93b319e2ba468a6c0c2c5b21dc94045"
+              }
+            ],
+            "dagger_collection_core_v1.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_seed20261105_eval_9501_20261104_v2/source_snapshot/dagger_collection_core_v1.py",
+                "sha256": "6d4b2a635f98b563c10388153e4116054eb03a383e898ae7c36d572c9b182411"
+              }
+            ],
+            "dagger_projected_collection_v3.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_seed20261105_eval_9501_20261104_v2/source_snapshot/dagger_projected_collection_v3.py",
+                "sha256": "268653ef77b2b500d5299ebb377a6311f98ed9d5199f0b345795b26a92669a33"
+              }
+            ],
+            "train_phase_residual_v5.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_seed20261105_eval_9501_20261104_v2/evaluation_source_snapshot/train_phase_residual_v5.py",
+                "sha256": "74cc6077ae7bb135260b9fc1f4c0c99765653af8dd243301563e61808a027a6d"
+              }
+            ],
+            "phase_gated_residual_policy_v6.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_seed20261105_eval_9501_20261104_v2/evaluation_source_snapshot/phase_gated_residual_policy_v6.py",
+                "sha256": "874d82a6ffff395868260f48530b6fa0cfd20111cd133b827ad4809ed4967063"
+              }
+            ],
+            "eval_prefix_dataset_v6.py": [
+              {
+                "scope": "qualified_training_history_transitive_source",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_phase_gated_residual_v6_eval_9501_20261104/evaluation_source_snapshot/eval_prefix_dataset_v6.py",
+                "sha256": "7dfc8f417daeb6916054a96cb5112d78295057d85fb2f43df4d76a267587f0bf",
+                "training_artifact_manifest_sha256": "d08a6bacf5d2a242489c062c3a77ae44e3c1dc190d0a98088323808a76f585f5"
+              },
+              {
+                "scope": "qualified_training_history_transitive_source",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_phase_gated_residual_v6_long_eval_9501_20261104/evaluation_source_snapshot/eval_prefix_dataset_v6.py",
+                "sha256": "7dfc8f417daeb6916054a96cb5112d78295057d85fb2f43df4d76a267587f0bf",
+                "training_artifact_manifest_sha256": "f306eed599ff5a86adb253c06f0342d6e057331e506525dcb9b985352690e2fe"
+              }
+            ],
+            "train_phase_gated_residual_v6.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_seed20261105_eval_9501_20261104_v2/evaluation_source_snapshot/train_phase_gated_residual_v6.py",
+                "sha256": "0ca6cc266e1f4275411f70ea75800cdbf97bf7c604565d88b12afc30a753b5b3"
+              }
+            ],
+            "eval_prefix_dataset_v7.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_seed20261105_eval_9501_20261104_v2/evaluation_source_snapshot/eval_prefix_dataset_v7.py",
+                "sha256": "61c6b43cf0b2af18144723f6f3b2587dea04299feb75611e1a09c7c073b67883"
+              }
+            ],
+            "zero_gated_residual_policy_v7.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_seed20261105_eval_9501_20261104_v2/evaluation_source_snapshot/zero_gated_residual_policy_v7.py",
+                "sha256": "714c7d6b6ca151afa052ef426cc27360b61ca62c1914cd7b7bfe84a63233256e"
+              }
+            ],
+            "inspect_residual_dataset_v7.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_seed20261105_eval_9501_20261104_v2/evaluation_source_snapshot/inspect_residual_dataset_v7.py",
+                "sha256": "ad88eb44646887898082e3b500db8e9d43f0ab1bc3eb8a71ab53f1f9f6f0c511"
+              }
+            ],
+            "train_zero_gated_residual_v7.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_seed20261105_eval_9501_20261104_v2/evaluation_source_snapshot/train_zero_gated_residual_v7.py",
+                "sha256": "9878b9d2c6f769624ba3889ea43797eacd02b203f65d8dcb3d765d90b1f9636e"
+              }
+            ]
+          },
+          "admitted_outcome_scope": "completed_failed_eval_safe_prefix_only_original_false_flags_preserved"
+        }
+      },
+      "eligible_frames": 752,
+      "unexecuted_abort_excluded": [
+        {
+          "step": 752,
+          "reason": "contact_topology_or_settle_timeout",
+          "type": "unexecuted_abort_no_label"
+        }
+      ],
+      "original_failure": "contact_topology_or_settle_timeout",
+      "actual_full_history_actor_replay_bitwise": true,
+      "all_original_episode_claim_flags_retained": {
+        "eligible_training_episode": false,
+        "runtime_bridge_validated": false,
+        "pure_student_episode_claim": false,
+        "corrective_labels_qualified_for_training": false,
+        "original_wrist_gate_qualified": false,
+        "failure": "contact_topology_or_settle_timeout",
+        "collection_mode": "closed_loop_policy_evaluation_no_left_teacher_takeover"
+      }
+    },
+    {
+      "run": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_long_eval_9501_20261104",
+      "checkpoint_sha256": "a7efd54313d40c8991e8c468c4312442501ba71b9a4d427170318bcfd29a99ee",
+      "evidence": {
+        "consumer_schema": "trusted_completed_eval_bc_candidate_registry_v1",
+        "directory": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_long_eval_9501_20261104",
+        "artifact_manifest_sha256": "dcbce99dca42f3babbf5c304dc07cb53e19e338de1f5d286487f85e5ed943768",
+        "files_sha256": {
+          "result.json": "1a3ac8824fcb29d62ff506dea5749303432d4d27605565e6eade8940bd1c952b",
+          "reviewed_transition_qualification.json": "9dc17535d63a0a7667b1b3aca1853421e6d0a5b8dbf44560462611130582474f",
+          "projection_parameters.json": "890108362592dd288cfb1c5bee8eb824645043ed7be0733ada40adf9cb67da66",
+          "evaluation_preflight.json": "ce390aa610da1fcb479f53847f53b6c6d719ac3c24be5ad0882088c4338336dc",
+          "trajectory.jsonl": "db17bbecd35cc9262d4dc7587e42238806160911e92662358d4c0939e70c455d",
+          "dynamic_training_scene.usda": "ff16e3e8af8e8e2e0c0f7ff240a2b2f1d688a9c1b3560ff2230033742096c6f8",
+          "config.json": "d3c6084f638ed96ea299dbf76c386537051d3857c61675ddfc4abd5e9d925ae1",
+          "reviewed_training_authorization.json": "9cdd48132d73447ad6c85ec6bebdf0b399b381e69e0d1a447d3688d3178ed9c9",
+          "evaluation_protocol.json": "ba92cb135d357c52638fab7964b5a7c7f8a92dfa5581d410837c029f047e428f",
+          "asset_contract.json": "3367c3d471d25bb668b2f67fb9eca3ba34a28328b967ffbb63aef39cf1a365c7",
+          "evaluation_transitions.jsonl": "8da3ff913e61eaa2c3b3efe615b2ad76af2566d48c51032197e7057ef938550a",
+          "runtime_protocol.json": "7b3586b47fe5b41268a3852a512268c61dc77508f73752d6561e2866ea81e8d9",
+          "initial_state.json": "9a7c759eb84012d21924c47e2583e3bc60badaed2239608d026b6d95e785c5f3",
+          "trajectory.json": "dd82e454724490ac8da5442fccea848d3d2c832b38d2aa5f37d6a28d077b7588",
+          "physics_identity.json": "537007f3847c6acf8285115214d223bec27c131c4c87ab6ccb67e0635a5e74ba"
+        },
+        "source_snapshot_sha256": {
+          "evaluation_source_snapshot/phase_residual_policy_v5.py": "5bb033710c18c21310b526d539251794a37efb31a2f139a68b052983c363f412",
+          "evaluation_source_snapshot/train_phase_residual_v5.py": "74cc6077ae7bb135260b9fc1f4c0c99765653af8dd243301563e61808a027a6d",
+          "evaluation_source_snapshot/dagger_residual_dataset_v5.py": "69c1cef251a4180f9839a2fc27ecbb738ce6f87828d5a9bc513a19aa40621cb1",
+          "evaluation_source_snapshot/phase_gated_residual_policy_v6.py": "874d82a6ffff395868260f48530b6fa0cfd20111cd133b827ad4809ed4967063",
+          "evaluation_source_snapshot/train_phase_gated_residual_v6.py": "0ca6cc266e1f4275411f70ea75800cdbf97bf7c604565d88b12afc30a753b5b3",
+          "evaluation_source_snapshot/eval_prefix_dataset_v7.py": "61c6b43cf0b2af18144723f6f3b2587dea04299feb75611e1a09c7c073b67883",
+          "evaluation_source_snapshot/inspect_residual_dataset_v7.py": "ad88eb44646887898082e3b500db8e9d43f0ab1bc3eb8a71ab53f1f9f6f0c511",
+          "evaluation_source_snapshot/zero_gated_residual_policy_v7.py": "714c7d6b6ca151afa052ef426cc27360b61ca62c1914cd7b7bfe84a63233256e",
+          "evaluation_source_snapshot/train_zero_gated_residual_v7.py": "9878b9d2c6f769624ba3889ea43797eacd02b203f65d8dcb3d765d90b1f9636e",
+          "evaluation_source_snapshot/state_zero_gated_eval_runtime_v7.py": "caadc319e816bdb3c00b5a744b71fbaf7c5f60ffd2d8f1893593fe441767b66b",
+          "evaluation_source_snapshot/evaluate_state_zero_gated_v7.py": "6cda789c883a171d565b3a47d5ca5901ad9b4945221b281024eae7f66405b7f0",
+          "source_snapshot/palm_handover_audit.py": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1",
+          "source_snapshot/phase_contact_policy.py": "5db8beb4f0dc86d4b6105669ee8da2fee93b319e2ba468a6c0c2c5b21dc94045",
+          "source_snapshot/wrist_audit.py": "e0dcf531d4f9e74cce3293ff2f954486fd1277609a832becdcefbd4b4e36398f",
+          "source_snapshot/self_contact_audit.py": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c",
+          "source_snapshot/tilt_audit.py": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995",
+          "source_snapshot/collect_left_dagger_baseline_v3.py": "b87d0b1ac0c34e5b5c79678b068c9f55df5fa6baf0c5d0da5a231ff9976ea0e6",
+          "source_snapshot/tilt_regrasp.py": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1",
+          "source_snapshot/articulated_cube_env.py": "dfad0023f9e2797d6ea8ea3ac08aa1b6889b7dbb4ff8398cd0ca11fa329bc707",
+          "source_snapshot/dagger_collection_core_v1.py": "6d4b2a635f98b563c10388153e4116054eb03a383e898ae7c36d572c9b182411",
+          "source_snapshot/opposition_grasp_v20.json": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a",
+          "source_snapshot/elbow_audit.py": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9",
+          "source_snapshot/environment.py": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7",
+          "source_snapshot/left_dagger_baseline_runtime_v3.py": "49af4b8a660c115a2f3d29826b25d1b5c176e24208dae692838b46398834a516",
+          "source_snapshot/config.json": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+          "source_snapshot/dynamic_cube.py": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de",
+          "source_snapshot/joint_safety.py": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887",
+          "source_snapshot/elbow_handover.py": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e",
+          "source_snapshot/layer_turn_metrics.py": "c7fc5438c29c20632ad774c7f541d293e5f411ca8fff1454c830989536e1ccb4",
+          "source_snapshot/opposition_teacher.py": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1",
+          "source_snapshot/dagger_projected_collection_v3.py": "268653ef77b2b500d5299ebb377a6311f98ed9d5199f0b345795b26a92669a33",
+          "source_snapshot/isaac_compat.py": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825",
+          "source_snapshot/runtime_platform.py": "c08829cde5986256dab4f5448edcecbf8932a3100ed7fab7dbdf0ad2f895772f",
+          "source_snapshot/collect_left_dagger_draft_v1.py": "fc5dc17bc0f08a4fee1d468ed0b53dec6a6549083cbb7f86827dce96705ac6bf",
+          "source_snapshot/opposition_feedback.py": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883",
+          "source_snapshot/phase_basis_policy_v4.py": "5d4dc98bf0dfc156dbcdd7fd9d3923f475573d03bc46df1e6c1d317625d8a327",
+          "source_snapshot/elbow_gate.py": "6473a2deec9034d4fa57079fe917d248c40db68f9768001456474bdc8eb6c526",
+          "source_snapshot/palm_handover.py": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f",
+          "source_snapshot/left_contact_dagger_schema_v1.json": "164d991f6e05f34a6101d28ea764cfa8428ae5a2692f34ac151335345b2f8ce2",
+          "source_snapshot/proximal_planner.py": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16",
+          "source_snapshot/kinematics.py": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212",
+          "source_snapshot/palm_contact_audit.py": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184",
+          "source_snapshot/tilt_collision_plan.py": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd",
+          "source_snapshot/finger_contact_audit.py": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0",
+          "source_snapshot/wrist_direction.py": "0aa5858caf39dabbd92af4396370121de30dc673675a5c24f11ca8ff0c0c0ed5"
+        },
+        "checkpoint_sha256": {
+          "evaluated_policy.pt": "a7efd54313d40c8991e8c468c4312442501ba71b9a4d427170318bcfd29a99ee",
+          "frozen_v4_baseline.pt": "d2493b00df27b8d84ae69da3b399b3beb926b77fdd87a9b51aa6a2b1b23a36a4"
+        },
+        "plan_sha256": {
+          "pickup_fc213888d36eed04e927d5fb24cfede3d575b645e384135b13313bf20ecef1e2.json": "fc213888d36eed04e927d5fb24cfede3d575b645e384135b13313bf20ecef1e2"
+        },
+        "physics_family_sha256": "b2f9feb645c8d92e2da3bb78653165292a5649e59864dee4b1de82e904854192",
+        "evaluation_semantics_proof": {
+          "policy_version": "v7",
+          "runtime_sha256": "caadc319e816bdb3c00b5a744b71fbaf7c5f60ffd2d8f1893593fe441767b66b",
+          "entry_sha256": "6cda789c883a171d565b3a47d5ca5901ad9b4945221b281024eae7f66405b7f0",
+          "runtime_after_only_policy_routing_rename_sha256": "90a1ef7d5d8cfdebd5e05df5ec598d48cea7ae7bcfaf145a357d61a5e7727d64",
+          "same_original_physics_step_projection_right_action_query_order_gates_termination_and_audit": true,
+          "reviewed_checkpoint_sha256": "a7efd54313d40c8991e8c468c4312442501ba71b9a4d427170318bcfd29a99ee",
+          "reviewed_qualification_sha256": "9dc17535d63a0a7667b1b3aca1853421e6d0a5b8dbf44560462611130582474f",
+          "reviewed_training_authorization_sha256": "9cdd48132d73447ad6c85ec6bebdf0b399b381e69e0d1a447d3688d3178ed9c9",
+          "checkpoint_frozen_baseline_and_control_buffers_verified": true,
+          "source_snapshot_resolutions": {
+            "phase_residual_policy_v5.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_long_eval_9501_20261104/evaluation_source_snapshot/phase_residual_policy_v5.py",
+                "sha256": "5bb033710c18c21310b526d539251794a37efb31a2f139a68b052983c363f412"
+              }
+            ],
+            "dagger_residual_dataset_v5.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_long_eval_9501_20261104/evaluation_source_snapshot/dagger_residual_dataset_v5.py",
+                "sha256": "69c1cef251a4180f9839a2fc27ecbb738ce6f87828d5a9bc513a19aa40621cb1"
+              }
+            ],
+            "phase_basis_policy_v4.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_long_eval_9501_20261104/source_snapshot/phase_basis_policy_v4.py",
+                "sha256": "5d4dc98bf0dfc156dbcdd7fd9d3923f475573d03bc46df1e6c1d317625d8a327"
+              }
+            ],
+            "phase_contact_policy.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_long_eval_9501_20261104/source_snapshot/phase_contact_policy.py",
+                "sha256": "5db8beb4f0dc86d4b6105669ee8da2fee93b319e2ba468a6c0c2c5b21dc94045"
+              }
+            ],
+            "dagger_collection_core_v1.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_long_eval_9501_20261104/source_snapshot/dagger_collection_core_v1.py",
+                "sha256": "6d4b2a635f98b563c10388153e4116054eb03a383e898ae7c36d572c9b182411"
+              }
+            ],
+            "dagger_projected_collection_v3.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_long_eval_9501_20261104/source_snapshot/dagger_projected_collection_v3.py",
+                "sha256": "268653ef77b2b500d5299ebb377a6311f98ed9d5199f0b345795b26a92669a33"
+              }
+            ],
+            "train_phase_residual_v5.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_long_eval_9501_20261104/evaluation_source_snapshot/train_phase_residual_v5.py",
+                "sha256": "74cc6077ae7bb135260b9fc1f4c0c99765653af8dd243301563e61808a027a6d"
+              }
+            ],
+            "phase_gated_residual_policy_v6.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_long_eval_9501_20261104/evaluation_source_snapshot/phase_gated_residual_policy_v6.py",
+                "sha256": "874d82a6ffff395868260f48530b6fa0cfd20111cd133b827ad4809ed4967063"
+              }
+            ],
+            "eval_prefix_dataset_v6.py": [
+              {
+                "scope": "qualified_training_history_transitive_source",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_phase_gated_residual_v6_eval_9501_20261104/evaluation_source_snapshot/eval_prefix_dataset_v6.py",
+                "sha256": "7dfc8f417daeb6916054a96cb5112d78295057d85fb2f43df4d76a267587f0bf",
+                "training_artifact_manifest_sha256": "d08a6bacf5d2a242489c062c3a77ae44e3c1dc190d0a98088323808a76f585f5"
+              },
+              {
+                "scope": "qualified_training_history_transitive_source",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_phase_gated_residual_v6_long_eval_9501_20261104/evaluation_source_snapshot/eval_prefix_dataset_v6.py",
+                "sha256": "7dfc8f417daeb6916054a96cb5112d78295057d85fb2f43df4d76a267587f0bf",
+                "training_artifact_manifest_sha256": "f306eed599ff5a86adb253c06f0342d6e057331e506525dcb9b985352690e2fe"
+              }
+            ],
+            "train_phase_gated_residual_v6.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_long_eval_9501_20261104/evaluation_source_snapshot/train_phase_gated_residual_v6.py",
+                "sha256": "0ca6cc266e1f4275411f70ea75800cdbf97bf7c604565d88b12afc30a753b5b3"
+              }
+            ],
+            "eval_prefix_dataset_v7.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_long_eval_9501_20261104/evaluation_source_snapshot/eval_prefix_dataset_v7.py",
+                "sha256": "61c6b43cf0b2af18144723f6f3b2587dea04299feb75611e1a09c7c073b67883"
+              }
+            ],
+            "zero_gated_residual_policy_v7.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_long_eval_9501_20261104/evaluation_source_snapshot/zero_gated_residual_policy_v7.py",
+                "sha256": "714c7d6b6ca151afa052ef426cc27360b61ca62c1914cd7b7bfe84a63233256e"
+              }
+            ],
+            "inspect_residual_dataset_v7.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_long_eval_9501_20261104/evaluation_source_snapshot/inspect_residual_dataset_v7.py",
+                "sha256": "ad88eb44646887898082e3b500db8e9d43f0ab1bc3eb8a71ab53f1f9f6f0c511"
+              }
+            ],
+            "train_zero_gated_residual_v7.py": [
+              {
+                "scope": "actual_evaluation",
+                "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_long_eval_9501_20261104/evaluation_source_snapshot/train_zero_gated_residual_v7.py",
+                "sha256": "9878b9d2c6f769624ba3889ea43797eacd02b203f65d8dcb3d765d90b1f9636e"
+              }
+            ]
+          },
+          "admitted_outcome_scope": "completed_failed_eval_safe_prefix_only_original_false_flags_preserved"
+        }
+      },
+      "eligible_frames": 752,
+      "unexecuted_abort_excluded": [
+        {
+          "step": 752,
+          "reason": "contact_topology_or_settle_timeout",
+          "type": "unexecuted_abort_no_label"
+        }
+      ],
+      "original_failure": "contact_topology_or_settle_timeout",
+      "actual_full_history_actor_replay_bitwise": true,
+      "all_original_episode_claim_flags_retained": {
+        "eligible_training_episode": false,
+        "runtime_bridge_validated": false,
+        "pure_student_episode_claim": false,
+        "corrective_labels_qualified_for_training": false,
+        "original_wrist_gate_qualified": false,
+        "failure": "contact_topology_or_settle_timeout",
+        "collection_mode": "closed_loop_policy_evaluation_no_left_teacher_takeover"
+      }
+    }
+  ],
+  "source_review": {
+    "one_explicit_admission_hook_only": true,
+    "all_existing_load_run_predicates_ast_retained": true,
+    "private_module_instances_no_global_monkeypatch": true,
+    "exact_registry_checkpoint_qualification_authorization_pairs": true,
+    "canonical_frozen_loader_buffers_and_baseline_binding": true,
+    "actual_actor_and_features_are_identical_to_frozen_engine_aliases": true,
+    "source_dependency_resolution_in_qualified_history_is_hash_bound_and_path_constrained": true,
+    "v7_neural_success_not_admitted_as_v4_success": true,
+    "unexecuted_abort_not_added_as_supervision": true
+  },
+  "decision": "No blocking source or tested-integrity finding for this immutable registry candidate. Returned rows remain BC candidates requiring separate V8 qualification.",
+  "training_qualification_granted": false,
+  "new_training_started": false,
+  "simulation_started": false,
+  "original_evaluation_results_modified": false
+}
