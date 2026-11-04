@@ -1,0 +1,17 @@
+{
+  "status": "paired_probe_passed_pending_integration_validation",
+  "sequential_processes": true,
+  "probe_sha256": "bea19566ff4071dd26882f578703995ed7a74856f3218507fe9b3df8bee77881",
+  "phases": [
+    {
+      "phase": "baseline",
+      "returncode": 0,
+      "result": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/articulation_floor_contact_probe_v2_20261103/baseline/result.json"
+    },
+    {
+      "phase": "articulation",
+      "returncode": 0,
+      "result": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/articulation_floor_contact_probe_v2_20261103/articulation/result.json"
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "scope": "offline trajectory diagnosis, not recovered contact or physics success",
+  "runs": {
+    "11": {
+      "run": "teacher_joint_soft_fingers_v11_20261103",
+      "trajectory_sha256": "544eeb682039fccb1490f8d413fe24c304bfc3f280450d7199642d23e2524d44",
+      "before_right_close_step": 2929,
+      "final_hold_step": 3201,
+      "first_ring_loss_step": null,
+      "ring_raw_impulse_before_Ns": 0.006214265919447638,
+      "ring_raw_impulse_final_Ns": 0.0066377064025716385,
+      "left_ring_targets_rad": {
+        "left_ring_MPR_joint": -0.04642563313245773,
+        "left_ring_MCP_joint": 0.578438401222229,
+        "left_ring_PIP_joint": 0.48285090923309326,
+        "left_ring_DIP_joint": 0.9755196571350098
+      },
+      "before_contact_core_local_m": [
+        0.0284600565349935,
+        0.019970596228556334,
+        0.018611534805065215
+      ],
+      "cube_displacement_in_before_cube_frame_mm": [
+        -0.17667768211806764,
+        -0.6376149112478473,
+        -0.25430777198082977
+      ],
+      "calibrated_pad_anchor_link_m": [
+        0.006949547100855304,
+        0.005244118343944141,
+        0.021918353602935703
+      ],
+      "original_contact_at_final_corner_frame_m": [
+        0.02850020025203065,
+        0.019977875624174884,
+        0.018525078724542694
+      ],
+      "final_corner_surface_gap_um": 0.2002520306486344,
+      "point_derivatives_mm_per_001rad": {
+        "left_ring_MPR_joint": [
+          0.009442234945367745,
+          -0.0474191150784826,
+          0.024368039349497158
+        ],
+        "left_ring_MCP_joint": [
+          -0.06589858862794458,
+          -0.023698902420698588,
+          -0.03428760469193977
+        ],
+        "left_ring_PIP_joint": [
+          -0.042302659808540394,
+          -0.0035200534729552197,
+          0.00100876060883439
+        ],
+        "left_ring_DIP_joint": [
+          -0.017416212974392543,
+          0.005495113816637974,
+          0.014086008226848076
+        ]
+      },
+      "left_ring_missing_hold_frames": 0
+    },
+    "12": {
+      "run": "teacher_joint_passive_damping_v12_20261103",
+      "trajectory_sha256": "2e79815c673407e0daf9378455985dba1afb405760d5bddb5232ab24121b8833",
+      "before_right_close_step": 2902,
+      "final_hold_step": 3174,
+      "first_ring_loss_step": 3015,
+      "ring_raw_impulse_before_Ns": 0.0068726290039585036,
+      "ring_raw_impulse_final_Ns": 0,
+      "left_ring_targets_rad": {
+        "left_ring_MPR_joint": -0.04642563313245773,
+        "left_ring_MCP_joint": 0.4884384870529175,
+        "left_ring_PIP_joint": 0.5728508234024048,
+        "left_ring_DIP_joint": 1.0655195713043213
+      },
+      "before_contact_core_local_m": [
+        0.02846982007132197,
+        0.022629999593640183,
+        0.022943669223493713
+      ],
+      "cube_displacement_in_before_cube_frame_mm": [
+        -0.02030491024140583,
+        -0.6005286650342005,
+        -0.4353405657614657
+      ],
+      "calibrated_pad_anchor_link_m": [
+        0.006949282808566888,
+        0.005243081551504015,
+        0.021920565246015686
+      ],
+      "original_contact_at_final_corner_frame_m": [
+        0.028578852482205305,
+        0.022642021985648443,
+        0.022953669249312105
+      ],
+      "final_corner_surface_gap_um": 78.85248220530424,
+      "point_derivatives_mm_per_001rad": {
+        "left_ring_MPR_joint": [
+          0.009993146353104103,
+          -0.04837103668834315,
+          0.023460389417249573
+        ],
+        "left_ring_MCP_joint": [
+          -0.06143422549636072,
+          -0.02280351996814708,
+          -0.034013281997281486
+        ],
+        "left_ring_PIP_joint": [
+          -0.040824384030893494,
+          -0.0027501047510305673,
+          0.003173841823258998
+        ],
+        "left_ring_DIP_joint": [
+          -0.015639729819230088,
+          0.0059926739538372345,
+          0.015859262404073638
+        ]
+      },
+      "left_ring_missing_hold_frames": 121
+    },
+    "13": {
+      "run": "teacher_joint_paced_passive_v13_20261103",
+      "trajectory_sha256": "1533339276c84b22c50f8de279f27d74d049b68b71aa1588f5409e083bdc2389",
+      "before_right_close_step": 2902,
+      "final_hold_step": 3174,
+      "first_ring_loss_step": 3020,
+      "ring_raw_impulse_before_Ns": 0.0068726290039585036,
+      "ring_raw_impulse_final_Ns": 0,
+      "left_ring_targets_rad": {
+        "left_ring_MPR_joint": -0.04642563313245773,
+        "left_ring_MCP_joint": 0.4884384870529175,
+        "left_ring_PIP_joint": 0.5728508234024048,
+        "left_ring_DIP_joint": 1.0655195713043213
+      },
+      "before_contact_core_local_m": [
+        0.02846982007132197,
+        0.022629999593640183,
+        0.022943669223493713
+      ],
+      "cube_displacement_in_before_cube_frame_mm": [
+        -0.015542317394398741,
+        -0.6006787201761901,
+        -0.4538150300943647
+      ],
+      "calibrated_pad_anchor_link_m": [
+        0.006949282808566888,
+        0.005243081551504015,
+        0.021920565246015686
+      ],
+      "original_contact_at_final_corner_frame_m": [
+        0.028521498097573067,
+        0.022638459597087747,
+        0.022915950254156256
+      ],
+      "final_corner_surface_gap_um": 21.498097573065948,
+      "point_derivatives_mm_per_001rad": {
+        "left_ring_MPR_joint": [
+          0.01004902669283062,
+          -0.048331591765528245,
+          0.02351821135836454
+        ],
+        "left_ring_MCP_joint": [
+          -0.061393401628131436,
+          -0.022922367658413552,
+          -0.03400709726121555
+        ],
+        "left_ring_PIP_joint": [
+          -0.040821908651948256,
+          -0.0028000051476495215,
+          0.0031640126070689055
+        ],
+        "left_ring_DIP_joint": [
+          -0.015652709408080664,
+          0.005990023616515601,
+          0.015847454028944
+        ]
+      },
+      "left_ring_missing_hold_frames": 121
+    }
+  },
+  "source_sha256": {
+    "kinematics.py": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212",
+    "tilt_audit.py": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995",
+    "palm_handover_audit.py": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1"
+  },
+  "candidate": {
+    "joint": "left_ring_PIP_joint",
+    "offset_rad": [
+      0,
+      0.004
+    ],
+    "step_rad": 5e-05,
+    "minimum_impulse_Ns": 0.0005,
+    "maximum_impulse_Ns": 0.002,
+    "required_validation": "full right path including feedback envelope with unchanged self/torso/non-target-layer/cube penetration thresholds; complete PhysX run; no success claim from FK alone"
+  },
+  "scope_boundary": "v13 support candidate only. Root reports v14 undamped paced trial stalled with left index loss; extending index feedback would be a distinct later change requiring its own full collision envelope and physics validation. It is not implemented or claimed solved here."
+}

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks_equal": true,
+  "phase_names_equal": true,
+  "all_phase_points_exact_match": true,
+  "turn_angles_exact_match": true,
+  "full_plan_elapsed_s": 56.03617206600029,
+  "validation_elapsed_s": 15.778476746985689,
+  "result_sha256": "875d31a455fd1f154854f5fb1facbddb3a63c0e1afd172d42b7a53d5ed9ddce9"
+}

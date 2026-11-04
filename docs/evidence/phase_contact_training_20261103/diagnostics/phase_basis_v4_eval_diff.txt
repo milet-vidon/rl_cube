@@ -1,0 +1,41 @@
+--- evaluate_phase_expert_v3.py
++++ evaluate_phase_basis_v4.py
+@@ -1,4 +1,4 @@
+-"""Development PhysX evaluation: neural left residuals, fixed phase/right schedule.
++"""Development PhysX evaluation: full-frame compressed neural left trajectory, fixed phase/right schedule.
+ 
+ No teacher left target or reference left state enters policy inference. This does
+ not evaluate right turns or promote any stage gate.
+@@ -10,17 +10,17 @@
+ def main():
+     p=argparse.ArgumentParser();p.add_argument('--checkpoint',type=Path,required=True);p.add_argument('--source',type=Path,required=True);p.add_argument('--output',type=Path,required=True);p.add_argument('--seed',type=int,required=True);a=p.parse_args()
+     import torch
+-    from phase_expert_policy_v3 import accepted_prefix,phase_progress,features,restored,sha,SCHEMA
++    from phase_basis_policy_v4 import accepted_prefix,phase_progress,features,restored,sha,SCHEMA
+     rows,names,left,source=accepted_prefix(a.source);saved=torch.load(a.checkpoint,map_location='cpu',weights_only=True);meta=saved['metadata']
+     if meta['schema']!=SCHEMA or meta['joint_names']!=names or meta['output_indices']!=left:raise ValueError('Checkpoint schema mismatch')
+     if source['seed']!=a.seed:raise ValueError('Phase/right schedule seed mismatch')
+     if not any(s['manifest_sha256']==source['manifest_sha256'] for s in meta['sources']):raise ValueError('Checkpoint source mismatch')
+-    if any(meta['source_sha256'][n]!=sha(Path(__file__).parent/n) for n in ('phase_contact_policy.py','phase_expert_policy_v3.py')):raise ValueError('Policy source changed after training')
++    if any(meta['source_sha256'][n]!=sha(Path(__file__).parent/n) for n in ('phase_contact_policy.py','phase_basis_policy_v4.py')):raise ValueError('Policy source changed after training')
+     manifest=json.loads((a.source/'artifact_manifest.json').read_text())
+     if sha(a.source/'center_request.json')!=manifest['sha256']['center_request.json']:raise ValueError('Center coordination request hash mismatch')
+     protocol=json.loads((a.source/'center_request.json').read_text())['coordination_protocol']
+     a.output.mkdir(parents=True,exist_ok=False);snapshot=a.output/'source_snapshot';snapshot.mkdir()
+-    sources=set(json.loads((a.source/'experiment.json').read_text()).get('source_sha256',{}));sources.update(('evaluate_phase_expert_v3.py','phase_contact_policy.py','phase_expert_policy_v3.py','center_j56_audit.py'))
++    sources=set(json.loads((a.source/'experiment.json').read_text()).get('source_sha256',{}));sources.update(('evaluate_phase_basis_v4.py','phase_contact_policy.py','phase_basis_policy_v4.py','center_j56_audit.py'))
+     source_hashes={}
+     for n in sorted(sources):shutil.copy2(Path(__file__).parent/n,snapshot/n);source_hashes[n]=sha(snapshot/n)
+     model=restored(saved);model.eval();progress=phase_progress(rows);plan=json.loads((a.source/'center_plan.json').read_text())
+@@ -77,9 +77,9 @@
+                     if center_initial_q is None:raise ValueError('Missing measured center initial state')
+                     report=assess_center_row(row,names,plan['center_target_world_m'],plan['cube_target_quaternion_wxyz']);coordination=joint_coordination(row['q'],center_initial_q,names,protocol);hold=hold+1 if report['qualified'] and coordination['qualified'] and not failure else 0;longest=max(longest,hold);row['center_audit']=report;row['joint_coordination']=coordination
+                 journal.write(json.dumps(row,allow_nan=False)+'\n')
+-                if step%120==0 or failure:journal.flush();print('PHASE_EXPERT_V3_EVAL',step,row['phase'],'hold',hold,'failure',failure,flush=True)
++                if step%120==0 or failure:journal.flush();print('PHASE_BASIS_V4_EVAL',step,row['phase'],'hold',hold,'failure',failure,flush=True)
+                 if failure:break
+-        result={'scope':'development_learned_left_phase_trajectory_no_adaptive_feedback','seed':a.seed,'steps':len(audit_rows),'precenter_wrist_audit':precenter_wrist_report,'accepted':bool(not failure and longest>=90),'failure':failure or ('center_hold_gate_not_met' if longest<90 else None),'qualified_center_hold_s':longest/30.,'maximum_lift_m':maximum_lift,'cube_returned_to_table_after_lift':returned,'elapsed_s':time.monotonic()-started,'checkpoint_sha256':sha(a.checkpoint),'source_manifest_sha256':source['manifest_sha256'],'evaluation_source_sha256':source_hashes,'phase_schedule_source':a.source.name,'right_schedule_seed':source['seed'],'right_turn_trained':False,'stage_gate_unlocked':False,'cube_pose_writes_during_control':env.cube.pose_reset_count-reset,'model_input_state':'scheduled phase/progress only; measured features collected but excluded by this phase-trajectory model','left_teacher_targets_used':False,'left_finger_hold_gain_step':gain_step,'left_finger_hold_stiffness':20.}
++        result={'scope':'development_fullframe_trajectory_compression_no_holdout_or_adaptive_feedback','seed':a.seed,'steps':len(audit_rows),'precenter_wrist_audit':precenter_wrist_report,'accepted':bool(not failure and longest>=90),'failure':failure or ('center_hold_gate_not_met' if longest<90 else None),'qualified_center_hold_s':longest/30.,'maximum_lift_m':maximum_lift,'cube_returned_to_table_after_lift':returned,'elapsed_s':time.monotonic()-started,'checkpoint_sha256':sha(a.checkpoint),'source_manifest_sha256':source['manifest_sha256'],'evaluation_source_sha256':source_hashes,'phase_schedule_source':a.source.name,'right_schedule_seed':source['seed'],'right_turn_trained':False,'stage_gate_unlocked':False,'cube_pose_writes_during_control':env.cube.pose_reset_count-reset,'model_input_state':'scheduled phase/progress only; measured features collected but excluded by this phase-trajectory model','left_teacher_targets_used':False,'left_finger_hold_gain_step':gain_step,'left_finger_hold_stiffness':20.}
+         (a.output/'result.json').write_text(json.dumps(result,indent=2));print('RESULT',json.dumps(result),flush=True)
+     except Exception as e:
+         import traceback

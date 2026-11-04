@@ -1,0 +1,145 @@
+AppLauncher is deprecated; use isaaclab.app.launch_simulation.
+Loading user config located at: '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaacsim/kit/data/Kit/IsaacLab/3.0/user.config.json'
+2026-11-03T07:17:49Z [Info] [carb] Logging to file: /home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaacsim/kit/logs/Kit/IsaacLab/3.0/kit_20261103_151749.log
+2026-11-03T07:17:49Z [7ms] [Warning] [omni.ext.plugin] [ext: isaaclab_tasks_experimental] Extensions config 'extension.toml' doesn't exist '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaaclab/source/isaaclab_tasks_experimental' or '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaaclab/source/isaaclab_tasks_experimental/config'
+2026-11-03T07:17:49Z [6ms] [Warning] [omni.ext.plugin] [ext: isaaclab] Extensions config 'extension.toml' doesn't exist '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaaclab/source/isaaclab' or '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaaclab/source/isaaclab/config'
+2026-11-03T07:17:49Z [7ms] [Warning] [omni.ext.plugin] [ext: isaaclab_physx] Extensions config 'extension.toml' doesn't exist '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaaclab/source/isaaclab_physx' or '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaaclab/source/isaaclab_physx/config'
+2026-11-03T07:17:49Z [7ms] [Warning] [omni.ext.plugin] [ext: isaaclab_teleop] Extensions config 'extension.toml' doesn't exist '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaaclab/source/isaaclab_teleop' or '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaaclab/source/isaaclab_teleop/config'
+2026-11-03T07:17:49Z [6ms] [Warning] [omni.ext.plugin] [ext: isaaclab_experimental] Extensions config 'extension.toml' doesn't exist '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaaclab/source/isaaclab_experimental' or '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaaclab/source/isaaclab_experimental/config'
+2026-11-03T07:17:49Z [6ms] [Warning] [omni.ext.plugin] [ext: isaaclab_assets] Extensions config 'extension.toml' doesn't exist '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaaclab/source/isaaclab_assets' or '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaaclab/source/isaaclab_assets/config'
+2026-11-03T07:17:49Z [7ms] [Warning] [omni.ext.plugin] [ext: isaaclab_contrib] Extensions config 'extension.toml' doesn't exist '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaaclab/source/isaaclab_contrib' or '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaaclab/source/isaaclab_contrib/config'
+2026-11-03T07:17:49Z [7ms] [Warning] [omni.ext.plugin] [ext: isaaclab_ppisp] Extensions config 'extension.toml' doesn't exist '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaaclab/source/isaaclab_ppisp' or '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaaclab/source/isaaclab_ppisp/config'
+2026-11-03T07:17:49Z [7ms] [Warning] [omni.ext.plugin] [ext: isaaclab_rl] Extensions config 'extension.toml' doesn't exist '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaaclab/source/isaaclab_rl' or '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaaclab/source/isaaclab_rl/config'
+2026-11-03T07:17:49Z [7ms] [Warning] [omni.ext.plugin] [ext: isaaclab_mimic] Extensions config 'extension.toml' doesn't exist '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaaclab/source/isaaclab_mimic' or '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaaclab/source/isaaclab_mimic/config'
+2026-11-03T07:17:49Z [7ms] [Warning] [omni.ext.plugin] [ext: isaaclab_tasks] Extensions config 'extension.toml' doesn't exist '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaaclab/source/isaaclab_tasks' or '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaaclab/source/isaaclab_tasks/config'
+2026-11-03T07:17:49Z [7ms] [Warning] [omni.ext.plugin] [ext: isaaclab_ov] Extensions config 'extension.toml' doesn't exist '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaaclab/source/isaaclab_ov' or '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaaclab/source/isaaclab_ov/config'
+2026-11-03T07:17:49Z [7ms] [Warning] [omni.ext.plugin] [ext: isaaclab_visualizers] Extensions config 'extension.toml' doesn't exist '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaaclab/source/isaaclab_visualizers' or '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaaclab/source/isaaclab_visualizers/config'
+2026-11-03T07:17:49Z [7ms] [Warning] [omni.ext.plugin] [ext: isaaclab_newton] Extensions config 'extension.toml' doesn't exist '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaaclab/source/isaaclab_newton' or '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaaclab/source/isaaclab_newton/config'
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1793690269.669586  260798 descriptor_database.cc:633] File already exists in database: grpc/health/v1/health.proto
+W0000 00:00:1793690269.669611  260798 message.cc:301] Protobuf GeneratedMessageFactory: File is already registered: grpc/health/v1/health.proto
+2026-11-03T07:17:50Z [713ms] [Warning] [omni.rtx] Skipping unsupported non-NVIDIA GPU: Intel(R) Graphics (RPL-S)
+2026-11-03T07:17:50Z [713ms] [Warning] [omni.rtx] Skipping unsupported non-NVIDIA GPU: Intel(R) Graphics (RPL-S)
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 595.99.02     | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA GeForce RTX 5070 Laptop.. | Yes: 0 |     | 8151    MB | 10de      | 0          |
+|     |                                  |        |     |            | 2d18      | fe74f18c.. |
+|     |                                  |        |     |            | 2         |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | Intel(R) Graphics (RPL-S)        |        |     | 23846   MB | 8086      | 0          |
+|     |                                  |        |     |            | a788      | 868088a7.. |
+|     |                                  |        |     |            | 0         |            |
+|=============================================================================================|
+| OS: 24.04.5 LTS (Noble Numbat) ubuntu, Version: 24.04.5, Kernel: 7.0.0-38-generic
+| XServer Vendor: The X.Org Foundation, XServer Version: 12101011 (1.21.1.11)
+| Processor: Intel(R) Core(TM) i9-14900HX
+| Bare Metal Cores: 24 | Bare Metal Logical Cores: 48
+| Available Cores:  32 
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 31795 | Free Memory: 15393
+| Total Page/Swap (MB): 8191 | Free Page/Swap: 7562
+|---------------------------------------------------------------------------------------------|
+2026-11-03T07:17:50Z [1,008ms] [Warning] [omni.rtx] CPU performance profile is set to powersave. This profile sets the CPU to the lowest frequency reducing performance.
+2026-11-03T07:17:50Z [1,011ms] [Warning] [omni.rtx] PCIe link width current (8) and maximum (16) for device 0 don't match.
+2026-11-03T07:17:50Z [1,012ms] [Warning] [omni.rtx] IOMMU is enabled.
+2026-11-03T07:17:51Z [1,634ms] [Warning] [omni.log] Source: omni.hydra was already registered.
+Warning: Possible version incompatibility. Attempting to load carb::ujitso::IFactory with version v0.3 against v0.2.
+2026-11-03T07:17:51Z [2,008ms] [Warning] [pxr.Semantics] pxr.Semantics is deprecated - please use Semantics instead
+2026-11-03T07:17:51Z [2,072ms] [Warning] [omni.replicator.core.scripts.extension] No material configuration file, adding configuration to material settings directly.
+2026-11-03T07:17:52Z [2,451ms] [Warning] [usdrt.population.plugin] Last global time was not created. Did you call setEnableUsdNoticeHandling?
+2026-11-03T07:17:52Z [3,333ms] [Warning] [omni.usd] Encountered USD Warnings but USD Diagnostics are currently muted. To view USD Warnings, please set the '/persistent/app/usd/muteUsdDiagnostics' setting to false in Preferences page.
+[ISAACLAB] KitLauncher initialization complete
+2026-11-03T07:17:54Z [5,018ms] [Warning] [carb] Failed to find a plugin with an interface pointer: 0x558422030fa0. Client: carb.scripting-python.plugin
+[INFO]: Registered backend 'physx' for factory Articulation.
+[INFO]: Registered backend 'physx' for factory RigidObject.
+[INFO]: Using renderer: IsaacRtxRenderer
+[INFO]: Using renderer: IsaacRtxRenderer
+[INFO]: Simulation parameters for joints in /World/Robot:
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                            Simulation Joint Information (Prim path: /World/Robot)                                                           |
++-------+------------------------+-----------+---------+----------+-----------------+------------------+------------------+-----------------+-----------------+---------------+
+| Index | Name                   | Stiffness | Damping | Armature | Static Friction | Dynamic Friction | Viscous Friction | Position Limits | Velocity Limits | Effort Limits |
++-------+------------------------+-----------+---------+----------+-----------------+------------------+------------------+-----------------+-----------------+---------------+
+|   0   | Joint1_L               |  100.000  |  8.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-3.107, 3.107] |      1.571      |    108.000    |
+|   1   | Joint1_R               |  100.000  |  8.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-3.107, 3.107] |      1.571      |    108.000    |
+|   2   | Joint2_L               |  100.000  |  8.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-2.094, 2.094] |      1.571      |    108.000    |
+|   3   | Joint2_R               |  100.000  |  8.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-2.094, 2.094] |      1.571      |    108.000    |
+|   4   | Joint3_L               |   64.000  |  8.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-3.107, 3.107] |      1.571      |     66.000    |
+|   5   | Joint3_R               |   64.000  |  8.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-3.107, 3.107] |      1.571      |     66.000    |
+|   6   | Joint4_L               |   64.000  |  8.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-2.531, 1.047] |      1.571      |     66.000    |
+|   7   | Joint4_R               |   64.000  |  8.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-2.531, 1.047] |      1.571      |     66.000    |
+|   8   | Joint5_L               |   48.000  |  8.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-3.107, 3.107] |      1.571      |     18.000    |
+|   9   | Joint5_R               |   48.000  |  8.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-3.107, 3.107] |      1.571      |     18.000    |
+|   10  | Joint6_L               |   40.000  |  8.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-1.047, 1.047] |      1.571      |     18.000    |
+|   11  | Joint6_R               |   40.000  |  8.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-1.047, 1.047] |      1.571      |     18.000    |
+|   12  | Joint7_L               |   40.000  |  8.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-1.571, 1.571] |      1.571      |     18.000    |
+|   13  | Joint7_R               |   40.000  |  8.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-1.571, 1.571] |      1.571      |     18.000    |
+|   14  | left_index_MPR_joint   |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.175, 0.524] |      10.000     |     5.000     |
+|   15  | left_little_MPR_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.524, 0.175] |      10.000     |     5.000     |
+|   16  | left_middle_MPR_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.349, 0.436] |      10.000     |     5.000     |
+|   17  | left_ring_MPR_joint    |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.436, 0.349] |      10.000     |     5.000     |
+|   18  | left_thumb_CMP_joint   |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       |  [0.000, 1.920] |      10.000     |     5.000     |
+|   19  | right_index_MPR_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.175, 0.524] |      10.000     |     5.000     |
+|   20  | right_little_MPR_joint |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.524, 0.175] |      10.000     |     5.000     |
+|   21  | right_middle_MPR_joint |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.349, 0.436] |      10.000     |     5.000     |
+|   22  | right_ring_MPR_joint   |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.436, 0.349] |      10.000     |     5.000     |
+|   23  | right_thumb_CMP_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       |  [0.000, 1.920] |      10.000     |     5.000     |
+|   24  | left_index_MCP_joint   |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.093, 1.583] |      10.000     |     5.000     |
+|   25  | left_little_MCP_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.093, 1.583] |      10.000     |     5.000     |
+|   26  | left_middle_MCP_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.093, 1.583] |      10.000     |     5.000     |
+|   27  | left_ring_MCP_joint    |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.093, 1.583] |      10.000     |     5.000     |
+|   28  | left_thumb_CMR_joint   |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.422, 1.428] |      10.000     |     5.000     |
+|   29  | right_index_MCP_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.093, 1.583] |      10.000     |     5.000     |
+|   30  | right_little_MCP_joint |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.093, 1.583] |      10.000     |     5.000     |
+|   31  | right_middle_MCP_joint |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.093, 1.583] |      10.000     |     5.000     |
+|   32  | right_ring_MCP_joint   |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.093, 1.583] |      10.000     |     5.000     |
+|   33  | right_thumb_CMR_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.422, 1.428] |      10.000     |     5.000     |
+|   34  | left_index_PIP_joint   |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.145, 1.600] |      10.000     |     5.000     |
+|   35  | left_little_PIP_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.145, 1.600] |      10.000     |     5.000     |
+|   36  | left_middle_PIP_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.145, 1.600] |      10.000     |     5.000     |
+|   37  | left_ring_PIP_joint    |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.145, 1.600] |      10.000     |     5.000     |
+|   38  | left_thumb_MCP_joint   |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.084, 1.329] |      10.000     |     5.000     |
+|   39  | right_index_PIP_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.145, 1.600] |      10.000     |     5.000     |
+|   40  | right_little_PIP_joint |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.145, 1.600] |      10.000     |     5.000     |
+|   41  | right_middle_PIP_joint |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.145, 1.600] |      10.000     |     5.000     |
+|   42  | right_ring_PIP_joint   |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.145, 1.600] |      10.000     |     5.000     |
+|   43  | right_thumb_MCP_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.084, 1.329] |      10.000     |     5.000     |
+|   44  | left_index_DIP_joint   |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.322, 1.598] |      10.000     |     5.000     |
+|   45  | left_little_DIP_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.322, 1.598] |      10.000     |     5.000     |
+|   46  | left_middle_DIP_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.322, 1.598] |      10.000     |     5.000     |
+|   47  | left_ring_DIP_joint    |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.322, 1.598] |      10.000     |     5.000     |
+|   48  | left_thumb_PIP_joint   |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.262, 1.553] |      10.000     |     5.000     |
+|   49  | right_index_DIP_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.322, 1.598] |      10.000     |     5.000     |
+|   50  | right_little_DIP_joint |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.322, 1.598] |      10.000     |     5.000     |
+|   51  | right_middle_DIP_joint |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.322, 1.598] |      10.000     |     5.000     |
+|   52  | right_ring_DIP_joint   |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.322, 1.598] |      10.000     |     5.000     |
+|   53  | right_thumb_PIP_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.262, 1.553] |      10.000     |     5.000     |
+|   54  | left_thumb_DIP_joint   |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.160, 1.762] |      10.000     |     5.000     |
+|   55  | right_thumb_DIP_joint  |   30.000  |  1.000  |  0.000   |      0.000      |      0.000       |      0.000       | [-0.160, 1.762] |      10.000     |     5.000     |
++-------+------------------------+-----------+---------+----------+-----------------+------------------+------------------+-----------------+-----------------+---------------+
+[INFO]: Registered backend 'physx' for factory FrameView.
+2026-11-03T07:17:56Z [7,184ms] [Warning] [omni.replicator.core.scripts.annotators] omni.hydra.engine.stats is not installed, assuming single GPU
+2026-11-03T07:17:56Z [7,363ms] [Warning] [omni.usd] Coding Error: in GetTransform at line 2587 of ./builds/omniverse/usd-ci/conan/src/0.25.11.kit.5/pxr/usdImaging/usdImaging/delegate.cpp -- Failed verification: ' primInfo '
+
+2026-11-03T07:17:57Z [8,125ms] [Warning] [omni.rtx] DLSS increasing input dimensions: Render resolution of (85, 85) is below minimal input resolution of 300.
+2026-11-03T07:17:57Z [8,253ms] [Warning] [omni.syntheticdata.plugin] OgnSdPostRenderVarToHost : rendervar copy from texture directly to host buffer is counter-performant. Please use copy from texture to device buffer first.
+[INFO]: RTX streaming completed in 0.03 s.
+2026-11-03T07:17:58Z [8,595ms] [Warning] [omni.kit.material.library.material_extensions] Could not initialize context menu integration: No module named 'omni.kit.context_menu'
+/home/brainco/rl_cube/github_project/revotron_cube_rl/single_face_experiment.py:66: DeprecationWarning: The `root_state_w` property will be deprecated in IsaacLab 4.0. Please use `root_link_pose_w` and `root_com_vel_w` instead.
+  row['q']=tensor(env.robot.data.joint_pos)[0,env.ids].tolist();row['cube_quaternion_wxyz']=quaternion_from_native(tensor(env.cube.data.root_state_w)[0,3:7]).tolist()
+STEP 9501 0 ready height -0.0 layer_deviation 0.07 failure None
+STEP 9501 120 ready height -0.0 layer_deviation 0.07 failure None
+STEP 9501 240 ready height -0.0 layer_deviation 0.07 failure None
+STEP 9501 360 lower height -0.0 layer_deviation 0.07 failure None
+STEP 9501 480 squeeze height 0.001 layer_deviation 9.98 failure None
+STEP 9501 600 primary_lift height 0.032 layer_deviation 7.28 failure None
+STEP 9501 720 elbow_outward height 0.197 layer_deviation 7.34 failure None
+STEP 9501 840 tilt_90 height 0.242 layer_deviation 7.33 failure None
+STEP 9501 960 tilt_90 height 0.241 layer_deviation 7.27 failure None
+STEP 9501 1080 tilt_90 height 0.241 layer_deviation 5.31 failure None

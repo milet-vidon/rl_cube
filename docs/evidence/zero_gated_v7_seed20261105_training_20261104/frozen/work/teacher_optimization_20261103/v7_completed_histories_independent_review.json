@@ -1,0 +1,503 @@
+{
+  "schema": "v7_completed_histories_independent_integrity_review_v1",
+  "passed": true,
+  "source_sha256": {
+    "eval_prefix_dataset_v7.py": "06d1f3d46d1d52012476e0262902a359acb10e46db31896bf02e89f945bebb7e",
+    "eval_prefix_dataset_v6.py": "7dfc8f417daeb6916054a96cb5112d78295057d85fb2f43df4d76a267587f0bf",
+    "train_phase_residual_v5.py": "74cc6077ae7bb135260b9fc1f4c0c99765653af8dd243301563e61808a027a6d",
+    "dagger_residual_dataset_v5.py": "69c1cef251a4180f9839a2fc27ecbb738ce6f87828d5a9bc513a19aa40621cb1",
+    "inspect_residual_dataset_v7.py": "b278032a85cf72be3d66f710d555ae8643f2d8b424df09feea02424bcc03c11e"
+  },
+  "frozen_baseline_sha256": "d2493b00df27b8d84ae69da3b399b3beb926b77fdd87a9b51aa6a2b1b23a36a4",
+  "physics_family_sha256": "b2f9feb645c8d92e2da3bb78653165292a5649e59864dee4b1de82e904854192",
+  "histories": [
+    {
+      "run": "left_dagger_baseline_mixture_v3_9501_20261104",
+      "executed_candidate_steps": 1648,
+      "eligible_transition_steps": 1648,
+      "x_shape": [
+        1648,
+        284
+      ],
+      "array_sha256": {
+        "x": "239c23d115597f875746d15d0746c9a978a7c778f5a2f7b190ed12e0641c6512",
+        "previous_left": "606986f854bcc53cb1dbffc7b7affbfc3ba781c63c3f3353b19133c973a1128e",
+        "labels": "a8e6f9f4706a04864f415d8fdcd7d84c59d7980e083cf03ad2f00751ef3c957e",
+        "mask": "36dde8a7a085da066e37a8a430dafc1fcf6e7c43b2df73271a8bc4acf90867a9"
+      },
+      "original_failure": null,
+      "original_wrist_gate_qualified": true,
+      "original_pure_student_episode_claim": false,
+      "original_eligible_training_episode": false,
+      "excluded_records": [],
+      "recomputed_audit": {
+        "queries": 1648,
+        "memory_modes": {
+          "preserve": 500,
+          "sync_actual_applied": 1148
+        },
+        "changed_memory_fields": 165,
+        "gain_events": 1,
+        "actual_state_and_teacher_memory_contiguous": true,
+        "all_source_plan_and_gate_checks_passed": true
+      },
+      "original_files_unchanged": true,
+      "checkpoint_sha256": null,
+      "recorded_runtime_sources": {
+        "articulated_cube_env.py": "dfad0023f9e2797d6ea8ea3ac08aa1b6889b7dbb4ff8398cd0ca11fa329bc707",
+        "collect_left_dagger_baseline_v3.py": "b87d0b1ac0c34e5b5c79678b068c9f55df5fa6baf0c5d0da5a231ff9976ea0e6",
+        "collect_left_dagger_draft_v1.py": "fc5dc17bc0f08a4fee1d468ed0b53dec6a6549083cbb7f86827dce96705ac6bf",
+        "config.json": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+        "dagger_collection_core_v1.py": "6d4b2a635f98b563c10388153e4116054eb03a383e898ae7c36d572c9b182411",
+        "dagger_projected_collection_v3.py": "268653ef77b2b500d5299ebb377a6311f98ed9d5199f0b345795b26a92669a33",
+        "dynamic_cube.py": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de",
+        "elbow_audit.py": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9",
+        "elbow_gate.py": "6473a2deec9034d4fa57079fe917d248c40db68f9768001456474bdc8eb6c526",
+        "elbow_handover.py": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e",
+        "environment.py": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7",
+        "finger_contact_audit.py": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0",
+        "isaac_compat.py": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825",
+        "joint_safety.py": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887",
+        "kinematics.py": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212",
+        "layer_turn_metrics.py": "c7fc5438c29c20632ad774c7f541d293e5f411ca8fff1454c830989536e1ccb4",
+        "left_contact_dagger_schema_v1.json": "164d991f6e05f34a6101d28ea764cfa8428ae5a2692f34ac151335345b2f8ce2",
+        "left_dagger_baseline_runtime_v3.py": "49af4b8a660c115a2f3d29826b25d1b5c176e24208dae692838b46398834a516",
+        "opposition_feedback.py": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883",
+        "opposition_grasp_v20.json": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a",
+        "opposition_teacher.py": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1",
+        "palm_contact_audit.py": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184",
+        "palm_handover.py": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f",
+        "palm_handover_audit.py": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1",
+        "phase_basis_policy_v4.py": "5d4dc98bf0dfc156dbcdd7fd9d3923f475573d03bc46df1e6c1d317625d8a327",
+        "phase_contact_policy.py": "5db8beb4f0dc86d4b6105669ee8da2fee93b319e2ba468a6c0c2c5b21dc94045",
+        "proximal_planner.py": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16",
+        "runtime_platform.py": "c08829cde5986256dab4f5448edcecbf8932a3100ed7fab7dbdf0ad2f895772f",
+        "self_contact_audit.py": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c",
+        "tilt_audit.py": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995",
+        "tilt_collision_plan.py": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd",
+        "tilt_regrasp.py": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1",
+        "wrist_audit.py": "e0dcf531d4f9e74cce3293ff2f954486fd1277609a832becdcefbd4b4e36398f",
+        "wrist_direction.py": "0aa5858caf39dabbd92af4396370121de30dc673675a5c24f11ca8ff0c0c0ed5"
+      }
+    },
+    {
+      "run": "left_state_residual_v5_long_eval_9501_20261104_v2",
+      "executed_candidate_steps": 619,
+      "eligible_transition_steps": 619,
+      "x_shape": [
+        619,
+        284
+      ],
+      "array_sha256": {
+        "x": "10a4f8802290dcc454a3ff946d1909925366b053401444bb91593cfd8a91384b",
+        "previous_left": "0b1879861438c32bea048191235d4edd9344f5e13c9c4d5fbb0e7a4dc6c1ac62",
+        "labels": "c999c8221d5b4f36ae1863afe3d2b1d1ad1c3f121eca4f08454c0e179cd95df4",
+        "mask": "b1c72685b5d5e696cc4a4fdff7f06f27eb3810ac7ce1673a4ff705cc1fe7bfc6"
+      },
+      "original_failure": "contact_topology_or_settle_timeout",
+      "original_wrist_gate_qualified": false,
+      "original_pure_student_episode_claim": false,
+      "original_eligible_training_episode": false,
+      "excluded_records": [
+        {
+          "step": 619,
+          "reason": "contact_topology_or_settle_timeout",
+          "type": "unexecuted_abort_no_label"
+        }
+      ],
+      "recomputed_audit": {
+        "oracle_queries": 620,
+        "excluded_unexecuted_abort": true,
+        "execution_memory_modes": {
+          "preserve": 500,
+          "sync_actual_applied": 119
+        },
+        "memory_changes": 1300,
+        "gain_events": 0,
+        "behavior_predictions_replayed_bitwise": true,
+        "recorded_actor_feature_count": 284,
+        "supervision_feature_count": 284,
+        "original_successful_wrist_audit": null
+      },
+      "original_files_unchanged": true,
+      "checkpoint_sha256": {
+        "evaluated_policy.pt": "1c663e17f6157273ee4c80b1e6ebf1c292b6c9972278041936b56943212db98c",
+        "frozen_v4_baseline.pt": "d2493b00df27b8d84ae69da3b399b3beb926b77fdd87a9b51aa6a2b1b23a36a4"
+      },
+      "recorded_runtime_sources": {
+        "elbow_gate.py": "6473a2deec9034d4fa57079fe917d248c40db68f9768001456474bdc8eb6c526",
+        "articulated_cube_env.py": "dfad0023f9e2797d6ea8ea3ac08aa1b6889b7dbb4ff8398cd0ca11fa329bc707",
+        "finger_contact_audit.py": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0",
+        "self_contact_audit.py": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c",
+        "kinematics.py": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212",
+        "layer_turn_metrics.py": "c7fc5438c29c20632ad774c7f541d293e5f411ca8fff1454c830989536e1ccb4",
+        "joint_safety.py": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887",
+        "tilt_collision_plan.py": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd",
+        "isaac_compat.py": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825",
+        "palm_contact_audit.py": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184",
+        "opposition_grasp_v20.json": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a",
+        "opposition_feedback.py": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883",
+        "phase_basis_policy_v4.py": "5d4dc98bf0dfc156dbcdd7fd9d3923f475573d03bc46df1e6c1d317625d8a327",
+        "collect_left_dagger_draft_v1.py": "fc5dc17bc0f08a4fee1d468ed0b53dec6a6549083cbb7f86827dce96705ac6bf",
+        "runtime_platform.py": "c08829cde5986256dab4f5448edcecbf8932a3100ed7fab7dbdf0ad2f895772f",
+        "wrist_audit.py": "e0dcf531d4f9e74cce3293ff2f954486fd1277609a832becdcefbd4b4e36398f",
+        "elbow_audit.py": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9",
+        "tilt_audit.py": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995",
+        "left_dagger_baseline_runtime_v3.py": "49af4b8a660c115a2f3d29826b25d1b5c176e24208dae692838b46398834a516",
+        "environment.py": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7",
+        "phase_contact_policy.py": "5db8beb4f0dc86d4b6105669ee8da2fee93b319e2ba468a6c0c2c5b21dc94045",
+        "dagger_projected_collection_v3.py": "268653ef77b2b500d5299ebb377a6311f98ed9d5199f0b345795b26a92669a33",
+        "tilt_regrasp.py": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1",
+        "opposition_teacher.py": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1",
+        "proximal_planner.py": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16",
+        "left_contact_dagger_schema_v1.json": "164d991f6e05f34a6101d28ea764cfa8428ae5a2692f34ac151335345b2f8ce2",
+        "collect_left_dagger_baseline_v3.py": "b87d0b1ac0c34e5b5c79678b068c9f55df5fa6baf0c5d0da5a231ff9976ea0e6",
+        "dagger_collection_core_v1.py": "6d4b2a635f98b563c10388153e4116054eb03a383e898ae7c36d572c9b182411",
+        "config.json": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+        "wrist_direction.py": "0aa5858caf39dabbd92af4396370121de30dc673675a5c24f11ca8ff0c0c0ed5",
+        "elbow_handover.py": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e",
+        "dynamic_cube.py": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de",
+        "palm_handover_audit.py": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1",
+        "palm_handover.py": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f"
+      }
+    },
+    {
+      "run": "left_phase_gated_residual_v6_eval_9501_20261104",
+      "executed_candidate_steps": 752,
+      "eligible_transition_steps": 752,
+      "x_shape": [
+        752,
+        284
+      ],
+      "array_sha256": {
+        "x": "0edfd49b8a0613e28a98eb0d5af1773c09184627d1dfb3604978ff64a7c5430a",
+        "previous_left": "acf15fa07507453a39ffc8d57f8fe1d231143c02ed351ecc311eec99ab5f52e4",
+        "labels": "da8b994a5bc2afafd7094bdbe56625e245ebae1c79cf1878269fe6c667185df7",
+        "mask": "76fcda65215833c3d8824ba89f5e889f292d7890147fbcdd502be9998ce6aaed"
+      },
+      "original_failure": "contact_topology_or_settle_timeout",
+      "original_wrist_gate_qualified": false,
+      "original_pure_student_episode_claim": false,
+      "original_eligible_training_episode": false,
+      "excluded_records": [
+        {
+          "step": 752,
+          "reason": "contact_topology_or_settle_timeout",
+          "type": "unexecuted_abort_no_label"
+        }
+      ],
+      "recomputed_audit": {
+        "oracle_queries": 753,
+        "excluded_unexecuted_abort": true,
+        "execution_memory_modes": {
+          "preserve": 500,
+          "sync_actual_applied": 252
+        },
+        "memory_changes": 2771,
+        "gain_events": 0,
+        "behavior_predictions_replayed_bitwise": true,
+        "recorded_actor_feature_count": 284,
+        "supervision_feature_count": 284,
+        "original_successful_wrist_audit": null
+      },
+      "original_files_unchanged": true,
+      "checkpoint_sha256": {
+        "evaluated_policy.pt": "523e7163d90da38ace84eb07597ccc0274a5ced14f2ae74d05ddb6dbc30eff04",
+        "frozen_v4_baseline.pt": "d2493b00df27b8d84ae69da3b399b3beb926b77fdd87a9b51aa6a2b1b23a36a4"
+      },
+      "recorded_runtime_sources": {
+        "environment.py": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7",
+        "opposition_teacher.py": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1",
+        "elbow_audit.py": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9",
+        "self_contact_audit.py": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c",
+        "collect_left_dagger_baseline_v3.py": "b87d0b1ac0c34e5b5c79678b068c9f55df5fa6baf0c5d0da5a231ff9976ea0e6",
+        "left_contact_dagger_schema_v1.json": "164d991f6e05f34a6101d28ea764cfa8428ae5a2692f34ac151335345b2f8ce2",
+        "collect_left_dagger_draft_v1.py": "fc5dc17bc0f08a4fee1d468ed0b53dec6a6549083cbb7f86827dce96705ac6bf",
+        "phase_contact_policy.py": "5db8beb4f0dc86d4b6105669ee8da2fee93b319e2ba468a6c0c2c5b21dc94045",
+        "palm_contact_audit.py": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184",
+        "palm_handover.py": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f",
+        "tilt_regrasp.py": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1",
+        "opposition_grasp_v20.json": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a",
+        "wrist_direction.py": "0aa5858caf39dabbd92af4396370121de30dc673675a5c24f11ca8ff0c0c0ed5",
+        "elbow_handover.py": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e",
+        "tilt_audit.py": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995",
+        "joint_safety.py": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887",
+        "left_dagger_baseline_runtime_v3.py": "49af4b8a660c115a2f3d29826b25d1b5c176e24208dae692838b46398834a516",
+        "dynamic_cube.py": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de",
+        "kinematics.py": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212",
+        "dagger_collection_core_v1.py": "6d4b2a635f98b563c10388153e4116054eb03a383e898ae7c36d572c9b182411",
+        "config.json": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+        "wrist_audit.py": "e0dcf531d4f9e74cce3293ff2f954486fd1277609a832becdcefbd4b4e36398f",
+        "finger_contact_audit.py": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0",
+        "opposition_feedback.py": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883",
+        "isaac_compat.py": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825",
+        "proximal_planner.py": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16",
+        "dagger_projected_collection_v3.py": "268653ef77b2b500d5299ebb377a6311f98ed9d5199f0b345795b26a92669a33",
+        "layer_turn_metrics.py": "c7fc5438c29c20632ad774c7f541d293e5f411ca8fff1454c830989536e1ccb4",
+        "tilt_collision_plan.py": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd",
+        "runtime_platform.py": "c08829cde5986256dab4f5448edcecbf8932a3100ed7fab7dbdf0ad2f895772f",
+        "palm_handover_audit.py": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1",
+        "phase_basis_policy_v4.py": "5d4dc98bf0dfc156dbcdd7fd9d3923f475573d03bc46df1e6c1d317625d8a327",
+        "elbow_gate.py": "6473a2deec9034d4fa57079fe917d248c40db68f9768001456474bdc8eb6c526",
+        "articulated_cube_env.py": "dfad0023f9e2797d6ea8ea3ac08aa1b6889b7dbb4ff8398cd0ca11fa329bc707"
+      }
+    },
+    {
+      "run": "left_phase_gated_residual_v6_long_eval_9501_20261104",
+      "executed_candidate_steps": 752,
+      "eligible_transition_steps": 752,
+      "x_shape": [
+        752,
+        284
+      ],
+      "array_sha256": {
+        "x": "5712aaf96f46855f494f070be5a747ba86bf53ad911504402c7aa9e3f33ceb1b",
+        "previous_left": "e8a8931ee1b38b1edf59857a2b17cccc9d7f159d9e927b13130b2b73a25f36ef",
+        "labels": "814ac78e6b904e2a120379ca688ae059e33710f557466ceba5adc06ab231f2e5",
+        "mask": "76fcda65215833c3d8824ba89f5e889f292d7890147fbcdd502be9998ce6aaed"
+      },
+      "original_failure": "contact_topology_or_settle_timeout",
+      "original_wrist_gate_qualified": false,
+      "original_pure_student_episode_claim": false,
+      "original_eligible_training_episode": false,
+      "excluded_records": [
+        {
+          "step": 752,
+          "reason": "contact_topology_or_settle_timeout",
+          "type": "unexecuted_abort_no_label"
+        }
+      ],
+      "recomputed_audit": {
+        "oracle_queries": 753,
+        "excluded_unexecuted_abort": true,
+        "execution_memory_modes": {
+          "preserve": 500,
+          "sync_actual_applied": 252
+        },
+        "memory_changes": 2767,
+        "gain_events": 0,
+        "behavior_predictions_replayed_bitwise": true,
+        "recorded_actor_feature_count": 284,
+        "supervision_feature_count": 284,
+        "original_successful_wrist_audit": null
+      },
+      "original_files_unchanged": true,
+      "checkpoint_sha256": {
+        "evaluated_policy.pt": "0bedb191b59e302abc7a273c6c0071c0400d3687bc5d893ad0a84c566de02d48",
+        "frozen_v4_baseline.pt": "d2493b00df27b8d84ae69da3b399b3beb926b77fdd87a9b51aa6a2b1b23a36a4"
+      },
+      "recorded_runtime_sources": {
+        "dynamic_cube.py": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de",
+        "tilt_collision_plan.py": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd",
+        "tilt_audit.py": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995",
+        "proximal_planner.py": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16",
+        "collect_left_dagger_baseline_v3.py": "b87d0b1ac0c34e5b5c79678b068c9f55df5fa6baf0c5d0da5a231ff9976ea0e6",
+        "collect_left_dagger_draft_v1.py": "fc5dc17bc0f08a4fee1d468ed0b53dec6a6549083cbb7f86827dce96705ac6bf",
+        "config.json": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+        "elbow_audit.py": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9",
+        "runtime_platform.py": "c08829cde5986256dab4f5448edcecbf8932a3100ed7fab7dbdf0ad2f895772f",
+        "articulated_cube_env.py": "dfad0023f9e2797d6ea8ea3ac08aa1b6889b7dbb4ff8398cd0ca11fa329bc707",
+        "elbow_handover.py": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e",
+        "opposition_grasp_v20.json": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a",
+        "environment.py": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7",
+        "dagger_collection_core_v1.py": "6d4b2a635f98b563c10388153e4116054eb03a383e898ae7c36d572c9b182411",
+        "finger_contact_audit.py": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0",
+        "tilt_regrasp.py": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1",
+        "wrist_audit.py": "e0dcf531d4f9e74cce3293ff2f954486fd1277609a832becdcefbd4b4e36398f",
+        "left_contact_dagger_schema_v1.json": "164d991f6e05f34a6101d28ea764cfa8428ae5a2692f34ac151335345b2f8ce2",
+        "opposition_teacher.py": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1",
+        "opposition_feedback.py": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883",
+        "palm_handover.py": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f",
+        "phase_basis_policy_v4.py": "5d4dc98bf0dfc156dbcdd7fd9d3923f475573d03bc46df1e6c1d317625d8a327",
+        "joint_safety.py": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887",
+        "palm_contact_audit.py": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184",
+        "wrist_direction.py": "0aa5858caf39dabbd92af4396370121de30dc673675a5c24f11ca8ff0c0c0ed5",
+        "left_dagger_baseline_runtime_v3.py": "49af4b8a660c115a2f3d29826b25d1b5c176e24208dae692838b46398834a516",
+        "kinematics.py": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212",
+        "elbow_gate.py": "6473a2deec9034d4fa57079fe917d248c40db68f9768001456474bdc8eb6c526",
+        "self_contact_audit.py": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c",
+        "layer_turn_metrics.py": "c7fc5438c29c20632ad774c7f541d293e5f411ca8fff1454c830989536e1ccb4",
+        "dagger_projected_collection_v3.py": "268653ef77b2b500d5299ebb377a6311f98ed9d5199f0b345795b26a92669a33",
+        "isaac_compat.py": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825",
+        "phase_contact_policy.py": "5db8beb4f0dc86d4b6105669ee8da2fee93b319e2ba468a6c0c2c5b21dc94045",
+        "palm_handover_audit.py": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1"
+      }
+    },
+    {
+      "run": "left_phase_v4_matched_eval_9501_20261104_v2",
+      "executed_candidate_steps": 1654,
+      "eligible_transition_steps": 1654,
+      "x_shape": [
+        1654,
+        284
+      ],
+      "array_sha256": {
+        "x": "98a9bebc142341ac5d602722fc236401b9264fae97aadf0e5716bcb5b57c0458",
+        "previous_left": "ced8a076aba032b277715810d1c06804cf81d7ccf81f63b8188861ef7a2a2a5d",
+        "labels": "8bc9e322d8cbfcf5a9c3bb25102c97be469502c4bcb075686a5f73a71cc85bdd",
+        "mask": "e448ec315b1079d453487feb962657431848c72b27e916e00b66d1cccf435653"
+      },
+      "original_failure": null,
+      "original_wrist_gate_qualified": true,
+      "original_pure_student_episode_claim": false,
+      "original_eligible_training_episode": false,
+      "excluded_records": [],
+      "recomputed_audit": {
+        "oracle_queries": 1654,
+        "excluded_unexecuted_abort": false,
+        "execution_memory_modes": {
+          "preserve": 500,
+          "sync_actual_applied": 1154
+        },
+        "memory_changes": 949,
+        "gain_events": 1,
+        "behavior_predictions_replayed_bitwise": true,
+        "recorded_actor_feature_count": 198,
+        "supervision_feature_count": 284,
+        "original_successful_wrist_audit": {
+          "teacher_accepted": true,
+          "measured": {
+            "accepted": true,
+            "scope": "whole_cube_tilt_only",
+            "full_episode": true,
+            "failures": [],
+            "final_tilt_error_deg": 0.615633472966513,
+            "longest_measured_hold_seconds": 3.1333333333333333,
+            "contact_coverage_in_qualifying_window": {
+              "left": {
+                "thumb": 1.0,
+                "index": 1.0,
+                "middle": 1.0,
+                "ring": 1.0,
+                "little": 1.0
+              }
+            },
+            "maximum_lift_m": 0.3687158193588257,
+            "final_lift_m": 0.36802345180511475,
+            "cube_returned_to_table_after_lift": false,
+            "robot_table_impulse_sum_Ns": 0.0,
+            "self_contact_impulse_sum_Ns": 0,
+            "semantic_task": "left_palm_toward_right_hand_uncrossed_opposition_handover",
+            "longest_palm_facing_hold_seconds": 3.033333333333333,
+            "final_hand_geometry": {
+              "left_palm_position_root": [
+                0.4050472257396651,
+                0.3438716972294648,
+                0.12778549076579093
+              ],
+              "right_palm_position_root": [
+                0.3166191782612503,
+                -0.22905415673908433,
+                -0.1261228131017691
+              ],
+              "left_palm_normal_world": [
+                0.2147070372104706,
+                -0.8114720563829116,
+                0.5435199995234676
+              ],
+              "right_palm_normal_world": [
+                -0.047758001661820065,
+                0.9988562295552149,
+                -0.002325071183986263
+              ],
+              "left_facing_right_cos": 0.48654490099502257,
+              "right_facing_left_cos": 0.8966312267373756,
+              "palm_normal_dot": -0.8220616203567662,
+              "wrist_y_separation_m": 0.5729258539685491,
+              "elbow_y_separation_m": 0.8045623004436493,
+              "left_wrist_from_cube_y_m": 0.0565603518906434,
+              "right_wrist_from_cube_y_m": 0.5163655020779058
+            }
+          },
+          "wrist": {
+            "accepted": true,
+            "longest_jointly_qualified_hold_s": 3.033333333333333,
+            "final_elbow": {
+              "shoulder_root_m": [
+                0.021714353933930397,
+                0.25,
+                0.24004087448120126
+              ],
+              "elbow_root_m": [
+                0.03257523849606514,
+                0.4294266402721405,
+                0.015583252906799405
+              ],
+              "wrist_root_m": [
+                0.3006998896598816,
+                0.32752397656440735,
+                0.14459881782531747
+              ],
+              "outward_from_shoulder_m": 0.1794266402721405,
+              "upper_arm_outward_deg": 38.63809542917589,
+              "outward_from_shoulder_wrist_axis_m": 0.1474314367400426
+            },
+            "final": {
+              "joint6_deg": 11.881850867893895,
+              "side_bend_deg": -15.081145689576285,
+              "flexion_deg": 42.98299409700968,
+              "forearm_direction_palm_frame": [
+                0.6689080689846134,
+                -0.1934085830230975,
+                0.7177430705066217
+              ],
+              "wrist_inside_elbow_m": 0.10190266370773315
+            },
+            "scope": "J6_side_bend_reversed_with_unchanged_palm_orientation",
+            "failures": []
+          },
+          "assembled_hold_s": 3.1666666666666665,
+          "qualified": true
+        }
+      },
+      "original_files_unchanged": true,
+      "checkpoint_sha256": {
+        "evaluated_policy.pt": "d2493b00df27b8d84ae69da3b399b3beb926b77fdd87a9b51aa6a2b1b23a36a4",
+        "frozen_v4_baseline.pt": "d2493b00df27b8d84ae69da3b399b3beb926b77fdd87a9b51aa6a2b1b23a36a4"
+      },
+      "recorded_runtime_sources": {
+        "joint_safety.py": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887",
+        "layer_turn_metrics.py": "c7fc5438c29c20632ad774c7f541d293e5f411ca8fff1454c830989536e1ccb4",
+        "dynamic_cube.py": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de",
+        "runtime_platform.py": "c08829cde5986256dab4f5448edcecbf8932a3100ed7fab7dbdf0ad2f895772f",
+        "dagger_projected_collection_v3.py": "268653ef77b2b500d5299ebb377a6311f98ed9d5199f0b345795b26a92669a33",
+        "palm_contact_audit.py": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184",
+        "elbow_gate.py": "6473a2deec9034d4fa57079fe917d248c40db68f9768001456474bdc8eb6c526",
+        "palm_handover.py": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f",
+        "kinematics.py": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212",
+        "proximal_planner.py": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16",
+        "left_dagger_baseline_runtime_v3.py": "49af4b8a660c115a2f3d29826b25d1b5c176e24208dae692838b46398834a516",
+        "collect_left_dagger_draft_v1.py": "fc5dc17bc0f08a4fee1d468ed0b53dec6a6549083cbb7f86827dce96705ac6bf",
+        "left_contact_dagger_schema_v1.json": "164d991f6e05f34a6101d28ea764cfa8428ae5a2692f34ac151335345b2f8ce2",
+        "dagger_collection_core_v1.py": "6d4b2a635f98b563c10388153e4116054eb03a383e898ae7c36d572c9b182411",
+        "isaac_compat.py": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825",
+        "environment.py": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7",
+        "elbow_handover.py": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e",
+        "elbow_audit.py": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9",
+        "wrist_direction.py": "0aa5858caf39dabbd92af4396370121de30dc673675a5c24f11ca8ff0c0c0ed5",
+        "phase_basis_policy_v4.py": "5d4dc98bf0dfc156dbcdd7fd9d3923f475573d03bc46df1e6c1d317625d8a327",
+        "opposition_teacher.py": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1",
+        "tilt_regrasp.py": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1",
+        "config.json": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+        "self_contact_audit.py": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c",
+        "wrist_audit.py": "e0dcf531d4f9e74cce3293ff2f954486fd1277609a832becdcefbd4b4e36398f",
+        "collect_left_dagger_baseline_v3.py": "b87d0b1ac0c34e5b5c79678b068c9f55df5fa6baf0c5d0da5a231ff9976ea0e6",
+        "phase_contact_policy.py": "5db8beb4f0dc86d4b6105669ee8da2fee93b319e2ba468a6c0c2c5b21dc94045",
+        "palm_handover_audit.py": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1",
+        "tilt_audit.py": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995",
+        "opposition_grasp_v20.json": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a",
+        "opposition_feedback.py": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883",
+        "tilt_collision_plan.py": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd",
+        "articulated_cube_env.py": "dfad0023f9e2797d6ea8ea3ac08aa1b6889b7dbb4ff8398cd0ca11fa329bc707",
+        "finger_contact_audit.py": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0"
+      }
+    }
+  ],
+  "prior_v5_x_previous_labels_mask_bitwise_identical_and_original_flags_equal": true,
+  "resealed_gate_negative_test_report_sha256": "77e7e76903fa95855e93e2dedbbacbcf92e808b7848de7fedc47345531afd1ab",
+  "scope": "Dataset integrity and complete recorded actor replay only. Original V4 wrist success is retained as scoped diagnostic success; no whole-neural, RL, face-turn or independent-generalization promotion.",
+  "training_authorized_by_this_report": false,
+  "simulator_started": false,
+  "original_datasets_modified": false,
+  "review_script_sha256": "e766cb2b5ac053bb7658c6c2d356a371721ed88a763df54b1ba17812d9d88256"
+}

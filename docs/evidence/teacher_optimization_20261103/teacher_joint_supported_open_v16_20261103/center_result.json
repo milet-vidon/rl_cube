@@ -1,0 +1,94 @@
+{
+  "passed": true,
+  "longest_qualified_hold_s": 8.033333333333333,
+  "initial_position_m": [
+    0.5475876927375793,
+    0.28770750761032104,
+    1.2969695329666138
+  ],
+  "final_position_m": [
+    0.49978646636009216,
+    9.322848927695304e-05,
+    1.294337511062622
+  ],
+  "target_position_m": [
+    0.4999913786743307,
+    1.7913922130380344e-05,
+    1.2999997042303435
+  ],
+  "plan_checks": 1205,
+  "failure": null,
+  "final_audit": {
+    "qualified": true,
+    "failed_conditions": [],
+    "position_error_m": 0.005666400339646176,
+    "orientation_error_deg": 0.7881627839559092,
+    "wrist": {
+      "joint6_deg": 30.014965779297555,
+      "side_bend_deg": -32.10105134214531,
+      "flexion_deg": 32.03256164543493,
+      "forearm_direction_palm_frame": [
+        0.46829644285844485,
+        -0.46954232799105894,
+        0.7484840972464708
+      ],
+      "wrist_inside_elbow_m": 0.25806498527526855
+    },
+    "elbow": {
+      "shoulder_root_m": [
+        0.02171444520354271,
+        0.25000014901161194,
+        0.2400409936904908
+      ],
+      "elbow_root_m": [
+        0.17572221159934998,
+        0.4300327003002167,
+        0.0770594835281373
+      ],
+      "wrist_root_m": [
+        0.32198214530944824,
+        0.17196771502494812,
+        0.18160865306854257
+      ],
+      "outward_from_shoulder_m": 0.18003255128860474,
+      "upper_arm_outward_deg": 47.84579934314238,
+      "outward_from_shoulder_wrist_axis_m": 0.21269628793493064
+    }
+  },
+  "style": "j56",
+  "joint_coordination": {
+    "qualified": true,
+    "failed_conditions": [],
+    "initial_j5_j6_j7_deg": [
+      -77.07001044334798,
+      12.102545379034408,
+      46.00914804173013
+    ],
+    "actual_j5_j6_j7_deg": [
+      -52.92316070833186,
+      30.014965779297555,
+      34.996560835351765
+    ],
+    "delta_j5_j6_j7_deg": [
+      24.146849735016126,
+      17.912420400263144,
+      -11.012587206378363
+    ],
+    "j7_flexion_reduction_deg": 11.012587206378363
+  },
+  "finger_target_offsets_rad": {},
+  "finger_contact_feedback": {
+    "joint": "left_index_MPR_joint",
+    "lower_offset_rad": -0.012,
+    "upper_offset_rad": 0.0,
+    "step_rad": 5e-05,
+    "minimum_impulse_Ns": 0.0005,
+    "maximum_impulse_Ns": 0.002
+  },
+  "final_index_feedback": {
+    "offset_rad": -0.0001,
+    "impulse_Ns": 0.001669399923329861,
+    "on_target_face": true,
+    "next_offset_rad": -0.0001
+  }
+}

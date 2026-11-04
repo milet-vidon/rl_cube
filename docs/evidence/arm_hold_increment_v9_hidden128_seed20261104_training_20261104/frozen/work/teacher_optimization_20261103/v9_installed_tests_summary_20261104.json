@@ -1,0 +1,11 @@
+{
+  "schema": "v9_installed_source_and_test_validation_v1",
+  "installed_production_modules": 6,
+  "installed_test_modules": 11,
+  "tests_passed": 92,
+  "skipped_tests": 0,
+  "test_log_sha256": "aefaa3d15bee2929ac04615c09a21d1ceb8be9720d344df08f8d5154912e6d1b",
+  "source_binding_sha256": "42693932049b7e4c6718556aafcdda44bc4668132b9c579a81eaedfa7d030b20",
+  "installed_bytes_equal_frozen_work_bytes": true,
+  "physical_success_claim": false
+}

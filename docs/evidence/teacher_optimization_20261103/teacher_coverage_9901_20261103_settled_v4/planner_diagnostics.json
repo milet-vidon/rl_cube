@@ -1,0 +1,8 @@
+[
+  {
+    "kind": "hold_correction_deadband",
+    "entry_error_deg": 2.442195768029541,
+    "deadband_deg": 2.5,
+    "step_in_tilt": 911
+  }
+]

@@ -1,0 +1,727 @@
+#usda 1.0
+(
+    endTimeCode = 100
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    startTimeCode = 0
+    subLayers = [
+        @/home/brainco/rl_cube/github_project/isaac_mujoco_cube/cube_model.usda@
+    ]
+    timeCodesPerSecond = 60
+    upAxis = "Z"
+)
+
+def PhysicsScene "physicsScene" (
+    prepend apiSchemas = ["PhysxSceneAPI", "MaterialBindingAPI"]
+)
+{
+    rel material:binding:physics = </physicsScene/defaultMaterial> (
+        bindMaterialAs = "strongerThanDescendants"
+    )
+    vector3f physics:gravityDirection = (0, 0, -1)
+    float physics:gravityMagnitude = 9.81
+    float physxScene:bounceThreshold = 0.5
+    uniform token physxScene:broadphaseType = "MBP"
+    bool physxScene:enableCCD = 0
+    bool physxScene:enableEnhancedDeterminism = 0
+    bool physxScene:enableExternalForcesEveryIteration = 1
+    bool physxScene:enableGPUDynamics = 0
+    bool physxScene:enableSceneQuerySupport = 0
+    bool physxScene:enableStabilization = 0
+    float physxScene:frictionCorrelationDistance = 0.025
+    float physxScene:frictionOffsetThreshold = 0.04
+    uint physxScene:gpuCollisionStackSize = 67108864
+    uint physxScene:gpuFoundLostAggregatePairsCapacity = 33554432
+    uint physxScene:gpuFoundLostPairsCapacity = 2097152
+    uint physxScene:gpuHeapCapacity = 67108864
+    uint physxScene:gpuMaxNumPartitions = 8
+    uint physxScene:gpuMaxParticleContacts = 1048576
+    uint physxScene:gpuMaxRigidContactCount = 8388608
+    uint physxScene:gpuMaxRigidPatchCount = 163840
+    int physxScene:gpuMaxSoftBodyContacts = 1048576
+    uint64 physxScene:gpuTempBufferCapacity = 16777216
+    uint physxScene:gpuTotalAggregatePairsCapacity = 2097152
+    string physxScene:launcherType = "isaaclab_physx.app:KitLauncher"
+    uniform uint physxScene:maxPositionIterationCount = 64
+    uniform uint physxScene:maxVelocityIterationCount = 255
+    uniform uint physxScene:minPositionIterationCount = 64
+    uniform uint physxScene:minVelocityIterationCount = 4
+    bool physxScene:solveArticulationContactLast = 0
+    uniform token physxScene:solverType = "TGS"
+    uint physxScene:timeStepsPerSecond = 240
+
+    def Material "defaultMaterial" (
+        prepend apiSchemas = ["PhysicsMaterialAPI"]
+    )
+    {
+        float physics:dynamicFriction = 0.5
+        float physics:restitution = 0
+        float physics:staticFriction = 0.5
+    }
+}
+
+over "World"
+{
+    over "Physics" (
+        active = false
+    )
+    {
+    }
+
+    over "Core" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysicsArticulationRootAPI", "PhysxArticulationAPI", "PhysxContactReportAPI"]
+    )
+    {
+        bool physics:kinematicEnabled = 0
+        bool physxArticulation:enabledSelfCollisions = 1
+        int physxArticulation:solverPositionIterationCount = 64
+        int physxArticulation:solverVelocityIterationCount = 4
+        float physxContactReport:threshold = 0
+        bool physxRigidBody:disableGravity = 0
+        double3 xformOp:translate = (0, 0, 1)
+    }
+
+    over "Cube"
+    {
+        double3 xformOp:translate = (0, 0, 1)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+
+        over "pX" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+        }
+
+        over "nX" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+        }
+
+        over "pY" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+        }
+
+        over "nY" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+        }
+
+        over "pZ" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+        }
+
+        over "nZ" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+        }
+
+        over "pX_pY" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+        }
+
+        over "nY_pX" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+        }
+
+        over "nX_pY" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+        }
+
+        over "nX_nY" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+        }
+
+        over "pX_pZ" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+        }
+
+        over "nZ_pX" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+        }
+
+        over "nX_pZ" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+        }
+
+        over "nX_nZ" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+        }
+
+        over "pY_pZ" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+        }
+
+        over "nZ_pY" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+        }
+
+        over "nY_pZ" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+        }
+
+        over "nY_nZ" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+        }
+
+        over "pX_pY_pZ" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+        }
+
+        over "nZ_pX_pY" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+        }
+
+        over "nY_pX_pZ" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+        }
+
+        over "nY_nZ_pX" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+        }
+
+        over "nX_pY_pZ" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+        }
+
+        over "nX_nZ_pY" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+        }
+
+        over "nX_nY_pZ" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+        }
+
+        over "nX_nY_nZ" (
+            prepend apiSchemas = ["PhysxRigidBodyAPI", "PhysxContactReportAPI"]
+        )
+        {
+            float physxContactReport:threshold = 0
+            bool physxRigidBody:disableGravity = 0
+        }
+    }
+
+    over "Material"
+    {
+        float physics:dynamicFriction = 0
+        float physics:staticFriction = 0
+    }
+
+    over "Joints"
+    {
+        over "pX" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:angular"]
+        )
+        {
+            float physxJointAxis:angular:armature = 0.0001
+            float physxJointAxis:angular:dynamicFrictionEffort = 0.001
+            float physxJointAxis:angular:staticFrictionEffort = 0.001
+            float physxJointAxis:angular:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nX" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:angular"]
+        )
+        {
+            float physxJointAxis:angular:armature = 0.0001
+            float physxJointAxis:angular:dynamicFrictionEffort = 0.001
+            float physxJointAxis:angular:staticFrictionEffort = 0.001
+            float physxJointAxis:angular:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "pY" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:angular"]
+        )
+        {
+            float physxJointAxis:angular:armature = 0.0001
+            float physxJointAxis:angular:dynamicFrictionEffort = 0.001
+            float physxJointAxis:angular:staticFrictionEffort = 0.001
+            float physxJointAxis:angular:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nY" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:angular"]
+        )
+        {
+            float physxJointAxis:angular:armature = 0.0001
+            float physxJointAxis:angular:dynamicFrictionEffort = 0.001
+            float physxJointAxis:angular:staticFrictionEffort = 0.001
+            float physxJointAxis:angular:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "pZ" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:angular"]
+        )
+        {
+            float physxJointAxis:angular:armature = 0.0001
+            float physxJointAxis:angular:dynamicFrictionEffort = 0.001
+            float physxJointAxis:angular:staticFrictionEffort = 0.001
+            float physxJointAxis:angular:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nZ" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:angular"]
+        )
+        {
+            float physxJointAxis:angular:armature = 0.0001
+            float physxJointAxis:angular:dynamicFrictionEffort = 0.001
+            float physxJointAxis:angular:staticFrictionEffort = 0.001
+            float physxJointAxis:angular:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "pX_pY" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nY_pX" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nX_pY" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nX_nY" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "pX_pZ" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nZ_pX" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nX_pZ" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nX_nZ" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "pY_pZ" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nZ_pY" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nY_pZ" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nY_nZ" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "pX_pY_pZ" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nZ_pX_pY" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nY_pX_pZ" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nY_nZ_pX" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nX_pY_pZ" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nX_nZ_pY" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nX_nY_pZ" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+
+        over "nX_nY_nZ" (
+            prepend apiSchemas = ["PhysxJointAxisAPI:rotX", "PhysxJointAxisAPI:rotY", "PhysxJointAxisAPI:rotZ"]
+        )
+        {
+            float physxJointAxis:rotX:armature = 0.0001
+            float physxJointAxis:rotX:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotX:staticFrictionEffort = 0.001
+            float physxJointAxis:rotX:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotY:armature = 0.0001
+            float physxJointAxis:rotY:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotY:staticFrictionEffort = 0.001
+            float physxJointAxis:rotY:viscousFrictionCoefficient = 0.000008726646
+            float physxJointAxis:rotZ:armature = 0.0001
+            float physxJointAxis:rotZ:dynamicFrictionEffort = 0.001
+            float physxJointAxis:rotZ:staticFrictionEffort = 0.001
+            float physxJointAxis:rotZ:viscousFrictionCoefficient = 0.000008726646
+        }
+    }
+}
+

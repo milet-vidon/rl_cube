@@ -1,0 +1,261 @@
+{
+  "schema": "independent_actual_v7_actor_and_first_divergence_audit_v1",
+  "passed": true,
+  "training_qualification_granted": false,
+  "physics_replay_performed": false,
+  "run": "runs/left_zero_gated_residual_v7_eval_9501_20261104",
+  "evaluated_checkpoint_sha256": "0920f7e4952b5bf534021ce8240a8467a303bffda4b7ec1750eb830b3aea4054",
+  "trajectory_sha256": "aabb42478c7d076f0f8abb94275c051615c9a6c40fd30f5b2ac1d43074e758f9",
+  "transition_sha256": "249b32ee34c8ab0bac5324c0f2aa70f97912164366719f44551442a678aa68d4",
+  "all_actual_features_and_predictions_bitwise_equal": true,
+  "complete_actual_history_from_reset": true,
+  "actor_hidden_reset_count": 1,
+  "executed_steps": 752,
+  "masked_exact_baseline_steps": 499,
+  "unexecuted_aborts": 1,
+  "raw_done_count": 0,
+  "phase_counts": {
+    "ready": 244,
+    "preshape": 73,
+    "lower": 61,
+    "approach": 49,
+    "squeeze": 85,
+    "primary_lift": 240
+  },
+  "first_actual_model_action_different_from_base": {
+    "step": 545,
+    "phase": "primary_lift",
+    "predicted_minus_base": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -0.004449307918548584,
+      0.004449307918548584,
+      0.004449367523193359,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "expert_projected_minus_base_proposal": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -0.004999995231628418,
+      0.004999995231628418,
+      0.004999995231628418,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "actual_previous_left": [
+      1.432376503944397,
+      -1.5876868963241577,
+      -0.608396589756012,
+      -1.3534678220748901,
+      0.6343657374382019,
+      0.801124095916748,
+      0.6115124821662903,
+      -0.05522935092449188,
+      0.7465938329696655,
+      0.27465006709098816,
+      1.0780080556869507,
+      0.6366629004478455,
+      0.4361843764781952,
+      0.5500065088272095,
+      1.0661275386810303,
+      1.0962682962417603,
+      0.006787104532122612,
+      0.5552442669868469,
+      0.8348871469497681,
+      0.41141632199287415,
+      -0.04642563313245773,
+      0.4884384870529175,
+      0.5728508234024048,
+      1.0655195713043213,
+      -0.04672420397400856,
+      0.7132117748260498,
+      0.3663650453090668,
+      0.21655040979385376
+    ],
+    "actual_left_contact_impulses": {
+      "thumb": 0.05366899370002308,
+      "index": 0.019957044861178826,
+      "middle": 0.006672889208828092,
+      "ring": 0.0010024810910428945,
+      "little": 0.05980223964551635
+    }
+  },
+  "original_final_summary": {
+    "scope": "left_position_policy_from_reset_pickup_through_wrist_only",
+    "steps": 752,
+    "physical_steps": 752,
+    "physical_steps_definition": "completed control steps from actual non-resetting environment episode counter",
+    "environment_episode_counter": 752,
+    "fully_audited_transition_steps": 752,
+    "action_execution_dispatch_attempts": 752,
+    "trajectory_rows_recorded": 752,
+    "original_wrist_gate_qualified": false,
+    "left_teacher_position_action_steps": 0,
+    "teacher_query_count": 753,
+    "original_teacher_gain_schedule_events": 0,
+    "actor_hidden_reset_count": 1,
+    "center_oracle_implemented": false,
+    "pure_student_episode_claim": false,
+    "corrective_labels_qualified_for_training": false,
+    "failure": "contact_topology_or_settle_timeout"
+  },
+  "matched_v4_divergence": {
+    "reference_run": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_phase_v4_matched_eval_9501_20261104_v2",
+    "reference_trajectory_sha256": "0a2eb938a60c6a25f1412dd13051d9814d9b4f96cd6d8605954f27a377a5e8f0",
+    "compared_same_step_rows": 752,
+    "first_float32_divergence": {
+      "applied_target": {
+        "step": 545,
+        "reference_phase": "primary_lift",
+        "actual_phase": "primary_lift",
+        "max_abs_difference": 0.004449367523193359,
+        "different_indices": [
+          21,
+          22,
+          23
+        ]
+      },
+      "q": {
+        "step": 545,
+        "reference_phase": "primary_lift",
+        "actual_phase": "primary_lift",
+        "max_abs_difference": 0.002880275249481201,
+        "different_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
+        ]
+      },
+      "cube_position": {
+        "step": 545,
+        "reference_phase": "primary_lift",
+        "actual_phase": "primary_lift",
+        "max_abs_difference": 2.4199485778808594e-05,
+        "different_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      "cube_quaternion_wxyz": {
+        "step": 545,
+        "reference_phase": "primary_lift",
+        "actual_phase": "primary_lift",
+        "max_abs_difference": 0.0005280384793877602,
+        "different_indices": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "finger_contact_impulses": {
+        "step": 545,
+        "reference_phase": "primary_lift",
+        "actual_phase": "primary_lift",
+        "reference": {
+          "left": {
+            "thumb": 0.05248283809544768,
+            "index": 0.011540116350517587,
+            "middle": 0.0059391705685104745,
+            "ring": 0.0012359941332583638,
+            "little": 0.05326590868754786
+          },
+          "right": {
+            "thumb": 0.0,
+            "index": 0.0,
+            "middle": 0.0,
+            "ring": 0.0,
+            "little": 0.0
+          }
+        },
+        "actual": {
+          "left": {
+            "thumb": 0.05264380186376833,
+            "index": 0.012060874623368344,
+            "middle": 0.006107615173885583,
+            "ring": 0.0007670665357533942,
+            "little": 0.05438645106700207
+          },
+          "right": {
+            "thumb": 0.0,
+            "index": 0.0,
+            "middle": 0.0,
+            "ring": 0.0,
+            "little": 0.0
+          }
+        }
+      }
+    },
+    "comparison_scope": "same index from reset until first divergence; later differing phases are not time-aligned trajectories"
+  },
+  "audit_source_sha256": "94267dc6f11a0c17f523b1216c028011086e9c413005bef3bb8e729ff3b51279"
+}

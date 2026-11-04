@@ -1,0 +1,16 @@
+{
+  "state": "completed_v9",
+  "time_unix": 1793713656.7744865,
+  "source_run": "teacher_joint_swept_clearance_v8_20261103",
+  "next_run": "teacher_joint_matched_friction_v9_20261103",
+  "scope": "simulation development only; no training",
+  "returncode": 0,
+  "failure": "dynamic_grasp_acceptance_gate_not_met",
+  "steps": 1826,
+  "push": {
+    "requested": true,
+    "executed": false,
+    "qualified": false,
+    "failure": "grasp_precondition_not_met"
+  }
+}

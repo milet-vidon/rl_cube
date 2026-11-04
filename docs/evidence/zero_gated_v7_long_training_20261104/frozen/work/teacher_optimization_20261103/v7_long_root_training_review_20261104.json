@@ -1,0 +1,10 @@
+{
+  "reviewer": "root",
+  "authorization_sha256": "9cdd48132d73447ad6c85ec6bebdf0b399b381e69e0d1a447d3688d3178ed9c9",
+  "qualification_sha256": "9dc17535d63a0a7667b1b3aca1853421e6d0a5b8dbf44560462611130582474f",
+  "change_from_first_candidate": "10000 epochs from the same seed and initialization procedure; no optimizer-state resume claimed",
+  "reason": "first completed candidate still has 9 strict-zero false positives and 12 correction false negatives; test whether additional fitting reduces these while first candidate receives actual closed-loop evaluation",
+  "same_data_model_bounds_losses_and_projection": true,
+  "original_checkpoint_preserved": true,
+  "development_only": true
+}

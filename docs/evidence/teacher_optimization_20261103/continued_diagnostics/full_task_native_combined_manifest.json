@@ -1,0 +1,69 @@
+{
+  "scope": "unapplied candidate; host validation only; no new Isaac run",
+  "apply_from": "/home/brainco/rl_cube/github_project",
+  "patch": "full_task_native_combined.patch",
+  "patch_sha256": "7d4fe867339ca7098b3fb8f701c8274bc51ebf479e2e28653440a573a5c7f3e8",
+  "files": {
+    "single_face_experiment.py": {
+      "base_sha256": "c5f26bfb58671861ba21644de2e8cd9b628e6bf5ebd4fb1e8929f383a2ec33ab",
+      "candidate_sha256": "36d98c64fbeb0110506d11aa93b98a3fa392e198716c5a2d0b86ce815e69917f",
+      "candidate_path": "E:\\Codex\\2026-11-03\\ssh-3\\work\\single_face_experiment_full_task_native_candidate.py",
+      "termination_candidate_sha256": "2ddb3723d8b3d98eff0614b4c2f3f7dca6c3d62df8e7a70dce4624327a0e8863"
+    },
+    "centered_opposition_runtime.py": {
+      "base_sha256": "95734758ff1c5971b2b534731f3496d00501aa015466e3705ae7ac89f2de7494",
+      "candidate_sha256": "30e22dbb33e1161cf86662e6cd2b98acf850482327df476dffca24d6ea0eaf33",
+      "candidate_path": "E:\\Codex\\2026-11-03\\ssh-3\\work\\centered_opposition_runtime_full_task_native_candidate.py",
+      "termination_candidate_sha256": "30e22dbb33e1161cf86662e6cd2b98acf850482327df476dffca24d6ea0eaf33"
+    },
+    "opposed_grasp_runtime.py": {
+      "base_sha256": "eabbc3b3b3e4d42b4380010fbcabf6230c4e7fc58ed97b629131e2aff218f016",
+      "candidate_sha256": "0b3de71cf3c5df1ae30bc046baaae087797d3af3d70a1d243cf24150d84f458c",
+      "candidate_path": "E:\\Codex\\2026-11-03\\ssh-3\\work\\opposed_grasp_runtime_full_task_native_candidate.py",
+      "termination_candidate_sha256": "0b3de71cf3c5df1ae30bc046baaae087797d3af3d70a1d243cf24150d84f458c"
+    }
+  },
+  "required_new_modules": {
+    "full_task_episode.py": {
+      "source_path": "E:\\Codex\\2026-11-03\\ssh-3\\work\\full_task_episode.py",
+      "sha256": "937df2b0d02f7a23b69d863a2a7977e86a4b188743bf9c2a7b0cafb46b8e03d4",
+      "target": "revotron_cube_rl/full_task_episode.py"
+    },
+    "passive_cube_articulation.py": {
+      "source_path": "E:\\Codex\\2026-11-03\\ssh-3\\work\\passive_cube_articulation.py",
+      "sha256": "949c3ede71c6ac4cd32b359b08ab110c72c354888d32541136aa2330edce980c",
+      "target": "revotron_cube_rl/passive_cube_articulation.py"
+    }
+  },
+  "input_builder_sha256": "9fa18d5e5cc808fae092e02bd65b7e30a4a80c74d44cad34a847478a7e6b816c",
+  "native_input_sha256": "9e51ac0d04c5c6b089e9f8786ee31ebed844b9a3d7d8867797a826b46b54b859",
+  "baseline_path": "work/teacher_optimization_20261103/articulation_freefall_probe_v1_20261103/baseline/result.json",
+  "baseline_sha256": "0bc715f5f009a9dcf6b90c7d4f5f97dc22043354aebe403aa5a2ad94ed9615c8",
+  "static_checks": {
+    "native_factory_after_app_and_outermost": true,
+    "native_readback_before_task_start": true,
+    "both_helpers_in_source_archive": true,
+    "native_and_legacy_combo_rejected": true,
+    "native_solver_explicit_64_4": true,
+    "full_task_only_supported_three_step_sites": true,
+    "main_loop_AST_equal_to_termination_candidate": true,
+    "stage_files_identical_to_termination_candidates": true,
+    "all_top_level_evidence_files_in_manifest": true
+  },
+  "required_cli": [
+    "--full-task-episode",
+    "--passive-cube-articulation",
+    "--position-iterations",
+    "64",
+    "--articulation-baseline",
+    "<baseline_path>",
+    "--articulation-baseline-sha256",
+    "<baseline_sha256>"
+  ],
+  "not_claimed": [
+    "full native teacher passed",
+    "90 degree contact turn",
+    "six face rotation",
+    "PPO training"
+  ]
+}

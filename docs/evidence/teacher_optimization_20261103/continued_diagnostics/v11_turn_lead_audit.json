@@ -1,0 +1,24 @@
+{
+  "run": "teacher_joint_soft_fingers_v11_20261103",
+  "first_contact_losses": {
+    "little": {
+      "first_missing_step": 3240,
+      "measured_palm_rotation_deg": 1.2129768114211223,
+      "measured_face_angle_deg": 0.18392494291379052,
+      "palm_lead_deg": 1.0290518685073318
+    },
+    "ring": {
+      "first_missing_step": 3270,
+      "measured_palm_rotation_deg": 5.3778330123911795,
+      "measured_face_angle_deg": 0.3892453582313866,
+      "palm_lead_deg": 4.988587654159793
+    },
+    "index": {
+      "first_missing_step": 3276,
+      "measured_palm_rotation_deg": 6.441886601997148,
+      "measured_face_angle_deg": 0.5233606194377431,
+      "palm_lead_deg": 5.918525982559405
+    }
+  },
+  "scope": "observed trajectory only; not a counterfactual validation of feedback pacing"
+}

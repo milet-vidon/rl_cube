@@ -1,0 +1,22 @@
+{
+  "run": "teacher_joint_passive_damping_v12_20261103",
+  "frames": 121,
+  "trajectory_sha256": "2e79815c673407e0daf9378455985dba1afb405760d5bddb5232ab24121b8833",
+  "source_sha256": {
+    "tilt_audit.py": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995",
+    "opposed_grasp_audit.py": "ee6190758ddd71487508edaae7d18f8b9d0890bee971b9d419d61c32aed00af3"
+  },
+  "left_missing_frames": {
+    "thumb": 0,
+    "index": 0,
+    "middle": 0,
+    "ring": 121,
+    "little": 0
+  },
+  "core_angular_speed_violation_frames": 0,
+  "core_linear_speed_violation_frames": 0,
+  "right_missing_frames": 0,
+  "posture_failure_frames": 0,
+  "assembly_failure_frames": 0,
+  "longest_qualified_hold_s": 0.0
+}

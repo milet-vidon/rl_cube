@@ -1,0 +1,29 @@
+{
+  "sha256": {
+    "README.md": "ce83a7023cae45a3bd355e7d70d55f3bbf7b0f6c7bb68c0377dab9d1307bc28e",
+    "archive_index.json": "322847192e374a641babe7e81b67b5814d483481ef92b480379bc549862393b8",
+    "review/inspect02_inspection.json": "d0c46d42d206fabb2e4fb630d477a2b4f429c33894bc32b8d686d0724a4a0dd1",
+    "review/inspect02_qualification.json": "71f98935291201335bfe24f8a19b133ee475f7e0dc5060ce553c97f93fd617d5",
+    "review/inspect02_root_training_review.json": "61d0a76107e4f6fafe0f1ca013f46ba70370bae73361adce6c72a0050a485714",
+    "review/launch_v5_training_long_reviewed.sh": "51ad0267b02a18b26ffa4fd4e3b20afa15f8e1ad3bcd4690392c49d995fdf213",
+    "review/launch_v5_training_reviewed.sh": "9d8a157f355ca380988a4a1ef657e292d691fc7033ec5e879196fd3571861adb",
+    "review/v5_candidate_bounds.json": "dcf85acae29dec425199df8e5edec50da8117c6ea2d4adf9d5a2a4feee74f18c",
+    "review/v5_closed_loop_design_20261104.json": "d33e96943a7c893b3de25a4f87fc53202f8bf49bcaa7b3d640dc2bf8e95e4cc5",
+    "review/v5_independent_pretraining_review_20261104.json": "202e4443d32e265ad47d821d4867c230735dd3705930bf21cb381ad606db38b3",
+    "review/v5_long_training_decision.json": "c075e01ffd09c08fa2da3221c1f9adfd9c91744c75034a9626b3e90812114ff6",
+    "source/dagger_residual_dataset_v5.py": "69c1cef251a4180f9839a2fc27ecbb738ce6f87828d5a9bc513a19aa40621cb1",
+    "source/phase_residual_policy_v5.py": "5bb033710c18c21310b526d539251794a37efb31a2f139a68b052983c363f412",
+    "source/test_phase_residual_v5.py": "e3cb8dce816130352dcb08327cb159583d261df1dbb21a3298fc83c4a00f66c7",
+    "source/train_phase_residual_v5.py": "74cc6077ae7bb135260b9fc1f4c0c99765653af8dd243301563e61808a027a6d",
+    "teacher_state_feedback_residual_v5_20261104/inspection.json": "d0c46d42d206fabb2e4fb630d477a2b4f429c33894bc32b8d686d0724a4a0dd1",
+    "teacher_state_feedback_residual_v5_20261104/model.pt": "ae36280b13d74fe840e88fd748c618c76cc9ea9b8d7fd98dd337e456cc39e3c5",
+    "teacher_state_feedback_residual_v5_20261104/qualification.json": "71f98935291201335bfe24f8a19b133ee475f7e0dc5060ce553c97f93fd617d5",
+    "teacher_state_feedback_residual_v5_20261104/result.json": "095566198ca47e875a2b5980414e9dcc99287b60386ef779f01475d8c99caa77",
+    "teacher_state_feedback_residual_v5_20261104/training.jsonl.gz": "8c2e929bd30a7f6f1974faa73fc91aab19a5c87488209151f8a0ea985132458f",
+    "teacher_state_feedback_residual_v5_long_20261104/inspection.json": "d0c46d42d206fabb2e4fb630d477a2b4f429c33894bc32b8d686d0724a4a0dd1",
+    "teacher_state_feedback_residual_v5_long_20261104/model.pt": "1c663e17f6157273ee4c80b1e6ebf1c292b6c9972278041936b56943212db98c",
+    "teacher_state_feedback_residual_v5_long_20261104/qualification.json": "71f98935291201335bfe24f8a19b133ee475f7e0dc5060ce553c97f93fd617d5",
+    "teacher_state_feedback_residual_v5_long_20261104/result.json": "69cfddd983c144ee75edfa1ca1c232637e8210f082d0c16ddff0ace6a00f22d7",
+    "teacher_state_feedback_residual_v5_long_20261104/training.jsonl.gz": "9567f728edce96944c8e2dc76534d72e9a49d15ae08ae0f857feb8e20af45257"
+  }
+}

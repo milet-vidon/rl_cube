@@ -1,0 +1,35 @@
+{
+  "status": "draft_frozen_pending_integration_smoke",
+  "files_sha256": {
+    "passive_cube_articulation.py": "949c3ede71c6ac4cd32b359b08ab110c72c354888d32541136aa2330edce980c",
+    "test_passive_cube_articulation.py": "714b723b936d4159e263bc094f2f6f83d83b2b750368f2d0d3f4cd9363707bcd",
+    "passive_cube_env_smoke.py": "7fbbe33222d4fd2e0eed4a4a1f160b611480d968b076d14ec7ece82cdfb3d1b7"
+  },
+  "static_compile_passed": true,
+  "LF_only": true,
+  "offline_replay_of_native_mass_properties": [
+    {
+      "run": "articulation_freefall_probe_v1_20261103",
+      "full_mass_inertia_COM_frame_match": true,
+      "baseline_sha256": "0bc715f5f009a9dcf6b90c7d4f5f97dc22043354aebe403aa5a2ad94ed9615c8"
+    },
+    {
+      "run": "articulation_kick_hinge_probe_v1_20261103",
+      "full_mass_inertia_COM_frame_match": true,
+      "baseline_sha256": "97da7785a10b9d6371d69e3e88cb61b4a9f22e082e15b5228ea2941d28918c4b"
+    },
+    {
+      "run": "articulation_kick_spherical_probe_v1_20261103",
+      "full_mass_inertia_COM_frame_match": true,
+      "baseline_sha256": "025d1445637ae62538c0179e0de1a0153090a502fa00c86a61670ddc0d0befcb"
+    },
+    {
+      "run": "articulation_floor_contact_probe_v2_20261103",
+      "full_mass_inertia_COM_frame_match": true,
+      "baseline_sha256": "6030bbd9eb36cb6c29bae8cc357ebd766a8a561b17f17f6e093b6597a40eae1b"
+    }
+  ],
+  "integration_smoke_executed": false,
+  "Isaac_launched_by_this_validation": false,
+  "solver_readback_scope": "explicit 64/4 USD schema readback; no installed native iteration getter; mass/inertia/COM/66DOF/passive properties use native tensor readback"
+}

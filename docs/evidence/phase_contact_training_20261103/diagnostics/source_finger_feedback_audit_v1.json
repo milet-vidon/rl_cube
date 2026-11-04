@@ -1,0 +1,566 @@
+{
+  "scope": "host-only offline oracle reconstruction using source previous measured state and original FingerArrival code",
+  "source": {
+    "run": "center_j56_dev_v3_20261103",
+    "seed": 9501,
+    "manifest_sha256": "e8cb8f154d4e1be1f3ff3694d5a4b0ef3a598261ade2f4461a1b4a0e082ffff6",
+    "prefix_rows": 2129,
+    "excluded_tail_rows": 0,
+    "full_episode_failure": null,
+    "recomputed_center_hold_s": 8.033333333333333,
+    "source_scope": "left prefix only; no right-turn success label"
+  },
+  "first_feedback_step": 499,
+  "feedback_end_exclusive": 1647,
+  "maximum_requested_target_error_rad": 2.3283064365386963e-10,
+  "reconstructed_steps": 1148,
+  "reconstruction_mismatches_gt_1e_6": [],
+  "phase_summary": {
+    "squeeze": {
+      "steps": 13,
+      "update_steps": 3,
+      "ik_finger_solves": 1,
+      "joint_saturated_steps": {
+        "left_middle_MPR_joint": 1,
+        "left_middle_PIP_joint": 3,
+        "left_middle_MCP_joint": 2,
+        "left_middle_DIP_joint": 2
+      },
+      "contact_hold_checks": 62,
+      "contact_hold_violations": 4
+    },
+    "primary_lift": {
+      "steps": 120,
+      "update_steps": 11,
+      "ik_finger_solves": 6,
+      "joint_saturated_steps": {
+        "left_index_MPR_joint": 1,
+        "left_index_MCP_joint": 3,
+        "left_index_PIP_joint": 3,
+        "left_index_DIP_joint": 3,
+        "left_ring_MPR_joint": 1,
+        "left_ring_MCP_joint": 8,
+        "left_ring_PIP_joint": 8,
+        "left_ring_DIP_joint": 8
+      },
+      "contact_hold_checks": 587,
+      "contact_hold_violations": 0
+    },
+    "elbow_outward": {
+      "steps": 129,
+      "update_steps": 0,
+      "ik_finger_solves": 0,
+      "joint_saturated_steps": {},
+      "contact_hold_checks": 645,
+      "contact_hold_violations": 0
+    },
+    "tilt_90": {
+      "steps": 611,
+      "update_steps": 7,
+      "ik_finger_solves": 3,
+      "joint_saturated_steps": {
+        "left_index_MCP_joint": 7,
+        "left_index_PIP_joint": 7,
+        "left_index_DIP_joint": 7
+      },
+      "contact_hold_checks": 3048,
+      "contact_hold_violations": 0
+    },
+    "wrist_reconfigure": {
+      "steps": 181,
+      "update_steps": 0,
+      "ik_finger_solves": 0,
+      "joint_saturated_steps": {},
+      "contact_hold_checks": 905,
+      "contact_hold_violations": 0
+    },
+    "tilt_hold": {
+      "steps": 94,
+      "update_steps": 2,
+      "ik_finger_solves": 1,
+      "joint_saturated_steps": {
+        "left_index_MCP_joint": 2,
+        "left_index_PIP_joint": 2,
+        "left_index_DIP_joint": 2
+      },
+      "contact_hold_checks": 468,
+      "contact_hold_violations": 0
+    }
+  },
+  "events": [
+    {
+      "step": 499,
+      "phase": "squeeze",
+      "arrival_tick": 0,
+      "finger": "middle",
+      "pre_contact_impulse_Ns": 0.0,
+      "ik_solve_due": true,
+      "saturated_joints": [
+        "left_middle_MPR_joint",
+        "left_middle_PIP_joint"
+      ],
+      "delta_rad": {
+        "left_middle_MPR_joint": -0.004999998956918716,
+        "left_middle_MCP_joint": 0.005002081394195557,
+        "left_middle_PIP_joint": -0.004999995231628418,
+        "left_middle_DIP_joint": -0.004998683929443359
+      },
+      "source_requested_reconstruction_error_rad": 0.0
+    },
+    {
+      "step": 500,
+      "phase": "squeeze",
+      "arrival_tick": 1,
+      "finger": "middle",
+      "pre_contact_impulse_Ns": 0.0,
+      "ik_solve_due": false,
+      "saturated_joints": [
+        "left_middle_MCP_joint",
+        "left_middle_PIP_joint",
+        "left_middle_DIP_joint"
+      ],
+      "delta_rad": {
+        "left_middle_MPR_joint": 0.0,
+        "left_middle_MCP_joint": 0.004999995231628418,
+        "left_middle_PIP_joint": -0.004999995231628418,
+        "left_middle_DIP_joint": -0.004999995231628418
+      },
+      "source_requested_reconstruction_error_rad": 0.0
+    },
+    {
+      "step": 501,
+      "phase": "squeeze",
+      "arrival_tick": 2,
+      "finger": "middle",
+      "pre_contact_impulse_Ns": 0.0,
+      "ik_solve_due": false,
+      "saturated_joints": [
+        "left_middle_MCP_joint",
+        "left_middle_PIP_joint",
+        "left_middle_DIP_joint"
+      ],
+      "delta_rad": {
+        "left_middle_MPR_joint": 0.0,
+        "left_middle_MCP_joint": 0.004999995231628418,
+        "left_middle_PIP_joint": -0.004999995231628418,
+        "left_middle_DIP_joint": -0.004999995231628418
+      },
+      "source_requested_reconstruction_error_rad": 0.0
+    },
+    {
+      "step": 538,
+      "phase": "primary_lift",
+      "arrival_tick": 39,
+      "finger": "index",
+      "pre_contact_impulse_Ns": 0.0,
+      "ik_solve_due": true,
+      "saturated_joints": [
+        "left_index_MPR_joint",
+        "left_index_MCP_joint",
+        "left_index_PIP_joint",
+        "left_index_DIP_joint"
+      ],
+      "delta_rad": {
+        "left_index_MPR_joint": -0.004999999888241291,
+        "left_index_MCP_joint": 0.004999995231628418,
+        "left_index_PIP_joint": -0.004999995231628418,
+        "left_index_DIP_joint": -0.004999995231628418
+      },
+      "source_requested_reconstruction_error_rad": 0.0
+    },
+    {
+      "step": 544,
+      "phase": "primary_lift",
+      "arrival_tick": 45,
+      "finger": "ring",
+      "pre_contact_impulse_Ns": 0.0,
+      "ik_solve_due": true,
+      "saturated_joints": [
+        "left_ring_MPR_joint",
+        "left_ring_MCP_joint",
+        "left_ring_PIP_joint",
+        "left_ring_DIP_joint"
+      ],
+      "delta_rad": {
+        "left_ring_MPR_joint": -0.004999998956918716,
+        "left_ring_MCP_joint": 0.004999995231628418,
+        "left_ring_PIP_joint": -0.004999995231628418,
+        "left_ring_DIP_joint": -0.004999995231628418
+      },
+      "source_requested_reconstruction_error_rad": 0.0
+    },
+    {
+      "step": 545,
+      "phase": "primary_lift",
+      "arrival_tick": 46,
+      "finger": "ring",
+      "pre_contact_impulse_Ns": 0.0,
+      "ik_solve_due": false,
+      "saturated_joints": [
+        "left_ring_MCP_joint",
+        "left_ring_PIP_joint",
+        "left_ring_DIP_joint"
+      ],
+      "delta_rad": {
+        "left_ring_MPR_joint": 0.0,
+        "left_ring_MCP_joint": 0.004999995231628418,
+        "left_ring_PIP_joint": -0.004999995231628418,
+        "left_ring_DIP_joint": -0.004999995231628418
+      },
+      "source_requested_reconstruction_error_rad": 0.0
+    },
+    {
+      "step": 546,
+      "phase": "primary_lift",
+      "arrival_tick": 47,
+      "finger": "ring",
+      "pre_contact_impulse_Ns": 0.0,
+      "ik_solve_due": false,
+      "saturated_joints": [
+        "left_ring_MCP_joint",
+        "left_ring_PIP_joint",
+        "left_ring_DIP_joint"
+      ],
+      "delta_rad": {
+        "left_ring_MPR_joint": 0.0,
+        "left_ring_MCP_joint": 0.004999995231628418,
+        "left_ring_PIP_joint": -0.004999995231628418,
+        "left_ring_DIP_joint": -0.004999995231628418
+      },
+      "source_requested_reconstruction_error_rad": 0.0
+    },
+    {
+      "step": 547,
+      "phase": "primary_lift",
+      "arrival_tick": 48,
+      "finger": "ring",
+      "pre_contact_impulse_Ns": 0.0,
+      "ik_solve_due": true,
+      "saturated_joints": [
+        "left_ring_MCP_joint",
+        "left_ring_PIP_joint",
+        "left_ring_DIP_joint"
+      ],
+      "delta_rad": {
+        "left_ring_MPR_joint": 0.0,
+        "left_ring_MCP_joint": 0.004999995231628418,
+        "left_ring_PIP_joint": -0.004999995231628418,
+        "left_ring_DIP_joint": -0.004999995231628418
+      },
+      "source_requested_reconstruction_error_rad": 0.0
+    },
+    {
+      "step": 548,
+      "phase": "primary_lift",
+      "arrival_tick": 49,
+      "finger": "ring",
+      "pre_contact_impulse_Ns": 0.0,
+      "ik_solve_due": false,
+      "saturated_joints": [
+        "left_ring_MCP_joint",
+        "left_ring_PIP_joint",
+        "left_ring_DIP_joint"
+      ],
+      "delta_rad": {
+        "left_ring_MPR_joint": 0.0,
+        "left_ring_MCP_joint": 0.004999995231628418,
+        "left_ring_PIP_joint": -0.004999995231628418,
+        "left_ring_DIP_joint": -0.004999995231628418
+      },
+      "source_requested_reconstruction_error_rad": 0.0
+    },
+    {
+      "step": 552,
+      "phase": "primary_lift",
+      "arrival_tick": 53,
+      "finger": "ring",
+      "pre_contact_impulse_Ns": 0.0,
+      "ik_solve_due": false,
+      "saturated_joints": [
+        "left_ring_MCP_joint",
+        "left_ring_PIP_joint",
+        "left_ring_DIP_joint"
+      ],
+      "delta_rad": {
+        "left_ring_MPR_joint": 0.0,
+        "left_ring_MCP_joint": 0.004999995231628418,
+        "left_ring_PIP_joint": -0.004999995231628418,
+        "left_ring_DIP_joint": -0.004999995231628418
+      },
+      "source_requested_reconstruction_error_rad": 0.0
+    },
+    {
+      "step": 553,
+      "phase": "primary_lift",
+      "arrival_tick": 54,
+      "finger": "ring",
+      "pre_contact_impulse_Ns": 0.0,
+      "ik_solve_due": true,
+      "saturated_joints": [
+        "left_ring_MCP_joint",
+        "left_ring_PIP_joint",
+        "left_ring_DIP_joint"
+      ],
+      "delta_rad": {
+        "left_ring_MPR_joint": 0.0,
+        "left_ring_MCP_joint": 0.004999995231628418,
+        "left_ring_PIP_joint": -0.004999995231628418,
+        "left_ring_DIP_joint": -0.004999995231628418
+      },
+      "source_requested_reconstruction_error_rad": 0.0
+    },
+    {
+      "step": 575,
+      "phase": "primary_lift",
+      "arrival_tick": 76,
+      "finger": "ring",
+      "pre_contact_impulse_Ns": 0.0,
+      "ik_solve_due": false,
+      "saturated_joints": [
+        "left_ring_MCP_joint",
+        "left_ring_PIP_joint",
+        "left_ring_DIP_joint"
+      ],
+      "delta_rad": {
+        "left_ring_MPR_joint": 0.0,
+        "left_ring_MCP_joint": 0.004999995231628418,
+        "left_ring_PIP_joint": -0.004999995231628418,
+        "left_ring_DIP_joint": -0.004999995231628418
+      },
+      "source_requested_reconstruction_error_rad": 0.0
+    },
+    {
+      "step": 589,
+      "phase": "primary_lift",
+      "arrival_tick": 90,
+      "finger": "index",
+      "pre_contact_impulse_Ns": 0.0,
+      "ik_solve_due": true,
+      "saturated_joints": [
+        "left_index_MCP_joint",
+        "left_index_PIP_joint",
+        "left_index_DIP_joint"
+      ],
+      "delta_rad": {
+        "left_index_MPR_joint": -4.656612873077393e-10,
+        "left_index_MCP_joint": 0.004999995231628418,
+        "left_index_PIP_joint": -0.004999995231628418,
+        "left_index_DIP_joint": -0.004999995231628418
+      },
+      "source_requested_reconstruction_error_rad": 0.0
+    },
+    {
+      "step": 610,
+      "phase": "primary_lift",
+      "arrival_tick": 111,
+      "finger": "index",
+      "pre_contact_impulse_Ns": 4.379173363064445e-06,
+      "ik_solve_due": true,
+      "saturated_joints": [
+        "left_index_MCP_joint",
+        "left_index_PIP_joint",
+        "left_index_DIP_joint"
+      ],
+      "delta_rad": {
+        "left_index_MPR_joint": 0.0,
+        "left_index_MCP_joint": 0.004999995231628418,
+        "left_index_PIP_joint": -0.004999995231628418,
+        "left_index_DIP_joint": -0.004999995231628418
+      },
+      "source_requested_reconstruction_error_rad": 0.0
+    },
+    {
+      "step": 862,
+      "phase": "tilt_90",
+      "arrival_tick": 363,
+      "finger": "index",
+      "pre_contact_impulse_Ns": 0.0,
+      "ik_solve_due": true,
+      "saturated_joints": [
+        "left_index_MCP_joint",
+        "left_index_PIP_joint",
+        "left_index_DIP_joint"
+      ],
+      "delta_rad": {
+        "left_index_MPR_joint": 0.0,
+        "left_index_MCP_joint": 0.004999995231628418,
+        "left_index_PIP_joint": -0.004999995231628418,
+        "left_index_DIP_joint": -0.004999995231628418
+      },
+      "source_requested_reconstruction_error_rad": 0.0
+    },
+    {
+      "step": 898,
+      "phase": "tilt_90",
+      "arrival_tick": 399,
+      "finger": "index",
+      "pre_contact_impulse_Ns": 0.0,
+      "ik_solve_due": true,
+      "saturated_joints": [
+        "left_index_MCP_joint",
+        "left_index_PIP_joint",
+        "left_index_DIP_joint"
+      ],
+      "delta_rad": {
+        "left_index_MPR_joint": 0.0,
+        "left_index_MCP_joint": 0.004999995231628418,
+        "left_index_PIP_joint": -0.004999995231628418,
+        "left_index_DIP_joint": -0.004999995231628418
+      },
+      "source_requested_reconstruction_error_rad": 0.0
+    },
+    {
+      "step": 940,
+      "phase": "tilt_90",
+      "arrival_tick": 441,
+      "finger": "index",
+      "pre_contact_impulse_Ns": 2.7662882809746007e-06,
+      "ik_solve_due": true,
+      "saturated_joints": [
+        "left_index_MCP_joint",
+        "left_index_PIP_joint",
+        "left_index_DIP_joint"
+      ],
+      "delta_rad": {
+        "left_index_MPR_joint": 0.0,
+        "left_index_MCP_joint": 0.004999995231628418,
+        "left_index_PIP_joint": -0.004999995231628418,
+        "left_index_DIP_joint": -0.004999995231628418
+      },
+      "source_requested_reconstruction_error_rad": 0.0
+    },
+    {
+      "step": 975,
+      "phase": "tilt_90",
+      "arrival_tick": 476,
+      "finger": "index",
+      "pre_contact_impulse_Ns": 0.0,
+      "ik_solve_due": false,
+      "saturated_joints": [
+        "left_index_MCP_joint",
+        "left_index_PIP_joint",
+        "left_index_DIP_joint"
+      ],
+      "delta_rad": {
+        "left_index_MPR_joint": 0.0,
+        "left_index_MCP_joint": 0.004999995231628418,
+        "left_index_PIP_joint": -0.004999995231628418,
+        "left_index_DIP_joint": -0.004999995231628418
+      },
+      "source_requested_reconstruction_error_rad": 0.0
+    },
+    {
+      "step": 996,
+      "phase": "tilt_90",
+      "arrival_tick": 497,
+      "finger": "index",
+      "pre_contact_impulse_Ns": 1.2045384490087455e-06,
+      "ik_solve_due": false,
+      "saturated_joints": [
+        "left_index_MCP_joint",
+        "left_index_PIP_joint",
+        "left_index_DIP_joint"
+      ],
+      "delta_rad": {
+        "left_index_MPR_joint": 0.0,
+        "left_index_MCP_joint": 0.004999995231628418,
+        "left_index_PIP_joint": -0.004999995231628418,
+        "left_index_DIP_joint": -0.004999995231628418
+      },
+      "source_requested_reconstruction_error_rad": 0.0
+    },
+    {
+      "step": 1040,
+      "phase": "tilt_90",
+      "arrival_tick": 541,
+      "finger": "index",
+      "pre_contact_impulse_Ns": 0.0,
+      "ik_solve_due": false,
+      "saturated_joints": [
+        "left_index_MCP_joint",
+        "left_index_PIP_joint",
+        "left_index_DIP_joint"
+      ],
+      "delta_rad": {
+        "left_index_MPR_joint": 0.0,
+        "left_index_MCP_joint": 0.004999995231628418,
+        "left_index_PIP_joint": -0.004999995231628418,
+        "left_index_DIP_joint": -0.004999995231628418
+      },
+      "source_requested_reconstruction_error_rad": 0.0
+    },
+    {
+      "step": 1098,
+      "phase": "tilt_90",
+      "arrival_tick": 599,
+      "finger": "index",
+      "pre_contact_impulse_Ns": 0.0,
+      "ik_solve_due": false,
+      "saturated_joints": [
+        "left_index_MCP_joint",
+        "left_index_PIP_joint",
+        "left_index_DIP_joint"
+      ],
+      "delta_rad": {
+        "left_index_MPR_joint": 0.0,
+        "left_index_MCP_joint": 0.004999995231628418,
+        "left_index_PIP_joint": -0.004999995231628418,
+        "left_index_DIP_joint": -0.004999995231628418
+      },
+      "source_requested_reconstruction_error_rad": 0.0
+    },
+    {
+      "step": 1555,
+      "phase": "tilt_hold",
+      "arrival_tick": 1056,
+      "finger": "index",
+      "pre_contact_impulse_Ns": 0.0,
+      "ik_solve_due": true,
+      "saturated_joints": [
+        "left_index_MCP_joint",
+        "left_index_PIP_joint",
+        "left_index_DIP_joint"
+      ],
+      "delta_rad": {
+        "left_index_MPR_joint": 0.0,
+        "left_index_MCP_joint": 0.004999995231628418,
+        "left_index_PIP_joint": -0.004999995231628418,
+        "left_index_DIP_joint": -0.004999995231628418
+      },
+      "source_requested_reconstruction_error_rad": 0.0
+    },
+    {
+      "step": 1556,
+      "phase": "tilt_hold",
+      "arrival_tick": 1057,
+      "finger": "index",
+      "pre_contact_impulse_Ns": 0.0,
+      "ik_solve_due": false,
+      "saturated_joints": [
+        "left_index_MCP_joint",
+        "left_index_PIP_joint",
+        "left_index_DIP_joint"
+      ],
+      "delta_rad": {
+        "left_index_MPR_joint": 0.0,
+        "left_index_MCP_joint": 0.004999995231628418,
+        "left_index_PIP_joint": -0.004999995231628418,
+        "left_index_DIP_joint": -0.004999995231628418
+      },
+      "source_requested_reconstruction_error_rad": 0.0
+    }
+  ],
+  "elapsed_s": 0.23427218897268176,
+  "source_sha256": {
+    "opposition_feedback.py": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883",
+    "kinematics.py": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212",
+    "phase_contact_policy.py": "5db8beb4f0dc86d4b6105669ee8da2fee93b319e2ba468a6c0c2c5b21dc94045"
+  },
+  "grasp_sha256": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a",
+  "training_or_generalization_claim": false,
+  "notes": [
+    "First feedback invocation inferred from first squeeze requested-vs-nominal divergence and checked by exact sequential oracle reconstruction",
+    "Teacher contacts are previous completed control frame, not same-row post-action contacts",
+    "No simulator, reset, teleport or teacher action execution occurred"
+  ]
+}

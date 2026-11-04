@@ -1,0 +1,20 @@
+{
+  "source_run": "center_j56_dev_v3_20261103",
+  "split": "development",
+  "seed": 9501,
+  "source_video_sha256": "d427894b17ac818c41b4a8f5c2d945c9b4f0e335e9d803aa07daaa4da2042da8",
+  "previous_run": "centered_opposition_center_dev_v2_20261103",
+  "previous_video_sha256": "103430cdbcbe846484763f88816f75ccb63b730e80e575720328b8db3f25b62b",
+  "clip_start_s": 53.5,
+  "fps": 10.0,
+  "frames": 191,
+  "duration_s": 19.1,
+  "playback_speed": 1.0,
+  "source_tail_still_frames": 15,
+  "comparison_old_end_extended_with_labeled_still_frame": true,
+  "sha256": {
+    "j56_center_demo.mp4": "84f1adc1ac0835d1b6e35050a6edf8ea7535cc3a09ab131483ff2c3de5750d83",
+    "centering_comparison.mp4": "64ff0920a1f5ab4bad088b16fc822e4f7c3a18368e295cc60e8ae4b9e94b7a2b",
+    "final.png": "b34137f8beec1e310ad492f2debc2db91f0dfa90366f76f5f749d897356f7399"
+  }
+}

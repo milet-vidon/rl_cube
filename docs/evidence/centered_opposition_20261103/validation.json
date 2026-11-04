@@ -1,0 +1,16 @@
+{
+  "archived_files_verified": 253,
+  "frozen_baseline_files_unchanged": 27,
+  "independent_source_snapshots_identical": true,
+  "tested_center_control_matches_current_source": true,
+  "related_unit_tests": 24,
+  "offline_failed_torso_pose_rejected": true,
+  "offline_center_path_checks": 241,
+  "physx_runs": 5,
+  "independent_complete_pipeline_passed": 0,
+  "independent_total": 3,
+  "right_physx_executed": false,
+  "face_turn_validated": false,
+  "neural_policy_trained": false,
+  "post_test_changes": "Report-only center request/failure fields and separate right-hand development modules; archived raw experiments unchanged."
+}

@@ -1,0 +1,50 @@
+{
+  "source_sha256": "c41baa3cd75db5a497c5878d0e18bb6b3316124e0f1935867de8305b44e4eb11",
+  "model": {
+    "runtime_model_version": "dynamic_grasp_v3",
+    "source_core_kinematic": true,
+    "runtime_core_kinematic": false,
+    "bodies": [
+      "/World/Core",
+      "/World/Cube/pX",
+      "/World/Cube/nX",
+      "/World/Cube/pY",
+      "/World/Cube/nY",
+      "/World/Cube/pZ",
+      "/World/Cube/nZ",
+      "/World/Cube/pX_pY",
+      "/World/Cube/nY_pX",
+      "/World/Cube/nX_pY",
+      "/World/Cube/nX_nY",
+      "/World/Cube/pX_pZ",
+      "/World/Cube/nZ_pX",
+      "/World/Cube/nX_pZ",
+      "/World/Cube/nX_nZ",
+      "/World/Cube/pY_pZ",
+      "/World/Cube/nZ_pY",
+      "/World/Cube/nY_pZ",
+      "/World/Cube/nY_nZ",
+      "/World/Cube/pX_pY_pZ",
+      "/World/Cube/nZ_pX_pY",
+      "/World/Cube/nY_pX_pZ",
+      "/World/Cube/nY_nZ_pX",
+      "/World/Cube/nX_pY_pZ",
+      "/World/Cube/nX_nZ_pY",
+      "/World/Cube/nX_nY_pZ",
+      "/World/Cube/nX_nY_nZ"
+    ],
+    "active_physics_scenes": [
+      "/physicsScene"
+    ],
+    "source_friction": [
+      0.0,
+      0.0
+    ],
+    "runtime_friction": [
+      0.9,
+      0.8
+    ],
+    "friction_basis": "explicit cube friction values recorded in runtime_friction; uncalibrated simulation development"
+  },
+  "soft_limit_version": "revo3_user_soft_limits_v2"
+}

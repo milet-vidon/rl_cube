@@ -1,0 +1,51 @@
+{
+  "status": "frozen_unapplied_candidates",
+  "scope": "explicit 15/30/90 degree full opposed development subtasks; teacher/BC only, zero task reward, not PPO",
+  "files_sha256": {
+    "full_task_episode.py": "937df2b0d02f7a23b69d863a2a7977e86a4b188743bf9c2a7b0cafb46b8e03d4",
+    "test_full_task_episode.py": "750e5fa6e89c2befb6534b564c565f93dd84e0189f66787e6794d53fd42962e0",
+    "test_full_task_driver_draft.py": "9b4b07a314ec7984bce3548222acdeb160ab8c94e2abc399aceda91e11727cd5",
+    "build_full_task_draft.py": "9fa18d5e5cc808fae092e02bd65b7e30a4a80c74d44cad34a847478a7e6b816c",
+    "single_face_experiment_full_task_candidate.py": "2ddb3723d8b3d98eff0614b4c2f3f7dca6c3d62df8e7a70dce4624327a0e8863",
+    "centered_opposition_runtime_full_task_candidate.py": "30e22dbb33e1161cf86662e6cd2b98acf850482327df476dffca24d6ea0eaf33",
+    "opposed_grasp_runtime_full_task_candidate.py": "0b3de71cf3c5df1ae30bc046baaae087797d3af3d70a1d243cf24150d84f458c",
+    "full_task_driver_draft.patch": "edc8ac39fa88b7f43de3bf61ed5d290c840e4c4f25691043a0a56d32a6edb3b6",
+    "shadow_full_task_v17.py": "ab32e1a3959151a88af17a28aa41e6ff6bf985fcca62d8fde96799b51725cf99"
+  },
+  "host_tests": {
+    "command": "python -m unittest discover -s work -p test_full_task*.py -v",
+    "passed": 20,
+    "isaac_started": false,
+    "coverage": [
+      "native action object identity",
+      "single milestone with repeated raw done/reward/counters preserved",
+      "drop/timeout lock before finish",
+      "mandatory post-stage audit transaction",
+      "timeout overrides same-frame pickup success",
+      "original full target gates required",
+      "15/30 success stays separate from 90 face validation and six-face solve",
+      "no-step planning rejection final event",
+      "unknown raw done fails closed",
+      "actual main interruption during teacher query prevents next physics step",
+      "actual center drop and interrupted preflight stop",
+      "actual opposed timeout stops later path points",
+      "unadapted index/partial-task CLI rejected"
+    ]
+  },
+  "shadow_replay": {
+    "remote_report": "work/teacher_optimization_20261103/full_task_v17_shadow_replay.json",
+    "sha256": "92d5f3a432da5b7c5225f5fc9d9ed93f92f030d727b4f62b04ac1a439a366e1f",
+    "historical_rows": 3309,
+    "pickup_milestone": 3092,
+    "raw_success_frames": 217,
+    "task_result": "turn_contact_or_progress_stalled",
+    "source_result_not_modified": true,
+    "returned_done_not_recorded_in_original": "reconstructed from real row.terms.terminal under unchanged environment.step expression",
+    "base_counters": "reconstructed increments starting at zero; not historical counter readbacks",
+    "forced_drop_step": 3100,
+    "forced_timeout_same_as_pickup_step": 3092
+  },
+  "runtime_validation": "not performed; root owns unique Isaac queue",
+  "integration": "cube_articulation_audit merges native optional path; do not apply this standalone draft over combined source",
+  "horizon": "frozen from env.max_episode_length at reset; never extended mid-episode; declare adequate complete-task budget before launch"
+}

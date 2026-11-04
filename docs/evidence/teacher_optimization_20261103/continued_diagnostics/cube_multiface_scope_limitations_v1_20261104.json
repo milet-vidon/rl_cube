@@ -1,0 +1,40 @@
+{
+  "scope": "Audit only; no change to the current 15-degree task, frozen metrics, gates or controller.",
+  "current_metric": {
+    "path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/layer_turn_metrics.py",
+    "sha256": "c7fc5438c29c20632ad774c7f541d293e5f411ca8fff1454c830989536e1ccb4",
+    "selection": "Selects nine cubelets by immutable actor-name token (default nZ).",
+    "orientation_reference": "Measures each actor orientation relative to Core and the original solved reference; remaining cubelet rotation is measured against that same reference.",
+    "validity": "Suitable for the current first move of the initially named face. Not a general multi-face or formula-execution verifier.",
+    "position_semantics": "position_m is actor/joint-origin position. All 26 joint anchors are at Core, so these positions are not cubie geometric centers. maximum_joint_origin_separation_m intentionally measures anchor consistency.",
+    "angle_boundary": "Arithmetic median of signed angles can become misleading across -180/+180 even when wrapped individual orientation errors are small. Current 15-degree development target is away from that boundary."
+  },
+  "future_multiface_requirements_not_implemented": [
+    "Attach a validated geometric cubie-center offset to each original actor using source asset geometry/grid metadata. Transform that local point through the actor pose, then into Core-local coordinates. Do not select layers from actor origins.",
+    "Choose the nine members from their current Core-local geometric positions at the start of each move. Validate grid occupancy/assembly and freeze membership for that move; immutable names identify pieces, not their current layer.",
+    "Freeze each cubelet's current relative orientation as a per-move reference. Compare selected pieces against the intended face rotation applied to that reference and unselected pieces against their own unchanged reference.",
+    "Use sign-invariant SO(3) comparisons plus circular/unwrapped progress for repeated quarter turns and half turns. Do not add native spherical scalar coordinates as if they were portable Euler angles.",
+    "Maintain a logical cubie/sticker permutation and orientation state, then connect it to validated visual face/color reconstruction before applying a solving algorithm.",
+    "Changing goal references must never add a control-phase cube pose reset, attachment, collision disable, or drive. Physical motion remains produced by the robot contacts."
+  ],
+  "offline_finite_angle_result": {
+    "evidence": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/cube_finite_angle_geometry_audit_v1_20261104.json",
+    "evidence_sha256": "4f73c1f76b6d3afdc51064e37e99267ab43d3d3d75f9f77c93aa5259de6739d4",
+    "six_face_ideal_anchor_and_hinge_kinematics_pass": true,
+    "maximum_90_degree_COM_grid_permutation_error_m": 2.4542505499065523e-10,
+    "all_20_native_spherical_cones_unlimited": true,
+    "collision_clearance_along_path_validated": false,
+    "large_angle_native_DOF_mapping_validated": false,
+    "ninety_degree_robot_face_turn_validated": false
+  },
+  "native_coordinate_limitations": {
+    "measured": "66 rotational DOFs and exact passive-property readbacks passed. Only hinge DOF0 and first spherical DOF6 received a nonzero initial-velocity probe.",
+    "mapping": "This runtime repeats a spherical joint's USD path for its three DOFs. Preserve actual dof_names and joint_dof_offsets/counts; do not infer distinct axes from unique paths alone.",
+    "official_semantics": "PhysX describes decomposed-quaternion integration for multi-DOF spherical joints. A 90-degree pose is not automatically an Euler gimbal-lock failure. Native scalar coordinates and their wrapping still need finite-angle response validation.",
+    "primary_sources": [
+      "https://nvidia-omniverse.github.io/PhysX/physx/5.6.0/docs/Articulations.html",
+      "https://nvidia-omniverse.github.io/PhysX/physx/5.7.0/_api_build/classPxArticulationCache.html",
+      "https://docs.omniverse.nvidia.com/kit/docs/omni_physics/110.0/dev_guide/rigid_bodies_articulations/articulations.html"
+    ]
+  }
+}

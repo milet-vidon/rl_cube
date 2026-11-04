@@ -1,0 +1,29 @@
+{
+  "sha256": {
+    "qualification_candidate.json": "6283a3d6e1a1feccea809c5150eac49aaa5784299cfb48a8d8b396be07f07cf7",
+    "training_authorization_template.json": "635d6f737a6b174d6e8c73d56a6a0f1708c618643f5e1cbc12a316f95ee5e186",
+    "training_device_definition.json": "42b289288aac543b66c995b9a5d0f93e0c72c668f818fd105cc0f3b540683ee6",
+    "initial_boundary_metrics.json": "1f31c26152dd49eecb67d80728385dc7e6b1418182b522af5bf9a29b899a7b95",
+    "verified_inputs.json": "b1ae0459b6bf12ccf85105200c97197968a0a1f531e2aaefd9e958293be43cdd"
+  },
+  "eligible": 9523,
+  "sources": 22,
+  "device": {
+    "device": "cuda:0",
+    "elapsed_s": 0.5500963699887507,
+    "cuda_peak_bytes": {
+      "allocated": 18271744,
+      "reserved": 27262976
+    },
+    "optimizer_created": false,
+    "training_started": false,
+    "all_branch_and_class_arrays_bitwise_identical": true
+  },
+  "initial_boundary": {
+    "step499_regression_violation_count": 0,
+    "step545_regression_violation_count": 6,
+    "step560_regression_violation_count": 3
+  },
+  "training_started": false,
+  "original_candidate_training_authorized": false
+}

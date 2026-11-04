@@ -1,0 +1,885 @@
+{
+  "schema": "native_fulltask_v18_and_finite90_v1_failure_archive_v1",
+  "created_utc": "2026-11-03T17:19:21.494288+00:00",
+  "scope": "Completed failed development evidence. No source or historical result edits; no simulation.",
+  "v18": {
+    "run": "teacher_native_fulltask_v18_20261104",
+    "steps": 3017,
+    "task_episode": {
+      "task_id": "opposed_nZ_15deg",
+      "target_degrees": 15.0,
+      "scope": "single_target_face_turn_development",
+      "terminated": true,
+      "truncated": false,
+      "done": true,
+      "success": false,
+      "reason": "left_grasp_lost_during_opposition",
+      "reward": 0.0,
+      "eligible_for_ppo": false,
+      "task_episodes": 1,
+      "task_successes": 0,
+      "completed_control_steps": 3017,
+      "step_audit_pending": false,
+      "pickup_milestone_step": null,
+      "raw_pickup_success_frames": 0,
+      "raw_pickup_done_frames": 0,
+      "face_turn_validated": false,
+      "six_face_solution_validated": false
+    },
+    "failure": "left_grasp_lost_during_opposition",
+    "turn_started": false,
+    "face_turn_validated": false,
+    "dynamic_grasp_passed": true,
+    "center_transport_passed": true,
+    "no_steps_after_terminal": true,
+    "native_verification": {
+      "passed": true,
+      "body_count": 27,
+      "DOF_count": 66,
+      "all_27_mass_inertia_COM_frames_match_measured_baseline": true,
+      "per_DOF_armature": 9.999999747378752e-05,
+      "per_DOF_friction_static_dynamic_linear": [
+        0.0010000000474974513,
+        0.0010000000474974513,
+        0.0005000000237487257
+      ],
+      "zero_initial_active_drive_and_effort_readback": true,
+      "Core_mass_kg": 0.0025370370130985975,
+      "Core_inertia_kg_m2": [
+        1.0148148248845246e-05,
+        0.0,
+        0.0,
+        0.0,
+        1.0148148248845246e-05,
+        0.0,
+        0.0,
+        0.0,
+        1.0148148248845246e-05
+      ],
+      "solver": {
+        "requested": [
+          64,
+          4
+        ],
+        "usd_readback": [
+          64,
+          4
+        ],
+        "native_iteration_getter_available": false,
+        "readback_scope": "USD articulation schema; installed tensor/binding API has no native iteration getter",
+        "baseline_scope": "explicit 64/4 candidate and 64/4 development setting; no claim of original default solver equivalence"
+      },
+      "reset": {
+        "count": 2,
+        "passed": true,
+        "root_pose": [
+          [
+            0.48132818937301636,
+            -0.013829964213073254,
+            0.9304999709129333,
+            0.0,
+            0.0,
+            0.019348127767443657,
+            0.9998127818107605
+          ]
+        ],
+        "root_com_velocity": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "all_66_q_and_qd_zero": true
+      },
+      "snapshot_hashes_match_experiment": true,
+      "evidence_sha256": {
+        "passive_articulation_verification.json": "5fac8d6a9eebc935b07e711f0bb1633a90602358dece6ea68cf3c60d3c3ee4c2",
+        "passive_cube_baseline.json": "0bc715f5f009a9dcf6b90c7d4f5f97dc22043354aebe403aa5a2ad94ed9615c8",
+        "experiment.json": "74d49e02bc41a2d47a9e5516c9a0186fb2a79bb6bcfeac2c24a99c08001a3f05"
+      }
+    }
+  },
+  "finite90_v1": {
+    "workflow": {
+      "status": "failed",
+      "sequential_processes": true,
+      "phases": [
+        {
+          "phase": "baseline",
+          "returncode": 0
+        },
+        {
+          "phase": "candidate",
+          "returncode": 1
+        }
+      ],
+      "robot_turn_success_claim": false,
+      "error": "Traceback (most recent call last):\n  File \"/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/finite_angle_cube_native_probe.py\", line 272, in main\n    if completed.returncode: raise RuntimeError(phase + \" process failed\")\n                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: candidate process failed\n"
+    },
+    "candidate_status": "failed",
+    "failed_checks": {
+      "finite_face_marker_permutation_correct": {
+        "passed": false,
+        "detail": null
+      }
+    },
+    "initial_pose_errors": {
+      "max_relative_orientation_error_deg": 0.005525146236970222,
+      "max_center_marker_error_m": 2.594666698592872e-06,
+      "max_actor_origin_separation_m": 0.0,
+      "max_relative_link_angular_speed_rad_s": 0.0
+    },
+    "candidate_physics_steps": 0,
+    "zero_step_evidence": "Recorded traceback fails the marker initialization check before the first sim.step; no candidate trajectory exists. This is a control-flow inference, not a sampled dynamics counter.",
+    "baseline_physics_steps": 0,
+    "pre_execution_peer_review": "Host review PASS only; actual candidate initialization subsequently FAILED.",
+    "finite_dynamics_validated": false,
+    "contact_driven_turn_validated": false
+  },
+  "original_v18_artifact_manifest": {
+    "checked_entries": 93,
+    "all_match": true,
+    "checks": [
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/articulated_cube_env.py",
+        "declared_sha256": "dfad0023f9e2797d6ea8ea3ac08aa1b6889b7dbb4ff8398cd0ca11fa329bc707",
+        "actual_sha256": "dfad0023f9e2797d6ea8ea3ac08aa1b6889b7dbb4ff8398cd0ca11fa329bc707",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/asset_contract.json",
+        "declared_sha256": "6f0fb886d8b3e5f84bf0ed6ae6b7bce4121644ca708f6a5c2a1bb8c6feb0b0d2",
+        "actual_sha256": "6f0fb886d8b3e5f84bf0ed6ae6b7bce4121644ca708f6a5c2a1bb8c6feb0b0d2",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/center_j56_audit.py",
+        "declared_sha256": "a77def5e36aede51e248cd7495a14ee858d7a35d83b233f3c6b63d78079c1659",
+        "actual_sha256": "a77def5e36aede51e248cd7495a14ee858d7a35d83b233f3c6b63d78079c1659",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/center_j56_plan.py",
+        "declared_sha256": "5c9b49965ad4aa5e07d63ba7bc9e327fdf87096a4a19c6d39068bed64868fd48",
+        "actual_sha256": "5c9b49965ad4aa5e07d63ba7bc9e327fdf87096a4a19c6d39068bed64868fd48",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/center_j56_protocol_v3.json",
+        "declared_sha256": "1a20c06c21da5e631790207286493852353338986bd16d7f891196861f900197",
+        "actual_sha256": "1a20c06c21da5e631790207286493852353338986bd16d7f891196861f900197",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/center_plan.json",
+        "declared_sha256": "6749cda18f8e88030e620a4c67002c44f8fc6e51fffa22b20ad0bbd6eeed2471",
+        "actual_sha256": "6749cda18f8e88030e620a4c67002c44f8fc6e51fffa22b20ad0bbd6eeed2471",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/center_preflight.log",
+        "declared_sha256": "f99c63ca15a481af058d0cc992d2f6922d2c208e8edbbb6c3e9ab521b32327fa",
+        "actual_sha256": "f99c63ca15a481af058d0cc992d2f6922d2c208e8edbbb6c3e9ab521b32327fa",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/center_request.json",
+        "declared_sha256": "c1a5d45840c3485cb5e998b1bd43ae0a9969dc17d9be8a7d4d5e4cf929765838",
+        "actual_sha256": "c1a5d45840c3485cb5e998b1bd43ae0a9969dc17d9be8a7d4d5e4cf929765838",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/center_result.json",
+        "declared_sha256": "647f7c5ba8a2e7b1692aeb074a25569222e4ae60e416d979e2cc28ba16ba517a",
+        "actual_sha256": "647f7c5ba8a2e7b1692aeb074a25569222e4ae60e416d979e2cc28ba16ba517a",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/centered_opposition_runtime.py",
+        "declared_sha256": "30e22dbb33e1161cf86662e6cd2b98acf850482327df476dffca24d6ea0eaf33",
+        "actual_sha256": "30e22dbb33e1161cf86662e6cd2b98acf850482327df476dffca24d6ea0eaf33",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/centered_transport_audit.py",
+        "declared_sha256": "9bf896dcca54e21a1927f77ded5385031b7dcd0f86b591230d080cb13f847672",
+        "actual_sha256": "9bf896dcca54e21a1927f77ded5385031b7dcd0f86b591230d080cb13f847672",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/centered_transport_plan.py",
+        "declared_sha256": "e60394d663e37f8082dfaa972ba0221fbe12eab0cb82f077ab14f87f7d53b5eb",
+        "actual_sha256": "e60394d663e37f8082dfaa972ba0221fbe12eab0cb82f077ab14f87f7d53b5eb",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/config.json",
+        "declared_sha256": "7f52e75bd1b69a2ab12fdff8dc7ee16866da2c0e329dc888163f8e68a8b0fc88",
+        "actual_sha256": "7f52e75bd1b69a2ab12fdff8dc7ee16866da2c0e329dc888163f8e68a8b0fc88",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/cube_asset.json",
+        "declared_sha256": "9300288df4b2ab59ee5281b301d13a87f139d726057d03d9aacd560a74168648",
+        "actual_sha256": "9300288df4b2ab59ee5281b301d13a87f139d726057d03d9aacd560a74168648",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/cube_core_inertia.py",
+        "declared_sha256": "0eade322d766409cf52145895190c7dd7d66f4efdee5aae1e9d669740b342ffc",
+        "actual_sha256": "0eade322d766409cf52145895190c7dd7d66f4efdee5aae1e9d669740b342ffc",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/cube_joint_damping.py",
+        "declared_sha256": "48ca9c94b6453303cddc42d3c6300ad1d9d3886e572702f5252723977bd559e0",
+        "actual_sha256": "48ca9c94b6453303cddc42d3c6300ad1d9d3886e572702f5252723977bd559e0",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/dynamic_cube.py",
+        "declared_sha256": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de",
+        "actual_sha256": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/dynamic_training_scene.usda",
+        "declared_sha256": "da7fa3ef87157da8022a288474c4701b1d02c2aa64877a4dbe661d4ebdcf2ac2",
+        "actual_sha256": "da7fa3ef87157da8022a288474c4701b1d02c2aa64877a4dbe661d4ebdcf2ac2",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/elbow_audit.py",
+        "declared_sha256": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9",
+        "actual_sha256": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/elbow_gate.py",
+        "declared_sha256": "6473a2deec9034d4fa57079fe917d248c40db68f9768001456474bdc8eb6c526",
+        "actual_sha256": "6473a2deec9034d4fa57079fe917d248c40db68f9768001456474bdc8eb6c526",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/elbow_handover.py",
+        "declared_sha256": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e",
+        "actual_sha256": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/elbow_handover_experiment.py",
+        "declared_sha256": "0c403b1fba0f01c48fc9fc068b28545ec82d5c348a480d4608e2035ddab91cf1",
+        "actual_sha256": "0c403b1fba0f01c48fc9fc068b28545ec82d5c348a480d4608e2035ddab91cf1",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/environment.py",
+        "declared_sha256": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7",
+        "actual_sha256": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/evidence_paths.py",
+        "declared_sha256": "0339eb9b1149cba69af15aa27d605b3ef172b335932d49c41193360059f434fd",
+        "actual_sha256": "0339eb9b1149cba69af15aa27d605b3ef172b335932d49c41193360059f434fd",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/experiment.json",
+        "declared_sha256": "74d49e02bc41a2d47a9e5516c9a0186fb2a79bb6bcfeac2c24a99c08001a3f05",
+        "actual_sha256": "74d49e02bc41a2d47a9e5516c9a0186fb2a79bb6bcfeac2c24a99c08001a3f05",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/face_contact_calibration_v1.json",
+        "declared_sha256": "b9ab73c9e7e2c922ffaf1270196fce8c2a4acd635dfe8842def32d98bcbe7b44",
+        "actual_sha256": "b9ab73c9e7e2c922ffaf1270196fce8c2a4acd635dfe8842def32d98bcbe7b44",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/face_push_plan.py",
+        "declared_sha256": "0bf9b55361f59113264ce29260298fa0d9fb883cda16fac66481de1ab82f89eb",
+        "actual_sha256": "0bf9b55361f59113264ce29260298fa0d9fb883cda16fac66481de1ab82f89eb",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/face_push_runtime.py",
+        "declared_sha256": "953e38efb8de83a8a5209903bd95ee0b1780dd8bd6af6ca3357dcda0cb5918a4",
+        "actual_sha256": "953e38efb8de83a8a5209903bd95ee0b1780dd8bd6af6ca3357dcda0cb5918a4",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/finger_contact_audit.py",
+        "declared_sha256": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0",
+        "actual_sha256": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/full_task_episode.py",
+        "declared_sha256": "937df2b0d02f7a23b69d863a2a7977e86a4b188743bf9c2a7b0cafb46b8e03d4",
+        "actual_sha256": "937df2b0d02f7a23b69d863a2a7977e86a4b188743bf9c2a7b0cafb46b8e03d4",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/isaac_compat.py",
+        "declared_sha256": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825",
+        "actual_sha256": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/joint_safety.py",
+        "declared_sha256": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887",
+        "actual_sha256": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/kinematics.py",
+        "declared_sha256": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212",
+        "actual_sha256": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/layer_turn_metrics.py",
+        "declared_sha256": "c7fc5438c29c20632ad774c7f541d293e5f411ca8fff1454c830989536e1ccb4",
+        "actual_sha256": "c7fc5438c29c20632ad774c7f541d293e5f411ca8fff1454c830989536e1ccb4",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/left_plan.json",
+        "declared_sha256": "eec1ad12762126ff05555310454543fd0f4ec4680d7daad4be871682b0922cc8",
+        "actual_sha256": "eec1ad12762126ff05555310454543fd0f4ec4680d7daad4be871682b0922cc8",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/left_ring_support.py",
+        "declared_sha256": "7be2bb473805f7a5e9e023f931e1e09a786f990f0ca155e3b0ed4c00b8d0552d",
+        "actual_sha256": "7be2bb473805f7a5e9e023f931e1e09a786f990f0ca155e3b0ed4c00b8d0552d",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/left_ring_support_plan.json",
+        "declared_sha256": "10db07a0a7a9a351a168e76f0ba924c00f66c4fb00d21c47615bc5c3e22ef58b",
+        "actual_sha256": "10db07a0a7a9a351a168e76f0ba924c00f66c4fb00d21c47615bc5c3e22ef58b",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/left_ring_support_preflight.log",
+        "declared_sha256": "358fa412fed4f1436aa87376c39ea549f95a49cdde45047821bbbc3debc7860a",
+        "actual_sha256": "358fa412fed4f1436aa87376c39ea549f95a49cdde45047821bbbc3debc7860a",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/left_ring_support_preflight.py",
+        "declared_sha256": "3236550d1f7929cda005fb467a62c12b4cfbaa8378e3a771449cc679a18d1c74",
+        "actual_sha256": "3236550d1f7929cda005fb467a62c12b4cfbaa8378e3a771449cc679a18d1c74",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/left_ring_support_request.json",
+        "declared_sha256": "6b106150b5c085a329a458f27299e9a1605ad3d2f8769442bad6338f1ba9c949",
+        "actual_sha256": "6b106150b5c085a329a458f27299e9a1605ad3d2f8769442bad6338f1ba9c949",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/matched_cube_material.py",
+        "declared_sha256": "034e3d25f87c8b4fae110104ba42e30497441391f01644c5fe56eb010ae6ea37",
+        "actual_sha256": "034e3d25f87c8b4fae110104ba42e30497441391f01644c5fe56eb010ae6ea37",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/opposed_actuation.py",
+        "declared_sha256": "2aeb501dcfcb9105d969fa866d116304412d688513dbb3713b019039a300b3ec",
+        "actual_sha256": "2aeb501dcfcb9105d969fa866d116304412d688513dbb3713b019039a300b3ec",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/opposed_cube_clearance.py",
+        "declared_sha256": "fae984a2c7c94b027cf3eca241e7a125e679d5b0d73500c8d643810ec09b4534",
+        "actual_sha256": "fae984a2c7c94b027cf3eca241e7a125e679d5b0d73500c8d643810ec09b4534",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/opposed_grasp_audit.py",
+        "declared_sha256": "ee6190758ddd71487508edaae7d18f8b9d0890bee971b9d419d61c32aed00af3",
+        "actual_sha256": "ee6190758ddd71487508edaae7d18f8b9d0890bee971b9d419d61c32aed00af3",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/opposed_grasp_plan.py",
+        "declared_sha256": "752d5f86f0fad09915875ce8d8ade4885ddc6452901f979a3a2837c5cc31a8ac",
+        "actual_sha256": "752d5f86f0fad09915875ce8d8ade4885ddc6452901f979a3a2837c5cc31a8ac",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/opposed_grasp_runtime.py",
+        "declared_sha256": "0b3de71cf3c5df1ae30bc046baaae087797d3af3d70a1d243cf24150d84f458c",
+        "actual_sha256": "0b3de71cf3c5df1ae30bc046baaae087797d3af3d70a1d243cf24150d84f458c",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/opposed_joint_fit.py",
+        "declared_sha256": "644e91c63d5f80680844d20bd5b2be5e42f2dbcae8c6eff82af7eab95af45eff",
+        "actual_sha256": "644e91c63d5f80680844d20bd5b2be5e42f2dbcae8c6eff82af7eab95af45eff",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/opposed_joint_plan.py",
+        "declared_sha256": "5600b3975f14d776dfff0a716edbdf614d0fea8587222af0be10c161dbd255cb",
+        "actual_sha256": "5600b3975f14d776dfff0a716edbdf614d0fea8587222af0be10c161dbd255cb",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/opposed_path_validation.py",
+        "declared_sha256": "2e0555957a2a599554bdced948881c87e42b90ffd88d3ad0fbc202d1ea775837",
+        "actual_sha256": "2e0555957a2a599554bdced948881c87e42b90ffd88d3ad0fbc202d1ea775837",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/opposition_actuation.json",
+        "declared_sha256": "49c70c868caeb8b7449542fca7c47da5ea74b55ded9af8da720d4aa05453cab7",
+        "actual_sha256": "49c70c868caeb8b7449542fca7c47da5ea74b55ded9af8da720d4aa05453cab7",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/opposition_contacts.jsonl",
+        "declared_sha256": "159a76cac19b6ac74db43f35cffa16c418c48bd3f27bdfae690b97e41a3e0524",
+        "actual_sha256": "159a76cac19b6ac74db43f35cffa16c418c48bd3f27bdfae690b97e41a3e0524",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/opposition_feedback.py",
+        "declared_sha256": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883",
+        "actual_sha256": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/opposition_grasp_v20.json",
+        "declared_sha256": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a",
+        "actual_sha256": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/opposition_plan.json",
+        "declared_sha256": "f4f63a278a17166cd998b5ae61c13ad8d0ad12a69f6b6659d906ed34a497b3b1",
+        "actual_sha256": "f4f63a278a17166cd998b5ae61c13ad8d0ad12a69f6b6659d906ed34a497b3b1",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/opposition_preflight.log",
+        "declared_sha256": "b32a02c268ea0743d52a190229a523fb50d60c56e1e54530aef0478f46ed68ed",
+        "actual_sha256": "b32a02c268ea0743d52a190229a523fb50d60c56e1e54530aef0478f46ed68ed",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/opposition_request.json",
+        "declared_sha256": "1037530bd345114dc004c5b06252ee5786401bc0162c11030faafc49278beb98",
+        "actual_sha256": "1037530bd345114dc004c5b06252ee5786401bc0162c11030faafc49278beb98",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/opposition_teacher.py",
+        "declared_sha256": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1",
+        "actual_sha256": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/palm_contact_audit.py",
+        "declared_sha256": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184",
+        "actual_sha256": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/palm_handover.py",
+        "declared_sha256": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f",
+        "actual_sha256": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/palm_handover_audit.py",
+        "declared_sha256": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1",
+        "actual_sha256": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/palm_handover_experiment.py",
+        "declared_sha256": "74db8145fa76937b33fbfd2a37b41bcd7f3b132af94defad4bbe9379e4377c40",
+        "actual_sha256": "74db8145fa76937b33fbfd2a37b41bcd7f3b132af94defad4bbe9379e4377c40",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/passive_articulation_verification.json",
+        "declared_sha256": "5fac8d6a9eebc935b07e711f0bb1633a90602358dece6ea68cf3c60d3c3ee4c2",
+        "actual_sha256": "5fac8d6a9eebc935b07e711f0bb1633a90602358dece6ea68cf3c60d3c3ee4c2",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/passive_cube_articulation.py",
+        "declared_sha256": "949c3ede71c6ac4cd32b359b08ab110c72c354888d32541136aa2330edce980c",
+        "actual_sha256": "949c3ede71c6ac4cd32b359b08ab110c72c354888d32541136aa2330edce980c",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/passive_cube_baseline.json",
+        "declared_sha256": "0bc715f5f009a9dcf6b90c7d4f5f97dc22043354aebe403aa5a2ad94ed9615c8",
+        "actual_sha256": "0bc715f5f009a9dcf6b90c7d4f5f97dc22043354aebe403aa5a2ad94ed9615c8",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/passive_cube_baseline_manifest.json",
+        "declared_sha256": "812b7adbd9e03b7cba7da93223be12bc861f3721edc4bb167a1342fc5ea1d918",
+        "actual_sha256": "812b7adbd9e03b7cba7da93223be12bc861f3721edc4bb167a1342fc5ea1d918",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/planner_diagnostics.json",
+        "declared_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "actual_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/proximal_planner.py",
+        "declared_sha256": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16",
+        "actual_sha256": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/result.json",
+        "declared_sha256": "f75fb712c4096f26fa400c3fca480eb8dd5c2f2bd1ea5a6b8fe2bc94fbe71df0",
+        "actual_sha256": "f75fb712c4096f26fa400c3fca480eb8dd5c2f2bd1ea5a6b8fe2bc94fbe71df0",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/right_contact_environment.py",
+        "declared_sha256": "920084cb0f7567099655fcbb0d0d5441f904f30bbd1b501961bf8a7b73af3c5f",
+        "actual_sha256": "920084cb0f7567099655fcbb0d0d5441f904f30bbd1b501961bf8a7b73af3c5f",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/right_contact_material.py",
+        "declared_sha256": "ccd8f4348c5e5a92e467296317d6d894d21860b98a7fc048842b3c8eba372a5d",
+        "actual_sha256": "ccd8f4348c5e5a92e467296317d6d894d21860b98a7fc048842b3c8eba372a5d",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/runtime.json",
+        "declared_sha256": "d2008db49ff6fa99c00fff05bc7da9386371871ccd3c3b2bd4e5af8797a22112",
+        "actual_sha256": "d2008db49ff6fa99c00fff05bc7da9386371871ccd3c3b2bd4e5af8797a22112",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/runtime_robot_asset.json",
+        "declared_sha256": "d51c5a59a3fe33ae26053e88a826bda40201e47e1ee0957b80fbcdc898654e36",
+        "actual_sha256": "d51c5a59a3fe33ae26053e88a826bda40201e47e1ee0957b80fbcdc898654e36",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/safe_collision_plan.py",
+        "declared_sha256": "2ca8f8278d50b03a612ec9e9bbad746900541b86a29eb799042212c4fdd6dda4",
+        "actual_sha256": "2ca8f8278d50b03a612ec9e9bbad746900541b86a29eb799042212c4fdd6dda4",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/self_contact_audit.py",
+        "declared_sha256": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c",
+        "actual_sha256": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/single_face_experiment.py",
+        "declared_sha256": "36d98c64fbeb0110506d11aa93b98a3fa392e198716c5a2d0b86ce815e69917f",
+        "actual_sha256": "36d98c64fbeb0110506d11aa93b98a3fa392e198716c5a2d0b86ce815e69917f",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/solver_precision.py",
+        "declared_sha256": "b147e8647ef0199192931926941813e19b099de0be02a76f6df640c3a7567c70",
+        "actual_sha256": "b147e8647ef0199192931926941813e19b099de0be02a76f6df640c3a7567c70",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/solver_verification.json",
+        "declared_sha256": "6d049b9087c7e51076d1e3a3a5497842cef35ed60b147a799928a34f8c1d0b37",
+        "actual_sha256": "6d049b9087c7e51076d1e3a3a5497842cef35ed60b147a799928a34f8c1d0b37",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/source_config.json",
+        "declared_sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+        "actual_sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/task_episode_transitions.jsonl",
+        "declared_sha256": "5d6e666d38631b3f89b8fff9307c2059b7b10bfe9252880c8493b1f6944acfd5",
+        "actual_sha256": "5d6e666d38631b3f89b8fff9307c2059b7b10bfe9252880c8493b1f6944acfd5",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/tilt_audit.py",
+        "declared_sha256": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995",
+        "actual_sha256": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/tilt_collision_plan.py",
+        "declared_sha256": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd",
+        "actual_sha256": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/tilt_experiment.py",
+        "declared_sha256": "d345f965ec3f93a1c662eaf736bf9f25f4fb50733fee6784ff5fe9798154081d",
+        "actual_sha256": "d345f965ec3f93a1c662eaf736bf9f25f4fb50733fee6784ff5fe9798154081d",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/tilt_regrasp.py",
+        "declared_sha256": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1",
+        "actual_sha256": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/torso_collision.py",
+        "declared_sha256": "24dfa461f6d4b79341f269aa4450c0f35f16eed608ba01258e86f0e1573cf20c",
+        "actual_sha256": "24dfa461f6d4b79341f269aa4450c0f35f16eed608ba01258e86f0e1573cf20c",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/trajectory.json",
+        "declared_sha256": "1b8d1079e5a1cb4f8df53a2fc9a27bc26c990e3987b429b64c926f6f6c1f5962",
+        "actual_sha256": "1b8d1079e5a1cb4f8df53a2fc9a27bc26c990e3987b429b64c926f6f6c1f5962",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/trajectory.jsonl",
+        "declared_sha256": "9bfc0105ca2a0f1f91886ffa9b8cf0cc5f489254aec4de2697cade20b251845c",
+        "actual_sha256": "9bfc0105ca2a0f1f91886ffa9b8cf0cc5f489254aec4de2697cade20b251845c",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/turn_feedback_frame.py",
+        "declared_sha256": "4e737d384ddf61cd3b6a376709db6d81ec052dbc8cf6b686870fcbb91e327626",
+        "actual_sha256": "4e737d384ddf61cd3b6a376709db6d81ec052dbc8cf6b686870fcbb91e327626",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/turn_pacer.py",
+        "declared_sha256": "3013551fcbf66ad08d1611c69662b5f8bc43e2e3e7571756ab0879287a8b7743",
+        "actual_sha256": "3013551fcbf66ad08d1611c69662b5f8bc43e2e3e7571756ab0879287a8b7743",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/turn_pacer_frame.py",
+        "declared_sha256": "7007484db43fe88d8d87c8eb220aaf145b687148b27b4cb6125e08d5f3ea380f",
+        "actual_sha256": "7007484db43fe88d8d87c8eb220aaf145b687148b27b4cb6125e08d5f3ea380f",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/wrist_audit.py",
+        "declared_sha256": "e0dcf531d4f9e74cce3293ff2f954486fd1277609a832becdcefbd4b4e36398f",
+        "actual_sha256": "e0dcf531d4f9e74cce3293ff2f954486fd1277609a832becdcefbd4b4e36398f",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/wrist_direction.py",
+        "declared_sha256": "0aa5858caf39dabbd92af4396370121de30dc673675a5c24f11ca8ff0c0c0ed5",
+        "actual_sha256": "0aa5858caf39dabbd92af4396370121de30dc673675a5c24f11ca8ff0c0c0ed5",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/wrist_direction_experiment.py",
+        "declared_sha256": "23d3784eeab1d5f560ad603939a30bce5cf2d4d26cb94b83bf9921a4413e4d8e",
+        "actual_sha256": "23d3784eeab1d5f560ad603939a30bce5cf2d4d26cb94b83bf9921a4413e4d8e",
+        "matched": true
+      },
+      {
+        "source_path": "revotron_cube_rl/runs/teacher_native_fulltask_v18_20261104/wrist_gate.py",
+        "declared_sha256": "37f90513eada82e467686e451fd863e2ec64d870fd3bea9b4f32ac4b8ecdeddd",
+        "actual_sha256": "37f90513eada82e467686e451fd863e2ec64d870fd3bea9b4f32ac4b8ecdeddd",
+        "matched": true
+      }
+    ]
+  },
+  "finite_snapshot_source_checks": [
+    {
+      "phase": "baseline",
+      "original_path": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/finite_angle_cube_native_probe.py",
+      "verified_path": "work/teacher_optimization_20261103/native_initial_face90_probe_v1_20261104/baseline/source/finite_angle_cube_native_probe.py",
+      "expected_sha256": "fc2c49a3464228d8ad2c0d8fb96c123ea1776b297c55a9a959fb0289d0faa870",
+      "actual_sha256": "fc2c49a3464228d8ad2c0d8fb96c123ea1776b297c55a9a959fb0289d0faa870",
+      "matched": true
+    },
+    {
+      "phase": "baseline",
+      "original_path": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/cube_articulation_probe_v2.py",
+      "verified_path": "work/teacher_optimization_20261103/native_initial_face90_probe_v1_20261104/baseline/source/cube_articulation_probe_v2.py",
+      "expected_sha256": "bea19566ff4071dd26882f578703995ed7a74856f3218507fe9b3df8bee77881",
+      "actual_sha256": "bea19566ff4071dd26882f578703995ed7a74856f3218507fe9b3df8bee77881",
+      "matched": true
+    },
+    {
+      "phase": "baseline",
+      "original_path": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/passive_cube_articulation.py",
+      "verified_path": "work/teacher_optimization_20261103/native_initial_face90_probe_v1_20261104/baseline/source/passive_cube_articulation.py",
+      "expected_sha256": "949c3ede71c6ac4cd32b359b08ab110c72c354888d32541136aa2330edce980c",
+      "actual_sha256": "949c3ede71c6ac4cd32b359b08ab110c72c354888d32541136aa2330edce980c",
+      "matched": true
+    },
+    {
+      "phase": "baseline",
+      "original_path": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/finite_cube_pose_math.py",
+      "verified_path": "work/teacher_optimization_20261103/native_initial_face90_probe_v1_20261104/baseline/source/finite_cube_pose_math.py",
+      "expected_sha256": "1527f6c7e29e28e8264e12c65aed5ef2d4c82330a370f709359157094ce73940",
+      "actual_sha256": "1527f6c7e29e28e8264e12c65aed5ef2d4c82330a370f709359157094ce73940",
+      "matched": true
+    },
+    {
+      "phase": "baseline",
+      "original_path": "/home/brainco/rl_cube/github_project/isaac_mujoco_cube/cube_model.usda",
+      "verified_path": "isaac_mujoco_cube/cube_model.usda",
+      "expected_sha256": "c41baa3cd75db5a497c5878d0e18bb6b3316124e0f1935867de8305b44e4eb11",
+      "actual_sha256": "c41baa3cd75db5a497c5878d0e18bb6b3316124e0f1935867de8305b44e4eb11",
+      "matched": true
+    },
+    {
+      "phase": "baseline",
+      "original_path": "/home/brainco/rl_cube/github_project/isaac_mujoco_cube/upstream/mujoco_cube-main/cube_3x3x3.xml",
+      "verified_path": "isaac_mujoco_cube/upstream/mujoco_cube-main/cube_3x3x3.xml",
+      "expected_sha256": "b7b32a4a8624241817aafcbdba20217b7250fb9c570440af6fbdcf5ec084c023",
+      "actual_sha256": "b7b32a4a8624241817aafcbdba20217b7250fb9c570440af6fbdcf5ec084c023",
+      "matched": true
+    },
+    {
+      "phase": "baseline",
+      "original_path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/dynamic_cube.py",
+      "verified_path": "work/teacher_optimization_20261103/native_initial_face90_probe_v1_20261104/baseline/source/dynamic_cube.py",
+      "expected_sha256": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de",
+      "actual_sha256": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de",
+      "matched": true
+    },
+    {
+      "phase": "baseline",
+      "original_path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/isaac_compat.py",
+      "verified_path": "work/teacher_optimization_20261103/native_initial_face90_probe_v1_20261104/baseline/source/isaac_compat.py",
+      "expected_sha256": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825",
+      "actual_sha256": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825",
+      "matched": true
+    },
+    {
+      "phase": "baseline",
+      "original_path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runtime_platform.py",
+      "verified_path": "work/teacher_optimization_20261103/native_initial_face90_probe_v1_20261104/baseline/source/runtime_platform.py",
+      "expected_sha256": "c08829cde5986256dab4f5448edcecbf8932a3100ed7fab7dbdf0ad2f895772f",
+      "actual_sha256": "c08829cde5986256dab4f5448edcecbf8932a3100ed7fab7dbdf0ad2f895772f",
+      "matched": true
+    },
+    {
+      "phase": "candidate",
+      "original_path": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/finite_angle_cube_native_probe.py",
+      "verified_path": "work/teacher_optimization_20261103/native_initial_face90_probe_v1_20261104/candidate/source/finite_angle_cube_native_probe.py",
+      "expected_sha256": "fc2c49a3464228d8ad2c0d8fb96c123ea1776b297c55a9a959fb0289d0faa870",
+      "actual_sha256": "fc2c49a3464228d8ad2c0d8fb96c123ea1776b297c55a9a959fb0289d0faa870",
+      "matched": true
+    },
+    {
+      "phase": "candidate",
+      "original_path": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/cube_articulation_probe_v2.py",
+      "verified_path": "work/teacher_optimization_20261103/native_initial_face90_probe_v1_20261104/candidate/source/cube_articulation_probe_v2.py",
+      "expected_sha256": "bea19566ff4071dd26882f578703995ed7a74856f3218507fe9b3df8bee77881",
+      "actual_sha256": "bea19566ff4071dd26882f578703995ed7a74856f3218507fe9b3df8bee77881",
+      "matched": true
+    },
+    {
+      "phase": "candidate",
+      "original_path": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/passive_cube_articulation.py",
+      "verified_path": "work/teacher_optimization_20261103/native_initial_face90_probe_v1_20261104/candidate/source/passive_cube_articulation.py",
+      "expected_sha256": "949c3ede71c6ac4cd32b359b08ab110c72c354888d32541136aa2330edce980c",
+      "actual_sha256": "949c3ede71c6ac4cd32b359b08ab110c72c354888d32541136aa2330edce980c",
+      "matched": true
+    },
+    {
+      "phase": "candidate",
+      "original_path": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/finite_cube_pose_math.py",
+      "verified_path": "work/teacher_optimization_20261103/native_initial_face90_probe_v1_20261104/candidate/source/finite_cube_pose_math.py",
+      "expected_sha256": "1527f6c7e29e28e8264e12c65aed5ef2d4c82330a370f709359157094ce73940",
+      "actual_sha256": "1527f6c7e29e28e8264e12c65aed5ef2d4c82330a370f709359157094ce73940",
+      "matched": true
+    },
+    {
+      "phase": "candidate",
+      "original_path": "/home/brainco/rl_cube/github_project/isaac_mujoco_cube/cube_model.usda",
+      "verified_path": "isaac_mujoco_cube/cube_model.usda",
+      "expected_sha256": "c41baa3cd75db5a497c5878d0e18bb6b3316124e0f1935867de8305b44e4eb11",
+      "actual_sha256": "c41baa3cd75db5a497c5878d0e18bb6b3316124e0f1935867de8305b44e4eb11",
+      "matched": true
+    },
+    {
+      "phase": "candidate",
+      "original_path": "/home/brainco/rl_cube/github_project/isaac_mujoco_cube/upstream/mujoco_cube-main/cube_3x3x3.xml",
+      "verified_path": "isaac_mujoco_cube/upstream/mujoco_cube-main/cube_3x3x3.xml",
+      "expected_sha256": "b7b32a4a8624241817aafcbdba20217b7250fb9c570440af6fbdcf5ec084c023",
+      "actual_sha256": "b7b32a4a8624241817aafcbdba20217b7250fb9c570440af6fbdcf5ec084c023",
+      "matched": true
+    },
+    {
+      "phase": "candidate",
+      "original_path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/dynamic_cube.py",
+      "verified_path": "work/teacher_optimization_20261103/native_initial_face90_probe_v1_20261104/candidate/source/dynamic_cube.py",
+      "expected_sha256": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de",
+      "actual_sha256": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de",
+      "matched": true
+    },
+    {
+      "phase": "candidate",
+      "original_path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/isaac_compat.py",
+      "verified_path": "work/teacher_optimization_20261103/native_initial_face90_probe_v1_20261104/candidate/source/isaac_compat.py",
+      "expected_sha256": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825",
+      "actual_sha256": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825",
+      "matched": true
+    },
+    {
+      "phase": "candidate",
+      "original_path": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runtime_platform.py",
+      "verified_path": "work/teacher_optimization_20261103/native_initial_face90_probe_v1_20261104/candidate/source/runtime_platform.py",
+      "expected_sha256": "c08829cde5986256dab4f5448edcecbf8932a3100ed7fab7dbdf0ad2f895772f",
+      "actual_sha256": "c08829cde5986256dab4f5448edcecbf8932a3100ed7fab7dbdf0ad2f895772f",
+      "matched": true
+    }
+  ],
+  "external_asset_hashes": [
+    {
+      "path": "/home/brainco/rl_cube/github_project/isaac_mujoco_cube/cube_model.usda",
+      "declared_sha256": "c41baa3cd75db5a497c5878d0e18bb6b3316124e0f1935867de8305b44e4eb11",
+      "verified_sha256": "c41baa3cd75db5a497c5878d0e18bb6b3316124e0f1935867de8305b44e4eb11",
+      "bytes": 237900,
+      "asset_bytes_archived": false
+    },
+    {
+      "path": "/home/brainco/rl_cube/github_project/isaac_mujoco_cube/upstream/mujoco_cube-main/cube_3x3x3.xml",
+      "declared_sha256": "b7b32a4a8624241817aafcbdba20217b7250fb9c570440af6fbdcf5ec084c023",
+      "verified_sha256": "b7b32a4a8624241817aafcbdba20217b7250fb9c570440af6fbdcf5ec084c023",
+      "bytes": 156516,
+      "asset_bytes_archived": false
+    },
+    {
+      "path": "/home/brainco/rl_cube/github_project/revotron_revo3/source/revotron_system/usd/revotron_bimanual_revo3_56dof.usd",
+      "declared_sha256": "c066a65ff5ac77a8fb0a5fb3658c71f151b64777cdc9a8f66a0739d4033170a2",
+      "verified_sha256": "c066a65ff5ac77a8fb0a5fb3658c71f151b64777cdc9a8f66a0739d4033170a2",
+      "bytes": 129195711,
+      "asset_bytes_archived": false
+    },
+    {
+      "path": "/home/brainco/rl_cube/github_project/revotron_revo3/source/revotron_system/usd/revotron_bimanual_revo3_wrist_mesh_v1.usda",
+      "declared_sha256": "1ea674035491ae19875c61813ef8cfb1fd26c4b0b58de3ae3a2a3f04b741a143",
+      "verified_sha256": "1ea674035491ae19875c61813ef8cfb1fd26c4b0b58de3ae3a2a3f04b741a143",
+      "bytes": 1503,
+      "asset_bytes_archived": false
+    }
+  ],
+  "asset_scope": "Runtime generated USD, model/contract metadata and all recorded asset hashes are archived. Large external source robot/cube assets remain at the verified original paths.",
+  "no_full_face_turn_or_six_face_solution_success_claim": true
+}

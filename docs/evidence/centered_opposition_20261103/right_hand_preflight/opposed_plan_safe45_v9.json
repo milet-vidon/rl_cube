@@ -1,0 +1,15 @@
+{
+  "passed": false,
+  "failures": [
+    {
+      "offset": [
+        0.0,
+        0.003,
+        -0.004
+      ],
+      "failure": "right_close step 61: ('right_middle_DIP_link', 'right_ring_DIP_link', 0.002920061401502997)"
+    }
+  ],
+  "elapsed_s": 195.79980419299682,
+  "physics_validated": false
+}

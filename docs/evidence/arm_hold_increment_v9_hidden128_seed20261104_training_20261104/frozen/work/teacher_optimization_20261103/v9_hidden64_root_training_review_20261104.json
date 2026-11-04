@@ -1,0 +1,103 @@
+{
+  "schema": "root_v9_nine_history_hidden64_training_review_v1",
+  "source_sha256": {
+    "phase_residual_policy_v5.py": "5bb033710c18c21310b526d539251794a37efb31a2f139a68b052983c363f412",
+    "dagger_residual_dataset_v5.py": "69c1cef251a4180f9839a2fc27ecbb738ce6f87828d5a9bc513a19aa40621cb1",
+    "phase_basis_policy_v4.py": "5d4dc98bf0dfc156dbcdd7fd9d3923f475573d03bc46df1e6c1d317625d8a327",
+    "phase_contact_policy.py": "5db8beb4f0dc86d4b6105669ee8da2fee93b319e2ba468a6c0c2c5b21dc94045",
+    "dagger_collection_core_v1.py": "6d4b2a635f98b563c10388153e4116054eb03a383e898ae7c36d572c9b182411",
+    "dagger_projected_collection_v3.py": "268653ef77b2b500d5299ebb377a6311f98ed9d5199f0b345795b26a92669a33",
+    "train_phase_residual_v5.py": "74cc6077ae7bb135260b9fc1f4c0c99765653af8dd243301563e61808a027a6d",
+    "phase_gated_residual_policy_v6.py": "874d82a6ffff395868260f48530b6fa0cfd20111cd133b827ad4809ed4967063",
+    "eval_prefix_dataset_v6.py": "7dfc8f417daeb6916054a96cb5112d78295057d85fb2f43df4d76a267587f0bf",
+    "train_phase_gated_residual_v6.py": "0ca6cc266e1f4275411f70ea75800cdbf97bf7c604565d88b12afc30a753b5b3",
+    "eval_prefix_dataset_v7.py": "61c6b43cf0b2af18144723f6f3b2587dea04299feb75611e1a09c7c073b67883",
+    "zero_gated_residual_policy_v7.py": "714c7d6b6ca151afa052ef426cc27360b61ca62c1914cd7b7bfe84a63233256e",
+    "inspect_residual_dataset_v7.py": "ad88eb44646887898082e3b500db8e9d43f0ab1bc3eb8a71ab53f1f9f6f0c511",
+    "train_zero_gated_residual_v7.py": "9878b9d2c6f769624ba3889ea43797eacd02b203f65d8dcb3d765d90b1f9636e",
+    "trusted_eval_dataset_registry_v1.py": "e19a5fd879eb9d7e814d14ec1dff906f02d773868b1ff91a1bdd9ce759ff617c",
+    "inspect_hold_increment_branches_v8.py": "e1b8b286b9344648f780d5c7732da71468afe1089995ecc96bc7e9040e9a62fc",
+    "hold_increment_policy_v8.py": "b708e69d928bf073f8f7ee5f50edd9e1fe0f96213bfe3a49f51cfeff4c0561ae",
+    "train_hold_increment_v8.py": "055f8f0d6ed724c2932a2effa59d402c2e22472491519f9a1b09fb553e5a42cb",
+    "trusted_eval_dataset_registry_v2.py": "e076e877897420e651f691a10419049815d094c27b8196afeec77320d938d89e",
+    "inspect_arm_hold_increment_branches_v9.py": "f0bb25423d56d0c13152522367df7fa720c6d6212ef8f1a116d12d77fcb264a5",
+    "arm_hold_increment_policy_v9.py": "27c113212f657aac6e6d3b1caadcf26619e1e8db32d12da4a00f618985948b9c",
+    "train_arm_hold_increment_v9.py": "e92df59dc5e50a5f003cceea2ab9f2a9023fde3b1c7e49e41832542a924f98ab"
+  },
+  "independent_review_and_coverage_sha256": {
+    "v9_trainer_root_independent_review_20261104.json": "f6907a79ee2e5e118d2051964cf42888660695094537d1292d2c67487bdb8b92",
+    "v9_policy_independent_review_20261104.json": "49becedd4314c43fe0a361fcbfd301cde9a32942479ba0a082e1309428ca8a2f",
+    "v9_coverage_independent_review_20261104.json": "82cb79a5c2f6fd12f421dccd4f0be4252b8b793974d083d61e16722b4b0fae1d",
+    "trusted_registry_v2_independent_review_20261104.json": "9d7a68594067df2144cd708270a37589dd8c4e81ec90d946074ec2f62b66d98a",
+    "trusted_registry_v2_root_review_20261104.json": "96347034c61198945398f4956a6ecdc11e90bfb36136b0b7beadf99827dbbfa9",
+    "v9_nine_history_branch_coverage_20261104_02.json": "d0e0a64efa5fe73d847187dc24fbe21a013bb2d80b727133e962c25ff9f06d46"
+  },
+  "qualification_sha256": "6283a3d6e1a1feccea809c5150eac49aaa5784299cfb48a8d8b396be07f07cf7",
+  "original_qualification_training_authorized": false,
+  "approved_scope": "development BC on exactly nine actual histories, all original labels and failures preserved",
+  "configuration": {
+    "epochs": 5000,
+    "learning_rate": 0.0003,
+    "hidden_size": 64,
+    "seed": 20261104,
+    "regression_weight_rad2": 1000000.0,
+    "cross_entropy_weight": 1.0,
+    "weight_decay": 1e-05,
+    "gradient_clip_norm": 1.0,
+    "device": "cuda:0",
+    "candidate_interval": 100,
+    "episode_shuffle_only": true,
+    "gru_reset_each_episode": true,
+    "regression": "all labels, label-selected original-projected branch",
+    "ambiguous_excluded_only_from_classification": true,
+    "last_state_artifact_saved": true,
+    "resume_cli_implemented": false
+  },
+  "selection_contract": {
+    "ordering": [
+      "reviewed_step499_history_violations",
+      "reviewed_step545_projected_HOLD_joint_violations",
+      "reviewed_step560_index_projected_HOLD_joint_violations",
+      "all_three_class_confusion_errors",
+      "hard_decoded_projected_rmse_rad"
+    ],
+    "zero_step499_histories": [
+      "left_dagger_baseline_mixture_v3_9501_20261104",
+      "left_phase_gated_residual_v6_eval_9501_20261104",
+      "left_phase_gated_residual_v6_long_eval_9501_20261104",
+      "left_phase_v4_matched_eval_9501_20261104_v2",
+      "left_zero_gated_residual_v7_eval_9501_20261104",
+      "left_zero_gated_residual_v7_seed20261105_eval_9501_20261104_v2",
+      "left_zero_gated_residual_v7_long_eval_9501_20261104"
+    ],
+    "hold_step545_histories": [
+      "left_phase_v4_matched_eval_9501_20261104_v2",
+      "left_zero_gated_residual_v7_eval_9501_20261104"
+    ],
+    "hold_step545_joint_names": [
+      "left_ring_MCP_joint",
+      "left_ring_PIP_joint",
+      "left_ring_DIP_joint"
+    ],
+    "index_hold_step560_histories": [
+      "left_hold_increment_v8_seed20261104_eval_9501_20261104"
+    ],
+    "index_hold_step560_joint_names": [
+      "left_index_MCP_joint",
+      "left_index_PIP_joint",
+      "left_index_DIP_joint"
+    ],
+    "other_histories_not_relabelled": true,
+    "initial_untrained_epoch_is_candidate": false,
+    "candidate_boundary_check": "CPU sequential actual prefix through step560",
+    "final_metrics": "CPU sequential full actual histories",
+    "no_independent_validation_claim": true
+  },
+  "device_definition_sha256": "42b289288aac543b66c995b9a5d0f93e0c72c668f818fd105cc0f3b540683ee6",
+  "initial_boundary_sha256": "1f31c26152dd49eecb67d80728385dc7e6b1418182b522af5bf9a29b899a7b95",
+  "launcher_sha256": "f1948ec00dc82662c850e5e527431226b5c21bef43b0a7385dfa81b158bb7d9b",
+  "authorization": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/v9_hidden64_seed20261104_root_training_authorization_20261104.json",
+  "authorization_sha256": "635d6f737a6b174d6e8c73d56a6a0f1708c618643f5e1cbc12a316f95ee5e186",
+  "run": "runs/teacher_arm_hold_increment_v9_hidden64_seed20261104_20261104",
+  "physical_or_generalization_success_claim": false
+}

@@ -1,0 +1,125 @@
+{
+  "device": "cuda:0",
+  "elapsed_s": 0.4921332899830304,
+  "cuda_peak_bytes": {
+    "allocated": 18162688,
+    "reserved": 25165824
+  },
+  "optimizer_created": false,
+  "training_started": false,
+  "all_branch_and_class_arrays_bitwise_identical": true,
+  "runs": [
+    {
+      "episode_id": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_dagger_baseline_mixture_v3_9501_20261104:left_dagger_v3",
+      "baseline_proposal_different_bits": 0,
+      "baseline_projected_different_bits": 0,
+      "hold_projected_different_bits": 0,
+      "classification_differences": {
+        "class_targets": 0,
+        "classification_mask": 0,
+        "exact_base": 0,
+        "exact_hold": 0,
+        "confident_update": 0,
+        "ambiguous": 0
+      }
+    },
+    {
+      "episode_id": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104_v2:left_state_residual_v5_long_eval_9501_20261104_v2",
+      "baseline_proposal_different_bits": 0,
+      "baseline_projected_different_bits": 0,
+      "hold_projected_different_bits": 0,
+      "classification_differences": {
+        "class_targets": 0,
+        "classification_mask": 0,
+        "exact_base": 0,
+        "exact_hold": 0,
+        "confident_update": 0,
+        "ambiguous": 0
+      }
+    },
+    {
+      "episode_id": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_phase_gated_residual_v6_eval_9501_20261104:left_phase_gated_residual_v6_eval_9501_20261104",
+      "baseline_proposal_different_bits": 0,
+      "baseline_projected_different_bits": 0,
+      "hold_projected_different_bits": 0,
+      "classification_differences": {
+        "class_targets": 0,
+        "classification_mask": 0,
+        "exact_base": 0,
+        "exact_hold": 0,
+        "confident_update": 0,
+        "ambiguous": 0
+      }
+    },
+    {
+      "episode_id": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_phase_gated_residual_v6_long_eval_9501_20261104:left_phase_gated_residual_v6_long_eval_9501_20261104",
+      "baseline_proposal_different_bits": 0,
+      "baseline_projected_different_bits": 0,
+      "hold_projected_different_bits": 0,
+      "classification_differences": {
+        "class_targets": 0,
+        "classification_mask": 0,
+        "exact_base": 0,
+        "exact_hold": 0,
+        "confident_update": 0,
+        "ambiguous": 0
+      }
+    },
+    {
+      "episode_id": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_phase_v4_matched_eval_9501_20261104_v2:left_phase_v4_matched_eval_9501_20261104_v2",
+      "baseline_proposal_different_bits": 0,
+      "baseline_projected_different_bits": 0,
+      "hold_projected_different_bits": 0,
+      "classification_differences": {
+        "class_targets": 0,
+        "classification_mask": 0,
+        "exact_base": 0,
+        "exact_hold": 0,
+        "confident_update": 0,
+        "ambiguous": 0
+      }
+    },
+    {
+      "episode_id": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_eval_9501_20261104:left_zero_gated_residual_v7_eval_9501_20261104",
+      "baseline_proposal_different_bits": 0,
+      "baseline_projected_different_bits": 0,
+      "hold_projected_different_bits": 0,
+      "classification_differences": {
+        "class_targets": 0,
+        "classification_mask": 0,
+        "exact_base": 0,
+        "exact_hold": 0,
+        "confident_update": 0,
+        "ambiguous": 0
+      }
+    },
+    {
+      "episode_id": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_seed20261105_eval_9501_20261104_v2:left_zero_gated_residual_v7_seed20261105_eval_9501_20261104_v2",
+      "baseline_proposal_different_bits": 0,
+      "baseline_projected_different_bits": 0,
+      "hold_projected_different_bits": 0,
+      "classification_differences": {
+        "class_targets": 0,
+        "classification_mask": 0,
+        "exact_base": 0,
+        "exact_hold": 0,
+        "confident_update": 0,
+        "ambiguous": 0
+      }
+    },
+    {
+      "episode_id": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_long_eval_9501_20261104:left_zero_gated_residual_v7_long_eval_9501_20261104",
+      "baseline_proposal_different_bits": 0,
+      "baseline_projected_different_bits": 0,
+      "hold_projected_different_bits": 0,
+      "classification_differences": {
+        "class_targets": 0,
+        "classification_mask": 0,
+        "exact_base": 0,
+        "exact_hold": 0,
+        "confident_update": 0,
+        "ambiguous": 0
+      }
+    }
+  ]
+}

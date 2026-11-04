@@ -1,0 +1,50 @@
+{
+  "schema": "v8_wide128_gpu_launches_v1",
+  "root_review_sha256": "9c58cbdb6bda81ebf260c3154c99380271a1261765e6f6f0191e4945bbe667f4",
+  "jobs": [
+    {
+      "seed": 20261104,
+      "authorization": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/v8_wide128_seed20261104_root_training_authorization_20261104.json",
+      "authorization_sha256": "620c4bd30e06e7b430f1be52a9db10b3bdfc436162982ca3a15bba98e14b1c51",
+      "run": "runs/teacher_hold_increment_v8_wide128_seed20261104_20261104",
+      "pid": 52629,
+      "log": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/v8_wide128_seed20261104_training_20261104.log",
+      "args": [
+        "bash",
+        "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/launch_hold_increment_v8_wide128_training_20261104.sh",
+        "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/v8_wide128_seed20261104_root_training_authorization_20261104.json",
+        "620c4bd30e06e7b430f1be52a9db10b3bdfc436162982ca3a15bba98e14b1c51",
+        "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/v8_wide128_trainer_preflight_20261104_01/qualification_candidate.json",
+        "810b793afb4b827bfcea72778c66f55883552f143b0fda4bd2245eb5aaa2d1b9",
+        "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/v8_eight_history_branch_coverage_20261104_01.json",
+        "c81211be8529ad78db6714d33fc2cecda399a7b492c8dc99109d11df57bcd81e",
+        "runs/teacher_hold_increment_v8_wide128_seed20261104_20261104",
+        "20261104",
+        "5000"
+      ],
+      "started_unix": 1793764542.699678
+    },
+    {
+      "seed": 20261105,
+      "authorization": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/v8_wide128_seed20261105_root_training_authorization_20261104.json",
+      "authorization_sha256": "0a5a9963c32a062c0cf13e0085ee3c25463bb0a7f62b4873a8717b7611147a91",
+      "run": "runs/teacher_hold_increment_v8_wide128_seed20261105_20261104",
+      "pid": 52630,
+      "log": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/v8_wide128_seed20261105_training_20261104.log",
+      "args": [
+        "bash",
+        "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/launch_hold_increment_v8_wide128_training_20261104.sh",
+        "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/v8_wide128_seed20261105_root_training_authorization_20261104.json",
+        "0a5a9963c32a062c0cf13e0085ee3c25463bb0a7f62b4873a8717b7611147a91",
+        "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/v8_wide128_trainer_preflight_20261104_01/qualification_candidate.json",
+        "810b793afb4b827bfcea72778c66f55883552f143b0fda4bd2245eb5aaa2d1b9",
+        "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/v8_eight_history_branch_coverage_20261104_01.json",
+        "c81211be8529ad78db6714d33fc2cecda399a7b492c8dc99109d11df57bcd81e",
+        "runs/teacher_hold_increment_v8_wide128_seed20261105_20261104",
+        "20261105",
+        "5000"
+      ],
+      "started_unix": 1793764542.700302
+    }
+  ]
+}
