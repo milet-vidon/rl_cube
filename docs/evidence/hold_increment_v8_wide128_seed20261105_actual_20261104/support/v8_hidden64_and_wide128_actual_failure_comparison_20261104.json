@@ -1,0 +1,185 @@
+{
+  "schema": "three_completed_v8_actual_failure_contact_gate_comparison_v1",
+  "runs": [
+    {
+      "variant": "hidden64_seed20261104",
+      "run": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_hold_increment_v8_seed20261104_eval_9501_20261104",
+      "original_failure": "tilt_hold_timeout",
+      "physical_steps": 1842,
+      "returned_teacher_queries": 1843,
+      "maximum_lift_m": 0.3684775199890137,
+      "original_wrist_gate_qualified": false,
+      "left_teacher_position_action_steps": 0,
+      "original_gain_events": 1,
+      "cube_pose_writes": 0,
+      "feedback_active_frames": 1343,
+      "index_post_positive_frames": 665,
+      "ring_post_positive_frames": 1332,
+      "index_exact_expert_HOLD_but_actual_changes": 77,
+      "ring_exact_expert_HOLD_but_actual_changes": 5,
+      "first_index_exact_HOLD_change": 560,
+      "first_active_expert_target_error": {
+        "step": 548,
+        "joint": "left_ring_MCP_joint",
+        "absolute_error_rad": 0.004999995231628418
+      },
+      "hold_gate_queries": 301,
+      "maximum_consecutive_qualified_hold": 60,
+      "required_consecutive_qualified_hold": 90,
+      "original_hold_count_reconstruction_exact": true,
+      "hold_predicate_failure_counts": {
+        "path_finished": 0,
+        "all_fingers": 189,
+        "height_at_least_08": 0,
+        "no_cube_table": 0,
+        "tilt_error_at_most_5": 0,
+        "linear_speed_below_03": 0,
+        "angular_speed_below_20": 83
+      },
+      "old_V8_union_unreachable_elements": 398,
+      "old_V8_max_union_gap_rad": 0.017400026321411133,
+      "old_V8_unreachable_joints": [
+        "Joint1_L",
+        "Joint3_L",
+        "Joint4_L",
+        "Joint7_L"
+      ],
+      "finger_union_unreachable_elements": 0
+    },
+    {
+      "variant": "hidden64_seed20261105",
+      "run": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_hold_increment_v8_seed20261105_eval_9501_20261104",
+      "original_failure": "evaluation_protocol_error:Post-turn correction exceeded bounded pose envelope",
+      "physical_steps": 1725,
+      "returned_teacher_queries": 1725,
+      "maximum_lift_m": 0.3684101667404175,
+      "original_wrist_gate_qualified": false,
+      "left_teacher_position_action_steps": 0,
+      "original_gain_events": 1,
+      "cube_pose_writes": 0,
+      "feedback_active_frames": 1226,
+      "index_post_positive_frames": 658,
+      "ring_post_positive_frames": 1208,
+      "index_exact_expert_HOLD_but_actual_changes": 60,
+      "ring_exact_expert_HOLD_but_actual_changes": 8,
+      "first_index_exact_HOLD_change": 581,
+      "first_active_expert_target_error": {
+        "step": 548,
+        "joint": "left_ring_MCP_joint",
+        "absolute_error_rad": 0.004999995231628418
+      },
+      "hold_gate_queries": 180,
+      "maximum_consecutive_qualified_hold": 2,
+      "required_consecutive_qualified_hold": 90,
+      "original_hold_count_reconstruction_exact": true,
+      "hold_predicate_failure_counts": {
+        "path_finished": 0,
+        "all_fingers": 177,
+        "height_at_least_08": 0,
+        "no_cube_table": 0,
+        "tilt_error_at_most_5": 0,
+        "linear_speed_below_03": 0,
+        "angular_speed_below_20": 1
+      },
+      "old_V8_union_unreachable_elements": 523,
+      "old_V8_max_union_gap_rad": 0.017423629760742188,
+      "old_V8_unreachable_joints": [
+        "Joint1_L",
+        "Joint3_L",
+        "Joint4_L",
+        "Joint5_L",
+        "Joint6_L",
+        "Joint7_L"
+      ],
+      "finger_union_unreachable_elements": 0
+    },
+    {
+      "variant": "hidden128_seed20261105",
+      "run": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_hold_increment_v8_wide128_seed20261105_eval_9501_20261104",
+      "original_failure": "evaluation_protocol_error:Post-turn correction exceeded bounded pose envelope",
+      "physical_steps": 1803,
+      "returned_teacher_queries": 1803,
+      "maximum_lift_m": 0.36871546173095704,
+      "original_wrist_gate_qualified": false,
+      "left_teacher_position_action_steps": 0,
+      "original_gain_events": 1,
+      "cube_pose_writes": 0,
+      "feedback_active_frames": 1304,
+      "index_post_positive_frames": 821,
+      "ring_post_positive_frames": 1277,
+      "index_exact_expert_HOLD_but_actual_changes": 54,
+      "ring_exact_expert_HOLD_but_actual_changes": 9,
+      "first_index_exact_HOLD_change": 581,
+      "first_active_expert_target_error": {
+        "step": 548,
+        "joint": "left_ring_MCP_joint",
+        "absolute_error_rad": 0.014999985694885254
+      },
+      "hold_gate_queries": 180,
+      "maximum_consecutive_qualified_hold": 19,
+      "required_consecutive_qualified_hold": 90,
+      "original_hold_count_reconstruction_exact": true,
+      "hold_predicate_failure_counts": {
+        "path_finished": 0,
+        "all_fingers": 89,
+        "height_at_least_08": 0,
+        "no_cube_table": 0,
+        "tilt_error_at_most_5": 0,
+        "linear_speed_below_03": 0,
+        "angular_speed_below_20": 109
+      },
+      "old_V8_union_unreachable_elements": 1155,
+      "old_V8_max_union_gap_rad": 0.017400026321411133,
+      "old_V8_unreachable_joints": [
+        "Joint1_L",
+        "Joint2_L",
+        "Joint3_L",
+        "Joint4_L",
+        "Joint5_L",
+        "Joint6_L",
+        "Joint7_L"
+      ],
+      "finger_union_unreachable_elements": 0
+    }
+  ],
+  "source_reports_sha256": {
+    "v8_seed20261104_actual_contact_diagnosis_20261104.json": "133816b39ac1e2b95b79f7bfa6b2acfa0714ee4d7742c38984370905bfc4d4b7",
+    "v8_seed20261104_actual_hold_gate_decomposition_20261104.json": "01d2c4d6af9a52adc9b0ed37daac1392196c15407f180ef265f255d6d557033e",
+    "v8_seed20261105_actual_contact_diagnosis_20261104.json": "fb0b426253be3097260f09d0bf1b23f6f1e62e1542e27cb4e51f1128e98d076c",
+    "v8_seed20261105_actual_hold_gate_decomposition_20261104.json": "1d2f2c61cfbabb8cea19a29e012587d95ad1cc6979c79a23e6e959914cee65b4",
+    "v8_wide128_seed20261105_actual_contact_diagnosis_20261104.json": "7063b3c2cd493d41ca1963f8e0f59e457da51d462e14b72d3cb146734d91e8ad",
+    "v8_wide128_seed20261105_actual_hold_gate_decomposition_20261104.json": "bd714593a7aa8e9e3dd9571345af37d6ee90451dbc49edbd38ee0993054240f1"
+  },
+  "interpretation": [
+    "All three lift and reach the wrist/hold region, but none passes the unchanged original wrist acceptance gate.",
+    "The first deviation from matched V4 at step545 is exact expert ring HOLD and is not itself an expert-label error.",
+    "On the wide128 actual state at step548, the expert requests a 5mrad ring UPDATE while actual returns to a baseline 20mrad from previous; a mode claim requires the independent actor replay.",
+    "On wide128 step581, positive index contact and exact expert HOLD coexist with a return to baseline 5.09566mrad away and post-step zero index contact.",
+    "V8 arm UPDATE anchors leave legal counterfactual expert corrections outside its representable union; the frozen V9 previous-arm anchor removes the measured interval/exact-float32 representation gap on these wide128 recorded states.",
+    "Improved individual contact or offline fitting counts do not imply accepted closed-loop behavior. No single relaxed original hold predicate would yield 90 consecutive wide128 accepted queries."
+  ],
+  "next_data_review_needed": {
+    "proposal": "Separately audit a completed-transition safe prefix from wide128 own states, preserving all original expert projected labels and failures.",
+    "priority_windows": [
+      "ring recovery transitions near 545-590 including exact HOLD and missing-contact UPDATE",
+      "index HOLD-to-BASE reversals beginning 581 and their following recovery states",
+      "actual arm replanning from tilt90 through wrist and hold"
+    ],
+    "requirements": [
+      "Frozen checkpoint/source/physics and 284-feature actual-history actor replay",
+      "Once-query, actual _applied sync, original float32 projection and pre/post gates for every selected transition",
+      "Exclude unfinished query1803 and never fabricate its missing controller audit, label or action",
+      "Handle exception-prefix terminal semantics through a new explicit reviewed protocol; do not alter frozen registry",
+      "Recompute named bounds/exact branch witnesses and retain original False episode and generalization fields"
+    ],
+    "approved_training_samples_by_this_report": 0,
+    "automatic_dataset_admission": false
+  },
+  "source_result_or_gates_modified": false,
+  "new_isaac_or_training_started": false,
+  "physical_success_claim": false,
+  "same_physical_development_seed": 9501,
+  "independent_generalization_claim": false,
+  "comparison_limit": "Episode lengths and phase timing differ after closed-loop divergence; frame counts are descriptive, not matched per-phase causal interventions.",
+  "script_sha256": "3642dde6724929d33d0396140a83c7f73b8ca6fbea70df01f2ead9de8ab3b5ad"
+}
