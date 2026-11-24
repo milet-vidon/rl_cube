@@ -1,51 +1,58 @@
-# Revo3 双臂魔方仿真研究
+# Revo3 双臂魔方仿真
 
-基于 Isaac Sim 6.2 / Isaac Lab 3.0 的 56 关节双臂双手抓取、整块魔方重定向与换抓实验工程。
+用 56 关节的双臂双手机器人，在 Isaac Sim / Isaac Lab 中研究抓取、稳持、换抓和转动魔方。工程包含脚本控制器（teacher）、状态行为克隆（BC）和视觉 PPO 实验。整块魔方改变朝向和机器人拧动其中一层是两个独立的验收项目。
 
-**尚未完成机器人单层转动、魔方复原或实机验证。** 本仓库包含传统 teacher、状态 BC、视觉/PPO 探索代码；不同方法的结果不能混用。
+冻结的腕部姿态控制器在 5 个独立种子上通过了连续 3 秒的持握与姿态验收；这是脚本控制器的结果。尚未验证可靠的接触驱动单层转动、完整复原或实机运行。逐种子指标见[腕部验收](docs/WRIST_DIRECTION_UPDATE.md)，单层实验见[自由核心接触实验](docs/SINGLE_FACE_CONTACT_UPDATE.md)。
 
-## 本次更新
+## 先试一个离线例子
 
-[腕部方向修正与验收](docs/WRIST_DIRECTION_UPDATE.md)：按用户澄清，将 J6 侧弯换到另一侧，保持掌心方向与肘外展。冻结后新独立 9701–9705 为 5/5，五指接触与姿态同窗保持 3 秒，无自碰、碰桌或限位命中。默认 `tilt-teacher` 已切换到新腕部实现。右手完整接抓仍未验收，需适配移动后的持物位置。跨工作区证据迁移保持有效。
-
-## 接手入口
-
-1. [交接文档](docs/HANDOFF.md)：现状、证据、代码地图、限制与下一步。
-2. [建议 Issues](docs/NEXT_ISSUES.md)：可直接复制到 GitHub。
-3. [Codex 工作约定](AGENTS.md)：验收与安全约束。
-4. [历史部署记录](DEPLOYMENT.txt) 与 [环境版本快照](docs/environment/)。
-
-## 环境和启动
-
-基线：Ubuntu 24.04、Python 3.12、Isaac Sim 6.2.0.0、Isaac Lab 3.0.0、Torch 2.11.0+cu130、RSL-RL 5.5.1。原机 RTX 5070 Laptop 8 GB；单环境 CPU PhysX/CPU PPO，GPU 渲染。
+在仓库根目录运行。这个测试只用 NumPy 和 SciPy：给整颗魔方施加旋转，层角应为零；只相对核心旋转一层，测得的角度应保留方向。它不需要 GPU、机器人资产、预训练权重或历史轨迹。
 
 ```bash
-git lfs install
-git lfs pull
-# 已安装兼容环境时，直接使用解释器：
-export ISAACLAB_PYTHON=/path/to/isaac/python
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install numpy scipy
+python -m unittest discover -s revotron_cube_rl -p 'test_cube_state.py'
+```
+
+## 在 Isaac 中运行
+
+完整仿真需要兼容的 NVIDIA GPU 和驱动、Isaac 环境，以及合法取得的机器人 USD 和魔方资产。原项目使用 Ubuntu 24.04、Python 3.12、Isaac Sim 6.2、Isaac Lab 3.0。环境版本见[部署记录](DEPLOYMENT.txt)。以下命令用于具备相应资源的研究检出目录，轻量源码包不含模型资产或实验记录。
+
+```bash
+# 在研究检出目录按需取得资产，不必下载所有历史轨迹
+git lfs install --local
+git lfs pull --include='revotron_revo3/**,isaac_mujoco_cube/**'
+
+# 已装好 conda 的 Linux 主机；安装需要网络和额外磁盘空间
+bash install_6_2.sh
+source activate.sh
 bash revotron_cube_rl/run_linux.sh check
 bash revotron_cube_rl/run_linux.sh env-check --runtime --render
-bash revotron_cube_rl/run_linux.sh smoke --steps 64 --seed 7 --name fresh_smoke
+bash revotron_cube_rl/run_linux.sh smoke --steps 64 --seed 7 --name "smoke_$(date +%Y%m%d_%H%M%S)"
 ```
 
-新建隔离环境可执行 `bash install_6_2.sh`（需要 conda、网络和 NVIDIA 软件运行条件），然后 `source activate.sh`、`./run.sh check`。安装脚本保留原版本约束，并非跨平台安装保证。
+如果已经有兼容环境，直接把 `ISAACLAB_PYTHON` 指向其中的 Python，再运行上面的三个检查和仿真命令。外置资产通过 `REVOTRON_USD_PATH`（USD 文件）和 `ISAAC_MUJOCO_CUBE_ROOT`（含上游 XML、纹理的目录）指定。同一台机器一次只启动一个 Isaac 进程；每个新实验使用唯一名称。
+
+## 源码、资产与实验记录
+
+| 路径 | 用途 |
+| --- | --- |
+| `revotron_cube_rl/` | 环境、训练和评估入口、配置、阶段验收与测试 |
+| `revotron_revo3/`、`isaac_mujoco_cube/` | 研究检出目录中的机器人与魔方资产、来源记录和转换工具 |
+| `revotron_cube_rl/runs/`、`docs/evidence/` | 本地运行输出与历史验收证据；部分旧记录已由 Git 或 LFS 跟踪 |
+| `docs/` | [制品说明](docs/ARTIFACTS.md)、[研究交接](docs/HANDOFF.md)、[待解决问题](docs/NEXT_ISSUES.md) |
+
+从维护者的工作区生成轻量源码包，用于审查或分发准备：
 
 ```bash
-# 无 Isaac 启动的离线回归；使用具备 numpy/torch/scipy 等依赖的解释器
-python -m unittest discover -s revotron_cube_rl -p 'test_*.py'
-python revotron_cube_rl/test_arm_safety.py
+python3 tools/export_source.py work/releases/rl-cube-source.tar.gz
 ```
 
-同一时间只运行一个 Isaac 进程。每个实验使用全新的 `--name`。训练门禁未通过时必须修复前置阶段，不能跳过。
+这个包不携带 Git 历史、Conda 环境或实验输出。只读现有研究仓库时也可在克隆命令前设置 `GIT_LFS_SKIP_SMUDGE=1`，避免初次检出下载 LFS 内容；普通 Git 对象仍会下载。需要复核某项历史结果时，再按[制品说明](docs/ARTIFACTS.md)取对应资产、权重和证据。
 
-## 仓库内容
+## 贡献与许可
 
-- `revotron_cube_rl/`：环境、策略、规划、审计、配置和已选验收证据。
-- `revotron_revo3/`：机器人 URDF/USD/网格与转换脚本。
-- `isaac_mujoco_cube/`：魔方资产、上游快照与物理探针。
-- `docs/`：交接、Issue 草稿、环境与发布清单。
+贡献流程见 [CONTRIBUTING.md](CONTRIBUTING.md)。改动控制器或策略前请阅读[项目约定](AGENTS.md)。提交实验结果时请注明方法、种子、配置、实际终止原因与验证范围。离线测试用于检查算法；物理行为需要 PhysX 回合验证，训练损失不能代替验收。
 
-大型资产、轨迹和权重由 Git LFS 保存。原工作区的环境、缓存、视频和大量历史训练数据未全部打包；参见 [制品说明](docs/ARTIFACTS.md)。原证书中的历史绝对路径由受约束解析器映射到当前克隆；缺失证据仍会失败。
-
-第三方来源见 [THIRD_PARTY.md](THIRD_PARTY.md)。未为自有代码或机器人资产擅自添加开源授权。
+项目自有代码采用 [Apache-2.0](LICENSE)。该许可不授予机器人资产、模型权重或实验数据的再分发权；机器人资产的公开再分发授权尚未确认。第三方组件的来源和已知授权见 [THIRD_PARTY.md](THIRD_PARTY.md)。

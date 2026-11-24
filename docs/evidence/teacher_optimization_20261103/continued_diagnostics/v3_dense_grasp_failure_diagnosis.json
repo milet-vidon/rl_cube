@@ -1,0 +1,869 @@
+{
+  "scope": "read_only_offline_comparison_no_new_physics_run",
+  "source_run": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/center_j56_dev_v3_20261103",
+  "evaluation_run": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/teacher_phase_expert_gpu_v3_dense_eval_9501",
+  "source_rows": 2129,
+  "evaluation_rows": 1647,
+  "artifact_sha256": {
+    "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/center_j56_dev_v3_20261103/trajectory.json": "aaae6e424223eda650ff30eb5fe6656c00b4ef2d73d6a8a83a4f22e512f0288b",
+    "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/center_j56_dev_v3_20261103/artifact_manifest.json": "e8cb8f154d4e1be1f3ff3694d5a4b0ef3a598261ade2f4461a1b4a0e082ffff6",
+    "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/center_j56_dev_v3_20261103/experiment.json": "4e2d16afb1f5d50ec0e4a56e1717afc217f5c570b65eb5bde0ac28758b244249",
+    "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/teacher_phase_expert_gpu_v3_dense_eval_9501/trajectory.jsonl": "fcbf76980b8cb88e0a6e6f526505e364796342b63b30897e5c148fc220e5c6d5",
+    "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/teacher_phase_expert_gpu_v3_dense_eval_9501/result.json": "d9b1dde2e0f425e3b4a00a68bfd51c606d7ecbd38757202a79ade1a16f334ed5",
+    "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/teacher_phase_expert_gpu_v3_dense_eval_9501/source_snapshot/evaluate_phase_expert_v3.py": "863adc1a18db37b38003aa1de164c8fc4d692bf13dae6a835c2c681464337010"
+  },
+  "phase_mismatches": [],
+  "evaluation_result": {
+    "scope": "development_learned_left_phase_trajectory_no_adaptive_feedback",
+    "seed": 9501,
+    "steps": 1647,
+    "precenter_wrist_audit": {
+      "accepted": false,
+      "longest_jointly_qualified_hold_s": 0.0,
+      "final_elbow": {
+        "shoulder_root_m": [
+          0.02171436697244644,
+          0.24999994039535522,
+          0.24004087448120126
+        ],
+        "elbow_root_m": [
+          0.033378347754478455,
+          0.429547518491745,
+          0.015720343589782804
+        ],
+        "wrist_root_m": [
+          0.30034953355789185,
+          0.3276650905609131,
+          0.1471220016479493
+        ],
+        "outward_from_shoulder_m": 0.17954757809638977,
+        "upper_arm_outward_deg": 38.674001981689166,
+        "outward_from_shoulder_wrist_axis_m": 0.1475417816656877
+      },
+      "final": {
+        "joint6_deg": 11.691881962734685,
+        "side_bend_deg": -14.800994762437506,
+        "flexion_deg": 42.86733915672342,
+        "forearm_direction_palm_frame": [
+          0.6678937582277845,
+          -0.19012969130239743,
+          0.7195614137831607
+        ],
+        "wrist_inside_elbow_m": 0.10188242793083191
+      },
+      "scope": "J6_side_bend_reversed_with_unchanged_palm_orientation",
+      "failures": [
+        "no_3s_jointly_qualified_reversed_wrist_hold"
+      ]
+    },
+    "accepted": false,
+    "failure": "precenter_wrist_hold_gate_not_met",
+    "qualified_center_hold_s": 0.0,
+    "maximum_lift_m": 0.00500332975387574,
+    "cube_returned_to_table_after_lift": false,
+    "elapsed_s": 177.33957148500485,
+    "checkpoint_sha256": "354a63778a0f846b09873374c3b36989152d43c0b2ab976ed406bd6b84e27050",
+    "source_manifest_sha256": "e8cb8f154d4e1be1f3ff3694d5a4b0ef3a598261ade2f4461a1b4a0e082ffff6",
+    "evaluation_source_sha256": {
+      "articulated_cube_env.py": "dfad0023f9e2797d6ea8ea3ac08aa1b6889b7dbb4ff8398cd0ca11fa329bc707",
+      "center_j56_audit.py": "a77def5e36aede51e248cd7495a14ee858d7a35d83b233f3c6b63d78079c1659",
+      "center_j56_plan.py": "5c9b49965ad4aa5e07d63ba7bc9e327fdf87096a4a19c6d39068bed64868fd48",
+      "center_j56_protocol_v3.json": "1a20c06c21da5e631790207286493852353338986bd16d7f891196861f900197",
+      "centered_opposition_runtime.py": "95734758ff1c5971b2b534731f3496d00501aa015466e3705ae7ac89f2de7494",
+      "centered_transport_audit.py": "9bf896dcca54e21a1927f77ded5385031b7dcd0f86b591230d080cb13f847672",
+      "centered_transport_plan.py": "e60394d663e37f8082dfaa972ba0221fbe12eab0cb82f077ab14f87f7d53b5eb",
+      "config.json": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+      "dynamic_cube.py": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de",
+      "elbow_audit.py": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9",
+      "elbow_gate.py": "6473a2deec9034d4fa57079fe917d248c40db68f9768001456474bdc8eb6c526",
+      "elbow_handover.py": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e",
+      "elbow_handover_experiment.py": "0c403b1fba0f01c48fc9fc068b28545ec82d5c348a480d4608e2035ddab91cf1",
+      "environment.py": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7",
+      "evaluate_phase_expert_v3.py": "863adc1a18db37b38003aa1de164c8fc4d692bf13dae6a835c2c681464337010",
+      "evidence_paths.py": "0339eb9b1149cba69af15aa27d605b3ef172b335932d49c41193360059f434fd",
+      "face_contact_calibration_v1.json": "b9ab73c9e7e2c922ffaf1270196fce8c2a4acd635dfe8842def32d98bcbe7b44",
+      "face_push_plan.py": "0bf9b55361f59113264ce29260298fa0d9fb883cda16fac66481de1ab82f89eb",
+      "face_push_runtime.py": "953e38efb8de83a8a5209903bd95ee0b1780dd8bd6af6ca3357dcda0cb5918a4",
+      "finger_contact_audit.py": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0",
+      "isaac_compat.py": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825",
+      "joint_safety.py": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887",
+      "kinematics.py": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212",
+      "layer_turn_metrics.py": "c7fc5438c29c20632ad774c7f541d293e5f411ca8fff1454c830989536e1ccb4",
+      "opposition_feedback.py": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883",
+      "opposition_grasp_v20.json": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a",
+      "opposition_teacher.py": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1",
+      "palm_contact_audit.py": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184",
+      "palm_handover.py": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f",
+      "palm_handover_audit.py": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1",
+      "palm_handover_experiment.py": "74db8145fa76937b33fbfd2a37b41bcd7f3b132af94defad4bbe9379e4377c40",
+      "phase_contact_policy.py": "5db8beb4f0dc86d4b6105669ee8da2fee93b319e2ba468a6c0c2c5b21dc94045",
+      "phase_expert_policy_v3.py": "766fd068baf84a77f4dceca99957087064596b9c48b50dcbe160e808799bc4e3",
+      "proximal_planner.py": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16",
+      "safe_collision_plan.py": "2ca8f8278d50b03a612ec9e9bbad746900541b86a29eb799042212c4fdd6dda4",
+      "self_contact_audit.py": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c",
+      "single_face_experiment.py": "d8bf7e12d96e3c06beec41bd19f9aabcdac9b2ae27637525f16585b924b79c4d",
+      "tilt_audit.py": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995",
+      "tilt_collision_plan.py": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd",
+      "tilt_experiment.py": "d345f965ec3f93a1c662eaf736bf9f25f4fb50733fee6784ff5fe9798154081d",
+      "tilt_regrasp.py": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1",
+      "torso_collision.py": "24dfa461f6d4b79341f269aa4450c0f35f16eed608ba01258e86f0e1573cf20c",
+      "wrist_audit.py": "e0dcf531d4f9e74cce3293ff2f954486fd1277609a832becdcefbd4b4e36398f",
+      "wrist_direction.py": "0aa5858caf39dabbd92af4396370121de30dc673675a5c24f11ca8ff0c0c0ed5",
+      "wrist_direction_experiment.py": "23d3784eeab1d5f560ad603939a30bce5cf2d4d26cb94b83bf9921a4413e4d8e",
+      "wrist_gate.py": "37f90513eada82e467686e451fd863e2ec64d870fd3bea9b4f32ac4b8ecdeddd"
+    },
+    "phase_schedule_source": "center_j56_dev_v3_20261103",
+    "right_schedule_seed": 9501,
+    "right_turn_trained": false,
+    "stage_gate_unlocked": false,
+    "cube_pose_writes_during_control": 0,
+    "model_input_state": "scheduled phase/progress only; measured features collected but excluded by this phase-trajectory model",
+    "left_teacher_targets_used": false,
+    "left_finger_hold_gain_step": 1553,
+    "left_finger_hold_stiffness": 20.0
+  },
+  "phases": [
+    {
+      "phase": "ready",
+      "first_step": 0,
+      "last_step": 243,
+      "left_target_rmse_rad": 0.0002957485112574109,
+      "left_target_max_abs_rad": 0.003392726182937622,
+      "worst_step": 2,
+      "worst_joint": "Joint5_L",
+      "right_target_max_abs_rad": 0.0,
+      "left_measured_q_rmse_rad": 0.0002650563421269711,
+      "source_maximum_lift_m": -3.60965728751772e-07,
+      "eval_maximum_lift_m": -3.60965728751772e-07
+    },
+    {
+      "phase": "preshape",
+      "first_step": 244,
+      "last_step": 316,
+      "left_target_rmse_rad": 0.00026768207037759567,
+      "left_target_max_abs_rad": 0.0015470120579266222,
+      "worst_step": 245,
+      "worst_joint": "left_thumb_DIP_joint",
+      "right_target_max_abs_rad": 0.0,
+      "left_measured_q_rmse_rad": 0.00024667374746284264,
+      "source_maximum_lift_m": -3.60965728751772e-07,
+      "eval_maximum_lift_m": -3.60965728751772e-07
+    },
+    {
+      "phase": "lower",
+      "first_step": 317,
+      "last_step": 377,
+      "left_target_rmse_rad": 2.0553881070303678e-05,
+      "left_target_max_abs_rad": 0.0001016855239868164,
+      "worst_step": 329,
+      "worst_joint": "left_middle_MCP_joint",
+      "right_target_max_abs_rad": 0.0,
+      "left_measured_q_rmse_rad": 2.364076671858516e-05,
+      "source_maximum_lift_m": -3.60965728751772e-07,
+      "eval_maximum_lift_m": -3.60965728751772e-07
+    },
+    {
+      "phase": "approach",
+      "first_step": 378,
+      "last_step": 426,
+      "left_target_rmse_rad": 6.614080859320825e-05,
+      "left_target_max_abs_rad": 0.0002584308385848999,
+      "worst_step": 378,
+      "worst_joint": "left_little_DIP_joint",
+      "right_target_max_abs_rad": 0.0,
+      "left_measured_q_rmse_rad": 9.407419164643114e-05,
+      "source_maximum_lift_m": 2.6043891906746275e-05,
+      "eval_maximum_lift_m": 1.3646125793465025e-05
+    },
+    {
+      "phase": "squeeze",
+      "first_step": 427,
+      "last_step": 511,
+      "left_target_rmse_rad": 0.00010454446304376419,
+      "left_target_max_abs_rad": 0.0026922300457954407,
+      "worst_step": 499,
+      "worst_joint": "left_middle_MPR_joint",
+      "right_target_max_abs_rad": 0.0,
+      "left_measured_q_rmse_rad": 0.0005563933678292077,
+      "source_maximum_lift_m": 0.003240105152130135,
+      "eval_maximum_lift_m": 0.0032086338996887287
+    },
+    {
+      "phase": "primary_lift",
+      "first_step": 512,
+      "last_step": 631,
+      "left_target_rmse_rad": 0.0002767313037887912,
+      "left_target_max_abs_rad": 0.0034672021865844727,
+      "worst_step": 553,
+      "worst_joint": "left_ring_MCP_joint",
+      "right_target_max_abs_rad": 0.0,
+      "left_measured_q_rmse_rad": 0.0041168644833503125,
+      "source_maximum_lift_m": 0.1878456439971924,
+      "eval_maximum_lift_m": 0.00500332975387574
+    },
+    {
+      "phase": "elbow_outward",
+      "first_step": 632,
+      "last_step": 760,
+      "left_target_rmse_rad": 0.00020682604164136756,
+      "left_target_max_abs_rad": 0.0022269487380981445,
+      "worst_step": 633,
+      "worst_joint": "Joint4_L",
+      "right_target_max_abs_rad": 0.0,
+      "left_measured_q_rmse_rad": 0.004741467658603979,
+      "source_maximum_lift_m": 0.24226480388641358,
+      "eval_maximum_lift_m": 5.542898178101385e-05
+    },
+    {
+      "phase": "tilt_90",
+      "first_step": 761,
+      "last_step": 1371,
+      "left_target_rmse_rad": 0.0004089013292049356,
+      "left_target_max_abs_rad": 0.0035530924797058105,
+      "worst_step": 995,
+      "worst_joint": "left_index_MCP_joint",
+      "right_target_max_abs_rad": 0.0,
+      "left_measured_q_rmse_rad": 0.00484884751836216,
+      "source_maximum_lift_m": 0.24253934288024903,
+      "eval_maximum_lift_m": 5.5548191070564634e-05
+    },
+    {
+      "phase": "wrist_reconfigure",
+      "first_step": 1372,
+      "last_step": 1552,
+      "left_target_rmse_rad": 0.00011291556596118861,
+      "left_target_max_abs_rad": 0.0013358592987060547,
+      "worst_step": 1373,
+      "worst_joint": "Joint3_L",
+      "right_target_max_abs_rad": 0.0,
+      "left_measured_q_rmse_rad": 0.005020251851224517,
+      "source_maximum_lift_m": 0.3687085475921631,
+      "eval_maximum_lift_m": 5.5548191070564634e-05
+    },
+    {
+      "phase": "tilt_hold",
+      "first_step": 1553,
+      "last_step": 1646,
+      "left_target_rmse_rad": 0.00020720537235286612,
+      "left_target_max_abs_rad": 0.0030551552772521973,
+      "worst_step": 1563,
+      "worst_joint": "Joint7_L",
+      "right_target_max_abs_rad": 0.0,
+      "left_measured_q_rmse_rad": 0.005571623984334954,
+      "source_maximum_lift_m": 0.3684636917114258,
+      "eval_maximum_lift_m": 5.5607795715340025e-05
+    }
+  ],
+  "selected_steps": [
+    {
+      "step": 0,
+      "phase": "ready",
+      "target_max_abs_rad": 0.0011935830116271973,
+      "target_worst_joint": "Joint7_L",
+      "measured_q_max_abs_difference_rad": 0.00017702579498291016,
+      "cube_position_delta_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_left_finger_impulses_Ns": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "eval_left_finger_impulses_Ns": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "source_lift_m": -9.570121765056783e-07,
+      "eval_lift_m": -9.570121765056783e-07
+    },
+    {
+      "step": 1,
+      "phase": "ready",
+      "target_max_abs_rad": 0.002535402774810791,
+      "target_worst_joint": "Joint5_L",
+      "measured_q_max_abs_difference_rad": 0.00041860342025756836,
+      "cube_position_delta_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_left_finger_impulses_Ns": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "eval_left_finger_impulses_Ns": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "source_lift_m": -7.185935974041158e-07,
+      "eval_lift_m": -7.185935974041158e-07
+    },
+    {
+      "step": 100,
+      "phase": "ready",
+      "target_max_abs_rad": 0.0002397298812866211,
+      "target_worst_joint": "Joint5_L",
+      "measured_q_max_abs_difference_rad": 0.00016987323760986328,
+      "cube_position_delta_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_left_finger_impulses_Ns": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "eval_left_finger_impulses_Ns": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "source_lift_m": -7.781982421795064e-07,
+      "eval_lift_m": -7.781982421795064e-07
+    },
+    {
+      "step": 300,
+      "phase": "preshape",
+      "target_max_abs_rad": 0.0006480216979980469,
+      "target_worst_joint": "left_thumb_DIP_joint",
+      "measured_q_max_abs_difference_rad": 0.0006024837493896484,
+      "cube_position_delta_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_left_finger_impulses_Ns": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "eval_left_finger_impulses_Ns": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "source_lift_m": -7.185935974041158e-07,
+      "eval_lift_m": -7.185935974041158e-07
+    },
+    {
+      "step": 360,
+      "phase": "lower",
+      "target_max_abs_rad": 2.849102020263672e-05,
+      "target_worst_joint": "Joint4_L",
+      "measured_q_max_abs_difference_rad": 3.37064266204834e-05,
+      "cube_position_delta_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_left_finger_impulses_Ns": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "eval_left_finger_impulses_Ns": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "source_lift_m": -5.993843078533345e-07,
+      "eval_lift_m": -5.993843078533345e-07
+    },
+    {
+      "step": 400,
+      "phase": "approach",
+      "target_max_abs_rad": 9.065866470336914e-05,
+      "target_worst_joint": "left_little_DIP_joint",
+      "measured_q_max_abs_difference_rad": 9.247660636901855e-05,
+      "cube_position_delta_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_left_finger_impulses_Ns": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "eval_left_finger_impulses_Ns": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "source_lift_m": -5.993843078533345e-07,
+      "eval_lift_m": -5.993843078533345e-07
+    },
+    {
+      "step": 450,
+      "phase": "squeeze",
+      "target_max_abs_rad": 0.00012373924255371094,
+      "target_worst_joint": "left_little_PIP_joint",
+      "measured_q_max_abs_difference_rad": 0.0014428496360778809,
+      "cube_position_delta_m": [
+        -0.0002816319465637207,
+        -9.020138531923294e-05,
+        5.322694778442383e-05
+      ],
+      "source_left_finger_impulses_Ns": {
+        "thumb": 0.03162297023476028,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.02985110050403717
+      },
+      "eval_left_finger_impulses_Ns": {
+        "thumb": 0.030302614826848834,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.02763005853794056
+      },
+      "source_lift_m": 0.0003716316223144611,
+      "eval_lift_m": 0.00042485857009888495
+    },
+    {
+      "step": 480,
+      "phase": "squeeze",
+      "target_max_abs_rad": 0.00011682510375976562,
+      "target_worst_joint": "left_thumb_PIP_joint",
+      "measured_q_max_abs_difference_rad": 0.001095890998840332,
+      "cube_position_delta_m": [
+        -0.00044989585876464844,
+        -7.63116404414177e-05,
+        -9.512901306152344e-05
+      ],
+      "source_left_finger_impulses_Ns": {
+        "thumb": 0.05083637313184575,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.07207248027773742
+      },
+      "eval_left_finger_impulses_Ns": {
+        "thumb": 0.056635209120039595,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.07642192722517246
+      },
+      "source_lift_m": 0.00278085136413575,
+      "eval_lift_m": 0.0026857223510742267
+    },
+    {
+      "step": 500,
+      "phase": "squeeze",
+      "target_max_abs_rad": 0.000793948769569397,
+      "target_worst_joint": "left_middle_MPR_joint",
+      "measured_q_max_abs_difference_rad": 0.004176914691925049,
+      "cube_position_delta_m": [
+        -0.0003714263439178467,
+        -8.614826947450638e-05,
+        -3.045797348022461e-05
+      ],
+      "source_left_finger_impulses_Ns": {
+        "thumb": 0.0653993564224783,
+        "index": 0.006890927018164025,
+        "middle": 0.0,
+        "ring": 0.0015317250067271302,
+        "little": 0.08163301103845935
+      },
+      "eval_left_finger_impulses_Ns": {
+        "thumb": 0.06546069568281333,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.08071221341460387
+      },
+      "source_lift_m": 0.0032334890365600666,
+      "eval_lift_m": 0.003203031063079842
+    },
+    {
+      "step": 520,
+      "phase": "primary_lift",
+      "target_max_abs_rad": 0.00017198920249938965,
+      "target_worst_joint": "left_little_PIP_joint",
+      "measured_q_max_abs_difference_rad": 0.003555595874786377,
+      "cube_position_delta_m": [
+        -0.0003712177276611328,
+        -8.742045611143112e-05,
+        -3.0219554901123047e-05
+      ],
+      "source_left_finger_impulses_Ns": {
+        "thumb": 0.06710402015756535,
+        "index": 0.005907025336455173,
+        "middle": 0.0033478659437454193,
+        "ring": 0.0008089593919922439,
+        "little": 0.08120457805682096
+      },
+      "eval_left_finger_impulses_Ns": {
+        "thumb": 0.06586758079274144,
+        "index": 0.0,
+        "middle": 0.00015308539074905783,
+        "ring": 0.0,
+        "little": 0.07989139241924892
+      },
+      "source_lift_m": 0.0032439794540405353,
+      "eval_lift_m": 0.0032137598991394123
+    },
+    {
+      "step": 540,
+      "phase": "primary_lift",
+      "target_max_abs_rad": 0.00044465065002441406,
+      "target_worst_joint": "left_ring_MCP_joint",
+      "measured_q_max_abs_difference_rad": 0.002223491668701172,
+      "cube_position_delta_m": [
+        -0.00042626261711120605,
+        -6.545893847942352e-05,
+        -8.749961853027344e-05
+      ],
+      "source_left_finger_impulses_Ns": {
+        "thumb": 0.05982001431341433,
+        "index": 0.016877235259712887,
+        "middle": 0.00510545037768442,
+        "ring": 0.0023266627371767916,
+        "little": 0.06451973128445142
+      },
+      "eval_left_finger_impulses_Ns": {
+        "thumb": 0.06148070445910803,
+        "index": 0.0,
+        "middle": 0.001524210038029831,
+        "ring": 0.0,
+        "little": 0.06344574695115673
+      },
+      "source_lift_m": 0.0036995973587036213,
+      "eval_lift_m": 0.003612097740173348
+    },
+    {
+      "step": 560,
+      "phase": "primary_lift",
+      "target_max_abs_rad": 0.0006671547889709473,
+      "target_worst_joint": "left_ring_MCP_joint",
+      "measured_q_max_abs_difference_rad": 0.021480977535247803,
+      "cube_position_delta_m": [
+        -0.025842756032943726,
+        0.0012642648071050644,
+        -0.03889888525009155
+      ],
+      "source_left_finger_impulses_Ns": {
+        "thumb": 0.036914155510717625,
+        "index": 0.0017413539623986527,
+        "middle": 0.007652995676811016,
+        "ring": 0.0006175785372552027,
+        "little": 0.03850765498356058
+      },
+      "eval_left_finger_impulses_Ns": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "source_lift_m": 0.03896641397476197,
+      "eval_lift_m": 6.752872467041815e-05
+    },
+    {
+      "step": 580,
+      "phase": "primary_lift",
+      "target_max_abs_rad": 0.0001316070556640625,
+      "target_worst_joint": "left_ring_MCP_joint",
+      "measured_q_max_abs_difference_rad": 0.021431267261505127,
+      "cube_position_delta_m": [
+        -0.06446266174316406,
+        0.0026501547545194626,
+        -0.10285276174545288
+      ],
+      "source_left_finger_impulses_Ns": {
+        "thumb": 0.03740484222387456,
+        "index": 0.0006709949499892274,
+        "middle": 0.007192372013186283,
+        "ring": 0.0007619016671562531,
+        "little": 0.03819611854802699
+      },
+      "eval_left_finger_impulses_Ns": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "source_lift_m": 0.10290759468078614,
+      "eval_lift_m": 5.483293533325995e-05
+    },
+    {
+      "step": 600,
+      "phase": "primary_lift",
+      "target_max_abs_rad": 0.0001558065414428711,
+      "target_worst_joint": "left_index_MCP_joint",
+      "measured_q_max_abs_difference_rad": 0.02071303129196167,
+      "cube_position_delta_m": [
+        -0.09679111838340759,
+        0.0017900113016366959,
+        -0.15956759452819824
+      ],
+      "source_left_finger_impulses_Ns": {
+        "thumb": 0.038694928375111896,
+        "index": 0.0008999524340005524,
+        "middle": 0.006958554461074835,
+        "ring": 0.001040122713470981,
+        "little": 0.038143840894735576
+      },
+      "eval_left_finger_impulses_Ns": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "source_lift_m": 0.15962296390533448,
+      "eval_lift_m": 5.536937713623846e-05
+    },
+    {
+      "step": 620,
+      "phase": "primary_lift",
+      "target_max_abs_rad": 0.00024890899658203125,
+      "target_worst_joint": "Joint1_L",
+      "measured_q_max_abs_difference_rad": 0.02075442671775818,
+      "cube_position_delta_m": [
+        -0.11187762022018433,
+        0.00014318153262138367,
+        -0.18590056896209717
+      ],
+      "source_left_finger_impulses_Ns": {
+        "thumb": 0.039867198423558466,
+        "index": 0.0009071091238388222,
+        "middle": 0.007119824184570499,
+        "ring": 0.0017099701090579574,
+        "little": 0.03818832335173858
+      },
+      "eval_left_finger_impulses_Ns": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "source_lift_m": 0.1859554615020752,
+      "eval_lift_m": 5.489253997803534e-05
+    },
+    {
+      "step": 650,
+      "phase": "elbow_outward",
+      "target_max_abs_rad": 0.0013049840927124023,
+      "target_worst_joint": "Joint4_L",
+      "measured_q_max_abs_difference_rad": 0.020581841468811035,
+      "cube_position_delta_m": [
+        -0.11240607500076294,
+        -0.0025826431810855865,
+        -0.18747061491012573
+      ],
+      "source_left_finger_impulses_Ns": {
+        "thumb": 0.039649650603621876,
+        "index": 0.00044039554380589674,
+        "middle": 0.00714893665581404,
+        "ring": 0.001430647046205198,
+        "little": 0.03810903540130907
+      },
+      "eval_left_finger_impulses_Ns": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "source_lift_m": 0.1875252094268799,
+      "eval_lift_m": 5.4594516754158384e-05
+    }
+  ],
+  "config_equal": true,
+  "asset_contract_sha256": {
+    "source": "3367c3d471d25bb668b2f67fb9eca3ba34a28328b967ffbb63aef39cf1a365c7",
+    "evaluation": "3367c3d471d25bb668b2f67fb9eca3ba34a28328b967ffbb63aef39cf1a365c7"
+  },
+  "source_code_differences": {
+    "single_face_experiment.py": {
+      "source": "f765a00ba08c1b7a6119a9cd35f43c1c3d1f0eb1a807ba91f611ebec0297beab",
+      "evaluation": "d8bf7e12d96e3c06beec41bd19f9aabcdac9b2ae27637525f16585b924b79c4d"
+    }
+  },
+  "composed_physics": {
+    "source_prim_count": 390,
+    "evaluation_prim_count": 390,
+    "differences": {},
+    "scope": "composed physics/physx attributes, physics material bindings, physics schemas, active flag",
+    "relevant_attribute_values": {
+      "physics:collisionEnabled": [
+        "False",
+        "True"
+      ],
+      "physics:dynamicFriction": [
+        "0.5",
+        "0.699999988079071",
+        "0.800000011920929"
+      ],
+      "physics:gravityDirection": [
+        "(0, 0, -1)"
+      ],
+      "physics:gravityMagnitude": [
+        "9.8100004196167"
+      ],
+      "physics:jointEnabled": [
+        "True"
+      ],
+      "physics:kinematicEnabled": [
+        "False"
+      ],
+      "physics:rigidBodyEnabled": [
+        "True"
+      ],
+      "physics:staticFriction": [
+        "0.5",
+        "0.800000011920929",
+        "0.8999999761581421"
+      ],
+      "physxArticulation:enabledSelfCollisions": [
+        "True"
+      ],
+      "physxArticulation:solverPositionIterationCount": [
+        "32"
+      ],
+      "physxArticulation:solverVelocityIterationCount": [
+        "4"
+      ],
+      "physxCollision:contactOffset": [
+        "0.0010000000474974513",
+        "9.999999747378752e-05"
+      ],
+      "physxCollision:restOffset": [
+        "0.0"
+      ],
+      "physxRigidBody:disableGravity": [
+        "False",
+        "True"
+      ],
+      "physxRigidBody:solverPositionIterationCount": [
+        "32"
+      ],
+      "physxRigidBody:solverVelocityIterationCount": [
+        "4"
+      ],
+      "physxScene:enableCCD": [
+        "False"
+      ],
+      "physxScene:frictionCorrelationDistance": [
+        "0.02500000037252903"
+      ],
+      "physxScene:frictionOffsetThreshold": [
+        "0.03999999910593033"
+      ],
+      "physxScene:solverType": [
+        "TGS"
+      ]
+    }
+  },
+  "teacher_constructor_evidence": [
+    {
+      "file": "tilt_regrasp.py",
+      "class": "TiltTeacher",
+      "line": 191,
+      "source": "def __init__(self,env,config,shift=(0.,0.,0.),regrasp=False):\n        self.env=env;self.base=OppositionTeacher(env,config);self.planner=self.planner_type(config)\n        self.shift=shift;self.mode='pickup';self.name='ready';self.failure_reason=None\n        self.finger_contacts={};self.nominal_target=None;self.reference=None;self.path=None\n        self.tick=0;self.wait=0;self.lost=0;self.hold=0;self.accepted=False;self.tilt_error_deg=90.\n        self.regrasp=regrasp;self.right_phases=[];self.right_index=0;self.right_tick=0;self.right_hold=0\n        self.regrasp_geometry=None;self.right_arrival=None;self.contact_points=[]"
+    },
+    {
+      "file": "tilt_regrasp.py",
+      "class": "MirrorArrival",
+      "line": 259,
+      "source": "def __init__(self,k,cfg,grasp,measured,position,quat,geometry,points):\n        self.k=k;self.names=cfg['joint_names'];self.robot_z=cfg['robot_z'];self.tick=0;self.targets={}\n        self.reference=geometry['right_closed'];self.anchors={};m=np.diag([1.,-1.,1.]);self.symmetry=np.array(geometry['Q'])@m\n        cube_r=Rotation.from_quat(np.asarray(quat)[[1,2,3,0]]).as_matrix();position=np.asarray(position)-[0,0,self.robot_z]\n        if geometry.get('right_contact_anchors'):\n            self.anchors={f:{key:(np.array(value) if key!='link' else value) for key,value in anchor.items()} for f,anchor in geometry['right_contact_anchors'].items()}\n            return\n        for f,anchor in grasp['contact_anchors'].items():\n            contacts=[p for p in points if p['side']=='left' and p['finger']==f]\n            if not contacts:raise ValueError('Missing measured left contact for mirrored grasp')\n            contact=max(contacts,key=lambda p:p['impulse_Ns']);world=np.array(contact['position_world_m'])-[0,0,self.robot_z]\n            t=k.fk_link(measured,anchor['link'])\n            target_cube=self.symmetry@cube_r.T@(world-position)\n            # Aim 1.5 mm inside the nominal face, as in the accepted left\n            # arrival controller. A target exactly on the measured surface\n            # left three right fingertips hovering without contact force.\n            axis=geometry.get('right_contact_axis',1);thumb_sign=geometry.get('right_thumb_sign',1)\n            target_cube[axis]=.027*thumb_sign*(1 if f=='thumb' else -1)\n            tangent=[i for i in range(3) if i!=axis]\n            if f=='index':target_cube[tangent]=np.clip(target_cube[tangent],-.023,.023)\n            if f=='little' and geometry.get('little_contact_z') is not None:target_cube[2]=geometry['little_contact_z']\n            self.anchors[f]={'link':anchor['link'].replace('left_','right_'),'point_local':m@t[:3,:3].T@(world-t[:3,3]),'target_cube':target_cube}"
+    },
+    {
+      "file": "opposition_teacher.py",
+      "class": "OppositionController",
+      "line": 142,
+      "source": "def __init__(self,env,phases):\n        self.env=env;self.phases=phases;self.index=0;self.tick=0;self.name=phases[0][0]\n        self.failure_reason=None;self.wait=0;self.contact_streak=0;self.lost=0;self.finger_contacts={}\n        self.nominal_target=None\n        self.primary_streak=0\n        self.settle_tolerance=.035\n        self.finger_arrival=None"
+    },
+    {
+      "file": "opposition_teacher.py",
+      "class": "OppositionTeacher",
+      "line": 186,
+      "source": "def __init__(self,env,grasp_config):\n        self.planner=OppositionPlanner(grasp_config)\n        if self.planner.grasp.get('arm_integral_tracking',False):\n            raise ValueError('Arm integral tracking was rejected for oscillation; use the damped PD configuration.')\n        xyz=tensor(env.cube.data.root_pos_w)[0].numpy().copy()\n        quat=quaternion_from_native(tensor(env.cube.data.root_state_w)[0,3:7]).numpy()\n        yaw=Rotation.from_quat(quat[[1,2,3,0]]).as_euler('xyz')[2]\n        super().__init__(env,self.planner.plan(xyz,yaw))\n        self.settle_tolerance=float(self.planner.grasp.get('arm_settle_tolerance_rad',.035))\n        if self.planner.grasp.get('contact_anchors'):\n            from opposition_feedback import FingerArrival\n            self.finger_arrival=FingerArrival(self.planner.k,self.planner.grasp,env.cfg['joint_names'],env.cfg['robot_z'])"
+    },
+    {
+      "file": "opposition_feedback.py",
+      "class": "FingerArrival",
+      "line": 7,
+      "source": "def __init__(self,kinematics,grasp,joint_names,robot_z):\n        self.k=kinematics;self.anchors=grasp.get('contact_anchors',{})\n        self.names=joint_names;self.robot_z=robot_z;self.targets={};self.tick=0\n        self.reference=grasp['joint_targets']"
+    }
+  ],
+  "runtime_audit": {
+    "constructor_conclusion": "Teacher constructors only read env state and create local controllers/planners; no gain, target or simulator state writes found.",
+    "gain_schedule": {
+      "arms_damping": 8.0,
+      "finger_initial_stiffness": 30.0,
+      "finger_damping": 1.0,
+      "left_finger_hold_stiffness": 20.0,
+      "gain_change_step_both": 1553,
+      "right_stiffening_branch": "set_right_arm_gains(True) requires regrasp=True; absent from center-only source"
+    },
+    "audit_subscription_order_both": [
+      "environment",
+      "FingerContactAudit",
+      "DetailedSelfContactAudit"
+    ],
+    "source_render": {
+      "record": true,
+      "vision": true,
+      "preview": true,
+      "kit_args": "--/app/useFabricSceneDelegate=false --/rtx/hydra/readTransformsFromFabricInRenderDelegate=false",
+      "after_reset": "one overview render after audit construction, then render every third control step"
+    },
+    "evaluation_render": {
+      "record": false,
+      "vision": false,
+      "preview": false,
+      "kit_args": ""
+    },
+    "render_implementation": "update_transformations; sim.render; camera.update. No explicit additional physics step, but render timing effects not excluded without controlled replay."
+  },
+  "conclusions": [
+    "All common control-step phases and right targets match; no one-step schedule shift found.",
+    "Low mean left-target error still contains ready max .00339 rad and squeeze max .00269 rad errors.",
+    "Contact state bifurcates during squeeze; at steps500/520 source index/ring have positive impulse while eval has zero; by560 eval has no left finger impulses and never lifts.",
+    "Configuration, asset contract and composed physics match; no demonstrated gravity/contactoffset/CCD/activation difference.",
+    "Exact reference applied-target replay is required before attributing failure solely to neural approximation; no more NN updates justified yet."
+  ],
+  "next_diagnostic": {
+    "script": "evaluate_reference_replay.py",
+    "sha256": "626fdb31d2f845ed335a75ecd0f55cedf2cdbd03091ddf586ecdd767a3a0c80c",
+    "first": "headless matches learned evaluator; all56 targets from reference through unchanged env.step",
+    "if_replay_fails": "source render mode repeats original camera/render configuration",
+    "scope": "diagnostic only, no learned success claim, all original safety and wrist/center gates retained"
+  }
+}

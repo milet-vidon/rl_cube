@@ -1,0 +1,82 @@
+{
+  "schema": "v7_inspection03_independent_candidate_qualification_review_v1",
+  "passed": true,
+  "inspection_sha256": "055852bb56139d45d0c14f292c3994b02c867b9e256961194d9dfebc6c910653",
+  "qualification_candidate_sha256": "9dc17535d63a0a7667b1b3aca1853421e6d0a5b8dbf44560462611130582474f",
+  "actual_matched_sources": {
+    "eval_prefix_dataset_v7.py": {
+      "sha256": "61c6b43cf0b2af18144723f6f3b2587dea04299feb75611e1a09c7c073b67883",
+      "matched_path": "work/teacher_optimization_20261103/eval_prefix_dataset_v7.py"
+    },
+    "dagger_residual_dataset_v5.py": {
+      "sha256": "69c1cef251a4180f9839a2fc27ecbb738ce6f87828d5a9bc513a19aa40621cb1",
+      "matched_path": "work/teacher_optimization_20261103/dagger_residual_dataset_v5.py"
+    },
+    "phase_gated_residual_policy_v6.py": {
+      "sha256": "874d82a6ffff395868260f48530b6fa0cfd20111cd133b827ad4809ed4967063",
+      "matched_path": "work/teacher_optimization_20261103/phase_gated_residual_policy_v6.py"
+    },
+    "train_phase_gated_residual_v6.py": {
+      "sha256": "0ca6cc266e1f4275411f70ea75800cdbf97bf7c604565d88b12afc30a753b5b3",
+      "matched_path": "work/teacher_optimization_20261103/train_phase_gated_residual_v6.py"
+    },
+    "train_phase_residual_v5.py": {
+      "sha256": "74cc6077ae7bb135260b9fc1f4c0c99765653af8dd243301563e61808a027a6d",
+      "matched_path": "work/teacher_optimization_20261103/train_phase_residual_v5.py"
+    },
+    "zero_gated_residual_policy_v7.py": {
+      "sha256": "714c7d6b6ca151afa052ef426cc27360b61ca62c1914cd7b7bfe84a63233256e",
+      "matched_path": "work/teacher_optimization_20261103/zero_gated_residual_policy_v7.py"
+    },
+    "inspect_residual_dataset_v7.py": {
+      "sha256": "ad88eb44646887898082e3b500db8e9d43f0ab1bc3eb8a71ab53f1f9f6f0c511",
+      "matched_path": "work/teacher_optimization_20261103/inspect_residual_dataset_v7.py"
+    }
+  },
+  "all_five_dataset_evidence_reverified_against_original_files": true,
+  "original_result_flags_equal_for_all_datasets": true,
+  "all_raw_label_arrays_previously_independently_verified": true,
+  "prior_full_history_review_sha256": "ff22a02d896c861e574f949340a51dac66b98e88d509c0c84ec3781bdd724fe1",
+  "final_reader_review_binding_sha256": "fa4ae597c32a9040e62f99100947c9f69270264e47ff0764ad30f2b1f03bf139",
+  "eligible_actual_transitions": 5425,
+  "student_executed_transitions": 4006,
+  "teacher_executed_transitions": 1419,
+  "arm_bound_construction_recomputed_per_named_joint": true,
+  "original_finger_bounds_and_public_gate_retained": true,
+  "reported_active_projected_unreachable_distance_rad": 0.0,
+  "reported_active_unreachable_count_all_joints": 0,
+  "masked_raw_label_floor_max_rad": 1.1920928955078125e-07,
+  "classification_partition_totals": {
+    "all_eligible": {
+      "elements": 151900,
+      "exact_zero": 134935,
+      "correction_target": 14997,
+      "ambiguous": 1968,
+      "classification_mask": 149932
+    },
+    "public_active_eligible": {
+      "elements": 82040,
+      "exact_zero": 65953,
+      "correction_target": 14997,
+      "ambiguous": 1090,
+      "classification_mask": 80950
+    },
+    "public_masked_eligible": {
+      "elements": 69860,
+      "exact_zero": 68982,
+      "correction_target": 0,
+      "ambiguous": 878,
+      "classification_mask": 68982
+    }
+  },
+  "classification_counts_reconcile_by_joint_and_phase": true,
+  "continuous_labels_not_rewritten_or_clipped": true,
+  "classification_threshold_is_not_an_inference_deadband": true,
+  "no_blocker_found_for_candidate_data_integrity_and_reported_reachability": true,
+  "full_inspection_reexecuted_by_reviewer": false,
+  "scope": "Read-only completed report/source review plus fresh metadata/evidence verification, referencing independent full-history replay. Proposed label-space bounds are not physical safety, robustness, visual skill or cube-turn success.",
+  "training_authorized_by_this_report": false,
+  "original_files_modified": false,
+  "simulator_started": false,
+  "source_sha256": "77bb34627bd3da0825ddfc4dfb5fb02cd188912d167732519b39b3b790d94a22"
+}

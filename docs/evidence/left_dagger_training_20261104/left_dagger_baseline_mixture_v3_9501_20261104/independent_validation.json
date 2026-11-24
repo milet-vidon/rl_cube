@@ -1,0 +1,199 @@
+{
+  "run": "left_dagger_baseline_mixture_v3_9501_20261104",
+  "artifact_manifest_verified": true,
+  "verified_artifact_sha256": {
+    "result.json": "80a55f6f488fb1b11ef9799ad18e77508a952a59eda18a5d6074f61a055054dd",
+    "projection_parameters.json": "890108362592dd288cfb1c5bee8eb824645043ed7be0733ada40adf9cb67da66",
+    "trajectory.jsonl": "e1aa961ff3f49536cda40fb47ab21cf8786ba028e30eb3a0a78575ccd89d8542",
+    "dynamic_training_scene.usda": "ff16e3e8af8e8e2e0c0f7ff240a2b2f1d688a9c1b3560ff2230033742096c6f8",
+    "config.json": "d3c6084f638ed96ea299dbf76c386537051d3857c61675ddfc4abd5e9d925ae1",
+    "asset_contract.json": "3367c3d471d25bb668b2f67fb9eca3ba34a28328b967ffbb63aef39cf1a365c7",
+    "transitions.jsonl": "ca4782e6e2d7780c2e7360b251b25c2c23f532c7a75ec810b4d4b6d6d0db7050",
+    "runtime_protocol.json": "eb7b7da1ee6566a60d6b2b282bdad7fbedd6d70e639a153aab7ebf2d9e96ec85",
+    "initial_state.json": "9a7c759eb84012d21924c47e2583e3bc60badaed2239608d026b6d95e785c5f3",
+    "trajectory.json": "ec7a67f6b5fe3c8cf270beaa397a0bf5297d4501766cb00a91ff0cbd251508e6",
+    "collection_provenance.json": "c9c335f0f44e32f24e5a32a3766c6d677b597959b950ffaec7379c6427f0722c",
+    "physics_identity.json": "537007f3847c6acf8285115214d223bec27c131c4c87ab6ccb67e0635a5e74ba"
+  },
+  "source_snapshot_verified": true,
+  "source_snapshot_sha256": {
+    "palm_handover.py": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f",
+    "palm_handover_audit.py": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1",
+    "elbow_handover.py": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e",
+    "wrist_direction.py": "0aa5858caf39dabbd92af4396370121de30dc673675a5c24f11ca8ff0c0c0ed5",
+    "elbow_gate.py": "6473a2deec9034d4fa57079fe917d248c40db68f9768001456474bdc8eb6c526",
+    "left_dagger_baseline_runtime_v3.py": "49af4b8a660c115a2f3d29826b25d1b5c176e24208dae692838b46398834a516",
+    "elbow_audit.py": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9",
+    "environment.py": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7",
+    "opposition_teacher.py": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1",
+    "dagger_collection_core_v1.py": "6d4b2a635f98b563c10388153e4116054eb03a383e898ae7c36d572c9b182411",
+    "config.json": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+    "self_contact_audit.py": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c",
+    "articulated_cube_env.py": "dfad0023f9e2797d6ea8ea3ac08aa1b6889b7dbb4ff8398cd0ca11fa329bc707",
+    "kinematics.py": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212",
+    "wrist_audit.py": "e0dcf531d4f9e74cce3293ff2f954486fd1277609a832becdcefbd4b4e36398f",
+    "joint_safety.py": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887",
+    "phase_basis_policy_v4.py": "5d4dc98bf0dfc156dbcdd7fd9d3923f475573d03bc46df1e6c1d317625d8a327",
+    "opposition_feedback.py": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883",
+    "palm_contact_audit.py": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184",
+    "dynamic_cube.py": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de",
+    "opposition_grasp_v20.json": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a",
+    "runtime_platform.py": "c08829cde5986256dab4f5448edcecbf8932a3100ed7fab7dbdf0ad2f895772f",
+    "finger_contact_audit.py": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0",
+    "proximal_planner.py": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16",
+    "collect_left_dagger_draft_v1.py": "fc5dc17bc0f08a4fee1d468ed0b53dec6a6549083cbb7f86827dce96705ac6bf",
+    "dagger_projected_collection_v3.py": "268653ef77b2b500d5299ebb377a6311f98ed9d5199f0b345795b26a92669a33",
+    "tilt_collision_plan.py": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd",
+    "tilt_regrasp.py": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1",
+    "layer_turn_metrics.py": "c7fc5438c29c20632ad774c7f541d293e5f411ca8fff1454c830989536e1ccb4",
+    "tilt_audit.py": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995",
+    "collect_left_dagger_baseline_v3.py": "b87d0b1ac0c34e5b5c79678b068c9f55df5fa6baf0c5d0da5a231ff9976ea0e6",
+    "left_contact_dagger_schema_v1.json": "164d991f6e05f34a6101d28ea764cfa8428ae5a2692f34ac151335345b2f8ce2",
+    "phase_contact_policy.py": "5db8beb4f0dc86d4b6105669ee8da2fee93b319e2ba468a6c0c2c5b21dc94045",
+    "isaac_compat.py": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825"
+  },
+  "plan_filename_sha256_verified": true,
+  "plan_sha256": {
+    "tilt_480d8aa52e6fe97b0545ec98da213a4e82a9d379e0dddb6f0194e428cec3ddfa.json": "480d8aa52e6fe97b0545ec98da213a4e82a9d379e0dddb6f0194e428cec3ddfa",
+    "pickup_fc213888d36eed04e927d5fb24cfede3d575b645e384135b13313bf20ecef1e2.json": "fc213888d36eed04e927d5fb24cfede3d575b645e384135b13313bf20ecef1e2",
+    "tilt_9e55ba1baff795e1c3baa6f56e04c53d34f8dc4f3735f2a7e0a03f8580e3f673.json": "9e55ba1baff795e1c3baa6f56e04c53d34f8dc4f3735f2a7e0a03f8580e3f673"
+  },
+  "explicit_missing_artifacts": [],
+  "baseline_manifest_sha256": "e8cb8f154d4e1be1f3ff3694d5a4b0ef3a598261ade2f4461a1b4a0e082ffff6",
+  "behavior_checkpoint_sha256": "d2493b00df27b8d84ae69da3b399b3beb926b77fdd87a9b51aa6a2b1b23a36a4",
+  "physics_scope": "original_baseline_27_ordinary_rigid_bodies_no_damping_or_articulation_wrappers",
+  "teacher_probability": 0.8,
+  "eligible_training_episode": false,
+  "pure_student_episode_claim": false,
+  "result": {
+    "scope": "privileged_simulator_state_policy_pickup_through_tilt_hold_only",
+    "steps": 1648,
+    "teacher_interventions": 1419,
+    "original_wrist_gate_qualified": true,
+    "pure_student_episode_claim": false,
+    "center_oracle_implemented": false,
+    "runtime_bridge_validated": false,
+    "physics_identity_sha256": "b2f9feb645c8d92e2da3bb78653165292a5649e59864dee4b1de82e904854192",
+    "kind": "baseline_left_dagger_mixed_rollout_not_pure_student_success",
+    "seed": 9501,
+    "eligible_training_episode": false,
+    "failure": null,
+    "collection_mode": "explicit_teacher_student_mixture",
+    "student_executed_steps": 229,
+    "training_data_acceptance_requires_separate_review": true,
+    "original_grasp_gate": {
+      "teacher_accepted": true,
+      "measured": {
+        "accepted": true,
+        "scope": "whole_cube_tilt_only",
+        "full_episode": true,
+        "failures": [],
+        "final_tilt_error_deg": 0.6120880477447967,
+        "longest_measured_hold_seconds": 3.1666666666666665,
+        "contact_coverage_in_qualifying_window": {
+          "left": {
+            "thumb": 1.0,
+            "index": 1.0,
+            "middle": 1.0,
+            "ring": 1.0,
+            "little": 1.0
+          }
+        },
+        "maximum_lift_m": 0.36868804359436036,
+        "final_lift_m": 0.36804335975646973,
+        "cube_returned_to_table_after_lift": false,
+        "robot_table_impulse_sum_Ns": 0.0,
+        "self_contact_impulse_sum_Ns": 0,
+        "semantic_task": "left_palm_toward_right_hand_uncrossed_opposition_handover",
+        "longest_palm_facing_hold_seconds": 3.033333333333333,
+        "final_hand_geometry": {
+          "left_palm_position_root": [
+            0.40506023940629454,
+            0.3438987863138381,
+            0.1277999937804679
+          ],
+          "right_palm_position_root": [
+            0.3166191782612503,
+            -0.22905415673908433,
+            -0.1261228131017691
+          ],
+          "left_palm_normal_world": [
+            0.21459847264261528,
+            -0.8114979936959901,
+            0.5435241501229173
+          ],
+          "right_palm_normal_world": [
+            -0.047758001661820065,
+            0.9988562295552149,
+            -0.002325071183986263
+          ],
+          "left_facing_right_cos": 0.4865750261262507,
+          "right_facing_left_cos": 0.8966273829882019,
+          "palm_normal_dot": -0.8220823528271397,
+          "wrist_y_separation_m": 0.5729529430529224,
+          "elbow_y_separation_m": 0.8045690059661865,
+          "left_wrist_from_cube_y_m": 0.056567413814372136,
+          "right_wrist_from_cube_y_m": 0.5163855292385503
+        }
+      },
+      "wrist": {
+        "accepted": true,
+        "longest_jointly_qualified_hold_s": 3.033333333333333,
+        "final_elbow": {
+          "shoulder_root_m": [
+            0.021714452654123306,
+            0.24999985098838806,
+            0.24004087448120126
+          ],
+          "elbow_root_m": [
+            0.03257550671696663,
+            0.42943334579467773,
+            0.015588736534118741
+          ],
+          "wrist_root_m": [
+            0.30071038007736206,
+            0.3275608420372009,
+            0.14460716247558603
+          ],
+          "outward_from_shoulder_m": 0.17943349480628967,
+          "upper_arm_outward_deg": 38.63984566999005,
+          "outward_from_shoulder_wrist_axis_m": 0.14742232072877753
+        },
+        "final": {
+          "joint6_deg": 11.886073632348255,
+          "side_bend_deg": -15.084424477245083,
+          "flexion_deg": 42.97194710057463,
+          "forearm_direction_palm_frame": [
+            0.6687594749543703,
+            -0.19348444705672455,
+            0.7178610822477483
+          ],
+          "wrist_inside_elbow_m": 0.1018725037574768
+        },
+        "scope": "J6_side_bend_reversed_with_unchanged_palm_orientation",
+        "failures": []
+      },
+      "assembled_hold_s": 3.1666666666666665,
+      "qualified": true
+    },
+    "last_environment_termination": {
+      "raw_done": false,
+      "raw_truncated": null,
+      "api_return_arity": 4,
+      "derived_timeout_truncated": false,
+      "derived_drop_terminated": false,
+      "generic_pickup_success": false,
+      "done_causes": [],
+      "unknown_done_cause": false,
+      "done_matches_original_causes": true,
+      "sampling_terminal": false,
+      "contract": "baseline_left_v3_stops_on_every_original_done_drop_timeout_not_pure_student_episode"
+    },
+    "max_reference_target_error_rad": 0.004999995231628418,
+    "max_reference_q_error_rad": 0.005028039216995239,
+    "max_reference_cube_position_error_m": 0.0002503395080566406,
+    "cube_pose_writes_during_control": 0,
+    "maximum_lift_m": 0.36868804359436036,
+    "elapsed_s": 348.07315779000055
+  }
+}

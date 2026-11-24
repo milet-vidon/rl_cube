@@ -1,0 +1,249 @@
+{
+  "policy": "v7",
+  "seed": 9501,
+  "split": "development_seen_seed",
+  "episode_name": "left_zero_gated_residual_v7_long_eval_9501_20261104",
+  "max_steps": 3500,
+  "baseline_runtime_module": "/home/brainco/rl_cube/github_project/revotron_cube_rl/left_dagger_baseline_runtime_v3.py",
+  "baseline_runtime_source_root": "/home/brainco/rl_cube/github_project/revotron_cube_rl",
+  "selection_basis": "development supervised fit and full actual-history gate regressions; no independent generalization",
+  "evaluated_policy_checkpoint_sha256": "a7efd54313d40c8991e8c468c4312442501ba71b9a4d427170318bcfd29a99ee",
+  "evaluated_policy_snapshot": "runs/left_zero_gated_residual_v7_long_eval_9501_20261104/checkpoints/evaluated_policy.pt",
+  "frozen_v4_baseline_checkpoint_sha256": "d2493b00df27b8d84ae69da3b399b3beb926b77fdd87a9b51aa6a2b1b23a36a4",
+  "baseline_snapshot": "runs/left_zero_gated_residual_v7_long_eval_9501_20261104/checkpoints/frozen_v4_baseline.pt",
+  "qualification_sha256": "9dc17535d63a0a7667b1b3aca1853421e6d0a5b8dbf44560462611130582474f",
+  "qualification_schema": "v7_five_history_bc_integrity_candidate_sidecar_v1",
+  "training_authorization_sha256": "9cdd48132d73447ad6c85ec6bebdf0b399b381e69e0d1a447d3688d3178ed9c9",
+  "expected_physics_family_sha256": "b2f9feb645c8d92e2da3bb78653165292a5649e59864dee4b1de82e904854192",
+  "development_histories": 5,
+  "public_residual_gate_contract": {
+    "schema": "public_phase_no_feedback_before_squeeze_target_72_of_85_clock_v1",
+    "always_zero_phases": [
+      "ready",
+      "preshape",
+      "lower",
+      "approach"
+    ],
+    "squeeze_feedback_first_target_index": 72,
+    "squeeze_source_clock_frames": 85,
+    "squeeze_active_progress_numerator": 72,
+    "squeeze_active_progress_denominator": 84,
+    "squeeze_active_progress_float32": 0.8571428656578064,
+    "phase_feature_range": [
+      185,
+      197
+    ],
+    "progress_feature_index": 197,
+    "gru_updates_on_every_frame": true,
+    "hidden_arrival_state_is_actor_input": false,
+    "original_teacher_source_sha256": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1",
+    "source_condition": "opposition_teacher.py:156: squeeze and self.tick>=len(path)-1",
+    "public_clock_condition": "left_dagger_baseline_runtime_v3.py:schedule_resolver: elapsed/(duration-1)"
+  },
+  "learned_zero_gate_contract": {
+    "schema": "per_left_joint_binary_zero_or_bounded_residual_v7_candidate",
+    "gate_count": 28,
+    "decision": "correct if and only if logit > 0 and original public phase gate is active",
+    "logit_threshold": 0.0,
+    "tie_decision": "exact_frozen_baseline",
+    "zero_branch": "exact frozen V4 target, not the previous executed target",
+    "residual_amplitude_deadband": null,
+    "gate_and_residual_inputs": "same whitelisted actual-state GRU history",
+    "gru_updates_on_every_frame": true,
+    "teacher_hidden_state_or_labels_are_actor_inputs": false,
+    "right_joints_are_learned": false,
+    "bounds_origin": "explicit separately qualified named vector; never inferred from actor state",
+    "supervision_label_contract": {
+      "schema": "float32_projected_bitwise_zero_confident_nonzero_ambiguous_v7",
+      "space": "expert projected target versus frozen baseline after identical original float32 action roundtrip and project_target",
+      "zero_class": "float32 bit patterns exactly equal",
+      "certain_nonzero_class": "absolute target difference strictly greater than 1e-6 rad",
+      "certain_nonzero_threshold_rad": 1e-06,
+      "ambiguous_class": "non-bitwise-equal and absolute difference <= 1e-6 rad",
+      "ambiguous_classification_BCE": "excluded",
+      "ambiguous_continuous_regression": "all raw expert labels retained unchanged",
+      "ambiguous_values_are_declared_quantization_noise": false,
+      "training_confidence_interval_is_runtime_action_deadband": false,
+      "runtime_decision": "logit > 0, regardless of residual amplitude"
+    },
+    "continuous_expert_labels_are_clipped_or_replaced": false,
+    "public_phase_gate": {
+      "schema": "public_phase_no_feedback_before_squeeze_target_72_of_85_clock_v1",
+      "always_zero_phases": [
+        "ready",
+        "preshape",
+        "lower",
+        "approach"
+      ],
+      "squeeze_feedback_first_target_index": 72,
+      "squeeze_source_clock_frames": 85,
+      "squeeze_active_progress_numerator": 72,
+      "squeeze_active_progress_denominator": 84,
+      "squeeze_active_progress_float32": 0.8571428656578064,
+      "phase_feature_range": [
+        185,
+        197
+      ],
+      "progress_feature_index": 197,
+      "gru_updates_on_every_frame": true,
+      "hidden_arrival_state_is_actor_input": false,
+      "original_teacher_source_sha256": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1",
+      "source_condition": "opposition_teacher.py:156: squeeze and self.tick>=len(path)-1",
+      "public_clock_condition": "left_dagger_baseline_runtime_v3.py:schedule_resolver: elapsed/(duration-1)"
+    }
+  },
+  "training_classification_contract": {
+    "schema": "float32_projected_bitwise_zero_confident_nonzero_ambiguous_v7",
+    "space": "expert projected target versus frozen baseline after identical original float32 action roundtrip and project_target",
+    "zero_class": "float32 bit patterns exactly equal",
+    "certain_nonzero_class": "absolute target difference strictly greater than 1e-6 rad",
+    "certain_nonzero_threshold_rad": 1e-06,
+    "ambiguous_class": "non-bitwise-equal and absolute difference <= 1e-6 rad",
+    "ambiguous_classification_BCE": "excluded",
+    "ambiguous_continuous_regression": "all raw expert labels retained unchanged",
+    "ambiguous_values_are_declared_quantization_noise": false,
+    "training_confidence_interval_is_runtime_action_deadband": false,
+    "runtime_decision": "logit > 0, regardless of residual amplitude"
+  },
+  "residual_bound_joint_names": [
+    "Joint1_L",
+    "Joint2_L",
+    "Joint3_L",
+    "Joint4_L",
+    "Joint5_L",
+    "Joint6_L",
+    "Joint7_L",
+    "left_middle_MPR_joint",
+    "left_middle_MCP_joint",
+    "left_middle_PIP_joint",
+    "left_middle_DIP_joint",
+    "left_thumb_CMP_joint",
+    "left_thumb_CMR_joint",
+    "left_thumb_MCP_joint",
+    "left_thumb_PIP_joint",
+    "left_thumb_DIP_joint",
+    "left_index_MPR_joint",
+    "left_index_MCP_joint",
+    "left_index_PIP_joint",
+    "left_index_DIP_joint",
+    "left_ring_MPR_joint",
+    "left_ring_MCP_joint",
+    "left_ring_PIP_joint",
+    "left_ring_DIP_joint",
+    "left_little_MPR_joint",
+    "left_little_MCP_joint",
+    "left_little_PIP_joint",
+    "left_little_DIP_joint"
+  ],
+  "residual_bound_rad": [
+    0.024800000712275505,
+    0.024299999698996544,
+    0.024900000542402267,
+    0.007600000128149986,
+    0.025699999183416367,
+    0.025599999353289604,
+    0.024399999529123306,
+    9.999999974752427e-07,
+    0.006000000052154064,
+    0.006000000052154064,
+    0.006000000052154064,
+    9.999999974752427e-07,
+    9.999999974752427e-07,
+    9.999999974752427e-07,
+    9.999999974752427e-07,
+    9.999999974752427e-07,
+    0.006000000052154064,
+    0.006000000052154064,
+    0.006000000052154064,
+    0.006000000052154064,
+    0.006000000052154064,
+    0.006000000052154064,
+    0.006000000052154064,
+    0.006000000052154064,
+    9.999999974752427e-07,
+    9.999999974752427e-07,
+    9.999999974752427e-07,
+    9.999999974752427e-07
+  ],
+  "left_teacher_position_action_steps": 0,
+  "left_policy_begins_at_reset_step": 0,
+  "right_and_public_stage_controller": "original teacher",
+  "original_teacher_left_gain_schedule": "first tilt_hold K20, explicitly audited; not a neural gain policy",
+  "actor_state_scope": "actual privileged simulator q/qd/commands/cube/contact history; not vision",
+  "actor_feature_schema": "v4_observed198_cube_velocity6_impulse10_contact_presence10_centroid30_normal30_v5",
+  "actor_feature_count": 284,
+  "actor_feature_layout": {
+    "q": [
+      0,
+      56
+    ],
+    "qd": [
+      56,
+      112
+    ],
+    "applied_target": [
+      112,
+      168
+    ],
+    "cube_position": [
+      168,
+      171
+    ],
+    "cube_quaternion": [
+      171,
+      175
+    ],
+    "point_impulses": [
+      175,
+      185
+    ],
+    "phase": [
+      185,
+      197
+    ],
+    "phase_progress": [
+      197,
+      198
+    ],
+    "cube_velocity": [
+      198,
+      204
+    ],
+    "finger_impulses": [
+      204,
+      214
+    ],
+    "contact_presence": [
+      214,
+      224
+    ],
+    "relative_contact_centroids": [
+      224,
+      254
+    ],
+    "contact_normals": [
+      254,
+      284
+    ]
+  },
+  "expert_hidden_or_labels_in_actor": false,
+  "executor_identity_in_actor_features": false,
+  "corrective_expert_labels": "counterfactual audit only; separate future qualification required",
+  "source_sha256": {
+    "phase_residual_policy_v5.py": "5bb033710c18c21310b526d539251794a37efb31a2f139a68b052983c363f412",
+    "train_phase_residual_v5.py": "74cc6077ae7bb135260b9fc1f4c0c99765653af8dd243301563e61808a027a6d",
+    "dagger_residual_dataset_v5.py": "69c1cef251a4180f9839a2fc27ecbb738ce6f87828d5a9bc513a19aa40621cb1",
+    "phase_gated_residual_policy_v6.py": "874d82a6ffff395868260f48530b6fa0cfd20111cd133b827ad4809ed4967063",
+    "train_phase_gated_residual_v6.py": "0ca6cc266e1f4275411f70ea75800cdbf97bf7c604565d88b12afc30a753b5b3",
+    "eval_prefix_dataset_v7.py": "61c6b43cf0b2af18144723f6f3b2587dea04299feb75611e1a09c7c073b67883",
+    "inspect_residual_dataset_v7.py": "ad88eb44646887898082e3b500db8e9d43f0ab1bc3eb8a71ab53f1f9f6f0c511",
+    "zero_gated_residual_policy_v7.py": "714c7d6b6ca151afa052ef426cc27360b61ca62c1914cd7b7bfe84a63233256e",
+    "train_zero_gated_residual_v7.py": "9878b9d2c6f769624ba3889ea43797eacd02b203f65d8dcb3d765d90b1f9636e",
+    "state_zero_gated_eval_runtime_v7.py": "caadc319e816bdb3c00b5a744b71fbaf7c5f60ffd2d8f1893593fe441767b66b",
+    "evaluate_state_zero_gated_v7.py": "6cda789c883a171d565b3a47d5ca5901ad9b4945221b281024eae7f66405b7f0"
+  },
+  "actual_physics_family_sha256": "b2f9feb645c8d92e2da3bb78653165292a5649e59864dee4b1de82e904854192",
+  "joint_order_verified_against_actual_env": true,
+  "actor_hidden_reset_count": 1,
+  "actual_actor_feature_schema": "v4_observed198_cube_velocity6_impulse10_contact_presence10_centroid30_normal30_v5"
+}

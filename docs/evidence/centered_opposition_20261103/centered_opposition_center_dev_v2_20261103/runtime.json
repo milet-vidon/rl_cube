@@ -1,0 +1,15 @@
+{
+  "python": "3.12.16 (main, Oct 26 2026, 11:37:43) [GCC 15.3.0]",
+  "packages": {
+    "isaacsim": "6.2.0.0",
+    "isaaclab": "3.0.0",
+    "torch": "2.11.0+cu130",
+    "numpy": "2.3.1",
+    "scipy": "1.17.0"
+  },
+  "physics_device": "cpu",
+  "num_envs": 1,
+  "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "control_hz": 30,
+  "physics_hz": 240
+}

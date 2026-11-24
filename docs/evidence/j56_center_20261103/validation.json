@@ -1,0 +1,22 @@
+{
+  "unit_tests_passed": 36,
+  "offline_path_checks": 1205,
+  "physics_development_attempts": 3,
+  "physics_accepted_attempts": 1,
+  "independent_trials_this_revision": 0,
+  "full_reset_episode": true,
+  "recomputed_qualified_hold_s": 8.033333333333333,
+  "center_hold_contact_coverage": {
+    "thumb": 1.0,
+    "index": 1.0,
+    "middle": 1.0,
+    "ring": 1.0,
+    "little": 1.0
+  },
+  "unchanged_frozen_control_files": 27,
+  "current_source_matches_v3_experiment": true,
+  "verified_archive_files": 171,
+  "cube_pose_writes_during_control": 0,
+  "right_hand_or_face_turn_validated": false,
+  "neural_policy_trained": false
+}

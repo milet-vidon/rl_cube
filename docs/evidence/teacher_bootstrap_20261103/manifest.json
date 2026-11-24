@@ -1,0 +1,15 @@
+{
+  "sha256": {
+    "result.json": "1172564c6caf23cc552a494fc87eb3680785af4a32361b59bbc0256f861dc8a5",
+    "metrics.jsonl": "a762f2a9394f894df4ab768680dba2d5404ca9c89118fe8a738a105cde34a95f",
+    "opposition_request.json": "d3f20e061a4882a4cd15cab1de938f6041c8606d4ebb838951be9c0ab1853897",
+    "teacher_bootstrap.py": "aa3e7dee0b5bc5272860ab7544832b438a17060f968677e49c038e72d4880135",
+    "opposition_baseline_plan.json": "e834767cba2dee7a91d99bf01b1357dd277d7287fc907bc7045b3edc706a897b",
+    "opposition_search_v2_plan.json": "e9effab7635b688f8e3a86a9ede22d0c52ba3a82bdcf6acb38cbd32726a5cd6a",
+    "opposed_grasp_search_v1.py": "3e18dc62a51c7be7f3a67ea9f403e3e1efcfe83966f80815031d552b913b519f",
+    "best.pt": "edb6bf4d466e57a67cac14673aa83517b837a206046c9efcf9553a555f731733",
+    "opposed_grasp_search_v2.py": "8f3d23b5923227bb4751ad39a83317ffa663d8d98d486cafc4aad731ce47a7c3",
+    "experiment.json": "abfa16ef1ceeaac5e9c70467c9fc484298eb655a4cd819df212c9fc3065204af",
+    "opposition_search_plan.json": "b2162b146757eecdf10b8c15ae7b33306facec1186fce93cd97b546fe318aff4"
+  }
+}

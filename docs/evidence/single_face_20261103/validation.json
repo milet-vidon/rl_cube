@@ -1,0 +1,25 @@
+{
+  "baseline_sources_unchanged": 27,
+  "primary_deployment_matches": true,
+  "offline_suite_passed": 67,
+  "targeted_regression_passed_after_contact_path_change": 17,
+  "new_metric_regression_tests": 6,
+  "python_compile_passed": true,
+  "launcher_syntax_and_dispatch_passed": true,
+  "metadata_changes_after_last_physics": [
+    "clarify grasp precondition failure instead of not_requested",
+    "describe arbitrary explicit friction values accurately",
+    "default launcher to the tested 15-degree edge probe"
+  ],
+  "physical_controller_changes_after_last_physics": false,
+  "current_source_sha256": {
+    "articulated_cube_env.py": "dfad0023f9e2797d6ea8ea3ac08aa1b6889b7dbb4ff8398cd0ca11fa329bc707",
+    "layer_turn_metrics.py": "c7fc5438c29c20632ad774c7f541d293e5f411ca8fff1454c830989536e1ccb4",
+    "single_face_experiment.py": "393bfc1725e3ae6ef7716749005a4cdb8598a2dc8da25bc6928a49a75e7c5398",
+    "face_push_plan.py": "0bf9b55361f59113264ce29260298fa0d9fb883cda16fac66481de1ab82f89eb",
+    "face_push_runtime.py": "953e38efb8de83a8a5209903bd95ee0b1780dd8bd6af6ca3357dcda0cb5918a4",
+    "face_contact_calibration_v1.json": "b9ab73c9e7e2c922ffaf1270196fce8c2a4acd635dfe8842def32d98bcbe7b44",
+    "test_layer_turn_metrics.py": "6d078e2301f62a510f2b64fa2e163534c253aa96ca2484aee4232203fcfb19e8",
+    "run_linux.sh": "1bc01fc6887e5142e9bfc3fd3dd63bf450b49f94315586baab4501d3428640a0"
+  }
+}

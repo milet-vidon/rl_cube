@@ -1,0 +1,2846 @@
+{
+  "scope": "Completed v18 physical-contact sequence diagnosis; read-only CPU; no changed thresholds or simulator run",
+  "native": {
+    "run": "teacher_native_fulltask_v18_20261104",
+    "opposition_start_step": 2058,
+    "left_topology_loss_intervals": {
+      "thumb": [],
+      "index": [
+        [
+          2063,
+          3016
+        ]
+      ],
+      "middle": [],
+      "ring": [
+        [
+          3007,
+          3016
+        ]
+      ],
+      "little": []
+    },
+    "first_right_positive_impulse_step": {
+      "thumb": null,
+      "index": null,
+      "middle": null,
+      "ring": null,
+      "little": 2997
+    },
+    "tracking_during_opposition": {
+      "left_index": {
+        "maximum_actual_minus_target_abs_rad": 0.0002558976411819458,
+        "maximum_nominal_minus_applied_abs_rad": 0.0,
+        "last_tracking": {
+          "left_index_MPR_joint": {
+            "actual": 0.006533792708069086,
+            "applied_target": 0.006387104745954275,
+            "error": 0.00014668796211481094
+          },
+          "left_index_MCP_joint": {
+            "actual": 0.5552029609680176,
+            "applied_target": 0.5552442669868469,
+            "error": -4.13060188293457e-05
+          },
+          "left_index_PIP_joint": {
+            "actual": 0.8349787592887878,
+            "applied_target": 0.8348871469497681,
+            "error": 9.161233901977539e-05
+          },
+          "left_index_DIP_joint": {
+            "actual": 0.4113604724407196,
+            "applied_target": 0.41141632199287415,
+            "error": -5.5849552154541016e-05
+          }
+        }
+      },
+      "left_ring": {
+        "maximum_actual_minus_target_abs_rad": 0.0023373961448669434,
+        "maximum_nominal_minus_applied_abs_rad": 0.0,
+        "last_tracking": {
+          "left_ring_MPR_joint": {
+            "actual": -0.04155370593070984,
+            "applied_target": -0.04142563417553902,
+            "error": -0.00012807175517082214
+          },
+          "left_ring_MCP_joint": {
+            "actual": 0.48333004117012024,
+            "applied_target": 0.48343849182128906,
+            "error": -0.00010845065116882324
+          },
+          "left_ring_PIP_joint": {
+            "actual": 0.5784537196159363,
+            "applied_target": 0.578350841999054,
+            "error": 0.00010287761688232422
+          },
+          "left_ring_DIP_joint": {
+            "actual": 1.070461392402649,
+            "applied_target": 1.0705195665359497,
+            "error": -5.817413330078125e-05
+          }
+        }
+      },
+      "all_right_joints": {
+        "maximum_actual_minus_target_abs_rad": 0.06493186950683594,
+        "maximum_nominal_minus_applied_abs_rad": 9.313225746154785e-10,
+        "last_tracking": {
+          "Joint1_R": {
+            "actual": 0.36801719665527344,
+            "applied_target": 0.3676273822784424,
+            "error": 0.0003898143768310547
+          },
+          "Joint2_R": {
+            "actual": -1.02103853225708,
+            "applied_target": -1.020530104637146,
+            "error": -0.000508427619934082
+          },
+          "Joint3_R": {
+            "actual": -0.595319390296936,
+            "applied_target": -0.5959770679473877,
+            "error": 0.0006576776504516602
+          },
+          "Joint4_R": {
+            "actual": -1.8709548711776733,
+            "applied_target": -1.8709452152252197,
+            "error": -9.655952453613281e-06
+          },
+          "Joint5_R": {
+            "actual": -2.8285508155822754,
+            "applied_target": -2.8286359310150146,
+            "error": 8.511543273925781e-05
+          },
+          "Joint6_R": {
+            "actual": -0.06339059770107269,
+            "applied_target": -0.06338533014059067,
+            "error": -5.2675604820251465e-06
+          },
+          "Joint7_R": {
+            "actual": 1.5238486528396606,
+            "applied_target": 1.5242102146148682,
+            "error": -0.00036156177520751953
+          },
+          "right_middle_MPR_joint": {
+            "actual": -0.014829711057245731,
+            "applied_target": -0.014462561346590519,
+            "error": -0.0003671497106552124
+          },
+          "right_middle_MCP_joint": {
+            "actual": 0.8334433436393738,
+            "applied_target": 0.8359390497207642,
+            "error": -0.002495706081390381
+          },
+          "right_middle_PIP_joint": {
+            "actual": 0.23467226326465607,
+            "applied_target": 0.23624515533447266,
+            "error": -0.0015728920698165894
+          },
+          "right_middle_DIP_joint": {
+            "actual": 1.2762653827667236,
+            "applied_target": 1.2843143939971924,
+            "error": -0.00804901123046875
+          },
+          "right_thumb_CMP_joint": {
+            "actual": 0.355548620223999,
+            "applied_target": 0.3582924008369446,
+            "error": -0.0027437806129455566
+          },
+          "right_thumb_CMR_joint": {
+            "actual": 0.31441614031791687,
+            "applied_target": 0.3190287947654724,
+            "error": -0.004612654447555542
+          },
+          "right_thumb_MCP_joint": {
+            "actual": 0.6004207730293274,
+            "applied_target": 0.6012647747993469,
+            "error": -0.0008440017700195312
+          },
+          "right_thumb_PIP_joint": {
+            "actual": 1.1683664321899414,
+            "applied_target": 1.1645945310592651,
+            "error": 0.0037719011306762695
+          },
+          "right_thumb_DIP_joint": {
+            "actual": 1.206756830215454,
+            "applied_target": 1.2034156322479248,
+            "error": 0.003341197967529297
+          },
+          "right_index_MPR_joint": {
+            "actual": -0.007903968915343285,
+            "applied_target": -0.007682128343731165,
+            "error": -0.00022184057161211967
+          },
+          "right_index_MCP_joint": {
+            "actual": 0.4879811704158783,
+            "applied_target": 0.4873327314853668,
+            "error": 0.0006484389305114746
+          },
+          "right_index_PIP_joint": {
+            "actual": 0.7182108163833618,
+            "applied_target": 0.7240143418312073,
+            "error": -0.005803525447845459
+          },
+          "right_index_DIP_joint": {
+            "actual": 1.0072916746139526,
+            "applied_target": 1.012523889541626,
+            "error": -0.00523221492767334
+          },
+          "right_ring_MPR_joint": {
+            "actual": -0.018487470224499702,
+            "applied_target": -0.017855357378721237,
+            "error": -0.0006321128457784653
+          },
+          "right_ring_MCP_joint": {
+            "actual": 0.6645963191986084,
+            "applied_target": 0.6657798886299133,
+            "error": -0.0011835694313049316
+          },
+          "right_ring_PIP_joint": {
+            "actual": 0.645494818687439,
+            "applied_target": 0.6505977511405945,
+            "error": -0.005102932453155518
+          },
+          "right_ring_DIP_joint": {
+            "actual": 0.9172407984733582,
+            "applied_target": 0.9219499230384827,
+            "error": -0.004709124565124512
+          },
+          "right_little_MPR_joint": {
+            "actual": -0.01692936196923256,
+            "applied_target": -0.016024038195610046,
+            "error": -0.0009053237736225128
+          },
+          "right_little_MCP_joint": {
+            "actual": 0.7806816697120667,
+            "applied_target": 0.7783830165863037,
+            "error": 0.0022986531257629395
+          },
+          "right_little_PIP_joint": {
+            "actual": 0.4798749089241028,
+            "applied_target": 0.4964631497859955,
+            "error": -0.0165882408618927
+          },
+          "right_little_DIP_joint": {
+            "actual": 0.20148828625679016,
+            "applied_target": 0.21332155168056488,
+            "error": -0.01183326542377472
+          }
+        }
+      }
+    },
+    "Core_motion_after_first_right_little_contact": {
+      "reference_step_before_first_right_little_contact": 2996,
+      "last_step": 3016,
+      "Core_translation_m": 0.0020022833263442113,
+      "Core_rotation_degrees": 1.6365832821354207
+    },
+    "snapshots": [
+      {
+        "step": 2057,
+        "phase": "center_hold",
+        "cube_position": [
+          0.4997069239616394,
+          6.541432958329096e-05,
+          1.294297695159912
+        ],
+        "cube_quaternion_wxyz": [
+          0.8664232492446899,
+          -0.4393121898174286,
+          0.11505230516195297,
+          -0.207553893327713
+        ],
+        "linear_speed": 0.0017224082257598639,
+        "angular_speed": 0.028561880812048912,
+        "finger_contact_impulses": {
+          "left": {
+            "thumb": 0.0530834003513643,
+            "index": 0.000600450466194942,
+            "middle": 0.005146439295165278,
+            "ring": 0.003552785268770209,
+            "little": 0.06235560660615672
+          },
+          "right": {
+            "thumb": 0.0,
+            "index": 0.0,
+            "middle": 0.0,
+            "ring": 0.0,
+            "little": 0.0
+          }
+        },
+        "left_ring_support": null,
+        "index_contact_feedback": {
+          "offset_rad": -0.0004000000000000001,
+          "impulse_Ns": 0.0006004504661949421,
+          "on_target_face": true,
+          "next_offset_rad": -0.0004000000000000001
+        },
+        "left_topology": {
+          "thumb": true,
+          "index": true,
+          "middle": true,
+          "ring": true,
+          "little": true
+        },
+        "Core_relative_face_angle_deg": -0.04647326294037949,
+        "selected_relative_omega_rad_s": 6.133059195194627e-05,
+        "left_index_and_ring_tracking": {
+          "left_index_MPR_joint": {
+            "q": 0.006636961828917265,
+            "target": 0.006387104745954275,
+            "q_minus_target": 0.0002498570829629898
+          },
+          "left_index_MCP_joint": {
+            "q": 0.5551958084106445,
+            "target": 0.5552442669868469,
+            "q_minus_target": -4.845857620239258e-05
+          },
+          "left_index_PIP_joint": {
+            "q": 0.8349246978759766,
+            "target": 0.8348871469497681,
+            "q_minus_target": 3.7550926208496094e-05
+          },
+          "left_index_DIP_joint": {
+            "q": 0.4113515317440033,
+            "target": 0.41141632199287415,
+            "q_minus_target": -6.479024887084961e-05
+          },
+          "left_ring_MPR_joint": {
+            "q": -0.04139522835612297,
+            "target": -0.04142563417553902,
+            "q_minus_target": 3.0405819416046143e-05
+          },
+          "left_ring_MCP_joint": {
+            "q": 0.48283258080482483,
+            "target": 0.48343849182128906,
+            "q_minus_target": -0.0006059110164642334
+          },
+          "left_ring_PIP_joint": {
+            "q": 0.5768783688545227,
+            "target": 0.5778508186340332,
+            "q_minus_target": -0.000972449779510498
+          },
+          "left_ring_DIP_joint": {
+            "q": 1.0703679323196411,
+            "target": 1.0705195665359497,
+            "q_minus_target": -0.00015163421630859375
+          }
+        }
+      },
+      {
+        "step": 2058,
+        "phase": "right_preshape",
+        "cube_position": [
+          0.49970680475234985,
+          6.490651139756665e-05,
+          1.2942984104156494
+        ],
+        "cube_quaternion_wxyz": [
+          0.8664229512214661,
+          -0.4393145442008972,
+          0.11504601687192917,
+          -0.2075536847114563
+        ],
+        "linear_speed": 0.0013509361306205392,
+        "angular_speed": 0.019083039835095406,
+        "finger_contact_impulses": {
+          "left": {
+            "thumb": 0.05298612542715131,
+            "index": 0.0006730127854218426,
+            "middle": 0.0051291943999466445,
+            "ring": 0.003516589119827522,
+            "little": 0.06227022220280136
+          },
+          "right": {
+            "thumb": 0.0,
+            "index": 0.0,
+            "middle": 0.0,
+            "ring": 0.0,
+            "little": 0.0
+          }
+        },
+        "left_ring_support": {
+          "applied_offset_rad": 0.0,
+          "measured_impulse_Ns": 0.003516589119827522,
+          "next_offset_rad": 0.0
+        },
+        "index_contact_feedback": null,
+        "left_topology": {
+          "thumb": true,
+          "index": true,
+          "middle": true,
+          "ring": true,
+          "little": true
+        },
+        "Core_relative_face_angle_deg": -0.046617528404038454,
+        "selected_relative_omega_rad_s": 3.7700942597379315e-05,
+        "left_index_and_ring_tracking": {
+          "left_index_MPR_joint": {
+            "q": 0.006638980004936457,
+            "target": 0.006387104745954275,
+            "q_minus_target": 0.00025187525898218155
+          },
+          "left_index_MCP_joint": {
+            "q": 0.555196225643158,
+            "target": 0.5552442669868469,
+            "q_minus_target": -4.8041343688964844e-05
+          },
+          "left_index_PIP_joint": {
+            "q": 0.8349239230155945,
+            "target": 0.8348871469497681,
+            "q_minus_target": 3.6776065826416016e-05
+          },
+          "left_index_DIP_joint": {
+            "q": 0.41135159134864807,
+            "target": 0.41141632199287415,
+            "q_minus_target": -6.473064422607422e-05
+          },
+          "left_ring_MPR_joint": {
+            "q": -0.04140457138419151,
+            "target": -0.04142563417553902,
+            "q_minus_target": 2.1062791347503662e-05
+          },
+          "left_ring_MCP_joint": {
+            "q": 0.48283180594444275,
+            "target": 0.48343849182128906,
+            "q_minus_target": -0.0006066858768463135
+          },
+          "left_ring_PIP_joint": {
+            "q": 0.5768876075744629,
+            "target": 0.5778508186340332,
+            "q_minus_target": -0.0009632110595703125
+          },
+          "left_ring_DIP_joint": {
+            "q": 1.0703688859939575,
+            "target": 1.0705195665359497,
+            "q_minus_target": -0.0001506805419921875
+          }
+        }
+      },
+      {
+        "step": 2062,
+        "phase": "right_preshape",
+        "cube_position": [
+          0.49970346689224243,
+          6.678938370896503e-05,
+          1.2942947149276733
+        ],
+        "cube_quaternion_wxyz": [
+          0.8664242625236511,
+          -0.43924763798713684,
+          0.11506488174200058,
+          -0.20767948031425476
+        ],
+        "linear_speed": 0.0025548271369189024,
+        "angular_speed": 0.0550464391708374,
+        "finger_contact_impulses": {
+          "left": {
+            "thumb": 0.05300990065849048,
+            "index": 0.0004487070233643498,
+            "middle": 0.005060893259458599,
+            "ring": 0.003655585817112852,
+            "little": 0.061795020654851984
+          },
+          "right": {
+            "thumb": 0.0,
+            "index": 0.0,
+            "middle": 0.0,
+            "ring": 0.0,
+            "little": 0.0
+          }
+        },
+        "left_ring_support": {
+          "applied_offset_rad": 0.0,
+          "measured_impulse_Ns": 0.003655585817112852,
+          "next_offset_rad": 0.0
+        },
+        "index_contact_feedback": null,
+        "left_topology": {
+          "thumb": true,
+          "index": true,
+          "middle": true,
+          "ring": true,
+          "little": true
+        },
+        "Core_relative_face_angle_deg": -0.047293090025675236,
+        "selected_relative_omega_rad_s": 2.9087061357429176e-05,
+        "left_index_and_ring_tracking": {
+          "left_index_MPR_joint": {
+            "q": 0.006620104890316725,
+            "target": 0.006387104745954275,
+            "q_minus_target": 0.00023300014436244965
+          },
+          "left_index_MCP_joint": {
+            "q": 0.5552005171775818,
+            "target": 0.5552442669868469,
+            "q_minus_target": -4.374980926513672e-05
+          },
+          "left_index_PIP_joint": {
+            "q": 0.8349504470825195,
+            "target": 0.8348871469497681,
+            "q_minus_target": 6.330013275146484e-05
+          },
+          "left_index_DIP_joint": {
+            "q": 0.4113534390926361,
+            "target": 0.41141632199287415,
+            "q_minus_target": -6.288290023803711e-05
+          },
+          "left_ring_MPR_joint": {
+            "q": -0.0413864403963089,
+            "target": -0.04142563417553902,
+            "q_minus_target": 3.91937792301178e-05
+          },
+          "left_ring_MCP_joint": {
+            "q": 0.48284438252449036,
+            "target": 0.48343849182128906,
+            "q_minus_target": -0.0005941092967987061
+          },
+          "left_ring_PIP_joint": {
+            "q": 0.5768271088600159,
+            "target": 0.5778508186340332,
+            "q_minus_target": -0.001023709774017334
+          },
+          "left_ring_DIP_joint": {
+            "q": 1.0703668594360352,
+            "target": 1.0705195665359497,
+            "q_minus_target": -0.00015270709991455078
+          }
+        }
+      },
+      {
+        "step": 2063,
+        "phase": "right_preshape",
+        "cube_position": [
+          0.4997023046016693,
+          6.895334081491455e-05,
+          1.29429292678833
+        ],
+        "cube_quaternion_wxyz": [
+          0.8664231896400452,
+          -0.4392217695713043,
+          0.1150749996304512,
+          -0.2077329456806183
+        ],
+        "linear_speed": 0.0018834107322618365,
+        "angular_speed": 0.06679537147283554,
+        "finger_contact_impulses": {
+          "left": {
+            "thumb": 0.05306126648564774,
+            "index": 0.0,
+            "middle": 0.005126083981285476,
+            "ring": 0.003575503062954657,
+            "little": 0.062014159613546366
+          },
+          "right": {
+            "thumb": 0.0,
+            "index": 0.0,
+            "middle": 0.0,
+            "ring": 0.0,
+            "little": 0.0
+          }
+        },
+        "left_ring_support": {
+          "applied_offset_rad": 0.0,
+          "measured_impulse_Ns": 0.003575503062954657,
+          "next_offset_rad": 0.0
+        },
+        "index_contact_feedback": null,
+        "left_topology": {
+          "thumb": true,
+          "index": false,
+          "middle": true,
+          "ring": true,
+          "little": true
+        },
+        "Core_relative_face_angle_deg": -0.04754761503564612,
+        "selected_relative_omega_rad_s": 3.0924977532529014e-05,
+        "left_index_and_ring_tracking": {
+          "left_index_MPR_joint": {
+            "q": 0.006598125211894512,
+            "target": 0.006387104745954275,
+            "q_minus_target": 0.00021102046594023705
+          },
+          "left_index_MCP_joint": {
+            "q": 0.5552023649215698,
+            "target": 0.5552442669868469,
+            "q_minus_target": -4.190206527709961e-05
+          },
+          "left_index_PIP_joint": {
+            "q": 0.8349655270576477,
+            "target": 0.8348871469497681,
+            "q_minus_target": 7.838010787963867e-05
+          },
+          "left_index_DIP_joint": {
+            "q": 0.4113546907901764,
+            "target": 0.41141632199287415,
+            "q_minus_target": -6.16312026977539e-05
+          },
+          "left_ring_MPR_joint": {
+            "q": -0.041417017579078674,
+            "target": -0.04142563417553902,
+            "q_minus_target": 8.616596460342407e-06
+          },
+          "left_ring_MCP_joint": {
+            "q": 0.4828474521636963,
+            "target": 0.48343849182128906,
+            "q_minus_target": -0.0005910396575927734
+          },
+          "left_ring_PIP_joint": {
+            "q": 0.5767959356307983,
+            "target": 0.5778508186340332,
+            "q_minus_target": -0.0010548830032348633
+          },
+          "left_ring_DIP_joint": {
+            "q": 1.0703648328781128,
+            "target": 1.0705195665359497,
+            "q_minus_target": -0.00015473365783691406
+          }
+        }
+      },
+      {
+        "step": 2996,
+        "phase": "right_close",
+        "cube_position": [
+          0.49864381551742554,
+          0.0003243244718760252,
+          1.2932080030441284
+        ],
+        "cube_quaternion_wxyz": [
+          0.8727054595947266,
+          -0.41300347447395325,
+          0.12613597512245178,
+          -0.2278227061033249
+        ],
+        "linear_speed": 0.0022269480396062136,
+        "angular_speed": 0.06505631655454636,
+        "finger_contact_impulses": {
+          "left": {
+            "thumb": 0.044743906407751714,
+            "index": 0.0,
+            "middle": 0.0034870794153540855,
+            "ring": 0.006824154774108365,
+            "little": 0.05342597905825936
+          },
+          "right": {
+            "thumb": 0.0,
+            "index": 0.0,
+            "middle": 0.0,
+            "ring": 0.0,
+            "little": 0.0
+          }
+        },
+        "left_ring_support": {
+          "applied_offset_rad": 0.0,
+          "measured_impulse_Ns": 0.006824154774108365,
+          "next_offset_rad": 0.0
+        },
+        "index_contact_feedback": null,
+        "left_topology": {
+          "thumb": true,
+          "index": false,
+          "middle": true,
+          "ring": true,
+          "little": true
+        },
+        "Core_relative_face_angle_deg": -0.06747813486236663,
+        "selected_relative_omega_rad_s": 4.38617420034786e-05,
+        "left_index_and_ring_tracking": {
+          "left_index_MPR_joint": {
+            "q": 0.006569331977516413,
+            "target": 0.006387104745954275,
+            "q_minus_target": 0.0001822272315621376
+          },
+          "left_index_MCP_joint": {
+            "q": 0.5551981925964355,
+            "target": 0.5552442669868469,
+            "q_minus_target": -4.607439041137695e-05
+          },
+          "left_index_PIP_joint": {
+            "q": 0.8349940776824951,
+            "target": 0.8348871469497681,
+            "q_minus_target": 0.00010693073272705078
+          },
+          "left_index_DIP_joint": {
+            "q": 0.41134852170944214,
+            "target": 0.41141632199287415,
+            "q_minus_target": -6.780028343200684e-05
+          },
+          "left_ring_MPR_joint": {
+            "q": -0.041158005595207214,
+            "target": -0.04142563417553902,
+            "q_minus_target": 0.00026762858033180237
+          },
+          "left_ring_MCP_joint": {
+            "q": 0.482541561126709,
+            "target": 0.48343849182128906,
+            "q_minus_target": -0.0008969306945800781
+          },
+          "left_ring_PIP_joint": {
+            "q": 0.5755217671394348,
+            "target": 0.5778508186340332,
+            "q_minus_target": -0.0023290514945983887
+          },
+          "left_ring_DIP_joint": {
+            "q": 1.0702705383300781,
+            "target": 1.0705195665359497,
+            "q_minus_target": -0.00024902820587158203
+          }
+        }
+      },
+      {
+        "step": 2997,
+        "phase": "right_close",
+        "cube_position": [
+          0.4986227750778198,
+          0.00024680866044946015,
+          1.2932637929916382
+        ],
+        "cube_quaternion_wxyz": [
+          0.8726887702941895,
+          -0.4135362207889557,
+          0.12618635594844818,
+          -0.22689032554626465
+        ],
+        "linear_speed": 0.00116859027184546,
+        "angular_speed": 0.08801700919866562,
+        "finger_contact_impulses": {
+          "left": {
+            "thumb": 0.0421612478886709,
+            "index": 0.0,
+            "middle": 0.005073155346327593,
+            "ring": 0.0032797395896927923,
+            "little": 0.04963082817097454
+          },
+          "right": {
+            "thumb": 0.0,
+            "index": 0.0,
+            "middle": 0.0,
+            "ring": 0.0,
+            "little": 0.004108413397179214
+          }
+        },
+        "left_ring_support": {
+          "applied_offset_rad": 0.0,
+          "measured_impulse_Ns": 0.0032797395896927923,
+          "next_offset_rad": 0.0
+        },
+        "index_contact_feedback": null,
+        "left_topology": {
+          "thumb": true,
+          "index": false,
+          "middle": true,
+          "ring": true,
+          "little": true
+        },
+        "Core_relative_face_angle_deg": -0.06763164779033302,
+        "selected_relative_omega_rad_s": 2.8774582496951535e-05,
+        "left_index_and_ring_tracking": {
+          "left_index_MPR_joint": {
+            "q": 0.0065581537783145905,
+            "target": 0.006387104745954275,
+            "q_minus_target": 0.00017104903236031532
+          },
+          "left_index_MCP_joint": {
+            "q": 0.5551934838294983,
+            "target": 0.5552442669868469,
+            "q_minus_target": -5.078315734863281e-05
+          },
+          "left_index_PIP_joint": {
+            "q": 0.8349899053573608,
+            "target": 0.8348871469497681,
+            "q_minus_target": 0.00010275840759277344
+          },
+          "left_index_DIP_joint": {
+            "q": 0.4113514721393585,
+            "target": 0.41141632199287415,
+            "q_minus_target": -6.4849853515625e-05
+          },
+          "left_ring_MPR_joint": {
+            "q": -0.041297197341918945,
+            "target": -0.04142563417553902,
+            "q_minus_target": 0.0001284368336200714
+          },
+          "left_ring_MCP_joint": {
+            "q": 0.48273414373397827,
+            "target": 0.48343849182128906,
+            "q_minus_target": -0.000704348087310791
+          },
+          "left_ring_PIP_joint": {
+            "q": 0.5761473774909973,
+            "target": 0.5778508186340332,
+            "q_minus_target": -0.0017034411430358887
+          },
+          "left_ring_DIP_joint": {
+            "q": 1.0703189373016357,
+            "target": 1.0705195665359497,
+            "q_minus_target": -0.00020062923431396484
+          }
+        }
+      },
+      {
+        "step": 3006,
+        "phase": "right_close",
+        "cube_position": [
+          0.4979556202888489,
+          -0.0007396870059892535,
+          1.2939821481704712
+        ],
+        "cube_quaternion_wxyz": [
+          0.8720586895942688,
+          -0.415963739156723,
+          0.1257689893245697,
+          -0.22510018944740295
+        ],
+        "linear_speed": 0.0021183770149946213,
+        "angular_speed": 0.050889261066913605,
+        "finger_contact_impulses": {
+          "left": {
+            "thumb": 0.03939910563314619,
+            "index": 0.0,
+            "middle": 0.004711534896457872,
+            "ring": 0.00033703388448243205,
+            "little": 0.04649634667457648
+          },
+          "right": {
+            "thumb": 0.0,
+            "index": 0.0,
+            "middle": 0.0,
+            "ring": 0.0,
+            "little": 0.004637111439194013
+          }
+        },
+        "left_ring_support": {
+          "applied_offset_rad": 0.0,
+          "measured_impulse_Ns": 0.00033703388448243205,
+          "next_offset_rad": 5e-05
+        },
+        "index_contact_feedback": null,
+        "left_topology": {
+          "thumb": true,
+          "index": false,
+          "middle": true,
+          "ring": true,
+          "little": true
+        },
+        "Core_relative_face_angle_deg": -0.06715846128417652,
+        "selected_relative_omega_rad_s": 2.6871148559632255e-05,
+        "left_index_and_ring_tracking": {
+          "left_index_MPR_joint": {
+            "q": 0.006541549228131771,
+            "target": 0.006387104745954275,
+            "q_minus_target": 0.00015444448217749596
+          },
+          "left_index_MCP_joint": {
+            "q": 0.5552023649215698,
+            "target": 0.5552442669868469,
+            "q_minus_target": -4.190206527709961e-05
+          },
+          "left_index_PIP_joint": {
+            "q": 0.8349810242652893,
+            "target": 0.8348871469497681,
+            "q_minus_target": 9.387731552124023e-05
+          },
+          "left_index_DIP_joint": {
+            "q": 0.41135814785957336,
+            "target": 0.41141632199287415,
+            "q_minus_target": -5.817413330078125e-05
+          },
+          "left_ring_MPR_joint": {
+            "q": -0.04155261069536209,
+            "target": -0.04142563417553902,
+            "q_minus_target": -0.00012697651982307434
+          },
+          "left_ring_MCP_joint": {
+            "q": 0.48317790031433105,
+            "target": 0.48343849182128906,
+            "q_minus_target": -0.0002605915069580078
+          },
+          "left_ring_PIP_joint": {
+            "q": 0.5778514742851257,
+            "target": 0.5778508186340332,
+            "q_minus_target": 6.556510925292969e-07
+          },
+          "left_ring_DIP_joint": {
+            "q": 1.0704540014266968,
+            "target": 1.0705195665359497,
+            "q_minus_target": -6.556510925292969e-05
+          }
+        }
+      },
+      {
+        "step": 3007,
+        "phase": "right_close",
+        "cube_position": [
+          0.497897207736969,
+          -0.0008193838293664157,
+          1.294063925743103
+        ],
+        "cube_quaternion_wxyz": [
+          0.8719415664672852,
+          -0.4163435399532318,
+          0.12563778460025787,
+          -0.22492480278015137
+        ],
+        "linear_speed": 0.0017394607421010733,
+        "angular_speed": 0.05692250281572342,
+        "finger_contact_impulses": {
+          "left": {
+            "thumb": 0.03923159900789801,
+            "index": 0.0,
+            "middle": 0.004885892774117804,
+            "ring": 0.0,
+            "little": 0.046209238445323084
+          },
+          "right": {
+            "thumb": 0.0,
+            "index": 0.0,
+            "middle": 0.0,
+            "ring": 0.0,
+            "little": 0.004757533794972232
+          }
+        },
+        "left_ring_support": {
+          "applied_offset_rad": 5e-05,
+          "measured_impulse_Ns": 0.0,
+          "next_offset_rad": 0.0001
+        },
+        "index_contact_feedback": null,
+        "left_topology": {
+          "thumb": true,
+          "index": false,
+          "middle": true,
+          "ring": false,
+          "little": true
+        },
+        "Core_relative_face_angle_deg": -0.06735793201296009,
+        "selected_relative_omega_rad_s": 5.890083190486621e-05,
+        "left_index_and_ring_tracking": {
+          "left_index_MPR_joint": {
+            "q": 0.006540726404637098,
+            "target": 0.006387104745954275,
+            "q_minus_target": 0.00015362165868282318
+          },
+          "left_index_MCP_joint": {
+            "q": 0.5552030801773071,
+            "target": 0.5552442669868469,
+            "q_minus_target": -4.118680953979492e-05
+          },
+          "left_index_PIP_joint": {
+            "q": 0.8349807858467102,
+            "target": 0.8348871469497681,
+            "q_minus_target": 9.363889694213867e-05
+          },
+          "left_index_DIP_joint": {
+            "q": 0.41135817766189575,
+            "target": 0.41141632199287415,
+            "q_minus_target": -5.8144330978393555e-05
+          },
+          "left_ring_MPR_joint": {
+            "q": -0.041554465889930725,
+            "target": -0.04142563417553902,
+            "q_minus_target": -0.00012883171439170837
+          },
+          "left_ring_MCP_joint": {
+            "q": 0.48324984312057495,
+            "target": 0.48343849182128906,
+            "q_minus_target": -0.00018864870071411133
+          },
+          "left_ring_PIP_joint": {
+            "q": 0.5779551267623901,
+            "target": 0.5779008269309998,
+            "q_minus_target": 5.429983139038086e-05
+          },
+          "left_ring_DIP_joint": {
+            "q": 1.0704553127288818,
+            "target": 1.0705195665359497,
+            "q_minus_target": -6.42538070678711e-05
+          }
+        }
+      },
+      {
+        "step": 3016,
+        "phase": "right_close",
+        "cube_position": [
+          0.4980027377605438,
+          -0.0010822485201060772,
+          1.2944806814193726
+        ],
+        "cube_quaternion_wxyz": [
+          0.8704981803894043,
+          -0.4233524203300476,
+          0.1232142522931099,
+          -0.21868708729743958
+        ],
+        "linear_speed": 0.0032930360175669193,
+        "angular_speed": 0.2160511165857315,
+        "finger_contact_impulses": {
+          "left": {
+            "thumb": 0.03613245454325578,
+            "index": 0.0,
+            "middle": 0.003463159122834818,
+            "ring": 0.0,
+            "little": 0.04376477896068212
+          },
+          "right": {
+            "thumb": 0.0,
+            "index": 0.0,
+            "middle": 0.0,
+            "ring": 0.0,
+            "little": 0.004735628429949332
+          }
+        },
+        "left_ring_support": {
+          "applied_offset_rad": 0.0005000000000000001,
+          "measured_impulse_Ns": 0.0,
+          "next_offset_rad": 0.0005500000000000001
+        },
+        "index_contact_feedback": null,
+        "left_topology": {
+          "thumb": true,
+          "index": false,
+          "middle": true,
+          "ring": false,
+          "little": true
+        },
+        "Core_relative_face_angle_deg": -0.06768102017237695,
+        "selected_relative_omega_rad_s": 3.6016659923255936e-05,
+        "left_index_and_ring_tracking": {
+          "left_index_MPR_joint": {
+            "q": 0.006533792708069086,
+            "target": 0.006387104745954275,
+            "q_minus_target": 0.00014668796211481094
+          },
+          "left_index_MCP_joint": {
+            "q": 0.5552029609680176,
+            "target": 0.5552442669868469,
+            "q_minus_target": -4.13060188293457e-05
+          },
+          "left_index_PIP_joint": {
+            "q": 0.8349787592887878,
+            "target": 0.8348871469497681,
+            "q_minus_target": 9.161233901977539e-05
+          },
+          "left_index_DIP_joint": {
+            "q": 0.4113604724407196,
+            "target": 0.41141632199287415,
+            "q_minus_target": -5.5849552154541016e-05
+          },
+          "left_ring_MPR_joint": {
+            "q": -0.04155370593070984,
+            "target": -0.04142563417553902,
+            "q_minus_target": -0.00012807175517082214
+          },
+          "left_ring_MCP_joint": {
+            "q": 0.48333004117012024,
+            "target": 0.48343849182128906,
+            "q_minus_target": -0.00010845065116882324
+          },
+          "left_ring_PIP_joint": {
+            "q": 0.5784537196159363,
+            "target": 0.578350841999054,
+            "q_minus_target": 0.00010287761688232422
+          },
+          "left_ring_DIP_joint": {
+            "q": 1.070461392402649,
+            "target": 1.0705195665359497,
+            "q_minus_target": -5.817413330078125e-05
+          }
+        }
+      }
+    ],
+    "result": {
+      "steps": 3017,
+      "failure": "left_grasp_lost_during_opposition",
+      "dynamic_grasp_passed": true,
+      "center_transport_passed": true,
+      "assembled_hold_s": 3.0,
+      "task_episode": {
+        "task_id": "opposed_nZ_15deg",
+        "target_degrees": 15.0,
+        "scope": "single_target_face_turn_development",
+        "terminated": true,
+        "truncated": false,
+        "done": true,
+        "success": false,
+        "reason": "left_grasp_lost_during_opposition",
+        "reward": 0.0,
+        "eligible_for_ppo": false,
+        "task_episodes": 1,
+        "task_successes": 0,
+        "completed_control_steps": 3017,
+        "step_audit_pending": false,
+        "pickup_milestone_step": null,
+        "raw_pickup_success_frames": 0,
+        "raw_pickup_done_frames": 0,
+        "face_turn_validated": false,
+        "six_face_solution_validated": false
+      }
+    },
+    "artifact_sha256": {
+      "trajectory.json": "1b8d1079e5a1cb4f8df53a2fc9a27bc26c990e3987b429b64c926f6f6c1f5962",
+      "result.json": "f75fb712c4096f26fa400c3fca480eb8dd5c2f2bd1ea5a6b8fe2bc94fbe71df0",
+      "experiment.json": "74d49e02bc41a2d47a9e5516c9a0186fb2a79bb6bcfeac2c24a99c08001a3f05"
+    }
+  },
+  "D6_v17_historical_diagnostic_only": {
+    "run": "teacher_joint_planning_frame_paced_v17_20261104",
+    "opposition_start_step": 2050,
+    "left_topology_loss_intervals": {
+      "thumb": [],
+      "index": [],
+      "middle": [],
+      "ring": [
+        [
+          3021,
+          3025
+        ]
+      ],
+      "little": []
+    },
+    "first_right_positive_impulse_step": {
+      "thumb": 3011,
+      "index": 3017,
+      "middle": 3014,
+      "ring": 3014,
+      "little": 3003
+    },
+    "tracking_during_opposition": {
+      "left_index": {
+        "maximum_actual_minus_target_abs_rad": 0.0021170973777770996,
+        "maximum_nominal_minus_applied_abs_rad": 0.0,
+        "last_tracking": {
+          "left_index_MPR_joint": {
+            "actual": 0.007013440132141113,
+            "applied_target": 0.00668710470199585,
+            "error": 0.00032633543014526367
+          },
+          "left_index_MCP_joint": {
+            "actual": 0.5551554560661316,
+            "applied_target": 0.5552442669868469,
+            "error": -8.881092071533203e-05
+          },
+          "left_index_PIP_joint": {
+            "actual": 0.8345699310302734,
+            "applied_target": 0.8348871469497681,
+            "error": -0.0003172159194946289
+          },
+          "left_index_DIP_joint": {
+            "actual": 0.4113543629646301,
+            "applied_target": 0.41141632199287415,
+            "error": -6.195902824401855e-05
+          }
+        }
+      },
+      "left_ring": {
+        "maximum_actual_minus_target_abs_rad": 0.002408921718597412,
+        "maximum_nominal_minus_applied_abs_rad": 0.0,
+        "last_tracking": {
+          "left_ring_MPR_joint": {
+            "actual": -0.04623924568295479,
+            "applied_target": -0.04642563313245773,
+            "error": 0.00018638744950294495
+          },
+          "left_ring_MCP_joint": {
+            "actual": 0.48714548349380493,
+            "applied_target": 0.4884384870529175,
+            "error": -0.0012930035591125488
+          },
+          "left_ring_PIP_joint": {
+            "actual": 0.5718382596969604,
+            "applied_target": 0.5728508234024048,
+            "error": -0.001012563705444336
+          },
+          "left_ring_DIP_joint": {
+            "actual": 1.0653893947601318,
+            "applied_target": 1.0655195713043213,
+            "error": -0.00013017654418945312
+          }
+        }
+      },
+      "all_right_joints": {
+        "maximum_actual_minus_target_abs_rad": 0.06487691402435303,
+        "maximum_nominal_minus_applied_abs_rad": 4.656612873077393e-10,
+        "last_tracking": {
+          "Joint1_R": {
+            "actual": 0.36079904437065125,
+            "applied_target": 0.36069202423095703,
+            "error": 0.00010702013969421387
+          },
+          "Joint2_R": {
+            "actual": -1.016457200050354,
+            "applied_target": -1.0159353017807007,
+            "error": -0.0005218982696533203
+          },
+          "Joint3_R": {
+            "actual": -0.5803948640823364,
+            "applied_target": -0.5803749561309814,
+            "error": -1.990795135498047e-05
+          },
+          "Joint4_R": {
+            "actual": -1.8834847211837769,
+            "applied_target": -1.8833554983139038,
+            "error": -0.00012922286987304688
+          },
+          "Joint5_R": {
+            "actual": -2.820720911026001,
+            "applied_target": -2.820098400115967,
+            "error": -0.0006225109100341797
+          },
+          "Joint6_R": {
+            "actual": -0.09365154057741165,
+            "applied_target": -0.09353839606046677,
+            "error": -0.00011314451694488525
+          },
+          "Joint7_R": {
+            "actual": 1.5208643674850464,
+            "applied_target": 1.5213038921356201,
+            "error": -0.00043952465057373047
+          },
+          "right_middle_MPR_joint": {
+            "actual": -0.007275979965925217,
+            "applied_target": -0.005912948865443468,
+            "error": -0.0013630311004817486
+          },
+          "right_middle_MCP_joint": {
+            "actual": 0.8654531240463257,
+            "applied_target": 0.8708885908126831,
+            "error": -0.005435466766357422
+          },
+          "right_middle_PIP_joint": {
+            "actual": 0.24326132237911224,
+            "applied_target": 0.2551199495792389,
+            "error": -0.011858627200126648
+          },
+          "right_middle_DIP_joint": {
+            "actual": 1.227292776107788,
+            "applied_target": 1.2282968759536743,
+            "error": -0.0010040998458862305
+          },
+          "right_thumb_CMP_joint": {
+            "actual": 0.31963419914245605,
+            "applied_target": 0.3296746015548706,
+            "error": -0.01004040241241455
+          },
+          "right_thumb_CMR_joint": {
+            "actual": 0.3311753571033478,
+            "applied_target": 0.3421299159526825,
+            "error": -0.010954558849334717
+          },
+          "right_thumb_MCP_joint": {
+            "actual": 0.5887665748596191,
+            "applied_target": 0.5963397026062012,
+            "error": -0.007573127746582031
+          },
+          "right_thumb_PIP_joint": {
+            "actual": 1.2008002996444702,
+            "applied_target": 1.1846929788589478,
+            "error": 0.01610732078552246
+          },
+          "right_thumb_DIP_joint": {
+            "actual": 1.2382375001907349,
+            "applied_target": 1.2362476587295532,
+            "error": 0.0019898414611816406
+          },
+          "right_index_MPR_joint": {
+            "actual": 0.0024850950576364994,
+            "applied_target": 0.0024537108838558197,
+            "error": 3.13841737806797e-05
+          },
+          "right_index_MCP_joint": {
+            "actual": 0.5431742668151855,
+            "applied_target": 0.5455503463745117,
+            "error": -0.002376079559326172
+          },
+          "right_index_PIP_joint": {
+            "actual": 0.6966961026191711,
+            "applied_target": 0.705373227596283,
+            "error": -0.008677124977111816
+          },
+          "right_index_DIP_joint": {
+            "actual": 0.9746082425117493,
+            "applied_target": 0.9751867651939392,
+            "error": -0.0005785226821899414
+          },
+          "right_ring_MPR_joint": {
+            "actual": -0.012220130302011967,
+            "applied_target": -0.011104489676654339,
+            "error": -0.0011156406253576279
+          },
+          "right_ring_MCP_joint": {
+            "actual": 0.6843686103820801,
+            "applied_target": 0.6913856267929077,
+            "error": -0.007017016410827637
+          },
+          "right_ring_PIP_joint": {
+            "actual": 0.6767736673355103,
+            "applied_target": 0.6820897459983826,
+            "error": -0.0053160786628723145
+          },
+          "right_ring_DIP_joint": {
+            "actual": 0.8676750063896179,
+            "applied_target": 0.8680146336555481,
+            "error": -0.0003396272659301758
+          },
+          "right_little_MPR_joint": {
+            "actual": -0.010056889615952969,
+            "applied_target": -0.0078066387213766575,
+            "error": -0.002250250894576311
+          },
+          "right_little_MCP_joint": {
+            "actual": 0.7556767463684082,
+            "applied_target": 0.7591413855552673,
+            "error": -0.003464639186859131
+          },
+          "right_little_PIP_joint": {
+            "actual": 0.6096117496490479,
+            "applied_target": 0.6193855404853821,
+            "error": -0.009773790836334229
+          },
+          "right_little_DIP_joint": {
+            "actual": 0.10601633042097092,
+            "applied_target": 0.10662702471017838,
+            "error": -0.0006106942892074585
+          }
+        }
+      }
+    },
+    "Core_motion_after_first_right_little_contact": {
+      "reference_step_before_first_right_little_contact": 3002,
+      "last_step": 3308,
+      "Core_translation_m": 0.0007967704671398669,
+      "Core_rotation_degrees": 0.24323425925732758
+    },
+    "snapshots": [
+      {
+        "step": 2049,
+        "phase": "center_hold",
+        "cube_position": [
+          0.49978646636009216,
+          9.322848927695304e-05,
+          1.294337511062622
+        ],
+        "cube_quaternion_wxyz": [
+          0.8667314648628235,
+          -0.4383707642555237,
+          0.11712884902954102,
+          -0.2070951610803604
+        ],
+        "linear_speed": 0.005305865779519081,
+        "angular_speed": 0.02935241535305977,
+        "finger_contact_impulses": {
+          "left": {
+            "thumb": 0.05238068785659577,
+            "index": 0.0016693999233298611,
+            "middle": 0.004497426924071322,
+            "ring": 0.0068827175997852935,
+            "little": 0.06078246165906878
+          },
+          "right": {
+            "thumb": 0.0,
+            "index": 0.0,
+            "middle": 0.0,
+            "ring": 0.0,
+            "little": 0.0
+          }
+        },
+        "left_ring_support": null,
+        "index_contact_feedback": {
+          "offset_rad": -0.0001,
+          "impulse_Ns": 0.001669399923329861,
+          "on_target_face": true,
+          "next_offset_rad": -0.0001
+        },
+        "left_topology": {
+          "thumb": true,
+          "index": true,
+          "middle": true,
+          "ring": true,
+          "little": true
+        },
+        "Core_relative_face_angle_deg": -0.00689483321727538,
+        "selected_relative_omega_rad_s": 1.0642255870806927,
+        "left_index_and_ring_tracking": {
+          "left_index_MPR_joint": {
+            "q": 0.00702908169478178,
+            "target": 0.00668710470199585,
+            "q_minus_target": 0.00034197699278593063
+          },
+          "left_index_MCP_joint": {
+            "q": 0.5550786852836609,
+            "target": 0.5552442669868469,
+            "q_minus_target": -0.00016558170318603516
+          },
+          "left_index_PIP_joint": {
+            "q": 0.8345037698745728,
+            "target": 0.8348871469497681,
+            "q_minus_target": -0.0003833770751953125
+          },
+          "left_index_DIP_joint": {
+            "q": 0.41131648421287537,
+            "target": 0.41141632199287415,
+            "q_minus_target": -9.98377799987793e-05
+          },
+          "left_ring_MPR_joint": {
+            "q": -0.04625311866402626,
+            "target": -0.04642563313245773,
+            "q_minus_target": 0.00017251446843147278
+          },
+          "left_ring_MCP_joint": {
+            "q": 0.4875037372112274,
+            "target": 0.4884384870529175,
+            "q_minus_target": -0.0009347498416900635
+          },
+          "left_ring_PIP_joint": {
+            "q": 0.5704467296600342,
+            "target": 0.5728508234024048,
+            "q_minus_target": -0.0024040937423706055
+          },
+          "left_ring_DIP_joint": {
+            "q": 1.0652518272399902,
+            "target": 1.0655195713043213,
+            "q_minus_target": -0.0002677440643310547
+          }
+        }
+      },
+      {
+        "step": 2050,
+        "phase": "right_preshape",
+        "cube_position": [
+          0.4997861385345459,
+          9.331067121820524e-05,
+          1.2943388223648071
+        ],
+        "cube_quaternion_wxyz": [
+          0.8667318820953369,
+          -0.43836918473243713,
+          0.11713030189275742,
+          -0.20709668099880219
+        ],
+        "linear_speed": 0.00589396758005023,
+        "angular_speed": 0.028405286371707916,
+        "finger_contact_impulses": {
+          "left": {
+            "thumb": 0.05239368712283718,
+            "index": 0.0016528707187258842,
+            "middle": 0.004498965747056878,
+            "ring": 0.006888947569621214,
+            "little": 0.06078610934143039
+          },
+          "right": {
+            "thumb": 0.0,
+            "index": 0.0,
+            "middle": 0.0,
+            "ring": 0.0,
+            "little": 0.0
+          }
+        },
+        "left_ring_support": {
+          "applied_offset_rad": 0.0,
+          "measured_impulse_Ns": 0.006888947569621214,
+          "next_offset_rad": 0.0
+        },
+        "index_contact_feedback": null,
+        "left_topology": {
+          "thumb": true,
+          "index": true,
+          "middle": true,
+          "ring": true,
+          "little": true
+        },
+        "Core_relative_face_angle_deg": -0.006823585178856049,
+        "selected_relative_omega_rad_s": 1.0772917774858257,
+        "left_index_and_ring_tracking": {
+          "left_index_MPR_joint": {
+            "q": 0.007028582971543074,
+            "target": 0.00668710470199585,
+            "q_minus_target": 0.00034147826954722404
+          },
+          "left_index_MCP_joint": {
+            "q": 0.5550788640975952,
+            "target": 0.5552442669868469,
+            "q_minus_target": -0.00016540288925170898
+          },
+          "left_index_PIP_joint": {
+            "q": 0.8345030546188354,
+            "target": 0.8348871469497681,
+            "q_minus_target": -0.0003840923309326172
+          },
+          "left_index_DIP_joint": {
+            "q": 0.4113163650035858,
+            "target": 0.41141632199287415,
+            "q_minus_target": -9.995698928833008e-05
+          },
+          "left_ring_MPR_joint": {
+            "q": -0.046252839267253876,
+            "target": -0.04642563313245773,
+            "q_minus_target": 0.00017279386520385742
+          },
+          "left_ring_MCP_joint": {
+            "q": 0.4875029921531677,
+            "target": 0.4884384870529175,
+            "q_minus_target": -0.0009354948997497559
+          },
+          "left_ring_PIP_joint": {
+            "q": 0.5704445838928223,
+            "target": 0.5728508234024048,
+            "q_minus_target": -0.0024062395095825195
+          },
+          "left_ring_DIP_joint": {
+            "q": 1.0652521848678589,
+            "target": 1.0655195713043213,
+            "q_minus_target": -0.00026738643646240234
+          }
+        }
+      },
+      {
+        "step": 3002,
+        "phase": "right_close",
+        "cube_position": [
+          0.4997861683368683,
+          9.324501297669485e-05,
+          1.2943384647369385
+        ],
+        "cube_quaternion_wxyz": [
+          0.8667315244674683,
+          -0.4383709728717804,
+          0.11713127046823502,
+          -0.2070937603712082
+        ],
+        "linear_speed": 0.005538029596209526,
+        "angular_speed": 0.024534188210964203,
+        "finger_contact_impulses": {
+          "left": {
+            "thumb": 0.05237709372597766,
+            "index": 0.001664502877614725,
+            "middle": 0.004497130203910616,
+            "ring": 0.006871902858772923,
+            "little": 0.060787622042066385
+          },
+          "right": {
+            "thumb": 0.0,
+            "index": 0.0,
+            "middle": 0.0,
+            "ring": 0.0,
+            "little": 0.0
+          }
+        },
+        "left_ring_support": {
+          "applied_offset_rad": 0.0,
+          "measured_impulse_Ns": 0.006871902858772923,
+          "next_offset_rad": 0.0
+        },
+        "index_contact_feedback": null,
+        "left_topology": {
+          "thumb": true,
+          "index": true,
+          "middle": true,
+          "ring": true,
+          "little": true
+        },
+        "Core_relative_face_angle_deg": -0.006964196845563852,
+        "selected_relative_omega_rad_s": 1.092057524364082,
+        "left_index_and_ring_tracking": {
+          "left_index_MPR_joint": {
+            "q": 0.007029265630990267,
+            "target": 0.00668710470199585,
+            "q_minus_target": 0.0003421609289944172
+          },
+          "left_index_MCP_joint": {
+            "q": 0.5550785660743713,
+            "target": 0.5552442669868469,
+            "q_minus_target": -0.00016570091247558594
+          },
+          "left_index_PIP_joint": {
+            "q": 0.834503173828125,
+            "target": 0.8348871469497681,
+            "q_minus_target": -0.0003839731216430664
+          },
+          "left_index_DIP_joint": {
+            "q": 0.4113159477710724,
+            "target": 0.41141632199287415,
+            "q_minus_target": -0.00010037422180175781
+          },
+          "left_ring_MPR_joint": {
+            "q": -0.046253856271505356,
+            "target": -0.04642563313245773,
+            "q_minus_target": 0.00017177686095237732
+          },
+          "left_ring_MCP_joint": {
+            "q": 0.48750418424606323,
+            "target": 0.4884384870529175,
+            "q_minus_target": -0.000934302806854248
+          },
+          "left_ring_PIP_joint": {
+            "q": 0.5704448819160461,
+            "target": 0.5728508234024048,
+            "q_minus_target": -0.0024059414863586426
+          },
+          "left_ring_DIP_joint": {
+            "q": 1.0652514696121216,
+            "target": 1.0655195713043213,
+            "q_minus_target": -0.00026810169219970703
+          }
+        }
+      },
+      {
+        "step": 3003,
+        "phase": "right_close",
+        "cube_position": [
+          0.49978089332580566,
+          6.624816887779161e-05,
+          1.2943543195724487
+        ],
+        "cube_quaternion_wxyz": [
+          0.8667250275611877,
+          -0.43855005502700806,
+          0.11710364371538162,
+          -0.2067568153142929
+        ],
+        "linear_speed": 0.004797342699021101,
+        "angular_speed": 0.08234315365552902,
+        "finger_contact_impulses": {
+          "left": {
+            "thumb": 0.05148674912224157,
+            "index": 0.0030531011761373234,
+            "middle": 0.004604807742211171,
+            "ring": 0.005828582757206836,
+            "little": 0.059829988304016604
+          },
+          "right": {
+            "thumb": 0.0,
+            "index": 0.0,
+            "middle": 0.0,
+            "ring": 0.0,
+            "little": 0.001332900047880163
+          }
+        },
+        "left_ring_support": {
+          "applied_offset_rad": 0.0,
+          "measured_impulse_Ns": 0.005828582757206836,
+          "next_offset_rad": 0.0
+        },
+        "index_contact_feedback": null,
+        "left_topology": {
+          "thumb": true,
+          "index": true,
+          "middle": true,
+          "ring": true,
+          "little": true
+        },
+        "Core_relative_face_angle_deg": -0.008426871021517963,
+        "selected_relative_omega_rad_s": 1.2116873744665269,
+        "left_index_and_ring_tracking": {
+          "left_index_MPR_joint": {
+            "q": 0.007077143993228674,
+            "target": 0.00668710470199585,
+            "q_minus_target": 0.0003900392912328243
+          },
+          "left_index_MCP_joint": {
+            "q": 0.5549721121788025,
+            "target": 0.5552442669868469,
+            "q_minus_target": -0.0002721548080444336
+          },
+          "left_index_PIP_joint": {
+            "q": 0.8344160914421082,
+            "target": 0.8348871469497681,
+            "q_minus_target": -0.0004710555076599121
+          },
+          "left_index_DIP_joint": {
+            "q": 0.4113064110279083,
+            "target": 0.41141632199287415,
+            "q_minus_target": -0.00010991096496582031
+          },
+          "left_ring_MPR_joint": {
+            "q": -0.04629630595445633,
+            "target": -0.04642563313245773,
+            "q_minus_target": 0.0001293271780014038
+          },
+          "left_ring_MCP_joint": {
+            "q": 0.4875975549221039,
+            "target": 0.4884384870529175,
+            "q_minus_target": -0.0008409321308135986
+          },
+          "left_ring_PIP_joint": {
+            "q": 0.57058185338974,
+            "target": 0.5728508234024048,
+            "q_minus_target": -0.002268970012664795
+          },
+          "left_ring_DIP_joint": {
+            "q": 1.065259337425232,
+            "target": 1.0655195713043213,
+            "q_minus_target": -0.00026023387908935547
+          }
+        }
+      },
+      {
+        "step": 3010,
+        "phase": "right_close",
+        "cube_position": [
+          0.49956077337265015,
+          -0.0002769604907371104,
+          1.2946335077285767
+        ],
+        "cube_quaternion_wxyz": [
+          0.8665838837623596,
+          -0.438997745513916,
+          0.11708716303110123,
+          -0.20640763640403748
+        ],
+        "linear_speed": 0.005516557022929192,
+        "angular_speed": 0.039671339094638824,
+        "finger_contact_impulses": {
+          "left": {
+            "thumb": 0.050347568076144225,
+            "index": 0.004784107053136639,
+            "middle": 0.0047241182392051715,
+            "ring": 0.004620090432939488,
+            "little": 0.05870573244503464
+          },
+          "right": {
+            "thumb": 0.0,
+            "index": 0.0,
+            "middle": 0.0,
+            "ring": 0.0,
+            "little": 0.0026610203176646438
+          }
+        },
+        "left_ring_support": {
+          "applied_offset_rad": 0.0,
+          "measured_impulse_Ns": 0.004620090432939488,
+          "next_offset_rad": 0.0
+        },
+        "index_contact_feedback": null,
+        "left_topology": {
+          "thumb": true,
+          "index": true,
+          "middle": true,
+          "ring": true,
+          "little": true
+        },
+        "Core_relative_face_angle_deg": -0.005455903353126757,
+        "selected_relative_omega_rad_s": 3.3341160424244527,
+        "left_index_and_ring_tracking": {
+          "left_index_MPR_joint": {
+            "q": 0.007221749052405357,
+            "target": 0.00668710470199585,
+            "q_minus_target": 0.0005346443504095078
+          },
+          "left_index_MCP_joint": {
+            "q": 0.5547398328781128,
+            "target": 0.5552442669868469,
+            "q_minus_target": -0.0005044341087341309
+          },
+          "left_index_PIP_joint": {
+            "q": 0.8342361450195312,
+            "target": 0.8348871469497681,
+            "q_minus_target": -0.0006510019302368164
+          },
+          "left_index_DIP_joint": {
+            "q": 0.41128289699554443,
+            "target": 0.41141632199287415,
+            "q_minus_target": -0.00013342499732971191
+          },
+          "left_ring_MPR_joint": {
+            "q": -0.04639314487576485,
+            "target": -0.04642563313245773,
+            "q_minus_target": 3.248825669288635e-05
+          },
+          "left_ring_MCP_joint": {
+            "q": 0.48778969049453735,
+            "target": 0.4884384870529175,
+            "q_minus_target": -0.000648796558380127
+          },
+          "left_ring_PIP_joint": {
+            "q": 0.571090042591095,
+            "target": 0.5728508234024048,
+            "q_minus_target": -0.0017607808113098145
+          },
+          "left_ring_DIP_joint": {
+            "q": 1.0652961730957031,
+            "target": 1.0655195713043213,
+            "q_minus_target": -0.00022339820861816406
+          }
+        }
+      },
+      {
+        "step": 3011,
+        "phase": "right_close",
+        "cube_position": [
+          0.49951300024986267,
+          -0.0003387999895494431,
+          1.2946617603302002
+        ],
+        "cube_quaternion_wxyz": [
+          0.8665556907653809,
+          -0.43908098340034485,
+          0.11706619709730148,
+          -0.20636072754859924
+        ],
+        "linear_speed": 0.006046408787369728,
+        "angular_speed": 0.04290987551212311,
+        "finger_contact_impulses": {
+          "left": {
+            "thumb": 0.050192813005907354,
+            "index": 0.005027687960525868,
+            "middle": 0.00470211185420579,
+            "ring": 0.004424017697209197,
+            "little": 0.05849545340671584
+          },
+          "right": {
+            "thumb": 5.719835988452493e-05,
+            "index": 0.0,
+            "middle": 0.0,
+            "ring": 0.0,
+            "little": 0.002859304687602656
+          }
+        },
+        "left_ring_support": {
+          "applied_offset_rad": 0.0,
+          "measured_impulse_Ns": 0.004424017697209197,
+          "next_offset_rad": 0.0
+        },
+        "index_contact_feedback": null,
+        "left_topology": {
+          "thumb": true,
+          "index": true,
+          "middle": true,
+          "ring": true,
+          "little": true
+        },
+        "Core_relative_face_angle_deg": -0.007220888634841618,
+        "selected_relative_omega_rad_s": 1.2571036127803952,
+        "left_index_and_ring_tracking": {
+          "left_index_MPR_joint": {
+            "q": 0.007237706799060106,
+            "target": 0.00668710470199585,
+            "q_minus_target": 0.0005506020970642567
+          },
+          "left_index_MCP_joint": {
+            "q": 0.5547017455101013,
+            "target": 0.5552442669868469,
+            "q_minus_target": -0.0005425214767456055
+          },
+          "left_index_PIP_joint": {
+            "q": 0.8342232704162598,
+            "target": 0.8348871469497681,
+            "q_minus_target": -0.0006638765335083008
+          },
+          "left_index_DIP_joint": {
+            "q": 0.41128018498420715,
+            "target": 0.41141632199287415,
+            "q_minus_target": -0.0001361370086669922
+          },
+          "left_ring_MPR_joint": {
+            "q": -0.04640244320034981,
+            "target": -0.04642563313245773,
+            "q_minus_target": 2.3189932107925415e-05
+          },
+          "left_ring_MCP_joint": {
+            "q": 0.4878176152706146,
+            "target": 0.4884384870529175,
+            "q_minus_target": -0.0006208717823028564
+          },
+          "left_ring_PIP_joint": {
+            "q": 0.5711392760276794,
+            "target": 0.5728508234024048,
+            "q_minus_target": -0.0017115473747253418
+          },
+          "left_ring_DIP_joint": {
+            "q": 1.0652996301651,
+            "target": 1.0655195713043213,
+            "q_minus_target": -0.0002199411392211914
+          }
+        }
+      },
+      {
+        "step": 3013,
+        "phase": "right_close",
+        "cube_position": [
+          0.49950534105300903,
+          -0.0003764248394872993,
+          1.2945971488952637
+        ],
+        "cube_quaternion_wxyz": [
+          0.8666616678237915,
+          -0.43928730487823486,
+          0.11704108119010925,
+          -0.2054886817932129
+        ],
+        "linear_speed": 0.005369960330426693,
+        "angular_speed": 0.05192374065518379,
+        "finger_contact_impulses": {
+          "left": {
+            "thumb": 0.04783869605281761,
+            "index": 0.006489078215638613,
+            "middle": 0.0049429387479880665,
+            "ring": 0.002562271789578264,
+            "little": 0.05802147505651819
+          },
+          "right": {
+            "thumb": 0.010577118242028814,
+            "index": 0.0,
+            "middle": 0.0,
+            "ring": 0.0,
+            "little": 0.011961722864581413
+          }
+        },
+        "left_ring_support": {
+          "applied_offset_rad": 0.0,
+          "measured_impulse_Ns": 0.002562271789578264,
+          "next_offset_rad": 0.0
+        },
+        "index_contact_feedback": null,
+        "left_topology": {
+          "thumb": true,
+          "index": true,
+          "middle": true,
+          "ring": true,
+          "little": true
+        },
+        "Core_relative_face_angle_deg": -0.01193166243544968,
+        "selected_relative_omega_rad_s": 1.8629469146615953,
+        "left_index_and_ring_tracking": {
+          "left_index_MPR_joint": {
+            "q": 0.007290231063961983,
+            "target": 0.00668710470199585,
+            "q_minus_target": 0.0006031263619661331
+          },
+          "left_index_MCP_joint": {
+            "q": 0.5545004606246948,
+            "target": 0.5552442669868469,
+            "q_minus_target": -0.0007438063621520996
+          },
+          "left_index_PIP_joint": {
+            "q": 0.8339936137199402,
+            "target": 0.8348871469497681,
+            "q_minus_target": -0.0008935332298278809
+          },
+          "left_index_DIP_joint": {
+            "q": 0.4112600088119507,
+            "target": 0.41141632199287415,
+            "q_minus_target": -0.00015631318092346191
+          },
+          "left_ring_MPR_joint": {
+            "q": -0.046495795249938965,
+            "target": -0.04642563313245773,
+            "q_minus_target": -7.016211748123169e-05
+          },
+          "left_ring_MCP_joint": {
+            "q": 0.48795026540756226,
+            "target": 0.4884384870529175,
+            "q_minus_target": -0.0004882216453552246
+          },
+          "left_ring_PIP_joint": {
+            "q": 0.5716370344161987,
+            "target": 0.5728508234024048,
+            "q_minus_target": -0.0012137889862060547
+          },
+          "left_ring_DIP_joint": {
+            "q": 1.0653377771377563,
+            "target": 1.0655195713043213,
+            "q_minus_target": -0.0001817941665649414
+          }
+        }
+      },
+      {
+        "step": 3014,
+        "phase": "right_close",
+        "cube_position": [
+          0.49952155351638794,
+          -0.00038414017762988806,
+          1.294581413269043
+        ],
+        "cube_quaternion_wxyz": [
+          0.8666648268699646,
+          -0.4394910931587219,
+          0.11719848960638046,
+          -0.20494911074638367
+        ],
+        "linear_speed": 0.004061345010995865,
+        "angular_speed": 0.07294758409261703,
+        "finger_contact_impulses": {
+          "left": {
+            "thumb": 0.0467906515833333,
+            "index": 0.007550735054371542,
+            "middle": 0.005011669513896181,
+            "ring": 0.0017605886663050246,
+            "little": 0.05650814232631081
+          },
+          "right": {
+            "thumb": 0.01268584097931854,
+            "index": 0.0,
+            "middle": 0.0004982919441822971,
+            "ring": 0.004652122789921294,
+            "little": 0.011576057980220865
+          }
+        },
+        "left_ring_support": {
+          "applied_offset_rad": 0.0,
+          "measured_impulse_Ns": 0.0017605886663050246,
+          "next_offset_rad": 0.0
+        },
+        "index_contact_feedback": null,
+        "left_topology": {
+          "thumb": true,
+          "index": true,
+          "middle": true,
+          "ring": true,
+          "little": true
+        },
+        "Core_relative_face_angle_deg": -0.015222968725487031,
+        "selected_relative_omega_rad_s": 5.809089034056249,
+        "left_index_and_ring_tracking": {
+          "left_index_MPR_joint": {
+            "q": 0.007347436156123877,
+            "target": 0.00668710470199585,
+            "q_minus_target": 0.000660331454128027
+          },
+          "left_index_MCP_joint": {
+            "q": 0.5543472170829773,
+            "target": 0.5552442669868469,
+            "q_minus_target": -0.0008970499038696289
+          },
+          "left_index_PIP_joint": {
+            "q": 0.8338121175765991,
+            "target": 0.8348871469497681,
+            "q_minus_target": -0.0010750293731689453
+          },
+          "left_index_DIP_joint": {
+            "q": 0.4112440347671509,
+            "target": 0.41141632199287415,
+            "q_minus_target": -0.0001722872257232666
+          },
+          "left_ring_MPR_joint": {
+            "q": -0.046539127826690674,
+            "target": -0.04642563313245773,
+            "q_minus_target": -0.00011349469423294067
+          },
+          "left_ring_MCP_joint": {
+            "q": 0.48802852630615234,
+            "target": 0.4884384870529175,
+            "q_minus_target": -0.0004099607467651367
+          },
+          "left_ring_PIP_joint": {
+            "q": 0.5719704031944275,
+            "target": 0.5728508234024048,
+            "q_minus_target": -0.0008804202079772949
+          },
+          "left_ring_DIP_joint": {
+            "q": 1.0653661489486694,
+            "target": 1.0655195713043213,
+            "q_minus_target": -0.00015342235565185547
+          }
+        }
+      },
+      {
+        "step": 3016,
+        "phase": "right_close",
+        "cube_position": [
+          0.49951502680778503,
+          -0.0004149616288486868,
+          1.2945927381515503
+        ],
+        "cube_quaternion_wxyz": [
+          0.8667154908180237,
+          -0.439651221036911,
+          0.11732104420661926,
+          -0.20432068407535553
+        ],
+        "linear_speed": 0.00518144853413105,
+        "angular_speed": 0.10860570520162582,
+        "finger_contact_impulses": {
+          "left": {
+            "thumb": 0.04581816534374571,
+            "index": 0.007735048960257597,
+            "middle": 0.005230219745130186,
+            "ring": 0.0011317663619439483,
+            "little": 0.05678691967084162
+          },
+          "right": {
+            "thumb": 0.025598429308629392,
+            "index": 0.0,
+            "middle": 0.007427129893211712,
+            "ring": 0.008512819131607662,
+            "little": 0.01177139251926642
+          }
+        },
+        "left_ring_support": {
+          "applied_offset_rad": 0.0,
+          "measured_impulse_Ns": 0.0011317663619439483,
+          "next_offset_rad": 0.0
+        },
+        "index_contact_feedback": null,
+        "left_topology": {
+          "thumb": true,
+          "index": true,
+          "middle": true,
+          "ring": true,
+          "little": true
+        },
+        "Core_relative_face_angle_deg": -0.011101596521705292,
+        "selected_relative_omega_rad_s": 1.910612986331322,
+        "left_index_and_ring_tracking": {
+          "left_index_MPR_joint": {
+            "q": 0.0074117183685302734,
+            "target": 0.00668710470199585,
+            "q_minus_target": 0.0007246136665344238
+          },
+          "left_index_MCP_joint": {
+            "q": 0.5542093515396118,
+            "target": 0.5552442669868469,
+            "q_minus_target": -0.0010349154472351074
+          },
+          "left_index_PIP_joint": {
+            "q": 0.8335520029067993,
+            "target": 0.8348871469497681,
+            "q_minus_target": -0.00133514404296875
+          },
+          "left_index_DIP_joint": {
+            "q": 0.4112211763858795,
+            "target": 0.41141632199287415,
+            "q_minus_target": -0.0001951456069946289
+          },
+          "left_ring_MPR_joint": {
+            "q": -0.046578794717788696,
+            "target": -0.04642563313245773,
+            "q_minus_target": -0.00015316158533096313
+          },
+          "left_ring_MCP_joint": {
+            "q": 0.48810914158821106,
+            "target": 0.4884384870529175,
+            "q_minus_target": -0.0003293454647064209
+          },
+          "left_ring_PIP_joint": {
+            "q": 0.5724471807479858,
+            "target": 0.5728508234024048,
+            "q_minus_target": -0.0004036426544189453
+          },
+          "left_ring_DIP_joint": {
+            "q": 1.0654006004333496,
+            "target": 1.0655195713043213,
+            "q_minus_target": -0.00011897087097167969
+          }
+        }
+      },
+      {
+        "step": 3017,
+        "phase": "right_close",
+        "cube_position": [
+          0.4995102286338806,
+          -0.00043212712625972927,
+          1.2945994138717651
+        ],
+        "cube_quaternion_wxyz": [
+          0.8667449951171875,
+          -0.4397178590297699,
+          0.1173861026763916,
+          -0.2040145993232727
+        ],
+        "linear_speed": 0.005175130441784859,
+        "angular_speed": 0.1817568689584732,
+        "finger_contact_impulses": {
+          "left": {
+            "thumb": 0.045533912192191224,
+            "index": 0.007680421791149458,
+            "middle": 0.005099432114980459,
+            "ring": 0.0004949109708619269,
+            "little": 0.0564543558973553
+          },
+          "right": {
+            "thumb": 0.029075935187883813,
+            "index": 0.00039858820032139474,
+            "middle": 0.008317988643321297,
+            "ring": 0.009568384015345852,
+            "little": 0.012388247065735021
+          }
+        },
+        "left_ring_support": {
+          "applied_offset_rad": 0.0,
+          "measured_impulse_Ns": 0.0004949109708619269,
+          "next_offset_rad": 5e-05
+        },
+        "index_contact_feedback": null,
+        "left_topology": {
+          "thumb": true,
+          "index": true,
+          "middle": true,
+          "ring": true,
+          "little": true
+        },
+        "Core_relative_face_angle_deg": -0.008964832911813752,
+        "selected_relative_omega_rad_s": 1.8165110054842888,
+        "left_index_and_ring_tracking": {
+          "left_index_MPR_joint": {
+            "q": 0.007426613476127386,
+            "target": 0.00668710470199585,
+            "q_minus_target": 0.0007395087741315365
+          },
+          "left_index_MCP_joint": {
+            "q": 0.5541570782661438,
+            "target": 0.5552442669868469,
+            "q_minus_target": -0.001087188720703125
+          },
+          "left_index_PIP_joint": {
+            "q": 0.8333750367164612,
+            "target": 0.8348871469497681,
+            "q_minus_target": -0.0015121102333068848
+          },
+          "left_index_DIP_joint": {
+            "q": 0.41120827198028564,
+            "target": 0.41141632199287415,
+            "q_minus_target": -0.00020805001258850098
+          },
+          "left_ring_MPR_joint": {
+            "q": -0.0465807281434536,
+            "target": -0.04642563313245773,
+            "q_minus_target": -0.00015509501099586487
+          },
+          "left_ring_MCP_joint": {
+            "q": 0.4881717562675476,
+            "target": 0.4884384870529175,
+            "q_minus_target": -0.00026673078536987305
+          },
+          "left_ring_PIP_joint": {
+            "q": 0.5726500153541565,
+            "target": 0.5728508234024048,
+            "q_minus_target": -0.00020080804824829102
+          },
+          "left_ring_DIP_joint": {
+            "q": 1.0654133558273315,
+            "target": 1.0655195713043213,
+            "q_minus_target": -0.0001062154769897461
+          }
+        }
+      },
+      {
+        "step": 3020,
+        "phase": "right_close",
+        "cube_position": [
+          0.49949508905410767,
+          -0.00046701691462658346,
+          1.2946041822433472
+        ],
+        "cube_quaternion_wxyz": [
+          0.8667388558387756,
+          -0.4399285614490509,
+          0.11758188903331757,
+          -0.20347318053245544
+        ],
+        "linear_speed": 0.007692280225455761,
+        "angular_speed": 0.13059823215007782,
+        "finger_contact_impulses": {
+          "left": {
+            "thumb": 0.044979511256299766,
+            "index": 0.0075263311477313,
+            "middle": 0.005009962351749673,
+            "ring": 5.438305350323121e-05,
+            "little": 0.05593287219373136
+          },
+          "right": {
+            "thumb": 0.03932095291881992,
+            "index": 0.00404691882047937,
+            "middle": 0.010735677749753647,
+            "ring": 0.012230222097654179,
+            "little": 0.013269571871173934
+          }
+        },
+        "left_ring_support": {
+          "applied_offset_rad": 0.00015000000000000001,
+          "measured_impulse_Ns": 5.438305350323121e-05,
+          "next_offset_rad": 0.0002
+        },
+        "index_contact_feedback": null,
+        "left_topology": {
+          "thumb": true,
+          "index": true,
+          "middle": true,
+          "ring": true,
+          "little": true
+        },
+        "Core_relative_face_angle_deg": -0.008580898928085766,
+        "selected_relative_omega_rad_s": 3.131178451031422,
+        "left_index_and_ring_tracking": {
+          "left_index_MPR_joint": {
+            "q": 0.007417528890073299,
+            "target": 0.00668710470199585,
+            "q_minus_target": 0.0007304241880774498
+          },
+          "left_index_MCP_joint": {
+            "q": 0.554090142250061,
+            "target": 0.5552442669868469,
+            "q_minus_target": -0.0011541247367858887
+          },
+          "left_index_PIP_joint": {
+            "q": 0.8330535292625427,
+            "target": 0.8348871469497681,
+            "q_minus_target": -0.0018336176872253418
+          },
+          "left_index_DIP_joint": {
+            "q": 0.4111875593662262,
+            "target": 0.41141632199287415,
+            "q_minus_target": -0.00022876262664794922
+          },
+          "left_ring_MPR_joint": {
+            "q": -0.04658243805170059,
+            "target": -0.04642563313245773,
+            "q_minus_target": -0.0001568049192428589
+          },
+          "left_ring_MCP_joint": {
+            "q": 0.4882640838623047,
+            "target": 0.4884384870529175,
+            "q_minus_target": -0.00017440319061279297
+          },
+          "left_ring_PIP_joint": {
+            "q": 0.5730729103088379,
+            "target": 0.5730008482933044,
+            "q_minus_target": 7.206201553344727e-05
+          },
+          "left_ring_DIP_joint": {
+            "q": 1.0654292106628418,
+            "target": 1.0655195713043213,
+            "q_minus_target": -9.036064147949219e-05
+          }
+        }
+      },
+      {
+        "step": 3021,
+        "phase": "right_close",
+        "cube_position": [
+          0.4994902014732361,
+          -0.000479346897918731,
+          1.2946003675460815
+        ],
+        "cube_quaternion_wxyz": [
+          0.8667542338371277,
+          -0.4399492144584656,
+          0.1176144927740097,
+          -0.203343465924263
+        ],
+        "linear_speed": 0.004745432175695896,
+        "angular_speed": 0.21888558566570282,
+        "finger_contact_impulses": {
+          "left": {
+            "thumb": 0.044511574414280504,
+            "index": 0.007821508787206508,
+            "middle": 0.005108105854564319,
+            "ring": 0.0,
+            "little": 0.05589193521976879
+          },
+          "right": {
+            "thumb": 0.041482480282740104,
+            "index": 0.003912678357624479,
+            "middle": 0.011341444531412129,
+            "ring": 0.012867053471620765,
+            "little": 0.014274992100990723
+          }
+        },
+        "left_ring_support": {
+          "applied_offset_rad": 0.0002,
+          "measured_impulse_Ns": 0.0,
+          "next_offset_rad": 0.00025
+        },
+        "index_contact_feedback": null,
+        "left_topology": {
+          "thumb": true,
+          "index": true,
+          "middle": true,
+          "ring": false,
+          "little": true
+        },
+        "Core_relative_face_angle_deg": -0.008037597792722631,
+        "selected_relative_omega_rad_s": 2.3197244856304238,
+        "left_index_and_ring_tracking": {
+          "left_index_MPR_joint": {
+            "q": 0.007430243771523237,
+            "target": 0.00668710470199585,
+            "q_minus_target": 0.0007431390695273876
+          },
+          "left_index_MCP_joint": {
+            "q": 0.554057776927948,
+            "target": 0.5552442669868469,
+            "q_minus_target": -0.0011864900588989258
+          },
+          "left_index_PIP_joint": {
+            "q": 0.8329852223396301,
+            "target": 0.8348871469497681,
+            "q_minus_target": -0.0019019246101379395
+          },
+          "left_index_DIP_joint": {
+            "q": 0.41118118166923523,
+            "target": 0.41141632199287415,
+            "q_minus_target": -0.00023514032363891602
+          },
+          "left_ring_MPR_joint": {
+            "q": -0.04658197984099388,
+            "target": -0.04642563313245773,
+            "q_minus_target": -0.00015634670853614807
+          },
+          "left_ring_MCP_joint": {
+            "q": 0.48827990889549255,
+            "target": 0.4884384870529175,
+            "q_minus_target": -0.00015857815742492676
+          },
+          "left_ring_PIP_joint": {
+            "q": 0.573160707950592,
+            "target": 0.5730507969856262,
+            "q_minus_target": 0.00010991096496582031
+          },
+          "left_ring_DIP_joint": {
+            "q": 1.0654292106628418,
+            "target": 1.0655195713043213,
+            "q_minus_target": -9.036064147949219e-05
+          }
+        }
+      },
+      {
+        "step": 3025,
+        "phase": "right_close",
+        "cube_position": [
+          0.4994690716266632,
+          -0.0005065779550932348,
+          1.2945828437805176
+        ],
+        "cube_quaternion_wxyz": [
+          0.8667466640472412,
+          -0.4400407671928406,
+          0.1176542192697525,
+          -0.2031552940607071
+        ],
+        "linear_speed": 0.005267033353447914,
+        "angular_speed": 0.04125087335705757,
+        "finger_contact_impulses": {
+          "left": {
+            "thumb": 0.04497236906284872,
+            "index": 0.007895424133892479,
+            "middle": 0.004915412808672571,
+            "ring": 0.0,
+            "little": 0.055620725795645004
+          },
+          "right": {
+            "thumb": 0.04732155440837206,
+            "index": 0.0048416698677829625,
+            "middle": 0.012916585171165508,
+            "ring": 0.014783102468432337,
+            "little": 0.015335114018721964
+          }
+        },
+        "left_ring_support": {
+          "applied_offset_rad": 0.0004000000000000001,
+          "measured_impulse_Ns": 0.0,
+          "next_offset_rad": 0.0004500000000000001
+        },
+        "index_contact_feedback": null,
+        "left_topology": {
+          "thumb": true,
+          "index": true,
+          "middle": true,
+          "ring": false,
+          "little": true
+        },
+        "Core_relative_face_angle_deg": -0.00349016059202144,
+        "selected_relative_omega_rad_s": 17.894910549484294,
+        "left_index_and_ring_tracking": {
+          "left_index_MPR_joint": {
+            "q": 0.007446874864399433,
+            "target": 0.00668710470199585,
+            "q_minus_target": 0.0007597701624035835
+          },
+          "left_index_MCP_joint": {
+            "q": 0.5540180802345276,
+            "target": 0.5552442669868469,
+            "q_minus_target": -0.001226186752319336
+          },
+          "left_index_PIP_joint": {
+            "q": 0.8329631090164185,
+            "target": 0.8348871469497681,
+            "q_minus_target": -0.0019240379333496094
+          },
+          "left_index_DIP_joint": {
+            "q": 0.4111781716346741,
+            "target": 0.41141632199287415,
+            "q_minus_target": -0.00023815035820007324
+          },
+          "left_ring_MPR_joint": {
+            "q": -0.046582598239183426,
+            "target": -0.04642563313245773,
+            "q_minus_target": -0.00015696510672569275
+          },
+          "left_ring_MCP_joint": {
+            "q": 0.4882936477661133,
+            "target": 0.4884384870529175,
+            "q_minus_target": -0.00014483928680419922
+          },
+          "left_ring_PIP_joint": {
+            "q": 0.5734007954597473,
+            "target": 0.5732508301734924,
+            "q_minus_target": 0.0001499652862548828
+          },
+          "left_ring_DIP_joint": {
+            "q": 1.065429925918579,
+            "target": 1.0655195713043213,
+            "q_minus_target": -8.96453857421875e-05
+          }
+        }
+      },
+      {
+        "step": 3308,
+        "phase": "opposed_face_turn",
+        "cube_position": [
+          0.49935629963874817,
+          -0.0005172531236894429,
+          1.2946165800094604
+        ],
+        "cube_quaternion_wxyz": [
+          0.8659782409667969,
+          -0.4399878978729248,
+          0.11603236943483353,
+          -0.20743441581726074
+        ],
+        "linear_speed": 0.007681730668991804,
+        "angular_speed": 0.12219007313251495,
+        "finger_contact_impulses": {
+          "left": {
+            "thumb": 0.053188682629259215,
+            "index": 0.001672409977223517,
+            "middle": 0.0031585432378168263,
+            "ring": 0.006072268965943067,
+            "little": 0.055949674014311876
+          },
+          "right": {
+            "thumb": 0.04826819666838699,
+            "index": 0.006292874059091315,
+            "middle": 0.014478220946635409,
+            "ring": 0.014332309862012886,
+            "little": 0.016308813969772667
+          }
+        },
+        "left_ring_support": {
+          "applied_offset_rad": 0.0,
+          "measured_impulse_Ns": 0.006072268965943067,
+          "next_offset_rad": 0.0
+        },
+        "index_contact_feedback": null,
+        "left_topology": {
+          "thumb": true,
+          "index": true,
+          "middle": true,
+          "ring": true,
+          "little": true
+        },
+        "Core_relative_face_angle_deg": 0.03573375003547369,
+        "selected_relative_omega_rad_s": 2.0403988443185535,
+        "left_index_and_ring_tracking": {
+          "left_index_MPR_joint": {
+            "q": 0.007013440132141113,
+            "target": 0.00668710470199585,
+            "q_minus_target": 0.00032633543014526367
+          },
+          "left_index_MCP_joint": {
+            "q": 0.5551554560661316,
+            "target": 0.5552442669868469,
+            "q_minus_target": -8.881092071533203e-05
+          },
+          "left_index_PIP_joint": {
+            "q": 0.8345699310302734,
+            "target": 0.8348871469497681,
+            "q_minus_target": -0.0003172159194946289
+          },
+          "left_index_DIP_joint": {
+            "q": 0.4113543629646301,
+            "target": 0.41141632199287415,
+            "q_minus_target": -6.195902824401855e-05
+          },
+          "left_ring_MPR_joint": {
+            "q": -0.04623924568295479,
+            "target": -0.04642563313245773,
+            "q_minus_target": 0.00018638744950294495
+          },
+          "left_ring_MCP_joint": {
+            "q": 0.48714548349380493,
+            "target": 0.4884384870529175,
+            "q_minus_target": -0.0012930035591125488
+          },
+          "left_ring_PIP_joint": {
+            "q": 0.5718382596969604,
+            "target": 0.5728508234024048,
+            "q_minus_target": -0.001012563705444336
+          },
+          "left_ring_DIP_joint": {
+            "q": 1.0653893947601318,
+            "target": 1.0655195713043213,
+            "q_minus_target": -0.00013017654418945312
+          }
+        }
+      }
+    ],
+    "result": {
+      "steps": 3309,
+      "failure": "turn_contact_or_progress_stalled",
+      "dynamic_grasp_passed": true,
+      "center_transport_passed": true,
+      "assembled_hold_s": 3.0,
+      "task_episode": null
+    },
+    "artifact_sha256": {
+      "trajectory.json": "6f281ce20ddad63d921855f0441040ef0b84c2f183bf4c44aaed93eb701212c0",
+      "result.json": "2815310ead3288257d337c73a71a993ef9833ea45c20b7cf7a441395e51169d3",
+      "experiment.json": "898d1c9591b015c3b5d01e13806ef4af8dc1d8b06b7ee8a5d6e09147ae693140"
+    }
+  },
+  "left_right_close_contact_distribution_GEOMETRIC_INFERENCE_NOT_ACTOR_OBSERVATION": {
+    "right_close": {
+      "frames": 107,
+      "by_finger": {
+        "thumb": {
+          "selected_impulse_Ns": 0.0,
+          "other_impulse_Ns": 4.7000250302013775,
+          "ambiguous_impulse_Ns": 0.0,
+          "total_impulse_Ns": 4.7000250302013775,
+          "contact_points": 856,
+          "nearest_marker_distance_m": {
+            "minimum": 0.011664896242944468,
+            "median": 0.011671347647262716,
+            "maximum": 0.011837831119168,
+            "last": 0.011837758607822848
+          },
+          "selected_vs_other_distance_gap_m": {
+            "minimum": 0.03084570595124604,
+            "median": 0.030873511173138496,
+            "maximum": 0.030920931300428407,
+            "last": 0.030920931300428407
+          },
+          "nearest_name_impulse_Ns": {
+            "nX_nY_pZ": 4.7000250302013775
+          },
+          "impulse_fraction": {
+            "selected": 0.0,
+            "other": 1.0,
+            "ambiguous": 0.0
+          },
+          "selected_contact_frames": 0,
+          "selected_longest_contiguous_frames": 0,
+          "other_contact_frames": 107,
+          "other_longest_contiguous_frames": 107,
+          "ambiguous_contact_frames": 0,
+          "ambiguous_longest_contiguous_frames": 0
+        },
+        "index": {
+          "selected_impulse_Ns": 0.0,
+          "other_impulse_Ns": 0.0,
+          "ambiguous_impulse_Ns": 0.0,
+          "total_impulse_Ns": 0.0,
+          "contact_points": 0,
+          "nearest_marker_distance_m": null,
+          "selected_vs_other_distance_gap_m": null,
+          "nearest_name_impulse_Ns": {},
+          "impulse_fraction": {
+            "selected": null,
+            "other": null,
+            "ambiguous": null
+          },
+          "selected_contact_frames": 0,
+          "selected_longest_contiguous_frames": 0,
+          "other_contact_frames": 0,
+          "other_longest_contiguous_frames": 0,
+          "ambiguous_contact_frames": 0,
+          "ambiguous_longest_contiguous_frames": 0
+        },
+        "middle": {
+          "selected_impulse_Ns": 0.0,
+          "other_impulse_Ns": 0.41778508275016507,
+          "ambiguous_impulse_Ns": 0.0,
+          "total_impulse_Ns": 0.41778508275016507,
+          "contact_points": 856,
+          "nearest_marker_distance_m": {
+            "minimum": 0.013290934323163596,
+            "median": 0.013345783758506792,
+            "maximum": 0.01336264747218625,
+            "last": 0.013309952098127228
+          },
+          "selected_vs_other_distance_gap_m": {
+            "minimum": 0.033910861748033684,
+            "median": 0.03394270592093755,
+            "maximum": 0.0339769625716054,
+            "last": 0.03395939332384768
+          },
+          "nearest_name_impulse_Ns": {
+            "pX_pZ": 0.41778508275016507
+          },
+          "impulse_fraction": {
+            "selected": 0.0,
+            "other": 1.0,
+            "ambiguous": 0.0
+          },
+          "selected_contact_frames": 0,
+          "selected_longest_contiguous_frames": 0,
+          "other_contact_frames": 107,
+          "other_longest_contiguous_frames": 107,
+          "ambiguous_contact_frames": 0,
+          "ambiguous_longest_contiguous_frames": 0
+        },
+        "ring": {
+          "selected_impulse_Ns": 0.0,
+          "other_impulse_Ns": 0.5699751297278411,
+          "ambiguous_impulse_Ns": 0.0,
+          "total_impulse_Ns": 0.5699751297278411,
+          "contact_points": 774,
+          "nearest_marker_distance_m": {
+            "minimum": 0.011499251296790839,
+            "median": 0.011515279771139246,
+            "maximum": 0.01166376925473706,
+            "last": 0.011566468513503899
+          },
+          "selected_vs_other_distance_gap_m": {
+            "minimum": 0.03240579540166649,
+            "median": 0.032428561164347225,
+            "maximum": 0.03243457660102944,
+            "last": 0.03242687860898011
+          },
+          "nearest_name_impulse_Ns": {
+            "pX_pY_pZ": 0.5699751297278411
+          },
+          "impulse_fraction": {
+            "selected": 0.0,
+            "other": 1.0,
+            "ambiguous": 0.0
+          },
+          "selected_contact_frames": 0,
+          "selected_longest_contiguous_frames": 0,
+          "other_contact_frames": 97,
+          "other_longest_contiguous_frames": 97,
+          "ambiguous_contact_frames": 0,
+          "ambiguous_longest_contiguous_frames": 0
+        },
+        "little": {
+          "selected_impulse_Ns": 0.0,
+          "other_impulse_Ns": 5.586862646348842,
+          "ambiguous_impulse_Ns": 0.0,
+          "total_impulse_Ns": 5.586862646348842,
+          "contact_points": 856,
+          "nearest_marker_distance_m": {
+            "minimum": 0.014838417537104055,
+            "median": 0.01484805342652298,
+            "maximum": 0.014992681514526988,
+            "last": 0.014842369354687626
+          },
+          "selected_vs_other_distance_gap_m": {
+            "minimum": 0.014926572846889634,
+            "median": 0.014958548919384435,
+            "maximum": 0.01496178378321825,
+            "last": 0.014959200993470137
+          },
+          "nearest_name_impulse_Ns": {
+            "pX_pY": 5.586862646348842
+          },
+          "impulse_fraction": {
+            "selected": 0.0,
+            "other": 1.0,
+            "ambiguous": 0.0
+          },
+          "selected_contact_frames": 0,
+          "selected_longest_contiguous_frames": 0,
+          "other_contact_frames": 107,
+          "other_longest_contiguous_frames": 107,
+          "ambiguous_contact_frames": 0,
+          "ambiguous_longest_contiguous_frames": 0
+        }
+      },
+      "gap_sensitivity_impulse_Ns": {
+        "0.00025": {
+          "thumb": {
+            "selected": 0.0,
+            "other": 4.7000250302013775,
+            "ambiguous": 0.0
+          },
+          "index": {
+            "selected": 0.0,
+            "other": 0.0,
+            "ambiguous": 0.0
+          },
+          "middle": {
+            "selected": 0.0,
+            "other": 0.41778508275016507,
+            "ambiguous": 0.0
+          },
+          "ring": {
+            "selected": 0.0,
+            "other": 0.5699751297278411,
+            "ambiguous": 0.0
+          },
+          "little": {
+            "selected": 0.0,
+            "other": 5.586862646348842,
+            "ambiguous": 0.0
+          }
+        },
+        "0.001": {
+          "thumb": {
+            "selected": 0.0,
+            "other": 4.7000250302013775,
+            "ambiguous": 0.0
+          },
+          "index": {
+            "selected": 0.0,
+            "other": 0.0,
+            "ambiguous": 0.0
+          },
+          "middle": {
+            "selected": 0.0,
+            "other": 0.41778508275016507,
+            "ambiguous": 0.0
+          },
+          "ring": {
+            "selected": 0.0,
+            "other": 0.5699751297278411,
+            "ambiguous": 0.0
+          },
+          "little": {
+            "selected": 0.0,
+            "other": 5.586862646348842,
+            "ambiguous": 0.0
+          }
+        },
+        "0.002": {
+          "thumb": {
+            "selected": 0.0,
+            "other": 4.7000250302013775,
+            "ambiguous": 0.0
+          },
+          "index": {
+            "selected": 0.0,
+            "other": 0.0,
+            "ambiguous": 0.0
+          },
+          "middle": {
+            "selected": 0.0,
+            "other": 0.41778508275016507,
+            "ambiguous": 0.0
+          },
+          "ring": {
+            "selected": 0.0,
+            "other": 0.5699751297278411,
+            "ambiguous": 0.0
+          },
+          "little": {
+            "selected": 0.0,
+            "other": 5.586862646348842,
+            "ambiguous": 0.0
+          }
+        }
+      }
+    }
+  },
+  "contact_inference_limits": "Uses actual contact positions and transformed source local COM center markers with .25/1/2mm group-distance sensitivity. Scalar impulse magnitudes do not establish resisting torque. v18 never reached opposition_hold or turn.",
+  "causal_scope": [
+    "Left index loss starts at 2063, before every right contact; right pressure cannot explain the first index loss.",
+    "Only right little first contacts at 2997; left ring pressure declines thereafter and reaches zero at 3007. This temporal association alone does not isolate mechanical causation.",
+    "Index and ring are both absent for ten consecutive frames 3007..3016; the unchanged original retained-contact safety rule terminates the task.",
+    "The final face angle is drift, not a turn; no opposed_face_turn action was executed."
+  ],
+  "minimal_next_candidate_for_parent_review": {
+    "change": "Continue the existing center left-index MPR contact feedback into the opposition stages only; keep its original range, increment and impulse references.",
+    "reference": "Recover un-offset reference as final applied MPR minus the offset actually applied in the last center row; carry the already-computed next_offset. Never add offset twice to fixed target.",
+    "freeze": "Keep native model, right trajectory/gains, ring support, all original acceptance/safety gates, and FullTask terminal contract unchanged.",
+    "required_before_run": "Host continuity/bounds tests plus joint index/ring envelope clearance preflight; then a new from-reset episode.",
+    "claim": "An experiment targeting loss before right contact, not a proven fix or a face-turn success."
+  },
+  "full_task_contract_evidence": "native_fulltask_v18_final_audit.json: 3017 contiguous audited transitions, one terminal/final, no post-terminal physics, raw_done=0, pickup_milestone absent"
+}

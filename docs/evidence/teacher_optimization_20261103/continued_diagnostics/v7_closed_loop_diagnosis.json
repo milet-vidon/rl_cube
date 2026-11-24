@@ -1,0 +1,93 @@
+{
+  "run": "teacher_left_bc_applied_v7_eval_9501",
+  "first_lift_step": 914,
+  "returned_to_table_step": 1472,
+  "maximum_lift_m": 0.3840581741333008,
+  "phases": {
+    "ready": {
+      "steps": 244,
+      "last_step": 243,
+      "last_height_m": -6.589889526287251e-07,
+      "last_max_arm_target_difference_rad": 0.0019061565399169922,
+      "last_max_finger_target_difference_rad": 0.004185020923614502
+    },
+    "preshape": {
+      "steps": 73,
+      "last_step": 316,
+      "last_height_m": -6.589889526287251e-07,
+      "last_max_arm_target_difference_rad": 0.003235936164855957,
+      "last_max_finger_target_difference_rad": 0.0007451772689819336
+    },
+    "lower": {
+      "steps": 61,
+      "last_step": 377,
+      "last_height_m": -6.589889526287251e-07,
+      "last_max_arm_target_difference_rad": 0.00327301025390625,
+      "last_max_finger_target_difference_rad": 0.0006235837936401367
+    },
+    "approach": {
+      "steps": 49,
+      "last_step": 426,
+      "last_height_m": 9.175777435310728e-06,
+      "last_max_arm_target_difference_rad": 0.004975318908691406,
+      "last_max_finger_target_difference_rad": 0.008699476718902588
+    },
+    "squeeze": {
+      "steps": 85,
+      "last_step": 511,
+      "last_height_m": 0.001221236228942879,
+      "last_max_arm_target_difference_rad": 0.02393817901611328,
+      "last_max_finger_target_difference_rad": 0.05320107936859131
+    },
+    "primary_lift": {
+      "steps": 120,
+      "last_step": 631,
+      "last_height_m": 0.0013859238624572834,
+      "last_max_arm_target_difference_rad": 0.256524920463562,
+      "last_max_finger_target_difference_rad": 0.06932133436203003
+    },
+    "elbow_outward": {
+      "steps": 129,
+      "last_step": 760,
+      "last_height_m": 0.0016967620849609455,
+      "last_max_arm_target_difference_rad": 0.7143595218658447,
+      "last_max_finger_target_difference_rad": 0.06565001606941223
+    },
+    "tilt_90": {
+      "steps": 611,
+      "last_step": 1371,
+      "last_height_m": 0.26842909717559815,
+      "last_max_arm_target_difference_rad": 0.4580305218696594,
+      "last_max_finger_target_difference_rad": 0.022742271423339844
+    },
+    "wrist_reconfigure": {
+      "steps": 181,
+      "last_step": 1552,
+      "last_height_m": 0.0003813471794128498,
+      "last_max_arm_target_difference_rad": 0.773007869720459,
+      "last_max_finger_target_difference_rad": 0.14985328912734985
+    },
+    "tilt_hold": {
+      "steps": 94,
+      "last_step": 1646,
+      "last_height_m": 0.0003820028305053791,
+      "last_max_arm_target_difference_rad": 0.7777866721153259,
+      "last_max_finger_target_difference_rad": 0.14793860912322998
+    },
+    "left_center_transport": {
+      "steps": 241,
+      "last_step": 1887,
+      "last_height_m": 0.0003818240165710529,
+      "last_max_arm_target_difference_rad": 0.7452655732631683,
+      "last_max_finger_target_difference_rad": 0.14284580945968628
+    },
+    "center_hold": {
+      "steps": 241,
+      "last_step": 2128,
+      "last_height_m": 0.00038164520263672674,
+      "last_max_arm_target_difference_rad": 0.7599131762981415,
+      "last_max_finger_target_difference_rad": 0.13754409551620483
+    }
+  },
+  "interpretation": "Compared to same-seed accepted source; state-policy closed-loop deviation, not independent success rate"
+}

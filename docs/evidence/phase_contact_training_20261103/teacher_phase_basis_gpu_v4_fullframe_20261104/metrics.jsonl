@@ -1,0 +1,12 @@
+{"phase": "ready", "samples": 244, "knots": 230, "all_frame_max_error_rad_before_bounds": 8.905466836184317e-08, "iterations": 28, "elapsed_s": 0.4211427030095365}
+{"phase": "preshape", "samples": 73, "knots": 44, "all_frame_max_error_rad_before_bounds": 7.099100551855031e-08, "iterations": 6, "elapsed_s": 0.4269515939813573}
+{"phase": "lower", "samples": 61, "knots": 42, "all_frame_max_error_rad_before_bounds": 8.14254705883144e-08, "iterations": 6, "elapsed_s": 0.4315741359896492}
+{"phase": "approach", "samples": 49, "knots": 45, "all_frame_max_error_rad_before_bounds": 1.5543122344752192e-15, "iterations": 6, "elapsed_s": 0.4365888799948152}
+{"phase": "squeeze", "samples": 85, "knots": 70, "all_frame_max_error_rad_before_bounds": 9.705633408074732e-08, "iterations": 9, "elapsed_s": 0.4446556129842065}
+{"phase": "primary_lift", "samples": 120, "knots": 112, "all_frame_max_error_rad_before_bounds": 3.928792513541168e-08, "iterations": 14, "elapsed_s": 0.4612492150045}
+{"phase": "elbow_outward", "samples": 129, "knots": 127, "all_frame_max_error_rad_before_bounds": 5.062616992290714e-14, "iterations": 16, "elapsed_s": 0.4860035979945678}
+{"phase": "tilt_90", "samples": 611, "knots": 579, "all_frame_max_error_rad_before_bounds": 1.826322357789678e-07, "iterations": 72, "elapsed_s": 0.8798880960093811}
+{"phase": "wrist_reconfigure", "samples": 181, "knots": 172, "all_frame_max_error_rad_before_bounds": 1.6399339475281494e-07, "iterations": 21, "elapsed_s": 0.9143922969815321}
+{"phase": "tilt_hold", "samples": 94, "knots": 8, "all_frame_max_error_rad_before_bounds": 3.774758283725532e-15, "iterations": 2, "elapsed_s": 0.9185807199974079}
+{"phase": "left_center_transport", "samples": 241, "knots": 61, "all_frame_max_error_rad_before_bounds": 1.2780088587405203e-07, "iterations": 8, "elapsed_s": 0.9262053199927323}
+{"phase": "center_hold", "samples": 241, "knots": 0, "all_frame_max_error_rad_before_bounds": 2.3314683517128287e-15, "iterations": 1, "elapsed_s": 0.9277704319974873}

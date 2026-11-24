@@ -1,0 +1,592 @@
+{
+  "schema": "complete_original_runs_inventory_v1",
+  "runs": [
+    {
+      "run": "revotron_cube_rl/runs/left_teacher_initial_state_dev_9502_20261104_v1",
+      "file_count": 59,
+      "files": [
+        {
+          "path": "asset_contract.json",
+          "bytes": 7411,
+          "sha256": "3367c3d471d25bb668b2f67fb9eca3ba34a28328b967ffbb63aef39cf1a365c7"
+        },
+        {
+          "path": "collection_provenance.json",
+          "bytes": 430457,
+          "sha256": "7ce5f35acc108c9709f22867aa5acf8b4b7221d77953ac512e7cb4d3c278b24a"
+        },
+        {
+          "path": "config.json",
+          "bytes": 7374,
+          "sha256": "d3c6084f638ed96ea299dbf76c386537051d3857c61675ddfc4abd5e9d925ae1"
+        },
+        {
+          "path": "dynamic_training_scene.usda",
+          "bytes": 135566,
+          "sha256": "ae2925c6613be2f2fa605222bd560a9494b5541c324df80dceb59558555ef6c7"
+        },
+        {
+          "path": "error.json",
+          "bytes": 2435,
+          "sha256": "01a557f2fe559e8cc6adb94f1e28d6eabaef64e911e00e07a42f1af78ed7946f"
+        },
+        {
+          "path": "initial_state.json",
+          "bytes": 5091,
+          "sha256": "5e01462999c769e28c2983079a5b9f51d77c70b3aa596dcc039d396dcc246e32"
+        },
+        {
+          "path": "physics_identity.json",
+          "bytes": 568351,
+          "sha256": "57e21f505e1833564889b4b776aac4e04e5eef11d1436e959761465928aae8c7"
+        },
+        {
+          "path": "plans/pickup_a89790acec328869f10c5a96a4c4a1b98cd9f990d49a12ddcb0ee42ea14f117b.json",
+          "bytes": 769090,
+          "sha256": "a89790acec328869f10c5a96a4c4a1b98cd9f990d49a12ddcb0ee42ea14f117b"
+        },
+        {
+          "path": "plans/tilt_042664df8a32eb602326e048ac54f48113fdf9112f144bd41d920ea6f90b1ecd.json",
+          "bytes": 824849,
+          "sha256": "042664df8a32eb602326e048ac54f48113fdf9112f144bd41d920ea6f90b1ecd"
+        },
+        {
+          "path": "plans/tilt_0bd98f1ce1507c9cffa25750d2612045e25b4a9015e25147cd35a9b4c099a7b7.json",
+          "bytes": 824850,
+          "sha256": "0bd98f1ce1507c9cffa25750d2612045e25b4a9015e25147cd35a9b4c099a7b7"
+        },
+        {
+          "path": "plans/tilt_347eea66c54e8154300b4a373908bc478286a108ddf9a8690753b35b053c0a64.json",
+          "bytes": 824851,
+          "sha256": "347eea66c54e8154300b4a373908bc478286a108ddf9a8690753b35b053c0a64"
+        },
+        {
+          "path": "plans/tilt_59967ed1d3d9d9abf9a694bf1fbf23e6bccb4ced973761b8883ff94911a4e2fe.json",
+          "bytes": 824852,
+          "sha256": "59967ed1d3d9d9abf9a694bf1fbf23e6bccb4ced973761b8883ff94911a4e2fe"
+        },
+        {
+          "path": "plans/tilt_61b04edf920f9a002c4222aecc0c64f2df1e5c1cfa727bc75e757fdb9bed5b22.json",
+          "bytes": 824853,
+          "sha256": "61b04edf920f9a002c4222aecc0c64f2df1e5c1cfa727bc75e757fdb9bed5b22"
+        },
+        {
+          "path": "plans/tilt_75a7d10626499e37ce430c516e1e8f6b234954e9b8a48f72cc97f50c21de8244.json",
+          "bytes": 824852,
+          "sha256": "75a7d10626499e37ce430c516e1e8f6b234954e9b8a48f72cc97f50c21de8244"
+        },
+        {
+          "path": "plans/tilt_767e962d58e51d0566f14501cb3210cf3063c68a6cad0f6c8331c485b2cffa68.json",
+          "bytes": 824852,
+          "sha256": "767e962d58e51d0566f14501cb3210cf3063c68a6cad0f6c8331c485b2cffa68"
+        },
+        {
+          "path": "plans/tilt_7906b0ca0d124d34a1bf9b46715d847fa32d0abf17533a913a4360301d556961.json",
+          "bytes": 824851,
+          "sha256": "7906b0ca0d124d34a1bf9b46715d847fa32d0abf17533a913a4360301d556961"
+        },
+        {
+          "path": "plans/tilt_7b9cc4d11155ce2cfacb848df50f346276d2ebabd728e6d5f51736e24bf02251.json",
+          "bytes": 824849,
+          "sha256": "7b9cc4d11155ce2cfacb848df50f346276d2ebabd728e6d5f51736e24bf02251"
+        },
+        {
+          "path": "plans/tilt_96ddf41ad81a6cfdcccaab0b703918e1681935cecddee508effbd537ea99f99b.json",
+          "bytes": 824851,
+          "sha256": "96ddf41ad81a6cfdcccaab0b703918e1681935cecddee508effbd537ea99f99b"
+        },
+        {
+          "path": "plans/tilt_9917d78fd75aed0ee0d020aa345f434307aee4a11b43d1d8f0965337c38ee502.json",
+          "bytes": 824851,
+          "sha256": "9917d78fd75aed0ee0d020aa345f434307aee4a11b43d1d8f0965337c38ee502"
+        },
+        {
+          "path": "plans/tilt_c4b9b8141f2440dc181c07f0fb7f02043da6f801b40ca91373850f3e5d9f077a.json",
+          "bytes": 824850,
+          "sha256": "c4b9b8141f2440dc181c07f0fb7f02043da6f801b40ca91373850f3e5d9f077a"
+        },
+        {
+          "path": "plans/tilt_c8b7b961333f432734c20450c787ef232d2bd1fe57a78ff4edc3279705d047a3.json",
+          "bytes": 824851,
+          "sha256": "c8b7b961333f432734c20450c787ef232d2bd1fe57a78ff4edc3279705d047a3"
+        },
+        {
+          "path": "projection_parameters.json",
+          "bytes": 11558,
+          "sha256": "890108362592dd288cfb1c5bee8eb824645043ed7be0733ada40adf9cb67da66"
+        },
+        {
+          "path": "runtime_protocol.json",
+          "bytes": 5320,
+          "sha256": "d51084b232955721e17a0be905d61218fdc50c68f9c10e203ee0a8a57c80ea46"
+        },
+        {
+          "path": "source_snapshot/articulated_cube_env.py",
+          "bytes": 5573,
+          "sha256": "dfad0023f9e2797d6ea8ea3ac08aa1b6889b7dbb4ff8398cd0ca11fa329bc707"
+        },
+        {
+          "path": "source_snapshot/collect_left_dagger_baseline_v3.py",
+          "bytes": 2254,
+          "sha256": "b87d0b1ac0c34e5b5c79678b068c9f55df5fa6baf0c5d0da5a231ff9976ea0e6"
+        },
+        {
+          "path": "source_snapshot/collect_left_dagger_draft_v1.py",
+          "bytes": 8365,
+          "sha256": "fc5dc17bc0f08a4fee1d468ed0b53dec6a6549083cbb7f86827dce96705ac6bf"
+        },
+        {
+          "path": "source_snapshot/config.json",
+          "bytes": 7670,
+          "sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4"
+        },
+        {
+          "path": "source_snapshot/dagger_collection_core_v1.py",
+          "bytes": 19875,
+          "sha256": "6d4b2a635f98b563c10388153e4116054eb03a383e898ae7c36d572c9b182411"
+        },
+        {
+          "path": "source_snapshot/dagger_projected_collection_v3.py",
+          "bytes": 8180,
+          "sha256": "268653ef77b2b500d5299ebb377a6311f98ed9d5199f0b345795b26a92669a33"
+        },
+        {
+          "path": "source_snapshot/dynamic_cube.py",
+          "bytes": 1848,
+          "sha256": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de"
+        },
+        {
+          "path": "source_snapshot/elbow_audit.py",
+          "bytes": 1906,
+          "sha256": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9"
+        },
+        {
+          "path": "source_snapshot/elbow_gate.py",
+          "bytes": 3947,
+          "sha256": "6473a2deec9034d4fa57079fe917d248c40db68f9768001456474bdc8eb6c526"
+        },
+        {
+          "path": "source_snapshot/elbow_handover.py",
+          "bytes": 4103,
+          "sha256": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e"
+        },
+        {
+          "path": "source_snapshot/environment.py",
+          "bytes": 20264,
+          "sha256": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7"
+        },
+        {
+          "path": "source_snapshot/finger_contact_audit.py",
+          "bytes": 2054,
+          "sha256": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0"
+        },
+        {
+          "path": "source_snapshot/isaac_compat.py",
+          "bytes": 3227,
+          "sha256": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825"
+        },
+        {
+          "path": "source_snapshot/joint_safety.py",
+          "bytes": 4195,
+          "sha256": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887"
+        },
+        {
+          "path": "source_snapshot/kinematics.py",
+          "bytes": 3543,
+          "sha256": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212"
+        },
+        {
+          "path": "source_snapshot/layer_turn_metrics.py",
+          "bytes": 2323,
+          "sha256": "c7fc5438c29c20632ad774c7f541d293e5f411ca8fff1454c830989536e1ccb4"
+        },
+        {
+          "path": "source_snapshot/left_contact_dagger_schema_v1.json",
+          "bytes": 4719,
+          "sha256": "164d991f6e05f34a6101d28ea764cfa8428ae5a2692f34ac151335345b2f8ce2"
+        },
+        {
+          "path": "source_snapshot/left_dagger_baseline_runtime_v3.py",
+          "bytes": 33572,
+          "sha256": "49af4b8a660c115a2f3d29826b25d1b5c176e24208dae692838b46398834a516"
+        },
+        {
+          "path": "source_snapshot/opposition_feedback.py",
+          "bytes": 2483,
+          "sha256": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883"
+        },
+        {
+          "path": "source_snapshot/opposition_grasp_v20.json",
+          "bytes": 6996,
+          "sha256": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a"
+        },
+        {
+          "path": "source_snapshot/opposition_teacher.py",
+          "bytes": 13679,
+          "sha256": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1"
+        },
+        {
+          "path": "source_snapshot/palm_contact_audit.py",
+          "bytes": 1379,
+          "sha256": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184"
+        },
+        {
+          "path": "source_snapshot/palm_handover.py",
+          "bytes": 6505,
+          "sha256": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f"
+        },
+        {
+          "path": "source_snapshot/palm_handover_audit.py",
+          "bytes": 4553,
+          "sha256": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1"
+        },
+        {
+          "path": "source_snapshot/phase_basis_policy_v4.py",
+          "bytes": 2358,
+          "sha256": "5d4dc98bf0dfc156dbcdd7fd9d3923f475573d03bc46df1e6c1d317625d8a327"
+        },
+        {
+          "path": "source_snapshot/phase_contact_policy.py",
+          "bytes": 5740,
+          "sha256": "5db8beb4f0dc86d4b6105669ee8da2fee93b319e2ba468a6c0c2c5b21dc94045"
+        },
+        {
+          "path": "source_snapshot/proximal_planner.py",
+          "bytes": 3030,
+          "sha256": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16"
+        },
+        {
+          "path": "source_snapshot/runtime_platform.py",
+          "bytes": 260,
+          "sha256": "c08829cde5986256dab4f5448edcecbf8932a3100ed7fab7dbdf0ad2f895772f"
+        },
+        {
+          "path": "source_snapshot/self_contact_audit.py",
+          "bytes": 1093,
+          "sha256": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c"
+        },
+        {
+          "path": "source_snapshot/tilt_audit.py",
+          "bytes": 5068,
+          "sha256": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995"
+        },
+        {
+          "path": "source_snapshot/tilt_collision_plan.py",
+          "bytes": 7133,
+          "sha256": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd"
+        },
+        {
+          "path": "source_snapshot/tilt_regrasp.py",
+          "bytes": 21716,
+          "sha256": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1"
+        },
+        {
+          "path": "source_snapshot/wrist_audit.py",
+          "bytes": 1467,
+          "sha256": "e0dcf531d4f9e74cce3293ff2f954486fd1277609a832becdcefbd4b4e36398f"
+        },
+        {
+          "path": "source_snapshot/wrist_direction.py",
+          "bytes": 4361,
+          "sha256": "0aa5858caf39dabbd92af4396370121de30dc673675a5c24f11ca8ff0c0c0ed5"
+        },
+        {
+          "path": "trajectory.jsonl",
+          "bytes": 52222849,
+          "sha256": "79e6ecc86df554bd596a8608df0a9d435dcaa7e701adce506feeab2fe16f3e1e"
+        },
+        {
+          "path": "transitions.jsonl",
+          "bytes": 91737522,
+          "sha256": "b981c659933255c27d3447d4e1dd22695ee602e98c715c9a37b9c8238d68f84d"
+        }
+      ]
+    },
+    {
+      "run": "revotron_cube_rl/runs/left_teacher_initial_state_dev_9503_20261104_v1",
+      "file_count": 56,
+      "files": [
+        {
+          "path": "asset_contract.json",
+          "bytes": 7411,
+          "sha256": "3367c3d471d25bb668b2f67fb9eca3ba34a28328b967ffbb63aef39cf1a365c7"
+        },
+        {
+          "path": "collection_provenance.json",
+          "bytes": 430457,
+          "sha256": "7ce5f35acc108c9709f22867aa5acf8b4b7221d77953ac512e7cb4d3c278b24a"
+        },
+        {
+          "path": "config.json",
+          "bytes": 7374,
+          "sha256": "d3c6084f638ed96ea299dbf76c386537051d3857c61675ddfc4abd5e9d925ae1"
+        },
+        {
+          "path": "dynamic_training_scene.usda",
+          "bytes": 135540,
+          "sha256": "b2666a88ff7eec948ace526d1b875f6a377515a9820484e81d69908ec2fbe73e"
+        },
+        {
+          "path": "error.json",
+          "bytes": 2435,
+          "sha256": "01a557f2fe559e8cc6adb94f1e28d6eabaef64e911e00e07a42f1af78ed7946f"
+        },
+        {
+          "path": "initial_state.json",
+          "bytes": 5088,
+          "sha256": "a3f20f66e00c26489e581043d9397126f73ec547c7280ea4aba41cc2c0001f2b"
+        },
+        {
+          "path": "physics_identity.json",
+          "bytes": 568351,
+          "sha256": "57e21f505e1833564889b4b776aac4e04e5eef11d1436e959761465928aae8c7"
+        },
+        {
+          "path": "plans/pickup_002d95e1fe12676863f64b75f6b16bb531f9e6c87b5fd80e24d8f5720e24c975.json",
+          "bytes": 764960,
+          "sha256": "002d95e1fe12676863f64b75f6b16bb531f9e6c87b5fd80e24d8f5720e24c975"
+        },
+        {
+          "path": "plans/tilt_0a9376c1629eace62c5dc008f853926094972dd631eb8c9266d570b420fdc4fb.json",
+          "bytes": 788063,
+          "sha256": "0a9376c1629eace62c5dc008f853926094972dd631eb8c9266d570b420fdc4fb"
+        },
+        {
+          "path": "plans/tilt_0cd07f5ffdc1cbf143f8f17f48ed1ce60b2e7c1b99d466642ce2aa391b22822a.json",
+          "bytes": 788062,
+          "sha256": "0cd07f5ffdc1cbf143f8f17f48ed1ce60b2e7c1b99d466642ce2aa391b22822a"
+        },
+        {
+          "path": "plans/tilt_10d720e95172c90f1be5303f97814c2b4c966b0dca3c2a6a2a6720d12f269c3a.json",
+          "bytes": 788062,
+          "sha256": "10d720e95172c90f1be5303f97814c2b4c966b0dca3c2a6a2a6720d12f269c3a"
+        },
+        {
+          "path": "plans/tilt_1b19f6ec26e3f63ba80d1b7d9f9302f4a147898d18e92a7b3b6341da8d5b42cf.json",
+          "bytes": 788062,
+          "sha256": "1b19f6ec26e3f63ba80d1b7d9f9302f4a147898d18e92a7b3b6341da8d5b42cf"
+        },
+        {
+          "path": "plans/tilt_423a7a983ac1867cb037b7263bcc263a00d99f0e3b3ac6ac6fc0d7e6ce8c2e42.json",
+          "bytes": 788063,
+          "sha256": "423a7a983ac1867cb037b7263bcc263a00d99f0e3b3ac6ac6fc0d7e6ce8c2e42"
+        },
+        {
+          "path": "plans/tilt_4c4a3489e18a1d5dd2fd36be8018fabd249e0a84d8e7e93909830516e5f5ddea.json",
+          "bytes": 788061,
+          "sha256": "4c4a3489e18a1d5dd2fd36be8018fabd249e0a84d8e7e93909830516e5f5ddea"
+        },
+        {
+          "path": "plans/tilt_77bed447c338f2ceac3e83e0f0b695ca588ca1e09e7a0689681b332e2c976d9d.json",
+          "bytes": 788062,
+          "sha256": "77bed447c338f2ceac3e83e0f0b695ca588ca1e09e7a0689681b332e2c976d9d"
+        },
+        {
+          "path": "plans/tilt_8b63708d8f05d6340f91b14bfd98d564cf5c13bc0d8a51b5631ff9c356b9854a.json",
+          "bytes": 788062,
+          "sha256": "8b63708d8f05d6340f91b14bfd98d564cf5c13bc0d8a51b5631ff9c356b9854a"
+        },
+        {
+          "path": "plans/tilt_93eefa8af02ace08f8364892cdc6b35ae9ed2b3af4e7c0ec30600e11f32c85bc.json",
+          "bytes": 788061,
+          "sha256": "93eefa8af02ace08f8364892cdc6b35ae9ed2b3af4e7c0ec30600e11f32c85bc"
+        },
+        {
+          "path": "plans/tilt_d45ca768c00212e8b63eb2d80ae8ec04b3ca3ed7badc882e9661bcee30290f9c.json",
+          "bytes": 788062,
+          "sha256": "d45ca768c00212e8b63eb2d80ae8ec04b3ca3ed7badc882e9661bcee30290f9c"
+        },
+        {
+          "path": "projection_parameters.json",
+          "bytes": 11558,
+          "sha256": "890108362592dd288cfb1c5bee8eb824645043ed7be0733ada40adf9cb67da66"
+        },
+        {
+          "path": "runtime_protocol.json",
+          "bytes": 5320,
+          "sha256": "556f19f435d74e022385686ad914ad87df112f3a5839d7fc70be37cb1f209f42"
+        },
+        {
+          "path": "source_snapshot/articulated_cube_env.py",
+          "bytes": 5573,
+          "sha256": "dfad0023f9e2797d6ea8ea3ac08aa1b6889b7dbb4ff8398cd0ca11fa329bc707"
+        },
+        {
+          "path": "source_snapshot/collect_left_dagger_baseline_v3.py",
+          "bytes": 2254,
+          "sha256": "b87d0b1ac0c34e5b5c79678b068c9f55df5fa6baf0c5d0da5a231ff9976ea0e6"
+        },
+        {
+          "path": "source_snapshot/collect_left_dagger_draft_v1.py",
+          "bytes": 8365,
+          "sha256": "fc5dc17bc0f08a4fee1d468ed0b53dec6a6549083cbb7f86827dce96705ac6bf"
+        },
+        {
+          "path": "source_snapshot/config.json",
+          "bytes": 7670,
+          "sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4"
+        },
+        {
+          "path": "source_snapshot/dagger_collection_core_v1.py",
+          "bytes": 19875,
+          "sha256": "6d4b2a635f98b563c10388153e4116054eb03a383e898ae7c36d572c9b182411"
+        },
+        {
+          "path": "source_snapshot/dagger_projected_collection_v3.py",
+          "bytes": 8180,
+          "sha256": "268653ef77b2b500d5299ebb377a6311f98ed9d5199f0b345795b26a92669a33"
+        },
+        {
+          "path": "source_snapshot/dynamic_cube.py",
+          "bytes": 1848,
+          "sha256": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de"
+        },
+        {
+          "path": "source_snapshot/elbow_audit.py",
+          "bytes": 1906,
+          "sha256": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9"
+        },
+        {
+          "path": "source_snapshot/elbow_gate.py",
+          "bytes": 3947,
+          "sha256": "6473a2deec9034d4fa57079fe917d248c40db68f9768001456474bdc8eb6c526"
+        },
+        {
+          "path": "source_snapshot/elbow_handover.py",
+          "bytes": 4103,
+          "sha256": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e"
+        },
+        {
+          "path": "source_snapshot/environment.py",
+          "bytes": 20264,
+          "sha256": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7"
+        },
+        {
+          "path": "source_snapshot/finger_contact_audit.py",
+          "bytes": 2054,
+          "sha256": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0"
+        },
+        {
+          "path": "source_snapshot/isaac_compat.py",
+          "bytes": 3227,
+          "sha256": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825"
+        },
+        {
+          "path": "source_snapshot/joint_safety.py",
+          "bytes": 4195,
+          "sha256": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887"
+        },
+        {
+          "path": "source_snapshot/kinematics.py",
+          "bytes": 3543,
+          "sha256": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212"
+        },
+        {
+          "path": "source_snapshot/layer_turn_metrics.py",
+          "bytes": 2323,
+          "sha256": "c7fc5438c29c20632ad774c7f541d293e5f411ca8fff1454c830989536e1ccb4"
+        },
+        {
+          "path": "source_snapshot/left_contact_dagger_schema_v1.json",
+          "bytes": 4719,
+          "sha256": "164d991f6e05f34a6101d28ea764cfa8428ae5a2692f34ac151335345b2f8ce2"
+        },
+        {
+          "path": "source_snapshot/left_dagger_baseline_runtime_v3.py",
+          "bytes": 33572,
+          "sha256": "49af4b8a660c115a2f3d29826b25d1b5c176e24208dae692838b46398834a516"
+        },
+        {
+          "path": "source_snapshot/opposition_feedback.py",
+          "bytes": 2483,
+          "sha256": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883"
+        },
+        {
+          "path": "source_snapshot/opposition_grasp_v20.json",
+          "bytes": 6996,
+          "sha256": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a"
+        },
+        {
+          "path": "source_snapshot/opposition_teacher.py",
+          "bytes": 13679,
+          "sha256": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1"
+        },
+        {
+          "path": "source_snapshot/palm_contact_audit.py",
+          "bytes": 1379,
+          "sha256": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184"
+        },
+        {
+          "path": "source_snapshot/palm_handover.py",
+          "bytes": 6505,
+          "sha256": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f"
+        },
+        {
+          "path": "source_snapshot/palm_handover_audit.py",
+          "bytes": 4553,
+          "sha256": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1"
+        },
+        {
+          "path": "source_snapshot/phase_basis_policy_v4.py",
+          "bytes": 2358,
+          "sha256": "5d4dc98bf0dfc156dbcdd7fd9d3923f475573d03bc46df1e6c1d317625d8a327"
+        },
+        {
+          "path": "source_snapshot/phase_contact_policy.py",
+          "bytes": 5740,
+          "sha256": "5db8beb4f0dc86d4b6105669ee8da2fee93b319e2ba468a6c0c2c5b21dc94045"
+        },
+        {
+          "path": "source_snapshot/proximal_planner.py",
+          "bytes": 3030,
+          "sha256": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16"
+        },
+        {
+          "path": "source_snapshot/runtime_platform.py",
+          "bytes": 260,
+          "sha256": "c08829cde5986256dab4f5448edcecbf8932a3100ed7fab7dbdf0ad2f895772f"
+        },
+        {
+          "path": "source_snapshot/self_contact_audit.py",
+          "bytes": 1093,
+          "sha256": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c"
+        },
+        {
+          "path": "source_snapshot/tilt_audit.py",
+          "bytes": 5068,
+          "sha256": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995"
+        },
+        {
+          "path": "source_snapshot/tilt_collision_plan.py",
+          "bytes": 7133,
+          "sha256": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd"
+        },
+        {
+          "path": "source_snapshot/tilt_regrasp.py",
+          "bytes": 21716,
+          "sha256": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1"
+        },
+        {
+          "path": "source_snapshot/wrist_audit.py",
+          "bytes": 1467,
+          "sha256": "e0dcf531d4f9e74cce3293ff2f954486fd1277609a832becdcefbd4b4e36398f"
+        },
+        {
+          "path": "source_snapshot/wrist_direction.py",
+          "bytes": 4361,
+          "sha256": "0aa5858caf39dabbd92af4396370121de30dc673675a5c24f11ca8ff0c0c0ed5"
+        },
+        {
+          "path": "trajectory.jsonl",
+          "bytes": 49022579,
+          "sha256": "cbdcf2b0dae1993f932a391ca58cebf78222e6a5fcb4344cf1aca5704a613084"
+        },
+        {
+          "path": "transitions.jsonl",
+          "bytes": 85873220,
+          "sha256": "342cf0b009e838f49aa8c7ef03b379e27e266c3e2e779ca9228c2b7407f06f38"
+        }
+      ]
+    }
+  ]
+}

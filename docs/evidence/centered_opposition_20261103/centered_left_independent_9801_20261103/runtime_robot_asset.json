@@ -1,0 +1,7 @@
+{
+  "entry": "/home/brainco/rl_cube/github_project/revotron_revo3/source/revotron_system/usd/revotron_bimanual_revo3_wrist_mesh_v1.usda",
+  "usd_layers_sha256": {
+    "/home/brainco/rl_cube/github_project/revotron_revo3/source/revotron_system/usd/revotron_bimanual_revo3_wrist_mesh_v1.usda": "1ea674035491ae19875c61813ef8cfb1fd26c4b0b58de3ae3a2a3f04b741a143",
+    "/home/brainco/rl_cube/github_project/revotron_revo3/source/revotron_system/usd/revotron_bimanual_revo3_56dof.usd": "c066a65ff5ac77a8fb0a5fb3658c71f151b64777cdc9a8f66a0739d4033170a2"
+  }
+}

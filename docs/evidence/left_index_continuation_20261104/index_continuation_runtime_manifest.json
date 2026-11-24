@@ -1,0 +1,12 @@
+{
+  "single_face_experiment.py": {
+    "base_sha256": "36d98c64fbeb0110506d11aa93b98a3fa392e198716c5a2d0b86ce815e69917f",
+    "candidate_sha256": "9a523d098c5276a0f471ee63dcf242e69a574923fc15f789f23dd8ebeee7604b",
+    "candidate": "work/teacher_optimization_20261103/single_face_experiment.py.index_continuation_candidate"
+  },
+  "opposed_grasp_runtime.py": {
+    "base_sha256": "0b3de71cf3c5df1ae30bc046baaae087797d3af3d70a1d243cf24150d84f458c",
+    "candidate_sha256": "26826532ab7a6edd79df77673f2c891279b4b521aec1ec7d59c943d9872ac4a3",
+    "candidate": "work/teacher_optimization_20261103/opposed_grasp_runtime.py.index_continuation_candidate"
+  }
+}

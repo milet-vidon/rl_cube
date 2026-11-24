@@ -1,0 +1,87 @@
+{
+  "policy": "v5",
+  "seed": 9501,
+  "split": "development_seen_seed",
+  "episode_name": "left_state_residual_v5_long_eval_9501_20261104",
+  "max_steps": 3500,
+  "baseline_runtime_module": "/home/brainco/rl_cube/github_project/revotron_cube_rl/left_dagger_baseline_runtime_v3.py",
+  "baseline_runtime_source_root": "/home/brainco/rl_cube/github_project/revotron_cube_rl",
+  "selection_basis": "development offline fit only; no independent generalization or closed-loop selection claim",
+  "evaluated_policy_checkpoint_sha256": "1c663e17f6157273ee4c80b1e6ebf1c292b6c9972278041936b56943212db98c",
+  "evaluated_policy_snapshot": "runs/left_state_residual_v5_long_eval_9501_20261104/checkpoints/evaluated_policy.pt",
+  "frozen_v4_baseline_checkpoint_sha256": "d2493b00df27b8d84ae69da3b399b3beb926b77fdd87a9b51aa6a2b1b23a36a4",
+  "baseline_snapshot": "runs/left_state_residual_v5_long_eval_9501_20261104/checkpoints/frozen_v4_baseline.pt",
+  "qualification_sha256": "71f98935291201335bfe24f8a19b133ee475f7e0dc5060ce553c97f93fd617d5",
+  "expected_physics_family_sha256": "b2f9feb645c8d92e2da3bb78653165292a5649e59864dee4b1de82e904854192",
+  "left_teacher_position_action_steps": 0,
+  "left_policy_begins_at_reset_step": 0,
+  "right_and_public_stage_controller": "original teacher",
+  "original_teacher_left_gain_schedule": "first tilt_hold K20, explicitly audited; not a neural gain policy",
+  "actor_state_scope": "actual privileged simulator q/qd/commands/cube/contact history; not vision",
+  "actor_feature_schema": "v4_observed198_cube_velocity6_impulse10_contact_presence10_centroid30_normal30_v5",
+  "actor_feature_count": 284,
+  "actor_feature_layout": {
+    "q": [
+      0,
+      56
+    ],
+    "qd": [
+      56,
+      112
+    ],
+    "applied_target": [
+      112,
+      168
+    ],
+    "cube_position": [
+      168,
+      171
+    ],
+    "cube_quaternion": [
+      171,
+      175
+    ],
+    "point_impulses": [
+      175,
+      185
+    ],
+    "phase": [
+      185,
+      197
+    ],
+    "phase_progress": [
+      197,
+      198
+    ],
+    "cube_velocity": [
+      198,
+      204
+    ],
+    "finger_impulses": [
+      204,
+      214
+    ],
+    "contact_presence": [
+      214,
+      224
+    ],
+    "relative_contact_centroids": [
+      224,
+      254
+    ],
+    "contact_normals": [
+      254,
+      284
+    ]
+  },
+  "expert_hidden_or_labels_in_actor": false,
+  "executor_identity_in_actor_features": false,
+  "corrective_expert_labels": "counterfactual audit only; separate future qualification required",
+  "source_sha256": {
+    "phase_residual_policy_v5.py": "5bb033710c18c21310b526d539251794a37efb31a2f139a68b052983c363f412",
+    "train_phase_residual_v5.py": "74cc6077ae7bb135260b9fc1f4c0c99765653af8dd243301563e61808a027a6d",
+    "dagger_residual_dataset_v5.py": "69c1cef251a4180f9839a2fc27ecbb738ce6f87828d5a9bc513a19aa40621cb1",
+    "state_residual_eval_runtime_v5.py": "90a1ef7d5d8cfdebd5e05df5ec598d48cea7ae7bcfaf145a357d61a5e7727d64",
+    "evaluate_state_residual_v5.py": "9bff577c826107574f6d1e435a07ba4427b7aa5b05777b315a85b4a0261ec139"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "version": "j5_outward_j6_inward_v1",
+  "center_root_m": [0.50, 0.0, 0.15],
+  "j5_outward_delta_deg": 25.0,
+  "j6_inward_delta_deg": 18.0,
+  "j7_preferred_abs_deg": 35.0,
+  "minimum_j5_outward_delta_deg": 10.0,
+  "minimum_j6_inward_delta_deg": 10.0,
+  "maximum_j7_abs_deg": 40.0,
+  "minimum_j7_reduction_deg": 5.0,
+  "transport_seconds": 8.0,
+  "hold_steps": 121,
+  "interpretation": "For the accepted left-arm branch, increase J5 forearm roll and positive J6 inward side bend, and reduce J7 flexion. Shoulder/elbow joints still assist translation."
+}

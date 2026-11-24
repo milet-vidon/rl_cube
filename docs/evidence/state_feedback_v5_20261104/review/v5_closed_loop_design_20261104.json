@@ -1,0 +1,43 @@
+{
+  "schema": "v5_dynamic_stage_matched_closed_loop_design_v1",
+  "status": "design_only_not_simulator_validation",
+  "implementation_owner": "left_contact_diagnosis",
+  "review_owner": "training_path_audit",
+  "recommended_scope": "Left-only learned control from reset through original wrist gate, seed9501 development",
+  "policies": [
+    "v5 bounded GRU residual over frozen v4",
+    "matched frozen v4-only control"
+  ],
+  "shared_conditions": [
+    "One frozen driver/runtime interface for both policy choices",
+    "Original baseline ordinary27body physics; exact fingerprint match with data",
+    "Original teacher stage/gain/right native controller and original allfinger/wrist/safety/assembly gates",
+    "No center stage or full cube solution claim"
+  ],
+  "preflight": [
+    "Verify source/data/checkpoint hashes",
+    "Require metadata names/index order == frozen v4 == env configuration",
+    "Verify original projection parameters and actual physics fingerprint",
+    "Archive separate evaluation protocol distinguishing behavior model from frozen baseline dependency"
+  ],
+  "per_step": [
+    "Capture actual previous executed state and contacts",
+    "Query original teacher exactly once for current public phase/right native/gain schedule and counterfactual audit; no execution of teacher left action",
+    "After same-action phase resolution, run model on actual observation; advance GRU once; reset only at episode reset",
+    "Replace exactly left28 normalized action slice and bitwise preserve original right28",
+    "Execute original env.step/project_target and preserve first-tilt K20 schedule",
+    "Record proposed residual/target, original native action, actual_applied, measured state, original gates, raw done/truncation and counterfactual labels separately",
+    "Stop immediately on any raw done/drop/timeout/gate failure or original wrist gate completion; no teacher rescue and no post-terminal step"
+  ],
+  "memory_policy": "As v3, preserve original first-arrival initialization then explicitly sync expert bookkeeping to actual commands; expert memory never enters actor features",
+  "history_policy": "EpisodeActor reset once before step0; contiguous IDs and exactly one actor call per executed step",
+  "claims": {
+    "left_policy_execution_from_reset": true,
+    "teacher_left_executed_steps": 0,
+    "pure_student_episode_claim": false,
+    "right_and_stage_controller": "original teacher",
+    "independent_generalization": false
+  },
+  "comparison": "v5 gate pass alone is combination success; improvement attributable to state feedback requires matched v4 under same dynamic phase/gain/right settings. Historical fixed-phase v4 failure is not that control.",
+  "assisted_diagnostic": "Only a separate explicitly named run may execute teacher warmup; never silently change the pure-left evaluation."
+}

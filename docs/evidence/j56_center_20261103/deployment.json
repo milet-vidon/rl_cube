@@ -1,0 +1,13 @@
+{
+  "directory": "/home/brainco/rl_cube/revotron_cube_rl",
+  "sha256": {
+    "center_j56_plan.py": "5c9b49965ad4aa5e07d63ba7bc9e327fdf87096a4a19c6d39068bed64868fd48",
+    "center_j56_audit.py": "a77def5e36aede51e248cd7495a14ee858d7a35d83b233f3c6b63d78079c1659",
+    "center_j56_protocol_v1.json": "b54566fc7a18187c71f6cc3d0f18020af7007e56e875c8c8515be474e515c7c4",
+    "center_j56_protocol_v2.json": "844dab9ca412244a3b67d8c462ea0e93b4fbbceed558e5802330e2e0e9a27581",
+    "center_j56_protocol_v3.json": "1a20c06c21da5e631790207286493852353338986bd16d7f891196861f900197",
+    "test_center_j56_audit.py": "53125a48cb68be504848fa1733d57833c139f7327931e7fee443abe9c6efca1b",
+    "centered_opposition_runtime.py": "95734758ff1c5971b2b534731f3496d00501aa015466e3705ae7ac89f2de7494",
+    "single_face_experiment.py": "f765a00ba08c1b7a6119a9cd35f43c1c3d1f0eb1a807ba91f611ebec0297beab"
+  }
+}

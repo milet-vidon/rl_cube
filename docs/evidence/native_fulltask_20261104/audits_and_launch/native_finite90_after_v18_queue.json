@@ -1,0 +1,27 @@
+{
+  "state": "failed",
+  "returncode": 1,
+  "source_sha256": {
+    "finite_angle_cube_native_probe.py": "fc2c49a3464228d8ad2c0d8fb96c123ea1776b297c55a9a959fb0289d0faa870",
+    "finite_cube_pose_math.py": "1527f6c7e29e28e8264e12c65aed5ef2d4c82330a370f709359157094ce73940",
+    "passive_cube_articulation.py": "949c3ede71c6ac4cd32b359b08ab110c72c354888d32541136aa2330edce980c",
+    "cube_articulation_probe_v2.py": "bea19566ff4071dd26882f578703995ed7a74856f3218507fe9b3df8bee77881"
+  },
+  "robot_turn_success_claim": false,
+  "workflow": {
+    "status": "failed",
+    "sequential_processes": true,
+    "phases": [
+      {
+        "phase": "baseline",
+        "returncode": 0
+      },
+      {
+        "phase": "candidate",
+        "returncode": 1
+      }
+    ],
+    "robot_turn_success_claim": false,
+    "error": "Traceback (most recent call last):\n  File \"/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/finite_angle_cube_native_probe.py\", line 272, in main\n    if completed.returncode: raise RuntimeError(phase + \" process failed\")\n                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: candidate process failed\n"
+  }
+}

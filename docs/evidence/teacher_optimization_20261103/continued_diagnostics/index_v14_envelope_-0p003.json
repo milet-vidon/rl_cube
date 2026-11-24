@@ -1,0 +1,122 @@
+{
+  "scope": "diagnostic envelope only; no modified production files or physical rollout",
+  "run": "teacher_joint_paced_baseline_v14_20261103",
+  "passed": true,
+  "checks": 9084,
+  "offset_rad": [
+    -0.003,
+    0.0
+  ],
+  "absolute_samples_rad": [
+    0.003237104069441557,
+    0.004055446964688599,
+    0.004873789859935642,
+    0.005692132755182684,
+    0.006237104069441557,
+    0.006510475650429726
+  ],
+  "baseline_rad": 0.006237104069441557,
+  "initial_rad": 0.006510475650429726,
+  "failures": [],
+  "margins": {
+    "other_hand_or_arm": {
+      "pair": [
+        "left_index_MPR_link",
+        "Link1_R"
+      ],
+      "joint_value_rad": 0.003237104069441557,
+      "broadphase_sentinel": 1.0,
+      "minimum_distance_lower_bound_m": 0.004,
+      "exact_minimum_evaluated": false
+    },
+    "other_robot": {
+      "pair": [
+        "left_index_MPR_link",
+        "usd_torso:/World/Robot/world/collisions/base_link/node_STL_BINARY_/mesh"
+      ],
+      "distance_m": 0.4772306095310761,
+      "joint_value_rad": 0.003237104069441557,
+      "exact_minimum_evaluated": true
+    },
+    "other_left_finger": {
+      "pair": [
+        "left_index_MPR_link",
+        "left_middle_MPR_link"
+      ],
+      "distance_m": 0.003857129378119876,
+      "joint_value_rad": 0.003237104069441557,
+      "exact_minimum_evaluated": true
+    },
+    "stationary_non_DIP": {
+      "pair": [
+        "left_index_PIP_link",
+        "stationary_layers"
+      ],
+      "distance_m": 0.015965063844998066,
+      "joint_value_rad": 0.003237104069441557,
+      "exact_minimum_evaluated": true
+    },
+    "stationary_DIP": {
+      "pair": [
+        "left_index_DIP_rubber_link",
+        "stationary_layers"
+      ],
+      "distance_m": -0.0012296962249445987,
+      "joint_value_rad": 0.003237104069441557,
+      "exact_minimum_evaluated": true
+    },
+    "turning_layer": {
+      "pair": [
+        "left_index_MPR_link",
+        "target_nZ_layer"
+      ],
+      "joint_value_rad": 0.003237104069441557,
+      "broadphase_sentinel": 1.0,
+      "minimum_distance_lower_bound_m": 0.004,
+      "exact_minimum_evaluated": false
+    }
+  },
+  "static_index_ring_pair": {
+    "static_pair_clearance_passed": true,
+    "full_combined_envelope_validated": false,
+    "checks": 4374,
+    "minimum_distance_m": 0.02991782213246484,
+    "pair": [
+      "left_index_MCP_link",
+      "left_ring_MPR_link",
+      0.003237104069441557,
+      0.47986575961112976
+    ],
+    "index_values_rad": [
+      0.003237104069441557,
+      0.004055446964688599,
+      0.004873789859935642,
+      0.005692132755182684,
+      0.006237104069441557,
+      0.006510475650429726
+    ],
+    "ring_values_rad": [
+      0.47986575961112976,
+      0.4808636381285531,
+      0.4818615166459765,
+      0.48285090923309326,
+      0.4828593951633998,
+      0.4838572736808232,
+      0.48485515219824654,
+      0.48585303071566993,
+      0.48685090923309327
+    ],
+    "physics_validated": false,
+    "request_sha256": "6a5d5359d85b50a7b130c66d446324c5cfbbc69f6198699bb36046f48e14a2ce",
+    "baseline_sha256": "1a2d4281620f41269ccfea4f5964e7db0b01ea3261e536e5bc3c47f221f1e3b5"
+  },
+  "elapsed_s": 89.87707729701651,
+  "workers": 12,
+  "maximum_child_RSS_KiB": 206060,
+  "candidate_source_sha256": "16a5743238160cbcf55abd23a8a11dc7cb998b9926f288a46057de20aff4286d",
+  "diagnostic_source_sha256": "d3e09003f8a7e053c4956baa2dcac908f97e4715eeabc57931fe0c6c2e78d659",
+  "derived_source_sha256": "b8abe4a1cf2ec69d0889ee4252449dd64f3816b8f45586ca67072cff93142dc9",
+  "plan_sha256": "0deea5b4617be2f901d15dbcbc18b85776833f962f09527690192f320291f8aa",
+  "request_sha256": "611f58dfd9ec8bf2cb5bf55dcd49e2a5468cf0546c887f5a9abd4fb15bad7d68",
+  "distance_reporting_note": "CollisionScene.distance returns 1.0 as a broad-phase sentinel when bounding spheres are separated by >4mm. Such entries establish a >4mm lower bound, not a measured 1m clearance."
+}

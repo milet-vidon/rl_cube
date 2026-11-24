@@ -1,0 +1,57 @@
+{
+  "schema": "native_v19_failure_archive_summary_v1",
+  "result_subset": {
+    "seed": 9501,
+    "split": "development",
+    "steps": 3019,
+    "failure": "left_grasp_lost_during_opposition",
+    "dynamic_grasp_passed": true,
+    "center_transport_passed": true,
+    "face_turn_validated": false,
+    "cube_pose_writes_during_control": 0,
+    "checkpoint": null,
+    "neural_policy_trained": false,
+    "task_episode": {
+      "task_id": "opposed_nZ_15deg",
+      "target_degrees": 15.0,
+      "scope": "single_target_face_turn_development",
+      "terminated": true,
+      "truncated": false,
+      "done": true,
+      "success": false,
+      "reason": "left_grasp_lost_during_opposition",
+      "reward": 0.0,
+      "eligible_for_ppo": false,
+      "task_episodes": 1,
+      "task_successes": 0,
+      "completed_control_steps": 3019,
+      "step_audit_pending": false,
+      "pickup_milestone_step": null,
+      "raw_pickup_success_frames": 0,
+      "raw_pickup_done_frames": 0,
+      "face_turn_validated": false,
+      "six_face_solution_validated": false
+    }
+  },
+  "audit": {
+    "file": "native_index_v19_final_contract_audit_v2.json",
+    "sha256": "f5897fa75e90f8f1b1af888f127d731191abacbdd006ca936bfadcf1ac2f2b7d",
+    "native_27_body_66_DOF_initialization_verified": true,
+    "no_postterminal_control_step": true,
+    "all_3019_pose_reset_counts": 2,
+    "all_frozen_source_hashes_verified": true
+  },
+  "passive_evidence_limit": "66-DOF armature/friction/drive/effort values are native initialization readback. Zero control actuation additionally follows from the frozen passive facade and runtime source; no per-step native effort stream was recorded, so continuous readback is not claimed.",
+  "diagnosis": {
+    "file": "native_v19_contact_failure_diagnosis.json",
+    "sha256": "fc8cdc9635f903545ba4b657ef7fb9e3a33a2bdf6e4e1bb49b856a1970241874",
+    "geometric_material_point_inference_is_not_actor_contact_identity_or_signed_torque": true
+  },
+  "next_candidate_geometry_only": {
+    "file": "native_v20_index_candidate_geometry.json",
+    "scope": "Pure CPU finite-geometry design evidence; no v20 physics or contact recovery success claimed."
+  },
+  "scope": "Completed failed development teacher episode, not a trained neural policy, successful face turn, or six-face/vision solution.",
+  "all_original_result_and_source_bytes_preserved": true,
+  "git_stage_commit_push_performed": false
+}

@@ -1,0 +1,16 @@
+{
+  "status": "failed",
+  "sequential_processes": true,
+  "phases": [
+    {
+      "phase": "baseline",
+      "returncode": 0
+    },
+    {
+      "phase": "candidate",
+      "returncode": 1
+    }
+  ],
+  "robot_turn_success_claim": false,
+  "error": "Traceback (most recent call last):\n  File \"/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/finite_angle_cube_native_probe.py\", line 272, in main\n    if completed.returncode: raise RuntimeError(phase + \" process failed\")\n                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: candidate process failed\n"
+}

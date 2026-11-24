@@ -1,0 +1,38 @@
+{
+  "kind": "static_asset_port_audit",
+  "physics_run": false,
+  "source_files_sha256": {
+    "isaac_mujoco_cube/upstream/mujoco_cube-main/cube_3x3x3.xml": "b7b32a4a8624241817aafcbdba20217b7250fb9c570440af6fbdcf5ec084c023",
+    "isaac_mujoco_cube/cube_model.usda": "c41baa3cd75db5a497c5878d0e18bb6b3316124e0f1935867de8305b44e4eb11",
+    "isaac_mujoco_cube/contact_test.py": "09c7333819c5711a951082e607a84c6318f37dbd4144e655d7059fcc871c1e0d"
+  },
+  "mjcf_cubelet_joint_defaults": {
+    "type": "ball",
+    "armature": "0.0001",
+    "damping": "0.0005 0.0005 0.0005",
+    "frictionloss": "0.001"
+  },
+  "mjcf_cubelet_geom_defaults": {
+    "type": "mesh",
+    "condim": "1",
+    "material": "sticker"
+  },
+  "usd_revolute_joint_count": 6,
+  "usd_spherical_joint_count": 20,
+  "usd_authored_parameter_occurrences": {
+    "armature": 0,
+    "jointFriction": 0,
+    "frictionloss": 0,
+    "DriveAPI": 0,
+    "physics:diagonalInertia": 0,
+    "physxRigidBody:angularDamping = 0.2": 27
+  },
+  "importer_source_parameter_occurrences": {
+    "armature": 0,
+    "frictionloss": 0,
+    "damping": 0
+  },
+  "interpretation": "The port does not explicitly map the MJCF armature, joint damping or frictionloss. A rigid-body angular damping coefficient is authored instead. This is not evidence of equivalent dynamics; the contribution to failed turns remains unproven. Damping vector semantics require the upstream MuJoCo version, not an assumed per-axis interpretation.",
+  "reference": "https://mujoco.readthedocs.io/en/3.13.0/XMLreference.html#body-joint-armature",
+  "next_validation": "Versioned passive-dynamics mapping or calibration, then free-core grasp and all-nine-cubelet contact turn; no cube pose writes or active face drive."
+}

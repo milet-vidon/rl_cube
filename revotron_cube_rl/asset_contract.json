@@ -150,12 +150,12 @@
     {
       "attribute": "/World/Robot/Link7_L/visuals/left_palm_led_link/Scene/Looks/screen/screen.inputs:diffuse_texture",
       "source": "..\\meshes\\hands\\visual\\textures\\revo3_screen.png",
-      "resolved": "/home/brainco/rl_cube/revotron_revo3/source/revotron_system/meshes/hands/visual/textures/revo3_screen.png"
+      "resolved": "/home/brainco/rl_cube/github_project/revotron_revo3/source/revotron_system/meshes/hands/visual/textures/revo3_screen.png"
     },
     {
       "attribute": "/World/Robot/Link7_R/visuals/right_palm_led_link/Scene/Looks/screen/screen.inputs:diffuse_texture",
       "source": "..\\meshes\\hands\\visual\\textures\\revo3_screen.png",
-      "resolved": "/home/brainco/rl_cube/revotron_revo3/source/revotron_system/meshes/hands/visual/textures/revo3_screen.png"
+      "resolved": "/home/brainco/rl_cube/github_project/revotron_revo3/source/revotron_system/meshes/hands/visual/textures/revo3_screen.png"
     }
   ],
   "project_quaternion_convention": "wxyz",

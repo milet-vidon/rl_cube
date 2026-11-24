@@ -1,0 +1,334 @@
+{
+  "schema": "exact_copy_failed_startup_archive_v1",
+  "source_files": [
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/checkpoints/evaluated_policy.pt",
+      "archive": "failed_run/checkpoints/evaluated_policy.pt",
+      "bytes": 621652,
+      "sha256": "1c663e17f6157273ee4c80b1e6ebf1c292b6c9972278041936b56943212db98c"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/checkpoints/frozen_v4_baseline.pt",
+      "archive": "failed_run/checkpoints/frozen_v4_baseline.pt",
+      "bytes": 752269,
+      "sha256": "d2493b00df27b8d84ae69da3b399b3beb926b77fdd87a9b51aa6a2b1b23a36a4"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/dynamic_training_scene.usda",
+      "archive": "failed_run/dynamic_training_scene.usda",
+      "bytes": 135261,
+      "sha256": "dae49fa409389e77886baab0996e9d436c4a2a65877246af251548b1df460a17"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/error.json",
+      "archive": "failed_run/error.json",
+      "bytes": 955,
+      "sha256": "6316bc243c7e8bfb92cf55268914ff38446ebcbcbc59f729349564c2a2e84a76"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/evaluation_preflight.json",
+      "archive": "failed_run/evaluation_preflight.json",
+      "bytes": 3055,
+      "sha256": "7aebab7d6f8e1ac4f8bc9c076fc6e4a4b2851357d139355312a4c1658e3c491a"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/evaluation_source_snapshot/dagger_residual_dataset_v5.py",
+      "archive": "failed_run/evaluation_source_snapshot/dagger_residual_dataset_v5.py",
+      "bytes": 16530,
+      "sha256": "69c1cef251a4180f9839a2fc27ecbb738ce6f87828d5a9bc513a19aa40621cb1"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/evaluation_source_snapshot/evaluate_state_residual_v5.py",
+      "archive": "failed_run/evaluation_source_snapshot/evaluate_state_residual_v5.py",
+      "bytes": 8927,
+      "sha256": "9bff577c826107574f6d1e435a07ba4427b7aa5b05777b315a85b4a0261ec139"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/evaluation_source_snapshot/phase_residual_policy_v5.py",
+      "archive": "failed_run/evaluation_source_snapshot/phase_residual_policy_v5.py",
+      "bytes": 8422,
+      "sha256": "5bb033710c18c21310b526d539251794a37efb31a2f139a68b052983c363f412"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/evaluation_source_snapshot/state_residual_eval_runtime_v5.py",
+      "archive": "failed_run/evaluation_source_snapshot/state_residual_eval_runtime_v5.py",
+      "bytes": 15706,
+      "sha256": "90a1ef7d5d8cfdebd5e05df5ec598d48cea7ae7bcfaf145a357d61a5e7727d64"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/evaluation_source_snapshot/train_phase_residual_v5.py",
+      "archive": "failed_run/evaluation_source_snapshot/train_phase_residual_v5.py",
+      "bytes": 17887,
+      "sha256": "74cc6077ae7bb135260b9fc1f4c0c99765653af8dd243301563e61808a027a6d"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/reviewed_transition_qualification.json",
+      "archive": "failed_run/reviewed_transition_qualification.json",
+      "bytes": 29593,
+      "sha256": "71f98935291201335bfe24f8a19b133ee475f7e0dc5060ce553c97f93fd617d5"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/runtime_protocol.json",
+      "archive": "failed_run/runtime_protocol.json",
+      "bytes": 8794,
+      "sha256": "01c8da15c54a4cd675805d97e78108ea5a72dc422b1fad780e0da30b509d5fb2"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/articulated_cube_env.py",
+      "archive": "failed_run/source_snapshot/articulated_cube_env.py",
+      "bytes": 5573,
+      "sha256": "dfad0023f9e2797d6ea8ea3ac08aa1b6889b7dbb4ff8398cd0ca11fa329bc707"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/collect_left_dagger_baseline_v3.py",
+      "archive": "failed_run/source_snapshot/collect_left_dagger_baseline_v3.py",
+      "bytes": 2254,
+      "sha256": "b87d0b1ac0c34e5b5c79678b068c9f55df5fa6baf0c5d0da5a231ff9976ea0e6"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/collect_left_dagger_draft_v1.py",
+      "archive": "failed_run/source_snapshot/collect_left_dagger_draft_v1.py",
+      "bytes": 8365,
+      "sha256": "fc5dc17bc0f08a4fee1d468ed0b53dec6a6549083cbb7f86827dce96705ac6bf"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/config.json",
+      "archive": "failed_run/source_snapshot/config.json",
+      "bytes": 7670,
+      "sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/dagger_collection_core_v1.py",
+      "archive": "failed_run/source_snapshot/dagger_collection_core_v1.py",
+      "bytes": 19875,
+      "sha256": "6d4b2a635f98b563c10388153e4116054eb03a383e898ae7c36d572c9b182411"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/dagger_projected_collection_v3.py",
+      "archive": "failed_run/source_snapshot/dagger_projected_collection_v3.py",
+      "bytes": 8180,
+      "sha256": "268653ef77b2b500d5299ebb377a6311f98ed9d5199f0b345795b26a92669a33"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/dynamic_cube.py",
+      "archive": "failed_run/source_snapshot/dynamic_cube.py",
+      "bytes": 1848,
+      "sha256": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/elbow_audit.py",
+      "archive": "failed_run/source_snapshot/elbow_audit.py",
+      "bytes": 1906,
+      "sha256": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/elbow_gate.py",
+      "archive": "failed_run/source_snapshot/elbow_gate.py",
+      "bytes": 3947,
+      "sha256": "6473a2deec9034d4fa57079fe917d248c40db68f9768001456474bdc8eb6c526"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/elbow_handover.py",
+      "archive": "failed_run/source_snapshot/elbow_handover.py",
+      "bytes": 4103,
+      "sha256": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/environment.py",
+      "archive": "failed_run/source_snapshot/environment.py",
+      "bytes": 20264,
+      "sha256": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/finger_contact_audit.py",
+      "archive": "failed_run/source_snapshot/finger_contact_audit.py",
+      "bytes": 2054,
+      "sha256": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/isaac_compat.py",
+      "archive": "failed_run/source_snapshot/isaac_compat.py",
+      "bytes": 3227,
+      "sha256": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/joint_safety.py",
+      "archive": "failed_run/source_snapshot/joint_safety.py",
+      "bytes": 4195,
+      "sha256": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/kinematics.py",
+      "archive": "failed_run/source_snapshot/kinematics.py",
+      "bytes": 3543,
+      "sha256": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/layer_turn_metrics.py",
+      "archive": "failed_run/source_snapshot/layer_turn_metrics.py",
+      "bytes": 2323,
+      "sha256": "c7fc5438c29c20632ad774c7f541d293e5f411ca8fff1454c830989536e1ccb4"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/left_contact_dagger_schema_v1.json",
+      "archive": "failed_run/source_snapshot/left_contact_dagger_schema_v1.json",
+      "bytes": 4719,
+      "sha256": "164d991f6e05f34a6101d28ea764cfa8428ae5a2692f34ac151335345b2f8ce2"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/left_dagger_baseline_runtime_v3.py",
+      "archive": "failed_run/source_snapshot/left_dagger_baseline_runtime_v3.py",
+      "bytes": 33572,
+      "sha256": "49af4b8a660c115a2f3d29826b25d1b5c176e24208dae692838b46398834a516"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/opposition_feedback.py",
+      "archive": "failed_run/source_snapshot/opposition_feedback.py",
+      "bytes": 2483,
+      "sha256": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/opposition_grasp_v20.json",
+      "archive": "failed_run/source_snapshot/opposition_grasp_v20.json",
+      "bytes": 6996,
+      "sha256": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/opposition_teacher.py",
+      "archive": "failed_run/source_snapshot/opposition_teacher.py",
+      "bytes": 13679,
+      "sha256": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/palm_contact_audit.py",
+      "archive": "failed_run/source_snapshot/palm_contact_audit.py",
+      "bytes": 1379,
+      "sha256": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/palm_handover.py",
+      "archive": "failed_run/source_snapshot/palm_handover.py",
+      "bytes": 6505,
+      "sha256": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/palm_handover_audit.py",
+      "archive": "failed_run/source_snapshot/palm_handover_audit.py",
+      "bytes": 4553,
+      "sha256": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/phase_basis_policy_v4.py",
+      "archive": "failed_run/source_snapshot/phase_basis_policy_v4.py",
+      "bytes": 2358,
+      "sha256": "5d4dc98bf0dfc156dbcdd7fd9d3923f475573d03bc46df1e6c1d317625d8a327"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/phase_contact_policy.py",
+      "archive": "failed_run/source_snapshot/phase_contact_policy.py",
+      "bytes": 5740,
+      "sha256": "5db8beb4f0dc86d4b6105669ee8da2fee93b319e2ba468a6c0c2c5b21dc94045"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/proximal_planner.py",
+      "archive": "failed_run/source_snapshot/proximal_planner.py",
+      "bytes": 3030,
+      "sha256": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/runtime_platform.py",
+      "archive": "failed_run/source_snapshot/runtime_platform.py",
+      "bytes": 260,
+      "sha256": "c08829cde5986256dab4f5448edcecbf8932a3100ed7fab7dbdf0ad2f895772f"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/self_contact_audit.py",
+      "archive": "failed_run/source_snapshot/self_contact_audit.py",
+      "bytes": 1093,
+      "sha256": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/tilt_audit.py",
+      "archive": "failed_run/source_snapshot/tilt_audit.py",
+      "bytes": 5068,
+      "sha256": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/tilt_collision_plan.py",
+      "archive": "failed_run/source_snapshot/tilt_collision_plan.py",
+      "bytes": 7133,
+      "sha256": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/tilt_regrasp.py",
+      "archive": "failed_run/source_snapshot/tilt_regrasp.py",
+      "bytes": 21716,
+      "sha256": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/wrist_audit.py",
+      "archive": "failed_run/source_snapshot/wrist_audit.py",
+      "bytes": 1467,
+      "sha256": "e0dcf531d4f9e74cce3293ff2f954486fd1277609a832becdcefbd4b4e36398f"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/source_snapshot/wrist_direction.py",
+      "archive": "failed_run/source_snapshot/wrist_direction.py",
+      "bytes": 4361,
+      "sha256": "0aa5858caf39dabbd92af4396370121de30dc673675a5c24f11ca8ff0c0c0ed5"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104/trajectory.jsonl",
+      "archive": "failed_run/trajectory.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "revotron_cube_rl/runs/center_j56_dev_v3_20261103/asset_contract.json",
+      "archive": "diagnosis/source_asset_contract.json",
+      "bytes": 7411,
+      "sha256": "3367c3d471d25bb668b2f67fb9eca3ba34a28328b967ffbb63aef39cf1a365c7"
+    },
+    {
+      "source": "revotron_cube_rl/asset_contract.json",
+      "archive": "diagnosis/failed_base_generated_asset_contract.json",
+      "bytes": 6190,
+      "sha256": "1217705118af80f13ab54433011674fa7b5034d62fb5cea8b0a2f76a3c3c96c9"
+    },
+    {
+      "source": "work/teacher_optimization_20261103/launch_v5_closed_loop_eval_20261104.sh",
+      "archive": "launch/launch_v5_closed_loop_eval_20261104.sh",
+      "bytes": 1538,
+      "sha256": "c411e41b6ad88b594412296bf2688e049eaa1f9035793af623580e4072262a58"
+    },
+    {
+      "source": "work/teacher_optimization_20261103/launch_v4_closed_loop_eval_20261104.sh",
+      "archive": "launch/launch_v4_closed_loop_eval_20261104.sh",
+      "bytes": 1528,
+      "sha256": "4076983167b6b324dcbba048e5117cc0352c00a9400d5beb2b1c30ffb0aaba51"
+    },
+    {
+      "source": "work/teacher_optimization_20261103/launch_v5_closed_loop_eval_v2_20261104.sh",
+      "archive": "launch/launch_v5_closed_loop_eval_v2_20261104.sh",
+      "bytes": 2529,
+      "sha256": "a9434c3c6ed5c2cea7b08195d7d88e804e3669e662d7e273263ef60d3e1c957a"
+    },
+    {
+      "source": "work/teacher_optimization_20261103/launch_v4_closed_loop_eval_v2_20261104.sh",
+      "archive": "launch/launch_v4_closed_loop_eval_v2_20261104.sh",
+      "bytes": 2519,
+      "sha256": "d7d51b67346c09d0c793aa386a9a307dc3fa33a0a1aa9aa84fcd5715f040834c"
+    },
+    {
+      "source": "work/teacher_optimization_20261103/archive_v5_initialization_failure_20261104.py",
+      "archive": "archive_builder.py",
+      "bytes": 4900,
+      "sha256": "8bf0a58d3bd41e08672a0113d9371c10a42c69c484e4466cc540b7b6597dace4"
+    }
+  ],
+  "generated_files_sha256": {
+    "diagnosis.json": "167bf2129e96fbafe269889b79464bcb64d06541a6d687550bf4d352c3c09d66"
+  },
+  "all_source_files_unchanged": true,
+  "all_archived_bytes_match_source": true
+}

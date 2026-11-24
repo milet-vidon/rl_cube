@@ -1,0 +1,18 @@
+{
+  "source_sha256": {
+    "config.json": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+    "opposed_path_validation.py": "442d01f7650a9fe6db901b0f782abc10136171c87cf271736f22a55617cb6613",
+    "opposed_grasp_plan.py": "436c0a174e38adc0d04069c1c34ddba938e9885bde31f22842db27365f8c1845",
+    "safe_collision_plan.py": "2ca8f8278d50b03a612ec9e9bbad746900541b86a29eb799042212c4fdd6dda4",
+    "kinematics.py": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212",
+    "torso_collision.py": "24dfa461f6d4b79341f269aa4450c0f35f16eed608ba01258e86f0e1573cf20c",
+    "benchmark_opposed_path_validation.py": "c94688dc7e2fdf068a888b8f6b270a8013ecc36768cc602767b1d4885dcc8048",
+    "test_opposed_path_validation.py": "a270cff5bf6b504c01042a3c488dd2f13d7216b80856b57c337a614fdd1d15e1",
+    "check_opposed_path_rejection.py": "a95961d7e8b9d6a3adcd4a24e4b83e2c8b84c559be8fb4c010da3dedd949f2ab"
+  },
+  "note": "RobotKinematics reads config.json for software arm limit intersection; this dependency is mandatory in addition to URDF/mesh and request hashes. No planner/runtime files changed.",
+  "config_matches_saved_runs": [
+    "teacher_joint_paced_passive_v13_20261103",
+    "teacher_joint_paced_baseline_v14_20261103"
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "trajectory_sha256": "daded4329fabe3e32c8899a0880b674db84eff6dfb49194eefc40e639db3d492",
+  "reference_sha256": "aaae6e424223eda650ff30eb5fe6656c00b4ef2d73d6a8a83a4f22e512f0288b",
+  "first_deviation": {
+    "0.005": 42,
+    "0.02": 132,
+    "0.05": 435,
+    "0.1": 465
+  },
+  "phases": [
+    {
+      "phase": "ready",
+      "last_step": 243,
+      "maximum_absolute_target_error_rad": 0.03275182843208313,
+      "joint": "Joint5_L",
+      "signed_target_error_rad": 0.03275182843208313,
+      "height_m": -6.589889526287251e-07,
+      "reference_height_m": -6.589889526287251e-07
+    },
+    {
+      "phase": "preshape",
+      "last_step": 316,
+      "maximum_absolute_target_error_rad": 0.03189238905906677,
+      "joint": "Joint5_L",
+      "signed_target_error_rad": 0.03189238905906677,
+      "height_m": -6.589889526287251e-07,
+      "reference_height_m": -6.589889526287251e-07
+    },
+    {
+      "phase": "lower",
+      "last_step": 377,
+      "maximum_absolute_target_error_rad": 0.03067833185195923,
+      "joint": "Joint5_L",
+      "signed_target_error_rad": 0.03067833185195923,
+      "height_m": -6.589889526287251e-07,
+      "reference_height_m": -6.589889526287251e-07
+    },
+    {
+      "phase": "approach",
+      "last_step": 426,
+      "maximum_absolute_target_error_rad": 0.04131728410720825,
+      "joint": "Joint6_L",
+      "signed_target_error_rad": 0.04131728410720825,
+      "height_m": 0.0001378026008606037,
+      "reference_height_m": 2.6043891906746275e-05
+    },
+    {
+      "phase": "squeeze",
+      "last_step": 511,
+      "maximum_absolute_target_error_rad": 0.14609509706497192,
+      "joint": "left_thumb_PIP_joint",
+      "signed_target_error_rad": -0.14609509706497192,
+      "height_m": 0.004736896991729744,
+      "reference_height_m": 0.003239985942840584
+    },
+    {
+      "phase": "primary_lift",
+      "last_step": 631,
+      "maximum_absolute_target_error_rad": 0.2703745365142822,
+      "joint": "Joint3_L",
+      "signed_target_error_rad": 0.2703745365142822,
+      "height_m": 4.109382629402525e-06,
+      "reference_height_m": 0.1877564754486084
+    },
+    {
+      "phase": "elbow_outward",
+      "last_step": 760,
+      "maximum_absolute_target_error_rad": 0.3062073290348053,
+      "joint": "Joint3_L",
+      "signed_target_error_rad": 0.3062073290348053,
+      "height_m": 4.109382629402525e-06,
+      "reference_height_m": 0.24226480388641358
+    },
+    {
+      "phase": "tilt_90",
+      "last_step": 850,
+      "maximum_absolute_target_error_rad": 1.518725872039795,
+      "joint": "Joint3_L",
+      "signed_target_error_rad": 1.518725872039795,
+      "height_m": 4.228591918953306e-06,
+      "reference_height_m": 0.24180131816864014
+    }
+  ],
+  "failure_self_contact_pairs": {
+    "/World/Robot/left_ring_DIP_link | /World/Robot/left_middle_DIP_link": 0.013085108467641188
+  },
+  "interpretation": "small increment prediction bias accumulates even in ready; v2 learns phase-anchored absolute targets with bounded measured-state correction, no reference left target at inference"
+}

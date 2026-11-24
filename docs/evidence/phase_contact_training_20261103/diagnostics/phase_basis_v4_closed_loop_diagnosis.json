@@ -1,0 +1,926 @@
+{
+  "run": "teacher_phase_basis_gpu_v4_fullframe_eval_9501",
+  "reference": "center_j56_dev_v3_20261103",
+  "metrics": {
+    "nominal_vs_source_applied": {
+      "max": 2.384185791015625e-07,
+      "max_step": 915,
+      "first_above": {
+        "0": 203,
+        "1e-08": 203,
+        "1e-07": 205,
+        "1e-06": null,
+        "0.0001": null,
+        "0.001": null,
+        "0.01": null
+      }
+    },
+    "actual_applied": {
+      "max": 2.384185791015625e-07,
+      "max_step": 915,
+      "first_above": {
+        "0": 203,
+        "1e-08": 203,
+        "1e-07": 205,
+        "1e-06": null,
+        "0.0001": null,
+        "0.001": null,
+        "0.01": null
+      }
+    },
+    "q": {
+      "max": 0.0019889473915100098,
+      "max_step": 543,
+      "first_above": {
+        "0": 203,
+        "1e-08": 206,
+        "1e-07": 305,
+        "1e-06": 404,
+        "0.0001": 429,
+        "0.001": 541,
+        "0.01": null
+      }
+    },
+    "cube_position": {
+      "max": 0.00017785094678401947,
+      "max_step": 551,
+      "first_above": {
+        "0": 404,
+        "1e-08": 404,
+        "1e-07": 404,
+        "1e-06": 419,
+        "0.0001": 545,
+        "0.001": null,
+        "0.01": null
+      }
+    },
+    "cube_quaternion": {
+      "max": 0.003194602206349373,
+      "max_step": 544,
+      "first_above": {
+        "0": 404,
+        "1e-08": 404,
+        "1e-07": 404,
+        "1e-06": 404,
+        "0.0001": 429,
+        "0.001": 541,
+        "0.01": null
+      }
+    }
+  },
+  "phases": {
+    "ready": {
+      "rows": 244,
+      "all_five_actual": 0,
+      "all_five_source": 0,
+      "missing_actual": {
+        "thumb": 244,
+        "index": 244,
+        "middle": 244,
+        "ring": 244,
+        "little": 244
+      },
+      "missing_source": {
+        "thumb": 244,
+        "index": 244,
+        "middle": 244,
+        "ring": 244,
+        "little": 244
+      },
+      "max_errors": {
+        "nominal_vs_source_applied": 1.1920928955078125e-07,
+        "actual_applied": 1.1920928955078125e-07,
+        "q": 5.960464477539063e-08,
+        "cube_position": 0.0,
+        "cube_quaternion": 0.0
+      },
+      "min_actual_impulse": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      }
+    },
+    "preshape": {
+      "rows": 73,
+      "all_five_actual": 0,
+      "all_five_source": 0,
+      "missing_actual": {
+        "thumb": 73,
+        "index": 73,
+        "middle": 73,
+        "ring": 73,
+        "little": 73
+      },
+      "missing_source": {
+        "thumb": 73,
+        "index": 73,
+        "middle": 73,
+        "ring": 73,
+        "little": 73
+      },
+      "max_errors": {
+        "nominal_vs_source_applied": 1.1920928955078125e-07,
+        "actual_applied": 1.1920928955078125e-07,
+        "q": 1.1920928955078125e-07,
+        "cube_position": 0.0,
+        "cube_quaternion": 0.0
+      },
+      "min_actual_impulse": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      }
+    },
+    "lower": {
+      "rows": 61,
+      "all_five_actual": 0,
+      "all_five_source": 0,
+      "missing_actual": {
+        "thumb": 61,
+        "index": 61,
+        "middle": 61,
+        "ring": 61,
+        "little": 61
+      },
+      "missing_source": {
+        "thumb": 61,
+        "index": 61,
+        "middle": 61,
+        "ring": 61,
+        "little": 61
+      },
+      "max_errors": {
+        "nominal_vs_source_applied": 1.1920928955078125e-07,
+        "actual_applied": 1.1920928955078125e-07,
+        "q": 2.384185791015625e-07,
+        "cube_position": 0.0,
+        "cube_quaternion": 0.0
+      },
+      "min_actual_impulse": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      }
+    },
+    "approach": {
+      "rows": 49,
+      "all_five_actual": 0,
+      "all_five_source": 0,
+      "missing_actual": {
+        "thumb": 39,
+        "index": 49,
+        "middle": 49,
+        "ring": 49,
+        "little": 36
+      },
+      "missing_source": {
+        "thumb": 39,
+        "index": 49,
+        "middle": 49,
+        "ring": 49,
+        "little": 36
+      },
+      "max_errors": {
+        "nominal_vs_source_applied": 0.0,
+        "actual_applied": 0.0,
+        "q": 7.68899917602539e-05,
+        "cube_position": 5.990266799926758e-06,
+        "cube_quaternion": 7.890281267464161e-05
+      },
+      "min_actual_impulse": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      }
+    },
+    "squeeze": {
+      "rows": 85,
+      "all_five_actual": 11,
+      "all_five_source": 11,
+      "missing_actual": {
+        "thumb": 0,
+        "index": 56,
+        "middle": 74,
+        "ring": 61,
+        "little": 0
+      },
+      "missing_source": {
+        "thumb": 0,
+        "index": 56,
+        "middle": 74,
+        "ring": 61,
+        "little": 0
+      },
+      "max_errors": {
+        "nominal_vs_source_applied": 1.1920928955078125e-07,
+        "actual_applied": 1.1920928955078125e-07,
+        "q": 0.0005325675010681152,
+        "cube_position": 2.6106834411621094e-05,
+        "cube_quaternion": 0.00045098504051566124
+      },
+      "min_actual_impulse": {
+        "thumb": 0.020659121648602438,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.00931185365326778
+      }
+    },
+    "primary_lift": {
+      "rows": 120,
+      "all_five_actual": 88,
+      "all_five_source": 107,
+      "missing_actual": {
+        "thumb": 0,
+        "index": 30,
+        "middle": 0,
+        "ring": 2,
+        "little": 0
+      },
+      "missing_source": {
+        "thumb": 0,
+        "index": 4,
+        "middle": 0,
+        "ring": 9,
+        "little": 0
+      },
+      "max_errors": {
+        "nominal_vs_source_applied": 0.0,
+        "actual_applied": 0.0,
+        "q": 0.0019889473915100098,
+        "cube_position": 0.00017785094678401947,
+        "cube_quaternion": 0.003194602206349373
+      },
+      "min_actual_impulse": {
+        "thumb": 0.03660658464118899,
+        "index": 0.0,
+        "middle": 0.002958405814981937,
+        "ring": 0.0,
+        "little": 0.03611235757474569
+      }
+    },
+    "elbow_outward": {
+      "rows": 129,
+      "all_five_actual": 25,
+      "all_five_source": 129,
+      "missing_actual": {
+        "thumb": 0,
+        "index": 104,
+        "middle": 0,
+        "ring": 0,
+        "little": 0
+      },
+      "missing_source": {
+        "thumb": 0,
+        "index": 0,
+        "middle": 0,
+        "ring": 0,
+        "little": 0
+      },
+      "max_errors": {
+        "nominal_vs_source_applied": 0.0,
+        "actual_applied": 0.0,
+        "q": 0.0005295276641845703,
+        "cube_position": 4.381686449050903e-05,
+        "cube_quaternion": 0.0011330470442771912
+      },
+      "min_actual_impulse": {
+        "thumb": 0.03836509342156022,
+        "index": 0.0,
+        "middle": 0.006433298975363792,
+        "ring": 0.0008997359569913434,
+        "little": 0.03788246764207809
+      }
+    },
+    "tilt_90": {
+      "rows": 611,
+      "all_five_actual": 421,
+      "all_five_source": 604,
+      "missing_actual": {
+        "thumb": 0,
+        "index": 190,
+        "middle": 0,
+        "ring": 0,
+        "little": 0
+      },
+      "missing_source": {
+        "thumb": 0,
+        "index": 7,
+        "middle": 0,
+        "ring": 0,
+        "little": 0
+      },
+      "max_errors": {
+        "nominal_vs_source_applied": 2.384185791015625e-07,
+        "actual_applied": 2.384185791015625e-07,
+        "q": 0.0005461275577545166,
+        "cube_position": 4.234910011291504e-05,
+        "cube_quaternion": 0.0009114667773246765
+      },
+      "min_actual_impulse": {
+        "thumb": 0.03795907922615263,
+        "index": 0.0,
+        "middle": 0.006553531000523578,
+        "ring": 0.000677508664666486,
+        "little": 0.03703868753408647
+      }
+    },
+    "wrist_reconfigure": {
+      "rows": 181,
+      "all_five_actual": 181,
+      "all_five_source": 181,
+      "missing_actual": {
+        "thumb": 0,
+        "index": 0,
+        "middle": 0,
+        "ring": 0,
+        "little": 0
+      },
+      "missing_source": {
+        "thumb": 0,
+        "index": 0,
+        "middle": 0,
+        "ring": 0,
+        "little": 0
+      },
+      "max_errors": {
+        "nominal_vs_source_applied": 1.7881393432617188e-07,
+        "actual_applied": 1.7881393432617188e-07,
+        "q": 0.00024327635765075684,
+        "cube_position": 2.0742416381835938e-05,
+        "cube_quaternion": 0.00040656328201293945
+      },
+      "min_actual_impulse": {
+        "thumb": 0.04238564172389037,
+        "index": 0.0007430407918137602,
+        "middle": 0.008102698894655518,
+        "ring": 0.010227873448064032,
+        "little": 0.04515941037003069
+      }
+    },
+    "tilt_hold": {
+      "rows": 94,
+      "all_five_actual": 91,
+      "all_five_source": 92,
+      "missing_actual": {
+        "thumb": 0,
+        "index": 3,
+        "middle": 0,
+        "ring": 0,
+        "little": 0
+      },
+      "missing_source": {
+        "thumb": 0,
+        "index": 2,
+        "middle": 0,
+        "ring": 0,
+        "little": 0
+      },
+      "max_errors": {
+        "nominal_vs_source_applied": 0.0,
+        "actual_applied": 0.0,
+        "q": 0.0002827942371368408,
+        "cube_position": 1.8477439880371094e-05,
+        "cube_quaternion": 0.00042426586151123047
+      },
+      "min_actual_impulse": {
+        "thumb": 0.03120520491574482,
+        "index": 0.0,
+        "middle": 0.005418546528852692,
+        "ring": 0.010518897186943016,
+        "little": 0.03418777913146669
+      }
+    }
+  },
+  "first_contact_divergences": [
+    {
+      "step": 575,
+      "phase": "primary_lift",
+      "finger": "index",
+      "actual": 0.0,
+      "source": 0.0006141670582116157
+    },
+    {
+      "step": 576,
+      "phase": "primary_lift",
+      "finger": "index",
+      "actual": 0.0,
+      "source": 0.0007622027833757519
+    },
+    {
+      "step": 577,
+      "phase": "primary_lift",
+      "finger": "index",
+      "actual": 0.0,
+      "source": 0.0010894555903672584
+    },
+    {
+      "step": 578,
+      "phase": "primary_lift",
+      "finger": "index",
+      "actual": 0.0,
+      "source": 0.0009452772079769499
+    },
+    {
+      "step": 579,
+      "phase": "primary_lift",
+      "finger": "index",
+      "actual": 0.0,
+      "source": 0.0006168876532420489
+    },
+    {
+      "step": 580,
+      "phase": "primary_lift",
+      "finger": "index",
+      "actual": 0.0,
+      "source": 0.0006709949499892274
+    },
+    {
+      "step": 581,
+      "phase": "primary_lift",
+      "finger": "index",
+      "actual": 0.0,
+      "source": 0.0006808798279165156
+    },
+    {
+      "step": 582,
+      "phase": "primary_lift",
+      "finger": "index",
+      "actual": 0.0,
+      "source": 0.0007734948566030824
+    },
+    {
+      "step": 583,
+      "phase": "primary_lift",
+      "finger": "index",
+      "actual": 0.0,
+      "source": 0.0005218659430034309
+    },
+    {
+      "step": 584,
+      "phase": "primary_lift",
+      "finger": "index",
+      "actual": 0.0,
+      "source": 0.00034251387607239493
+    },
+    {
+      "step": 585,
+      "phase": "primary_lift",
+      "finger": "index",
+      "actual": 0.0,
+      "source": 0.00039555359813586515
+    },
+    {
+      "step": 586,
+      "phase": "primary_lift",
+      "finger": "index",
+      "actual": 0.0,
+      "source": 0.0003743160493374072
+    },
+    {
+      "step": 587,
+      "phase": "primary_lift",
+      "finger": "index",
+      "actual": 0.0,
+      "source": 0.00011241765257633373
+    },
+    {
+      "step": 598,
+      "phase": "primary_lift",
+      "finger": "index",
+      "actual": 2.869365314974508e-06,
+      "source": 0.001093520198671047
+    },
+    {
+      "step": 599,
+      "phase": "primary_lift",
+      "finger": "index",
+      "actual": 0.0,
+      "source": 0.0010549617661378896
+    },
+    {
+      "step": 600,
+      "phase": "primary_lift",
+      "finger": "index",
+      "actual": 0.0,
+      "source": 0.0008999524340005524
+    },
+    {
+      "step": 601,
+      "phase": "primary_lift",
+      "finger": "index",
+      "actual": 0.0,
+      "source": 0.0006162620226735939
+    },
+    {
+      "step": 602,
+      "phase": "primary_lift",
+      "finger": "index",
+      "actual": 0.0,
+      "source": 0.0003523789252815709
+    },
+    {
+      "step": 603,
+      "phase": "primary_lift",
+      "finger": "index",
+      "actual": 0.0,
+      "source": 0.000254393533804807
+    },
+    {
+      "step": 604,
+      "phase": "primary_lift",
+      "finger": "index",
+      "actual": 0.0,
+      "source": 0.00016643718162419061
+    },
+    {
+      "step": 605,
+      "phase": "primary_lift",
+      "finger": "index",
+      "actual": 0.0,
+      "source": 0.00013114902025015043
+    },
+    {
+      "step": 606,
+      "phase": "primary_lift",
+      "finger": "index",
+      "actual": 0.0,
+      "source": 0.00013016999670859564
+    },
+    {
+      "step": 607,
+      "phase": "primary_lift",
+      "finger": "index",
+      "actual": 0.0,
+      "source": 7.8746573043076e-05
+    },
+    {
+      "step": 608,
+      "phase": "primary_lift",
+      "finger": "index",
+      "actual": 0.0,
+      "source": 1.3181029544266472e-05
+    },
+    {
+      "step": 630,
+      "phase": "primary_lift",
+      "finger": "index",
+      "actual": 0.0,
+      "source": 0.000677507368749221
+    },
+    {
+      "step": 631,
+      "phase": "primary_lift",
+      "finger": "index",
+      "actual": 0.0,
+      "source": 0.0006120628610260248
+    },
+    {
+      "step": 632,
+      "phase": "elbow_outward",
+      "finger": "index",
+      "actual": 0.0,
+      "source": 0.0006469139099071221
+    },
+    {
+      "step": 633,
+      "phase": "elbow_outward",
+      "finger": "index",
+      "actual": 0.0,
+      "source": 0.0006389762065850224
+    },
+    {
+      "step": 634,
+      "phase": "elbow_outward",
+      "finger": "index",
+      "actual": 0.0,
+      "source": 0.0006240752371223945
+    },
+    {
+      "step": 635,
+      "phase": "elbow_outward",
+      "finger": "index",
+      "actual": 0.0,
+      "source": 0.0005634947024479102
+    }
+  ],
+  "threshold_examples": [
+    {
+      "step": 203,
+      "phase": "ready",
+      "q_max": 4.0745362639427185e-10,
+      "q_joint": "left_thumb_CMP_joint",
+      "applied_max": 5.960464477539063e-08,
+      "applied_joint": "Joint5_L",
+      "actual_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "source_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      }
+    },
+    {
+      "step": 205,
+      "phase": "ready",
+      "q_max": 1.597072696313262e-09,
+      "q_joint": "left_thumb_CMP_joint",
+      "applied_max": 1.1920928955078125e-07,
+      "applied_joint": "Joint4_L",
+      "actual_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "source_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      }
+    },
+    {
+      "step": 206,
+      "phase": "ready",
+      "q_max": 5.960464477539063e-08,
+      "q_joint": "Joint6_L",
+      "applied_max": 5.960464477539063e-08,
+      "applied_joint": "Joint6_L",
+      "actual_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "source_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      }
+    },
+    {
+      "step": 305,
+      "phase": "preshape",
+      "q_max": 1.1920928955078125e-07,
+      "q_joint": "left_thumb_DIP_joint",
+      "applied_max": 1.1920928955078125e-07,
+      "applied_joint": "left_thumb_DIP_joint",
+      "actual_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "source_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      }
+    },
+    {
+      "step": 404,
+      "phase": "approach",
+      "q_max": 1.6987323760986328e-06,
+      "q_joint": "left_little_PIP_joint",
+      "applied_max": 0.0,
+      "applied_joint": "Joint1_L",
+      "actual_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0008657753525160613
+      },
+      "source_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0008729552254570503
+      }
+    },
+    {
+      "step": 419,
+      "phase": "approach",
+      "q_max": 5.2988529205322266e-05,
+      "q_joint": "left_thumb_PIP_joint",
+      "applied_max": 0.0,
+      "applied_joint": "Joint1_L",
+      "actual_contacts": {
+        "thumb": 0.006691061206476183,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "source_contacts": {
+        "thumb": 0.006558472727137402,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      }
+    },
+    {
+      "step": 429,
+      "phase": "squeeze",
+      "q_max": 0.0001150965690612793,
+      "q_joint": "left_thumb_CMP_joint",
+      "applied_max": 0.0,
+      "applied_joint": "Joint1_L",
+      "actual_contacts": {
+        "thumb": 0.02102626381571359,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.009441722878569911
+      },
+      "source_contacts": {
+        "thumb": 0.021754871341808157,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.009373236423751721
+      }
+    },
+    {
+      "step": 541,
+      "phase": "primary_lift",
+      "q_max": 0.001312166452407837,
+      "q_joint": "left_little_PIP_joint",
+      "applied_max": 0.0,
+      "applied_joint": "Joint1_L",
+      "actual_contacts": {
+        "thumb": 0.05668112280116474,
+        "index": 0.02055864226292721,
+        "middle": 0.006447615116131807,
+        "ring": 0.0009183272841210607,
+        "little": 0.06372037877335905
+      },
+      "source_contacts": {
+        "thumb": 0.05492722779802169,
+        "index": 0.0191000681102262,
+        "middle": 0.006410675480875962,
+        "ring": 0.000710972748386196,
+        "little": 0.06172237530339191
+      }
+    },
+    {
+      "step": 545,
+      "phase": "primary_lift",
+      "q_max": 0.0010590553283691406,
+      "q_joint": "left_little_PIP_joint",
+      "applied_max": 0.0,
+      "applied_joint": "Joint1_L",
+      "actual_contacts": {
+        "thumb": 0.05248283809544768,
+        "index": 0.011540116350517587,
+        "middle": 0.0059391705685104745,
+        "ring": 0.0012359941332583638,
+        "little": 0.05326590868754786
+      },
+      "source_contacts": {
+        "thumb": 0.05037461393327647,
+        "index": 0.007567515835273978,
+        "middle": 0.006266554582809727,
+        "ring": 0.0,
+        "little": 0.049915852576771565
+      }
+    }
+  ],
+  "result": {
+    "scope": "development_fullframe_trajectory_compression_no_holdout_or_adaptive_feedback",
+    "seed": 9501,
+    "steps": 1647,
+    "precenter_wrist_audit": {
+      "accepted": false,
+      "longest_jointly_qualified_hold_s": 0.4666666666666667,
+      "final_elbow": {
+        "shoulder_root_m": [
+          0.021714234724640846,
+          0.2500001788139343,
+          0.24004111289978036
+        ],
+        "elbow_root_m": [
+          0.03257529437541962,
+          0.4294268488883972,
+          0.015583491325378507
+        ],
+        "wrist_root_m": [
+          0.30069974064826965,
+          0.3275240361690521,
+          0.14459965229034433
+        ],
+        "outward_from_shoulder_m": 0.1794266700744629,
+        "upper_arm_outward_deg": 38.63810007066925,
+        "outward_from_shoulder_wrist_axis_m": 0.14743155151675624
+      },
+      "final": {
+        "joint6_deg": 11.881861966951297,
+        "side_bend_deg": -15.081241969325113,
+        "flexion_deg": 42.98317385474133,
+        "forearm_direction_palm_frame": [
+          0.6689102265982467,
+          -0.193409283945814,
+          0.7177408708133107
+        ],
+        "wrist_inside_elbow_m": 0.10190281271934509
+      },
+      "scope": "J6_side_bend_reversed_with_unchanged_palm_orientation",
+      "failures": [
+        "no_3s_jointly_qualified_reversed_wrist_hold"
+      ]
+    },
+    "accepted": false,
+    "failure": "precenter_wrist_hold_gate_not_met",
+    "qualified_center_hold_s": 0.0,
+    "maximum_lift_m": 0.3687259521484375,
+    "cube_returned_to_table_after_lift": false,
+    "elapsed_s": 190.04785815099603,
+    "checkpoint_sha256": "d2493b00df27b8d84ae69da3b399b3beb926b77fdd87a9b51aa6a2b1b23a36a4",
+    "source_manifest_sha256": "e8cb8f154d4e1be1f3ff3694d5a4b0ef3a598261ade2f4461a1b4a0e082ffff6",
+    "evaluation_source_sha256": {
+      "articulated_cube_env.py": "dfad0023f9e2797d6ea8ea3ac08aa1b6889b7dbb4ff8398cd0ca11fa329bc707",
+      "center_j56_audit.py": "a77def5e36aede51e248cd7495a14ee858d7a35d83b233f3c6b63d78079c1659",
+      "center_j56_plan.py": "5c9b49965ad4aa5e07d63ba7bc9e327fdf87096a4a19c6d39068bed64868fd48",
+      "center_j56_protocol_v3.json": "1a20c06c21da5e631790207286493852353338986bd16d7f891196861f900197",
+      "centered_opposition_runtime.py": "95734758ff1c5971b2b534731f3496d00501aa015466e3705ae7ac89f2de7494",
+      "centered_transport_audit.py": "9bf896dcca54e21a1927f77ded5385031b7dcd0f86b591230d080cb13f847672",
+      "centered_transport_plan.py": "e60394d663e37f8082dfaa972ba0221fbe12eab0cb82f077ab14f87f7d53b5eb",
+      "config.json": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+      "dynamic_cube.py": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de",
+      "elbow_audit.py": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9",
+      "elbow_gate.py": "6473a2deec9034d4fa57079fe917d248c40db68f9768001456474bdc8eb6c526",
+      "elbow_handover.py": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e",
+      "elbow_handover_experiment.py": "0c403b1fba0f01c48fc9fc068b28545ec82d5c348a480d4608e2035ddab91cf1",
+      "environment.py": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7",
+      "evaluate_phase_basis_v4.py": "d792dcca19161b84e1a1fd8029ca1a1f2f176875706007775edfdf45d3fb4d33",
+      "evidence_paths.py": "0339eb9b1149cba69af15aa27d605b3ef172b335932d49c41193360059f434fd",
+      "face_contact_calibration_v1.json": "b9ab73c9e7e2c922ffaf1270196fce8c2a4acd635dfe8842def32d98bcbe7b44",
+      "face_push_plan.py": "0bf9b55361f59113264ce29260298fa0d9fb883cda16fac66481de1ab82f89eb",
+      "face_push_runtime.py": "953e38efb8de83a8a5209903bd95ee0b1780dd8bd6af6ca3357dcda0cb5918a4",
+      "finger_contact_audit.py": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0",
+      "isaac_compat.py": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825",
+      "joint_safety.py": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887",
+      "kinematics.py": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212",
+      "layer_turn_metrics.py": "c7fc5438c29c20632ad774c7f541d293e5f411ca8fff1454c830989536e1ccb4",
+      "opposition_feedback.py": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883",
+      "opposition_grasp_v20.json": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a",
+      "opposition_teacher.py": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1",
+      "palm_contact_audit.py": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184",
+      "palm_handover.py": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f",
+      "palm_handover_audit.py": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1",
+      "palm_handover_experiment.py": "74db8145fa76937b33fbfd2a37b41bcd7f3b132af94defad4bbe9379e4377c40",
+      "phase_basis_policy_v4.py": "5d4dc98bf0dfc156dbcdd7fd9d3923f475573d03bc46df1e6c1d317625d8a327",
+      "phase_contact_policy.py": "5db8beb4f0dc86d4b6105669ee8da2fee93b319e2ba468a6c0c2c5b21dc94045",
+      "proximal_planner.py": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16",
+      "safe_collision_plan.py": "2ca8f8278d50b03a612ec9e9bbad746900541b86a29eb799042212c4fdd6dda4",
+      "self_contact_audit.py": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c",
+      "single_face_experiment.py": "d8bf7e12d96e3c06beec41bd19f9aabcdac9b2ae27637525f16585b924b79c4d",
+      "tilt_audit.py": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995",
+      "tilt_collision_plan.py": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd",
+      "tilt_experiment.py": "d345f965ec3f93a1c662eaf736bf9f25f4fb50733fee6784ff5fe9798154081d",
+      "tilt_regrasp.py": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1",
+      "torso_collision.py": "24dfa461f6d4b79341f269aa4450c0f35f16eed608ba01258e86f0e1573cf20c",
+      "wrist_audit.py": "e0dcf531d4f9e74cce3293ff2f954486fd1277609a832becdcefbd4b4e36398f",
+      "wrist_direction.py": "0aa5858caf39dabbd92af4396370121de30dc673675a5c24f11ca8ff0c0c0ed5",
+      "wrist_direction_experiment.py": "23d3784eeab1d5f560ad603939a30bce5cf2d4d26cb94b83bf9921a4413e4d8e",
+      "wrist_gate.py": "37f90513eada82e467686e451fd863e2ec64d870fd3bea9b4f32ac4b8ecdeddd"
+    },
+    "phase_schedule_source": "center_j56_dev_v3_20261103",
+    "right_schedule_seed": 9501,
+    "right_turn_trained": false,
+    "stage_gate_unlocked": false,
+    "cube_pose_writes_during_control": 0,
+    "model_input_state": "scheduled phase/progress only; measured features collected but excluded by this phase-trajectory model",
+    "left_teacher_targets_used": false,
+    "left_finger_hold_gain_step": 1553,
+    "left_finger_hold_stiffness": 20.0
+  },
+  "source_trajectory_sha256": "aaae6e424223eda650ff30eb5fe6656c00b4ef2d73d6a8a83a4f22e512f0288b",
+  "eval_trajectory_sha256": "68a0ef2e49899b1c5a5738b7128b1ad65e15059af8ccc361642e1f69d15d499d"
+}

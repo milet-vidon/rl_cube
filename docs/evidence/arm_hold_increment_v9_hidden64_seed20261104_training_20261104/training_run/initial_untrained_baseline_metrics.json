@@ -1,0 +1,1005 @@
+{
+  "hard_decoded_projected_fit": {
+    "rmse_rad": 0.004624619778395522,
+    "max_abs_rad": 0.04500001668930054,
+    "rmse_by_joint_rad": [
+      0.004968661722178755,
+      0.0034810620774716264,
+      0.004570881439800345,
+      0.0025971400892889794,
+      0.006093364967880377,
+      0.006020883288873031,
+      0.0056769606960372105,
+      1.1452346618248477e-10,
+      0.0005591580253319081,
+      0.0005591581101709451,
+      0.0005591582375230296,
+      2.5913702253639437e-09,
+      1.2956851126819719e-09,
+      1.295685112681973e-09,
+      3.664750917839511e-09,
+      5.497126376759266e-09,
+      0.000561553819031517,
+      0.011892241603136825,
+      0.01189213101019245,
+      0.01190530949745116,
+      0.0005646208120465075,
+      0.0009373934241357537,
+      0.00093739692670435,
+      0.000934563359635836,
+      1.1452346618248481e-10,
+      2.7485631883796336e-09,
+      1.8887693907289466e-09,
+      6.871407970949083e-10
+    ]
+  },
+  "label_selected_projected_fit": {
+    "rmse_rad": 0.002825232794642862,
+    "max_abs_rad": 0.02500009536743164,
+    "rmse_by_joint_rad": [
+      0.004941151923744686,
+      0.00385743220687598,
+      0.00532851686999307,
+      0.0026210402680203033,
+      0.0068278968255404094,
+      0.00680793712670134,
+      0.00614873368115912,
+      1.1452346618248477e-10,
+      0.000563605708421094,
+      0.000563605708406573,
+      0.000563605708423328,
+      2.5913702253639437e-09,
+      1.2956851126819719e-09,
+      1.295685112681973e-09,
+      3.664750917839511e-09,
+      5.497126376759266e-09,
+      0.0005658846532313265,
+      0.0022204078415431873,
+      0.0022204073435492166,
+      0.0022192590404043907,
+      0.0005636061283248436,
+      0.0007719628929916205,
+      0.000771961473810268,
+      0.0007702583476393532,
+      1.1452346618248481e-10,
+      2.7485631883796336e-09,
+      1.8887693907289466e-09,
+      6.871407970949083e-10
+    ]
+  },
+  "class_order": [
+    "BASE",
+    "HOLD",
+    "UPDATE"
+  ],
+  "confusion_matrix_true_by_predicted": [
+    [
+      108628,
+      0,
+      0
+    ],
+    [
+      8953,
+      0,
+      0
+    ],
+    [
+      20955,
+      0,
+      0
+    ]
+  ],
+  "classification_error_count": 29908,
+  "step499_regression_violation_count": 0,
+  "step545_regression_violation_count": 6,
+  "step560_regression_violation_count": 3,
+  "step499_reviewed_zero_histories_bitwise_baseline": true,
+  "step545_reviewed_hold_histories_exact_projected_hold": false,
+  "step560_reviewed_index_history_exact_projected_hold": false,
+  "runs": [
+    {
+      "episode_id": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_dagger_baseline_mixture_v3_9501_20261104:left_dagger_v3",
+      "frames_processed": 1648,
+      "step499_zero_regression_required": true,
+      "step499": {
+        "step": 499,
+        "proposal_all28_bitwise_baseline": true,
+        "native_action_all28_bitwise_baseline": true,
+        "projected_all28_bitwise_baseline": true,
+        "expert_projected_all28_bitwise_baseline": true,
+        "proposal_different_joint_indices": [],
+        "label_minus_baseline_rad": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "step545_hold_regression_required": false,
+      "step545": {
+        "joint_names": [
+          "left_ring_MCP_joint",
+          "left_ring_PIP_joint",
+          "left_ring_DIP_joint"
+        ],
+        "predicted_classes": [
+          0,
+          0,
+          0
+        ],
+        "expert_classes": [
+          0,
+          0,
+          0
+        ],
+        "projection_exact_HOLD": [
+          false,
+          false,
+          false
+        ],
+        "expert_exact_HOLD": [
+          false,
+          false,
+          false
+        ]
+      },
+      "step560_index_hold_regression_required": false,
+      "step560": {
+        "joint_names": [
+          "left_index_MCP_joint",
+          "left_index_PIP_joint",
+          "left_index_DIP_joint"
+        ],
+        "predicted_classes": [
+          0,
+          0,
+          0
+        ],
+        "expert_classes": [
+          0,
+          0,
+          0
+        ],
+        "projection_exact_HOLD": [
+          true,
+          true,
+          true
+        ],
+        "expert_exact_HOLD": [
+          true,
+          true,
+          true
+        ]
+      },
+      "first_nonbaseline_proposal": null
+    },
+    {
+      "episode_id": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104_v2:left_state_residual_v5_long_eval_9501_20261104_v2",
+      "frames_processed": 619,
+      "step499_zero_regression_required": false,
+      "step499": {
+        "step": 499,
+        "proposal_all28_bitwise_baseline": true,
+        "native_action_all28_bitwise_baseline": true,
+        "projected_all28_bitwise_baseline": true,
+        "expert_projected_all28_bitwise_baseline": false,
+        "proposal_different_joint_indices": [],
+        "label_minus_baseline_rad": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -0.004999999888241291,
+          0.004999995231628418,
+          -0.004999995231628418,
+          -0.004999995231628418,
+          -0.004999998956918716,
+          0.004999995231628418,
+          -0.004999995231628418,
+          -0.004999995231628418,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "step545_hold_regression_required": false,
+      "step545": {
+        "joint_names": [
+          "left_ring_MCP_joint",
+          "left_ring_PIP_joint",
+          "left_ring_DIP_joint"
+        ],
+        "predicted_classes": [
+          0,
+          0,
+          0
+        ],
+        "expert_classes": [
+          2,
+          2,
+          2
+        ],
+        "projection_exact_HOLD": [
+          true,
+          true,
+          true
+        ],
+        "expert_exact_HOLD": [
+          false,
+          false,
+          false
+        ]
+      },
+      "step560_index_hold_regression_required": false,
+      "step560": {
+        "joint_names": [
+          "left_index_MCP_joint",
+          "left_index_PIP_joint",
+          "left_index_DIP_joint"
+        ],
+        "predicted_classes": [
+          0,
+          0,
+          0
+        ],
+        "expert_classes": [
+          2,
+          2,
+          2
+        ],
+        "projection_exact_HOLD": [
+          false,
+          false,
+          false
+        ],
+        "expert_exact_HOLD": [
+          false,
+          false,
+          false
+        ]
+      },
+      "first_nonbaseline_proposal": null
+    },
+    {
+      "episode_id": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_phase_gated_residual_v6_eval_9501_20261104:left_phase_gated_residual_v6_eval_9501_20261104",
+      "frames_processed": 752,
+      "step499_zero_regression_required": true,
+      "step499": {
+        "step": 499,
+        "proposal_all28_bitwise_baseline": true,
+        "native_action_all28_bitwise_baseline": true,
+        "projected_all28_bitwise_baseline": true,
+        "expert_projected_all28_bitwise_baseline": true,
+        "proposal_different_joint_indices": [],
+        "label_minus_baseline_rad": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "step545_hold_regression_required": false,
+      "step545": {
+        "joint_names": [
+          "left_ring_MCP_joint",
+          "left_ring_PIP_joint",
+          "left_ring_DIP_joint"
+        ],
+        "predicted_classes": [
+          0,
+          0,
+          0
+        ],
+        "expert_classes": [
+          2,
+          2,
+          2
+        ],
+        "projection_exact_HOLD": [
+          false,
+          false,
+          false
+        ],
+        "expert_exact_HOLD": [
+          false,
+          false,
+          false
+        ]
+      },
+      "step560_index_hold_regression_required": false,
+      "step560": {
+        "joint_names": [
+          "left_index_MCP_joint",
+          "left_index_PIP_joint",
+          "left_index_DIP_joint"
+        ],
+        "predicted_classes": [
+          0,
+          0,
+          0
+        ],
+        "expert_classes": [
+          1,
+          1,
+          1
+        ],
+        "projection_exact_HOLD": [
+          false,
+          false,
+          false
+        ],
+        "expert_exact_HOLD": [
+          true,
+          true,
+          true
+        ]
+      },
+      "first_nonbaseline_proposal": null
+    },
+    {
+      "episode_id": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_phase_gated_residual_v6_long_eval_9501_20261104:left_phase_gated_residual_v6_long_eval_9501_20261104",
+      "frames_processed": 752,
+      "step499_zero_regression_required": true,
+      "step499": {
+        "step": 499,
+        "proposal_all28_bitwise_baseline": true,
+        "native_action_all28_bitwise_baseline": true,
+        "projected_all28_bitwise_baseline": true,
+        "expert_projected_all28_bitwise_baseline": true,
+        "proposal_different_joint_indices": [],
+        "label_minus_baseline_rad": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "step545_hold_regression_required": false,
+      "step545": {
+        "joint_names": [
+          "left_ring_MCP_joint",
+          "left_ring_PIP_joint",
+          "left_ring_DIP_joint"
+        ],
+        "predicted_classes": [
+          0,
+          0,
+          0
+        ],
+        "expert_classes": [
+          1,
+          1,
+          1
+        ],
+        "projection_exact_HOLD": [
+          false,
+          false,
+          false
+        ],
+        "expert_exact_HOLD": [
+          true,
+          true,
+          true
+        ]
+      },
+      "step560_index_hold_regression_required": false,
+      "step560": {
+        "joint_names": [
+          "left_index_MCP_joint",
+          "left_index_PIP_joint",
+          "left_index_DIP_joint"
+        ],
+        "predicted_classes": [
+          0,
+          0,
+          0
+        ],
+        "expert_classes": [
+          1,
+          1,
+          1
+        ],
+        "projection_exact_HOLD": [
+          false,
+          false,
+          false
+        ],
+        "expert_exact_HOLD": [
+          true,
+          true,
+          true
+        ]
+      },
+      "first_nonbaseline_proposal": null
+    },
+    {
+      "episode_id": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_phase_v4_matched_eval_9501_20261104_v2:left_phase_v4_matched_eval_9501_20261104_v2",
+      "frames_processed": 1654,
+      "step499_zero_regression_required": true,
+      "step499": {
+        "step": 499,
+        "proposal_all28_bitwise_baseline": true,
+        "native_action_all28_bitwise_baseline": true,
+        "projected_all28_bitwise_baseline": true,
+        "expert_projected_all28_bitwise_baseline": true,
+        "proposal_different_joint_indices": [],
+        "label_minus_baseline_rad": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "step545_hold_regression_required": true,
+      "step545": {
+        "joint_names": [
+          "left_ring_MCP_joint",
+          "left_ring_PIP_joint",
+          "left_ring_DIP_joint"
+        ],
+        "predicted_classes": [
+          0,
+          0,
+          0
+        ],
+        "expert_classes": [
+          1,
+          1,
+          1
+        ],
+        "projection_exact_HOLD": [
+          false,
+          false,
+          false
+        ],
+        "expert_exact_HOLD": [
+          true,
+          true,
+          true
+        ]
+      },
+      "step560_index_hold_regression_required": false,
+      "step560": {
+        "joint_names": [
+          "left_index_MCP_joint",
+          "left_index_PIP_joint",
+          "left_index_DIP_joint"
+        ],
+        "predicted_classes": [
+          0,
+          0,
+          0
+        ],
+        "expert_classes": [
+          0,
+          0,
+          0
+        ],
+        "projection_exact_HOLD": [
+          true,
+          true,
+          true
+        ],
+        "expert_exact_HOLD": [
+          true,
+          true,
+          true
+        ]
+      },
+      "first_nonbaseline_proposal": null
+    },
+    {
+      "episode_id": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_eval_9501_20261104:left_zero_gated_residual_v7_eval_9501_20261104",
+      "frames_processed": 752,
+      "step499_zero_regression_required": true,
+      "step499": {
+        "step": 499,
+        "proposal_all28_bitwise_baseline": true,
+        "native_action_all28_bitwise_baseline": true,
+        "projected_all28_bitwise_baseline": true,
+        "expert_projected_all28_bitwise_baseline": true,
+        "proposal_different_joint_indices": [],
+        "label_minus_baseline_rad": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "step545_hold_regression_required": true,
+      "step545": {
+        "joint_names": [
+          "left_ring_MCP_joint",
+          "left_ring_PIP_joint",
+          "left_ring_DIP_joint"
+        ],
+        "predicted_classes": [
+          0,
+          0,
+          0
+        ],
+        "expert_classes": [
+          1,
+          1,
+          1
+        ],
+        "projection_exact_HOLD": [
+          false,
+          false,
+          false
+        ],
+        "expert_exact_HOLD": [
+          true,
+          true,
+          true
+        ]
+      },
+      "step560_index_hold_regression_required": false,
+      "step560": {
+        "joint_names": [
+          "left_index_MCP_joint",
+          "left_index_PIP_joint",
+          "left_index_DIP_joint"
+        ],
+        "predicted_classes": [
+          0,
+          0,
+          0
+        ],
+        "expert_classes": [
+          0,
+          0,
+          0
+        ],
+        "projection_exact_HOLD": [
+          true,
+          true,
+          true
+        ],
+        "expert_exact_HOLD": [
+          true,
+          true,
+          true
+        ]
+      },
+      "first_nonbaseline_proposal": null
+    },
+    {
+      "episode_id": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_seed20261105_eval_9501_20261104_v2:left_zero_gated_residual_v7_seed20261105_eval_9501_20261104_v2",
+      "frames_processed": 752,
+      "step499_zero_regression_required": true,
+      "step499": {
+        "step": 499,
+        "proposal_all28_bitwise_baseline": true,
+        "native_action_all28_bitwise_baseline": true,
+        "projected_all28_bitwise_baseline": true,
+        "expert_projected_all28_bitwise_baseline": true,
+        "proposal_different_joint_indices": [],
+        "label_minus_baseline_rad": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "step545_hold_regression_required": false,
+      "step545": {
+        "joint_names": [
+          "left_ring_MCP_joint",
+          "left_ring_PIP_joint",
+          "left_ring_DIP_joint"
+        ],
+        "predicted_classes": [
+          0,
+          0,
+          0
+        ],
+        "expert_classes": [
+          1,
+          1,
+          1
+        ],
+        "projection_exact_HOLD": [
+          false,
+          false,
+          false
+        ],
+        "expert_exact_HOLD": [
+          true,
+          true,
+          true
+        ]
+      },
+      "step560_index_hold_regression_required": false,
+      "step560": {
+        "joint_names": [
+          "left_index_MCP_joint",
+          "left_index_PIP_joint",
+          "left_index_DIP_joint"
+        ],
+        "predicted_classes": [
+          0,
+          0,
+          0
+        ],
+        "expert_classes": [
+          0,
+          0,
+          0
+        ],
+        "projection_exact_HOLD": [
+          true,
+          true,
+          true
+        ],
+        "expert_exact_HOLD": [
+          true,
+          true,
+          true
+        ]
+      },
+      "first_nonbaseline_proposal": null
+    },
+    {
+      "episode_id": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_zero_gated_residual_v7_long_eval_9501_20261104:left_zero_gated_residual_v7_long_eval_9501_20261104",
+      "frames_processed": 752,
+      "step499_zero_regression_required": true,
+      "step499": {
+        "step": 499,
+        "proposal_all28_bitwise_baseline": true,
+        "native_action_all28_bitwise_baseline": true,
+        "projected_all28_bitwise_baseline": true,
+        "expert_projected_all28_bitwise_baseline": true,
+        "proposal_different_joint_indices": [],
+        "label_minus_baseline_rad": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "step545_hold_regression_required": false,
+      "step545": {
+        "joint_names": [
+          "left_ring_MCP_joint",
+          "left_ring_PIP_joint",
+          "left_ring_DIP_joint"
+        ],
+        "predicted_classes": [
+          0,
+          0,
+          0
+        ],
+        "expert_classes": [
+          1,
+          1,
+          1
+        ],
+        "projection_exact_HOLD": [
+          false,
+          false,
+          false
+        ],
+        "expert_exact_HOLD": [
+          true,
+          true,
+          true
+        ]
+      },
+      "step560_index_hold_regression_required": false,
+      "step560": {
+        "joint_names": [
+          "left_index_MCP_joint",
+          "left_index_PIP_joint",
+          "left_index_DIP_joint"
+        ],
+        "predicted_classes": [
+          0,
+          0,
+          0
+        ],
+        "expert_classes": [
+          2,
+          2,
+          2
+        ],
+        "projection_exact_HOLD": [
+          true,
+          true,
+          false
+        ],
+        "expert_exact_HOLD": [
+          false,
+          false,
+          false
+        ]
+      },
+      "first_nonbaseline_proposal": null
+    },
+    {
+      "episode_id": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_hold_increment_v8_seed20261104_eval_9501_20261104:left_hold_increment_v8_seed20261104_eval_9501_20261104",
+      "frames_processed": 1842,
+      "step499_zero_regression_required": false,
+      "step499": {
+        "step": 499,
+        "proposal_all28_bitwise_baseline": true,
+        "native_action_all28_bitwise_baseline": true,
+        "projected_all28_bitwise_baseline": true,
+        "expert_projected_all28_bitwise_baseline": true,
+        "proposal_different_joint_indices": [],
+        "label_minus_baseline_rad": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "step545_hold_regression_required": false,
+      "step545": {
+        "joint_names": [
+          "left_ring_MCP_joint",
+          "left_ring_PIP_joint",
+          "left_ring_DIP_joint"
+        ],
+        "predicted_classes": [
+          0,
+          0,
+          0
+        ],
+        "expert_classes": [
+          1,
+          1,
+          1
+        ],
+        "projection_exact_HOLD": [
+          false,
+          false,
+          false
+        ],
+        "expert_exact_HOLD": [
+          true,
+          true,
+          true
+        ]
+      },
+      "step560_index_hold_regression_required": true,
+      "step560": {
+        "joint_names": [
+          "left_index_MCP_joint",
+          "left_index_PIP_joint",
+          "left_index_DIP_joint"
+        ],
+        "predicted_classes": [
+          0,
+          0,
+          0
+        ],
+        "expert_classes": [
+          1,
+          1,
+          1
+        ],
+        "projection_exact_HOLD": [
+          false,
+          false,
+          false
+        ],
+        "expert_exact_HOLD": [
+          true,
+          true,
+          true
+        ]
+      },
+      "first_nonbaseline_proposal": null
+    }
+  ],
+  "inference": "sequential_one_frame_hidden_state",
+  "actual_recorded_history": true,
+  "teacher_labels_used_as_actor_input": false,
+  "closed_loop_or_generalization_success_claim": false
+}

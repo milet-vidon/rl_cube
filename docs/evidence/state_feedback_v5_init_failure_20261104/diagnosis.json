@@ -1,0 +1,56 @@
+{
+  "schema": "v5_launch_environment_asset_contract_failure_v1",
+  "run": "left_state_residual_v5_long_eval_9501_20261104",
+  "completed_policy_control_steps": 0,
+  "trajectory_jsonl_bytes": 0,
+  "error": {
+    "type": "ValueError",
+    "message": "Baseline runtime asset contract differs from source",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/brainco/rl_cube/github_project/revotron_cube_rl/left_dagger_baseline_runtime_v3.py\", line 186, in __init__\n    self._initialize()\n  File \"/home/brainco/rl_cube/github_project/revotron_cube_rl/state_residual_eval_runtime_v5.py\", line 99, in _initialize\n    super()._initialize()\n  File \"/home/brainco/rl_cube/github_project/revotron_cube_rl/left_dagger_baseline_runtime_v3.py\", line 211, in _initialize\n    if env.contract != json.loads((self.source/'asset_contract.json').read_text()): raise ValueError('Baseline runtime asset contract differs from source')\n                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Baseline runtime asset contract differs from source\n"
+  },
+  "underlying_constructor_physics_steps_claim": null,
+  "zero_step_scope": "Zero evaluation actions. Frozen base constructor performs warm-up _physics calls; this is not a zero-total-physics claim.",
+  "cause": "Launcher inherited activate.sh old-root REVOTRON_USD_PATH and ISAAC_MUJOCO_CUBE_ROOT instead of the source wrist-mesh entry and github_project asset root.",
+  "observed_activation_values": {
+    "REVOTRON_USD_PATH": "/home/brainco/rl_cube/revotron_revo3/source/revotron_system/usd/revotron_bimanual_revo3_56dof.usd",
+    "ISAAC_MUJOCO_CUBE_ROOT": "/home/brainco/rl_cube/isaac_mujoco_cube"
+  },
+  "source_asset_path_overrides": [
+    {
+      "attribute": "/World/Robot/Link7_L/visuals/left_palm_led_link/Scene/Looks/screen/screen.inputs:diffuse_texture",
+      "source": "..\\meshes\\hands\\visual\\textures\\revo3_screen.png",
+      "resolved": "/home/brainco/rl_cube/github_project/revotron_revo3/source/revotron_system/meshes/hands/visual/textures/revo3_screen.png"
+    },
+    {
+      "attribute": "/World/Robot/Link7_R/visuals/right_palm_led_link/Scene/Looks/screen/screen.inputs:diffuse_texture",
+      "source": "..\\meshes\\hands\\visual\\textures\\revo3_screen.png",
+      "resolved": "/home/brainco/rl_cube/github_project/revotron_revo3/source/revotron_system/meshes/hands/visual/textures/revo3_screen.png"
+    }
+  ],
+  "failed_base_generated_asset_path_overrides": [
+    {
+      "attribute": "/World/Robot/Link7_L/visuals/left_palm_led_link/Scene/Looks/screen/screen.inputs:diffuse_texture",
+      "source": "..\\meshes\\hands\\visual\\textures\\revo3_screen.png",
+      "resolved": "/home/brainco/rl_cube/revotron_revo3/source/revotron_system/meshes/hands/visual/textures/revo3_screen.png"
+    },
+    {
+      "attribute": "/World/Robot/Link7_R/visuals/right_palm_led_link/Scene/Looks/screen/screen.inputs:diffuse_texture",
+      "source": "..\\meshes\\hands\\visual\\textures\\revo3_screen.png",
+      "resolved": "/home/brainco/rl_cube/revotron_revo3/source/revotron_system/meshes/hands/visual/textures/revo3_screen.png"
+    }
+  ],
+  "base_contract_common_field_differences": [
+    "asset_path_overrides",
+    "cube_mode"
+  ],
+  "base_contract_disk_timing": "environment.py writes asset_contract.json before DynamicPickupEnv replaces cube_mode and adds dynamic_cube. Those two differences do not describe the final in-memory contract.",
+  "in_memory_full_failed_contract_archived": false,
+  "correction": "New launch_v2 explicitly exports the two source asset paths and validates the wrist entry, referenced 56DOF layer, and cube USD hashes before unchanged evaluation startup.",
+  "control_source_or_model_changed": false,
+  "contract_assertion_weakened": false,
+  "v2_launch_prefix_only_checks_passed": true,
+  "v2_simulator_started_by_archive_author": false,
+  "v2_output_run": "left_state_residual_v5_long_eval_9501_20261104_v2",
+  "historical_failure_result_modified": false,
+  "evaluation_success_claim": false
+}

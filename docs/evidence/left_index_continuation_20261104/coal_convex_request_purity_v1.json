@@ -1,0 +1,834 @@
+{
+  "schema": "installed_coal303_default_request_and_convex_support_purity_audit_v1",
+  "simulator_started": false,
+  "coal_version": "3.0.3",
+  "source_sha256": {
+    "/home/brainco/rl_cube/github_project/revotron_cube_rl/safe_collision_plan.py": "2ca8f8278d50b03a612ec9e9bbad746900541b86a29eb799042212c4fdd6dda4",
+    "/home/brainco/rl_cube/github_project/revotron_cube_rl/opposed_grasp_plan.py": "752d5f86f0fad09915875ce8d8ade4885ddc6452901f979a3a2837c5cc31a8ac",
+    "/home/brainco/rl_cube/github_project/revotron_cube_rl/left_support_envelope_v3.py": "4fd2602d5b87abbe5f081c6b52c9dfdb6f7681096b30f921bfdc091f406ff3c7",
+    "/home/brainco/rl_cube/github_project/revotron_cube_rl/opposed_distance_cache_v1.py": "6c9e269437cc0a7f8b55552115fc903df6037b2ff804807c63b430697960e55e",
+    "/opt/ros/jazzy/lib/python3.12/site-packages/coal/coal_pywrap.cpython-312-x86_64-linux-gnu.so": "628368c4f875e5e3a5a9f91b1d57747c6f915a88596aaf96ef23c349a2ddf0a4"
+  },
+  "chosen_actual_robot_convex_bodies": [
+    "right_index_DIP_link",
+    "left_index_DIP_link"
+  ],
+  "default_request": {
+    "before": {
+      "abs_err": 0.0,
+      "cached_gjk_guess": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "cached_support_func_guess": [
+        0,
+        0
+      ],
+      "enable_cached_gjk_guess": false,
+      "enable_nearest_points": true,
+      "enable_signed_distance": true,
+      "enable_timings": false,
+      "epa_max_iterations": 64,
+      "epa_tolerance": 1e-06,
+      "gjk_convergence_criterion": 0,
+      "gjk_convergence_criterion_type": 0,
+      "gjk_initial_guess": 0,
+      "gjk_max_iterations": 128,
+      "gjk_tolerance": 1e-06,
+      "gjk_variant": 0,
+      "rel_err": 0.0
+    },
+    "rows": [
+      {
+        "shift": [
+          0.03,
+          0.02,
+          0.01
+        ],
+        "distance": 0.012346706841682995,
+        "distance_float64_hex": "2560c9f03a49893f",
+        "fresh_result_initial_min_distance": 1.7976931348623157e+308,
+        "request_after": {
+          "abs_err": 0.0,
+          "cached_gjk_guess": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "cached_support_func_guess": [
+            0,
+            0
+          ],
+          "enable_cached_gjk_guess": false,
+          "enable_nearest_points": true,
+          "enable_signed_distance": true,
+          "enable_timings": false,
+          "epa_max_iterations": 64,
+          "epa_tolerance": 1e-06,
+          "gjk_convergence_criterion": 0,
+          "gjk_convergence_criterion_type": 0,
+          "gjk_initial_guess": 0,
+          "gjk_max_iterations": 128,
+          "gjk_tolerance": 1e-06,
+          "gjk_variant": 0,
+          "rel_err": 0.0
+        },
+        "result_cached_gjk_guess": [
+          -0.010478025100039994,
+          -0.006525390323798928,
+          -0.00026728441680147936
+        ],
+        "result_cached_support_func_guess": [
+          1277,
+          270
+        ]
+      },
+      {
+        "shift": [
+          0.1,
+          0.0,
+          0.0
+        ],
+        "distance": 0.07859773854425686,
+        "distance_float64_hex": "ee4e963cfb1eb43f",
+        "fresh_result_initial_min_distance": 1.7976931348623157e+308,
+        "request_after": {
+          "abs_err": 0.0,
+          "cached_gjk_guess": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "cached_support_func_guess": [
+            0,
+            0
+          ],
+          "enable_cached_gjk_guess": false,
+          "enable_nearest_points": true,
+          "enable_signed_distance": true,
+          "enable_timings": false,
+          "epa_max_iterations": 64,
+          "epa_tolerance": 1e-06,
+          "gjk_convergence_criterion": 0,
+          "gjk_convergence_criterion_type": 0,
+          "gjk_initial_guess": 0,
+          "gjk_max_iterations": 128,
+          "gjk_tolerance": 1e-06,
+          "gjk_variant": 0,
+          "rel_err": 0.0
+        },
+        "result_cached_gjk_guess": [
+          -0.07823301863113971,
+          -0.0010527116022720194,
+          0.007489399068920699
+        ],
+        "result_cached_support_func_guess": [
+          1291,
+          2230
+        ]
+      },
+      {
+        "shift": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "distance": -0.015557406998150721,
+        "distance_float64_hex": "5e1524d28fdc8fbf",
+        "fresh_result_initial_min_distance": 1.7976931348623157e+308,
+        "request_after": {
+          "abs_err": 0.0,
+          "cached_gjk_guess": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "cached_support_func_guess": [
+            0,
+            0
+          ],
+          "enable_cached_gjk_guess": false,
+          "enable_nearest_points": true,
+          "enable_signed_distance": true,
+          "enable_timings": false,
+          "epa_max_iterations": 64,
+          "epa_tolerance": 1e-06,
+          "gjk_convergence_criterion": 0,
+          "gjk_convergence_criterion_type": 0,
+          "gjk_initial_guess": 0,
+          "gjk_max_iterations": 128,
+          "gjk_tolerance": 1e-06,
+          "gjk_variant": 0,
+          "rel_err": 0.0
+        },
+        "result_cached_gjk_guess": [
+          -0.011693744655780783,
+          0.010253716437009642,
+          -0.00038800471763344275
+        ],
+        "result_cached_support_func_guess": [
+          2298,
+          1315
+        ]
+      },
+      {
+        "shift": [
+          0.005,
+          0.003,
+          0.004
+        ],
+        "distance": -0.012413051416727276,
+        "distance_float64_hex": "e2fb068f036c89bf",
+        "fresh_result_initial_min_distance": 1.7976931348623157e+308,
+        "request_after": {
+          "abs_err": 0.0,
+          "cached_gjk_guess": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "cached_support_func_guess": [
+            0,
+            0
+          ],
+          "enable_cached_gjk_guess": false,
+          "enable_nearest_points": true,
+          "enable_signed_distance": true,
+          "enable_timings": false,
+          "epa_max_iterations": 64,
+          "epa_tolerance": 1e-06,
+          "gjk_convergence_criterion": 0,
+          "gjk_convergence_criterion_type": 0,
+          "gjk_initial_guess": 0,
+          "gjk_max_iterations": 128,
+          "gjk_tolerance": 1e-06,
+          "gjk_variant": 0,
+          "rel_err": 0.0
+        },
+        "result_cached_gjk_guess": [
+          -0.00951533102105725,
+          0.0063201961494458204,
+          -0.004857719801156795
+        ],
+        "result_cached_support_func_guess": [
+          139,
+          270
+        ]
+      },
+      {
+        "shift": [
+          0.03,
+          0.02,
+          0.01
+        ],
+        "distance": 0.012346706841682995,
+        "distance_float64_hex": "2560c9f03a49893f",
+        "fresh_result_initial_min_distance": 1.7976931348623157e+308,
+        "request_after": {
+          "abs_err": 0.0,
+          "cached_gjk_guess": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "cached_support_func_guess": [
+            0,
+            0
+          ],
+          "enable_cached_gjk_guess": false,
+          "enable_nearest_points": true,
+          "enable_signed_distance": true,
+          "enable_timings": false,
+          "epa_max_iterations": 64,
+          "epa_tolerance": 1e-06,
+          "gjk_convergence_criterion": 0,
+          "gjk_convergence_criterion_type": 0,
+          "gjk_initial_guess": 0,
+          "gjk_max_iterations": 128,
+          "gjk_tolerance": 1e-06,
+          "gjk_variant": 0,
+          "rel_err": 0.0
+        },
+        "result_cached_gjk_guess": [
+          -0.010478025100039994,
+          -0.006525390323798928,
+          -0.00026728441680147936
+        ],
+        "result_cached_support_func_guess": [
+          1277,
+          270
+        ]
+      }
+    ],
+    "request_unchanged": true
+  },
+  "second_default_request_series": {
+    "before": {
+      "abs_err": 0.0,
+      "cached_gjk_guess": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "cached_support_func_guess": [
+        0,
+        0
+      ],
+      "enable_cached_gjk_guess": false,
+      "enable_nearest_points": true,
+      "enable_signed_distance": true,
+      "enable_timings": false,
+      "epa_max_iterations": 64,
+      "epa_tolerance": 1e-06,
+      "gjk_convergence_criterion": 0,
+      "gjk_convergence_criterion_type": 0,
+      "gjk_initial_guess": 0,
+      "gjk_max_iterations": 128,
+      "gjk_tolerance": 1e-06,
+      "gjk_variant": 0,
+      "rel_err": 0.0
+    },
+    "rows": [
+      {
+        "shift": [
+          0.03,
+          0.02,
+          0.01
+        ],
+        "distance": 0.012346706841682995,
+        "distance_float64_hex": "2560c9f03a49893f",
+        "fresh_result_initial_min_distance": 1.7976931348623157e+308,
+        "request_after": {
+          "abs_err": 0.0,
+          "cached_gjk_guess": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "cached_support_func_guess": [
+            0,
+            0
+          ],
+          "enable_cached_gjk_guess": false,
+          "enable_nearest_points": true,
+          "enable_signed_distance": true,
+          "enable_timings": false,
+          "epa_max_iterations": 64,
+          "epa_tolerance": 1e-06,
+          "gjk_convergence_criterion": 0,
+          "gjk_convergence_criterion_type": 0,
+          "gjk_initial_guess": 0,
+          "gjk_max_iterations": 128,
+          "gjk_tolerance": 1e-06,
+          "gjk_variant": 0,
+          "rel_err": 0.0
+        },
+        "result_cached_gjk_guess": [
+          -0.010478025100039994,
+          -0.006525390323798928,
+          -0.00026728441680147936
+        ],
+        "result_cached_support_func_guess": [
+          1277,
+          270
+        ]
+      },
+      {
+        "shift": [
+          0.1,
+          0.0,
+          0.0
+        ],
+        "distance": 0.07859773854425686,
+        "distance_float64_hex": "ee4e963cfb1eb43f",
+        "fresh_result_initial_min_distance": 1.7976931348623157e+308,
+        "request_after": {
+          "abs_err": 0.0,
+          "cached_gjk_guess": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "cached_support_func_guess": [
+            0,
+            0
+          ],
+          "enable_cached_gjk_guess": false,
+          "enable_nearest_points": true,
+          "enable_signed_distance": true,
+          "enable_timings": false,
+          "epa_max_iterations": 64,
+          "epa_tolerance": 1e-06,
+          "gjk_convergence_criterion": 0,
+          "gjk_convergence_criterion_type": 0,
+          "gjk_initial_guess": 0,
+          "gjk_max_iterations": 128,
+          "gjk_tolerance": 1e-06,
+          "gjk_variant": 0,
+          "rel_err": 0.0
+        },
+        "result_cached_gjk_guess": [
+          -0.07823301863113971,
+          -0.0010527116022720194,
+          0.007489399068920699
+        ],
+        "result_cached_support_func_guess": [
+          1291,
+          2230
+        ]
+      },
+      {
+        "shift": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "distance": -0.015557406998150721,
+        "distance_float64_hex": "5e1524d28fdc8fbf",
+        "fresh_result_initial_min_distance": 1.7976931348623157e+308,
+        "request_after": {
+          "abs_err": 0.0,
+          "cached_gjk_guess": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "cached_support_func_guess": [
+            0,
+            0
+          ],
+          "enable_cached_gjk_guess": false,
+          "enable_nearest_points": true,
+          "enable_signed_distance": true,
+          "enable_timings": false,
+          "epa_max_iterations": 64,
+          "epa_tolerance": 1e-06,
+          "gjk_convergence_criterion": 0,
+          "gjk_convergence_criterion_type": 0,
+          "gjk_initial_guess": 0,
+          "gjk_max_iterations": 128,
+          "gjk_tolerance": 1e-06,
+          "gjk_variant": 0,
+          "rel_err": 0.0
+        },
+        "result_cached_gjk_guess": [
+          -0.011693744655780783,
+          0.010253716437009642,
+          -0.00038800471763344275
+        ],
+        "result_cached_support_func_guess": [
+          2298,
+          1315
+        ]
+      },
+      {
+        "shift": [
+          0.005,
+          0.003,
+          0.004
+        ],
+        "distance": -0.012413051416727276,
+        "distance_float64_hex": "e2fb068f036c89bf",
+        "fresh_result_initial_min_distance": 1.7976931348623157e+308,
+        "request_after": {
+          "abs_err": 0.0,
+          "cached_gjk_guess": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "cached_support_func_guess": [
+            0,
+            0
+          ],
+          "enable_cached_gjk_guess": false,
+          "enable_nearest_points": true,
+          "enable_signed_distance": true,
+          "enable_timings": false,
+          "epa_max_iterations": 64,
+          "epa_tolerance": 1e-06,
+          "gjk_convergence_criterion": 0,
+          "gjk_convergence_criterion_type": 0,
+          "gjk_initial_guess": 0,
+          "gjk_max_iterations": 128,
+          "gjk_tolerance": 1e-06,
+          "gjk_variant": 0,
+          "rel_err": 0.0
+        },
+        "result_cached_gjk_guess": [
+          -0.00951533102105725,
+          0.0063201961494458204,
+          -0.004857719801156795
+        ],
+        "result_cached_support_func_guess": [
+          139,
+          270
+        ]
+      },
+      {
+        "shift": [
+          0.03,
+          0.02,
+          0.01
+        ],
+        "distance": 0.012346706841682995,
+        "distance_float64_hex": "2560c9f03a49893f",
+        "fresh_result_initial_min_distance": 1.7976931348623157e+308,
+        "request_after": {
+          "abs_err": 0.0,
+          "cached_gjk_guess": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "cached_support_func_guess": [
+            0,
+            0
+          ],
+          "enable_cached_gjk_guess": false,
+          "enable_nearest_points": true,
+          "enable_signed_distance": true,
+          "enable_timings": false,
+          "epa_max_iterations": 64,
+          "epa_tolerance": 1e-06,
+          "gjk_convergence_criterion": 0,
+          "gjk_convergence_criterion_type": 0,
+          "gjk_initial_guess": 0,
+          "gjk_max_iterations": 128,
+          "gjk_tolerance": 1e-06,
+          "gjk_variant": 0,
+          "rel_err": 0.0
+        },
+        "result_cached_gjk_guess": [
+          -0.010478025100039994,
+          -0.006525390323798928,
+          -0.00026728441680147936
+        ],
+        "result_cached_support_func_guess": [
+          1277,
+          270
+        ]
+      }
+    ],
+    "request_unchanged": true
+  },
+  "repeated_interleaved_results_bitwise_equal": true,
+  "positive_control_cached_request": {
+    "before": {
+      "abs_err": 0.0,
+      "cached_gjk_guess": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "cached_support_func_guess": [
+        0,
+        0
+      ],
+      "enable_cached_gjk_guess": true,
+      "enable_nearest_points": true,
+      "enable_signed_distance": true,
+      "enable_timings": false,
+      "epa_max_iterations": 64,
+      "epa_tolerance": 1e-06,
+      "gjk_convergence_criterion": 0,
+      "gjk_convergence_criterion_type": 0,
+      "gjk_initial_guess": 0,
+      "gjk_max_iterations": 128,
+      "gjk_tolerance": 1e-06,
+      "gjk_variant": 0,
+      "rel_err": 0.0
+    },
+    "rows": [
+      {
+        "shift": [
+          0.03,
+          0.02,
+          0.01
+        ],
+        "distance": 0.012346706841682995,
+        "distance_float64_hex": "2560c9f03a49893f",
+        "fresh_result_initial_min_distance": 1.7976931348623157e+308,
+        "request_after": {
+          "abs_err": 0.0,
+          "cached_gjk_guess": [
+            -0.010478025100039994,
+            -0.006525390323798928,
+            -0.00026728441680147936
+          ],
+          "cached_support_func_guess": [
+            1277,
+            270
+          ],
+          "enable_cached_gjk_guess": true,
+          "enable_nearest_points": true,
+          "enable_signed_distance": true,
+          "enable_timings": false,
+          "epa_max_iterations": 64,
+          "epa_tolerance": 1e-06,
+          "gjk_convergence_criterion": 0,
+          "gjk_convergence_criterion_type": 0,
+          "gjk_initial_guess": 0,
+          "gjk_max_iterations": 128,
+          "gjk_tolerance": 1e-06,
+          "gjk_variant": 0,
+          "rel_err": 0.0
+        },
+        "result_cached_gjk_guess": [
+          -0.010478025100039994,
+          -0.006525390323798928,
+          -0.00026728441680147936
+        ],
+        "result_cached_support_func_guess": [
+          1277,
+          270
+        ]
+      },
+      {
+        "shift": [
+          0.1,
+          0.0,
+          0.0
+        ],
+        "distance": 0.07859773854425686,
+        "distance_float64_hex": "ee4e963cfb1eb43f",
+        "fresh_result_initial_min_distance": 1.7976931348623157e+308,
+        "request_after": {
+          "abs_err": 0.0,
+          "cached_gjk_guess": [
+            -0.07823301863113971,
+            -0.0010527116022720194,
+            0.007489399068920699
+          ],
+          "cached_support_func_guess": [
+            1291,
+            2230
+          ],
+          "enable_cached_gjk_guess": true,
+          "enable_nearest_points": true,
+          "enable_signed_distance": true,
+          "enable_timings": false,
+          "epa_max_iterations": 64,
+          "epa_tolerance": 1e-06,
+          "gjk_convergence_criterion": 0,
+          "gjk_convergence_criterion_type": 0,
+          "gjk_initial_guess": 0,
+          "gjk_max_iterations": 128,
+          "gjk_tolerance": 1e-06,
+          "gjk_variant": 0,
+          "rel_err": 0.0
+        },
+        "result_cached_gjk_guess": [
+          -0.07823301863113971,
+          -0.0010527116022720194,
+          0.007489399068920699
+        ],
+        "result_cached_support_func_guess": [
+          1291,
+          2230
+        ]
+      },
+      {
+        "shift": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "distance": -0.013208993898666524,
+        "distance_float64_hex": "db727626510d8bbf",
+        "fresh_result_initial_min_distance": 1.7976931348623157e+308,
+        "request_after": {
+          "abs_err": 0.0,
+          "cached_gjk_guess": [
+            -0.008698358655979503,
+            0.009202379640326977,
+            0.0037592932131255054
+          ],
+          "cached_support_func_guess": [
+            270,
+            197
+          ],
+          "enable_cached_gjk_guess": true,
+          "enable_nearest_points": true,
+          "enable_signed_distance": true,
+          "enable_timings": false,
+          "epa_max_iterations": 64,
+          "epa_tolerance": 1e-06,
+          "gjk_convergence_criterion": 0,
+          "gjk_convergence_criterion_type": 0,
+          "gjk_initial_guess": 0,
+          "gjk_max_iterations": 128,
+          "gjk_tolerance": 1e-06,
+          "gjk_variant": 0,
+          "rel_err": 0.0
+        },
+        "result_cached_gjk_guess": [
+          -0.008698358655979503,
+          0.009202379640326977,
+          0.0037592932131255054
+        ],
+        "result_cached_support_func_guess": [
+          270,
+          197
+        ]
+      },
+      {
+        "shift": [
+          0.005,
+          0.003,
+          0.004
+        ],
+        "distance": -0.015525248368681943,
+        "distance_float64_hex": "33cf0b90b3cb8fbf",
+        "fresh_result_initial_min_distance": 1.7976931348623157e+308,
+        "request_after": {
+          "abs_err": 0.0,
+          "cached_gjk_guess": [
+            -0.01544480818757758,
+            -0.0013091631354571443,
+            0.0008816625448310296
+          ],
+          "cached_support_func_guess": [
+            1283,
+            270
+          ],
+          "enable_cached_gjk_guess": true,
+          "enable_nearest_points": true,
+          "enable_signed_distance": true,
+          "enable_timings": false,
+          "epa_max_iterations": 64,
+          "epa_tolerance": 1e-06,
+          "gjk_convergence_criterion": 0,
+          "gjk_convergence_criterion_type": 0,
+          "gjk_initial_guess": 0,
+          "gjk_max_iterations": 128,
+          "gjk_tolerance": 1e-06,
+          "gjk_variant": 0,
+          "rel_err": 0.0
+        },
+        "result_cached_gjk_guess": [
+          -0.01544480818757758,
+          -0.0013091631354571443,
+          0.0008816625448310296
+        ],
+        "result_cached_support_func_guess": [
+          1283,
+          270
+        ]
+      },
+      {
+        "shift": [
+          0.03,
+          0.02,
+          0.01
+        ],
+        "distance": 0.013135427851936124,
+        "distance_float64_hex": "c8215848bfe68a3f",
+        "fresh_result_initial_min_distance": 1.7976931348623157e+308,
+        "request_after": {
+          "abs_err": 0.0,
+          "cached_gjk_guess": [
+            -0.010149271765524341,
+            -0.008180534182116417,
+            -0.0016157375957049878
+          ],
+          "cached_support_func_guess": [
+            461,
+            1538
+          ],
+          "enable_cached_gjk_guess": true,
+          "enable_nearest_points": true,
+          "enable_signed_distance": true,
+          "enable_timings": false,
+          "epa_max_iterations": 64,
+          "epa_tolerance": 1e-06,
+          "gjk_convergence_criterion": 0,
+          "gjk_convergence_criterion_type": 0,
+          "gjk_initial_guess": 0,
+          "gjk_max_iterations": 128,
+          "gjk_tolerance": 1e-06,
+          "gjk_variant": 0,
+          "rel_err": 0.0
+        },
+        "result_cached_gjk_guess": [
+          -0.010149271765524341,
+          -0.008180534182116417,
+          -0.0016157375957049878
+        ],
+        "result_cached_support_func_guess": [
+          461,
+          1538
+        ]
+      }
+    ],
+    "request_unchanged": false
+  },
+  "geometry_serialized_before": [
+    {
+      "points_sha256": "ab437341677661784953a2afca550aeac659b2cf3f8272058f52a9e62cecbfab",
+      "saveToString_sha256": "695d9080e7aaa89cf10cd06e34d933245e0571ffd8a3d0de61c8cfd867d219a8"
+    },
+    {
+      "points_sha256": "28d982f09eedb09c256ba14dc4bd82e588fd5843feaec555cf731c4d2b370748",
+      "saveToString_sha256": "47a5ca1bc4be8518e2c47f1195c5f9e6c1ef3aa35c56880b8633de1f0a36e30d"
+    }
+  ],
+  "geometry_serialized_after": [
+    {
+      "points_sha256": "ab437341677661784953a2afca550aeac659b2cf3f8272058f52a9e62cecbfab",
+      "saveToString_sha256": "695d9080e7aaa89cf10cd06e34d933245e0571ffd8a3d0de61c8cfd867d219a8"
+    },
+    {
+      "points_sha256": "28d982f09eedb09c256ba14dc4bd82e588fd5843feaec555cf731c4d2b370748",
+      "saveToString_sha256": "47a5ca1bc4be8518e2c47f1195c5f9e6c1ef3aa35c56880b8633de1f0a36e30d"
+    }
+  ],
+  "geometry_bytes_unchanged": true,
+  "upstream_source_evidence": [
+    {
+      "url": "https://raw.githubusercontent.com/coal-library/coal/v3.0.3/include/coal/collision_data.h",
+      "relative_path": "include/coal/collision_data.h",
+      "download_path": "work/teacher_optimization_20261103/coal_303_purity_sources/include/coal/collision_data.h",
+      "upstream_sha256": "b5568be40c92d028027836b864d6007002bb7acda0eda34900751ff415e4d524",
+      "installed_path": "/opt/ros/jazzy/include/coal/collision_data.h",
+      "installed_sha256": "b5568be40c92d028027836b864d6007002bb7acda0eda34900751ff415e4d524",
+      "installed_bytes_match_release": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/coal-library/coal/v3.0.3/include/coal/narrowphase/narrowphase.h",
+      "relative_path": "include/coal/narrowphase/narrowphase.h",
+      "download_path": "work/teacher_optimization_20261103/coal_303_purity_sources/include/coal/narrowphase/narrowphase.h",
+      "upstream_sha256": "eb2364fbdc808534d058a22fcc3379ad4e2e33c081afcc908b06eccbfc3d143b",
+      "installed_path": "/opt/ros/jazzy/include/coal/narrowphase/narrowphase.h",
+      "installed_sha256": "eb2364fbdc808534d058a22fcc3379ad4e2e33c081afcc908b06eccbfc3d143b",
+      "installed_bytes_match_release": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/coal-library/coal/v3.0.3/src/distance.cpp",
+      "relative_path": "src/distance.cpp",
+      "download_path": "work/teacher_optimization_20261103/coal_303_purity_sources/src/distance.cpp",
+      "upstream_sha256": "810aaf3d9f810f9e1aa47307a597a9b94de6d95a3c6368063ab7886b33e42fa0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/coal-library/coal/v3.0.3/include/coal/shape/convex.h",
+      "relative_path": "include/coal/shape/convex.h",
+      "download_path": "work/teacher_optimization_20261103/coal_303_purity_sources/include/coal/shape/convex.h",
+      "upstream_sha256": "1b536f956fec1c9ff3167b97a1bc20141b7ccba5d50ed09fdc5e45511f796f16",
+      "installed_path": "/opt/ros/jazzy/include/coal/shape/convex.h",
+      "installed_sha256": "1b536f956fec1c9ff3167b97a1bc20141b7ccba5d50ed09fdc5e45511f796f16",
+      "installed_bytes_match_release": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/coal-library/coal/v3.0.3/include/coal/shape/geometric_shapes.h",
+      "relative_path": "include/coal/shape/geometric_shapes.h",
+      "download_path": "work/teacher_optimization_20261103/coal_303_purity_sources/include/coal/shape/geometric_shapes.h",
+      "upstream_sha256": "b28b06ba9ab820b21213d738e674211c15da30b85a06d3e7dadd494a8b340c11",
+      "installed_path": "/opt/ros/jazzy/include/coal/shape/geometric_shapes.h",
+      "installed_sha256": "b28b06ba9ab820b21213d738e674211c15da30b85a06d3e7dadd494a8b340c11",
+      "installed_bytes_match_release": true
+    }
+  ],
+  "distance_method_source": " def distance(self,a,b):\n  n,m,t,c,r=a;nn,mm,tt,cc,rr=b\n  ca=t[:3,:3]@c+t[:3,3];cb=tt[:3,:3]@cc+tt[:3,3]\n  if np.linalg.norm(ca-cb)>r+rr+.004:return 1.\n  result=coal.DistanceResult();d=float(coal.distance(m,coal.Transform3s(t[:3,:3],t[:3,3]),mm,coal.Transform3s(tt[:3,:3],tt[:3,3]),self.request,result))\n  if d<.004:self.last_pair=(n,nn,d)\n  return d\n",
+  "conclusion_scope": "Current fresh immutable default-request Convex/Box planner only; a warm-start or mutable request requires an explicit cache guard or replay of request updates."
+}

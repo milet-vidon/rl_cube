@@ -1,0 +1,38 @@
+[
+  {
+    "requested_j5_j6_deg": [
+      -65,
+      20
+    ],
+    "checks": 241,
+    "failure": null,
+    "passed": true
+  },
+  {
+    "requested_j5_j6_deg": [
+      -50,
+      20
+    ],
+    "checks": 241,
+    "failure": null,
+    "passed": true
+  },
+  {
+    "requested_j5_j6_deg": [
+      -50,
+      30
+    ],
+    "checks": 241,
+    "failure": null,
+    "passed": true
+  },
+  {
+    "requested_j5_j6_deg": [
+      -35,
+      20
+    ],
+    "checks": 241,
+    "failure": null,
+    "passed": true
+  }
+]

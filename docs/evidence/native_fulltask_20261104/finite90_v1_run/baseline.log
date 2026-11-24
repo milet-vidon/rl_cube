@@ -1,0 +1,19 @@
+AppLauncher is deprecated; use isaaclab.app.launch_simulation.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1793725697.626048 1259908 descriptor_database.cc:633] File already exists in database: grpc/health/v1/health.proto
+W0000 00:00:1793725697.626078 1259908 message.cc:301] Protobuf GeneratedMessageFactory: File is already registered: grpc/health/v1/health.proto
+Warning: Possible version incompatibility. Attempting to load carb::ujitso::IFactory with version v0.3 against v0.2.
+[ISAACLAB] KitLauncher initialization complete
+Warp 1.17.0 initialized:
+   CUDA Toolkit 12.9, Driver 13.2
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA GeForce RTX 5070 Laptop GPU" (8 GiB, sm_120, mempool enabled)
+   Kernel cache:
+     /home/brainco/.cache/warp/1.17.0
+[INFO]: Registered backend 'physx' for factory RigidObject.
+Loading user config located at: '/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaacsim/kit/data/Kit/IsaacLab/3.0/user.config.json'
+2026-11-03T17:08:17Z [0ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-11-03T17:08:17Z [52ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-11-03T17:08:18Z [682ms] [Warning] [carb] Failed to find a plugin with an interface pointer: 0x565736d5c2d0. Client: carb.scripting-python.plugin
+2026-11-03T17:08:18Z [900ms] [Warning] [usdrt.population.plugin] Last global time was not created. Did you call setEnableUsdNoticeHandling?

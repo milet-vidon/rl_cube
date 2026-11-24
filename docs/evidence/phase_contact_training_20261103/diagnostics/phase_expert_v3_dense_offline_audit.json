@@ -1,0 +1,55 @@
+{
+  "run": "teacher_phase_expert_gpu_v3_dense_20261103",
+  "best_step": 16700,
+  "checkpoint_sha256": "354a63778a0f846b09873374c3b36989152d43c0b2ab976ed406bd6b84e27050",
+  "phases": {
+    "ready": {
+      "rmse_rad": 0.00029554133652709424,
+      "maximum_rad": 0.0033926665782928467
+    },
+    "preshape": {
+      "rmse_rad": 0.00026768402312882245,
+      "maximum_rad": 0.0015469524078071117
+    },
+    "lower": {
+      "rmse_rad": 2.0553767171804793e-05,
+      "maximum_rad": 0.0001016855239868164
+    },
+    "approach": {
+      "rmse_rad": 6.614074663957581e-05,
+      "maximum_rad": 0.0002584308385848999
+    },
+    "squeeze": {
+      "rmse_rad": 0.00010454461153130978,
+      "maximum_rad": 0.0026922300457954407
+    },
+    "primary_lift": {
+      "rmse_rad": 0.0002767314435914159,
+      "maximum_rad": 0.0034672021865844727
+    },
+    "elbow_outward": {
+      "rmse_rad": 0.0002068270550807938,
+      "maximum_rad": 0.0022269487380981445
+    },
+    "tilt_90": {
+      "rmse_rad": 0.0004089012509211898,
+      "maximum_rad": 0.0035530924797058105
+    },
+    "wrist_reconfigure": {
+      "rmse_rad": 0.00011291506234556437,
+      "maximum_rad": 0.0013357996940612793
+    },
+    "tilt_hold": {
+      "rmse_rad": 0.0002072053321171552,
+      "maximum_rad": 0.0030551552772521973
+    },
+    "left_center_transport": {
+      "rmse_rad": 0.0001353900443064049,
+      "maximum_rad": 0.0018074512481689453
+    },
+    "center_hold": {
+      "rmse_rad": 4.309534051571973e-05,
+      "maximum_rad": 0.0001963973045349121
+    }
+  }
+}

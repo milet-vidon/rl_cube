@@ -1,0 +1,19 @@
+{
+  "sha256": {
+    "result.json": "25f855a6e81d1c8851b1b7b66afbf6051d1476b1c7100fecdcf111df94861e0f",
+    "reviewed_transition_qualification.json": "810b793afb4b827bfcea72778c66f55883552f143b0fda4bd2245eb5aaa2d1b9",
+    "projection_parameters.json": "890108362592dd288cfb1c5bee8eb824645043ed7be0733ada40adf9cb67da66",
+    "evaluation_preflight.json": "f6e9159d42b3498edaeca67e57c4560326dafec49fc3e82128b07dbca4c15761",
+    "trajectory.jsonl": "f8c5da546a5b4bd87b14ece3ffff4ba52d7218c210c238dc2e9a733d2cb1eacd",
+    "dynamic_training_scene.usda": "ff16e3e8af8e8e2e0c0f7ff240a2b2f1d688a9c1b3560ff2230033742096c6f8",
+    "config.json": "d3c6084f638ed96ea299dbf76c386537051d3857c61675ddfc4abd5e9d925ae1",
+    "reviewed_training_authorization.json": "d6d5961f23215140a21658c51c6105e0ad24eb7db1a2df0c65f688708335e6ef",
+    "evaluation_protocol.json": "3985a722e7d257c39824517fd69110f676fbf0fa4eba23b8e34150a984b49de1",
+    "asset_contract.json": "3367c3d471d25bb668b2f67fb9eca3ba34a28328b967ffbb63aef39cf1a365c7",
+    "evaluation_transitions.jsonl": "9b0ed86511ba5eff32cf5e7ee2befb06b2237c2a1a236d590bea1804303dc1eb",
+    "runtime_protocol.json": "48295d7b9e70641661456f4755f5b3e4a8040d6b9709b7ac2c099765f3771f46",
+    "initial_state.json": "9a7c759eb84012d21924c47e2583e3bc60badaed2239608d026b6d95e785c5f3",
+    "trajectory.json": "3302f18a3ed87e6092d6f48602c40f49d1c4b7c442b8747a8fd3fe52f6360ac8",
+    "physics_identity.json": "57e21f505e1833564889b4b776aac4e04e5eef11d1436e959761465928aae8c7"
+  }
+}

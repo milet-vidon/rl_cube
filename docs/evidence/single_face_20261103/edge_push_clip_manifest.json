@@ -1,0 +1,12 @@
+{
+  "source_run": "single_face_contact_dev_v4_edge_20261103",
+  "source_mp4_sha256": "90454c8395c5f819300e0228a64c72c1b4feadcc5e88672cb024008973be1996",
+  "clip_sha256": "4462740de527e9161fa7e2f71a7034f84cce111bd73ac630c7bbdf2589f94254",
+  "start_s": 54,
+  "requested_duration_s": 23,
+  "synthetic_frames": false,
+  "playback_speed": 1,
+  "face_turn_success": false,
+  "seed": 9501,
+  "split": "development"
+}

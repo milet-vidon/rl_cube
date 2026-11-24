@@ -1,0 +1,204 @@
+{
+  "schema": "native_v20_candidate_sources_and_sampled_geometry_v1",
+  "entries": [
+    {
+      "source": "work/teacher_optimization_20261103/left_index_continuation_v20.py",
+      "archive": "left_index_continuation_v20.py.gz",
+      "source_sha256": "aff5428d6ef680e33f2c53f10af5c385e95b9a3671c3c9232568646c21f3e565",
+      "archive_sha256": "b918e4e579b6537f7975bed0ec08205363e22fe6d033bafbafb7954e6d0e9b50",
+      "bytes": 3554
+    },
+    {
+      "source": "work/teacher_optimization_20261103/left_index_mpr_envelope_v20.py",
+      "archive": "left_index_mpr_envelope_v20.py.gz",
+      "source_sha256": "edcc4d00a8ae955cf4c400fdfd521506c1dc4a10389d7775b444faef43118185",
+      "archive_sha256": "fbaf8f84e3adf45e1b8ad50efe47252544c674874a6f714fdfd2b98c31e00dbd",
+      "bytes": 9148
+    },
+    {
+      "source": "work/teacher_optimization_20261103/left_index_mpr_preflight_v20.py",
+      "archive": "left_index_mpr_preflight_v20.py.gz",
+      "source_sha256": "33a2b3a7d04dcbda7533375d8d434bc3d41b27b166ed6fae3155aba9ed7ca3d3",
+      "archive_sha256": "19605ae5b2d73d6b32a8425756e60b5608cc5170b3a5d3b45f96ce7c855dc1a0",
+      "bytes": 986
+    },
+    {
+      "source": "work/teacher_optimization_20261103/left_index_mpr_preflight_contract_v20.json",
+      "archive": "left_index_mpr_preflight_contract_v20.json.gz",
+      "source_sha256": "9cca4bd8fa175aa984d510fa2e6b43c1f11f4580c81a65a5c42e5f28b915d971",
+      "archive_sha256": "43c8de6c9fbcf3500c81325fc10d61e8954f322cb317853e16b0fb25519c5c76",
+      "bytes": 32761
+    },
+    {
+      "source": "work/teacher_optimization_20261103/single_face_experiment_v20_draft.py",
+      "archive": "single_face_experiment_v20_draft.py.gz",
+      "source_sha256": "059b4aa7e2a9f265dc903622c652fd3a8d01ddaddb77fa454737b57c45ad5c25",
+      "archive_sha256": "853411b990827fbbe58ec5b5cdcc0bcbf90b48747d7854156137ede556accec2",
+      "bytes": 23479
+    },
+    {
+      "source": "work/teacher_optimization_20261103/opposed_grasp_runtime_v20_draft.py",
+      "archive": "opposed_grasp_runtime_v20_draft.py.gz",
+      "source_sha256": "b94038b7b6fc239241cc34c6f614f43b93bf81416a61693930426eb3dde42820",
+      "archive_sha256": "7d07088176aa9900e522f46baa8e3eda5c9435a3cb600b51d9ca7f34d1fa944e",
+      "bytes": 11858
+    },
+    {
+      "source": "work/teacher_optimization_20261103/native_index_v20_optin.patch",
+      "archive": "native_index_v20_optin.patch.gz",
+      "source_sha256": "b8f9de837686a2cd4126fe503564e488cf1443b164e87b018affd5f123f7672e",
+      "archive_sha256": "782afc2ddd864470886d5654adfe96d50142a7393c5b3c88d89727e92568a1a6",
+      "bytes": 7978
+    },
+    {
+      "source": "work/teacher_optimization_20261103/test_left_index_continuation_v20.py",
+      "archive": "test_left_index_continuation_v20.py.gz",
+      "source_sha256": "89e3949b671aadf228370b847010e0ed2879034ec513df7e7a5a9f99f55cc75b",
+      "archive_sha256": "fa21cef3a4dbeff3397a631f4d2fa8fcf7260734bcc0464d973b47347073f3bf",
+      "bytes": 5151
+    },
+    {
+      "source": "work/teacher_optimization_20261103/test_native_index_v20_patch.py",
+      "archive": "test_native_index_v20_patch.py.gz",
+      "source_sha256": "60bcad4901bf5c877943d964a841399699c9b686e584dac2d133ee4ef2b961b6",
+      "archive_sha256": "3a16027153a7e03066709968b5b256345e08be5dd4b93649e9836c05defc49fb",
+      "bytes": 2334
+    },
+    {
+      "source": "work/teacher_optimization_20261103/native_v20_mpr_bound_n0p023_full_path.json",
+      "archive": "native_v20_mpr_bound_n0p023_full_path.json.gz",
+      "source_sha256": "650efb1cc6e5ddcbbe89bd4cd295f16028fe95cf4bfdd6d569c74c17ec332e11",
+      "archive_sha256": "4c6b92fa76e816e68a7588ea82f32b8eb3147e73ae5e8cad915acbd22e251fef",
+      "bytes": 9984
+    },
+    {
+      "source": "work/teacher_optimization_20261103/native_v20_frozen_candidate_geometry_binding.json",
+      "archive": "native_v20_frozen_candidate_geometry_binding.json.gz",
+      "source_sha256": "4313ce21fd20b5533c04de22fd241de6e26da15601267f883dba216b77ecbd2f",
+      "archive_sha256": "7ae24c05aff7caed3ca1ca40fa30054bdab4be1d35c4a7b47e225f7a4b30d2e2",
+      "bytes": 35578
+    },
+    {
+      "source": "work/teacher_optimization_20261103/native_v20_active_collector_dependency_review.json",
+      "archive": "native_v20_active_collector_dependency_review.json.gz",
+      "source_sha256": "389c139dd3a079a945be6f4fa91dac468496034d9bf9a91cb394134685c2fe2e",
+      "archive_sha256": "7f9dd6ceb0ba99d6b7a707a07319d9ffb49a7010ed590f1670ffc296486e327a",
+      "bytes": 2684
+    },
+    {
+      "source": "work/teacher_optimization_20261103/native_v20_mpr023_optin_independent_review.json",
+      "archive": "native_v20_mpr023_optin_independent_review.json.gz",
+      "source_sha256": "d71d8ba665b3506769c5122086dacc1daecc6bf2c0601d78f42bde88868a4dde",
+      "archive_sha256": "ff5050dd9a0ad6020c1088b1a204ccbfa3008154b3d3bc883fe5318cdf372f18",
+      "bytes": 2628
+    },
+    {
+      "source": "work/teacher_optimization_20261103/native_v19_to_v20_decision.json",
+      "archive": "native_v19_to_v20_decision.json.gz",
+      "source_sha256": "f814d04772aef9fc02fc5fa372fb127d14e9cbec3b41f094bb22bf5162f49d15",
+      "archive_sha256": "5b3761b6038e1af0cf3a80905ff55b9a6627d1690214fe522b58efb1914f3c4f",
+      "bytes": 6056
+    },
+    {
+      "source": "work/teacher_optimization_20261103/native_v20_mpr_full_path_preflight.json",
+      "archive": "native_v20_mpr_full_path_preflight.json.gz",
+      "source_sha256": "8c9793f42e421500a7bffeffcd3a4da08f2b9e0d337aac1004a5bae722376866",
+      "archive_sha256": "e3606651aaf2c4a79e05879bc0be5b7ef0d0178b46811fcc921ea5a600abce2c",
+      "bytes": 4675
+    },
+    {
+      "source": "work/teacher_optimization_20261103/native_v20_mpr_preflight_request.json",
+      "archive": "native_v20_mpr_preflight_request.json.gz",
+      "source_sha256": "838058b2cd3b5117d3daa1f64902b8777a0fc998baa815783e9ce84682101d72",
+      "archive_sha256": "a93edc3c088093b691056914246d8717fa4f00f98e47fbad5f693cfb75dc114b",
+      "bytes": 3383473
+    },
+    {
+      "source": "work/teacher_optimization_20261103/native_v20_actual_mesh_index_capacity.json",
+      "archive": "native_v20_actual_mesh_index_capacity.json.gz",
+      "source_sha256": "8803430be58d6e1a59942a8a633de095d896af3907ef5d0cd904d337fbb1ca41",
+      "archive_sha256": "07a10e7d3516b9763f90678923878b932c90455d262799580589e5dbf8117b27",
+      "bytes": 26675
+    },
+    {
+      "source": "work/teacher_optimization_20261103/native_v20_mesh_constrained_index_candidates.json",
+      "archive": "native_v20_mesh_constrained_index_candidates.json.gz",
+      "source_sha256": "99c87608ecd43b309d776285ed3215edced42926d1bf26b22fbda1c9246ceb6e",
+      "archive_sha256": "51be31d639bd0a489454c01b20d10ad0065a1068b3880e0f4c58501df54f1314",
+      "bytes": 78532
+    },
+    {
+      "source": "work/teacher_optimization_20261103/native_v20_index_candidate_geometry.json",
+      "archive": "native_v20_index_candidate_geometry.json.gz",
+      "source_sha256": "91a0f30e8b81e3ec7fc57c1e58102d49ac6ed05a179c64398ccbd534d4aa2fb8",
+      "archive_sha256": "1a3f4a26ee4567cdf0069a599d3e76fad91ef0e80f79afc51288c061ea18a595",
+      "bytes": 12224
+    },
+    {
+      "source": "work/teacher_optimization_20261103/v20_factorized_envelope_independent_review.json",
+      "archive": "v20_factorized_envelope_independent_review.json.gz",
+      "source_sha256": "bd5f20f2dd69a9d1d3a4607871c1f699622cbadefc297c7aa7505c3d7954ae9d",
+      "archive_sha256": "2f1ef2aefed305983b72c5ee6d8ad5136886ebcc4e2cf7c9dd05edb43a84e80e",
+      "bytes": 15268
+    },
+    {
+      "source": "work/teacher_optimization_20261103/preflight_native_mpr_bound_candidate_v20.py",
+      "archive": "preflight_native_mpr_bound_candidate_v20.py.gz",
+      "source_sha256": "19f07edb7249959e807f36d86c162723df5aac038b7f6fc1b3f36620f1540338",
+      "archive_sha256": "9e4197d6fba171d0055f49264e3a4871d33ff8802114ee5c90ff542d69ae5d3a",
+      "bytes": 3574
+    },
+    {
+      "source": "work/teacher_optimization_20261103/review_v20_factorized_envelope_cpu.py",
+      "archive": "review_v20_factorized_envelope_cpu.py.gz",
+      "source_sha256": "18a61e492e51c8b7bd9cd2f9103aa893576b895d0bb0c8513407c5092cd621ba",
+      "archive_sha256": "b6f594dcee0bdd8f96157e45c4566727ce30c95617f7103f8168e9a060bade90",
+      "bytes": 6294
+    },
+    {
+      "source": "work/teacher_optimization_20261103/plan_native_index_recovery_v20.py",
+      "archive": "plan_native_index_recovery_v20.py.gz",
+      "source_sha256": "4571fc57b4a3b7212096f1fbb4e3450ec35472a996b3fb7011fdaf7b423f93fd",
+      "archive_sha256": "9e707e8f361fcb51bb7a583fda0a4edcf020267a8c94bde3719b64d9e0a8475e",
+      "bytes": 7624
+    },
+    {
+      "source": "work/teacher_optimization_20261103/measure_native_index_mesh_v20.py",
+      "archive": "measure_native_index_mesh_v20.py.gz",
+      "source_sha256": "52af10c35af85cc49b675e8a0bfc3f99eb6ec2cc6499a3e9432480a205a75a51",
+      "archive_sha256": "c8613ba76d6dffae25f234197cd9585500fdc33e454f20272acfd321ac480a1b",
+      "bytes": 6109
+    },
+    {
+      "source": "work/teacher_optimization_20261103/solve_native_index_mesh_recovery_v20.py",
+      "archive": "solve_native_index_mesh_recovery_v20.py.gz",
+      "source_sha256": "b866ceecec3029169a29b9cf31ca58ae5cbfcd3881e58667f0e0dd873e7c3d1e",
+      "archive_sha256": "09c68d78caa1a2da091c1e877af200176b9fb96682a05be96ef1aa3937281832",
+      "bytes": 7379
+    },
+    {
+      "source": "work/teacher_optimization_20261103/launch_native_index_v20_20261104.sh",
+      "archive": "launch_native_index_v20_20261104.sh.gz",
+      "source_sha256": "99982e539d2fdf60f3d709ab47d24e94a6f559bb1375d4faa58aa224e139902b",
+      "archive_sha256": "59ac80824c0b42f4961a343cc9ad51191afa6417cedaaa6c6c05156c0aca5af1",
+      "bytes": 3096
+    },
+    {
+      "source": "work/teacher_optimization_20261103/v20_installed_tests.log",
+      "archive": "v20_installed_tests.log.gz",
+      "source_sha256": "55df81c03b1fc09a739803668e8b10b1a1cd87ac7e716666dddb1c968f87bb76",
+      "archive_sha256": "11b7c56cf0a582fe48e93355b7cd72b7636ef02fe13b0ac67cb122d592fe595c",
+      "bytes": 107
+    },
+    {
+      "source": "work/teacher_optimization_20261103/native_v20_mpr023_independent_completed_geometry_review.json",
+      "archive": "native_v20_mpr023_independent_completed_geometry_review.json.gz",
+      "source_sha256": "3dae2a4caa2366a86e2dd022edf8c18633e169c29f4084b8fd8c6d1df1ba5a71",
+      "archive_sha256": "dc228ca7d4b96b879c1de77678b6e50d210ef0442c6d44d9de887f16bc03bea5",
+      "bytes": 1314
+    }
+  ],
+  "readme_sha256": "581e8a40e3475ac1ae57cb9e6fc3b6bd0f519e6c699232086308002ba08c45d7",
+  "credential_pattern_scan_findings": [],
+  "physics_success_validated": false
+}

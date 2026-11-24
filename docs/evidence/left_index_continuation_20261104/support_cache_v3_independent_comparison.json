@@ -1,0 +1,201 @@
+{
+  "passed": true,
+  "distance_and_last_pair_bitwise_trace_equal": true,
+  "all_original_scene_valid_predicates_equal": true,
+  "reports": {
+    "baseline_audit": {
+      "schema": "real_cpu_job_distance_cache_comparison_v3",
+      "mode": "baseline_audit",
+      "result": {
+        "passed": true,
+        "checks": 336
+      },
+      "wall_s": 44.470610001008026,
+      "max_rss_kib": 235452,
+      "checks": 336,
+      "selected_jobs": [
+        {
+          "phase": "right_route",
+          "step": 316,
+          "theta": 0.0
+        },
+        {
+          "phase": "right_close",
+          "step": 75,
+          "theta": 0.0
+        },
+        {
+          "phase": "opposed_face_turn",
+          "step": 75,
+          "theta": 7.500024965458915
+        }
+      ],
+      "cartesian_values": 112,
+      "distance_call_count": 4251632,
+      "distance_and_last_pair_trace_sha256": "f0dbc3a767725758924344967f283711726468189fd8d100aba060a9aad6c2e2",
+      "scene_valid_predicate_count": 336,
+      "scene_valid_and_last_pair_trace_sha256": "9036110466485ea6b2f74285f3299d12efb0c446326f196fd5401de4d9bce0ec",
+      "request_sha256": "9dff8f704dcfe20b9b8c2e3e2eec2876a3a9abbaa598b74c38481d0a7acef436",
+      "source_sha256": {
+        "left_support_envelope_v2.py": "dc30370fc2ca7d258a9467205e57dcb8cad0c1034c3c2395af37af66e58f45c2",
+        "left_support_envelope_v3.py": "4fd2602d5b87abbe5f081c6b52c9dfdb6f7681096b30f921bfdc091f406ff3c7",
+        "opposed_grasp_plan.py": "752d5f86f0fad09915875ce8d8ade4885ddc6452901f979a3a2837c5cc31a8ac",
+        "opposed_distance_cache_v1.py": "6c9e269437cc0a7f8b55552115fc903df6037b2ff804807c63b430697960e55e"
+      },
+      "scope": "Three selected real jobs, every original index/ring sample, CPU geometry only; not whole-path or physics validation."
+    },
+    "cache_audit": {
+      "schema": "real_cpu_job_distance_cache_comparison_v3",
+      "mode": "cache_audit",
+      "result": {
+        "passed": true,
+        "checks": 336,
+        "distance_cache": {
+          "schema": "exact_job_local_distance_cache_v1",
+          "jobs": 3,
+          "calls": 4251632,
+          "hits": 4072827,
+          "misses": 101301,
+          "bypasses": 77504,
+          "original_distance_evaluations": 178805,
+          "peak_entries": 49023,
+          "maximum_entries": 100000,
+          "registered_immutable_geometries": 197,
+          "new_or_unknown_geometry_bypassed": true,
+          "all_predicates_executed": true
+        }
+      },
+      "wall_s": 31.585238825995475,
+      "max_rss_kib": 236196,
+      "checks": 336,
+      "selected_jobs": [
+        {
+          "phase": "right_route",
+          "step": 316,
+          "theta": 0.0
+        },
+        {
+          "phase": "right_close",
+          "step": 75,
+          "theta": 0.0
+        },
+        {
+          "phase": "opposed_face_turn",
+          "step": 75,
+          "theta": 7.500024965458915
+        }
+      ],
+      "cartesian_values": 112,
+      "distance_call_count": 4251632,
+      "distance_and_last_pair_trace_sha256": "f0dbc3a767725758924344967f283711726468189fd8d100aba060a9aad6c2e2",
+      "scene_valid_predicate_count": 336,
+      "scene_valid_and_last_pair_trace_sha256": "9036110466485ea6b2f74285f3299d12efb0c446326f196fd5401de4d9bce0ec",
+      "request_sha256": "9dff8f704dcfe20b9b8c2e3e2eec2876a3a9abbaa598b74c38481d0a7acef436",
+      "source_sha256": {
+        "left_support_envelope_v2.py": "dc30370fc2ca7d258a9467205e57dcb8cad0c1034c3c2395af37af66e58f45c2",
+        "left_support_envelope_v3.py": "4fd2602d5b87abbe5f081c6b52c9dfdb6f7681096b30f921bfdc091f406ff3c7",
+        "opposed_grasp_plan.py": "752d5f86f0fad09915875ce8d8ade4885ddc6452901f979a3a2837c5cc31a8ac",
+        "opposed_distance_cache_v1.py": "6c9e269437cc0a7f8b55552115fc903df6037b2ff804807c63b430697960e55e"
+      },
+      "scope": "Three selected real jobs, every original index/ring sample, CPU geometry only; not whole-path or physics validation."
+    },
+    "baseline_speed": {
+      "schema": "real_cpu_job_distance_cache_comparison_v3",
+      "mode": "baseline_speed",
+      "result": {
+        "passed": true,
+        "checks": 336
+      },
+      "wall_s": 30.92407472000923,
+      "max_rss_kib": 236112,
+      "checks": 336,
+      "selected_jobs": [
+        {
+          "phase": "right_route",
+          "step": 316,
+          "theta": 0.0
+        },
+        {
+          "phase": "right_close",
+          "step": 75,
+          "theta": 0.0
+        },
+        {
+          "phase": "opposed_face_turn",
+          "step": 75,
+          "theta": 7.500024965458915
+        }
+      ],
+      "cartesian_values": 112,
+      "distance_call_count": 0,
+      "distance_and_last_pair_trace_sha256": null,
+      "scene_valid_predicate_count": 0,
+      "scene_valid_and_last_pair_trace_sha256": null,
+      "request_sha256": "9dff8f704dcfe20b9b8c2e3e2eec2876a3a9abbaa598b74c38481d0a7acef436",
+      "source_sha256": {
+        "left_support_envelope_v2.py": "dc30370fc2ca7d258a9467205e57dcb8cad0c1034c3c2395af37af66e58f45c2",
+        "left_support_envelope_v3.py": "4fd2602d5b87abbe5f081c6b52c9dfdb6f7681096b30f921bfdc091f406ff3c7",
+        "opposed_grasp_plan.py": "752d5f86f0fad09915875ce8d8ade4885ddc6452901f979a3a2837c5cc31a8ac",
+        "opposed_distance_cache_v1.py": "6c9e269437cc0a7f8b55552115fc903df6037b2ff804807c63b430697960e55e"
+      },
+      "scope": "Three selected real jobs, every original index/ring sample, CPU geometry only; not whole-path or physics validation."
+    },
+    "cache_speed": {
+      "schema": "real_cpu_job_distance_cache_comparison_v3",
+      "mode": "cache_speed",
+      "result": {
+        "passed": true,
+        "checks": 336,
+        "distance_cache": {
+          "schema": "exact_job_local_distance_cache_v1",
+          "jobs": 3,
+          "calls": 4251632,
+          "hits": 4072827,
+          "misses": 101301,
+          "bypasses": 77504,
+          "original_distance_evaluations": 178805,
+          "peak_entries": 49023,
+          "maximum_entries": 100000,
+          "registered_immutable_geometries": 197,
+          "new_or_unknown_geometry_bypassed": true,
+          "all_predicates_executed": true
+        }
+      },
+      "wall_s": 20.753412585996557,
+      "max_rss_kib": 237512,
+      "checks": 336,
+      "selected_jobs": [
+        {
+          "phase": "right_route",
+          "step": 316,
+          "theta": 0.0
+        },
+        {
+          "phase": "right_close",
+          "step": 75,
+          "theta": 0.0
+        },
+        {
+          "phase": "opposed_face_turn",
+          "step": 75,
+          "theta": 7.500024965458915
+        }
+      ],
+      "cartesian_values": 112,
+      "distance_call_count": 0,
+      "distance_and_last_pair_trace_sha256": null,
+      "scene_valid_predicate_count": 0,
+      "scene_valid_and_last_pair_trace_sha256": null,
+      "request_sha256": "9dff8f704dcfe20b9b8c2e3e2eec2876a3a9abbaa598b74c38481d0a7acef436",
+      "source_sha256": {
+        "left_support_envelope_v2.py": "dc30370fc2ca7d258a9467205e57dcb8cad0c1034c3c2395af37af66e58f45c2",
+        "left_support_envelope_v3.py": "4fd2602d5b87abbe5f081c6b52c9dfdb6f7681096b30f921bfdc091f406ff3c7",
+        "opposed_grasp_plan.py": "752d5f86f0fad09915875ce8d8ade4885ddc6452901f979a3a2837c5cc31a8ac",
+        "opposed_distance_cache_v1.py": "6c9e269437cc0a7f8b55552115fc903df6037b2ff804807c63b430697960e55e"
+      },
+      "scope": "Three selected real jobs, every original index/ring sample, CPU geometry only; not whole-path or physics validation."
+    }
+  },
+  "uninstrumented_speedup": 1.4900717938251449,
+  "scope": "Three selected real jobs, every original index/ring sample, CPU geometry only; not whole-path or physics validation."
+}

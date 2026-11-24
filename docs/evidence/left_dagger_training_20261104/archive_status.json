@@ -1,0 +1,12 @@
+{
+  "archived_runs": [
+    "left_dagger_baseline_preserve_9501_20261104",
+    "left_dagger_baseline_preserve_v2_9501_20261104",
+    "left_dagger_baseline_mixture_v3_9501_20261104"
+  ],
+  "pending_runs": [],
+  "commit_performed": false,
+  "scope": "Baseline privileged-state left pickup-to-wrist DAgger development; not a pure student success or full cube solution",
+  "behavior_checkpoint_run": "teacher_phase_basis_gpu_v4_fullframe_20261104",
+  "behavior_checkpoint_sha256": "d2493b00df27b8d84ae69da3b399b3beb926b77fdd87a9b51aa6a2b1b23a36a4"
+}

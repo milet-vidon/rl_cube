@@ -1,0 +1,22 @@
+{
+  "schema": "root_trusted_registry_v2_review_v1",
+  "source_sha256": "e076e877897420e651f691a10419049815d094c27b8196afeec77320d938d89e",
+  "blocking_findings": [],
+  "root_independent_tests": 4,
+  "root_test_log_sha256": "4b99dd7a5ac7bbb15f0ec5be209db02d710f99564140844856152cd61c988b37",
+  "author_actual_host_tests": 14,
+  "author_test_skips": 0,
+  "actual_complete_prefix_audit_sha256": "6a61b14d8bbe1705f2e7d30403203fde171fbc60f2961de5510b50b568bca740",
+  "actual_prefix_frames": 1842,
+  "original_false_and_failure_flags_preserved": true,
+  "second_v8_exception_prefix_rejected": true,
+  "success_path_scope": "host routing and fabricated-success rejection only; no actual V8 wrist success",
+  "reviewed": [
+    "5 uniquely counted inverse hooks restore original full source exactly",
+    "V4 actor routing kept independent of wrist-outcome dispatch",
+    "original success auditor and all physical transition gates unchanged",
+    "18 exact dependency snapshots and explicit checkpoint/q/auth trust",
+    "actual 284-feature history model actions replayed bitwise"
+  ],
+  "training_authorized": false
+}

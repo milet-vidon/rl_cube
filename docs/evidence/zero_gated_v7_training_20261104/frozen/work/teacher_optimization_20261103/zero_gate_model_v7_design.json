@@ -1,0 +1,53 @@
+{
+  "schema": "learned_zero_residual_v7_host_candidate_design_v1",
+  "status": "Host candidate only; no training or simulator run. The class rule is fixed by review; complete dataset qualification remains pending.",
+  "problem": "At the first feedback step 499, successful V4 and both failed V6 runs have the same actual state, expert memory and native expert action, with expert minus baseline exactly zero, but V6 introduces an unnecessary residual. A bounded continuous head has no mechanism that guarantees exact baseline output when its fitted residual is merely small.",
+  "actor": {
+    "scope": "Privileged actual simulator state and history; original public phase/right controller remains external. This is not a vision policy or autonomous cube solver.",
+    "features": "Unchanged whitelisted 284 actual-state features from V5/V6; no expert hidden state, label or execution-source identity.",
+    "encoder_gru": "Original encoder and GRU, advanced exactly once per executed observation including all zero-output frames; hidden state reset at episode boundary.",
+    "baseline": "Frozen V4 phase basis policy",
+    "outputs": "Left 28 only: one bounded residual and one binary correction logit per joint.",
+    "decision": "Use bounded residual if logit > 0 and the original public phase gate is active; otherwise return the frozen baseline target with torch.where, preserving its float32 bits.",
+    "logit_threshold": 0.0,
+    "tie": "baseline",
+    "residual_amplitude_deadband": null,
+    "baseline_branch_is_previous_command_hold": false,
+    "right_control_is_learned": false
+  },
+  "supervision": {
+    "continuous_labels": "Every qualified original expert projected left28 label remains unmodified. No clipping, replacement with student action, or removal of small nonzero labels.",
+    "continuous_loss": "MSE between the ungated bounded residual proposal after the original float32 action roundtrip and original project_target, and the raw expert label. The public phase hard mask remains active, and its irreducible float32 floor remains in loss.",
+    "gate_loss": "Binary cross entropy for independently qualified per-joint correction-vs-baseline labels, only in the public feedback domain. The model receives explicit label and qualification-mask tensors only in a separate training function.",
+    "classification_definition": "In original float32 projected execution space: bitwise equality is zero; absolute difference strictly greater than 1e-6 rad is definite correction; all other non-bitwise-equal values are ambiguous, excluded only from classification BCE and retained in continuous loss. Ambiguous values are not declared to be quantization noise. The 1e-6 confidence interval is never used by runtime action decoding.",
+    "weights": "Not yet selected. Model helper returns separate raw regression, gate BCE and hard-decoded metrics so a trainer cannot conceal tradeoffs.",
+    "selection_and_reporting_requirements": [
+      "Report and evaluate the hard-decoded projected action, not only the ungated head fit.",
+      "Report gate false positives, false negatives, exact-baseline rate and confusion by joint, phase and episode.",
+      "Include a direct step-499 regression check in each actual history that has a strict-zero expert label, without hardcoding step 499 into inference.",
+      "Check all active labels remain strictly reachable under the explicit named bounds and original execution projection.",
+      "Preserve all original failed results and False episode/pure-student flags. The five histories are development data without an independent holdout."
+    ]
+  },
+  "bound_candidate": {
+    "Joint1_L": 0.0248,
+    "Joint2_L": 0.0243,
+    "Joint3_L": 0.0249,
+    "Joint4_L": 0.0076,
+    "Joint5_L": 0.0257,
+    "Joint6_L": 0.0256,
+    "Joint7_L": 0.0244,
+    "eleven_existing_recovery_finger_joints": 0.006,
+    "other_ten_finger_joints": 0.000001,
+    "meaning": "Coverage candidate from five-history expert labels; not a relaxation of joint limits, projection, contact gates or collision safety. Final reachability qualification remains required."
+  },
+  "checkpoint_contract": {
+    "in_module": "Loading rejects changed runtime logit threshold, training-only class-confidence threshold, public phase buffers, explicit residual bounds, normalization, frozen baseline weights and any nonfinite tensor; partial state loading is rejected.",
+    "required_external_loader": "Must verify model/source SHA, baseline SHA, qualified dataset evidence/provenance hashes, exact physics family, feature order, joint names/output indices, approved gate-label definition and named bound vector before constructing/loading.",
+    "external_loader_implemented_in_this_candidate": false
+  },
+  "files": {
+    "model_and_training_loss_helper": "zero_gated_residual_policy_v7.py",
+    "tests": "test_zero_gated_residual_policy_v7.py"
+  }
+}

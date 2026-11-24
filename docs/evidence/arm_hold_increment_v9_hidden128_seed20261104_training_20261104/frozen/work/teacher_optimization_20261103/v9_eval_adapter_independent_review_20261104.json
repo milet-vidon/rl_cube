@@ -1,0 +1,20 @@
+{
+  "schema": "v9_eval_adapter_independent_source_and_host_review_v1",
+  "runtime_sha256": "27e69ce8c204811b3aa44e86fa84155b3d35fd591778a886ed3dcd015d4006b7",
+  "entry_sha256": "a550548bc4b00c536fe8eee7b4859ee0fe5d1b4cb3cf98a261ee08cd66cc878f",
+  "trainer_sha256": "e92df59dc5e50a5f003cceea2ab9f2a9023fde3b1c7e49e41832542a924f98ab",
+  "independent_delta_tests_sha256": "a6f08e621396446419cf6b466bae2a00f52e1eef6045776b1cee884e8a8018e3",
+  "existing_host_tests_independently_rerun_passed": 21,
+  "new_independent_delta_tests_passed": 3,
+  "blocking_findings": [],
+  "review": [
+    "Undoing only the V9 policy import/routing and the readonly initialization cap block restores the entire frozen V8 runtime byte SHA 8c3c9459254c12b0b992889bd95aea52bf3a12d4143fd40731641a70ee46072c.",
+    "The actual environment projection parameters are reread and compared before actor creation, then named original arm caps must reproduce all nine reviewed per-history proofs. Changed parameters, changed proof or missing history rejects before actor creation/reset.",
+    "Entry validates exact checkpoint, qualification and authorization snapshots, ordered nine histories, named 18 previous anchors, static model contracts, and all three final CPU development regression gates.",
+    "All 22 checkpoint source dependencies must appear directly and exactly in the evaluation source snapshots. Teacher position labels remain audit-only, right actions/public schedule/gain remain original, and actual recurrent history advances once per frame."
+  ],
+  "real_completed_v9_checkpoint_preflight_performed": false,
+  "simulator_started": false,
+  "physical_success_claim": false,
+  "scope": "Source and host contract review only. A completed qualified V9 checkpoint must still pass the actual strict loader/preflight before scheduling its physical evaluation."
+}

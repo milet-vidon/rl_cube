@@ -1,0 +1,39 @@
+{
+  "passed": false,
+  "failures": [
+    {
+      "offset": [
+        0.0,
+        0.003,
+        -0.004
+      ],
+      "failure": "Right opposition palm IK failed"
+    },
+    {
+      "offset": [
+        0.0,
+        0.003,
+        -0.004
+      ],
+      "failure": "Right opposition palm IK failed"
+    },
+    {
+      "offset": [
+        0.0,
+        0.003,
+        -0.004
+      ],
+      "failure": "Right opposition palm IK failed"
+    },
+    {
+      "offset": [
+        0.0,
+        0.003,
+        -0.004
+      ],
+      "failure": "Finger goal unreachable: ring 0.014093386786138118"
+    }
+  ],
+  "elapsed_s": 5.76124787000299,
+  "physics_validated": false
+}

@@ -1,0 +1,306 @@
+{
+  "schema": "native_finite90_v2_completed_evidence_archive",
+  "status": "PASS_initial_pose_and_24step_passive_stability_only",
+  "run_file_count": 28,
+  "preserved_previous_manifest_sha256": "a37c95f659e956cf513be329de799d85dd6bdc5551e67129333218d7c71b38ee",
+  "calibration": {
+    "dofs": 66,
+    "actual_samples": 396,
+    "fit_amplitudes": [
+      -0.02,
+      -0.01,
+      0.01,
+      0.02
+    ],
+    "held_out_amplitudes": [
+      -0.03,
+      0.03
+    ],
+    "metrics": {
+      "unit_gain_abs_error": {
+        "maximum": 4.316699209860886e-06,
+        "limit": 2e-05,
+        "dof_index_at_maximum": 48
+      },
+      "axis_vector_error_norm": {
+        "maximum": 4.926481459378518e-06,
+        "limit": 2e-05,
+        "dof_index_at_maximum": 43
+      },
+      "fit_intercept_norm_rad": {
+        "maximum": 6.157764577721859e-08,
+        "limit": 3e-07,
+        "dof_index_at_maximum": 50
+      },
+      "fit_residual_norm_rad": {
+        "maximum": 1.1583050886840311e-07,
+        "limit": 3e-07,
+        "dof_index_at_maximum": 49
+      },
+      "held_out_prediction_error_rad": {
+        "maximum": 2.3239535444223717e-07,
+        "limit": 5e-07,
+        "dof_index_at_maximum": 48
+      },
+      "held_out_canonical_unit_response_error_rad": {
+        "maximum": 1.2629347776328785e-07,
+        "limit": 7e-07,
+        "dof_index_at_maximum": 52
+      }
+    },
+    "raw_max_q_error_rad": 0.0,
+    "raw_max_qd_rad_s": 0.0,
+    "raw_max_actuation_effort": 0.0,
+    "actual_gain_min": 0.9999979661052538,
+    "actual_gain_max": 1.0000043166992099
+  },
+  "initial": {
+    "recomputed_max_orientation_error_deg": 2.0059137482512468e-05,
+    "recomputed_max_marker_error_m": 7.679882695847999e-09,
+    "selected_count": 9,
+    "exact_float32_native_radians": true,
+    "assignment": [
+      {
+        "body_path": "/World/Cube/nX_nY_nZ",
+        "dof_index": 65,
+        "native_q_rad": -1.5707963267948966,
+        "native_q_float32_rad": -1.5707963705062866,
+        "coordinate_basis": "exact_native_radians_after_axis_and_unit_validation",
+        "measured_gain_used_to_rescale_target": false
+      },
+      {
+        "body_path": "/World/Cube/nX_nZ",
+        "dof_index": 29,
+        "native_q_rad": -1.5707963267948966,
+        "native_q_float32_rad": -1.5707963705062866,
+        "coordinate_basis": "exact_native_radians_after_axis_and_unit_validation",
+        "measured_gain_used_to_rescale_target": false
+      },
+      {
+        "body_path": "/World/Cube/nX_nZ_pY",
+        "dof_index": 59,
+        "native_q_rad": -1.5707963267948966,
+        "native_q_float32_rad": -1.5707963705062866,
+        "coordinate_basis": "exact_native_radians_after_axis_and_unit_validation",
+        "measured_gain_used_to_rescale_target": false
+      },
+      {
+        "body_path": "/World/Cube/nY_nZ",
+        "dof_index": 41,
+        "native_q_rad": -1.5707963267948966,
+        "native_q_float32_rad": -1.5707963705062866,
+        "coordinate_basis": "exact_native_radians_after_axis_and_unit_validation",
+        "measured_gain_used_to_rescale_target": false
+      },
+      {
+        "body_path": "/World/Cube/nY_nZ_pX",
+        "dof_index": 53,
+        "native_q_rad": -1.5707963267948966,
+        "native_q_float32_rad": -1.5707963705062866,
+        "coordinate_basis": "exact_native_radians_after_axis_and_unit_validation",
+        "measured_gain_used_to_rescale_target": false
+      },
+      {
+        "body_path": "/World/Cube/nZ",
+        "dof_index": 5,
+        "native_q_rad": -1.5707963267948966,
+        "native_q_float32_rad": -1.5707963705062866,
+        "coordinate_basis": "exact_native_radians_after_axis_and_unit_validation",
+        "measured_gain_used_to_rescale_target": false
+      },
+      {
+        "body_path": "/World/Cube/nZ_pX",
+        "dof_index": 23,
+        "native_q_rad": -1.5707963267948966,
+        "native_q_float32_rad": -1.5707963705062866,
+        "coordinate_basis": "exact_native_radians_after_axis_and_unit_validation",
+        "measured_gain_used_to_rescale_target": false
+      },
+      {
+        "body_path": "/World/Cube/nZ_pX_pY",
+        "dof_index": 47,
+        "native_q_rad": -1.5707963267948966,
+        "native_q_float32_rad": -1.5707963705062866,
+        "coordinate_basis": "exact_native_radians_after_axis_and_unit_validation",
+        "measured_gain_used_to_rescale_target": false
+      },
+      {
+        "body_path": "/World/Cube/nZ_pY",
+        "dof_index": 35,
+        "native_q_rad": -1.5707963267948966,
+        "native_q_float32_rad": -1.5707963705062866,
+        "coordinate_basis": "exact_native_radians_after_axis_and_unit_validation",
+        "measured_gain_used_to_rescale_target": false
+      }
+    ]
+  },
+  "physics_steps": 24,
+  "physics_duration_s": 0.1,
+  "physics_maxima": {
+    "max_relative_orientation_error_deg": 2.1775397080213353e-05,
+    "max_center_marker_error_m": 1.2142718329174337e-07,
+    "max_relative_link_angular_speed_rad_s": 2.2120840270645203e-08,
+    "max_actor_origin_separation_m": 1.19209801141551e-07,
+    "marker_vs_native_COM_error_m": 1.1745131153809273e-08,
+    "max_actuation_effort": 0.0
+  },
+  "ballistic": {
+    "delta_z": -0.04908247788747144,
+    "expected_z": -0.04905000000000001,
+    "delta_vz": -0.9809920191764832,
+    "expected_delta_vz": -0.9810000000000001
+  },
+  "positive_contact_events": 855,
+  "source_provenance_verified": [
+    {
+      "phase": "baseline",
+      "source": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/finite_angle_cube_native_probe_v2.py",
+      "verified_file": "work/teacher_optimization_20261103/native_initial_face90_probe_v2_20261104/baseline/source/finite_angle_cube_native_probe_v2.py",
+      "expected_sha256": "aa60476cc72cbc4897f07cc1157bee2ed03fa69208e7f8829e81396dee081177",
+      "actual_sha256": "aa60476cc72cbc4897f07cc1157bee2ed03fa69208e7f8829e81396dee081177"
+    },
+    {
+      "phase": "baseline",
+      "source": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/cube_articulation_probe_v2.py",
+      "verified_file": "work/teacher_optimization_20261103/native_initial_face90_probe_v2_20261104/baseline/source/cube_articulation_probe_v2.py",
+      "expected_sha256": "bea19566ff4071dd26882f578703995ed7a74856f3218507fe9b3df8bee77881",
+      "actual_sha256": "bea19566ff4071dd26882f578703995ed7a74856f3218507fe9b3df8bee77881"
+    },
+    {
+      "phase": "baseline",
+      "source": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/passive_cube_articulation.py",
+      "verified_file": "work/teacher_optimization_20261103/native_initial_face90_probe_v2_20261104/baseline/source/passive_cube_articulation.py",
+      "expected_sha256": "949c3ede71c6ac4cd32b359b08ab110c72c354888d32541136aa2330edce980c",
+      "actual_sha256": "949c3ede71c6ac4cd32b359b08ab110c72c354888d32541136aa2330edce980c"
+    },
+    {
+      "phase": "baseline",
+      "source": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/finite_cube_pose_math.py",
+      "verified_file": "work/teacher_optimization_20261103/native_initial_face90_probe_v2_20261104/baseline/source/finite_cube_pose_math.py",
+      "expected_sha256": "1527f6c7e29e28e8264e12c65aed5ef2d4c82330a370f709359157094ce73940",
+      "actual_sha256": "1527f6c7e29e28e8264e12c65aed5ef2d4c82330a370f709359157094ce73940"
+    },
+    {
+      "phase": "baseline",
+      "source": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/finite_cube_pose_math_v2.py",
+      "verified_file": "work/teacher_optimization_20261103/native_initial_face90_probe_v2_20261104/baseline/source/finite_cube_pose_math_v2.py",
+      "expected_sha256": "19b401334e96548c12f1104b6f6a198b18f2f4a6eebf1767ffc7476372c57d00",
+      "actual_sha256": "19b401334e96548c12f1104b6f6a198b18f2f4a6eebf1767ffc7476372c57d00"
+    },
+    {
+      "phase": "baseline",
+      "source": "/home/brainco/rl_cube/github_project/isaac_mujoco_cube/cube_model.usda",
+      "verified_file": "isaac_mujoco_cube/cube_model.usda",
+      "expected_sha256": "c41baa3cd75db5a497c5878d0e18bb6b3316124e0f1935867de8305b44e4eb11",
+      "actual_sha256": "c41baa3cd75db5a497c5878d0e18bb6b3316124e0f1935867de8305b44e4eb11"
+    },
+    {
+      "phase": "baseline",
+      "source": "/home/brainco/rl_cube/github_project/isaac_mujoco_cube/upstream/mujoco_cube-main/cube_3x3x3.xml",
+      "verified_file": "isaac_mujoco_cube/upstream/mujoco_cube-main/cube_3x3x3.xml",
+      "expected_sha256": "b7b32a4a8624241817aafcbdba20217b7250fb9c570440af6fbdcf5ec084c023",
+      "actual_sha256": "b7b32a4a8624241817aafcbdba20217b7250fb9c570440af6fbdcf5ec084c023"
+    },
+    {
+      "phase": "baseline",
+      "source": "/home/brainco/rl_cube/github_project/revotron_cube_rl/dynamic_cube.py",
+      "verified_file": "work/teacher_optimization_20261103/native_initial_face90_probe_v2_20261104/baseline/source/dynamic_cube.py",
+      "expected_sha256": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de",
+      "actual_sha256": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de"
+    },
+    {
+      "phase": "baseline",
+      "source": "/home/brainco/rl_cube/github_project/revotron_cube_rl/isaac_compat.py",
+      "verified_file": "work/teacher_optimization_20261103/native_initial_face90_probe_v2_20261104/baseline/source/isaac_compat.py",
+      "expected_sha256": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825",
+      "actual_sha256": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825"
+    },
+    {
+      "phase": "baseline",
+      "source": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runtime_platform.py",
+      "verified_file": "work/teacher_optimization_20261103/native_initial_face90_probe_v2_20261104/baseline/source/runtime_platform.py",
+      "expected_sha256": "c08829cde5986256dab4f5448edcecbf8932a3100ed7fab7dbdf0ad2f895772f",
+      "actual_sha256": "c08829cde5986256dab4f5448edcecbf8932a3100ed7fab7dbdf0ad2f895772f"
+    },
+    {
+      "phase": "candidate",
+      "source": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/finite_angle_cube_native_probe_v2.py",
+      "verified_file": "work/teacher_optimization_20261103/native_initial_face90_probe_v2_20261104/candidate/source/finite_angle_cube_native_probe_v2.py",
+      "expected_sha256": "aa60476cc72cbc4897f07cc1157bee2ed03fa69208e7f8829e81396dee081177",
+      "actual_sha256": "aa60476cc72cbc4897f07cc1157bee2ed03fa69208e7f8829e81396dee081177"
+    },
+    {
+      "phase": "candidate",
+      "source": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/cube_articulation_probe_v2.py",
+      "verified_file": "work/teacher_optimization_20261103/native_initial_face90_probe_v2_20261104/candidate/source/cube_articulation_probe_v2.py",
+      "expected_sha256": "bea19566ff4071dd26882f578703995ed7a74856f3218507fe9b3df8bee77881",
+      "actual_sha256": "bea19566ff4071dd26882f578703995ed7a74856f3218507fe9b3df8bee77881"
+    },
+    {
+      "phase": "candidate",
+      "source": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/passive_cube_articulation.py",
+      "verified_file": "work/teacher_optimization_20261103/native_initial_face90_probe_v2_20261104/candidate/source/passive_cube_articulation.py",
+      "expected_sha256": "949c3ede71c6ac4cd32b359b08ab110c72c354888d32541136aa2330edce980c",
+      "actual_sha256": "949c3ede71c6ac4cd32b359b08ab110c72c354888d32541136aa2330edce980c"
+    },
+    {
+      "phase": "candidate",
+      "source": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/finite_cube_pose_math.py",
+      "verified_file": "work/teacher_optimization_20261103/native_initial_face90_probe_v2_20261104/candidate/source/finite_cube_pose_math.py",
+      "expected_sha256": "1527f6c7e29e28e8264e12c65aed5ef2d4c82330a370f709359157094ce73940",
+      "actual_sha256": "1527f6c7e29e28e8264e12c65aed5ef2d4c82330a370f709359157094ce73940"
+    },
+    {
+      "phase": "candidate",
+      "source": "/home/brainco/rl_cube/github_project/work/teacher_optimization_20261103/finite_cube_pose_math_v2.py",
+      "verified_file": "work/teacher_optimization_20261103/native_initial_face90_probe_v2_20261104/candidate/source/finite_cube_pose_math_v2.py",
+      "expected_sha256": "19b401334e96548c12f1104b6f6a198b18f2f4a6eebf1767ffc7476372c57d00",
+      "actual_sha256": "19b401334e96548c12f1104b6f6a198b18f2f4a6eebf1767ffc7476372c57d00"
+    },
+    {
+      "phase": "candidate",
+      "source": "/home/brainco/rl_cube/github_project/isaac_mujoco_cube/cube_model.usda",
+      "verified_file": "isaac_mujoco_cube/cube_model.usda",
+      "expected_sha256": "c41baa3cd75db5a497c5878d0e18bb6b3316124e0f1935867de8305b44e4eb11",
+      "actual_sha256": "c41baa3cd75db5a497c5878d0e18bb6b3316124e0f1935867de8305b44e4eb11"
+    },
+    {
+      "phase": "candidate",
+      "source": "/home/brainco/rl_cube/github_project/isaac_mujoco_cube/upstream/mujoco_cube-main/cube_3x3x3.xml",
+      "verified_file": "isaac_mujoco_cube/upstream/mujoco_cube-main/cube_3x3x3.xml",
+      "expected_sha256": "b7b32a4a8624241817aafcbdba20217b7250fb9c570440af6fbdcf5ec084c023",
+      "actual_sha256": "b7b32a4a8624241817aafcbdba20217b7250fb9c570440af6fbdcf5ec084c023"
+    },
+    {
+      "phase": "candidate",
+      "source": "/home/brainco/rl_cube/github_project/revotron_cube_rl/dynamic_cube.py",
+      "verified_file": "work/teacher_optimization_20261103/native_initial_face90_probe_v2_20261104/candidate/source/dynamic_cube.py",
+      "expected_sha256": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de",
+      "actual_sha256": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de"
+    },
+    {
+      "phase": "candidate",
+      "source": "/home/brainco/rl_cube/github_project/revotron_cube_rl/isaac_compat.py",
+      "verified_file": "work/teacher_optimization_20261103/native_initial_face90_probe_v2_20261104/candidate/source/isaac_compat.py",
+      "expected_sha256": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825",
+      "actual_sha256": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825"
+    },
+    {
+      "phase": "candidate",
+      "source": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runtime_platform.py",
+      "verified_file": "work/teacher_optimization_20261103/native_initial_face90_probe_v2_20261104/candidate/source/runtime_platform.py",
+      "expected_sha256": "c08829cde5986256dab4f5448edcecbf8932a3100ed7fab7dbdf0ad2f895772f",
+      "actual_sha256": "c08829cde5986256dab4f5448edcecbf8932a3100ed7fab7dbdf0ad2f895772f"
+    }
+  ],
+  "source_scope": "All completed run files and Python source snapshots, numeric audit/build/test/review sources, logs and source cube USD/MJCF are losslessly gzip archived. Installed runtime dependencies remain identified by the preserved baseline version and binary/API fingerprints.",
+  "scope_limitations": [
+    "This proves reset-time representation of one already rotated nZ face, followed by 0.1 seconds of passive dynamics.",
+    "It does not prove a continuous turn, robot contact-driven rotation, teacher task success, other initial faces, 180 degrees, formula execution or vision solving.",
+    "The original v1 numerical initialization failure remains valid historical evidence and is not replaced."
+  ],
+  "v1_failure_preserved": true,
+  "robot_turn_success_claim": false,
+  "no_git_stage_or_commit": true,
+  "audit_import_note": "The first CPU audit import created one helper bytecode cache. That audit-owned cache was removed; the audit now disables bytecode writes. All source/result hashes remained unchanged."
+}

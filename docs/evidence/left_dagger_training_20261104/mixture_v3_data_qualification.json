@@ -1,0 +1,329 @@
+{
+  "schema": "independent_actual_state_mixture_v3_development_label_qualification_v1",
+  "passed": true,
+  "run": "left_dagger_baseline_mixture_v3_9501_20261104",
+  "artifact_manifest_sha256": "10d3a873970dd8780c202f96ce43c1dfb7928c53a4de276255af4b1e3f009f2e",
+  "files_sha256": {
+    "result.json": "80a55f6f488fb1b11ef9799ad18e77508a952a59eda18a5d6074f61a055054dd",
+    "projection_parameters.json": "890108362592dd288cfb1c5bee8eb824645043ed7be0733ada40adf9cb67da66",
+    "trajectory.jsonl": "e1aa961ff3f49536cda40fb47ab21cf8786ba028e30eb3a0a78575ccd89d8542",
+    "dynamic_training_scene.usda": "ff16e3e8af8e8e2e0c0f7ff240a2b2f1d688a9c1b3560ff2230033742096c6f8",
+    "config.json": "d3c6084f638ed96ea299dbf76c386537051d3857c61675ddfc4abd5e9d925ae1",
+    "asset_contract.json": "3367c3d471d25bb668b2f67fb9eca3ba34a28328b967ffbb63aef39cf1a365c7",
+    "transitions.jsonl": "ca4782e6e2d7780c2e7360b251b25c2c23f532c7a75ec810b4d4b6d6d0db7050",
+    "runtime_protocol.json": "eb7b7da1ee6566a60d6b2b282bdad7fbedd6d70e639a153aab7ebf2d9e96ec85",
+    "initial_state.json": "9a7c759eb84012d21924c47e2583e3bc60badaed2239608d026b6d95e785c5f3",
+    "trajectory.json": "ec7a67f6b5fe3c8cf270beaa397a0bf5297d4501766cb00a91ff0cbd251508e6",
+    "collection_provenance.json": "c9c335f0f44e32f24e5a32a3766c6d677b597959b950ffaec7379c6427f0722c",
+    "physics_identity.json": "537007f3847c6acf8285115214d223bec27c131c4c87ab6ccb67e0635a5e74ba"
+  },
+  "scope": "Development imitation supervision from one previously seen baseline seed; not a pure student success, holdout, or cross-physics dataset",
+  "eligible_for_development_transition_supervision": true,
+  "eligible_training_episode": false,
+  "pure_student_episode_claim": false,
+  "independent_generalization_claim": false,
+  "frames": 1648,
+  "counts": {
+    "teacher": 1419,
+    "recomputed_projected_labels": 1648,
+    "teacher_projected_actual_bitwise_verified": 1419,
+    "selected_action_projection_verified": 1648,
+    "memory_mode_preserve": 500,
+    "raw_done": 0,
+    "derived_timeout_truncated": 0,
+    "derived_drop_terminated": 0,
+    "generic_pickup_success": 0,
+    "unknown_done_cause": 0,
+    "memory_mode_sync_actual_applied": 1148,
+    "student": 229,
+    "memory_sync_changed_frames": 55,
+    "memory_sync_changed_entries": 165
+  },
+  "student_coverage_by_phase": {
+    "ready": {
+      "teacher": 244
+    },
+    "preshape": {
+      "teacher": 73
+    },
+    "lower": {
+      "teacher": 61
+    },
+    "approach": {
+      "teacher": 49
+    },
+    "squeeze": {
+      "teacher": 82,
+      "student": 3
+    },
+    "primary_lift": {
+      "teacher": 99,
+      "student": 21
+    },
+    "elbow_outward": {
+      "teacher": 105,
+      "student": 24
+    },
+    "tilt_90": {
+      "teacher": 487,
+      "student": 124
+    },
+    "wrist_reconfigure": {
+      "teacher": 148,
+      "student": 33
+    },
+    "tilt_hold": {
+      "student": 24,
+      "teacher": 71
+    }
+  },
+  "first_events": {
+    "student_step": 508,
+    "memory_sync_changed_step": 933
+  },
+  "memory_sync_changed_entries_by_joint": {
+    "left_index_MCP_joint": 55,
+    "left_index_PIP_joint": 55,
+    "left_index_DIP_joint": 55
+  },
+  "gain_events": [
+    {
+      "step": 1553,
+      "phase": "tilt_hold",
+      "changes": [
+        {
+          "field": "joint_stiffness",
+          "joint": "left_middle_MPR_joint",
+          "before": 30.0,
+          "after": 20.0
+        },
+        {
+          "field": "joint_stiffness",
+          "joint": "left_middle_MCP_joint",
+          "before": 30.0,
+          "after": 20.0
+        },
+        {
+          "field": "joint_stiffness",
+          "joint": "left_middle_PIP_joint",
+          "before": 30.0,
+          "after": 20.0
+        },
+        {
+          "field": "joint_stiffness",
+          "joint": "left_middle_DIP_joint",
+          "before": 30.0,
+          "after": 20.0
+        },
+        {
+          "field": "joint_stiffness",
+          "joint": "left_thumb_CMP_joint",
+          "before": 30.0,
+          "after": 20.0
+        },
+        {
+          "field": "joint_stiffness",
+          "joint": "left_thumb_CMR_joint",
+          "before": 30.0,
+          "after": 20.0
+        },
+        {
+          "field": "joint_stiffness",
+          "joint": "left_thumb_MCP_joint",
+          "before": 30.0,
+          "after": 20.0
+        },
+        {
+          "field": "joint_stiffness",
+          "joint": "left_thumb_PIP_joint",
+          "before": 30.0,
+          "after": 20.0
+        },
+        {
+          "field": "joint_stiffness",
+          "joint": "left_thumb_DIP_joint",
+          "before": 30.0,
+          "after": 20.0
+        },
+        {
+          "field": "joint_stiffness",
+          "joint": "left_index_MPR_joint",
+          "before": 30.0,
+          "after": 20.0
+        },
+        {
+          "field": "joint_stiffness",
+          "joint": "left_index_MCP_joint",
+          "before": 30.0,
+          "after": 20.0
+        },
+        {
+          "field": "joint_stiffness",
+          "joint": "left_index_PIP_joint",
+          "before": 30.0,
+          "after": 20.0
+        },
+        {
+          "field": "joint_stiffness",
+          "joint": "left_index_DIP_joint",
+          "before": 30.0,
+          "after": 20.0
+        },
+        {
+          "field": "joint_stiffness",
+          "joint": "left_ring_MPR_joint",
+          "before": 30.0,
+          "after": 20.0
+        },
+        {
+          "field": "joint_stiffness",
+          "joint": "left_ring_MCP_joint",
+          "before": 30.0,
+          "after": 20.0
+        },
+        {
+          "field": "joint_stiffness",
+          "joint": "left_ring_PIP_joint",
+          "before": 30.0,
+          "after": 20.0
+        },
+        {
+          "field": "joint_stiffness",
+          "joint": "left_ring_DIP_joint",
+          "before": 30.0,
+          "after": 20.0
+        },
+        {
+          "field": "joint_stiffness",
+          "joint": "left_little_MPR_joint",
+          "before": 30.0,
+          "after": 20.0
+        },
+        {
+          "field": "joint_stiffness",
+          "joint": "left_little_MCP_joint",
+          "before": 30.0,
+          "after": 20.0
+        },
+        {
+          "field": "joint_stiffness",
+          "joint": "left_little_PIP_joint",
+          "before": 30.0,
+          "after": 20.0
+        },
+        {
+          "field": "joint_stiffness",
+          "joint": "left_little_DIP_joint",
+          "before": 30.0,
+          "after": 20.0
+        }
+      ]
+    }
+  ],
+  "terminal_steps": [
+    1647
+  ],
+  "last_physical_step": 1647,
+  "no_records_or_physical_rows_after_terminal": true,
+  "source_labels": "Only recomputed expert_projected_target; student actual actions never serve as expert labels",
+  "right_native_action_bits_preserved_every_frame": true,
+  "original_grasp_gate": {
+    "teacher_accepted": true,
+    "measured": {
+      "accepted": true,
+      "scope": "whole_cube_tilt_only",
+      "full_episode": true,
+      "failures": [],
+      "final_tilt_error_deg": 0.6120880477447967,
+      "longest_measured_hold_seconds": 3.1666666666666665,
+      "contact_coverage_in_qualifying_window": {
+        "left": {
+          "thumb": 1.0,
+          "index": 1.0,
+          "middle": 1.0,
+          "ring": 1.0,
+          "little": 1.0
+        }
+      },
+      "maximum_lift_m": 0.36868804359436036,
+      "final_lift_m": 0.36804335975646973,
+      "cube_returned_to_table_after_lift": false,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "self_contact_impulse_sum_Ns": 0,
+      "semantic_task": "left_palm_toward_right_hand_uncrossed_opposition_handover",
+      "longest_palm_facing_hold_seconds": 3.033333333333333,
+      "final_hand_geometry": {
+        "left_palm_position_root": [
+          0.40506023940629454,
+          0.3438987863138381,
+          0.1277999937804679
+        ],
+        "right_palm_position_root": [
+          0.3166191782612503,
+          -0.22905415673908433,
+          -0.1261228131017691
+        ],
+        "left_palm_normal_world": [
+          0.21459847264261528,
+          -0.8114979936959901,
+          0.5435241501229173
+        ],
+        "right_palm_normal_world": [
+          -0.047758001661820065,
+          0.9988562295552149,
+          -0.002325071183986263
+        ],
+        "left_facing_right_cos": 0.4865750261262507,
+        "right_facing_left_cos": 0.8966273829882019,
+        "palm_normal_dot": -0.8220823528271397,
+        "wrist_y_separation_m": 0.5729529430529224,
+        "elbow_y_separation_m": 0.8045690059661865,
+        "left_wrist_from_cube_y_m": 0.056567413814372136,
+        "right_wrist_from_cube_y_m": 0.5163855292385503
+      }
+    },
+    "wrist": {
+      "accepted": true,
+      "longest_jointly_qualified_hold_s": 3.033333333333333,
+      "final_elbow": {
+        "shoulder_root_m": [
+          0.021714452654123306,
+          0.24999985098838806,
+          0.24004087448120126
+        ],
+        "elbow_root_m": [
+          0.03257550671696663,
+          0.42943334579467773,
+          0.015588736534118741
+        ],
+        "wrist_root_m": [
+          0.30071038007736206,
+          0.3275608420372009,
+          0.14460716247558603
+        ],
+        "outward_from_shoulder_m": 0.17943349480628967,
+        "upper_arm_outward_deg": 38.63984566999005,
+        "outward_from_shoulder_wrist_axis_m": 0.14742232072877753
+      },
+      "final": {
+        "joint6_deg": 11.886073632348255,
+        "side_bend_deg": -15.084424477245083,
+        "flexion_deg": 42.97194710057463,
+        "forearm_direction_palm_frame": [
+          0.6687594749543703,
+          -0.19348444705672455,
+          0.7178610822477483
+        ],
+        "wrist_inside_elbow_m": 0.1018725037574768
+      },
+      "scope": "J6_side_bend_reversed_with_unchanged_palm_orientation",
+      "failures": []
+    },
+    "assembled_hold_s": 3.1666666666666665,
+    "qualified": true
+  },
+  "physics_identity_sha256": "b2f9feb645c8d92e2da3bb78653165292a5649e59864dee4b1de82e904854192",
+  "v2_physics_identity_sha256": "b2f9feb645c8d92e2da3bb78653165292a5649e59864dee4b1de82e904854192",
+  "v2_to_v3_identity_differences": {},
+  "recovery_or_new_run_physics_steps_not_in_episode": true
+}

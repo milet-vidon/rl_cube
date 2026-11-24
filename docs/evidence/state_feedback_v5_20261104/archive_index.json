@@ -1,0 +1,56 @@
+{
+  "teacher_state_feedback_residual_v5_20261104": {
+    "inspection.json": {
+      "source_sha256": "d0c46d42d206fabb2e4fb630d477a2b4f429c33894bc32b8d686d0724a4a0dd1",
+      "archive": "inspection.json",
+      "archive_sha256": "d0c46d42d206fabb2e4fb630d477a2b4f429c33894bc32b8d686d0724a4a0dd1"
+    },
+    "model.pt": {
+      "source_sha256": "ae36280b13d74fe840e88fd748c618c76cc9ea9b8d7fd98dd337e456cc39e3c5",
+      "archive": "model.pt",
+      "archive_sha256": "ae36280b13d74fe840e88fd748c618c76cc9ea9b8d7fd98dd337e456cc39e3c5"
+    },
+    "qualification.json": {
+      "source_sha256": "71f98935291201335bfe24f8a19b133ee475f7e0dc5060ce553c97f93fd617d5",
+      "archive": "qualification.json",
+      "archive_sha256": "71f98935291201335bfe24f8a19b133ee475f7e0dc5060ce553c97f93fd617d5"
+    },
+    "result.json": {
+      "source_sha256": "095566198ca47e875a2b5980414e9dcc99287b60386ef779f01475d8c99caa77",
+      "archive": "result.json",
+      "archive_sha256": "095566198ca47e875a2b5980414e9dcc99287b60386ef779f01475d8c99caa77"
+    },
+    "training.jsonl": {
+      "source_sha256": "b165412464789d19f7bbc6b49340e0a6f41cec310551013591af8158255e57be",
+      "archive": "training.jsonl.gz",
+      "archive_sha256": "8c2e929bd30a7f6f1974faa73fc91aab19a5c87488209151f8a0ea985132458f"
+    }
+  },
+  "teacher_state_feedback_residual_v5_long_20261104": {
+    "inspection.json": {
+      "source_sha256": "d0c46d42d206fabb2e4fb630d477a2b4f429c33894bc32b8d686d0724a4a0dd1",
+      "archive": "inspection.json",
+      "archive_sha256": "d0c46d42d206fabb2e4fb630d477a2b4f429c33894bc32b8d686d0724a4a0dd1"
+    },
+    "model.pt": {
+      "source_sha256": "1c663e17f6157273ee4c80b1e6ebf1c292b6c9972278041936b56943212db98c",
+      "archive": "model.pt",
+      "archive_sha256": "1c663e17f6157273ee4c80b1e6ebf1c292b6c9972278041936b56943212db98c"
+    },
+    "qualification.json": {
+      "source_sha256": "71f98935291201335bfe24f8a19b133ee475f7e0dc5060ce553c97f93fd617d5",
+      "archive": "qualification.json",
+      "archive_sha256": "71f98935291201335bfe24f8a19b133ee475f7e0dc5060ce553c97f93fd617d5"
+    },
+    "result.json": {
+      "source_sha256": "69cfddd983c144ee75edfa1ca1c232637e8210f082d0c16ddff0ace6a00f22d7",
+      "archive": "result.json",
+      "archive_sha256": "69cfddd983c144ee75edfa1ca1c232637e8210f082d0c16ddff0ace6a00f22d7"
+    },
+    "training.jsonl": {
+      "source_sha256": "2ef41ea8ec664b4df2efcdd9745622643cbc02ede4f1734708ee1a82dcb1e6dc",
+      "archive": "training.jsonl.gz",
+      "archive_sha256": "9567f728edce96944c8e2dc76534d72e9a49d15ae08ae0f857feb8e20af45257"
+    }
+  }
+}

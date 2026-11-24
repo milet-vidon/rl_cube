@@ -1,0 +1,160 @@
+{
+  "source": "/home/brainco/rl_cube/github_project/revotron_revo3/source/revotron_system/usd/revotron_bimanual_revo3_wrist_mesh_v1.usda",
+  "meters_per_unit": 0.01,
+  "colliders": [
+    {
+      "prim": "/revotron_bimanual/Link4_L/collisions/Link4_L/node_STL_BINARY_/mesh",
+      "body": "/revotron_bimanual/Link4_L",
+      "min": [
+        -0.04057035385464687,
+        0.4871265848232177,
+        0.1820418387726427
+      ],
+      "max": [
+        0.07512154855890817,
+        0.6595866013709856,
+        0.29804183542346796
+      ]
+    },
+    {
+      "prim": "/revotron_bimanual/Link5_L/collisions/Link5_L/node_STL_BINARY_/mesh",
+      "body": "/revotron_bimanual/Link5_L",
+      "min": [
+        -0.04977803497857902,
+        0.650432667281728,
+        0.18154332622344574
+      ],
+      "max": [
+        0.04127361429957296,
+        0.8736736224238647,
+        0.29854332490164925
+      ]
+    },
+    {
+      "prim": "/revotron_bimanual/Link6_L/collisions/Link6_L/node_STL_BINARY_/mesh",
+      "body": "/revotron_bimanual/Link6_L",
+      "min": [
+        -0.04660222921523871,
+        0.8109480833620332,
+        0.19504311275121267
+      ],
+      "max": [
+        0.022733547461119115,
+        0.8902126373727701,
+        0.2850435416734547
+      ]
+    },
+    {
+      "prim": "/revotron_bimanual/Link7_L/collisions/Link7_L/node_STL_BINARY_/mesh",
+      "body": "/revotron_bimanual/Link7_L",
+      "min": [
+        -0.06411052298855069,
+        0.8116726061057138,
+        0.199043535090921
+      ],
+      "max": [
+        0.04307063356396655,
+        0.9466645186059055,
+        0.2810436714539075
+      ]
+    },
+    {
+      "prim": "/revotron_bimanual/Link7_L/collisions/left_connector_wrist_link/node_STL_BINARY_/mesh",
+      "body": "/revotron_bimanual/Link7_L",
+      "min": [
+        -0.08155723228000528,
+        0.9433590889266015,
+        0.15239227701727637
+      ],
+      "max": [
+        0.017942429895197315,
+        0.9915029093595503,
+        0.2727701534295744
+      ]
+    },
+    {
+      "prim": "/revotron_bimanual/Link7_L/collisions/left_hand_base_link/node_STL_BINARY_/mesh",
+      "body": "/revotron_bimanual/Link7_L",
+      "min": [
+        -0.04723089103813646,
+        0.9556710263781423,
+        0.21600807978941813
+      ],
+      "max": [
+        0.015193042715091302,
+        0.9739973837090798,
+        0.2640795089155611
+      ]
+    },
+    {
+      "prim": "/revotron_bimanual/Link7_L/collisions/left_palm_backtrim_v2/World/mesh",
+      "body": "/revotron_bimanual/Link7_L",
+      "min": [
+        -0.07328604935978941,
+        0.9703283088330925,
+        0.2154833306470223
+      ],
+      "max": [
+        0.034055922258704664,
+        1.072479128886061,
+        0.26688647095204937
+      ]
+    },
+    {
+      "prim": "/revotron_bimanual/Link7_L/collisions/left_palm_led_link/node_STL_BINARY_/mesh",
+      "body": "/revotron_bimanual/Link7_L",
+      "min": [
+        -0.0312722145595639,
+        0.9935272567939694,
+        0.26310921386976055
+      ],
+      "max": [
+        -0.004641607263023036,
+        1.0201751533400822,
+        0.2668189016374457
+      ]
+    },
+    {
+      "prim": "/revotron_bimanual/Link7_L/collisions/left_palm_rubber_link/node_STL_BINARY_/mesh",
+      "body": "/revotron_bimanual/Link7_L",
+      "min": [
+        -0.06674885029962463,
+        0.9792173724025566,
+        0.21469004330541896
+      ],
+      "max": [
+        0.029194105804214804,
+        1.0661254475200357,
+        0.23635810728288892
+      ]
+    },
+    {
+      "prim": "/revotron_bimanual/Link7_L/collisions/left_palm_touch_link/node_STL_BINARY_/mesh",
+      "body": "/revotron_bimanual/Link7_L",
+      "min": [
+        -0.06483094719229304,
+        0.9813929467455477,
+        0.21618130082108905
+      ],
+      "max": [
+        0.02734894797261337,
+        1.0642243573242023,
+        0.23567451313200244
+      ]
+    },
+    {
+      "prim": "/revotron_bimanual/Link7_L/collisions/left_wrist_camera_link/node_STL_BINARY_/mesh",
+      "body": "/revotron_bimanual/Link7_L",
+      "min": [
+        -0.07757047868047214,
+        0.9455184318414301,
+        0.1554503576217422
+      ],
+      "max": [
+        -0.04461894689958084,
+        0.9897985555175098,
+        0.18046826921200093
+      ]
+    }
+  ]
+}

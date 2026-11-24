@@ -1,0 +1,81 @@
+{
+  "passed": false,
+  "longest_qualified_hold_s": 0.0,
+  "initial_position_m": [
+    0.5473971366882324,
+    0.2873244881629944,
+    1.2965105772018433
+  ],
+  "final_position_m": [
+    0.4998338520526886,
+    -1.9151104424963705e-05,
+    1.2942681312561035
+  ],
+  "target_position_m": [
+    0.49999139832115075,
+    1.790774855298105e-05,
+    1.299999684667749
+  ],
+  "plan_checks": 241,
+  "failure": "center_hold_gate_not_met",
+  "final_audit": {
+    "qualified": false,
+    "failed_conditions": [
+      "five_left_contacts"
+    ],
+    "position_error_m": 0.005733838042344425,
+    "orientation_error_deg": 0.8643552098020642,
+    "wrist": {
+      "joint6_deg": 29.80384463205246,
+      "side_bend_deg": -31.890042965131997,
+      "flexion_deg": 32.02763086437101,
+      "forearm_direction_palm_frame": [
+        0.46906793904267935,
+        -0.4665663955139177,
+        0.749860698489662
+      ],
+      "wrist_inside_elbow_m": 0.25747597217559814
+    },
+    "elbow": {
+      "shoulder_root_m": [
+        0.021714430302381516,
+        0.2500002384185791,
+        0.2400409936904908
+      ],
+      "elbow_root_m": [
+        0.1755661517381668,
+        0.430036336183548,
+        0.0769160747528077
+      ],
+      "wrist_root_m": [
+        0.32274913787841797,
+        0.17256036400794983,
+        0.18162224292755136
+      ],
+      "outward_from_shoulder_m": 0.18003609776496887,
+      "upper_arm_outward_deg": 47.821287635045735,
+      "outward_from_shoulder_wrist_axis_m": 0.21247493375677923
+    }
+  },
+  "style": "j56",
+  "joint_coordination": {
+    "qualified": true,
+    "failed_conditions": [],
+    "initial_j5_j6_j7_deg": [
+      -77.45942684868709,
+      11.881920023559243,
+      46.24660298332021
+    ],
+    "actual_j5_j6_j7_deg": [
+      -53.32107045390388,
+      29.80384463205246,
+      35.00181325082351
+    ],
+    "delta_j5_j6_j7_deg": [
+      24.13835639478321,
+      17.921924608493217,
+      -11.244789732496699
+    ],
+    "j7_flexion_reduction_deg": 11.244789732496699
+  }
+}

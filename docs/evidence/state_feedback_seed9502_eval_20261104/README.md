@@ -1,0 +1,7 @@
+# Matched v4 left-policy evaluation, seed 9502: completed failure
+
+The frozen v4 checkpoint failed the original contact-topology/settle gate after 360 physical steps, all in the `ready` stage. The next teacher query produced an abort before another physics step. Original wrist qualification, runtime bridge validation, training eligibility, and pure-neural/full-task claims remain false. The original environment raw done is false throughout this prefix; this is a controller gate abort, not an environment success.
+
+All 360 left position commands came from the evaluated policy from reset. There were zero left teacher position commands and zero executed teacher gain events. Original right actions and public phase/gain control remain external. This is privileged simulator state, not vision. The original `development_seen_seed` protocol string is preserved; this additional seed failure demonstrates no independent generalization.
+
+The complete original run is archived: exact two checkpoint copies, all source snapshots and manifests, initial state, scene/projection/physics metadata, pickup plan, full trajectory and per-policy-step records, unfinished-decision abort, final result, launch script, and runtime log. `run_inventory.json` lists every original file. SHA-256 verification covers original/gzip/restored bytes and the untouched sources after copying. No original result or source was edited; no simulator or git stage/commit/push was performed by this archive.

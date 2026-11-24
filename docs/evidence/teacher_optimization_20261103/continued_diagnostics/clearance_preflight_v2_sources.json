@@ -1,0 +1,12 @@
+{
+  "sha256": {
+    "opposed_grasp_plan.py": "3e30d6b33107ff41be65ade1c60ab9a433739c930f785a0193c837e9b708e127",
+    "opposed_joint_plan.py": "5600b3975f14d776dfff0a716edbdf614d0fea8587222af0be10c161dbd255cb",
+    "opposed_joint_fit.py": "644e91c63d5f80680844d20bd5b2be5e42f2dbcae8c6eff82af7eab95af45eff",
+    "opposed_cube_clearance.py": "fae984a2c7c94b027cf3eca241e7a125e679d5b0d73500c8d643810ec09b4534",
+    "safe_collision_plan.py": "2ca8f8278d50b03a612ec9e9bbad746900541b86a29eb799042212c4fdd6dda4",
+    "face_push_plan.py": "0bf9b55361f59113264ce29260298fa0d9fb883cda16fac66481de1ab82f89eb",
+    "opposed_grasp_audit.py": "ee6190758ddd71487508edaae7d18f8b9d0890bee971b9d419d61c32aed00af3",
+    "kinematics.py": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212"
+  }
+}

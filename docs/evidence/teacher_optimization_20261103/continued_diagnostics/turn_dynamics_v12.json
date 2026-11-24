@@ -1,0 +1,134 @@
+[
+  {
+    "run": "teacher_joint_passive_damping_v12_20261103",
+    "seed": 9501,
+    "split": "development",
+    "trajectory_sha256": "2e79815c673407e0daf9378455985dba1afb405760d5bddb5232ab24121b8833",
+    "failure": "right_five_finger_hold_gate_not_met",
+    "phases": {
+      "opposition_hold": {
+        "frames": 121,
+        "final_face_angle_deg": 0.0021892641816916017,
+        "core_angular_speed_rad_s": {
+          "p50": 0.08767110854387283,
+          "p99": 0.1477117508649826,
+          "max": 0.15248903632164001
+        },
+        "selected_angular_speed_rad_s": {
+          "p50": 3.0847973942587075,
+          "p99": 3.990197473860124,
+          "max": 4.15841190996741
+        },
+        "contacts": {
+          "thumb": {
+            "fraction": 1.0,
+            "first_missing_step": null,
+            "face_angle_at_first_missing_deg": null,
+            "maximum_joint_tracking_error_rad": {
+              "p50": 0.014154911041259766,
+              "p99": 0.014164185523986817,
+              "max": 0.014165163040161133
+            }
+          },
+          "index": {
+            "fraction": 1.0,
+            "first_missing_step": null,
+            "face_angle_at_first_missing_deg": null,
+            "maximum_joint_tracking_error_rad": {
+              "p50": 0.008057117462158203,
+              "p99": 0.008066296577453613,
+              "max": 0.008070766925811768
+            }
+          },
+          "middle": {
+            "fraction": 1.0,
+            "first_missing_step": null,
+            "face_angle_at_first_missing_deg": null,
+            "maximum_joint_tracking_error_rad": {
+              "p50": 0.011639252305030823,
+              "p99": 0.011656627058982849,
+              "max": 0.011660084128379822
+            }
+          },
+          "ring": {
+            "fraction": 1.0,
+            "first_missing_step": null,
+            "face_angle_at_first_missing_deg": null,
+            "maximum_joint_tracking_error_rad": {
+              "p50": 0.008313775062561035,
+              "p99": 0.00834190845489502,
+              "max": 0.008342087268829346
+            }
+          },
+          "little": {
+            "fraction": 1.0,
+            "first_missing_step": null,
+            "face_angle_at_first_missing_deg": null,
+            "maximum_joint_tracking_error_rad": {
+              "p50": 0.011275410652160645,
+              "p99": 0.011325061321258545,
+              "max": 0.011325299739837646
+            }
+          }
+        },
+        "body_velocity_comparison": {
+          "Core": {
+            "reported_rad_s": {
+              "p50": 0.08767110976437995,
+              "p99": 0.14771174636689727,
+              "max": 0.15248903620246332
+            },
+            "control_interval_average_rad_s": {
+              "p50": 0.0002377866542433318,
+              "p99": 0.0008592438461293791,
+              "max": 0.0010585552329481385
+            }
+          },
+          "nZ": {
+            "reported_rad_s": {
+              "p50": 0.6560534119635336,
+              "p99": 1.6042283252384735,
+              "max": 1.6855747466362687
+            },
+            "control_interval_average_rad_s": {
+              "p50": 0.0004415712234654543,
+              "p99": 0.003127406990683611,
+              "max": 0.003636916381240468
+            }
+          },
+          "nZ_pX": {
+            "reported_rad_s": {
+              "p50": 2.6708810290053058,
+              "p99": 3.95151557622959,
+              "max": 4.1293213348461855
+            },
+            "control_interval_average_rad_s": {
+              "p50": 0.0006184395482493198,
+              "p99": 0.0017459737528792523,
+              "max": 0.002034798220896553
+            }
+          },
+          "nX_nY_nZ": {
+            "reported_rad_s": {
+              "p50": 1.2204847444315676,
+              "p99": 1.380569376115669,
+              "max": 1.4335732662281768
+            },
+            "control_interval_average_rad_s": {
+              "p50": 0.0003639414238445943,
+              "p99": 0.0012134442763963858,
+              "max": 0.0013410188783778596
+            }
+          }
+        },
+        "gate_failure_counts": {
+          "core_angular_speed_ge_0_20": 0,
+          "core_linear_speed_ge_0_03": 0,
+          "missing_right_finger": 0,
+          "posture": 0
+        }
+      }
+    },
+    "interpretation": "Finite differences are control-interval averages, raw velocities are endpoint samples; disagreement suggests unresolved dynamics or sampling, not proof of a velocity bug. Gates use original raw velocities."
+  }
+]

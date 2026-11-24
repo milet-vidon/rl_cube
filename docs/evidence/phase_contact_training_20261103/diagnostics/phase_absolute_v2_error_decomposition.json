@@ -1,0 +1,231 @@
+{
+  "decomposition": [
+    {
+      "step": 244,
+      "phase": "preshape",
+      "actual_input_vs_reference_input_output_max_rad": 0.0008507966995239258,
+      "actual_input_vs_reference_target_max_rad": 0.003595177084207535,
+      "reference_input_vs_reference_target_max_rad": 0.0035933470353484154,
+      "finger_target_errors_rad": {
+        "left_middle_MPR_joint": -0.00011784583330154419,
+        "left_middle_MCP_joint": 0.0008159186691045761,
+        "left_middle_PIP_joint": 0.00018125399947166443,
+        "left_middle_DIP_joint": 0.0002666627988219261,
+        "left_index_MPR_joint": 3.080442547798157e-05,
+        "left_index_MCP_joint": -0.0013668034225702286,
+        "left_index_PIP_joint": 0.0026124194264411926,
+        "left_index_DIP_joint": 0.0014038290828466415
+      }
+    },
+    {
+      "step": 316,
+      "phase": "preshape",
+      "actual_input_vs_reference_input_output_max_rad": 0.002289414405822754,
+      "actual_input_vs_reference_target_max_rad": 0.020560383796691895,
+      "reference_input_vs_reference_target_max_rad": 0.020560383796691895,
+      "finger_target_errors_rad": {
+        "left_middle_MPR_joint": 5.832687020301819e-05,
+        "left_middle_MCP_joint": 0.0010796785354614258,
+        "left_middle_PIP_joint": 0.0007355213165283203,
+        "left_middle_DIP_joint": 0.0009090900421142578,
+        "left_index_MPR_joint": -6.649736315011978e-05,
+        "left_index_MCP_joint": 0.001735776662826538,
+        "left_index_PIP_joint": 0.00013399124145507812,
+        "left_index_DIP_joint": 0.00023314356803894043
+      }
+    },
+    {
+      "step": 427,
+      "phase": "squeeze",
+      "actual_input_vs_reference_input_output_max_rad": 0.01911759376525879,
+      "actual_input_vs_reference_target_max_rad": 0.01990640163421631,
+      "reference_input_vs_reference_target_max_rad": 0.0012794733047485352,
+      "finger_target_errors_rad": {
+        "left_middle_MPR_joint": -6.027519702911377e-05,
+        "left_middle_MCP_joint": 0.018553853034973145,
+        "left_middle_PIP_joint": -0.001886993646621704,
+        "left_middle_DIP_joint": 0.003070831298828125,
+        "left_index_MPR_joint": -0.00019046198576688766,
+        "left_index_MCP_joint": 0.015312820672988892,
+        "left_index_PIP_joint": 0.0005238056182861328,
+        "left_index_DIP_joint": 0.013527274131774902
+      }
+    },
+    {
+      "step": 465,
+      "phase": "squeeze",
+      "actual_input_vs_reference_input_output_max_rad": 0.004446744918823242,
+      "actual_input_vs_reference_target_max_rad": 0.005272805690765381,
+      "reference_input_vs_reference_target_max_rad": 0.0031239986419677734,
+      "finger_target_errors_rad": {
+        "left_middle_MPR_joint": -0.00011816993355751038,
+        "left_middle_MCP_joint": -0.004915475845336914,
+        "left_middle_PIP_joint": 0.0011649131774902344,
+        "left_middle_DIP_joint": 0.001909494400024414,
+        "left_index_MPR_joint": -0.00014501158148050308,
+        "left_index_MCP_joint": -0.00497281551361084,
+        "left_index_PIP_joint": 0.0017747282981872559,
+        "left_index_DIP_joint": -0.002750486135482788
+      }
+    },
+    {
+      "step": 511,
+      "phase": "squeeze",
+      "actual_input_vs_reference_input_output_max_rad": 0.018968939781188965,
+      "actual_input_vs_reference_target_max_rad": 0.027180850505828857,
+      "reference_input_vs_reference_target_max_rad": 0.011110961437225342,
+      "finger_target_errors_rad": {
+        "left_middle_MPR_joint": 0.00013220682740211487,
+        "left_middle_MCP_joint": -0.017212986946105957,
+        "left_middle_PIP_joint": 0.009108275175094604,
+        "left_middle_DIP_joint": 0.004987239837646484,
+        "left_index_MPR_joint": -0.0049881283193826675,
+        "left_index_MCP_joint": -0.0005648136138916016,
+        "left_index_PIP_joint": -0.008378386497497559,
+        "left_index_DIP_joint": -0.01487964391708374
+      }
+    },
+    {
+      "step": 631,
+      "phase": "primary_lift",
+      "actual_input_vs_reference_input_output_max_rad": 0.015585541725158691,
+      "actual_input_vs_reference_target_max_rad": 0.016327381134033203,
+      "reference_input_vs_reference_target_max_rad": 0.0021579861640930176,
+      "finger_target_errors_rad": {
+        "left_middle_MPR_joint": 0.0047648586332798,
+        "left_middle_MCP_joint": -0.007568538188934326,
+        "left_middle_PIP_joint": 0.013728946447372437,
+        "left_middle_DIP_joint": 0.016327381134033203,
+        "left_index_MPR_joint": 0.0011071362532675266,
+        "left_index_MCP_joint": -0.006322264671325684,
+        "left_index_PIP_joint": 0.008188843727111816,
+        "left_index_DIP_joint": 0.008510351181030273
+      }
+    },
+    {
+      "step": 760,
+      "phase": "elbow_outward",
+      "actual_input_vs_reference_input_output_max_rad": 0.014860033988952637,
+      "actual_input_vs_reference_target_max_rad": 0.017166495323181152,
+      "reference_input_vs_reference_target_max_rad": 0.0023976564407348633,
+      "finger_target_errors_rad": {
+        "left_middle_MPR_joint": 0.005103655159473419,
+        "left_middle_MCP_joint": -0.006505846977233887,
+        "left_middle_PIP_joint": 0.014710396528244019,
+        "left_middle_DIP_joint": 0.017166495323181152,
+        "left_index_MPR_joint": 0.001480048056691885,
+        "left_index_MCP_joint": -0.005352437496185303,
+        "left_index_PIP_joint": 0.007576107978820801,
+        "left_index_DIP_joint": 0.007775694131851196
+      }
+    },
+    {
+      "step": 1371,
+      "phase": "tilt_90",
+      "actual_input_vs_reference_input_output_max_rad": 0.013815820217132568,
+      "actual_input_vs_reference_target_max_rad": 0.023783206939697266,
+      "reference_input_vs_reference_target_max_rad": 0.013722419738769531,
+      "finger_target_errors_rad": {
+        "left_middle_MPR_joint": 0.0015684738755226135,
+        "left_middle_MCP_joint": -0.005923628807067871,
+        "left_middle_PIP_joint": 0.00605088472366333,
+        "left_middle_DIP_joint": 0.009206175804138184,
+        "left_index_MPR_joint": -0.00039371661841869354,
+        "left_index_MCP_joint": -0.006841063499450684,
+        "left_index_PIP_joint": 0.009739398956298828,
+        "left_index_DIP_joint": 0.008695334196090698
+      }
+    },
+    {
+      "step": 1552,
+      "phase": "wrist_reconfigure",
+      "actual_input_vs_reference_input_output_max_rad": 0.008996725082397461,
+      "actual_input_vs_reference_target_max_rad": 0.009247362613677979,
+      "reference_input_vs_reference_target_max_rad": 0.009232014417648315,
+      "finger_target_errors_rad": {
+        "left_middle_MPR_joint": 0.0015258118510246277,
+        "left_middle_MCP_joint": -0.003623664379119873,
+        "left_middle_PIP_joint": 0.005159825086593628,
+        "left_middle_DIP_joint": 0.00836181640625,
+        "left_index_MPR_joint": -0.0006856350228190422,
+        "left_index_MCP_joint": -0.006982088088989258,
+        "left_index_PIP_joint": 0.00858306884765625,
+        "left_index_DIP_joint": 0.009247362613677979
+      }
+    },
+    {
+      "step": 1600,
+      "phase": "tilt_hold",
+      "actual_input_vs_reference_input_output_max_rad": 0.008678793907165527,
+      "actual_input_vs_reference_target_max_rad": 0.015465974807739258,
+      "reference_input_vs_reference_target_max_rad": 0.015462398529052734,
+      "finger_target_errors_rad": {
+        "left_middle_MPR_joint": 0.000875517725944519,
+        "left_middle_MCP_joint": -0.0018371343612670898,
+        "left_middle_PIP_joint": 0.004312664270401001,
+        "left_middle_DIP_joint": 0.006936073303222656,
+        "left_index_MPR_joint": -0.00041479384526610374,
+        "left_index_MCP_joint": -0.015156805515289307,
+        "left_index_PIP_joint": 0.014468073844909668,
+        "left_index_DIP_joint": 0.015465974807739258
+      }
+    },
+    {
+      "step": 1646,
+      "phase": "tilt_hold",
+      "actual_input_vs_reference_input_output_max_rad": 0.01900315284729004,
+      "actual_input_vs_reference_target_max_rad": 0.03477597236633301,
+      "reference_input_vs_reference_target_max_rad": 0.01577281951904297,
+      "finger_target_errors_rad": {
+        "left_middle_MPR_joint": 0.005777150392532349,
+        "left_middle_MCP_joint": -0.009814858436584473,
+        "left_middle_PIP_joint": 0.012733280658721924,
+        "left_middle_DIP_joint": 0.014019370079040527,
+        "left_index_MPR_joint": -0.0005744979716837406,
+        "left_index_MCP_joint": -0.02887827157974243,
+        "left_index_PIP_joint": 0.0330127477645874,
+        "left_index_DIP_joint": 0.03477597236633301
+      }
+    },
+    {
+      "step": 1700,
+      "phase": "left_center_transport",
+      "actual_input_vs_reference_input_output_max_rad": 0.01314854621887207,
+      "actual_input_vs_reference_target_max_rad": 0.02156040072441101,
+      "reference_input_vs_reference_target_max_rad": 0.016985297203063965,
+      "finger_target_errors_rad": {
+        "left_middle_MPR_joint": 0.004049714654684067,
+        "left_middle_MCP_joint": -0.005700945854187012,
+        "left_middle_PIP_joint": 0.010420262813568115,
+        "left_middle_DIP_joint": 0.013088345527648926,
+        "left_index_MPR_joint": -0.00015510758385062218,
+        "left_index_MCP_joint": -0.017693758010864258,
+        "left_index_PIP_joint": 0.019729018211364746,
+        "left_index_DIP_joint": 0.02156040072441101
+      }
+    },
+    {
+      "step": 1800,
+      "phase": "left_center_transport",
+      "actual_input_vs_reference_input_output_max_rad": 0.011486589908599854,
+      "actual_input_vs_reference_target_max_rad": 0.016345620155334473,
+      "reference_input_vs_reference_target_max_rad": 0.016263067722320557,
+      "finger_target_errors_rad": {
+        "left_middle_MPR_joint": 0.0035605132579803467,
+        "left_middle_MCP_joint": -0.010671019554138184,
+        "left_middle_PIP_joint": 0.007290512323379517,
+        "left_middle_DIP_joint": 0.009060859680175781,
+        "left_index_MPR_joint": -0.000758669339120388,
+        "left_index_MCP_joint": -0.015078902244567871,
+        "left_index_PIP_joint": 0.016345620155334473,
+        "left_index_DIP_joint": 0.016103774309158325
+      }
+    }
+  ],
+  "required_wrist_hold_contact_test": {
+    "actual_tilt_hold_frames": 94,
+    "actual_five_contact_frames": 0,
+    "reference_five_contact_frames": 92,
+    "conclusion": "actual combined wrist gate necessarily fails because mandatory five-contact predicate is false in every hold frame; missing tilt-reference metadata need not be invented"
+  }
+}

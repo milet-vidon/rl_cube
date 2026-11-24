@@ -1,0 +1,10 @@
+{
+  "reason": "Initial runner used config.json for runtime config after copying the source. Preserve that runtime file unchanged; recover the hash-matching base source configuration separately.",
+  "original_files_modified": false,
+  "source_archive_paths": {
+    "config.json": "source_config.json"
+  },
+  "source_config_sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+  "runtime_config_path": "config.json",
+  "runtime_config_sha256": "d3c6084f638ed96ea299dbf76c386537051d3857c61675ddfc4abd5e9d925ae1"
+}

@@ -1,0 +1,310 @@
+{
+  "scope": "legacy generic-pickup termination semantics; not a new success/failure re-evaluation",
+  "base_api": "environment.step: done=success or drop or timeout; top-level face runtimes did not consume returned done",
+  "runs": {
+    "teacher_joint_soft_fingers_v11_20261103": {
+      "trajectory_sha256": "544eeb682039fccb1490f8d413fe24c304bfc3f280450d7199642d23e2524d44",
+      "rows": 3474,
+      "first_recorded_terminal": {
+        "step": 3119,
+        "phase": "opposition_hold",
+        "success": true,
+        "drop": false,
+        "terms": {
+          "reach": 0.5345318917298794,
+          "bilateral_contact": 1.0,
+          "lift": 1.0,
+          "hold": 1.0,
+          "hold_progress": 1.0,
+          "success_once": 1.0,
+          "action_rate": 0.0,
+          "joint_speed": 0.00010876461601583287,
+          "drop": 0.0,
+          "timeout": 0.0,
+          "terminal": 1.0,
+          "potential": 0.0,
+          "raw_potential": 0.9069063783459759,
+          "raw_component": {
+            "reach": 0.10690637834597588,
+            "bilateral_contact": 0.1,
+            "lift": 0.5,
+            "hold_progress": 0.2
+          },
+          "potential_difference": -0.9046841824924632,
+          "step_penalty": -0.002,
+          "success_bonus": 5.0,
+          "drop_penalty": -0.0,
+          "action_rate_penalty": -0.0,
+          "joint_speed_penalty": -1.0876461601583288e-07
+        }
+      },
+      "terminal_rows": 225,
+      "pickup_success_rows": 225,
+      "timeout_rows": 0,
+      "post_first_terminal_rows": 354,
+      "scope_after_terminal": "diagnostic physical rollout only; exclude from task training episodes and task success certification"
+    },
+    "teacher_joint_passive_damping_v12_20261103": {
+      "trajectory_sha256": "2e79815c673407e0daf9378455985dba1afb405760d5bddb5232ab24121b8833",
+      "rows": 3175,
+      "first_recorded_terminal": {
+        "step": 3090,
+        "phase": "opposition_hold",
+        "success": true,
+        "drop": false,
+        "terms": {
+          "reach": 0.5359730006693335,
+          "bilateral_contact": 1.0,
+          "lift": 1.0,
+          "hold": 1.0,
+          "hold_progress": 1.0,
+          "success_once": 1.0,
+          "action_rate": 0.0,
+          "joint_speed": 0.00034554192097857594,
+          "drop": 0.0,
+          "timeout": 0.0,
+          "terminal": 1.0,
+          "potential": 0.0,
+          "raw_potential": 0.9071946001338668,
+          "raw_component": {
+            "reach": 0.10719460013386671,
+            "bilateral_contact": 0.1,
+            "lift": 0.5,
+            "hold_progress": 0.2
+          },
+          "potential_difference": -0.9049724024531224,
+          "step_penalty": -0.002,
+          "success_bonus": 5.0,
+          "drop_penalty": -0.0,
+          "action_rate_penalty": -0.0,
+          "joint_speed_penalty": -3.4554192097857593e-07
+        }
+      },
+      "terminal_rows": 85,
+      "pickup_success_rows": 85,
+      "timeout_rows": 0,
+      "post_first_terminal_rows": 84,
+      "scope_after_terminal": "diagnostic physical rollout only; exclude from task training episodes and task success certification"
+    },
+    "teacher_joint_paced_passive_v13_20261103": {
+      "trajectory_sha256": "1533339276c84b22c50f8de279f27d74d049b68b71aa1588f5409e083bdc2389",
+      "rows": 3175,
+      "first_recorded_terminal": {
+        "step": 3092,
+        "phase": "opposition_hold",
+        "success": true,
+        "drop": false,
+        "terms": {
+          "reach": 0.5360722677831544,
+          "bilateral_contact": 1.0,
+          "lift": 1.0,
+          "hold": 1.0,
+          "hold_progress": 1.0,
+          "success_once": 1.0,
+          "action_rate": 0.0,
+          "joint_speed": 0.00013759711873717606,
+          "drop": 0.0,
+          "timeout": 0.0,
+          "terminal": 1.0,
+          "potential": 0.0,
+          "raw_potential": 0.9072144535566309,
+          "raw_component": {
+            "reach": 0.1072144535566309,
+            "bilateral_contact": 0.1,
+            "lift": 0.5,
+            "hold_progress": 0.2
+          },
+          "potential_difference": -0.9049922972760209,
+          "step_penalty": -0.002,
+          "success_bonus": 5.0,
+          "drop_penalty": -0.0,
+          "action_rate_penalty": -0.0,
+          "joint_speed_penalty": -1.3759711873717607e-07
+        }
+      },
+      "terminal_rows": 83,
+      "pickup_success_rows": 83,
+      "timeout_rows": 0,
+      "post_first_terminal_rows": 82,
+      "scope_after_terminal": "diagnostic physical rollout only; exclude from task training episodes and task success certification"
+    },
+    "teacher_joint_paced_baseline_v14_20261103": {
+      "trajectory_sha256": "b1a58f8552864c01ab0d57f82670fa6a952e31a016a224990cc22eb255308d6e",
+      "rows": 3322,
+      "first_recorded_terminal": {
+        "step": 3119,
+        "phase": "opposition_hold",
+        "success": true,
+        "drop": false,
+        "terms": {
+          "reach": 0.5345318917298794,
+          "bilateral_contact": 1.0,
+          "lift": 1.0,
+          "hold": 1.0,
+          "hold_progress": 1.0,
+          "success_once": 1.0,
+          "action_rate": 0.0,
+          "joint_speed": 0.00010876461601583287,
+          "drop": 0.0,
+          "timeout": 0.0,
+          "terminal": 1.0,
+          "potential": 0.0,
+          "raw_potential": 0.9069063783459759,
+          "raw_component": {
+            "reach": 0.10690637834597588,
+            "bilateral_contact": 0.1,
+            "lift": 0.5,
+            "hold_progress": 0.2
+          },
+          "potential_difference": -0.9046841824924632,
+          "step_penalty": -0.002,
+          "success_bonus": 5.0,
+          "drop_penalty": -0.0,
+          "action_rate_penalty": -0.0,
+          "joint_speed_penalty": -1.0876461601583288e-07
+        }
+      },
+      "terminal_rows": 203,
+      "pickup_success_rows": 203,
+      "timeout_rows": 0,
+      "post_first_terminal_rows": 202,
+      "scope_after_terminal": "diagnostic physical rollout only; exclude from task training episodes and task success certification"
+    },
+    "teacher_joint_ring_support_v15_20261103": {
+      "trajectory_sha256": "1054682e1b2403e5a49bf1b0a23d9199010e4207dadf9752b74c3c27c2852d84",
+      "rows": 3294,
+      "first_recorded_terminal": {
+        "step": 3092,
+        "phase": "opposition_hold",
+        "success": true,
+        "drop": false,
+        "terms": {
+          "reach": 0.5360692063816721,
+          "bilateral_contact": 1.0,
+          "lift": 1.0,
+          "hold": 1.0,
+          "hold_progress": 1.0,
+          "success_once": 1.0,
+          "action_rate": 0.0,
+          "joint_speed": 0.00014305664808489382,
+          "drop": 0.0,
+          "timeout": 0.0,
+          "terminal": 1.0,
+          "potential": 0.0,
+          "raw_potential": 0.9072138412763344,
+          "raw_component": {
+            "reach": 0.10721384127633443,
+            "bilateral_contact": 0.1,
+            "lift": 0.5,
+            "hold_progress": 0.2
+          },
+          "potential_difference": -0.9049916084789875,
+          "step_penalty": -0.002,
+          "success_bonus": 5.0,
+          "drop_penalty": -0.0,
+          "action_rate_penalty": -0.0,
+          "joint_speed_penalty": -1.4305664808489383e-07
+        }
+      },
+      "terminal_rows": 202,
+      "pickup_success_rows": 202,
+      "timeout_rows": 0,
+      "post_first_terminal_rows": 201,
+      "scope_after_terminal": "diagnostic physical rollout only; exclude from task training episodes and task success certification"
+    },
+    "teacher_joint_supported_open_v16_20261103": {
+      "trajectory_sha256": "f63a297b1216aec72a508e9519da05a19eb3b8c808cf0703b07b3a9c5f210995",
+      "rows": 3447,
+      "first_recorded_terminal": {
+        "step": 3092,
+        "phase": "opposition_hold",
+        "success": true,
+        "drop": false,
+        "terms": {
+          "reach": 0.5360692063816721,
+          "bilateral_contact": 1.0,
+          "lift": 1.0,
+          "hold": 1.0,
+          "hold_progress": 1.0,
+          "success_once": 1.0,
+          "action_rate": 0.0,
+          "joint_speed": 0.00014305664808489382,
+          "drop": 0.0,
+          "timeout": 0.0,
+          "terminal": 1.0,
+          "potential": 0.0,
+          "raw_potential": 0.9072138412763344,
+          "raw_component": {
+            "reach": 0.10721384127633443,
+            "bilateral_contact": 0.1,
+            "lift": 0.5,
+            "hold_progress": 0.2
+          },
+          "potential_difference": -0.9049916084789875,
+          "step_penalty": -0.002,
+          "success_bonus": 5.0,
+          "drop_penalty": -0.0,
+          "action_rate_penalty": -0.0,
+          "joint_speed_penalty": -1.4305664808489383e-07
+        }
+      },
+      "terminal_rows": 250,
+      "pickup_success_rows": 250,
+      "timeout_rows": 0,
+      "post_first_terminal_rows": 354,
+      "scope_after_terminal": "diagnostic physical rollout only; exclude from task training episodes and task success certification"
+    },
+    "teacher_joint_planning_frame_paced_v17_20261104": {
+      "trajectory_sha256": "6f281ce20ddad63d921855f0441040ef0b84c2f183bf4c44aaed93eb701212c0",
+      "rows": 3309,
+      "first_recorded_terminal": {
+        "step": 3092,
+        "phase": "opposition_hold",
+        "success": true,
+        "drop": false,
+        "terms": {
+          "reach": 0.5360692063816721,
+          "bilateral_contact": 1.0,
+          "lift": 1.0,
+          "hold": 1.0,
+          "hold_progress": 1.0,
+          "success_once": 1.0,
+          "action_rate": 0.0,
+          "joint_speed": 0.00014305664808489382,
+          "drop": 0.0,
+          "timeout": 0.0,
+          "terminal": 1.0,
+          "potential": 0.0,
+          "raw_potential": 0.9072138412763344,
+          "raw_component": {
+            "reach": 0.10721384127633443,
+            "bilateral_contact": 0.1,
+            "lift": 0.5,
+            "hold_progress": 0.2
+          },
+          "potential_difference": -0.9049916084789875,
+          "step_penalty": -0.002,
+          "success_bonus": 5.0,
+          "drop_penalty": -0.0,
+          "action_rate_penalty": -0.0,
+          "joint_speed_penalty": -1.4305664808489383e-07
+        }
+      },
+      "terminal_rows": 217,
+      "pickup_success_rows": 217,
+      "timeout_rows": 0,
+      "post_first_terminal_rows": 216,
+      "scope_after_terminal": "diagnostic physical rollout only; exclude from task training episodes and task success certification"
+    },
+    "center_j56_dev_v3_20261103": {
+      "trajectory_sha256": "aaae6e424223eda650ff30eb5fe6656c00b4ef2d73d6a8a83a4f22e512f0288b",
+      "rows": 2129,
+      "first_recorded_terminal": null,
+      "terminal_rows": 0,
+      "pickup_success_rows": 0,
+      "timeout_rows": 0,
+      "post_first_terminal_rows": 0,
+      "scope_after_terminal": "no recorded base termination in this trajectory"
+    }
+  }
+}

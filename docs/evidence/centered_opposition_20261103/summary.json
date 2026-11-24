@@ -1,0 +1,187 @@
+{
+  "scope": "traditional free-core cube pickup, wrist adjustment, and centered transport; not a learned policy or face turn",
+  "independent_successes": 0,
+  "independent_total": 3,
+  "runs": [
+    {
+      "run": "centered_opposition_center_dev_v1_20261103",
+      "seed": 9501,
+      "split": "development",
+      "full_episode": true,
+      "dynamic_grasp_passed": true,
+      "center_executed": true,
+      "center_passed": false,
+      "center_hold_s": 0.0,
+      "failure": "robot_safety_gate",
+      "self_contact_impulse_sum_Ns": 0.1493889577680729,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "soft_limit_hit_steps": 0,
+      "hard_limit_hit_steps": 0,
+      "drop_steps": 0,
+      "elapsed_s": 393.07826835000014,
+      "final_cube_position_m": [
+        0.4425753653049469,
+        0.019076857715845108,
+        1.2998188734054565
+      ],
+      "final_wrist": {
+        "joint6_deg": 8.059172428129825,
+        "side_bend_deg": -24.81051624931831,
+        "flexion_deg": 77.53690040099715,
+        "forearm_direction_palm_frame": [
+          0.9716117578543452,
+          -0.09927382960986535,
+          0.21474472928055816
+        ],
+        "wrist_inside_elbow_m": 0.30472657084465027
+      },
+      "maximum_lift_m": 0.3722164001464844,
+      "configuration_sha256": "d3c6084f638ed96ea299dbf76c386537051d3857c61675ddfc4abd5e9d925ae1",
+      "experiment_sha256": "9adec64dd5abf39c6a0d224d14e44e0765977d31fac3822840de486185db592b"
+    },
+    {
+      "run": "centered_opposition_center_dev_v2_20261103",
+      "seed": 9501,
+      "split": "development",
+      "full_episode": true,
+      "dynamic_grasp_passed": true,
+      "center_executed": true,
+      "center_passed": true,
+      "center_hold_s": 4.033333333333333,
+      "failure": null,
+      "self_contact_impulse_sum_Ns": 0,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "soft_limit_hit_steps": 0,
+      "hard_limit_hit_steps": 0,
+      "drop_steps": 0,
+      "elapsed_s": 401.0057685780048,
+      "final_cube_position_m": [
+        0.49996477365493774,
+        0.0002461990516167134,
+        1.2944837808609009
+      ],
+      "final_wrist": {
+        "joint6_deg": 8.175718507258692,
+        "side_bend_deg": -16.127509927747763,
+        "flexion_deg": 60.35793081137401,
+        "forearm_direction_palm_frame": [
+          0.8603783198823421,
+          -0.14157014373155433,
+          0.4895988573110287
+        ],
+        "wrist_inside_elbow_m": 0.28198495507240295
+      },
+      "maximum_lift_m": 0.39692884349823,
+      "configuration_sha256": "d3c6084f638ed96ea299dbf76c386537051d3857c61675ddfc4abd5e9d925ae1",
+      "experiment_sha256": "d73528a50e1b3f7cf7a085df6b5fb4d8058c3f65f395ef8f994ea6b9d4293e48"
+    },
+    {
+      "run": "centered_left_independent_9801_20261103",
+      "seed": 9801,
+      "split": "independent",
+      "full_episode": true,
+      "dynamic_grasp_passed": false,
+      "center_executed": false,
+      "center_passed": false,
+      "center_hold_s": 0,
+      "failure": "Wrist-side reversal IK violates palm pose envelope",
+      "self_contact_impulse_sum_Ns": 0,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "soft_limit_hit_steps": 0,
+      "hard_limit_hit_steps": 0,
+      "drop_steps": 0,
+      "elapsed_s": 210.74999983300222,
+      "final_cube_position_m": [
+        0.5468640923500061,
+        0.2762112021446228,
+        1.2296242713928223
+      ],
+      "final_wrist": {
+        "joint6_deg": 7.614383679189425,
+        "side_bend_deg": -10.416175933835166,
+        "flexion_deg": 48.4291791754568,
+        "forearm_direction_palm_frame": [
+          0.7426319271150817,
+          -0.12107959616409049,
+          0.658663459000179
+        ],
+        "wrist_inside_elbow_m": 0.11575961112976074
+      },
+      "maximum_lift_m": 0.31929200553894044,
+      "configuration_sha256": "d3c6084f638ed96ea299dbf76c386537051d3857c61675ddfc4abd5e9d925ae1",
+      "experiment_sha256": "7d820cf2e7e7c335a7f98e9b0966e083e0d7c22259b0170880d9f5f73e0c2f57"
+    },
+    {
+      "run": "centered_left_independent_9802_20261103",
+      "seed": 9802,
+      "split": "independent",
+      "full_episode": true,
+      "dynamic_grasp_passed": false,
+      "center_executed": false,
+      "center_passed": false,
+      "center_hold_s": 0,
+      "failure": "Wrist-side reversal IK violates palm pose envelope",
+      "self_contact_impulse_sum_Ns": 0,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "soft_limit_hit_steps": 0,
+      "hard_limit_hit_steps": 0,
+      "drop_steps": 0,
+      "elapsed_s": 182.65024284399988,
+      "final_cube_position_m": [
+        0.5328266024589539,
+        0.28789088129997253,
+        1.352325677871704
+      ],
+      "final_wrist": {
+        "joint6_deg": 7.774140950102377,
+        "side_bend_deg": -9.222088494368046,
+        "flexion_deg": 43.22550317827878,
+        "forearm_direction_palm_frame": [
+          0.6801284002507746,
+          -0.11748675641469852,
+          0.7236174550406284
+        ],
+        "wrist_inside_elbow_m": 0.10501924157142639
+      },
+      "maximum_lift_m": 0.4430885877609253,
+      "configuration_sha256": "d3c6084f638ed96ea299dbf76c386537051d3857c61675ddfc4abd5e9d925ae1",
+      "experiment_sha256": "785abc5a1424e2586b6dbb17ff79eb167f149647698e8b32f188ae3c0db81eaa"
+    },
+    {
+      "run": "centered_left_independent_9803_20261103",
+      "seed": 9803,
+      "split": "independent",
+      "full_episode": true,
+      "dynamic_grasp_passed": false,
+      "center_executed": false,
+      "center_passed": false,
+      "center_hold_s": 0,
+      "failure": "Wrist-side reversal IK violates palm pose envelope",
+      "self_contact_impulse_sum_Ns": 0,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "soft_limit_hit_steps": 0,
+      "hard_limit_hit_steps": 0,
+      "drop_steps": 0,
+      "elapsed_s": 197.34213540199562,
+      "final_cube_position_m": [
+        0.5429787039756775,
+        0.2831174433231354,
+        1.3142069578170776
+      ],
+      "final_wrist": {
+        "joint6_deg": 7.644204285105701,
+        "side_bend_deg": -9.685050005875446,
+        "flexion_deg": 45.65911189550249,
+        "forearm_direction_palm_frame": [
+          0.7101598462659278,
+          -0.11844226247403261,
+          0.6940060685697109
+        ],
+        "wrist_inside_elbow_m": 0.10866901278495789
+      },
+      "maximum_lift_m": 0.3991534080505371,
+      "configuration_sha256": "d3c6084f638ed96ea299dbf76c386537051d3857c61675ddfc4abd5e9d925ae1",
+      "experiment_sha256": "32f62f65c31d1d4b03c92af44e2d3d918ca4e104908389878844995ba00ac81e"
+    }
+  ]
+}

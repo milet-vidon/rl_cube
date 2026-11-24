@@ -1,0 +1,15 @@
+{
+  "passed": false,
+  "failures": [
+    {
+      "offset": [
+        0.0,
+        0.003,
+        -0.004
+      ],
+      "failure": "Closed grasp collision: ('right_middle_DIP_link', 'right_ring_DIP_link', 0.0024663893982722457)"
+    }
+  ],
+  "elapsed_s": 6.789277439995203,
+  "physics_validated": false
+}

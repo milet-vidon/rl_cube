@@ -1,0 +1,4560 @@
+{
+  "scope": "completed runs only; read-only host diagnosis, no physics or controller changes",
+  "runs": {
+    "v15": {
+      "run": "teacher_joint_ring_support_v15_20261103",
+      "sha256": {
+        "result.json": "0db0bd3d52373fb44628f2eb30be3999f1137ae054712b6a9227a76106ed7a69",
+        "trajectory.json": "1054682e1b2403e5a49bf1b0a23d9199010e4207dadf9752b74c3c27c2852d84",
+        "opposition_plan.json": "e3b9d4da9e2173cff228015968a5319ca7c5fe59eb12b0fff2f1c3559d7e4468",
+        "experiment.json": "e7cd92134d769ab28f612d3862086c5e33f2366d7765c7c9ec45c406f2bf1c8f"
+      },
+      "result": {
+        "failure": "turn_contact_or_progress_stalled",
+        "steps": 3294,
+        "elapsed_s": 850.7784148050123,
+        "dynamic_grasp_passed": true,
+        "center_transport_passed": true,
+        "face_turn_validated": false,
+        "cube_pose_writes_during_control": 0
+      },
+      "turn_result": {
+        "qualified": false,
+        "opposition_grasp_passed": true,
+        "opposition_hold_s": 4.033333333333333,
+        "turn_started": true,
+        "turn_hold_s": 0.0,
+        "turn_pacing": {
+          "max_lead_deg": 0.75,
+          "stall_ticks": 90,
+          "maximum_control_ticks": 511,
+          "control_ticks": 119,
+          "held_ticks": 90,
+          "completed": false,
+          "scope": "time pacing of existing collision-checked targets; unchanged acceptance gates"
+        },
+        "failure": "turn_contact_or_progress_stalled"
+      },
+      "phases": [
+        {
+          "phase": "ready",
+          "frames": 244,
+          "first_step": 0,
+          "last_step": 243,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "preshape",
+          "frames": 73,
+          "first_step": 244,
+          "last_step": 316,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "lower",
+          "frames": 61,
+          "first_step": 317,
+          "last_step": 377,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "approach",
+          "frames": 49,
+          "first_step": 378,
+          "last_step": 426,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 9,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 14
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 9,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 14
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "squeeze",
+          "frames": 79,
+          "first_step": 427,
+          "last_step": 505,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 79,
+              "index": 21,
+              "middle": 11,
+              "ring": 19,
+              "little": 79
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 79,
+            "index": 21,
+            "middle": 11,
+            "ring": 19,
+            "little": 79
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "primary_lift",
+          "frames": 120,
+          "first_step": 506,
+          "last_step": 625,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 120,
+              "index": 118,
+              "middle": 120,
+              "ring": 118,
+              "little": 120
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 120,
+            "index": 118,
+            "middle": 120,
+            "ring": 118,
+            "little": 120
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "elbow_outward",
+          "frames": 129,
+          "first_step": 626,
+          "last_step": 754,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 129,
+              "index": 129,
+              "middle": 129,
+              "ring": 129,
+              "little": 129
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 129,
+            "index": 129,
+            "middle": 129,
+            "ring": 129,
+            "little": 129
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "tilt_90",
+          "frames": 542,
+          "first_step": 755,
+          "last_step": 1296,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 542,
+              "index": 542,
+              "middle": 542,
+              "ring": 542,
+              "little": 542
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 542,
+            "index": 542,
+            "middle": 542,
+            "ring": 542,
+            "little": 542
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "wrist_reconfigure",
+          "frames": 181,
+          "first_step": 1297,
+          "last_step": 1477,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 181,
+              "index": 181,
+              "middle": 181,
+              "ring": 181,
+              "little": 181
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 181,
+            "index": 181,
+            "middle": 181,
+            "ring": 181,
+            "little": 181
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "tilt_hold",
+          "frames": 90,
+          "first_step": 1478,
+          "last_step": 1567,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 90,
+              "index": 90,
+              "middle": 90,
+              "ring": 90,
+              "little": 90
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 90,
+            "index": 90,
+            "middle": 90,
+            "ring": 90,
+            "little": 90
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "left_center_transport",
+          "frames": 241,
+          "first_step": 1568,
+          "last_step": 1808,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 241,
+              "index": 241,
+              "middle": 241,
+              "ring": 241,
+              "little": 241
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 241,
+            "index": 241,
+            "middle": 241,
+            "ring": 241,
+            "little": 241
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "center_hold",
+          "frames": 241,
+          "first_step": 1809,
+          "last_step": 2049,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 241,
+              "index": 241,
+              "middle": 241,
+              "ring": 241,
+              "little": 241
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 241,
+            "index": 241,
+            "middle": 241,
+            "ring": 241,
+            "little": 241
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "right_preshape",
+          "frames": 99,
+          "first_step": 2050,
+          "last_step": 2148,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 99,
+              "index": 99,
+              "middle": 99,
+              "ring": 99,
+              "little": 99
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 99,
+            "index": 99,
+            "middle": 99,
+            "ring": 99,
+            "little": 99
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "right_route",
+          "frames": 633,
+          "first_step": 2149,
+          "last_step": 2781,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 633,
+              "index": 633,
+              "middle": 633,
+              "ring": 633,
+              "little": 633
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 633,
+            "index": 633,
+            "middle": 633,
+            "ring": 633,
+            "little": 633
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "right_approach",
+          "frames": 121,
+          "first_step": 2782,
+          "last_step": 2902,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 121,
+              "index": 121,
+              "middle": 121,
+              "ring": 121,
+              "little": 121
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 121,
+            "index": 121,
+            "middle": 121,
+            "ring": 121,
+            "little": 121
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "right_close",
+          "frames": 151,
+          "first_step": 2903,
+          "last_step": 3053,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 151,
+              "index": 151,
+              "middle": 151,
+              "ring": 146,
+              "little": 151
+            },
+            "right": {
+              "thumb": 43,
+              "index": 37,
+              "middle": 40,
+              "ring": 40,
+              "little": 51
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 151,
+            "index": 151,
+            "middle": 151,
+            "ring": 146,
+            "little": 151
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 43,
+            "index": 37,
+            "middle": 40,
+            "ring": 40,
+            "little": 51
+          }
+        },
+        {
+          "phase": "opposition_hold",
+          "frames": 121,
+          "first_step": 3054,
+          "last_step": 3174,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 121,
+              "index": 121,
+              "middle": 121,
+              "ring": 121,
+              "little": 121
+            },
+            "right": {
+              "thumb": 121,
+              "index": 121,
+              "middle": 121,
+              "ring": 121,
+              "little": 121
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 121,
+            "index": 121,
+            "middle": 121,
+            "ring": 121,
+            "little": 121
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 121,
+            "index": 121,
+            "middle": 121,
+            "ring": 121,
+            "little": 121
+          }
+        },
+        {
+          "phase": "opposed_face_turn",
+          "frames": 119,
+          "first_step": 3175,
+          "last_step": 3293,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 119,
+              "index": 119,
+              "middle": 119,
+              "ring": 119,
+              "little": 119
+            },
+            "right": {
+              "thumb": 119,
+              "index": 119,
+              "middle": 119,
+              "ring": 119,
+              "little": 119
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 119,
+            "index": 119,
+            "middle": 119,
+            "ring": 119,
+            "little": 119
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 119,
+            "index": 119,
+            "middle": 119,
+            "ring": 119,
+            "little": 119
+          }
+        }
+      ],
+      "turn_frames": 119,
+      "hold_frames": 0,
+      "first_turn_contact_loss_step": {
+        "left": {
+          "thumb": null,
+          "index": null,
+          "middle": null,
+          "ring": null,
+          "little": null
+        },
+        "right": {
+          "thumb": null,
+          "index": null,
+          "middle": null,
+          "ring": null,
+          "little": null
+        }
+      },
+      "first_pacer_hold": {
+        "step": 3204,
+        "phase": "opposed_face_turn",
+        "turn_tick": 29,
+        "path_index": 28,
+        "planned_palm_angle_deg": 0.7228967413498751,
+        "measured_palm_planning_frame_angle_deg": 0.5254395029188755,
+        "current_Core_relative_layer_angle_deg": 0.025080711568319387,
+        "planning_frame_layer_angle_deg": -0.014741281039059554,
+        "actual_palm_lead_over_layer_deg": 0.5401807839579351,
+        "planned_palm_lead_over_layer_deg": 0.7376380223889347,
+        "pacer": {
+          "path_index": 28,
+          "planned_palm_angle_deg": 0.7228967413498751,
+          "held_ticks": 1
+        },
+        "Core_raw_absolute_angular_speed_rad_s": 0.14753016859351276,
+        "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 4.8445924093109465,
+        "maximum_selected_raw_absolute_angular_speed_rad_s": 4.881064212714411,
+        "left_topology": {
+          "thumb": true,
+          "index": true,
+          "middle": true,
+          "ring": true,
+          "little": true
+        },
+        "left_raw_impulses_Ns": {
+          "thumb": 0.052454570391311496,
+          "index": 0.004002113633055649,
+          "middle": 0.0031753467624767782,
+          "ring": 0.0046500528068260764,
+          "little": 0.05577325543157228
+        },
+        "right_contact_audit": {
+          "fingers": {
+            "thumb": true,
+            "index": true,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "impulses_Ns": {
+            "thumb": 0.04930240546166368,
+            "index": 0.005959724589698944,
+            "middle": 0.014481733405071587,
+            "ring": 0.014700183329298816,
+            "little": 0.016096040076483544
+          },
+          "unexpected_contacts": [],
+          "all_five": true
+        },
+        "right_raw_impulses_Ns": {
+          "thumb": 0.04930240546166368,
+          "index": 0.005959724589698944,
+          "middle": 0.014481733405071587,
+          "ring": 0.014700183329298816,
+          "little": 0.016096040076483544
+        }
+      },
+      "relative_angular_speed_turn_min_median_max_rad_s": [
+        1.963683320276768,
+        2.194578545939887,
+        11.255608466110953
+      ],
+      "relative_angular_speed_gate_violation_turn_frames": 119,
+      "episode_termination_audit": {
+        "declared_max_control_steps": 3500,
+        "executed_control_steps": 3294,
+        "first_recorded_base_terminal_step": 3092,
+        "first_terminal_phase": "opposition_hold",
+        "first_terminal_reasons": {
+          "pickup_success": true,
+          "drop": false,
+          "timeout": false
+        },
+        "recorded_timeout_steps": [],
+        "explicit_returned_done_logged": false,
+        "recorded_terminal_source": "row.terms.terminal; identical to environment.step done=success or drop or timeout",
+        "valid_base_episode_last_step_inclusive": 3092,
+        "post_base_terminal_continuation_frames": 201,
+        "post_base_terminal_turn_frames": 119,
+        "turn_acceptance_eligible_under_original_episode_contract": false,
+        "scope": "Post-base-terminal physical continuation may diagnose mechanisms, but cannot certify an accepted full original episode."
+      },
+      "selected_frames": [
+        {
+          "step": 3174,
+          "phase": "opposition_hold",
+          "turn_tick": -1,
+          "path_index": 0,
+          "planned_palm_angle_deg": -1.3914926731402896e-15,
+          "measured_palm_planning_frame_angle_deg": -0.007712360076823064,
+          "current_Core_relative_layer_angle_deg": -0.005126067094331991,
+          "planning_frame_layer_angle_deg": -0.40990006967578474,
+          "actual_palm_lead_over_layer_deg": 0.40218770959896166,
+          "planned_palm_lead_over_layer_deg": 0.40990006967578335,
+          "pacer": null,
+          "Core_raw_absolute_angular_speed_rad_s": 0.055399648606620375,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 2.235218916330119,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 2.2182557034104713,
+          "left_topology": {
+            "thumb": true,
+            "index": true,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.04502772215090491,
+            "index": 0.007417775889111711,
+            "middle": 0.00475063869978226,
+            "ring": 0.000524777125709174,
+            "little": 0.05573396951664644
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": true,
+              "little": true
+            },
+            "impulses_Ns": {
+              "thumb": 0.054369029229191554,
+              "index": 0.0059278827361781495,
+              "middle": 0.014874280147305644,
+              "ring": 0.016995780627457678,
+              "little": 0.01720684104130331
+            },
+            "unexpected_contacts": [],
+            "all_five": true
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.054369029229191554,
+            "index": 0.0059278827361781495,
+            "middle": 0.014874280147305644,
+            "ring": 0.016995780627457678,
+            "little": 0.01720684104130331
+          }
+        },
+        {
+          "step": 3175,
+          "phase": "opposed_face_turn",
+          "turn_tick": 0,
+          "path_index": 0,
+          "planned_palm_angle_deg": -1.3914926731402896e-15,
+          "measured_palm_planning_frame_angle_deg": -0.00770385406194342,
+          "current_Core_relative_layer_angle_deg": -0.0052557725039683425,
+          "planning_frame_layer_angle_deg": -0.40987195683330835,
+          "actual_palm_lead_over_layer_deg": 0.40216810277136494,
+          "planned_palm_lead_over_layer_deg": 0.40987195683330696,
+          "pacer": {
+            "path_index": 0,
+            "planned_palm_angle_deg": -1.3914926731402896e-15,
+            "held_ticks": 0
+          },
+          "Core_raw_absolute_angular_speed_rad_s": 0.054784843022660436,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 2.2810581486385773,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 2.2591750568080373,
+          "left_topology": {
+            "thumb": true,
+            "index": true,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.045030185046541785,
+            "index": 0.007408924811362146,
+            "middle": 0.004750577520993103,
+            "ring": 0.0005237445042111161,
+            "little": 0.055729600729536706
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": true,
+              "little": true
+            },
+            "impulses_Ns": {
+              "thumb": 0.05438156663739114,
+              "index": 0.005924380963896532,
+              "middle": 0.014891550767692415,
+              "ring": 0.016998895657420063,
+              "little": 0.017214120537567
+            },
+            "unexpected_contacts": [],
+            "all_five": true
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.05438156663739114,
+            "index": 0.005924380963896532,
+            "middle": 0.014891550767692415,
+            "ring": 0.016998895657420063,
+            "little": 0.017214120537567
+          }
+        },
+        {
+          "step": 3195,
+          "phase": "opposed_face_turn",
+          "turn_tick": 20,
+          "path_index": 20,
+          "planned_palm_angle_deg": 0.2882477245543154,
+          "measured_palm_planning_frame_angle_deg": 0.16200681650434123,
+          "current_Core_relative_layer_angle_deg": 0.002076962480972657,
+          "planning_frame_layer_angle_deg": -0.2938746356347033,
+          "actual_palm_lead_over_layer_deg": 0.4558814521390445,
+          "planned_palm_lead_over_layer_deg": 0.5821223601890186,
+          "pacer": {
+            "path_index": 20,
+            "planned_palm_angle_deg": 0.2882477245543154,
+            "held_ticks": 0
+          },
+          "Core_raw_absolute_angular_speed_rad_s": 0.05255271556157182,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 2.4171517743391395,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 2.45883063098605,
+          "left_topology": {
+            "thumb": true,
+            "index": true,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.04858077939298315,
+            "index": 0.006733068334922095,
+            "middle": 0.004211000969462853,
+            "ring": 0.002289874142111496,
+            "little": 0.055617336703840184
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": true,
+              "little": true
+            },
+            "impulses_Ns": {
+              "thumb": 0.051966789126772876,
+              "index": 0.006099493020464292,
+              "middle": 0.014828735961951956,
+              "ring": 0.016063487414437964,
+              "little": 0.016789933061421604
+            },
+            "unexpected_contacts": [],
+            "all_five": true
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.051966789126772876,
+            "index": 0.006099493020464292,
+            "middle": 0.014828735961951956,
+            "ring": 0.016063487414437964,
+            "little": 0.016789933061421604
+          }
+        },
+        {
+          "step": 3203,
+          "phase": "opposed_face_turn",
+          "turn_tick": 28,
+          "path_index": 28,
+          "planned_palm_angle_deg": 0.7228967413498751,
+          "measured_palm_planning_frame_angle_deg": 0.4821486309758053,
+          "current_Core_relative_layer_angle_deg": 0.023408936983950617,
+          "planning_frame_layer_angle_deg": -0.04474953414588688,
+          "actual_palm_lead_over_layer_deg": 0.5268981651216922,
+          "planned_palm_lead_over_layer_deg": 0.767646275495762,
+          "pacer": {
+            "path_index": 28,
+            "planned_palm_angle_deg": 0.7228967413498751,
+            "held_ticks": 0
+          },
+          "Core_raw_absolute_angular_speed_rad_s": 0.08625316217607575,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 2.202131891152629,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 2.20712635892478,
+          "left_topology": {
+            "thumb": true,
+            "index": true,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.052084334104891876,
+            "index": 0.004696383352312665,
+            "middle": 0.0036181619534506517,
+            "ring": 0.004959964266504449,
+            "little": 0.05582883623908858
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": true,
+              "little": true
+            },
+            "impulses_Ns": {
+              "thumb": 0.0492130322942381,
+              "index": 0.006229745347254784,
+              "middle": 0.014663359733116665,
+              "ring": 0.014887740313911595,
+              "little": 0.01637865729448068
+            },
+            "unexpected_contacts": [],
+            "all_five": true
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.0492130322942381,
+            "index": 0.006229745347254784,
+            "middle": 0.014663359733116665,
+            "ring": 0.014887740313911595,
+            "little": 0.01637865729448068
+          }
+        },
+        {
+          "step": 3204,
+          "phase": "opposed_face_turn",
+          "turn_tick": 29,
+          "path_index": 28,
+          "planned_palm_angle_deg": 0.7228967413498751,
+          "measured_palm_planning_frame_angle_deg": 0.5254395029188755,
+          "current_Core_relative_layer_angle_deg": 0.025080711568319387,
+          "planning_frame_layer_angle_deg": -0.014741281039059554,
+          "actual_palm_lead_over_layer_deg": 0.5401807839579351,
+          "planned_palm_lead_over_layer_deg": 0.7376380223889347,
+          "pacer": {
+            "path_index": 28,
+            "planned_palm_angle_deg": 0.7228967413498751,
+            "held_ticks": 1
+          },
+          "Core_raw_absolute_angular_speed_rad_s": 0.14753016859351276,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 4.8445924093109465,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 4.881064212714411,
+          "left_topology": {
+            "thumb": true,
+            "index": true,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.052454570391311496,
+            "index": 0.004002113633055649,
+            "middle": 0.0031753467624767782,
+            "ring": 0.0046500528068260764,
+            "little": 0.05577325543157228
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": true,
+              "little": true
+            },
+            "impulses_Ns": {
+              "thumb": 0.04930240546166368,
+              "index": 0.005959724589698944,
+              "middle": 0.014481733405071587,
+              "ring": 0.014700183329298816,
+              "little": 0.016096040076483544
+            },
+            "unexpected_contacts": [],
+            "all_five": true
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.04930240546166368,
+            "index": 0.005959724589698944,
+            "middle": 0.014481733405071587,
+            "ring": 0.014700183329298816,
+            "little": 0.016096040076483544
+          }
+        },
+        {
+          "step": 3215,
+          "phase": "opposed_face_turn",
+          "turn_tick": 40,
+          "path_index": 28,
+          "planned_palm_angle_deg": 0.7228967413498751,
+          "measured_palm_planning_frame_angle_deg": 0.6668417624951656,
+          "current_Core_relative_layer_angle_deg": 0.027934091129222717,
+          "planning_frame_layer_angle_deg": 0.08682247880090017,
+          "actual_palm_lead_over_layer_deg": 0.5800192836942654,
+          "planned_palm_lead_over_layer_deg": 0.6360742625489749,
+          "pacer": {
+            "path_index": 28,
+            "planned_palm_angle_deg": 0.7228967413498751,
+            "held_ticks": 12
+          },
+          "Core_raw_absolute_angular_speed_rad_s": 0.12109508345837137,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 2.4764422877955075,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 2.476965252032606,
+          "left_topology": {
+            "thumb": true,
+            "index": true,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.052557321001711885,
+            "index": 0.002718915953728266,
+            "middle": 0.003288862160060689,
+            "ring": 0.005318258050595797,
+            "little": 0.05608645735018859
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": true,
+              "little": true
+            },
+            "impulses_Ns": {
+              "thumb": 0.049229574700829865,
+              "index": 0.005803129693818039,
+              "middle": 0.014336787005214227,
+              "ring": 0.014583534100986282,
+              "little": 0.016267696143501504
+            },
+            "unexpected_contacts": [],
+            "all_five": true
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.049229574700829865,
+            "index": 0.005803129693818039,
+            "middle": 0.014336787005214227,
+            "ring": 0.014583534100986282,
+            "little": 0.016267696143501504
+          }
+        },
+        {
+          "step": 3235,
+          "phase": "opposed_face_turn",
+          "turn_tick": 60,
+          "path_index": 28,
+          "planned_palm_angle_deg": 0.7228967413498751,
+          "measured_palm_planning_frame_angle_deg": 0.6693834657228184,
+          "current_Core_relative_layer_angle_deg": 0.026049623806519408,
+          "planning_frame_layer_angle_deg": 0.08761026532369418,
+          "actual_palm_lead_over_layer_deg": 0.5817732003991242,
+          "planned_palm_lead_over_layer_deg": 0.6352864760261809,
+          "pacer": {
+            "path_index": 28,
+            "planned_palm_angle_deg": 0.7228967413498751,
+            "held_ticks": 32
+          },
+          "Core_raw_absolute_angular_speed_rad_s": 0.10776933496119895,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 2.2127572540736637,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 2.227419324704013,
+          "left_topology": {
+            "thumb": true,
+            "index": true,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.05208781760045109,
+            "index": 0.002488917918575076,
+            "middle": 0.0034413749768231515,
+            "ring": 0.0053807525760667056,
+            "little": 0.056154827338013254
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": true,
+              "little": true
+            },
+            "impulses_Ns": {
+              "thumb": 0.04936702486723374,
+              "index": 0.006092634451709704,
+              "middle": 0.014408115730380637,
+              "ring": 0.014801591689712821,
+              "little": 0.016609093759836234
+            },
+            "unexpected_contacts": [],
+            "all_five": true
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.04936702486723374,
+            "index": 0.006092634451709704,
+            "middle": 0.014408115730380637,
+            "ring": 0.014801591689712821,
+            "little": 0.016609093759836234
+          }
+        },
+        {
+          "step": 3255,
+          "phase": "opposed_face_turn",
+          "turn_tick": 80,
+          "path_index": 28,
+          "planned_palm_angle_deg": 0.7228967413498751,
+          "measured_palm_planning_frame_angle_deg": 0.6694843941909834,
+          "current_Core_relative_layer_angle_deg": 0.02714140694825857,
+          "planning_frame_layer_angle_deg": 0.08731559091262679,
+          "actual_palm_lead_over_layer_deg": 0.5821688032783566,
+          "planned_palm_lead_over_layer_deg": 0.6355811504372484,
+          "pacer": {
+            "path_index": 28,
+            "planned_palm_angle_deg": 0.7228967413498751,
+            "held_ticks": 52
+          },
+          "Core_raw_absolute_angular_speed_rad_s": 0.09497845804896252,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 2.1965992458554533,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 2.2008953809887024,
+          "left_topology": {
+            "thumb": true,
+            "index": true,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.052038482020286034,
+            "index": 0.0024610062619326092,
+            "middle": 0.0034505783889118933,
+            "ring": 0.005386869663696326,
+            "little": 0.056171616994119565
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": true,
+              "little": true
+            },
+            "impulses_Ns": {
+              "thumb": 0.04937236463265875,
+              "index": 0.0061535836708731554,
+              "middle": 0.014412220435961324,
+              "ring": 0.014806086187625593,
+              "little": 0.016655831179806457
+            },
+            "unexpected_contacts": [],
+            "all_five": true
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.04937236463265875,
+            "index": 0.0061535836708731554,
+            "middle": 0.014412220435961324,
+            "ring": 0.014806086187625593,
+            "little": 0.016655831179806457
+          }
+        },
+        {
+          "step": 3275,
+          "phase": "opposed_face_turn",
+          "turn_tick": 100,
+          "path_index": 28,
+          "planned_palm_angle_deg": 0.7228967413498751,
+          "measured_palm_planning_frame_angle_deg": 0.669472683478416,
+          "current_Core_relative_layer_angle_deg": 0.027070109181477703,
+          "planning_frame_layer_angle_deg": 0.0872688126157855,
+          "actual_palm_lead_over_layer_deg": 0.5822038708626306,
+          "planned_palm_lead_over_layer_deg": 0.6356279287340897,
+          "pacer": {
+            "path_index": 28,
+            "planned_palm_angle_deg": 0.7228967413498751,
+            "held_ticks": 72
+          },
+          "Core_raw_absolute_angular_speed_rad_s": 0.08542708224429701,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 2.1620206586590762,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 2.1700033462980017,
+          "left_topology": {
+            "thumb": true,
+            "index": true,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.052060485070118304,
+            "index": 0.0024295536152943746,
+            "middle": 0.003458843938890017,
+            "ring": 0.00538344084094579,
+            "little": 0.05616794145326232
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": true,
+              "little": true
+            },
+            "impulses_Ns": {
+              "thumb": 0.04940117279582004,
+              "index": 0.006129524996703769,
+              "middle": 0.014405745721186622,
+              "ring": 0.014818275775233865,
+              "little": 0.01664738724007757
+            },
+            "unexpected_contacts": [],
+            "all_five": true
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.04940117279582004,
+            "index": 0.006129524996703769,
+            "middle": 0.014405745721186622,
+            "ring": 0.014818275775233865,
+            "little": 0.01664738724007757
+          }
+        },
+        {
+          "step": 3293,
+          "phase": "opposed_face_turn",
+          "turn_tick": 118,
+          "path_index": 28,
+          "planned_palm_angle_deg": 0.7228967413498751,
+          "measured_palm_planning_frame_angle_deg": 0.669472048939664,
+          "current_Core_relative_layer_angle_deg": 0.027019275789810976,
+          "planning_frame_layer_angle_deg": 0.08725226746318117,
+          "actual_palm_lead_over_layer_deg": 0.5822197814764829,
+          "planned_palm_lead_over_layer_deg": 0.635644473886694,
+          "pacer": {
+            "path_index": 28,
+            "planned_palm_angle_deg": 0.7228967413498751,
+            "held_ticks": 90
+          },
+          "Core_raw_absolute_angular_speed_rad_s": 0.08206352740607036,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 2.1648342574292183,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 2.169937746231755,
+          "left_topology": {
+            "thumb": true,
+            "index": true,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.05204952938653312,
+            "index": 0.0024530344757787035,
+            "middle": 0.0034606795224798688,
+            "ring": 0.005380612638907468,
+            "little": 0.05617101243055291
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": true,
+              "little": true
+            },
+            "impulses_Ns": {
+              "thumb": 0.04940392441395585,
+              "index": 0.006127660135352005,
+              "middle": 0.01440210408668339,
+              "ring": 0.014830389836867821,
+              "little": 0.016639499857560778
+            },
+            "unexpected_contacts": [],
+            "all_five": true
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.04940392441395585,
+            "index": 0.006127660135352005,
+            "middle": 0.01440210408668339,
+            "ring": 0.014830389836867821,
+            "little": 0.016639499857560778
+          }
+        }
+      ]
+    },
+    "v16": {
+      "run": "teacher_joint_supported_open_v16_20261103",
+      "sha256": {
+        "result.json": "c8662b6be241da63d97a2017b0f00caf2ab39a8c7e2fd1cb9aa5da3df8604089",
+        "trajectory.json": "f63a297b1216aec72a508e9519da05a19eb3b8c808cf0703b07b3a9c5f210995",
+        "opposition_plan.json": "3e18685b1cc22ef21e0c79ecf362322fa47e53cce11560c50fbe30bdea0cc181",
+        "experiment.json": "471ae1bd3ac03c313ba445c255fbb7a7a0caeb0cebfd3dc1133286af9a43a352"
+      },
+      "result": {
+        "failure": "opposed_face_turn_hold_gate_not_met",
+        "steps": 3447,
+        "elapsed_s": 760.585209840996,
+        "dynamic_grasp_passed": true,
+        "center_transport_passed": true,
+        "face_turn_validated": false,
+        "cube_pose_writes_during_control": 0
+      },
+      "turn_result": {
+        "qualified": false,
+        "opposition_grasp_passed": true,
+        "opposition_hold_s": 4.033333333333333,
+        "turn_started": true,
+        "turn_hold_s": 0.0,
+        "turn_pacing": null,
+        "failure": "opposed_face_turn_hold_gate_not_met"
+      },
+      "phases": [
+        {
+          "phase": "ready",
+          "frames": 244,
+          "first_step": 0,
+          "last_step": 243,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "preshape",
+          "frames": 73,
+          "first_step": 244,
+          "last_step": 316,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "lower",
+          "frames": 61,
+          "first_step": 317,
+          "last_step": 377,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "approach",
+          "frames": 49,
+          "first_step": 378,
+          "last_step": 426,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 9,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 14
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 9,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 14
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "squeeze",
+          "frames": 79,
+          "first_step": 427,
+          "last_step": 505,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 79,
+              "index": 21,
+              "middle": 11,
+              "ring": 19,
+              "little": 79
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 79,
+            "index": 21,
+            "middle": 11,
+            "ring": 19,
+            "little": 79
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "primary_lift",
+          "frames": 120,
+          "first_step": 506,
+          "last_step": 625,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 120,
+              "index": 118,
+              "middle": 120,
+              "ring": 118,
+              "little": 120
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 120,
+            "index": 118,
+            "middle": 120,
+            "ring": 118,
+            "little": 120
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "elbow_outward",
+          "frames": 129,
+          "first_step": 626,
+          "last_step": 754,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 129,
+              "index": 129,
+              "middle": 129,
+              "ring": 129,
+              "little": 129
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 129,
+            "index": 129,
+            "middle": 129,
+            "ring": 129,
+            "little": 129
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "tilt_90",
+          "frames": 542,
+          "first_step": 755,
+          "last_step": 1296,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 542,
+              "index": 542,
+              "middle": 542,
+              "ring": 542,
+              "little": 542
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 542,
+            "index": 542,
+            "middle": 542,
+            "ring": 542,
+            "little": 542
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "wrist_reconfigure",
+          "frames": 181,
+          "first_step": 1297,
+          "last_step": 1477,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 181,
+              "index": 181,
+              "middle": 181,
+              "ring": 181,
+              "little": 181
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 181,
+            "index": 181,
+            "middle": 181,
+            "ring": 181,
+            "little": 181
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "tilt_hold",
+          "frames": 90,
+          "first_step": 1478,
+          "last_step": 1567,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 90,
+              "index": 90,
+              "middle": 90,
+              "ring": 90,
+              "little": 90
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 90,
+            "index": 90,
+            "middle": 90,
+            "ring": 90,
+            "little": 90
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "left_center_transport",
+          "frames": 241,
+          "first_step": 1568,
+          "last_step": 1808,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 241,
+              "index": 241,
+              "middle": 241,
+              "ring": 241,
+              "little": 241
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 241,
+            "index": 241,
+            "middle": 241,
+            "ring": 241,
+            "little": 241
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "center_hold",
+          "frames": 241,
+          "first_step": 1809,
+          "last_step": 2049,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 241,
+              "index": 241,
+              "middle": 241,
+              "ring": 241,
+              "little": 241
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 241,
+            "index": 241,
+            "middle": 241,
+            "ring": 241,
+            "little": 241
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "right_preshape",
+          "frames": 99,
+          "first_step": 2050,
+          "last_step": 2148,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 99,
+              "index": 99,
+              "middle": 99,
+              "ring": 99,
+              "little": 99
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 99,
+            "index": 99,
+            "middle": 99,
+            "ring": 99,
+            "little": 99
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "right_route",
+          "frames": 633,
+          "first_step": 2149,
+          "last_step": 2781,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 633,
+              "index": 633,
+              "middle": 633,
+              "ring": 633,
+              "little": 633
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 633,
+            "index": 633,
+            "middle": 633,
+            "ring": 633,
+            "little": 633
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "right_approach",
+          "frames": 121,
+          "first_step": 2782,
+          "last_step": 2902,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 121,
+              "index": 121,
+              "middle": 121,
+              "ring": 121,
+              "little": 121
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 121,
+            "index": 121,
+            "middle": 121,
+            "ring": 121,
+            "little": 121
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "right_close",
+          "frames": 151,
+          "first_step": 2903,
+          "last_step": 3053,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 151,
+              "index": 151,
+              "middle": 151,
+              "ring": 146,
+              "little": 151
+            },
+            "right": {
+              "thumb": 43,
+              "index": 37,
+              "middle": 40,
+              "ring": 40,
+              "little": 51
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 151,
+            "index": 151,
+            "middle": 151,
+            "ring": 146,
+            "little": 151
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 43,
+            "index": 37,
+            "middle": 40,
+            "ring": 40,
+            "little": 51
+          }
+        },
+        {
+          "phase": "opposition_hold",
+          "frames": 121,
+          "first_step": 3054,
+          "last_step": 3174,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 121,
+              "index": 121,
+              "middle": 121,
+              "ring": 121,
+              "little": 121
+            },
+            "right": {
+              "thumb": 121,
+              "index": 121,
+              "middle": 121,
+              "ring": 121,
+              "little": 121
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 121,
+            "index": 121,
+            "middle": 121,
+            "ring": 121,
+            "little": 121
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 121,
+            "index": 121,
+            "middle": 121,
+            "ring": 121,
+            "little": 121
+          }
+        },
+        {
+          "phase": "opposed_face_turn",
+          "frames": 151,
+          "first_step": 3175,
+          "last_step": 3325,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 151,
+              "index": 39,
+              "middle": 145,
+              "ring": 151,
+              "little": 151
+            },
+            "right": {
+              "thumb": 151,
+              "index": 89,
+              "middle": 151,
+              "ring": 66,
+              "little": 65
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 151,
+            "index": 39,
+            "middle": 144,
+            "ring": 151,
+            "little": 151
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 151,
+            "index": 89,
+            "middle": 151,
+            "ring": 66,
+            "little": 65
+          }
+        },
+        {
+          "phase": "opposed_face_hold",
+          "frames": 121,
+          "first_step": 3326,
+          "last_step": 3446,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 121,
+              "index": 0,
+              "middle": 121,
+              "ring": 121,
+              "little": 121
+            },
+            "right": {
+              "thumb": 121,
+              "index": 0,
+              "middle": 121,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 121,
+            "index": 0,
+            "middle": 121,
+            "ring": 121,
+            "little": 121
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 121,
+            "index": 0,
+            "middle": 121,
+            "ring": 0,
+            "little": 0
+          }
+        }
+      ],
+      "turn_frames": 151,
+      "hold_frames": 121,
+      "first_turn_contact_loss_step": {
+        "left": {
+          "thumb": null,
+          "index": 3214,
+          "middle": 3227,
+          "ring": null,
+          "little": null
+        },
+        "right": {
+          "thumb": null,
+          "index": 3264,
+          "middle": null,
+          "ring": 3241,
+          "little": 3240
+        }
+      },
+      "first_pacer_hold": null,
+      "relative_angular_speed_turn_min_median_max_rad_s": [
+        1.4068056959207187,
+        10.295395456505911,
+        48.508422441377405
+      ],
+      "relative_angular_speed_gate_violation_turn_frames": 151,
+      "episode_termination_audit": {
+        "declared_max_control_steps": 3500,
+        "executed_control_steps": 3447,
+        "first_recorded_base_terminal_step": 3092,
+        "first_terminal_phase": "opposition_hold",
+        "first_terminal_reasons": {
+          "pickup_success": true,
+          "drop": false,
+          "timeout": false
+        },
+        "recorded_timeout_steps": [],
+        "explicit_returned_done_logged": false,
+        "recorded_terminal_source": "row.terms.terminal; identical to environment.step done=success or drop or timeout",
+        "valid_base_episode_last_step_inclusive": 3092,
+        "post_base_terminal_continuation_frames": 354,
+        "post_base_terminal_turn_frames": 151,
+        "turn_acceptance_eligible_under_original_episode_contract": false,
+        "scope": "Post-base-terminal physical continuation may diagnose mechanisms, but cannot certify an accepted full original episode."
+      },
+      "selected_frames": [
+        {
+          "step": 3174,
+          "phase": "opposition_hold",
+          "turn_tick": -1,
+          "path_index": 0,
+          "planned_palm_angle_deg": -1.3914926731402896e-15,
+          "measured_palm_planning_frame_angle_deg": -0.007712360076823064,
+          "current_Core_relative_layer_angle_deg": -0.005126067094331991,
+          "planning_frame_layer_angle_deg": -0.40990006967578474,
+          "actual_palm_lead_over_layer_deg": 0.40218770959896166,
+          "planned_palm_lead_over_layer_deg": 0.40990006967578335,
+          "pacer": null,
+          "Core_raw_absolute_angular_speed_rad_s": 0.055399648606620375,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 2.235218916330119,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 2.2182557034104713,
+          "left_topology": {
+            "thumb": true,
+            "index": true,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.04502772215090491,
+            "index": 0.007417775889111711,
+            "middle": 0.00475063869978226,
+            "ring": 0.000524777125709174,
+            "little": 0.05573396951664644
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": true,
+              "little": true
+            },
+            "impulses_Ns": {
+              "thumb": 0.054369029229191554,
+              "index": 0.0059278827361781495,
+              "middle": 0.014874280147305644,
+              "ring": 0.016995780627457678,
+              "little": 0.01720684104130331
+            },
+            "unexpected_contacts": [],
+            "all_five": true
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.054369029229191554,
+            "index": 0.0059278827361781495,
+            "middle": 0.014874280147305644,
+            "ring": 0.016995780627457678,
+            "little": 0.01720684104130331
+          }
+        },
+        {
+          "step": 3175,
+          "phase": "opposed_face_turn",
+          "turn_tick": 0,
+          "path_index": 0,
+          "planned_palm_angle_deg": -1.3914926731402896e-15,
+          "measured_palm_planning_frame_angle_deg": -0.00770385406194342,
+          "current_Core_relative_layer_angle_deg": -0.0052557725039683425,
+          "planning_frame_layer_angle_deg": -0.40987195683330835,
+          "actual_palm_lead_over_layer_deg": 0.40216810277136494,
+          "planned_palm_lead_over_layer_deg": 0.40987195683330696,
+          "pacer": null,
+          "Core_raw_absolute_angular_speed_rad_s": 0.054784843022660436,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 2.2810581486385773,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 2.2591750568080373,
+          "left_topology": {
+            "thumb": true,
+            "index": true,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.045030185046541785,
+            "index": 0.007408924811362146,
+            "middle": 0.004750577520993103,
+            "ring": 0.0005237445042111161,
+            "little": 0.055729600729536706
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": true,
+              "little": true
+            },
+            "impulses_Ns": {
+              "thumb": 0.05438156663739114,
+              "index": 0.005924380963896532,
+              "middle": 0.014891550767692415,
+              "ring": 0.016998895657420063,
+              "little": 0.017214120537567
+            },
+            "unexpected_contacts": [],
+            "all_five": true
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.05438156663739114,
+            "index": 0.005924380963896532,
+            "middle": 0.014891550767692415,
+            "ring": 0.016998895657420063,
+            "little": 0.017214120537567
+          }
+        },
+        {
+          "step": 3195,
+          "phase": "opposed_face_turn",
+          "turn_tick": 20,
+          "path_index": 20,
+          "planned_palm_angle_deg": 0.2882477245543154,
+          "measured_palm_planning_frame_angle_deg": 0.16200681650434123,
+          "current_Core_relative_layer_angle_deg": 0.002076962480972657,
+          "planning_frame_layer_angle_deg": -0.2938746356347033,
+          "actual_palm_lead_over_layer_deg": 0.4558814521390445,
+          "planned_palm_lead_over_layer_deg": 0.5821223601890186,
+          "pacer": null,
+          "Core_raw_absolute_angular_speed_rad_s": 0.05255271556157182,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 2.4171517743391395,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 2.45883063098605,
+          "left_topology": {
+            "thumb": true,
+            "index": true,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.04858077939298315,
+            "index": 0.006733068334922095,
+            "middle": 0.004211000969462853,
+            "ring": 0.002289874142111496,
+            "little": 0.055617336703840184
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": true,
+              "little": true
+            },
+            "impulses_Ns": {
+              "thumb": 0.051966789126772876,
+              "index": 0.006099493020464292,
+              "middle": 0.014828735961951956,
+              "ring": 0.016063487414437964,
+              "little": 0.016789933061421604
+            },
+            "unexpected_contacts": [],
+            "all_five": true
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.051966789126772876,
+            "index": 0.006099493020464292,
+            "middle": 0.014828735961951956,
+            "ring": 0.016063487414437964,
+            "little": 0.016789933061421604
+          }
+        },
+        {
+          "step": 3214,
+          "phase": "opposed_face_turn",
+          "turn_tick": 39,
+          "path_index": 39,
+          "planned_palm_angle_deg": 1.7151612933195033,
+          "measured_palm_planning_frame_angle_deg": 1.2834261493812835,
+          "current_Core_relative_layer_angle_deg": 0.05326411107745903,
+          "planning_frame_layer_angle_deg": 0.40491247287140575,
+          "actual_palm_lead_over_layer_deg": 0.8785136765098778,
+          "planned_palm_lead_over_layer_deg": 1.3102488204480975,
+          "pacer": null,
+          "Core_raw_absolute_angular_speed_rad_s": 0.2562114659448795,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 1.9658690221520245,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 2.1826542470732284,
+          "left_topology": {
+            "thumb": true,
+            "index": false,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.05852157358030004,
+            "index": 0.0,
+            "middle": 0.0018440666014410889,
+            "ring": 0.008275349182442453,
+            "little": 0.05475508510804441
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": true,
+              "little": true
+            },
+            "impulses_Ns": {
+              "thumb": 0.043456517335879664,
+              "index": 0.007240228000945133,
+              "middle": 0.015048229735657049,
+              "ring": 0.011601461701945733,
+              "little": 0.015088212099711397
+            },
+            "unexpected_contacts": [],
+            "all_five": true
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.043456517335879664,
+            "index": 0.007240228000945133,
+            "middle": 0.015048229735657049,
+            "ring": 0.011601461701945733,
+            "little": 0.015088212099711397
+          }
+        },
+        {
+          "step": 3215,
+          "phase": "opposed_face_turn",
+          "turn_tick": 40,
+          "path_index": 40,
+          "planned_palm_angle_deg": 1.8280552743368523,
+          "measured_palm_planning_frame_angle_deg": 1.3787878325570806,
+          "current_Core_relative_layer_angle_deg": 0.06910088440847206,
+          "planning_frame_layer_angle_deg": 0.47484392507570367,
+          "actual_palm_lead_over_layer_deg": 0.9039439074813769,
+          "planned_palm_lead_over_layer_deg": 1.3532113492611486,
+          "pacer": null,
+          "Core_raw_absolute_angular_speed_rad_s": 0.17960806088341413,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 6.418042918120934,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 6.5038985040159325,
+          "left_topology": {
+            "thumb": true,
+            "index": false,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.05880720463857123,
+            "index": 0.0,
+            "middle": 0.001385450672451236,
+            "ring": 0.00840259062636145,
+            "little": 0.05452433195822713
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": true,
+              "little": true
+            },
+            "impulses_Ns": {
+              "thumb": 0.04362912171730147,
+              "index": 0.007017144662238306,
+              "middle": 0.015178753474885762,
+              "ring": 0.011490128409809789,
+              "little": 0.014698595644658781
+            },
+            "unexpected_contacts": [],
+            "all_five": true
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.04362912171730147,
+            "index": 0.007017144662238306,
+            "middle": 0.015178753474885762,
+            "ring": 0.011490128409809789,
+            "little": 0.014698595644658781
+          }
+        },
+        {
+          "step": 3227,
+          "phase": "opposed_face_turn",
+          "turn_tick": 52,
+          "path_index": 52,
+          "planned_palm_angle_deg": 3.450243400014138,
+          "measured_palm_planning_frame_angle_deg": 2.7875755968687765,
+          "current_Core_relative_layer_angle_deg": 0.1553021914877259,
+          "planning_frame_layer_angle_deg": 1.2529387113619037,
+          "actual_palm_lead_over_layer_deg": 1.5346368855068728,
+          "planned_palm_lead_over_layer_deg": 2.1973046886522347,
+          "pacer": null,
+          "Core_raw_absolute_angular_speed_rad_s": 0.22539391570921768,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 3.7857884054446345,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 3.931202514256839,
+          "left_topology": {
+            "thumb": true,
+            "index": false,
+            "middle": false,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.0707825400765257,
+            "index": 0.0,
+            "middle": 0.0,
+            "ring": 0.014981888059881977,
+            "little": 0.05597505953266507
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": true,
+              "little": true
+            },
+            "impulses_Ns": {
+              "thumb": 0.03604225615785287,
+              "index": 0.00869474195505587,
+              "middle": 0.0167849483670962,
+              "ring": 0.007109297601607106,
+              "little": 0.010918343481931556
+            },
+            "unexpected_contacts": [],
+            "all_five": true
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.03604225615785287,
+            "index": 0.00869474195505587,
+            "middle": 0.0167849483670962,
+            "ring": 0.007109297601607106,
+            "little": 0.010918343481931556
+          }
+        },
+        {
+          "step": 3235,
+          "phase": "opposed_face_turn",
+          "turn_tick": 60,
+          "path_index": 60,
+          "planned_palm_angle_deg": 4.761644009985891,
+          "measured_palm_planning_frame_angle_deg": 3.9908145199900185,
+          "current_Core_relative_layer_angle_deg": 0.19742822253469763,
+          "planning_frame_layer_angle_deg": 1.4153043190075116,
+          "actual_palm_lead_over_layer_deg": 2.5755102009825066,
+          "planned_palm_lead_over_layer_deg": 3.346339690978379,
+          "pacer": null,
+          "Core_raw_absolute_angular_speed_rad_s": 0.16356290444195232,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 25.052442604329983,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 24.899708278173275,
+          "left_topology": {
+            "thumb": true,
+            "index": false,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.06797300848421177,
+            "index": 0.0,
+            "middle": 0.0006482536928304282,
+            "ring": 0.013937119165859326,
+            "little": 0.056729318728216634
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": true,
+              "little": true
+            },
+            "impulses_Ns": {
+              "thumb": 0.02784097778861633,
+              "index": 0.003816687414078107,
+              "middle": 0.022295418853378896,
+              "ring": 0.0025891570278442004,
+              "little": 0.0022668717889856613
+            },
+            "unexpected_contacts": [],
+            "all_five": true
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.02784097778861633,
+            "index": 0.003816687414078107,
+            "middle": 0.022295418853378896,
+            "ring": 0.0025891570278442004,
+            "little": 0.0022668717889856613
+          }
+        },
+        {
+          "step": 3240,
+          "phase": "opposed_face_turn",
+          "turn_tick": 65,
+          "path_index": 65,
+          "planned_palm_angle_deg": 5.647147043945926,
+          "measured_palm_planning_frame_angle_deg": 4.825756806968215,
+          "current_Core_relative_layer_angle_deg": 0.2481126181726669,
+          "planning_frame_layer_angle_deg": 1.5271691166743941,
+          "actual_palm_lead_over_layer_deg": 3.2985876902938207,
+          "planned_palm_lead_over_layer_deg": 4.119977927271532,
+          "pacer": null,
+          "Core_raw_absolute_angular_speed_rad_s": 0.38701764273861394,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 5.702686655377405,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 5.942721602966155,
+          "left_topology": {
+            "thumb": true,
+            "index": false,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.06832327966065925,
+            "index": 0.0,
+            "middle": 0.0005493349648526635,
+            "ring": 0.014265413736264816,
+            "little": 0.05683397546403663
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": true,
+              "little": false
+            },
+            "impulses_Ns": {
+              "thumb": 0.025080088855773276,
+              "index": 0.002354217113994274,
+              "middle": 0.025199304779566604,
+              "ring": 8.499327489817969e-05,
+              "little": 0.0
+            },
+            "unexpected_contacts": [],
+            "all_five": false
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.025080088855773276,
+            "index": 0.002354217113994274,
+            "middle": 0.025199304779566604,
+            "ring": 8.499327489817969e-05,
+            "little": 0.0
+          }
+        },
+        {
+          "step": 3241,
+          "phase": "opposed_face_turn",
+          "turn_tick": 66,
+          "path_index": 66,
+          "planned_palm_angle_deg": 5.828682317969609,
+          "measured_palm_planning_frame_angle_deg": 4.998135496610507,
+          "current_Core_relative_layer_angle_deg": 0.24613384465756652,
+          "planning_frame_layer_angle_deg": 1.5521482754098612,
+          "actual_palm_lead_over_layer_deg": 3.445987221200646,
+          "planned_palm_lead_over_layer_deg": 4.276534042559748,
+          "pacer": null,
+          "Core_raw_absolute_angular_speed_rad_s": 0.2551630195442376,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 13.581617804355739,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 13.69655263444545,
+          "left_topology": {
+            "thumb": true,
+            "index": false,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.06878777243758541,
+            "index": 0.0,
+            "middle": 0.0005198730903095351,
+            "ring": 0.015017014408802615,
+            "little": 0.057541958864153586
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": false,
+              "little": false
+            },
+            "impulses_Ns": {
+              "thumb": 0.025108804149671003,
+              "index": 0.0018514500246535333,
+              "middle": 0.025678971021357244,
+              "ring": 0.0,
+              "little": 0.0
+            },
+            "unexpected_contacts": [],
+            "all_five": false
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.025108804149671003,
+            "index": 0.0018514500246535333,
+            "middle": 0.025678971021357244,
+            "ring": 0.0,
+            "little": 0.0
+          }
+        },
+        {
+          "step": 3255,
+          "phase": "opposed_face_turn",
+          "turn_tick": 80,
+          "path_index": 80,
+          "planned_palm_angle_deg": 8.4347612133915,
+          "measured_palm_planning_frame_angle_deg": 7.49089999251795,
+          "current_Core_relative_layer_angle_deg": 0.30617372952411265,
+          "planning_frame_layer_angle_deg": 1.7821154961623669,
+          "actual_palm_lead_over_layer_deg": 5.708784496355584,
+          "planned_palm_lead_over_layer_deg": 6.652645717229133,
+          "pacer": null,
+          "Core_raw_absolute_angular_speed_rad_s": 0.28343633793102324,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 7.006327974074013,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 6.994488416421603,
+          "left_topology": {
+            "thumb": true,
+            "index": false,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.06889906222007043,
+            "index": 0.0,
+            "middle": 0.0006778192146111731,
+            "ring": 0.01685172443557383,
+            "little": 0.05743944966554811
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": false,
+              "little": false
+            },
+            "impulses_Ns": {
+              "thumb": 0.028229736445259737,
+              "index": 0.0023522637466991706,
+              "middle": 0.029550615302635953,
+              "ring": 0.0,
+              "little": 0.0
+            },
+            "unexpected_contacts": [],
+            "all_five": false
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.028229736445259737,
+            "index": 0.0023522637466991706,
+            "middle": 0.029550615302635953,
+            "ring": 0.0,
+            "little": 0.0
+          }
+        },
+        {
+          "step": 3264,
+          "phase": "opposed_face_turn",
+          "turn_tick": 89,
+          "path_index": 89,
+          "planned_palm_angle_deg": 10.064366476805366,
+          "measured_palm_planning_frame_angle_deg": 9.089650333760328,
+          "current_Core_relative_layer_angle_deg": 0.31697949908735895,
+          "planning_frame_layer_angle_deg": 1.9104954326868855,
+          "actual_palm_lead_over_layer_deg": 7.179154901073443,
+          "planned_palm_lead_over_layer_deg": 8.153871044118482,
+          "pacer": null,
+          "Core_raw_absolute_angular_speed_rad_s": 0.11095021176555912,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 8.268390250858678,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 8.379057495809263,
+          "left_topology": {
+            "thumb": true,
+            "index": false,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.0723673806746333,
+            "index": 0.0,
+            "middle": 0.00022579867620231664,
+            "ring": 0.01856840844492969,
+            "little": 0.05815085674640248
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": false,
+              "middle": true,
+              "ring": false,
+              "little": false
+            },
+            "impulses_Ns": {
+              "thumb": 0.0336544845133485,
+              "index": 0.0,
+              "middle": 0.03099763043566655,
+              "ring": 0.0,
+              "little": 0.0
+            },
+            "unexpected_contacts": [],
+            "all_five": false
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.0336544845133485,
+            "index": 0.0,
+            "middle": 0.03099763043566655,
+            "ring": 0.0,
+            "little": 0.0
+          }
+        },
+        {
+          "step": 3275,
+          "phase": "opposed_face_turn",
+          "turn_tick": 100,
+          "path_index": 100,
+          "planned_palm_angle_deg": 11.851733387725693,
+          "measured_palm_planning_frame_angle_deg": 10.95367716949768,
+          "current_Core_relative_layer_angle_deg": 0.3519269113651295,
+          "planning_frame_layer_angle_deg": 1.9699354806574756,
+          "actual_palm_lead_over_layer_deg": 8.983741688840205,
+          "planned_palm_lead_over_layer_deg": 9.881797907068217,
+          "pacer": null,
+          "Core_raw_absolute_angular_speed_rad_s": 0.22895535967038963,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 15.641869261815737,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 15.63363628395487,
+          "left_topology": {
+            "thumb": true,
+            "index": false,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.07399061344732821,
+            "index": 0.0,
+            "middle": 0.00011287171577555756,
+            "ring": 0.017731852419908586,
+            "little": 0.05202612127194952
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": false,
+              "middle": true,
+              "ring": false,
+              "little": false
+            },
+            "impulses_Ns": {
+              "thumb": 0.029807258834981688,
+              "index": 0.0,
+              "middle": 0.04152576430754971,
+              "ring": 0.0,
+              "little": 0.0
+            },
+            "unexpected_contacts": [],
+            "all_five": false
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.029807258834981688,
+            "index": 0.0,
+            "middle": 0.04152576430754971,
+            "ring": 0.0,
+            "little": 0.0
+          }
+        },
+        {
+          "step": 3295,
+          "phase": "opposed_face_turn",
+          "turn_tick": 120,
+          "path_index": 120,
+          "planned_palm_angle_deg": 14.131274426789481,
+          "measured_palm_planning_frame_angle_deg": 13.42541199073234,
+          "current_Core_relative_layer_angle_deg": 0.5010014134518688,
+          "planning_frame_layer_angle_deg": 2.4448968034601797,
+          "actual_palm_lead_over_layer_deg": 10.98051518727216,
+          "planned_palm_lead_over_layer_deg": 11.686377623329301,
+          "pacer": null,
+          "Core_raw_absolute_angular_speed_rad_s": 0.19423817478564687,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 17.04004564774307,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 16.87637358982316,
+          "left_topology": {
+            "thumb": true,
+            "index": false,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.07900565252749404,
+            "index": 0.0,
+            "middle": 0.0020276668906556205,
+            "ring": 0.023655888477615596,
+            "little": 0.055750795985596915
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": false,
+              "middle": true,
+              "ring": false,
+              "little": false
+            },
+            "impulses_Ns": {
+              "thumb": 0.04231442973059682,
+              "index": 0.0,
+              "middle": 0.04617855091304491,
+              "ring": 0.0,
+              "little": 0.0
+            },
+            "unexpected_contacts": [],
+            "all_five": false
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.04231442973059682,
+            "index": 0.0,
+            "middle": 0.04617855091304491,
+            "ring": 0.0,
+            "little": 0.0
+          }
+        },
+        {
+          "step": 3315,
+          "phase": "opposed_face_turn",
+          "turn_tick": 140,
+          "path_index": 140,
+          "planned_palm_angle_deg": 14.959875364685026,
+          "measured_palm_planning_frame_angle_deg": 14.51718820548969,
+          "current_Core_relative_layer_angle_deg": 0.6190229260681289,
+          "planning_frame_layer_angle_deg": 2.675401909577415,
+          "actual_palm_lead_over_layer_deg": 11.841786295912275,
+          "planned_palm_lead_over_layer_deg": 12.28447345510761,
+          "pacer": null,
+          "Core_raw_absolute_angular_speed_rad_s": 0.21336384287662638,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 12.482615487793408,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 12.497458302759224,
+          "left_topology": {
+            "thumb": true,
+            "index": false,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.0796742468308957,
+            "index": 0.0,
+            "middle": 0.0026330063190014167,
+            "ring": 0.025032864148137404,
+            "little": 0.05570344906194746
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": false,
+              "middle": true,
+              "ring": false,
+              "little": false
+            },
+            "impulses_Ns": {
+              "thumb": 0.04550294754421147,
+              "index": 0.0,
+              "middle": 0.0495772483173218,
+              "ring": 0.0,
+              "little": 0.0
+            },
+            "unexpected_contacts": [],
+            "all_five": false
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.04550294754421147,
+            "index": 0.0,
+            "middle": 0.0495772483173218,
+            "ring": 0.0,
+            "little": 0.0
+          }
+        },
+        {
+          "step": 3325,
+          "phase": "opposed_face_turn",
+          "turn_tick": 150,
+          "path_index": 150,
+          "planned_palm_angle_deg": 14.999995755956869,
+          "measured_palm_planning_frame_angle_deg": 14.634338769665442,
+          "current_Core_relative_layer_angle_deg": 0.6203505751694949,
+          "planning_frame_layer_angle_deg": 2.687957448501275,
+          "actual_palm_lead_over_layer_deg": 11.946381321164168,
+          "planned_palm_lead_over_layer_deg": 12.312038307455595,
+          "pacer": null,
+          "Core_raw_absolute_angular_speed_rad_s": 0.21476094621429098,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 12.736480893646974,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 12.756779492813479,
+          "left_topology": {
+            "thumb": true,
+            "index": false,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.07981988395155226,
+            "index": 0.0,
+            "middle": 0.0028999036501821665,
+            "ring": 0.025630652053453076,
+            "little": 0.05564311208390638
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": false,
+              "middle": true,
+              "ring": false,
+              "little": false
+            },
+            "impulses_Ns": {
+              "thumb": 0.04633448104933542,
+              "index": 0.0,
+              "middle": 0.049719391385450326,
+              "ring": 0.0,
+              "little": 0.0
+            },
+            "unexpected_contacts": [],
+            "all_five": false
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.04633448104933542,
+            "index": 0.0,
+            "middle": 0.049719391385450326,
+            "ring": 0.0,
+            "little": 0.0
+          }
+        },
+        {
+          "step": 3446,
+          "phase": "opposed_face_hold",
+          "turn_tick": 271,
+          "path_index": 150,
+          "planned_palm_angle_deg": 14.999995755956869,
+          "measured_palm_planning_frame_angle_deg": 14.639529798788198,
+          "current_Core_relative_layer_angle_deg": 0.6206985293304391,
+          "planning_frame_layer_angle_deg": 2.6925893817261333,
+          "actual_palm_lead_over_layer_deg": 11.946940417062065,
+          "planned_palm_lead_over_layer_deg": 12.307406374230736,
+          "pacer": null,
+          "Core_raw_absolute_angular_speed_rad_s": 0.2157012433485174,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 12.735445146097785,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 12.760430281525275,
+          "left_topology": {
+            "thumb": true,
+            "index": false,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.07979110536416338,
+            "index": 0.0,
+            "middle": 0.0028941347158515673,
+            "ring": 0.025671932649578646,
+            "little": 0.05564029680813968
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": false,
+              "middle": true,
+              "ring": false,
+              "little": false
+            },
+            "impulses_Ns": {
+              "thumb": 0.04636124526861533,
+              "index": 0.0,
+              "middle": 0.04985047675017977,
+              "ring": 0.0,
+              "little": 0.0
+            },
+            "unexpected_contacts": [],
+            "all_five": false
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.04636124526861533,
+            "index": 0.0,
+            "middle": 0.04985047675017977,
+            "ring": 0.0,
+            "little": 0.0
+          }
+        }
+      ]
+    },
+    "v17": {
+      "run": "teacher_joint_planning_frame_paced_v17_20261104",
+      "sha256": {
+        "result.json": "2815310ead3288257d337c73a71a993ef9833ea45c20b7cf7a441395e51169d3",
+        "trajectory.json": "6f281ce20ddad63d921855f0441040ef0b84c2f183bf4c44aaed93eb701212c0",
+        "opposition_plan.json": "6572349987d1aaa9bd20ff492b91b2a8c8f9235769228021a773b8bff9fd9023",
+        "experiment.json": "898d1c9591b015c3b5d01e13806ef4af8dc1d8b06b7ee8a5d6e09147ae693140"
+      },
+      "result": {
+        "failure": "turn_contact_or_progress_stalled",
+        "steps": 3309,
+        "elapsed_s": 657.2586537899915,
+        "dynamic_grasp_passed": true,
+        "center_transport_passed": true,
+        "face_turn_validated": false,
+        "cube_pose_writes_during_control": 0
+      },
+      "turn_result": {
+        "qualified": false,
+        "opposition_grasp_passed": true,
+        "opposition_hold_s": 4.033333333333333,
+        "turn_started": true,
+        "turn_hold_s": 0.0,
+        "turn_pacing": {
+          "max_lead_deg": 0.75,
+          "stall_ticks": 90,
+          "maximum_control_ticks": 511,
+          "control_ticks": 134,
+          "held_ticks": 103,
+          "completed": false,
+          "scope": "time pacing of existing collision-checked targets; unchanged acceptance gates",
+          "feedback_reference": {
+            "mode": "initial_opposition_Core_frame",
+            "initial_Core_wxyz": [
+              0.8667314648628235,
+              -0.4383707642555237,
+              0.11712884902954102,
+              -0.2070951610803604
+            ],
+            "initial_Core_source": "opposition_request.cube_quaternion",
+            "mapping": "-log(C_initial.T @ C_current @ Rz(-face_angle)).z in degrees",
+            "initial_layer_offset_subtracted": false,
+            "gate_changes": null,
+            "limitation": "median twist reconstruction; raw relative speed, off-axis, contacts and final acceptance remain separate"
+          }
+        },
+        "failure": "turn_contact_or_progress_stalled"
+      },
+      "phases": [
+        {
+          "phase": "ready",
+          "frames": 244,
+          "first_step": 0,
+          "last_step": 243,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "preshape",
+          "frames": 73,
+          "first_step": 244,
+          "last_step": 316,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "lower",
+          "frames": 61,
+          "first_step": 317,
+          "last_step": 377,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "approach",
+          "frames": 49,
+          "first_step": 378,
+          "last_step": 426,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 9,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 14
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 9,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 14
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "squeeze",
+          "frames": 79,
+          "first_step": 427,
+          "last_step": 505,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 79,
+              "index": 21,
+              "middle": 11,
+              "ring": 19,
+              "little": 79
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 79,
+            "index": 21,
+            "middle": 11,
+            "ring": 19,
+            "little": 79
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "primary_lift",
+          "frames": 120,
+          "first_step": 506,
+          "last_step": 625,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 120,
+              "index": 118,
+              "middle": 120,
+              "ring": 118,
+              "little": 120
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 120,
+            "index": 118,
+            "middle": 120,
+            "ring": 118,
+            "little": 120
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "elbow_outward",
+          "frames": 129,
+          "first_step": 626,
+          "last_step": 754,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 129,
+              "index": 129,
+              "middle": 129,
+              "ring": 129,
+              "little": 129
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 129,
+            "index": 129,
+            "middle": 129,
+            "ring": 129,
+            "little": 129
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "tilt_90",
+          "frames": 542,
+          "first_step": 755,
+          "last_step": 1296,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 542,
+              "index": 542,
+              "middle": 542,
+              "ring": 542,
+              "little": 542
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 542,
+            "index": 542,
+            "middle": 542,
+            "ring": 542,
+            "little": 542
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "wrist_reconfigure",
+          "frames": 181,
+          "first_step": 1297,
+          "last_step": 1477,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 181,
+              "index": 181,
+              "middle": 181,
+              "ring": 181,
+              "little": 181
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 181,
+            "index": 181,
+            "middle": 181,
+            "ring": 181,
+            "little": 181
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "tilt_hold",
+          "frames": 90,
+          "first_step": 1478,
+          "last_step": 1567,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 90,
+              "index": 90,
+              "middle": 90,
+              "ring": 90,
+              "little": 90
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 90,
+            "index": 90,
+            "middle": 90,
+            "ring": 90,
+            "little": 90
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "left_center_transport",
+          "frames": 241,
+          "first_step": 1568,
+          "last_step": 1808,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 241,
+              "index": 241,
+              "middle": 241,
+              "ring": 241,
+              "little": 241
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 241,
+            "index": 241,
+            "middle": 241,
+            "ring": 241,
+            "little": 241
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "center_hold",
+          "frames": 241,
+          "first_step": 1809,
+          "last_step": 2049,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 241,
+              "index": 241,
+              "middle": 241,
+              "ring": 241,
+              "little": 241
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 241,
+            "index": 241,
+            "middle": 241,
+            "ring": 241,
+            "little": 241
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "right_preshape",
+          "frames": 99,
+          "first_step": 2050,
+          "last_step": 2148,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 99,
+              "index": 99,
+              "middle": 99,
+              "ring": 99,
+              "little": 99
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 99,
+            "index": 99,
+            "middle": 99,
+            "ring": 99,
+            "little": 99
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "right_route",
+          "frames": 633,
+          "first_step": 2149,
+          "last_step": 2781,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 633,
+              "index": 633,
+              "middle": 633,
+              "ring": 633,
+              "little": 633
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 633,
+            "index": 633,
+            "middle": 633,
+            "ring": 633,
+            "little": 633
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "right_approach",
+          "frames": 121,
+          "first_step": 2782,
+          "last_step": 2902,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 121,
+              "index": 121,
+              "middle": 121,
+              "ring": 121,
+              "little": 121
+            },
+            "right": {
+              "thumb": 0,
+              "index": 0,
+              "middle": 0,
+              "ring": 0,
+              "little": 0
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 121,
+            "index": 121,
+            "middle": 121,
+            "ring": 121,
+            "little": 121
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 0,
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "little": 0
+          }
+        },
+        {
+          "phase": "right_close",
+          "frames": 151,
+          "first_step": 2903,
+          "last_step": 3053,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 151,
+              "index": 151,
+              "middle": 151,
+              "ring": 146,
+              "little": 151
+            },
+            "right": {
+              "thumb": 43,
+              "index": 37,
+              "middle": 40,
+              "ring": 40,
+              "little": 51
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 151,
+            "index": 151,
+            "middle": 151,
+            "ring": 146,
+            "little": 151
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 43,
+            "index": 37,
+            "middle": 40,
+            "ring": 40,
+            "little": 51
+          }
+        },
+        {
+          "phase": "opposition_hold",
+          "frames": 121,
+          "first_step": 3054,
+          "last_step": 3174,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 121,
+              "index": 121,
+              "middle": 121,
+              "ring": 121,
+              "little": 121
+            },
+            "right": {
+              "thumb": 121,
+              "index": 121,
+              "middle": 121,
+              "ring": 121,
+              "little": 121
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 121,
+            "index": 121,
+            "middle": 121,
+            "ring": 121,
+            "little": 121
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 121,
+            "index": 121,
+            "middle": 121,
+            "ring": 121,
+            "little": 121
+          }
+        },
+        {
+          "phase": "opposed_face_turn",
+          "frames": 134,
+          "first_step": 3175,
+          "last_step": 3308,
+          "raw_positive_contact_frames": {
+            "left": {
+              "thumb": 134,
+              "index": 134,
+              "middle": 134,
+              "ring": 134,
+              "little": 134
+            },
+            "right": {
+              "thumb": 134,
+              "index": 134,
+              "middle": 134,
+              "ring": 134,
+              "little": 134
+            }
+          },
+          "left_topology_contact_frames": {
+            "thumb": 134,
+            "index": 134,
+            "middle": 134,
+            "ring": 134,
+            "little": 134
+          },
+          "right_target_layer_contact_frames": {
+            "thumb": 134,
+            "index": 134,
+            "middle": 134,
+            "ring": 134,
+            "little": 134
+          }
+        }
+      ],
+      "turn_frames": 134,
+      "hold_frames": 0,
+      "first_turn_contact_loss_step": {
+        "left": {
+          "thumb": null,
+          "index": null,
+          "middle": null,
+          "ring": null,
+          "little": null
+        },
+        "right": {
+          "thumb": null,
+          "index": null,
+          "middle": null,
+          "ring": null,
+          "little": null
+        }
+      },
+      "first_pacer_hold": {
+        "step": 3202,
+        "phase": "opposed_face_turn",
+        "turn_tick": 27,
+        "path_index": 26,
+        "planned_palm_angle_deg": 0.5921706931958055,
+        "measured_palm_planning_frame_angle_deg": 0.41774553732404496,
+        "current_Core_relative_layer_angle_deg": 0.01101742212382646,
+        "planning_frame_layer_angle_deg": -0.09393525873175597,
+        "actual_palm_lead_over_layer_deg": 0.511680796055801,
+        "planned_palm_lead_over_layer_deg": 0.6861059519275615,
+        "pacer": {
+          "path_index": 26,
+          "planned_palm_angle_deg": 0.5921706931958055,
+          "held_ticks": 1,
+          "feedback": {
+            "previous_step": 3201,
+            "current_Core_relative_face_angle_deg": 0.010315817918682964,
+            "planning_frame_layer_angle_deg": -0.12296657399054349
+          }
+        },
+        "Core_raw_absolute_angular_speed_rad_s": 0.10973572154966271,
+        "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 1.8673049644720636,
+        "maximum_selected_raw_absolute_angular_speed_rad_s": 1.923042522144253,
+        "left_topology": {
+          "thumb": true,
+          "index": true,
+          "middle": true,
+          "ring": true,
+          "little": true
+        },
+        "left_raw_impulses_Ns": {
+          "thumb": 0.052090523234172556,
+          "index": 0.004856454304438827,
+          "middle": 0.003413001760092607,
+          "ring": 0.004391308560452523,
+          "little": 0.05599514821576453
+        },
+        "right_contact_audit": {
+          "fingers": {
+            "thumb": true,
+            "index": true,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "impulses_Ns": {
+            "thumb": 0.05057137809905219,
+            "index": 0.006065007867220965,
+            "middle": 0.014452551798920016,
+            "ring": 0.014820371799493547,
+            "little": 0.01607532623396214
+          },
+          "unexpected_contacts": [],
+          "all_five": true
+        },
+        "right_raw_impulses_Ns": {
+          "thumb": 0.05057137809905219,
+          "index": 0.006065007867220965,
+          "middle": 0.014452551798920016,
+          "ring": 0.014820371799493547,
+          "little": 0.01607532623396214
+        }
+      },
+      "relative_angular_speed_turn_min_median_max_rad_s": [
+        1.8673049644720636,
+        2.039150295621167,
+        11.255608466110953
+      ],
+      "relative_angular_speed_gate_violation_turn_frames": 134,
+      "episode_termination_audit": {
+        "declared_max_control_steps": 3500,
+        "executed_control_steps": 3309,
+        "first_recorded_base_terminal_step": 3092,
+        "first_terminal_phase": "opposition_hold",
+        "first_terminal_reasons": {
+          "pickup_success": true,
+          "drop": false,
+          "timeout": false
+        },
+        "recorded_timeout_steps": [],
+        "explicit_returned_done_logged": false,
+        "recorded_terminal_source": "row.terms.terminal; identical to environment.step done=success or drop or timeout",
+        "valid_base_episode_last_step_inclusive": 3092,
+        "post_base_terminal_continuation_frames": 216,
+        "post_base_terminal_turn_frames": 134,
+        "turn_acceptance_eligible_under_original_episode_contract": false,
+        "scope": "Post-base-terminal physical continuation may diagnose mechanisms, but cannot certify an accepted full original episode."
+      },
+      "selected_frames": [
+        {
+          "step": 3174,
+          "phase": "opposition_hold",
+          "turn_tick": -1,
+          "path_index": 0,
+          "planned_palm_angle_deg": -1.3914926731402896e-15,
+          "measured_palm_planning_frame_angle_deg": -0.007712360076823064,
+          "current_Core_relative_layer_angle_deg": -0.005126067094331991,
+          "planning_frame_layer_angle_deg": -0.40990006967578474,
+          "actual_palm_lead_over_layer_deg": 0.40218770959896166,
+          "planned_palm_lead_over_layer_deg": 0.40990006967578335,
+          "pacer": null,
+          "Core_raw_absolute_angular_speed_rad_s": 0.055399648606620375,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 2.235218916330119,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 2.2182557034104713,
+          "left_topology": {
+            "thumb": true,
+            "index": true,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.04502772215090491,
+            "index": 0.007417775889111711,
+            "middle": 0.00475063869978226,
+            "ring": 0.000524777125709174,
+            "little": 0.05573396951664644
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": true,
+              "little": true
+            },
+            "impulses_Ns": {
+              "thumb": 0.054369029229191554,
+              "index": 0.0059278827361781495,
+              "middle": 0.014874280147305644,
+              "ring": 0.016995780627457678,
+              "little": 0.01720684104130331
+            },
+            "unexpected_contacts": [],
+            "all_five": true
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.054369029229191554,
+            "index": 0.0059278827361781495,
+            "middle": 0.014874280147305644,
+            "ring": 0.016995780627457678,
+            "little": 0.01720684104130331
+          }
+        },
+        {
+          "step": 3175,
+          "phase": "opposed_face_turn",
+          "turn_tick": 0,
+          "path_index": 0,
+          "planned_palm_angle_deg": -1.3914926731402896e-15,
+          "measured_palm_planning_frame_angle_deg": -0.00770385406194342,
+          "current_Core_relative_layer_angle_deg": -0.0052557725039683425,
+          "planning_frame_layer_angle_deg": -0.40987195683330835,
+          "actual_palm_lead_over_layer_deg": 0.40216810277136494,
+          "planned_palm_lead_over_layer_deg": 0.40987195683330696,
+          "pacer": {
+            "path_index": 0,
+            "planned_palm_angle_deg": -1.3914926731402896e-15,
+            "held_ticks": 0,
+            "feedback": {
+              "previous_step": 3174,
+              "current_Core_relative_face_angle_deg": -0.005126067094331991,
+              "planning_frame_layer_angle_deg": -0.40990006967578446
+            }
+          },
+          "Core_raw_absolute_angular_speed_rad_s": 0.054784843022660436,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 2.2810581486385773,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 2.2591750568080373,
+          "left_topology": {
+            "thumb": true,
+            "index": true,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.045030185046541785,
+            "index": 0.007408924811362146,
+            "middle": 0.004750577520993103,
+            "ring": 0.0005237445042111161,
+            "little": 0.055729600729536706
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": true,
+              "little": true
+            },
+            "impulses_Ns": {
+              "thumb": 0.05438156663739114,
+              "index": 0.005924380963896532,
+              "middle": 0.014891550767692415,
+              "ring": 0.016998895657420063,
+              "little": 0.017214120537567
+            },
+            "unexpected_contacts": [],
+            "all_five": true
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.05438156663739114,
+            "index": 0.005924380963896532,
+            "middle": 0.014891550767692415,
+            "ring": 0.016998895657420063,
+            "little": 0.017214120537567
+          }
+        },
+        {
+          "step": 3195,
+          "phase": "opposed_face_turn",
+          "turn_tick": 20,
+          "path_index": 20,
+          "planned_palm_angle_deg": 0.2882477245543154,
+          "measured_palm_planning_frame_angle_deg": 0.16200681650434123,
+          "current_Core_relative_layer_angle_deg": 0.002076962480972657,
+          "planning_frame_layer_angle_deg": -0.2938746356347033,
+          "actual_palm_lead_over_layer_deg": 0.4558814521390445,
+          "planned_palm_lead_over_layer_deg": 0.5821223601890186,
+          "pacer": {
+            "path_index": 20,
+            "planned_palm_angle_deg": 0.2882477245543154,
+            "held_ticks": 0,
+            "feedback": {
+              "previous_step": 3194,
+              "current_Core_relative_face_angle_deg": 0.0006439182645039944,
+              "planning_frame_layer_angle_deg": -0.31232816943701025
+            }
+          },
+          "Core_raw_absolute_angular_speed_rad_s": 0.05255271556157182,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 2.4171517743391395,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 2.45883063098605,
+          "left_topology": {
+            "thumb": true,
+            "index": true,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.04858077939298315,
+            "index": 0.006733068334922095,
+            "middle": 0.004211000969462853,
+            "ring": 0.002289874142111496,
+            "little": 0.055617336703840184
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": true,
+              "little": true
+            },
+            "impulses_Ns": {
+              "thumb": 0.051966789126772876,
+              "index": 0.006099493020464292,
+              "middle": 0.014828735961951956,
+              "ring": 0.016063487414437964,
+              "little": 0.016789933061421604
+            },
+            "unexpected_contacts": [],
+            "all_five": true
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.051966789126772876,
+            "index": 0.006099493020464292,
+            "middle": 0.014828735961951956,
+            "ring": 0.016063487414437964,
+            "little": 0.016789933061421604
+          }
+        },
+        {
+          "step": 3201,
+          "phase": "opposed_face_turn",
+          "turn_tick": 26,
+          "path_index": 26,
+          "planned_palm_angle_deg": 0.5921706931958055,
+          "measured_palm_planning_frame_angle_deg": 0.3814839108416837,
+          "current_Core_relative_layer_angle_deg": 0.010315817918682964,
+          "planning_frame_layer_angle_deg": -0.12296657399054306,
+          "actual_palm_lead_over_layer_deg": 0.5044504848322268,
+          "planned_palm_lead_over_layer_deg": 0.7151372671863485,
+          "pacer": {
+            "path_index": 26,
+            "planned_palm_angle_deg": 0.5921706931958055,
+            "held_ticks": 0,
+            "feedback": {
+              "previous_step": 3200,
+              "current_Core_relative_face_angle_deg": 0.009195792135932168,
+              "planning_frame_layer_angle_deg": -0.15545812461285463
+            }
+          },
+          "Core_raw_absolute_angular_speed_rad_s": 0.13025525603250943,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 2.2711930340988533,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 2.2514844534059013,
+          "left_topology": {
+            "thumb": true,
+            "index": true,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.051002023444447486,
+            "index": 0.005321891766770753,
+            "middle": 0.0036985815683202683,
+            "ring": 0.00408628500511412,
+            "little": 0.05563145503436597
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": true,
+              "little": true
+            },
+            "impulses_Ns": {
+              "thumb": 0.05036640647789837,
+              "index": 0.006192914178431145,
+              "middle": 0.014696492919999924,
+              "ring": 0.015360735077048406,
+              "little": 0.016537012166164974
+            },
+            "unexpected_contacts": [],
+            "all_five": true
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.05036640647789837,
+            "index": 0.006192914178431145,
+            "middle": 0.014696492919999924,
+            "ring": 0.015360735077048406,
+            "little": 0.016537012166164974
+          }
+        },
+        {
+          "step": 3202,
+          "phase": "opposed_face_turn",
+          "turn_tick": 27,
+          "path_index": 26,
+          "planned_palm_angle_deg": 0.5921706931958055,
+          "measured_palm_planning_frame_angle_deg": 0.41774553732404496,
+          "current_Core_relative_layer_angle_deg": 0.01101742212382646,
+          "planning_frame_layer_angle_deg": -0.09393525873175597,
+          "actual_palm_lead_over_layer_deg": 0.511680796055801,
+          "planned_palm_lead_over_layer_deg": 0.6861059519275615,
+          "pacer": {
+            "path_index": 26,
+            "planned_palm_angle_deg": 0.5921706931958055,
+            "held_ticks": 1,
+            "feedback": {
+              "previous_step": 3201,
+              "current_Core_relative_face_angle_deg": 0.010315817918682964,
+              "planning_frame_layer_angle_deg": -0.12296657399054349
+            }
+          },
+          "Core_raw_absolute_angular_speed_rad_s": 0.10973572154966271,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 1.8673049644720636,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 1.923042522144253,
+          "left_topology": {
+            "thumb": true,
+            "index": true,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.052090523234172556,
+            "index": 0.004856454304438827,
+            "middle": 0.003413001760092607,
+            "ring": 0.004391308560452523,
+            "little": 0.05599514821576453
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": true,
+              "little": true
+            },
+            "impulses_Ns": {
+              "thumb": 0.05057137809905219,
+              "index": 0.006065007867220965,
+              "middle": 0.014452551798920016,
+              "ring": 0.014820371799493547,
+              "little": 0.01607532623396214
+            },
+            "unexpected_contacts": [],
+            "all_five": true
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.05057137809905219,
+            "index": 0.006065007867220965,
+            "middle": 0.014452551798920016,
+            "ring": 0.014820371799493547,
+            "little": 0.01607532623396214
+          }
+        },
+        {
+          "step": 3215,
+          "phase": "opposed_face_turn",
+          "turn_tick": 40,
+          "path_index": 29,
+          "planned_palm_angle_deg": 0.7939495487756656,
+          "measured_palm_planning_frame_angle_deg": 0.7130378452160885,
+          "current_Core_relative_layer_angle_deg": 0.02965646526950993,
+          "planning_frame_layer_angle_deg": 0.10837063684791083,
+          "actual_palm_lead_over_layer_deg": 0.6046672083681777,
+          "planned_palm_lead_over_layer_deg": 0.6855789119277548,
+          "pacer": {
+            "path_index": 29,
+            "planned_palm_angle_deg": 0.7939495487756656,
+            "held_ticks": 11,
+            "feedback": {
+              "previous_step": 3214,
+              "current_Core_relative_face_angle_deg": 0.028736630615718028,
+              "planning_frame_layer_angle_deg": 0.10369351943171345
+            }
+          },
+          "Core_raw_absolute_angular_speed_rad_s": 0.08853292110675896,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 2.72083252277937,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 2.7469109237663725,
+          "left_topology": {
+            "thumb": true,
+            "index": true,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.053116735530975734,
+            "index": 0.003385533436422067,
+            "middle": 0.0033660388515365613,
+            "ring": 0.005768224481617301,
+            "little": 0.055989792809881006
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": true,
+              "little": true
+            },
+            "impulses_Ns": {
+              "thumb": 0.04857779780343663,
+              "index": 0.006125952688294689,
+              "middle": 0.01460229602271811,
+              "ring": 0.014470027448169796,
+              "little": 0.01634311295929613
+            },
+            "unexpected_contacts": [],
+            "all_five": true
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.04857779780343663,
+            "index": 0.006125952688294689,
+            "middle": 0.01460229602271811,
+            "ring": 0.014470027448169796,
+            "little": 0.01634311295929613
+          }
+        },
+        {
+          "step": 3235,
+          "phase": "opposed_face_turn",
+          "turn_tick": 60,
+          "path_index": 30,
+          "planned_palm_angle_deg": 0.8688234630842336,
+          "measured_palm_planning_frame_angle_deg": 0.8091816266203283,
+          "current_Core_relative_layer_angle_deg": 0.03550897644310439,
+          "planning_frame_layer_angle_deg": 0.162505924120874,
+          "actual_palm_lead_over_layer_deg": 0.6466757024994543,
+          "planned_palm_lead_over_layer_deg": 0.7063175389633596,
+          "pacer": {
+            "path_index": 30,
+            "planned_palm_angle_deg": 0.8688234630842336,
+            "held_ticks": 30,
+            "feedback": {
+              "previous_step": 3234,
+              "current_Core_relative_face_angle_deg": 0.035430229081966906,
+              "planning_frame_layer_angle_deg": 0.16232659768644633
+            }
+          },
+          "Core_raw_absolute_angular_speed_rad_s": 0.13999514286583606,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 1.9612373275640702,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 2.013289092115933,
+          "left_topology": {
+            "thumb": true,
+            "index": true,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.053277842117701577,
+            "index": 0.0019657006717927507,
+            "middle": 0.0032101783943754075,
+            "ring": 0.006069702365705374,
+            "little": 0.05599059612071969
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": true,
+              "little": true
+            },
+            "impulses_Ns": {
+              "thumb": 0.048242146457107865,
+              "index": 0.0063214124233587484,
+              "middle": 0.01446919520983867,
+              "ring": 0.014325345250180274,
+              "little": 0.016291615174001486
+            },
+            "unexpected_contacts": [],
+            "all_five": true
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.048242146457107865,
+            "index": 0.0063214124233587484,
+            "middle": 0.01446919520983867,
+            "ring": 0.014325345250180274,
+            "little": 0.016291615174001486
+          }
+        },
+        {
+          "step": 3255,
+          "phase": "opposed_face_turn",
+          "turn_tick": 80,
+          "path_index": 30,
+          "planned_palm_angle_deg": 0.8688234630842336,
+          "measured_palm_planning_frame_angle_deg": 0.8096147022356494,
+          "current_Core_relative_layer_angle_deg": 0.03501327618296087,
+          "planning_frame_layer_angle_deg": 0.16318968804101175,
+          "actual_palm_lead_over_layer_deg": 0.6464250141946376,
+          "planned_palm_lead_over_layer_deg": 0.7056337750432219,
+          "pacer": {
+            "path_index": 30,
+            "planned_palm_angle_deg": 0.8688234630842336,
+            "held_ticks": 50,
+            "feedback": {
+              "previous_step": 3254,
+              "current_Core_relative_face_angle_deg": 0.03549857202067521,
+              "planning_frame_layer_angle_deg": 0.1635575578402079
+            }
+          },
+          "Core_raw_absolute_angular_speed_rad_s": 0.11743806123527094,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 2.1396859304458715,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 2.1983528136007164,
+          "left_topology": {
+            "thumb": true,
+            "index": true,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.05322213367659804,
+            "index": 0.0018382834647477722,
+            "middle": 0.0031983707253636765,
+            "ring": 0.006092198579836428,
+            "little": 0.05596816893509671
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": true,
+              "little": true
+            },
+            "impulses_Ns": {
+              "thumb": 0.04823467185456896,
+              "index": 0.006274699058572796,
+              "middle": 0.01446892830011231,
+              "ring": 0.01433765145266547,
+              "little": 0.01631804738134468
+            },
+            "unexpected_contacts": [],
+            "all_five": true
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.04823467185456896,
+            "index": 0.006274699058572796,
+            "middle": 0.01446892830011231,
+            "ring": 0.01433765145266547,
+            "little": 0.01631804738134468
+          }
+        },
+        {
+          "step": 3275,
+          "phase": "opposed_face_turn",
+          "turn_tick": 100,
+          "path_index": 30,
+          "planned_palm_angle_deg": 0.8688234630842336,
+          "measured_palm_planning_frame_angle_deg": 0.8096354982426184,
+          "current_Core_relative_layer_angle_deg": 0.0356417760430531,
+          "planning_frame_layer_angle_deg": 0.16390594092967442,
+          "actual_palm_lead_over_layer_deg": 0.645729557312944,
+          "planned_palm_lead_over_layer_deg": 0.7049175221545592,
+          "pacer": {
+            "path_index": 30,
+            "planned_palm_angle_deg": 0.8688234630842336,
+            "held_ticks": 70,
+            "feedback": {
+              "previous_step": 3274,
+              "current_Core_relative_face_angle_deg": 0.03552594235303386,
+              "planning_frame_layer_angle_deg": 0.16379252139603775
+            }
+          },
+          "Core_raw_absolute_angular_speed_rad_s": 0.09954267425098849,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 2.070979092453865,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 2.116695012158965,
+          "left_topology": {
+            "thumb": true,
+            "index": true,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.05319730259579496,
+            "index": 0.0016614405382577452,
+            "middle": 0.003159992868681516,
+            "ring": 0.006066123387008414,
+            "little": 0.05594647113122271
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": true,
+              "little": true
+            },
+            "impulses_Ns": {
+              "thumb": 0.048273821432310515,
+              "index": 0.006312078385072476,
+              "middle": 0.014479622950993646,
+              "ring": 0.01433401555875101,
+              "little": 0.016316577784845493
+            },
+            "unexpected_contacts": [],
+            "all_five": true
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.048273821432310515,
+            "index": 0.006312078385072476,
+            "middle": 0.014479622950993646,
+            "ring": 0.01433401555875101,
+            "little": 0.016316577784845493
+          }
+        },
+        {
+          "step": 3295,
+          "phase": "opposed_face_turn",
+          "turn_tick": 120,
+          "path_index": 30,
+          "planned_palm_angle_deg": 0.8688234630842336,
+          "measured_palm_planning_frame_angle_deg": 0.8096466429180623,
+          "current_Core_relative_layer_angle_deg": 0.035043602935538626,
+          "planning_frame_layer_angle_deg": 0.16353806575233498,
+          "actual_palm_lead_over_layer_deg": 0.6461085771657273,
+          "planned_palm_lead_over_layer_deg": 0.7052853973318987,
+          "pacer": {
+            "path_index": 30,
+            "planned_palm_angle_deg": 0.8688234630842336,
+            "held_ticks": 90,
+            "feedback": {
+              "previous_step": 3294,
+              "current_Core_relative_face_angle_deg": 0.03567146859074281,
+              "planning_frame_layer_angle_deg": 0.1640354158735203
+            }
+          },
+          "Core_raw_absolute_angular_speed_rad_s": 0.12006810986959002,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 2.0212820243886327,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 2.0711055231285767,
+          "left_topology": {
+            "thumb": true,
+            "index": true,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.05318255491419877,
+            "index": 0.0016624402511865033,
+            "middle": 0.0031665981509560784,
+            "ring": 0.006068471463755318,
+            "little": 0.05594220162526017
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": true,
+              "little": true
+            },
+            "impulses_Ns": {
+              "thumb": 0.04824035197747554,
+              "index": 0.006309001350555931,
+              "middle": 0.014478290979564698,
+              "ring": 0.014330880419786519,
+              "little": 0.016328325821787823
+            },
+            "unexpected_contacts": [],
+            "all_five": true
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.04824035197747554,
+            "index": 0.006309001350555931,
+            "middle": 0.014478290979564698,
+            "ring": 0.014330880419786519,
+            "little": 0.016328325821787823
+          }
+        },
+        {
+          "step": 3308,
+          "phase": "opposed_face_turn",
+          "turn_tick": 133,
+          "path_index": 30,
+          "planned_palm_angle_deg": 0.8688234630842336,
+          "measured_palm_planning_frame_angle_deg": 0.809638803717572,
+          "current_Core_relative_layer_angle_deg": 0.03573375003547369,
+          "planning_frame_layer_angle_deg": 0.16408887813256906,
+          "actual_palm_lead_over_layer_deg": 0.645549925585003,
+          "planned_palm_lead_over_layer_deg": 0.7047345849516646,
+          "pacer": {
+            "path_index": 30,
+            "planned_palm_angle_deg": 0.8688234630842336,
+            "held_ticks": 103,
+            "feedback": {
+              "previous_step": 3307,
+              "current_Core_relative_face_angle_deg": 0.035395834350620686,
+              "planning_frame_layer_angle_deg": 0.16387411824477963
+            }
+          },
+          "Core_raw_absolute_angular_speed_rad_s": 0.12219007221813545,
+          "maximum_selected_raw_relative_to_Core_angular_speed_rad_s": 2.0403988443185535,
+          "maximum_selected_raw_absolute_angular_speed_rad_s": 2.0801931966080085,
+          "left_topology": {
+            "thumb": true,
+            "index": true,
+            "middle": true,
+            "ring": true,
+            "little": true
+          },
+          "left_raw_impulses_Ns": {
+            "thumb": 0.053188682629259215,
+            "index": 0.001672409977223517,
+            "middle": 0.0031585432378168263,
+            "ring": 0.006072268965943067,
+            "little": 0.055949674014311876
+          },
+          "right_contact_audit": {
+            "fingers": {
+              "thumb": true,
+              "index": true,
+              "middle": true,
+              "ring": true,
+              "little": true
+            },
+            "impulses_Ns": {
+              "thumb": 0.04826819666838699,
+              "index": 0.006292874059091315,
+              "middle": 0.014478220946635409,
+              "ring": 0.014332309862012886,
+              "little": 0.016308813969772667
+            },
+            "unexpected_contacts": [],
+            "all_five": true
+          },
+          "right_raw_impulses_Ns": {
+            "thumb": 0.04826819666838699,
+            "index": 0.006292874059091315,
+            "middle": 0.014478220946635409,
+            "ring": 0.014332309862012886,
+            "little": 0.016308813969772667
+          }
+        }
+      ]
+    }
+  },
+  "comparisons": {
+    "v15_vs_v17": {
+      "first_difference_step": {
+        "q": 3202,
+        "applied_target": 3202,
+        "cube_position": 3202,
+        "cube_quaternion_wxyz": 3202,
+        "finger_contact_impulses": 3202,
+        "cubelets": 3202
+      },
+      "plan_path_angles_and_anchors_equal": true
+    },
+    "v16_vs_v17": {
+      "first_difference_step": {
+        "q": 3202,
+        "applied_target": 3202,
+        "cube_position": 3202,
+        "cube_quaternion_wxyz": 3202,
+        "finger_contact_impulses": 3202,
+        "cubelets": 3202
+      },
+      "plan_path_angles_and_anchors_equal": true
+    }
+  },
+  "interpretation_limits": [
+    "Pacer feedback in each row is from previous_step; current measured layer and palm angles are post-action.",
+    "Mapped median layer twist is an approximation when selected cubelets have off-axis motion or dispersion.",
+    "Raw velocity gate uses world omega_cubelet minus world omega_Core; absolute raw speeds are shown separately.",
+    "Contact counts in ready/approach phases are descriptive, not contact-retention failures.",
+    "No learned-policy success or unobserved closed-loop outcome is inferred.",
+    "All three turn phases occur after recorded generic pickup terminal; they are physical continuation diagnostics, not valid original-episode turn acceptance evidence."
+  ],
+  "next_direction": {
+    "required_first": "Define and enforce a new explicit multi-stage termination adapter; consume every base done, classify pickup success as a logged milestone, and stop on drop/collision/timeout or original final turn gate.",
+    "physical_candidate_after_contract": "Use separately validated native passive articulation as its own physics domain, keeping hand gains and corrected frame pacing fixed; do not combine with a grip-stiffness sweep.",
+    "basis": "Correct frame pacing retained ten fingers but only reached .0357deg relative layer rotation; raw relative speeds remained above .2rad/s on every turn frame.",
+    "no_success_claim": true
+  }
+}

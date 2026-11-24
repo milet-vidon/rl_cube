@@ -1,0 +1,28 @@
+REJECT {'offset': (0.0, 0.0, -0.002), 'failure': 'Finger goal unreachable: little 0.0026861918519801055'}
+REJECT {'offset': (0.0, 0.0, 0.0), 'failure': 'Finger goal unreachable: little 0.0033067750753378584'}
+REJECT {'offset': (0.0, 0.0, -0.004), 'failure': 'Finger goal unreachable: little 0.002291070531088837'}
+REJECT {'offset': (0.0, -0.003, -0.002), 'failure': 'Finger goal unreachable: little 0.0029030135601635807'}
+REJECT {'offset': (0.0, -0.003, 0.0), 'failure': 'Finger goal unreachable: little 0.003579710180122912'}
+REJECT {'offset': (0.0, -0.003, -0.004), 'failure': 'Finger goal unreachable: little 0.0024069110676610684'}
+REJECT {'offset': (0.0, 0.003, -0.002), 'failure': 'Finger goal unreachable: little 0.0025016961427567143'}
+REJECT {'offset': (0.0, 0.003, 0.0), 'failure': 'Finger goal unreachable: little 0.0030512070776012503'}
+REJECT {'offset': (0.0, 0.003, -0.004), 'failure': "Closed grasp collision: ('right_middle_PIP_link', 'right_ring_DIP_link', 0.00278720027649374)"}
+REJECT {'offset': (-0.003, 0.0, -0.002), 'failure': 'Finger goal unreachable: little 0.004801926475166062'}
+REJECT {'offset': (-0.003, 0.0, 0.0), 'failure': 'Finger goal unreachable: little 0.005648848979688179'}
+REJECT {'offset': (-0.003, 0.0, -0.004), 'failure': 'Finger goal unreachable: little 0.003995006407651653'}
+REJECT {'offset': (-0.003, -0.003, -0.002), 'failure': 'Finger goal unreachable: little 0.005121162537080524'}
+REJECT {'offset': (-0.003, -0.003, 0.0), 'failure': 'Finger goal unreachable: little 0.005978708211606952'}
+REJECT {'offset': (-0.003, -0.003, -0.004), 'failure': 'Finger goal unreachable: little 0.0042965477278878545'}
+REJECT {'offset': (-0.003, 0.003, -0.002), 'failure': 'Finger goal unreachable: little 0.004488371422425993'}
+REJECT {'offset': (-0.003, 0.003, 0.0), 'failure': 'Finger goal unreachable: little 0.005322476680189884'}
+REJECT {'offset': (-0.003, 0.003, -0.004), 'failure': 'Finger goal unreachable: little 0.003703339794244'}
+REJECT {'offset': (0.003, 0.0, -0.002), 'failure': 'Finger goal unreachable: index 0.0026670997955904863'}
+REJECT {'offset': (0.003, 0.0, 0.0), 'failure': 'Finger goal unreachable: index 0.002056583102710503'}
+REJECT {'offset': (0.003, 0.0, -0.004), 'failure': 'Finger goal unreachable: index 0.003313533910191759'}
+REJECT {'offset': (0.003, -0.003, -0.002), 'failure': 'Finger goal unreachable: index 0.002658915256524356'}
+REJECT {'offset': (0.003, -0.003, 0.0), 'failure': 'Finger goal unreachable: index 0.0020490760145935104'}
+REJECT {'offset': (0.003, -0.003, -0.004), 'failure': 'Finger goal unreachable: index 0.003305019568150203'}
+REJECT {'offset': (0.003, 0.003, -0.002), 'failure': 'Finger goal unreachable: index 0.0026753021056238778'}
+REJECT {'offset': (0.003, 0.003, 0.0), 'failure': 'Finger goal unreachable: index 0.0020641162229571804'}
+REJECT {'offset': (0.003, 0.003, -0.004), 'failure': 'Finger goal unreachable: index 0.0033220632167792366'}
+OPPOSITION_PLAN False

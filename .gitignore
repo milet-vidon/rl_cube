@@ -9,3 +9,19 @@ __pycache__/
 *.log
 # 已提交的历史验收文件继续跟踪；新实验默认留在本机。
 /revotron_cube_rl/runs/
+
+# Development environments and local releases
+.venv/
+dist/
+build/
+*.egg-info/
+# New evidence belongs in artifact storage. Existing tracked records stay tracked.
+/docs/evidence/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+*.npz
+*.mp4
+*.tar.gz

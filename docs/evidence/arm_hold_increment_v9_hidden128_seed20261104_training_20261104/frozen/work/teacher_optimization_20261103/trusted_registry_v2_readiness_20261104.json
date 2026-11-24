@@ -1,0 +1,22 @@
+{
+  "schema": "trusted_registry_v2_implementation_and_actual_prefix_readiness_v1",
+  "registry_sha256": "e076e877897420e651f691a10419049815d094c27b8196afeec77320d938d89e",
+  "test_sha256": "66d2aa25824eb7577a8d11e3d7abed98dbb9dfbf776ccbb69012187332291d1a",
+  "actual_and_host_tests_passed": 14,
+  "skipped_tests": 0,
+  "test_elapsed_seconds": 69.163,
+  "actual_accepted_run": "left_hold_increment_v8_seed20261104_eval_9501_20261104",
+  "actual_accepted_executed_prefix_frames": 1842,
+  "actor_features": 284,
+  "complete_actual_history_actor_predictions_bitwise_replayed": true,
+  "actual_audit_report_sha256": "6a61b14d8bbe1705f2e7d30403203fde171fbc60f2961de5510b50b568bca740",
+  "original_failure": "tilt_hold_timeout",
+  "original_false_flags_preserved": true,
+  "source_engine_changes": "Five counted, exactly reversible admission/outcome hooks. V4 actor routing and all safety/transition/final success auditor functions preserved.",
+  "v8_success_route_scope": "Host routing and fabricated-success rejection only; no actual V8 successful-wrist episode has been accepted.",
+  "rejected_run": "left_hold_increment_v8_seed20261105_eval_9501_20261104",
+  "rejection": "After 1725 complete executed transitions, abort.unfinished_decision lacks original_controller_audit because the query raised before returning. Frozen predicate engine rejects; no fabricated query or label.",
+  "training_qualification_granted": false,
+  "training_started": false,
+  "simulator_started": false
+}

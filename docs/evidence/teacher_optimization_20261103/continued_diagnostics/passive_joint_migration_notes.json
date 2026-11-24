@@ -1,0 +1,21 @@
+{
+  "source_sha256": "b7b32a4a8624241817aafcbdba20217b7250fb9c570440af6fbdcf5ec084c023",
+  "source_hinge_count": 6,
+  "source_ball_count": 20,
+  "source_isotropic_damping_Nm_per_rad_s": 0.0005,
+  "candidate_usd_angular_damping_Nm_per_deg_s": 8.726646259971648e-06,
+  "source_armature_kg_m2": 0.0001,
+  "source_frictionloss_Nm": 0.001,
+  "status": "not_implemented_not_physically_validated",
+  "constraints": [
+    "USD spherical joint has no drive support; writing drive attributes alone would be ineffective",
+    "A passive-damping migration would require a separately validated joint representation, e.g. a D6 with translations locked and all rotations free",
+    "D6 translational locks use low > high; preserve original bodies, joint frames, gravity and collision properties",
+    "Use zero stiffness and zero velocity target for damping; never use positive target rotation to drive cube turns",
+    "Armature and joint friction effort require articulation; do not claim ordinary joints migrate these parameters"
+  ],
+  "references": [
+    "https://docs.omniverse.nvidia.com/kit/docs/omni_physics/107.3/dev_guide/rigid_bodies_articulations/joints.html",
+    "https://openusd.org/dev/api/class_usd_physics_drive_a_p_i.html"
+  ]
+}

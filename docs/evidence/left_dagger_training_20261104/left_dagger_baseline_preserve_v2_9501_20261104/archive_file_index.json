@@ -1,0 +1,427 @@
+{
+  "files": [
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/artifact_manifest.json",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/artifact_manifest.json",
+      "source_sha256": "15f221858cf78f4550974eb72584528ea842c457b6b0c6060f9283f4d2c79838",
+      "archive_sha256": "15f221858cf78f4550974eb72584528ea842c457b6b0c6060f9283f4d2c79838",
+      "source_bytes": 956,
+      "archive_bytes": 956,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/asset_contract.json",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/asset_contract.json",
+      "source_sha256": "3367c3d471d25bb668b2f67fb9eca3ba34a28328b967ffbb63aef39cf1a365c7",
+      "archive_sha256": "3367c3d471d25bb668b2f67fb9eca3ba34a28328b967ffbb63aef39cf1a365c7",
+      "source_bytes": 7411,
+      "archive_bytes": 7411,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/config.json",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/config.json",
+      "source_sha256": "d3c6084f638ed96ea299dbf76c386537051d3857c61675ddfc4abd5e9d925ae1",
+      "archive_sha256": "d3c6084f638ed96ea299dbf76c386537051d3857c61675ddfc4abd5e9d925ae1",
+      "source_bytes": 7374,
+      "archive_bytes": 7374,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/dynamic_training_scene.usda",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/dynamic_training_scene.usda.gz",
+      "source_sha256": "ff16e3e8af8e8e2e0c0f7ff240a2b2f1d688a9c1b3560ff2230033742096c6f8",
+      "archive_sha256": "7352888fe4eb3ac67bb42c9d9140414078347a5b9b086b378b69c364213463f1",
+      "source_bytes": 135558,
+      "archive_bytes": 11668,
+      "compression": "gzip_mtime0_level6"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/initial_state.json",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/initial_state.json",
+      "source_sha256": "9a7c759eb84012d21924c47e2583e3bc60badaed2239608d026b6d95e785c5f3",
+      "archive_sha256": "9a7c759eb84012d21924c47e2583e3bc60badaed2239608d026b6d95e785c5f3",
+      "source_bytes": 5091,
+      "archive_bytes": 5091,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/physics_identity.json",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/physics_identity.json.gz",
+      "source_sha256": "57e21f505e1833564889b4b776aac4e04e5eef11d1436e959761465928aae8c7",
+      "archive_sha256": "24149274bc4e6355917de4bc36c01e2e25d00a5c2de794b250f1c60ca4c8aa4a",
+      "source_bytes": 568351,
+      "archive_bytes": 27381,
+      "compression": "gzip_mtime0_level6"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/plans/pickup_fc213888d36eed04e927d5fb24cfede3d575b645e384135b13313bf20ecef1e2.json",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/plans/pickup_fc213888d36eed04e927d5fb24cfede3d575b645e384135b13313bf20ecef1e2.json.gz",
+      "source_sha256": "fc213888d36eed04e927d5fb24cfede3d575b645e384135b13313bf20ecef1e2",
+      "archive_sha256": "2f255ad6ab27a7f6310e6e14e64ed02d8b1ffa1190d529710b4aa84e7612e81b",
+      "source_bytes": 770102,
+      "archive_bytes": 103764,
+      "compression": "gzip_mtime0_level6"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/plans/tilt_480d8aa52e6fe97b0545ec98da213a4e82a9d379e0dddb6f0194e428cec3ddfa.json",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/plans/tilt_480d8aa52e6fe97b0545ec98da213a4e82a9d379e0dddb6f0194e428cec3ddfa.json.gz",
+      "source_sha256": "480d8aa52e6fe97b0545ec98da213a4e82a9d379e0dddb6f0194e428cec3ddfa",
+      "archive_sha256": "febba65f305134e61bff66f6669b6214953c76d4ec9c6b11576e9d5e95a20b98",
+      "source_bytes": 949084,
+      "archive_bytes": 68300,
+      "compression": "gzip_mtime0_level6"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/plans/tilt_ec1e7494000904042cf3b9273598a4ea5d1f681af41034b930a453ffb0f22500.json",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/plans/tilt_ec1e7494000904042cf3b9273598a4ea5d1f681af41034b930a453ffb0f22500.json.gz",
+      "source_sha256": "ec1e7494000904042cf3b9273598a4ea5d1f681af41034b930a453ffb0f22500",
+      "archive_sha256": "91b4d5402122b4f02fd96a4c92e5290c3bcb9beedf3a3ba2f3bb997425810779",
+      "source_bytes": 949083,
+      "archive_bytes": 68312,
+      "compression": "gzip_mtime0_level6"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/result.json",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/result.json",
+      "source_sha256": "aa82ed3a06b1771e74a9786847195f66bb2536314262ce0196671be030124463",
+      "archive_sha256": "aa82ed3a06b1771e74a9786847195f66bb2536314262ce0196671be030124463",
+      "source_bytes": 4280,
+      "archive_bytes": 4280,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/runtime_protocol.json",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/runtime_protocol.json",
+      "source_sha256": "6db2eb77b99c3394a9263249e3aaec65902c692170dbda5facb5d32c928a9c5d",
+      "archive_sha256": "6db2eb77b99c3394a9263249e3aaec65902c692170dbda5facb5d32c928a9c5d",
+      "source_bytes": 4931,
+      "archive_bytes": 4931,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/articulated_cube_env.py",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/articulated_cube_env.py",
+      "source_sha256": "dfad0023f9e2797d6ea8ea3ac08aa1b6889b7dbb4ff8398cd0ca11fa329bc707",
+      "archive_sha256": "dfad0023f9e2797d6ea8ea3ac08aa1b6889b7dbb4ff8398cd0ca11fa329bc707",
+      "source_bytes": 5573,
+      "archive_bytes": 5573,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/collect_left_dagger_baseline_v2.py",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/collect_left_dagger_baseline_v2.py",
+      "source_sha256": "262cc3af33f1bb2498c857d73f7e4790abea0e87020faff75d1fb146760000d1",
+      "archive_sha256": "262cc3af33f1bb2498c857d73f7e4790abea0e87020faff75d1fb146760000d1",
+      "source_bytes": 2120,
+      "archive_bytes": 2120,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/collect_left_dagger_draft_v1.py",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/collect_left_dagger_draft_v1.py",
+      "source_sha256": "fc5dc17bc0f08a4fee1d468ed0b53dec6a6549083cbb7f86827dce96705ac6bf",
+      "archive_sha256": "fc5dc17bc0f08a4fee1d468ed0b53dec6a6549083cbb7f86827dce96705ac6bf",
+      "source_bytes": 8365,
+      "archive_bytes": 8365,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/config.json",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/config.json",
+      "source_sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+      "archive_sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4",
+      "source_bytes": 7670,
+      "archive_bytes": 7670,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/dagger_collection_core_v1.py",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/dagger_collection_core_v1.py",
+      "source_sha256": "6d4b2a635f98b563c10388153e4116054eb03a383e898ae7c36d572c9b182411",
+      "archive_sha256": "6d4b2a635f98b563c10388153e4116054eb03a383e898ae7c36d572c9b182411",
+      "source_bytes": 19875,
+      "archive_bytes": 19875,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/dynamic_cube.py",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/dynamic_cube.py",
+      "source_sha256": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de",
+      "archive_sha256": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de",
+      "source_bytes": 1848,
+      "archive_bytes": 1848,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/elbow_audit.py",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/elbow_audit.py",
+      "source_sha256": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9",
+      "archive_sha256": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9",
+      "source_bytes": 1906,
+      "archive_bytes": 1906,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/elbow_gate.py",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/elbow_gate.py",
+      "source_sha256": "6473a2deec9034d4fa57079fe917d248c40db68f9768001456474bdc8eb6c526",
+      "archive_sha256": "6473a2deec9034d4fa57079fe917d248c40db68f9768001456474bdc8eb6c526",
+      "source_bytes": 3947,
+      "archive_bytes": 3947,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/elbow_handover.py",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/elbow_handover.py",
+      "source_sha256": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e",
+      "archive_sha256": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e",
+      "source_bytes": 4103,
+      "archive_bytes": 4103,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/environment.py",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/environment.py",
+      "source_sha256": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7",
+      "archive_sha256": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7",
+      "source_bytes": 20264,
+      "archive_bytes": 20264,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/finger_contact_audit.py",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/finger_contact_audit.py",
+      "source_sha256": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0",
+      "archive_sha256": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0",
+      "source_bytes": 2054,
+      "archive_bytes": 2054,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/isaac_compat.py",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/isaac_compat.py",
+      "source_sha256": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825",
+      "archive_sha256": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825",
+      "source_bytes": 3227,
+      "archive_bytes": 3227,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/joint_safety.py",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/joint_safety.py",
+      "source_sha256": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887",
+      "archive_sha256": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887",
+      "source_bytes": 4195,
+      "archive_bytes": 4195,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/kinematics.py",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/kinematics.py",
+      "source_sha256": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212",
+      "archive_sha256": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212",
+      "source_bytes": 3543,
+      "archive_bytes": 3543,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/layer_turn_metrics.py",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/layer_turn_metrics.py",
+      "source_sha256": "c7fc5438c29c20632ad774c7f541d293e5f411ca8fff1454c830989536e1ccb4",
+      "archive_sha256": "c7fc5438c29c20632ad774c7f541d293e5f411ca8fff1454c830989536e1ccb4",
+      "source_bytes": 2323,
+      "archive_bytes": 2323,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/left_contact_dagger_schema_v1.json",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/left_contact_dagger_schema_v1.json",
+      "source_sha256": "164d991f6e05f34a6101d28ea764cfa8428ae5a2692f34ac151335345b2f8ce2",
+      "archive_sha256": "164d991f6e05f34a6101d28ea764cfa8428ae5a2692f34ac151335345b2f8ce2",
+      "source_bytes": 4719,
+      "archive_bytes": 4719,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/left_dagger_baseline_runtime_v2.py",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/left_dagger_baseline_runtime_v2.py",
+      "source_sha256": "2503a8773270f8d1edc7211981d11db8078c23a55d922d95b47d6cb5d4fd531e",
+      "archive_sha256": "2503a8773270f8d1edc7211981d11db8078c23a55d922d95b47d6cb5d4fd531e",
+      "source_bytes": 28738,
+      "archive_bytes": 28738,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/opposition_feedback.py",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/opposition_feedback.py",
+      "source_sha256": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883",
+      "archive_sha256": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883",
+      "source_bytes": 2483,
+      "archive_bytes": 2483,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/opposition_grasp_v20.json",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/opposition_grasp_v20.json",
+      "source_sha256": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a",
+      "archive_sha256": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a",
+      "source_bytes": 6996,
+      "archive_bytes": 6996,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/opposition_teacher.py",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/opposition_teacher.py",
+      "source_sha256": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1",
+      "archive_sha256": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1",
+      "source_bytes": 13679,
+      "archive_bytes": 13679,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/palm_contact_audit.py",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/palm_contact_audit.py",
+      "source_sha256": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184",
+      "archive_sha256": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184",
+      "source_bytes": 1379,
+      "archive_bytes": 1379,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/palm_handover.py",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/palm_handover.py",
+      "source_sha256": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f",
+      "archive_sha256": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f",
+      "source_bytes": 6505,
+      "archive_bytes": 6505,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/palm_handover_audit.py",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/palm_handover_audit.py",
+      "source_sha256": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1",
+      "archive_sha256": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1",
+      "source_bytes": 4553,
+      "archive_bytes": 4553,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/phase_basis_policy_v4.py",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/phase_basis_policy_v4.py",
+      "source_sha256": "5d4dc98bf0dfc156dbcdd7fd9d3923f475573d03bc46df1e6c1d317625d8a327",
+      "archive_sha256": "5d4dc98bf0dfc156dbcdd7fd9d3923f475573d03bc46df1e6c1d317625d8a327",
+      "source_bytes": 2358,
+      "archive_bytes": 2358,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/phase_contact_policy.py",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/phase_contact_policy.py",
+      "source_sha256": "5db8beb4f0dc86d4b6105669ee8da2fee93b319e2ba468a6c0c2c5b21dc94045",
+      "archive_sha256": "5db8beb4f0dc86d4b6105669ee8da2fee93b319e2ba468a6c0c2c5b21dc94045",
+      "source_bytes": 5740,
+      "archive_bytes": 5740,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/proximal_planner.py",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/proximal_planner.py",
+      "source_sha256": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16",
+      "archive_sha256": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16",
+      "source_bytes": 3030,
+      "archive_bytes": 3030,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/runtime_platform.py",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/runtime_platform.py",
+      "source_sha256": "c08829cde5986256dab4f5448edcecbf8932a3100ed7fab7dbdf0ad2f895772f",
+      "archive_sha256": "c08829cde5986256dab4f5448edcecbf8932a3100ed7fab7dbdf0ad2f895772f",
+      "source_bytes": 260,
+      "archive_bytes": 260,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/self_contact_audit.py",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/self_contact_audit.py",
+      "source_sha256": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c",
+      "archive_sha256": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c",
+      "source_bytes": 1093,
+      "archive_bytes": 1093,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/tilt_audit.py",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/tilt_audit.py",
+      "source_sha256": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995",
+      "archive_sha256": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995",
+      "source_bytes": 5068,
+      "archive_bytes": 5068,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/tilt_collision_plan.py",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/tilt_collision_plan.py",
+      "source_sha256": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd",
+      "archive_sha256": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd",
+      "source_bytes": 7133,
+      "archive_bytes": 7133,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/tilt_regrasp.py",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/tilt_regrasp.py",
+      "source_sha256": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1",
+      "archive_sha256": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1",
+      "source_bytes": 21716,
+      "archive_bytes": 21716,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/wrist_audit.py",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/wrist_audit.py",
+      "source_sha256": "e0dcf531d4f9e74cce3293ff2f954486fd1277609a832becdcefbd4b4e36398f",
+      "archive_sha256": "e0dcf531d4f9e74cce3293ff2f954486fd1277609a832becdcefbd4b4e36398f",
+      "source_bytes": 1467,
+      "archive_bytes": 1467,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/wrist_direction.py",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/source_snapshot/wrist_direction.py",
+      "source_sha256": "0aa5858caf39dabbd92af4396370121de30dc673675a5c24f11ca8ff0c0c0ed5",
+      "archive_sha256": "0aa5858caf39dabbd92af4396370121de30dc673675a5c24f11ca8ff0c0c0ed5",
+      "source_bytes": 4361,
+      "archive_bytes": 4361,
+      "compression": null
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/trajectory.json",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/trajectory.json.gz",
+      "source_sha256": "1f25f6a33e5f549bd1aa412ada770b083734a0244faf1b17311449484d3fe6d0",
+      "archive_sha256": "c99226197c905c3767f3c7994ac97dd30ba71a81b5e2ac1721196a7b0d61a794",
+      "source_bytes": 81936547,
+      "archive_bytes": 19353816,
+      "compression": "gzip_mtime0_level6"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/trajectory.jsonl",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/trajectory.jsonl.gz",
+      "source_sha256": "6ad452c4e515061d606e406e032802f14d200d47a7083a49a5f086b3e8891e99",
+      "archive_sha256": "c9de1666f8f017b436894be76641e635580f5f1541f33bc8e43d3d177eb73b34",
+      "source_bytes": 55417642,
+      "archive_bytes": 16797550,
+      "compression": "gzip_mtime0_level6"
+    },
+    {
+      "source": "revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/transitions.jsonl",
+      "archive": "left_dagger_baseline_preserve_v2_9501_20261104/transitions.jsonl.gz",
+      "source_sha256": "8c05f281d4f1d0575ad2ea84c7904a4ab5af3f672d833d9dbaf66dc8433f4bba",
+      "archive_sha256": "20c000076891f3c9837aff843222e01f9643663e0459e7518b3bfbea23ffe578",
+      "source_bytes": 800753359,
+      "archive_bytes": 59470728,
+      "compression": "gzip_mtime0_level6"
+    }
+  ]
+}

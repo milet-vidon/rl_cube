@@ -1,0 +1,48 @@
+{
+  "scope": "ideal_rigid_palm_rotation_geometry_only_not_IK_or_PhysX",
+  "source_run": "teacher_joint_opposition_ring_v2_20261103",
+  "reports": [
+    {
+      "angle_deg": 0,
+      "left_facing_right_cos": 0.8720537035765278,
+      "right_facing_left_cos": 0.697647500654754,
+      "palm_normal_dot": -0.9351148553883253,
+      "palm_conditions_pass": true
+    },
+    {
+      "angle_deg": 15,
+      "left_facing_right_cos": 0.917864160410873,
+      "right_facing_left_cos": 0.7440744481379138,
+      "palm_normal_dot": -0.9318945573011688,
+      "palm_conditions_pass": true
+    },
+    {
+      "angle_deg": 30,
+      "left_facing_right_cos": 0.9584391027389669,
+      "right_facing_left_cos": 0.7999984391695043,
+      "palm_normal_dot": -0.9274674923896733,
+      "palm_conditions_pass": true
+    },
+    {
+      "angle_deg": 45,
+      "left_facing_right_cos": 0.9882591652334796,
+      "right_facing_left_cos": 0.8627309576782284,
+      "palm_normal_dot": -0.9221353578114864,
+      "palm_conditions_pass": true
+    },
+    {
+      "angle_deg": 60,
+      "left_facing_right_cos": 0.9984067483969412,
+      "right_facing_left_cos": 0.9249051596813225,
+      "palm_normal_dot": -0.9162615297263432,
+      "palm_conditions_pass": true
+    },
+    {
+      "angle_deg": 90,
+      "left_facing_right_cos": 0.9208334019226186,
+      "right_facing_left_cos": 0.9931555375249295,
+      "palm_normal_dot": -0.9044995960443878,
+      "palm_conditions_pass": true
+    }
+  ]
+}

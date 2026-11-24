@@ -1,0 +1,12 @@
+{"phase": "ready", "samples": 244, "knots": 242, "all_frame_max_error_rad_before_bounds": 4.0190073491430667e-14, "iterations": 30, "elapsed_s": 0.38841601301101036}
+{"phase": "preshape", "samples": 73, "knots": 70, "all_frame_max_error_rad_before_bounds": 2.886579864025407e-15, "iterations": 9, "elapsed_s": 0.39770313099143095}
+{"phase": "lower", "samples": 61, "knots": 59, "all_frame_max_error_rad_before_bounds": 3.552713678800501e-15, "iterations": 8, "elapsed_s": 0.40741696101031266}
+{"phase": "approach", "samples": 49, "knots": 45, "all_frame_max_error_rad_before_bounds": 1.5543122344752192e-15, "iterations": 6, "elapsed_s": 0.41238187899580225}
+{"phase": "squeeze", "samples": 85, "knots": 83, "all_frame_max_error_rad_before_bounds": 7.993605777301127e-15, "iterations": 11, "elapsed_s": 0.42293410500860773}
+{"phase": "primary_lift", "samples": 120, "knots": 118, "all_frame_max_error_rad_before_bounds": 8.43769498715119e-15, "iterations": 15, "elapsed_s": 0.4404036659980193}
+{"phase": "elbow_outward", "samples": 129, "knots": 127, "all_frame_max_error_rad_before_bounds": 5.062616992290714e-14, "iterations": 16, "elapsed_s": 0.4592667109973263}
+{"phase": "tilt_90", "samples": 611, "knots": 609, "all_frame_max_error_rad_before_bounds": 1.7985612998927536e-13, "iterations": 76, "elapsed_s": 0.8915756570058875}
+{"phase": "wrist_reconfigure", "samples": 181, "knots": 179, "all_frame_max_error_rad_before_bounds": 2.7755575615628914e-14, "iterations": 22, "elapsed_s": 0.9248166049947031}
+{"phase": "tilt_hold", "samples": 94, "knots": 8, "all_frame_max_error_rad_before_bounds": 3.774758283725532e-15, "iterations": 2, "elapsed_s": 0.927530710992869}
+{"phase": "left_center_transport", "samples": 241, "knots": 239, "all_frame_max_error_rad_before_bounds": 9.126033262418787e-14, "iterations": 29, "elapsed_s": 0.9834434220101684}
+{"phase": "center_hold", "samples": 241, "knots": 0, "all_frame_max_error_rad_before_bounds": 2.3314683517128287e-15, "iterations": 1, "elapsed_s": 0.9855119599960744}

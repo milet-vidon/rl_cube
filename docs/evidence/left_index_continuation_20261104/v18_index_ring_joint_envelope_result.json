@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "parameters": {
+    "joint": "left_ring_PIP_joint",
+    "lower_offset_rad": 0.0,
+    "upper_offset_rad": 0.004,
+    "step_rad": 5e-05,
+    "minimum_impulse_Ns": 0.0005,
+    "maximum_impulse_Ns": 0.002
+  },
+  "absolute_ring_samples_rad": [
+    0.5768783688545227,
+    0.5778508186340332,
+    0.5778728588104248,
+    0.578867348766327,
+    0.579861838722229,
+    0.5808563286781311,
+    0.5818508186340332
+  ],
+  "absolute_index_samples_rad": [
+    -0.005212895254045725,
+    -0.004212895254045725,
+    -0.003212895254045725,
+    -0.0022128952540457244,
+    -0.0012128952540457249,
+    -0.00021289525404572483,
+    0.0007871047459542761,
+    0.0017871047459542752,
+    0.0027871047459542752,
+    0.0037871047459542744,
+    0.004787104745954275,
+    0.005787104745954276,
+    0.006387104745954275,
+    0.006636961828917265,
+    0.006787104745954275,
+    0.006787104745954277
+  ],
+  "index_continuation": {
+    "settings": {
+      "joint": "left_index_MPR_joint",
+      "lower_offset_rad": -0.012,
+      "upper_offset_rad": 0.0,
+      "step_rad": 5e-05,
+      "minimum_impulse_Ns": 0.0005,
+      "maximum_impulse_Ns": 0.002
+    },
+    "reference_target_rad": 0.006787104745954275,
+    "last_applied_offset_rad": -0.0004000000000000001,
+    "next_offset_rad": -0.0004000000000000001,
+    "last_nominal_target_rad": 0.006387104745954275,
+    "last_applied_target_rad": 0.006387104745954275,
+    "reference_basis": "last nominal center target minus its recorded applied offset"
+  },
+  "initial_ring_rad": 0.5768783688545227,
+  "baseline_ring_rad": 0.5778508186340332,
+  "checks": 168224,
+  "failure": null,
+  "workers": 12,
+  "elapsed_s": 1181.7917040750035,
+  "physics_validated": false
+}

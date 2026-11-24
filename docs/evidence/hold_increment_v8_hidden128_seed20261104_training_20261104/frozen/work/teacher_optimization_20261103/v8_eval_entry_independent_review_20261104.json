@@ -1,0 +1,46 @@
+{
+  "schema": "v8_eval_entry_independent_review_v1",
+  "blocking_findings": [],
+  "source_sha256": {
+    "state_hold_increment_eval_runtime_v8.py": "8c3c9459254c12b0b992889bd95aea52bf3a12d4143fd40731641a70ee46072c",
+    "evaluate_state_hold_increment_v8.py": "54a9f1ae958cacd55434397e72b04c10743c8a16c1be24d74f3518010ed497c3",
+    "train_hold_increment_v8.py": "055f8f0d6ed724c2932a2effa59d402c2e22472491519f9a1b09fb553e5a42cb",
+    "test_v8_eval_prepare_independent.py": "720a84d66d2b7e1ee7d9d388fd18712f3e578da71013120b7a3cf6a149a25103",
+    "v8_eval_independent_host_tests_v2.log": "819fd70118b2f9c417c0b2cf0ae321e77b91e2289639a5abdd65e8b5ef6d1d08"
+  },
+  "checks": {
+    "remote_host_tests_passed": 24,
+    "original_tests": 20,
+    "additional_independent_tests": 4,
+    "extra_resealed_metadata_negative_variants": 8,
+    "runtime_inverse_route_equals_frozen_v7": true,
+    "main_execution_and_cleanup_ast_preserved": true,
+    "eight_ordered_histories_required": true,
+    "step499_exact_base_histories": 7,
+    "step545_projected_hold_histories": 2,
+    "step545_required_joints": [
+      "left_ring_MCP_joint",
+      "left_ring_PIP_joint",
+      "left_ring_DIP_joint"
+    ],
+    "named_update_anchor_actual_tensor_and_metadata_bound": true,
+    "hold_uses_previous_actual_without_moving_baseline_bound": true,
+    "checkpoint_q_auth_snapshots_passed_to_verified_loader": true,
+    "loader_requires_offline_qualified_by_default_not_disabled": true,
+    "all_18_training_dependencies_have_exact_source_snapshot": true,
+    "original_false_scope_flags_retained": true
+  },
+  "environment_note": "Initial host launch lacked CODE on PYTHONPATH and failed imports; preserved v8_eval_independent_host_tests.log. Re-run v2 log used activated project environment and CODE:WORK path, 24 PASS.",
+  "limits": [
+    "prepare tests mock checkpoint loader; no real trained-checkpoint preflight claimed",
+    "no Isaac or hardware executed",
+    "not a closed-loop success, RL or generalization qualification"
+  ],
+  "reviewed_loader_behavior": [
+    "External checkpoint/q/auth SHA and exact embedded text checked",
+    "Eight histories verified through original evidence consumers",
+    "Canonical frozen tensors, gates, bounds, anchor mask and original V4 baseline compared bitwise",
+    "Trainable tensors require exact keys/shapes/dtypes, finite values and strict state load",
+    "Final CPU 499/545 regressions and improvement metrics required"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": "trusted_eval_registry_v2_independent_review_v1",
+  "blocking_findings": [],
+  "registry_sha256": "e076e877897420e651f691a10419049815d094c27b8196afeec77320d938d89e",
+  "independent_test_sha256": "6070f47e1b803e0e7bca81e542de7ebeefeb134d785aae04eac0096e0a0a0e14",
+  "independent_remote_host_tests": 4,
+  "independent_remote_host_tests_passed": true,
+  "independent_remote_host_log_sha256": "114c0ca0b50226ef10d384d4f94b64b047d682d4efa53f75c025545c3fe44a3c",
+  "independent_first_actual_audit_file": "trusted_registry_v2_first_actual_independent_20261104.json",
+  "independent_first_actual_audit_sha256": "db1645eab6d0c3e870853d10deb42f37cb794c51296620abee85a55b7f9a17a4",
+  "first_actual": {
+    "schema": "registry_v2_actual_v8_independent_consumer_audit_v1",
+    "registry_sha256": "e076e877897420e651f691a10419049815d094c27b8196afeec77320d938d89e",
+    "actual_run": "runs/left_hold_increment_v8_seed20261104_eval_9501_20261104",
+    "result_sha256": "6a3b1d628c9398a238cd5956d089dff87c60b32a4652a656b0d453e955690aa4",
+    "frames": 1842,
+    "eligible_safe_frames": 1842,
+    "behavior_predictions_replayed_bitwise": true,
+    "behavior_actor_features": 284,
+    "supervision_features": 284,
+    "audit": {
+      "oracle_queries": 1843,
+      "excluded_unexecuted_abort": true,
+      "execution_memory_modes": {
+        "preserve": 500,
+        "sync_actual_applied": 1342
+      },
+      "memory_changes": 2294,
+      "gain_events": 1,
+      "behavior_predictions_replayed_bitwise": true,
+      "recorded_actor_feature_count": 284,
+      "supervision_feature_count": 284,
+      "original_successful_wrist_audit": null
+    },
+    "original_failure": "tilt_hold_timeout",
+    "training_qualification_granted": false,
+    "physics_started": false,
+    "new_model_trained": false
+  },
+  "reviewed_boundaries": [
+    "Only two fixed V8 64-hidden checkpoints, exact qualification and paired authorizations admitted; wrong checkpoint/cross-auth/qualification rejected before external load.",
+    "Canonical frozen trainer loader verifies complete model/buffer/metadata and saved tensor bytes; all 18 dependencies must be directly snapshotted by actual run.",
+    "Actual V8 runtime inversely routes to original frozen V5 bytes; original controller, gates, termination and private predicate loop retained.",
+    "Five explicit source hooks are individually unique and inverse to exact frozen engine bytes; private ModuleType does not mutate imported original engine.",
+    "V8 recurrent actor and feature functions are the same objects as original 284-feature route; two successful_v4 actor branches remain restricted to V4.",
+    "Successful V8 outcome would need the unchanged original full wrist/grasp auditor, regrasp=False/full episode and exact result report. No successful V8 runtime was observed in this review.",
+    "All original BC-candidate/safe-prefix labels and False eligibility declarations remain; reader grants no training qualification."
+  ],
+  "second_v8_seed20261105_status": {
+    "admitted": false,
+    "independently_rerun_by_this_reviewer": false,
+    "reported_by_reader_author": "Strict reader rejects the 1725-frame run because original teacher.action threw before oracle query returned and abort lacks original_controller_audit.",
+    "boundary": "Do not synthesize a normal oracle query or grant qualification; not included in this reviewer first-actual PASS."
+  },
+  "physics_started": false,
+  "new_model_trained": false,
+  "source_or_original_data_modified": false
+}

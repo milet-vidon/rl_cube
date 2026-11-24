@@ -1,0 +1,1718 @@
+[
+  {
+    "dof_index": 0,
+    "joint_path": "/World/Joints/pX",
+    "body_path": "/World/Cube/pX",
+    "axis_unit_core": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 0.9999871016704922,
+    "dominant_axis": "X",
+    "sign": 1,
+    "native_dof_name": "pX",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0004999935300027192,
+      0.0,
+      0.0,
+      0.9999998750032273
+    ]
+  },
+  {
+    "dof_index": 1,
+    "joint_path": "/World/Joints/nX",
+    "body_path": "/World/Cube/nX",
+    "axis_unit_core": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "X",
+    "sign": 1,
+    "native_dof_name": "nX",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0005000000208533608,
+      0.0,
+      0.0,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 2,
+    "joint_path": "/World/Joints/pY",
+    "body_path": "/World/Cube/pY",
+    "axis_unit_core": [
+      1.1920927567299323e-07,
+      0.9999999999999929,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833734053,
+    "dominant_axis": "Y",
+    "sign": 1,
+    "native_dof_name": "pY",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      5.960464032241109e-11,
+      0.0005000000208533608,
+      0.0,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 3,
+    "joint_path": "/World/Joints/nY",
+    "body_path": "/World/Cube/nY",
+    "axis_unit_core": [
+      1.1920927567299323e-07,
+      0.9999999999999929,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833734053,
+    "dominant_axis": "Y",
+    "sign": 1,
+    "native_dof_name": "nY",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      5.960464032241109e-11,
+      0.0005000000208533608,
+      0.0,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 4,
+    "joint_path": "/World/Joints/pZ",
+    "body_path": "/World/Cube/pZ",
+    "axis_unit_core": [
+      1.1920927567299323e-07,
+      0.0,
+      0.9999999999999929
+    ],
+    "gain_rad_per_native_rad": 1.0000000833734053,
+    "dominant_axis": "Z",
+    "sign": 1,
+    "native_dof_name": "pZ",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      5.960464032241109e-11,
+      0.0,
+      0.0005000000208533608,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 5,
+    "joint_path": "/World/Joints/nZ",
+    "body_path": "/World/Cube/nZ",
+    "axis_unit_core": [
+      1.1920927567299323e-07,
+      0.0,
+      0.9999999999999929
+    ],
+    "gain_rad_per_native_rad": 1.0000000833734053,
+    "dominant_axis": "Z",
+    "sign": 1,
+    "native_dof_name": "nZ",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      5.960464032241109e-11,
+      0.0,
+      0.0005000000208533608,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 6,
+    "joint_path": "/World/Joints/pX_pY",
+    "body_path": "/World/Cube/pX_pY",
+    "axis_unit_core": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "X",
+    "sign": 1,
+    "native_dof_name": "pX_pY:0",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0005000000208533608,
+      0.0,
+      0.0,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 7,
+    "joint_path": "/World/Joints/pX_pY",
+    "body_path": "/World/Cube/pX_pY",
+    "axis_unit_core": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "Y",
+    "sign": 1,
+    "native_dof_name": "pX_pY:1",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0,
+      0.0005000000208533608,
+      0.0,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 8,
+    "joint_path": "/World/Joints/pX_pY",
+    "body_path": "/World/Cube/pX_pY",
+    "axis_unit_core": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "Z",
+    "sign": 1,
+    "native_dof_name": "pX_pY:2",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0005000000208533608,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 9,
+    "joint_path": "/World/Joints/nY_pX",
+    "body_path": "/World/Cube/nY_pX",
+    "axis_unit_core": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "X",
+    "sign": 1,
+    "native_dof_name": "nY_pX:0",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0005000000208533608,
+      0.0,
+      0.0,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 10,
+    "joint_path": "/World/Joints/nY_pX",
+    "body_path": "/World/Cube/nY_pX",
+    "axis_unit_core": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "Y",
+    "sign": 1,
+    "native_dof_name": "nY_pX:1",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0,
+      0.0005000000208533608,
+      0.0,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 11,
+    "joint_path": "/World/Joints/nY_pX",
+    "body_path": "/World/Cube/nY_pX",
+    "axis_unit_core": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "Z",
+    "sign": 1,
+    "native_dof_name": "nY_pX:2",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0005000000208533608,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 12,
+    "joint_path": "/World/Joints/nX_pY",
+    "body_path": "/World/Cube/nX_pY",
+    "axis_unit_core": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "X",
+    "sign": 1,
+    "native_dof_name": "nX_pY:0",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0005000000208533608,
+      0.0,
+      0.0,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 13,
+    "joint_path": "/World/Joints/nX_pY",
+    "body_path": "/World/Cube/nX_pY",
+    "axis_unit_core": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "Y",
+    "sign": 1,
+    "native_dof_name": "nX_pY:1",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0,
+      0.0005000000208533608,
+      0.0,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 14,
+    "joint_path": "/World/Joints/nX_pY",
+    "body_path": "/World/Cube/nX_pY",
+    "axis_unit_core": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "Z",
+    "sign": 1,
+    "native_dof_name": "nX_pY:2",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0005000000208533608,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 15,
+    "joint_path": "/World/Joints/nX_nY",
+    "body_path": "/World/Cube/nX_nY",
+    "axis_unit_core": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "X",
+    "sign": 1,
+    "native_dof_name": "nX_nY:0",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0005000000208533608,
+      0.0,
+      0.0,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 16,
+    "joint_path": "/World/Joints/nX_nY",
+    "body_path": "/World/Cube/nX_nY",
+    "axis_unit_core": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "Y",
+    "sign": 1,
+    "native_dof_name": "nX_nY:1",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0,
+      0.0005000000208533608,
+      0.0,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 17,
+    "joint_path": "/World/Joints/nX_nY",
+    "body_path": "/World/Cube/nX_nY",
+    "axis_unit_core": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "Z",
+    "sign": 1,
+    "native_dof_name": "nX_nY:2",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0005000000208533608,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 18,
+    "joint_path": "/World/Joints/pX_pZ",
+    "body_path": "/World/Cube/pX_pZ",
+    "axis_unit_core": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "X",
+    "sign": 1,
+    "native_dof_name": "pX_pZ:0",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0005000000208533608,
+      0.0,
+      0.0,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 19,
+    "joint_path": "/World/Joints/pX_pZ",
+    "body_path": "/World/Cube/pX_pZ",
+    "axis_unit_core": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "Y",
+    "sign": 1,
+    "native_dof_name": "pX_pZ:1",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0,
+      0.0005000000208533608,
+      0.0,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 20,
+    "joint_path": "/World/Joints/pX_pZ",
+    "body_path": "/World/Cube/pX_pZ",
+    "axis_unit_core": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "Z",
+    "sign": 1,
+    "native_dof_name": "pX_pZ:2",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0005000000208533608,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 21,
+    "joint_path": "/World/Joints/nZ_pX",
+    "body_path": "/World/Cube/nZ_pX",
+    "axis_unit_core": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "X",
+    "sign": 1,
+    "native_dof_name": "nZ_pX:0",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0005000000208533608,
+      0.0,
+      0.0,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 22,
+    "joint_path": "/World/Joints/nZ_pX",
+    "body_path": "/World/Cube/nZ_pX",
+    "axis_unit_core": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "Y",
+    "sign": 1,
+    "native_dof_name": "nZ_pX:1",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0,
+      0.0005000000208533608,
+      0.0,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 23,
+    "joint_path": "/World/Joints/nZ_pX",
+    "body_path": "/World/Cube/nZ_pX",
+    "axis_unit_core": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "Z",
+    "sign": 1,
+    "native_dof_name": "nZ_pX:2",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0005000000208533608,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 24,
+    "joint_path": "/World/Joints/nX_pZ",
+    "body_path": "/World/Cube/nX_pZ",
+    "axis_unit_core": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "X",
+    "sign": 1,
+    "native_dof_name": "nX_pZ:0",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0005000000208533608,
+      0.0,
+      0.0,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 25,
+    "joint_path": "/World/Joints/nX_pZ",
+    "body_path": "/World/Cube/nX_pZ",
+    "axis_unit_core": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "Y",
+    "sign": 1,
+    "native_dof_name": "nX_pZ:1",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0,
+      0.0005000000208533608,
+      0.0,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 26,
+    "joint_path": "/World/Joints/nX_pZ",
+    "body_path": "/World/Cube/nX_pZ",
+    "axis_unit_core": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "Z",
+    "sign": 1,
+    "native_dof_name": "nX_pZ:2",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0005000000208533608,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 27,
+    "joint_path": "/World/Joints/nX_nZ",
+    "body_path": "/World/Cube/nX_nZ",
+    "axis_unit_core": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "X",
+    "sign": 1,
+    "native_dof_name": "nX_nZ:0",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0005000000208533608,
+      0.0,
+      0.0,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 28,
+    "joint_path": "/World/Joints/nX_nZ",
+    "body_path": "/World/Cube/nX_nZ",
+    "axis_unit_core": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "Y",
+    "sign": 1,
+    "native_dof_name": "nX_nZ:1",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0,
+      0.0005000000208533608,
+      0.0,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 29,
+    "joint_path": "/World/Joints/nX_nZ",
+    "body_path": "/World/Cube/nX_nZ",
+    "axis_unit_core": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "Z",
+    "sign": 1,
+    "native_dof_name": "nX_nZ:2",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0005000000208533608,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 30,
+    "joint_path": "/World/Joints/pY_pZ",
+    "body_path": "/World/Cube/pY_pZ",
+    "axis_unit_core": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "X",
+    "sign": 1,
+    "native_dof_name": "pY_pZ:0",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0005000000208533608,
+      0.0,
+      0.0,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 31,
+    "joint_path": "/World/Joints/pY_pZ",
+    "body_path": "/World/Cube/pY_pZ",
+    "axis_unit_core": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "Y",
+    "sign": 1,
+    "native_dof_name": "pY_pZ:1",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0,
+      0.0005000000208533608,
+      0.0,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 32,
+    "joint_path": "/World/Joints/pY_pZ",
+    "body_path": "/World/Cube/pY_pZ",
+    "axis_unit_core": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "Z",
+    "sign": 1,
+    "native_dof_name": "pY_pZ:2",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0005000000208533608,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 33,
+    "joint_path": "/World/Joints/nZ_pY",
+    "body_path": "/World/Cube/nZ_pY",
+    "axis_unit_core": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "X",
+    "sign": 1,
+    "native_dof_name": "nZ_pY:0",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0005000000208533608,
+      0.0,
+      0.0,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 34,
+    "joint_path": "/World/Joints/nZ_pY",
+    "body_path": "/World/Cube/nZ_pY",
+    "axis_unit_core": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "Y",
+    "sign": 1,
+    "native_dof_name": "nZ_pY:1",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0,
+      0.0005000000208533608,
+      0.0,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 35,
+    "joint_path": "/World/Joints/nZ_pY",
+    "body_path": "/World/Cube/nZ_pY",
+    "axis_unit_core": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "Z",
+    "sign": 1,
+    "native_dof_name": "nZ_pY:2",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0005000000208533608,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 36,
+    "joint_path": "/World/Joints/nY_pZ",
+    "body_path": "/World/Cube/nY_pZ",
+    "axis_unit_core": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "X",
+    "sign": 1,
+    "native_dof_name": "nY_pZ:0",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0005000000208533608,
+      0.0,
+      0.0,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 37,
+    "joint_path": "/World/Joints/nY_pZ",
+    "body_path": "/World/Cube/nY_pZ",
+    "axis_unit_core": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "Y",
+    "sign": 1,
+    "native_dof_name": "nY_pZ:1",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0,
+      0.0005000000208533608,
+      0.0,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 38,
+    "joint_path": "/World/Joints/nY_pZ",
+    "body_path": "/World/Cube/nY_pZ",
+    "axis_unit_core": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "Z",
+    "sign": 1,
+    "native_dof_name": "nY_pZ:2",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0005000000208533608,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 39,
+    "joint_path": "/World/Joints/nY_nZ",
+    "body_path": "/World/Cube/nY_nZ",
+    "axis_unit_core": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "X",
+    "sign": 1,
+    "native_dof_name": "nY_nZ:0",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0005000000208533608,
+      0.0,
+      0.0,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 40,
+    "joint_path": "/World/Joints/nY_nZ",
+    "body_path": "/World/Cube/nY_nZ",
+    "axis_unit_core": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "Y",
+    "sign": 1,
+    "native_dof_name": "nY_nZ:1",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0,
+      0.0005000000208533608,
+      0.0,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 41,
+    "joint_path": "/World/Joints/nY_nZ",
+    "body_path": "/World/Cube/nY_nZ",
+    "axis_unit_core": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "gain_rad_per_native_rad": 1.0000000833733982,
+    "dominant_axis": "Z",
+    "sign": 1,
+    "native_dof_name": "nY_nZ:2",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0005000000208533608,
+      0.9999998749999818
+    ]
+  },
+  {
+    "dof_index": 42,
+    "joint_path": "/World/Joints/pX_pY_pZ",
+    "body_path": "/World/Cube/pX_pY_pZ",
+    "axis_unit_core": [
+      0.9999999993060926,
+      -2.980270606503227e-05,
+      2.2352029548774203e-05
+    ],
+    "gain_rad_per_native_rad": 0.9999871023643904,
+    "dominant_axis": "X",
+    "sign": 1,
+    "native_dof_name": "pX_pY_pZ:0",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0004999935300027191,
+      -1.4901160219428956e-08,
+      1.1175870164571716e-08,
+      0.9999998750032271
+    ]
+  },
+  {
+    "dof_index": 43,
+    "joint_path": "/World/Joints/pX_pY_pZ",
+    "body_path": "/World/Cube/pX_pY_pZ",
+    "axis_unit_core": [
+      -1.4901464056849913e-05,
+      0.9999999991950556,
+      -3.7253660142124786e-05
+    ],
+    "gain_rad_per_native_rad": 0.9999796518962417,
+    "dominant_axis": "Y",
+    "sign": 1,
+    "native_dof_name": "pX_pY_pZ:1",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      -7.450580109728355e-09,
+      0.0004999898047135955,
+      -1.8626450274320886e-08,
+      0.9999998750050896
+    ]
+  },
+  {
+    "dof_index": 44,
+    "joint_path": "/World/Joints/pX_pY_pZ",
+    "body_path": "/World/Cube/pX_pY_pZ",
+    "axis_unit_core": [
+      1.4900242861966943e-05,
+      -3.725060715491735e-05,
+      0.9999999991951875
+    ],
+    "gain_rad_per_native_rad": 1.0000616678754513,
+    "dominant_axis": "Z",
+    "sign": 1,
+    "native_dof_name": "pX_pY_pZ:2",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      7.450580553664818e-09,
+      -1.8626451384162045e-08,
+      0.000500030812698107,
+      0.9999998749845852
+    ]
+  },
+  {
+    "dof_index": 45,
+    "joint_path": "/World/Joints/nZ_pX_pY",
+    "body_path": "/World/Cube/nZ_pX_pY",
+    "axis_unit_core": [
+      0.999999999278358,
+      7.450565492544652e-06,
+      3.725282746272326e-05
+    ],
+    "gain_rad_per_native_rad": 1.0000020631552535,
+    "dominant_axis": "X",
+    "sign": 1,
+    "native_dof_name": "nZ_pX_pY:0",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0005000010103833431,
+      3.725290276887922e-09,
+      1.862645138443961e-08,
+      0.9999998749994868
+    ]
+  },
+  {
+    "dof_index": 46,
+    "joint_path": "/World/Joints/nZ_pX_pY",
+    "body_path": "/World/Cube/nZ_pX_pY",
+    "axis_unit_core": [
+      -2.9801817778550394e-05,
+      0.9999999955592583,
+      8.940545333565118e-05
+    ],
+    "gain_rad_per_native_rad": 1.0000169680336715,
+    "dominant_axis": "Y",
+    "sign": 1,
+    "native_dof_name": "nZ_pX_pY:1",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      -1.4901161107496164e-08,
+      0.0005000084609620338,
+      4.4703483322488497e-08,
+      0.9999998749957607
+    ]
+  },
+  {
+    "dof_index": 47,
+    "joint_path": "/World/Joints/nZ_pX_pY",
+    "body_path": "/World/Cube/nZ_pX_pY",
+    "axis_unit_core": [
+      -1.4900242861966943e-05,
+      3.725060715491735e-05,
+      0.9999999991951875
+    ],
+    "gain_rad_per_native_rad": 1.0000616678754513,
+    "dominant_axis": "Z",
+    "sign": 1,
+    "native_dof_name": "nZ_pX_pY:2",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      -7.450580553664818e-09,
+      1.8626451384162045e-08,
+      0.000500030812698107,
+      0.9999998749845852
+    ]
+  },
+  {
+    "dof_index": 48,
+    "joint_path": "/World/Joints/nY_pX_pZ",
+    "body_path": "/World/Cube/nY_pX_pZ",
+    "axis_unit_core": [
+      0.9999999998889766,
+      -1.4901242016867855e-05,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 0.9999946119650106,
+    "dominant_axis": "X",
+    "sign": 1,
+    "native_dof_name": "nY_pX_pZ:0",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0004999972850939976,
+      -7.4505805537897225e-09,
+      0.0,
+      0.9999998750013496
+    ]
+  },
+  {
+    "dof_index": 49,
+    "joint_path": "/World/Joints/nY_pX_pZ",
+    "body_path": "/World/Cube/nY_pX_pZ",
+    "axis_unit_core": [
+      -7.450565497714497e-06,
+      0.9999999999722444,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 1.0000019432518505,
+    "dominant_axis": "Y",
+    "sign": 1,
+    "native_dof_name": "nY_pX_pZ:1",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      -3.7252898327988267e-09,
+      0.0005000009507785929,
+      0.0,
+      0.9999998749995168
+    ]
+  },
+  {
+    "dof_index": 50,
+    "joint_path": "/World/Joints/nY_pX_pZ",
+    "body_path": "/World/Cube/nY_pX_pZ",
+    "axis_unit_core": [
+      0.0,
+      4.47040590838994e-05,
+      0.9999999990007735
+    ],
+    "gain_rad_per_native_rad": 0.9999871026697056,
+    "dominant_axis": "Z",
+    "sign": 1,
+    "native_dof_name": "nY_pX_pZ:2",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0,
+      2.235174032914343e-08,
+      0.0004999935300027191,
+      0.999999875003227
+    ]
+  },
+  {
+    "dof_index": 51,
+    "joint_path": "/World/Joints/nY_nZ_pX",
+    "body_path": "/World/Cube/nY_nZ_pX",
+    "axis_unit_core": [
+      0.9999999993060927,
+      0.0,
+      -3.7253382581290335e-05
+    ],
+    "gain_rad_per_native_rad": 0.9999871619682634,
+    "dominant_axis": "X",
+    "sign": 1,
+    "native_dof_name": "nY_nZ_pX:0",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.000499993559804652,
+      0.0,
+      -1.8626451384508997e-08,
+      0.9999998750032121
+    ]
+  },
+  {
+    "dof_index": 52,
+    "joint_path": "/World/Joints/nY_nZ_pX",
+    "body_path": "/World/Cube/nY_nZ_pX",
+    "axis_unit_core": [
+      -5.960008330779829e-05,
+      0.9999999977798938,
+      2.9800041653899144e-05
+    ],
+    "gain_rad_per_native_rad": 1.0000765704501096,
+    "dominant_axis": "Y",
+    "sign": 1,
+    "native_dof_name": "nY_nZ_pX:1",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      -2.9802322214548232e-08,
+      0.0005000382632767976,
+      1.4901161107274116e-08,
+      0.9999998749808593
+    ]
+  },
+  {
+    "dof_index": 53,
+    "joint_path": "/World/Joints/nY_nZ_pX",
+    "body_path": "/World/Cube/nY_nZ_pX",
+    "axis_unit_core": [
+      0.0,
+      1.49016861241306e-05,
+      0.9999999998889699
+    ],
+    "gain_rad_per_native_rad": 0.9999648692490719,
+    "dominant_axis": "Z",
+    "sign": 1,
+    "native_dof_name": "nY_nZ_pX:2",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0,
+      7.450580997934411e-09,
+      0.0004999824137378855,
+      0.9999998750087852
+    ]
+  },
+  {
+    "dof_index": 54,
+    "joint_path": "/World/Joints/nX_pY_pZ",
+    "body_path": "/World/Cube/nX_pY_pZ",
+    "axis_unit_core": [
+      0.9999999993060927,
+      0.0,
+      -3.7253382581290335e-05
+    ],
+    "gain_rad_per_native_rad": 0.9999871619682634,
+    "dominant_axis": "X",
+    "sign": 1,
+    "native_dof_name": "nX_pY_pZ:0",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.000499993559804652,
+      0.0,
+      -1.8626451384508997e-08,
+      0.9999998750032121
+    ]
+  },
+  {
+    "dof_index": 55,
+    "joint_path": "/World/Joints/nX_pY_pZ",
+    "body_path": "/World/Cube/nX_pY_pZ",
+    "axis_unit_core": [
+      -5.960008330779829e-05,
+      0.9999999977798938,
+      2.9800041653899144e-05
+    ],
+    "gain_rad_per_native_rad": 1.0000765704501096,
+    "dominant_axis": "Y",
+    "sign": 1,
+    "native_dof_name": "nX_pY_pZ:1",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      -2.9802322214548232e-08,
+      0.0005000382632767976,
+      1.4901161107274116e-08,
+      0.9999998749808593
+    ]
+  },
+  {
+    "dof_index": 56,
+    "joint_path": "/World/Joints/nX_pY_pZ",
+    "body_path": "/World/Cube/nX_pY_pZ",
+    "axis_unit_core": [
+      0.0,
+      1.49016861241306e-05,
+      0.9999999998889699
+    ],
+    "gain_rad_per_native_rad": 0.9999648692490719,
+    "dominant_axis": "Z",
+    "sign": 1,
+    "native_dof_name": "nX_pY_pZ:2",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0,
+      7.450580997934411e-09,
+      0.0004999824137378855,
+      0.9999998750087852
+    ]
+  },
+  {
+    "dof_index": 57,
+    "joint_path": "/World/Joints/nX_nZ_pY",
+    "body_path": "/World/Cube/nX_nZ_pY",
+    "axis_unit_core": [
+      0.9999999998889766,
+      -1.4901242016867855e-05,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 0.9999946119650106,
+    "dominant_axis": "X",
+    "sign": 1,
+    "native_dof_name": "nX_nZ_pY:0",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0004999972850939976,
+      -7.4505805537897225e-09,
+      0.0,
+      0.9999998750013496
+    ]
+  },
+  {
+    "dof_index": 58,
+    "joint_path": "/World/Joints/nX_nZ_pY",
+    "body_path": "/World/Cube/nX_nZ_pY",
+    "axis_unit_core": [
+      -7.450565497714497e-06,
+      0.9999999999722444,
+      0.0
+    ],
+    "gain_rad_per_native_rad": 1.0000019432518505,
+    "dominant_axis": "Y",
+    "sign": 1,
+    "native_dof_name": "nX_nZ_pY:1",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      -3.7252898327988267e-09,
+      0.0005000009507785929,
+      0.0,
+      0.9999998749995168
+    ]
+  },
+  {
+    "dof_index": 59,
+    "joint_path": "/World/Joints/nX_nZ_pY",
+    "body_path": "/World/Cube/nX_nZ_pY",
+    "axis_unit_core": [
+      0.0,
+      4.47040590838994e-05,
+      0.9999999990007735
+    ],
+    "gain_rad_per_native_rad": 0.9999871026697056,
+    "dominant_axis": "Z",
+    "sign": 1,
+    "native_dof_name": "nX_nZ_pY:2",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0,
+      2.235174032914343e-08,
+      0.0004999935300027191,
+      0.999999875003227
+    ]
+  },
+  {
+    "dof_index": 60,
+    "joint_path": "/World/Joints/nX_nY_pZ",
+    "body_path": "/World/Cube/nX_nY_pZ",
+    "axis_unit_core": [
+      0.999999999278358,
+      7.450565492544652e-06,
+      3.725282746272326e-05
+    ],
+    "gain_rad_per_native_rad": 1.0000020631552535,
+    "dominant_axis": "X",
+    "sign": 1,
+    "native_dof_name": "nX_nY_pZ:0",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0005000010103833431,
+      3.725290276887922e-09,
+      1.862645138443961e-08,
+      0.9999998749994868
+    ]
+  },
+  {
+    "dof_index": 61,
+    "joint_path": "/World/Joints/nX_nY_pZ",
+    "body_path": "/World/Cube/nX_nY_pZ",
+    "axis_unit_core": [
+      -2.9801817778550394e-05,
+      0.9999999955592583,
+      8.940545333565118e-05
+    ],
+    "gain_rad_per_native_rad": 1.0000169680336715,
+    "dominant_axis": "Y",
+    "sign": 1,
+    "native_dof_name": "nX_nY_pZ:1",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      -1.4901161107496164e-08,
+      0.0005000084609620338,
+      4.4703483322488497e-08,
+      0.9999998749957607
+    ]
+  },
+  {
+    "dof_index": 62,
+    "joint_path": "/World/Joints/nX_nY_pZ",
+    "body_path": "/World/Cube/nX_nY_pZ",
+    "axis_unit_core": [
+      -1.4900242861966943e-05,
+      3.725060715491735e-05,
+      0.9999999991951875
+    ],
+    "gain_rad_per_native_rad": 1.0000616678754513,
+    "dominant_axis": "Z",
+    "sign": 1,
+    "native_dof_name": "nX_nY_pZ:2",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      -7.450580553664818e-09,
+      1.8626451384162045e-08,
+      0.000500030812698107,
+      0.9999998749845852
+    ]
+  },
+  {
+    "dof_index": 63,
+    "joint_path": "/World/Joints/nX_nY_nZ",
+    "body_path": "/World/Cube/nX_nY_nZ",
+    "axis_unit_core": [
+      0.9999999993060926,
+      -2.980270606503227e-05,
+      2.2352029548774203e-05
+    ],
+    "gain_rad_per_native_rad": 0.9999871023643904,
+    "dominant_axis": "X",
+    "sign": 1,
+    "native_dof_name": "nX_nY_nZ:0",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      0.0004999935300027191,
+      -1.4901160219428956e-08,
+      1.1175870164571716e-08,
+      0.9999998750032271
+    ]
+  },
+  {
+    "dof_index": 64,
+    "joint_path": "/World/Joints/nX_nY_nZ",
+    "body_path": "/World/Cube/nX_nY_nZ",
+    "axis_unit_core": [
+      -1.4901464056849913e-05,
+      0.9999999991950556,
+      -3.7253660142124786e-05
+    ],
+    "gain_rad_per_native_rad": 0.9999796518962417,
+    "dominant_axis": "Y",
+    "sign": 1,
+    "native_dof_name": "nX_nY_nZ:1",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      -7.450580109728355e-09,
+      0.0004999898047135955,
+      -1.8626450274320886e-08,
+      0.9999998750050896
+    ]
+  },
+  {
+    "dof_index": 65,
+    "joint_path": "/World/Joints/nX_nY_nZ",
+    "body_path": "/World/Cube/nX_nY_nZ",
+    "axis_unit_core": [
+      1.4900242861966943e-05,
+      -3.725060715491735e-05,
+      0.9999999991951875
+    ],
+    "gain_rad_per_native_rad": 1.0000616678754513,
+    "dominant_axis": "Z",
+    "sign": 1,
+    "native_dof_name": "nX_nY_nZ:2",
+    "reference_relative_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "perturbed_relative_quaternion_xyzw": [
+      7.450580553664818e-09,
+      -1.8626451384162045e-08,
+      0.000500030812698107,
+      0.9999998749845852
+    ]
+  }
+]

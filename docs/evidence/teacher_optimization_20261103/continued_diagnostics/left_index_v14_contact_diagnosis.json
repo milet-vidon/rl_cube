@@ -1,0 +1,357 @@
+{
+  "scope": "read-only geometric/contact diagnosis, not a successful recovery or turn",
+  "runs": {
+    "v11": {
+      "run": "teacher_joint_soft_fingers_v11_20261103",
+      "trajectory_sha256": "544eeb682039fccb1490f8d413fe24c304bfc3f280450d7199642d23e2524d44",
+      "turn_frames": 151,
+      "first_loss_step": 3217,
+      "missing_turn_frames": 136,
+      "raw_zero_turn_frames": 135,
+      "first_pacer_hold_step": null,
+      "applied_MPR_rad": 0.006237104069441557,
+      "center_feedback": {
+        "offset_rad": -0.0005500000000000001,
+        "impulse_Ns": 0.0010648721492030324,
+        "on_target_face": true,
+        "next_offset_rad": -0.0005500000000000001
+      },
+      "calibrated_anchor_link_m": [
+        -0.001190567749468143,
+        0.006773427828594539,
+        0.025845411130295683
+      ],
+      "normal_corner_frame": [
+        0.1988621513025536,
+        -0.7338155127207293,
+        0.6495911958902414
+      ],
+      "detail": [
+        {
+          "step": 3201,
+          "raw_impulse_Ns": 0.00015690426606788314,
+          "qualified_contact": true,
+          "old_contact_point_corner_frame_m": [
+            0.027075439516367435,
+            -0.028500214926375573,
+            0.027074986635481288
+          ],
+          "old_normal_projected_departure_um": -1.2715687105938064e-12,
+          "negY_plane_distance_um": 0.21492637557185557,
+          "derivatives": {
+            "left_index_MPR_joint": {
+              "delta_mm_per_positive_001rad": [
+                0.005576991653225002,
+                -0.05212442513330438,
+                0.021702154985282395
+              ],
+              "outward_normal_mm_per_positive_001rad": 0.05345629312271069
+            },
+            "left_index_MCP_joint": {
+              "delta_mm_per_positive_001rad": [
+                -0.078711401226321,
+                -0.013291337432842153,
+                -0.043096521668818194
+              ],
+              "outward_normal_mm_per_positive_001rad": -0.03389445003643668
+            },
+            "left_index_PIP_joint": {
+              "delta_mm_per_positive_001rad": [
+                -0.0539255440958271,
+                0.0005865599782551986,
+                -0.0056418496650500576
+              ],
+              "outward_normal_mm_per_positive_001rad": -0.01481907239119452
+            },
+            "left_index_DIP_joint": {
+              "delta_mm_per_positive_001rad": [
+                -0.025281286626959346,
+                0.0019104491204590185,
+                0.001385006968832423
+              ],
+              "outward_normal_mm_per_positive_001rad": -0.005529719913989943
+            }
+          }
+        },
+        {
+          "step": 3217,
+          "raw_impulse_Ns": 5.918609524103986e-07,
+          "qualified_contact": false,
+          "old_contact_point_corner_frame_m": [
+            0.02708482409995529,
+            -0.02850895009157476,
+            0.027066009496150054
+          ],
+          "old_normal_projected_departure_um": 2.444767536850284,
+          "negY_plane_distance_um": 8.950091574758817,
+          "derivatives": {
+            "left_index_MPR_joint": {
+              "delta_mm_per_positive_001rad": [
+                0.005604288721670256,
+                -0.05214315220413542,
+                0.021652184574148844
+              ],
+              "outward_normal_mm_per_positive_001rad": 0.05344300335242223
+            },
+            "left_index_MCP_joint": {
+              "delta_mm_per_positive_001rad": [
+                -0.07869227913777921,
+                -0.013298306303436796,
+                -0.04312996164566649
+              ],
+              "outward_normal_mm_per_positive_001rad": -0.033907255825974786
+            },
+            "left_index_PIP_joint": {
+              "delta_mm_per_positive_001rad": [
+                -0.05392446337749632,
+                0.0005580261996172625,
+                -0.005655376161922729
+              ],
+              "outward_normal_mm_per_positive_001rad": -0.014806705641100974
+            },
+            "left_index_DIP_joint": {
+              "delta_mm_per_positive_001rad": [
+                -0.025282859662511606,
+                0.0018930408321217438,
+                0.0013801874350266256
+              ],
+              "outward_normal_mm_per_positive_001rad": -0.005520388985920675
+            }
+          }
+        },
+        {
+          "step": 3352,
+          "raw_impulse_Ns": 0,
+          "qualified_contact": false,
+          "old_contact_point_corner_frame_m": [
+            0.02795971907722893,
+            -0.02828688297062053,
+            0.02759393009042748
+          ],
+          "old_normal_projected_departure_um": 356.4045368316019,
+          "negY_plane_distance_um": -213.11702937946987,
+          "derivatives": {
+            "left_index_MPR_joint": {
+              "delta_mm_per_positive_001rad": [
+                0.0074032045655890175,
+                -0.051949583376687015,
+                0.021573569238112884
+              ],
+              "outward_normal_mm_per_positive_001rad": 0.05360762798864445
+            },
+            "left_index_MCP_joint": {
+              "delta_mm_per_positive_001rad": [
+                -0.07755098732203058,
+                -0.016275120006111886,
+                -0.04416668928544207
+              ],
+              "outward_normal_mm_per_positive_001rad": -0.03216931315406269
+            },
+            "left_index_PIP_joint": {
+              "delta_mm_per_positive_001rad": [
+                -0.05382783261807535,
+                -0.0015698020675711394,
+                -0.006341396684405967
+              ],
+              "outward_normal_mm_per_positive_001rad": -0.013671688941137137
+            },
+            "left_index_DIP_joint": {
+              "delta_mm_per_positive_001rad": [
+                -0.025353584018577315,
+                0.0008809399285833067,
+                0.0010635957477225279
+              ],
+              "outward_normal_mm_per_positive_001rad": -0.004997413212826996
+            }
+          }
+        }
+      ]
+    },
+    "v14": {
+      "run": "teacher_joint_paced_baseline_v14_20261103",
+      "trajectory_sha256": "b1a58f8552864c01ab0d57f82670fa6a952e31a016a224990cc22eb255308d6e",
+      "turn_frames": 120,
+      "first_loss_step": 3217,
+      "missing_turn_frames": 105,
+      "raw_zero_turn_frames": 104,
+      "first_pacer_hold_step": 3232,
+      "applied_MPR_rad": 0.006237104069441557,
+      "center_feedback": {
+        "offset_rad": -0.0005500000000000001,
+        "impulse_Ns": 0.0010648721492030324,
+        "on_target_face": true,
+        "next_offset_rad": -0.0005500000000000001
+      },
+      "calibrated_anchor_link_m": [
+        -0.001190567749468143,
+        0.006773427828594539,
+        0.025845411130295683
+      ],
+      "normal_corner_frame": [
+        0.1988621513025536,
+        -0.7338155127207293,
+        0.6495911958902414
+      ],
+      "detail": [
+        {
+          "step": 3201,
+          "raw_impulse_Ns": 0.00015690426606788314,
+          "qualified_contact": true,
+          "old_contact_point_corner_frame_m": [
+            0.027075439516367435,
+            -0.028500214926375573,
+            0.027074986635481288
+          ],
+          "old_normal_projected_departure_um": -1.2715687105938064e-12,
+          "negY_plane_distance_um": 0.21492637557185557,
+          "derivatives": {
+            "left_index_MPR_joint": {
+              "delta_mm_per_positive_001rad": [
+                0.005576991653225002,
+                -0.05212442513330438,
+                0.021702154985282395
+              ],
+              "outward_normal_mm_per_positive_001rad": 0.05345629312271069
+            },
+            "left_index_MCP_joint": {
+              "delta_mm_per_positive_001rad": [
+                -0.078711401226321,
+                -0.013291337432842153,
+                -0.043096521668818194
+              ],
+              "outward_normal_mm_per_positive_001rad": -0.03389445003643668
+            },
+            "left_index_PIP_joint": {
+              "delta_mm_per_positive_001rad": [
+                -0.0539255440958271,
+                0.0005865599782551986,
+                -0.0056418496650500576
+              ],
+              "outward_normal_mm_per_positive_001rad": -0.01481907239119452
+            },
+            "left_index_DIP_joint": {
+              "delta_mm_per_positive_001rad": [
+                -0.025281286626959346,
+                0.0019104491204590185,
+                0.001385006968832423
+              ],
+              "outward_normal_mm_per_positive_001rad": -0.005529719913989943
+            }
+          }
+        },
+        {
+          "step": 3217,
+          "raw_impulse_Ns": 5.918609524103986e-07,
+          "qualified_contact": false,
+          "old_contact_point_corner_frame_m": [
+            0.02708482409995529,
+            -0.02850895009157476,
+            0.027066009496150054
+          ],
+          "old_normal_projected_departure_um": 2.444767536850284,
+          "negY_plane_distance_um": 8.950091574758817,
+          "derivatives": {
+            "left_index_MPR_joint": {
+              "delta_mm_per_positive_001rad": [
+                0.005604288721670256,
+                -0.05214315220413542,
+                0.021652184574148844
+              ],
+              "outward_normal_mm_per_positive_001rad": 0.05344300335242223
+            },
+            "left_index_MCP_joint": {
+              "delta_mm_per_positive_001rad": [
+                -0.07869227913777921,
+                -0.013298306303436796,
+                -0.04312996164566649
+              ],
+              "outward_normal_mm_per_positive_001rad": -0.033907255825974786
+            },
+            "left_index_PIP_joint": {
+              "delta_mm_per_positive_001rad": [
+                -0.05392446337749632,
+                0.0005580261996172625,
+                -0.005655376161922729
+              ],
+              "outward_normal_mm_per_positive_001rad": -0.014806705641100974
+            },
+            "left_index_DIP_joint": {
+              "delta_mm_per_positive_001rad": [
+                -0.025282859662511606,
+                0.0018930408321217438,
+                0.0013801874350266256
+              ],
+              "outward_normal_mm_per_positive_001rad": -0.005520388985920675
+            }
+          }
+        },
+        {
+          "step": 3321,
+          "raw_impulse_Ns": 0,
+          "qualified_contact": false,
+          "old_contact_point_corner_frame_m": [
+            0.02723632321754697,
+            -0.028514585494350108,
+            0.027117637451780852
+          ],
+          "old_normal_projected_departure_um": 70.24461939812888,
+          "negY_plane_distance_um": 14.585494350106975,
+          "derivatives": {
+            "left_index_MPR_joint": {
+              "delta_mm_per_positive_001rad": [
+                0.005861558409393593,
+                -0.05208508828676614,
+                0.0217215800533301
+              ],
+              "outward_normal_mm_per_positive_001rad": 0.05349663504500364
+            },
+            "left_index_MCP_joint": {
+              "delta_mm_per_positive_001rad": [
+                -0.07853394264268028,
+                -0.013796574853820895,
+                -0.04326235593742362
+              ],
+              "outward_normal_mm_per_positive_001rad": -0.03359613366446855
+            },
+            "left_index_PIP_joint": {
+              "delta_mm_per_positive_001rad": [
+                -0.05391594128455198,
+                0.0002431856018934623,
+                -0.005757338398060537
+              ],
+              "outward_normal_mm_per_positive_001rad": -0.014640209775628873
+            },
+            "left_index_DIP_joint": {
+              "delta_mm_per_positive_001rad": [
+                -0.025295812836393903,
+                0.0017500129497971884,
+                0.001330722091604638
+              ],
+              "outward_normal_mm_per_positive_001rad": -0.005450141054732361
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source_sha256": {
+    "kinematics.py": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212",
+    "tilt_audit.py": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995",
+    "palm_handover_audit.py": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1"
+  },
+  "first_q_divergence_step": 3232,
+  "candidate": {
+    "joint": "left_index_MPR_joint",
+    "additional_offset_from_current_applied_target_rad": [
+      -0.003,
+      0.0
+    ],
+    "step_rad": 5e-05,
+    "impulse_bounds_Ns": [
+      0.0005,
+      0.002
+    ],
+    "direction": "decrease MPR when underloaded, increase toward current baseline when overloaded",
+    "boundary": "old normal departure is a local point approximation, not exact convex-mesh gap; force and turn success require a new complete PhysX episode; combined ring/index feedback requires separate coupled envelope validation"
+  }
+}

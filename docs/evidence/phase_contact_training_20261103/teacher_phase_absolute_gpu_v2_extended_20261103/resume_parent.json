@@ -1,0 +1,32 @@
+{
+  "parent_run": "teacher_phase_absolute_gpu_v2_20261103",
+  "parent_last_sha256": "fce06cd2d9d90f9cf96ddd157d76ffc49b2c9d56893426c08bd1d31fc58749f2",
+  "reason": "v2 reached update budget with best at 19300/20000; continue same optimizer until plateau or 60000, separate run and preserved parent",
+  "command": [
+    "/home/brainco/rl_cube/.conda/rl_cube_6_2/bin/python3",
+    "train_phase_absolute_v2.py",
+    "--source",
+    "runs/center_j56_dev_v3_20261103",
+    "--source",
+    "runs/teacher_joint_soft_fingers_v11_20261103",
+    "--source",
+    "runs/teacher_joint_passive_damping_v12_20261103",
+    "--source",
+    "runs/teacher_joint_paced_passive_v13_20261103",
+    "--output",
+    "runs/teacher_phase_absolute_gpu_v2_extended_20261103",
+    "--updates",
+    "60000",
+    "--batch",
+    "2048",
+    "--width",
+    "512",
+    "--seed",
+    "20261104",
+    "--patience",
+    "30",
+    "--resume",
+    "--device",
+    "cuda"
+  ]
+}

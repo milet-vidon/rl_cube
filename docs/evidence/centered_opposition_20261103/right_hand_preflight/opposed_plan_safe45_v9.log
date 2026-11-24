@@ -1,0 +1,5 @@
+CLOSED_CANDIDATE [0.0, 0.003, -0.004]
+SEARCH 15 checks 1102 seconds 49.32079506899754
+SEARCH 0 checks 2850 seconds 79.38391548101208
+REJECT {'offset': [0.0, 0.003, -0.004], 'failure': "right_close step 61: ('right_middle_DIP_link', 'right_ring_DIP_link', 0.002920061401502997)"}
+OPPOSITION_PLAN False

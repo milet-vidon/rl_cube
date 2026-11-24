@@ -1,0 +1,37 @@
+{
+  "schema": "finite_native_pose_probe_independent_host_review_20261104",
+  "status": "PASS_for_isolated_reset_pose_probe_no_runtime_success_claim",
+  "source_sha256": {
+    "finite_angle_cube_native_probe.py": "fc2c49a3464228d8ad2c0d8fb96c123ea1776b297c55a9a959fb0289d0faa870",
+    "finite_cube_pose_math.py": "1527f6c7e29e28e8264e12c65aed5ef2d4c82330a370f709359157094ce73940",
+    "test_finite_cube_pose_math.py": "282a7e8963e065a9b4fed748fe791eae60a2247102005564f0fcfcdff3fc2724",
+    "passive_cube_articulation.py": "949c3ede71c6ac4cd32b359b08ab110c72c354888d32541136aa2330edce980c",
+    "cube_articulation_probe_v2.py": "bea19566ff4071dd26882f578703995ed7a74856f3218507fe9b3df8bee77881"
+  },
+  "host_tests_passed": 6,
+  "python_compile_passed": true,
+  "simulator_started": false,
+  "blocking_findings": [],
+  "confirmed": [
+    "Paired ordinary-body baseline and passive-articulation candidate use sequential subprocesses; candidate is never started until baseline process exits successfully",
+    "Source USD/MJCF and implementation hashes are recorded and unchanged checks remain mandatory",
+    "Facade independently reads actual backend mass/inertia/fullCOM, free-base27links/66angularDOFs and passive parameters against fresh ordinary baseline",
+    "Each scalar native coordinate is calibrated using one epsilon=.001 reset-only perturbation; stale FK and non-cardinal/wrong-gain responses fail explicitly",
+    "One-face90/180 assignment uses measured DOF mapping/sign and checks actual FK relative quaternions and COM marker permutation for all bodies",
+    "Cubelet centers use baseline local COM transformed by actor pose, never coincident actor origins",
+    "All initialization state writes are closed before the first physics step; no drive targets or active actuation are applied during stepping",
+    "Freefall checks mass-weighted COM displacement/velocity; finite pose stability checks relative orientation/markers/angular velocity",
+    "Failed calibration saves actual native coordinate readback and relative quaternions before throwing"
+  ],
+  "limitations": [
+    "Six host tests validate math and refusal paths, not installed native FK or finite-angle physics",
+    "Resetting an already-turned state is not continuous contact-driven face rotation and cannot qualify robot-turn/teacher/formula/vision success",
+    "The freefall probe may observe zero contact events; no-error callback execution alone is not contact-dynamics evidence",
+    "Explicit solver64/4 and native passive articulation are a separate physics domain from the ordinary-body left-policy data"
+  ],
+  "nonblocking_observations": [
+    "Relative actor-origin separation is recorded diagnostically; orientation and COM marker geometry provide actual finite-pose acceptance",
+    "Immediate FK after write+update(0) must be verified by the real run; code deliberately fails rather than inserting an unlogged physics step"
+  ],
+  "recommendation": "Root may schedule the isolated paired90deg probe only in the unique Isaac slot; preserve failures and do not infer learned or contact-driven turn capability."
+}

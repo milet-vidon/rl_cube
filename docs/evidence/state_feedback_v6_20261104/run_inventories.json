@@ -1,0 +1,679 @@
+{
+  "schema": "complete_original_runs_inventory_v1",
+  "runs": [
+    {
+      "run": "revotron_cube_rl/runs/teacher_phase_gated_residual_v6_20261104",
+      "file_count": 5,
+      "files": [
+        {
+          "path": "inspection.json",
+          "bytes": 13032,
+          "sha256": "b045ce01966c469ae90eea43018c3a46196e07670950b68aa438775bc84a9e68"
+        },
+        {
+          "path": "model.pt",
+          "bytes": 630922,
+          "sha256": "523e7163d90da38ace84eb07597ccc0274a5ced14f2ae74d05ddb6dbc30eff04"
+        },
+        {
+          "path": "qualification.json",
+          "bytes": 63027,
+          "sha256": "5cdd1214aa7fd295e9851d2ffeaee4fca28838c8b3b989bbce499cf303fac117"
+        },
+        {
+          "path": "result.json",
+          "bytes": 3461,
+          "sha256": "96835c57dddce703d860f1d5b8033cfbf999f84774622dd2fa18fef60bb3ea66"
+        },
+        {
+          "path": "training.jsonl",
+          "bytes": 5156558,
+          "sha256": "365ff8e615b13012bb160829505d01d6084ef341f9451d32f673c61b765e6290"
+        }
+      ]
+    },
+    {
+      "run": "revotron_cube_rl/runs/teacher_phase_gated_residual_v6_long_20261104",
+      "file_count": 5,
+      "files": [
+        {
+          "path": "inspection.json",
+          "bytes": 13032,
+          "sha256": "b045ce01966c469ae90eea43018c3a46196e07670950b68aa438775bc84a9e68"
+        },
+        {
+          "path": "model.pt",
+          "bytes": 630922,
+          "sha256": "0bedb191b59e302abc7a273c6c0071c0400d3687bc5d893ad0a84c566de02d48"
+        },
+        {
+          "path": "qualification.json",
+          "bytes": 63027,
+          "sha256": "5cdd1214aa7fd295e9851d2ffeaee4fca28838c8b3b989bbce499cf303fac117"
+        },
+        {
+          "path": "result.json",
+          "bytes": 3461,
+          "sha256": "858a219ff5c38b66483802f2b277570c4ca1007ed33d62e4588532c5fbfc5169"
+        },
+        {
+          "path": "training.jsonl",
+          "bytes": 25784901,
+          "sha256": "3e8568aa2c6c342643612393defbe9bbab904bac636097a25b0526aa30e64a9c"
+        }
+      ]
+    },
+    {
+      "run": "revotron_cube_rl/runs/left_phase_gated_residual_v6_eval_9501_20261104",
+      "file_count": 60,
+      "files": [
+        {
+          "path": "artifact_manifest.json",
+          "bytes": 1384,
+          "sha256": "d08a6bacf5d2a242489c062c3a77ae44e3c1dc190d0a98088323808a76f585f5"
+        },
+        {
+          "path": "asset_contract.json",
+          "bytes": 7411,
+          "sha256": "3367c3d471d25bb668b2f67fb9eca3ba34a28328b967ffbb63aef39cf1a365c7"
+        },
+        {
+          "path": "checkpoints/evaluated_policy.pt",
+          "bytes": 630922,
+          "sha256": "523e7163d90da38ace84eb07597ccc0274a5ced14f2ae74d05ddb6dbc30eff04"
+        },
+        {
+          "path": "checkpoints/frozen_v4_baseline.pt",
+          "bytes": 752269,
+          "sha256": "d2493b00df27b8d84ae69da3b399b3beb926b77fdd87a9b51aa6a2b1b23a36a4"
+        },
+        {
+          "path": "config.json",
+          "bytes": 7374,
+          "sha256": "d3c6084f638ed96ea299dbf76c386537051d3857c61675ddfc4abd5e9d925ae1"
+        },
+        {
+          "path": "dynamic_training_scene.usda",
+          "bytes": 135558,
+          "sha256": "ff16e3e8af8e8e2e0c0f7ff240a2b2f1d688a9c1b3560ff2230033742096c6f8"
+        },
+        {
+          "path": "evaluation_preflight.json",
+          "bytes": 5960,
+          "sha256": "d9b041d940db897ca859aff55690e23413e9e53e79af9c44f66d3515775f5606"
+        },
+        {
+          "path": "evaluation_protocol.json",
+          "bytes": 6264,
+          "sha256": "fb6a67bfb4ce7faabbd7d6f96d562c8f4e8a95f8d0bb7e3ac9128594b1e510c6"
+        },
+        {
+          "path": "evaluation_source_snapshot/dagger_residual_dataset_v5.py",
+          "bytes": 16530,
+          "sha256": "69c1cef251a4180f9839a2fc27ecbb738ce6f87828d5a9bc513a19aa40621cb1"
+        },
+        {
+          "path": "evaluation_source_snapshot/eval_prefix_dataset_v6.py",
+          "bytes": 23517,
+          "sha256": "7dfc8f417daeb6916054a96cb5112d78295057d85fb2f43df4d76a267587f0bf"
+        },
+        {
+          "path": "evaluation_source_snapshot/evaluate_state_residual_v6.py",
+          "bytes": 10325,
+          "sha256": "42cdd329dcdf9d5634c294d0336e8b79761e4588168936f1a4e6b84de234d8cb"
+        },
+        {
+          "path": "evaluation_source_snapshot/phase_gated_residual_policy_v6.py",
+          "bytes": 4790,
+          "sha256": "874d82a6ffff395868260f48530b6fa0cfd20111cd133b827ad4809ed4967063"
+        },
+        {
+          "path": "evaluation_source_snapshot/phase_residual_policy_v5.py",
+          "bytes": 8422,
+          "sha256": "5bb033710c18c21310b526d539251794a37efb31a2f139a68b052983c363f412"
+        },
+        {
+          "path": "evaluation_source_snapshot/state_residual_eval_runtime_v6.py",
+          "bytes": 15712,
+          "sha256": "06d3ed5aaf99bea9e29898c1bc4d2e50b874533386aa0725103af77891b08094"
+        },
+        {
+          "path": "evaluation_source_snapshot/train_phase_gated_residual_v6.py",
+          "bytes": 18054,
+          "sha256": "0ca6cc266e1f4275411f70ea75800cdbf97bf7c604565d88b12afc30a753b5b3"
+        },
+        {
+          "path": "evaluation_source_snapshot/train_phase_residual_v5.py",
+          "bytes": 17887,
+          "sha256": "74cc6077ae7bb135260b9fc1f4c0c99765653af8dd243301563e61808a027a6d"
+        },
+        {
+          "path": "evaluation_transitions.jsonl",
+          "bytes": 46421501,
+          "sha256": "35f86bd19344759f92d6748b386288fcbba83cc7f8cba70b79e24cc625474891"
+        },
+        {
+          "path": "initial_state.json",
+          "bytes": 5091,
+          "sha256": "9a7c759eb84012d21924c47e2583e3bc60badaed2239608d026b6d95e785c5f3"
+        },
+        {
+          "path": "physics_identity.json",
+          "bytes": 568351,
+          "sha256": "537007f3847c6acf8285115214d223bec27c131c4c87ab6ccb67e0635a5e74ba"
+        },
+        {
+          "path": "plans/pickup_fc213888d36eed04e927d5fb24cfede3d575b645e384135b13313bf20ecef1e2.json",
+          "bytes": 770102,
+          "sha256": "fc213888d36eed04e927d5fb24cfede3d575b645e384135b13313bf20ecef1e2"
+        },
+        {
+          "path": "projection_parameters.json",
+          "bytes": 11558,
+          "sha256": "890108362592dd288cfb1c5bee8eb824645043ed7be0733ada40adf9cb67da66"
+        },
+        {
+          "path": "result.json",
+          "bytes": 8932,
+          "sha256": "57298ca5ab42fb7bb1a0b26d7e38cc099b6bfa1379d32b64fd1bff7c4a11562e"
+        },
+        {
+          "path": "reviewed_transition_qualification.json",
+          "bytes": 63027,
+          "sha256": "5cdd1214aa7fd295e9851d2ffeaee4fca28838c8b3b989bbce499cf303fac117"
+        },
+        {
+          "path": "runtime_protocol.json",
+          "bytes": 11877,
+          "sha256": "69833552d04b0c51ec7c3c44f1c3b3cd09da6ba24f35590a3e48127bfaaa37ac"
+        },
+        {
+          "path": "source_snapshot/articulated_cube_env.py",
+          "bytes": 5573,
+          "sha256": "dfad0023f9e2797d6ea8ea3ac08aa1b6889b7dbb4ff8398cd0ca11fa329bc707"
+        },
+        {
+          "path": "source_snapshot/collect_left_dagger_baseline_v3.py",
+          "bytes": 2254,
+          "sha256": "b87d0b1ac0c34e5b5c79678b068c9f55df5fa6baf0c5d0da5a231ff9976ea0e6"
+        },
+        {
+          "path": "source_snapshot/collect_left_dagger_draft_v1.py",
+          "bytes": 8365,
+          "sha256": "fc5dc17bc0f08a4fee1d468ed0b53dec6a6549083cbb7f86827dce96705ac6bf"
+        },
+        {
+          "path": "source_snapshot/config.json",
+          "bytes": 7670,
+          "sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4"
+        },
+        {
+          "path": "source_snapshot/dagger_collection_core_v1.py",
+          "bytes": 19875,
+          "sha256": "6d4b2a635f98b563c10388153e4116054eb03a383e898ae7c36d572c9b182411"
+        },
+        {
+          "path": "source_snapshot/dagger_projected_collection_v3.py",
+          "bytes": 8180,
+          "sha256": "268653ef77b2b500d5299ebb377a6311f98ed9d5199f0b345795b26a92669a33"
+        },
+        {
+          "path": "source_snapshot/dynamic_cube.py",
+          "bytes": 1848,
+          "sha256": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de"
+        },
+        {
+          "path": "source_snapshot/elbow_audit.py",
+          "bytes": 1906,
+          "sha256": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9"
+        },
+        {
+          "path": "source_snapshot/elbow_gate.py",
+          "bytes": 3947,
+          "sha256": "6473a2deec9034d4fa57079fe917d248c40db68f9768001456474bdc8eb6c526"
+        },
+        {
+          "path": "source_snapshot/elbow_handover.py",
+          "bytes": 4103,
+          "sha256": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e"
+        },
+        {
+          "path": "source_snapshot/environment.py",
+          "bytes": 20264,
+          "sha256": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7"
+        },
+        {
+          "path": "source_snapshot/finger_contact_audit.py",
+          "bytes": 2054,
+          "sha256": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0"
+        },
+        {
+          "path": "source_snapshot/isaac_compat.py",
+          "bytes": 3227,
+          "sha256": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825"
+        },
+        {
+          "path": "source_snapshot/joint_safety.py",
+          "bytes": 4195,
+          "sha256": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887"
+        },
+        {
+          "path": "source_snapshot/kinematics.py",
+          "bytes": 3543,
+          "sha256": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212"
+        },
+        {
+          "path": "source_snapshot/layer_turn_metrics.py",
+          "bytes": 2323,
+          "sha256": "c7fc5438c29c20632ad774c7f541d293e5f411ca8fff1454c830989536e1ccb4"
+        },
+        {
+          "path": "source_snapshot/left_contact_dagger_schema_v1.json",
+          "bytes": 4719,
+          "sha256": "164d991f6e05f34a6101d28ea764cfa8428ae5a2692f34ac151335345b2f8ce2"
+        },
+        {
+          "path": "source_snapshot/left_dagger_baseline_runtime_v3.py",
+          "bytes": 33572,
+          "sha256": "49af4b8a660c115a2f3d29826b25d1b5c176e24208dae692838b46398834a516"
+        },
+        {
+          "path": "source_snapshot/opposition_feedback.py",
+          "bytes": 2483,
+          "sha256": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883"
+        },
+        {
+          "path": "source_snapshot/opposition_grasp_v20.json",
+          "bytes": 6996,
+          "sha256": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a"
+        },
+        {
+          "path": "source_snapshot/opposition_teacher.py",
+          "bytes": 13679,
+          "sha256": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1"
+        },
+        {
+          "path": "source_snapshot/palm_contact_audit.py",
+          "bytes": 1379,
+          "sha256": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184"
+        },
+        {
+          "path": "source_snapshot/palm_handover.py",
+          "bytes": 6505,
+          "sha256": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f"
+        },
+        {
+          "path": "source_snapshot/palm_handover_audit.py",
+          "bytes": 4553,
+          "sha256": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1"
+        },
+        {
+          "path": "source_snapshot/phase_basis_policy_v4.py",
+          "bytes": 2358,
+          "sha256": "5d4dc98bf0dfc156dbcdd7fd9d3923f475573d03bc46df1e6c1d317625d8a327"
+        },
+        {
+          "path": "source_snapshot/phase_contact_policy.py",
+          "bytes": 5740,
+          "sha256": "5db8beb4f0dc86d4b6105669ee8da2fee93b319e2ba468a6c0c2c5b21dc94045"
+        },
+        {
+          "path": "source_snapshot/proximal_planner.py",
+          "bytes": 3030,
+          "sha256": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16"
+        },
+        {
+          "path": "source_snapshot/runtime_platform.py",
+          "bytes": 260,
+          "sha256": "c08829cde5986256dab4f5448edcecbf8932a3100ed7fab7dbdf0ad2f895772f"
+        },
+        {
+          "path": "source_snapshot/self_contact_audit.py",
+          "bytes": 1093,
+          "sha256": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c"
+        },
+        {
+          "path": "source_snapshot/tilt_audit.py",
+          "bytes": 5068,
+          "sha256": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995"
+        },
+        {
+          "path": "source_snapshot/tilt_collision_plan.py",
+          "bytes": 7133,
+          "sha256": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd"
+        },
+        {
+          "path": "source_snapshot/tilt_regrasp.py",
+          "bytes": 21716,
+          "sha256": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1"
+        },
+        {
+          "path": "source_snapshot/wrist_audit.py",
+          "bytes": 1467,
+          "sha256": "e0dcf531d4f9e74cce3293ff2f954486fd1277609a832becdcefbd4b4e36398f"
+        },
+        {
+          "path": "source_snapshot/wrist_direction.py",
+          "bytes": 4361,
+          "sha256": "0aa5858caf39dabbd92af4396370121de30dc673675a5c24f11ca8ff0c0c0ed5"
+        },
+        {
+          "path": "trajectory.json",
+          "bytes": 31854200,
+          "sha256": "bd4a76b4285b073a912059eaef7ae8a89db85cb95bafa9a66ae0ac2ef0a7265c"
+        },
+        {
+          "path": "trajectory.jsonl",
+          "bytes": 21639674,
+          "sha256": "38a415db6f118f9a48a5b4948cde645772e98eb1c1e6e27d408809da65954974"
+        }
+      ]
+    },
+    {
+      "run": "revotron_cube_rl/runs/left_phase_gated_residual_v6_long_eval_9501_20261104",
+      "file_count": 60,
+      "files": [
+        {
+          "path": "artifact_manifest.json",
+          "bytes": 1384,
+          "sha256": "f306eed599ff5a86adb253c06f0342d6e057331e506525dcb9b985352690e2fe"
+        },
+        {
+          "path": "asset_contract.json",
+          "bytes": 7411,
+          "sha256": "3367c3d471d25bb668b2f67fb9eca3ba34a28328b967ffbb63aef39cf1a365c7"
+        },
+        {
+          "path": "checkpoints/evaluated_policy.pt",
+          "bytes": 630922,
+          "sha256": "0bedb191b59e302abc7a273c6c0071c0400d3687bc5d893ad0a84c566de02d48"
+        },
+        {
+          "path": "checkpoints/frozen_v4_baseline.pt",
+          "bytes": 752269,
+          "sha256": "d2493b00df27b8d84ae69da3b399b3beb926b77fdd87a9b51aa6a2b1b23a36a4"
+        },
+        {
+          "path": "config.json",
+          "bytes": 7374,
+          "sha256": "d3c6084f638ed96ea299dbf76c386537051d3857c61675ddfc4abd5e9d925ae1"
+        },
+        {
+          "path": "dynamic_training_scene.usda",
+          "bytes": 135558,
+          "sha256": "ff16e3e8af8e8e2e0c0f7ff240a2b2f1d688a9c1b3560ff2230033742096c6f8"
+        },
+        {
+          "path": "evaluation_preflight.json",
+          "bytes": 5975,
+          "sha256": "dc83bc03821309706c42ddeb69a588888ab707a12a6f7ab927ef45aaa56af5a7"
+        },
+        {
+          "path": "evaluation_protocol.json",
+          "bytes": 6279,
+          "sha256": "e8b63585fe46d762d9b65b1d401fa9cb80c951286b93fc67e5bd6bde95421e2a"
+        },
+        {
+          "path": "evaluation_source_snapshot/dagger_residual_dataset_v5.py",
+          "bytes": 16530,
+          "sha256": "69c1cef251a4180f9839a2fc27ecbb738ce6f87828d5a9bc513a19aa40621cb1"
+        },
+        {
+          "path": "evaluation_source_snapshot/eval_prefix_dataset_v6.py",
+          "bytes": 23517,
+          "sha256": "7dfc8f417daeb6916054a96cb5112d78295057d85fb2f43df4d76a267587f0bf"
+        },
+        {
+          "path": "evaluation_source_snapshot/evaluate_state_residual_v6.py",
+          "bytes": 10325,
+          "sha256": "42cdd329dcdf9d5634c294d0336e8b79761e4588168936f1a4e6b84de234d8cb"
+        },
+        {
+          "path": "evaluation_source_snapshot/phase_gated_residual_policy_v6.py",
+          "bytes": 4790,
+          "sha256": "874d82a6ffff395868260f48530b6fa0cfd20111cd133b827ad4809ed4967063"
+        },
+        {
+          "path": "evaluation_source_snapshot/phase_residual_policy_v5.py",
+          "bytes": 8422,
+          "sha256": "5bb033710c18c21310b526d539251794a37efb31a2f139a68b052983c363f412"
+        },
+        {
+          "path": "evaluation_source_snapshot/state_residual_eval_runtime_v6.py",
+          "bytes": 15712,
+          "sha256": "06d3ed5aaf99bea9e29898c1bc4d2e50b874533386aa0725103af77891b08094"
+        },
+        {
+          "path": "evaluation_source_snapshot/train_phase_gated_residual_v6.py",
+          "bytes": 18054,
+          "sha256": "0ca6cc266e1f4275411f70ea75800cdbf97bf7c604565d88b12afc30a753b5b3"
+        },
+        {
+          "path": "evaluation_source_snapshot/train_phase_residual_v5.py",
+          "bytes": 17887,
+          "sha256": "74cc6077ae7bb135260b9fc1f4c0c99765653af8dd243301563e61808a027a6d"
+        },
+        {
+          "path": "evaluation_transitions.jsonl",
+          "bytes": 47099923,
+          "sha256": "9b4d42e00c7b4aedd886dfc95e1ad0a5fd471e4cf39beceef68f3f1694eb1435"
+        },
+        {
+          "path": "initial_state.json",
+          "bytes": 5091,
+          "sha256": "9a7c759eb84012d21924c47e2583e3bc60badaed2239608d026b6d95e785c5f3"
+        },
+        {
+          "path": "physics_identity.json",
+          "bytes": 568351,
+          "sha256": "537007f3847c6acf8285115214d223bec27c131c4c87ab6ccb67e0635a5e74ba"
+        },
+        {
+          "path": "plans/pickup_fc213888d36eed04e927d5fb24cfede3d575b645e384135b13313bf20ecef1e2.json",
+          "bytes": 770102,
+          "sha256": "fc213888d36eed04e927d5fb24cfede3d575b645e384135b13313bf20ecef1e2"
+        },
+        {
+          "path": "projection_parameters.json",
+          "bytes": 11558,
+          "sha256": "890108362592dd288cfb1c5bee8eb824645043ed7be0733ada40adf9cb67da66"
+        },
+        {
+          "path": "result.json",
+          "bytes": 8948,
+          "sha256": "d087a6ff3c00e0b1605567085636bb5d4f4d85c60280a5b46d2b9d50e29e70d5"
+        },
+        {
+          "path": "reviewed_transition_qualification.json",
+          "bytes": 63027,
+          "sha256": "5cdd1214aa7fd295e9851d2ffeaee4fca28838c8b3b989bbce499cf303fac117"
+        },
+        {
+          "path": "runtime_protocol.json",
+          "bytes": 11892,
+          "sha256": "3ea983aa4edde90d72929cf4bc4652be19ddefb29a82f3dc40688b8bfe710ef9"
+        },
+        {
+          "path": "source_snapshot/articulated_cube_env.py",
+          "bytes": 5573,
+          "sha256": "dfad0023f9e2797d6ea8ea3ac08aa1b6889b7dbb4ff8398cd0ca11fa329bc707"
+        },
+        {
+          "path": "source_snapshot/collect_left_dagger_baseline_v3.py",
+          "bytes": 2254,
+          "sha256": "b87d0b1ac0c34e5b5c79678b068c9f55df5fa6baf0c5d0da5a231ff9976ea0e6"
+        },
+        {
+          "path": "source_snapshot/collect_left_dagger_draft_v1.py",
+          "bytes": 8365,
+          "sha256": "fc5dc17bc0f08a4fee1d468ed0b53dec6a6549083cbb7f86827dce96705ac6bf"
+        },
+        {
+          "path": "source_snapshot/config.json",
+          "bytes": 7670,
+          "sha256": "bd10695e715f3af5b24767bbd096b38d7bd577e997297fa2a12f642fc1e4d4a4"
+        },
+        {
+          "path": "source_snapshot/dagger_collection_core_v1.py",
+          "bytes": 19875,
+          "sha256": "6d4b2a635f98b563c10388153e4116054eb03a383e898ae7c36d572c9b182411"
+        },
+        {
+          "path": "source_snapshot/dagger_projected_collection_v3.py",
+          "bytes": 8180,
+          "sha256": "268653ef77b2b500d5299ebb377a6311f98ed9d5199f0b345795b26a92669a33"
+        },
+        {
+          "path": "source_snapshot/dynamic_cube.py",
+          "bytes": 1848,
+          "sha256": "7e24ecef9ea6b5175d2dfc6ba056e85cadafcd997dc70208ae47b59134a861de"
+        },
+        {
+          "path": "source_snapshot/elbow_audit.py",
+          "bytes": 1906,
+          "sha256": "f0f12fe0225846d9c628a8406cce2e27a695e764d04c4f0364f5fb9728a8aef9"
+        },
+        {
+          "path": "source_snapshot/elbow_gate.py",
+          "bytes": 3947,
+          "sha256": "6473a2deec9034d4fa57079fe917d248c40db68f9768001456474bdc8eb6c526"
+        },
+        {
+          "path": "source_snapshot/elbow_handover.py",
+          "bytes": 4103,
+          "sha256": "0897811e1639f67bc9e05715e9a37583e79aa8102b5306529f78139612b51c5e"
+        },
+        {
+          "path": "source_snapshot/environment.py",
+          "bytes": 20264,
+          "sha256": "f42d386e0543df01183831ee10a90be5eab8f04e56472f7a060837bb61479bd7"
+        },
+        {
+          "path": "source_snapshot/finger_contact_audit.py",
+          "bytes": 2054,
+          "sha256": "1a9c2bf565540bf88c1abc323d414fb7b627cfa36c4435b53fc034b1b06bc0e0"
+        },
+        {
+          "path": "source_snapshot/isaac_compat.py",
+          "bytes": 3227,
+          "sha256": "529324b9691ef6d6f001baba0a8487a33f28f6c76556859b9b8a1577e6d73825"
+        },
+        {
+          "path": "source_snapshot/joint_safety.py",
+          "bytes": 4195,
+          "sha256": "3ee5de1ee996f30946e78fbf2f1b5e38239132c7094cf0df64a76e446db58887"
+        },
+        {
+          "path": "source_snapshot/kinematics.py",
+          "bytes": 3543,
+          "sha256": "fd167d5f6c66d2a4383a2e9f2957e7b176f7ca650dd34c23fb5356d32b360212"
+        },
+        {
+          "path": "source_snapshot/layer_turn_metrics.py",
+          "bytes": 2323,
+          "sha256": "c7fc5438c29c20632ad774c7f541d293e5f411ca8fff1454c830989536e1ccb4"
+        },
+        {
+          "path": "source_snapshot/left_contact_dagger_schema_v1.json",
+          "bytes": 4719,
+          "sha256": "164d991f6e05f34a6101d28ea764cfa8428ae5a2692f34ac151335345b2f8ce2"
+        },
+        {
+          "path": "source_snapshot/left_dagger_baseline_runtime_v3.py",
+          "bytes": 33572,
+          "sha256": "49af4b8a660c115a2f3d29826b25d1b5c176e24208dae692838b46398834a516"
+        },
+        {
+          "path": "source_snapshot/opposition_feedback.py",
+          "bytes": 2483,
+          "sha256": "2fd43d43fc412313ee38edca774b76eee24fa768963ce5ee1a69fda58080d883"
+        },
+        {
+          "path": "source_snapshot/opposition_grasp_v20.json",
+          "bytes": 6996,
+          "sha256": "77f69b76900df2845cd5da7d465f1a8fc3641ee929533a14a2458bd8c81af29a"
+        },
+        {
+          "path": "source_snapshot/opposition_teacher.py",
+          "bytes": 13679,
+          "sha256": "a9fcfbdf084b7a34fbc2c0ef9b6e6134df0f517d4d68f8742138a3300b3a79f1"
+        },
+        {
+          "path": "source_snapshot/palm_contact_audit.py",
+          "bytes": 1379,
+          "sha256": "b18b10132a133403ac1b51d77c66365464af57ca20da5f92458a4421bd873184"
+        },
+        {
+          "path": "source_snapshot/palm_handover.py",
+          "bytes": 6505,
+          "sha256": "f56a1f2863f0561f173401c20e85b425d4bf9eaf06357e30b618cb0b093d1b8f"
+        },
+        {
+          "path": "source_snapshot/palm_handover_audit.py",
+          "bytes": 4553,
+          "sha256": "c6ecb269e77886d0d91eb221409344df1661bba92b4b456bd38e854a4a7dd6d1"
+        },
+        {
+          "path": "source_snapshot/phase_basis_policy_v4.py",
+          "bytes": 2358,
+          "sha256": "5d4dc98bf0dfc156dbcdd7fd9d3923f475573d03bc46df1e6c1d317625d8a327"
+        },
+        {
+          "path": "source_snapshot/phase_contact_policy.py",
+          "bytes": 5740,
+          "sha256": "5db8beb4f0dc86d4b6105669ee8da2fee93b319e2ba468a6c0c2c5b21dc94045"
+        },
+        {
+          "path": "source_snapshot/proximal_planner.py",
+          "bytes": 3030,
+          "sha256": "bf9cbaae50a789fc6ccdc4027142063edfdc0ea16bb9a4364c564e8de951bf16"
+        },
+        {
+          "path": "source_snapshot/runtime_platform.py",
+          "bytes": 260,
+          "sha256": "c08829cde5986256dab4f5448edcecbf8932a3100ed7fab7dbdf0ad2f895772f"
+        },
+        {
+          "path": "source_snapshot/self_contact_audit.py",
+          "bytes": 1093,
+          "sha256": "931b7875a27db1412ca25e562f3d3dd8964770f8e8f05f339ab27ff302a4339c"
+        },
+        {
+          "path": "source_snapshot/tilt_audit.py",
+          "bytes": 5068,
+          "sha256": "ca9f4d68555ecfaf9bb1d6acdbc0fd3a45c3e565844b874624e3e1df8b934995"
+        },
+        {
+          "path": "source_snapshot/tilt_collision_plan.py",
+          "bytes": 7133,
+          "sha256": "900a0148267b7bf043d7188af0283dd55e9c049915f7a3e8d539f74994887bbd"
+        },
+        {
+          "path": "source_snapshot/tilt_regrasp.py",
+          "bytes": 21716,
+          "sha256": "8061917aa74b94f7fa753b213a6b9601448a5a35f2c13d147be7a5388225bdc1"
+        },
+        {
+          "path": "source_snapshot/wrist_audit.py",
+          "bytes": 1467,
+          "sha256": "e0dcf531d4f9e74cce3293ff2f954486fd1277609a832becdcefbd4b4e36398f"
+        },
+        {
+          "path": "source_snapshot/wrist_direction.py",
+          "bytes": 4361,
+          "sha256": "0aa5858caf39dabbd92af4396370121de30dc673675a5c24f11ca8ff0c0c0ed5"
+        },
+        {
+          "path": "trajectory.json",
+          "bytes": 32371580,
+          "sha256": "258f279454c694d3b37e29ad7b3b3637cb10c7036fdc3c8b73390f8eb7c1f07a"
+        },
+        {
+          "path": "trajectory.jsonl",
+          "bytes": 21981400,
+          "sha256": "d9fb8b28652d7afe260f2ec6ea80c35b37cd3e8f549c7b7ea7fc01e1e463cc39"
+        }
+      ]
+    }
+  ]
+}

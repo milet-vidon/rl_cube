@@ -1,0 +1,26 @@
+{
+  "pid": 1144469,
+  "command": [
+    "/home/brainco/rl_cube/.conda/rl_cube_6_2/bin/python",
+    "collect_left_dagger_baseline_v3.py",
+    "--source",
+    "runs/center_j56_dev_v3_20261103",
+    "--checkpoint",
+    "runs/teacher_phase_basis_gpu_v4_fullframe_20261104/best.pt",
+    "--output",
+    "runs/left_dagger_baseline_mixture_v3_9501_20261104",
+    "--seed",
+    "9501",
+    "--teacher-probability",
+    ".8",
+    "--max-steps",
+    "2000"
+  ],
+  "started_unix": 1793724451.2566774,
+  "input_sha256": {
+    "left_dagger_baseline_runtime_v3.py": "49af4b8a660c115a2f3d29826b25d1b5c176e24208dae692838b46398834a516",
+    "collect_left_dagger_baseline_v3.py": "b87d0b1ac0c34e5b5c79678b068c9f55df5fa6baf0c5d0da5a231ff9976ea0e6",
+    "dagger_projected_collection_v3.py": "268653ef77b2b500d5299ebb377a6311f98ed9d5199f0b345795b26a92669a33"
+  },
+  "scope": "development_dagger_teacher_student_mixture_not_pure_student"
+}

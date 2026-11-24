@@ -1,0 +1,128 @@
+{
+  "scope": "privileged_simulator_state_policy_pickup_through_tilt_hold_only",
+  "steps": 1647,
+  "teacher_interventions": 1647,
+  "original_wrist_gate_qualified": true,
+  "pure_student_episode_claim": false,
+  "center_oracle_implemented": false,
+  "runtime_bridge_validated": false,
+  "physics_identity_sha256": "b2f9feb645c8d92e2da3bb78653165292a5649e59864dee4b1de82e904854192",
+  "kind": "preserve_original_teacher_diagnostic_not_training_episode",
+  "seed": 9501,
+  "eligible_training_episode": false,
+  "failure": null,
+  "original_grasp_gate": {
+    "teacher_accepted": true,
+    "measured": {
+      "accepted": true,
+      "scope": "whole_cube_tilt_only",
+      "full_episode": true,
+      "failures": [],
+      "final_tilt_error_deg": 0.6307259968960369,
+      "longest_measured_hold_seconds": 3.1333333333333333,
+      "contact_coverage_in_qualifying_window": {
+        "left": {
+          "thumb": 1.0,
+          "index": 1.0,
+          "middle": 1.0,
+          "ring": 1.0,
+          "little": 1.0
+        }
+      },
+      "maximum_lift_m": 0.3687085475921631,
+      "final_lift_m": 0.36801057720184327,
+      "cube_returned_to_table_after_lift": false,
+      "robot_table_impulse_sum_Ns": 0.0,
+      "self_contact_impulse_sum_Ns": 0,
+      "semantic_task": "left_palm_toward_right_hand_uncrossed_opposition_handover",
+      "longest_palm_facing_hold_seconds": 3.033333333333333,
+      "final_hand_geometry": {
+        "left_palm_position_root": [
+          0.40504735771305145,
+          0.34387169537400003,
+          0.127785452271022
+        ],
+        "right_palm_position_root": [
+          0.3166191782612503,
+          -0.22905415673908433,
+          -0.1261228131017691
+        ],
+        "left_palm_normal_world": [
+          0.21470628317360776,
+          -0.8114724711751773,
+          0.5435196781080015
+        ],
+        "right_palm_normal_world": [
+          -0.047758001661820065,
+          0.9988562295552149,
+          -0.002325071183986263
+        ],
+        "left_facing_right_cos": 0.48654549569911093,
+        "right_facing_left_cos": 0.8966312121267213,
+        "palm_normal_dot": -0.8220619979159972,
+        "wrist_y_separation_m": 0.5729258521130843,
+        "elbow_y_separation_m": 0.8045623600482941,
+        "left_wrist_from_cube_y_m": 0.056547207211005646,
+        "right_wrist_from_cube_y_m": 0.5163786449020787
+      }
+    },
+    "wrist": {
+      "accepted": true,
+      "longest_jointly_qualified_hold_s": 3.033333333333333,
+      "final_elbow": {
+        "shoulder_root_m": [
+          0.0217143502086401,
+          0.2500000298023224,
+          0.24004087448120126
+        ],
+        "elbow_root_m": [
+          0.03257523477077484,
+          0.4294266998767853,
+          0.015583252906799405
+        ],
+        "wrist_root_m": [
+          0.30070000886917114,
+          0.3275240957736969,
+          0.14459881782531747
+        ],
+        "outward_from_shoulder_m": 0.1794266700744629,
+        "upper_arm_outward_deg": 38.63810007066925,
+        "outward_from_shoulder_wrist_axis_m": 0.14743144160549182
+      },
+      "final": {
+        "joint6_deg": 11.881920023559243,
+        "side_bend_deg": -15.081216461760434,
+        "flexion_deg": 42.982934646959876,
+        "forearm_direction_palm_frame": [
+          0.6689071770330204,
+          -0.19340967841997272,
+          0.7177436065944428
+        ],
+        "wrist_inside_elbow_m": 0.10190260410308838
+      },
+      "scope": "J6_side_bend_reversed_with_unchanged_palm_orientation",
+      "failures": []
+    },
+    "assembled_hold_s": 3.1333333333333333,
+    "qualified": true
+  },
+  "last_environment_termination": {
+    "raw_done": false,
+    "raw_truncated": null,
+    "api_return_arity": 4,
+    "derived_timeout_truncated": false,
+    "derived_drop_terminated": false,
+    "generic_pickup_success": false,
+    "done_causes": [],
+    "unknown_done_cause": false,
+    "done_matches_original_causes": true,
+    "sampling_terminal": false,
+    "contract": "preserve_diagnostic_v1_stops_on_every_original_done_not_a_training_episode"
+  },
+  "max_reference_target_error_rad": 0.0,
+  "max_reference_q_error_rad": 0.0,
+  "max_reference_cube_position_error_m": 0.0,
+  "cube_pose_writes_during_control": 0,
+  "maximum_lift_m": 0.3687085475921631,
+  "elapsed_s": 409.0766833209782
+}

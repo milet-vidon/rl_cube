@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>双指转层示范 · CubeLab</title>
+<style>
+:root{color-scheme:dark;--panel:#18232d;--border:#34424e;--muted:#b0bec9;--txt:#eff5f5;--aqua:#8ceadd}
+*{box-sizing:border-box}body{margin:0;background:#10191f;color:var(--txt);font:15px/1.6 "Inter","Noto Sans CJK SC",sans-serif}main{margin:auto;max-width:1500px;padding:clamp(14px,2vw,34px)}header,.bar,.toolbar,.legend,.row,.foot,.actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}header{justify-content:space-between;margin-bottom:16px}h1,h2,p{margin:0}h1{font-size:clamp(22px,2.4vw,34px);font-weight:650;letter-spacing:-.04em}h2{font-size:17px}small,.hint{color:var(--muted);font-size:13px}.bar{color:var(--muted)}#phase{color:var(--aqua)}.workspace{display:grid;grid-template-columns:minmax(300px,1.9fr) minmax(310px,1fr);gap:16px;align-items:start}
+.panel{border:1px solid var(--border);background:var(--panel);border-radius:13px;overflow:hidden}.toolbar{padding:12px 16px;justify-content:space-between}.actions{gap:5px}button{color:var(--txt);font:inherit;background:#253440;border:1px solid #435261;border-radius:6px;cursor:pointer;line-height:1.15;padding:7px 10px;min-height:34px}button:hover:enabled{background:#334653;border-color:#839aab}button:focus-visible{outline:2px solid var(--aqua);outline-offset:2px}button:disabled{opacity:.36;cursor:default}button[aria-pressed=true]{background:#23443f;color:#b0fff5;border-color:#5db4a3}#view{background:#111e27;width:100%;height:clamp(360px,52vh,660px);display:block;cursor:grab;touch-action:none}#view:active{cursor:grabbing}.legend{padding:9px 15px;font-size:12px;color:#c9d6db}.legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px}.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));border-top:1px solid var(--border)}.metrics div{padding:12px 14px}.metrics b{display:block;font:600 clamp(16px,1.6vw,22px)/1.4 "IBM Plex Mono",monospace;color:white}.metrics span{font-size:12px;color:var(--muted)}.controls{padding:15px 17px}.controls h2{margin-bottom:4px}.section{margin-top:14px;padding-top:12px;border-top:1px solid var(--border)}.section .row{justify-content:space-between;gap:8px;margin-top:7px}.sub{font-size:14px;font-weight:600}.row .sub{min-width:4.5em}.row .actions button{min-width:42px}.foot{padding-top:15px;justify-content:space-between}#finish{border-color:#5ba594;background:#205749;color:#e3fff9}.message{min-height:24px;overflow-wrap:anywhere;margin-top:10px;color:#e0eced}.note{padding:0 15px 11px}.mono{font:14px "IBM Plex Mono",monospace}.controls label{font-size:14px}
+@media(max-width:820px){.workspace{grid-template-columns:1fr}.metrics div{padding:8px}.metrics b{font-size:17px}#view{height:42vh;min-height:285px}}
+</style></head>
+<body><main><header><div><h1 id="title">双指转层示范</h1><p class="hint" id="intro">左手支撑魔方，操控右腕、拇指与食指推动目标层。</p></div><div class="bar"><strong id="phase">连接中</strong><span class="mono" id="step"></span></div></header>
+<div class="workspace"><section class="panel" aria-label="实测姿态"><div class="toolbar"><h2>实测姿态</h2><div class="actions" id="views"><button data-view="hands" aria-pressed="true">手部</button><button data-view="robot">全臂</button><button data-view="face">目标面</button><button data-view="side">侧视</button></div></div>
+<canvas id="view" aria-label="双臂手部骨架和 90 毫米魔方各块的实测姿态"></canvas>
+<div class="legend"><span><i style="background:#89a6fa"></i>左手支撑</span><span><i style="background:#5edcd6"></i>右食指</span><span><i style="background:#fa96b2"></i>右拇指</span><span><i style="background:#ffd26e"></i>nZ 目标层</span></div><p class="hint note">拖动旋转视角，滚轮缩放。线段显示关节骨架，色块按实测位姿绘制。</p>
+<div class="metrics"><div><span>nZ 单层转角</span><b id="angle">—</b></div><div><span>拇指冲量 · N·s</span><b id="thumb">—</b></div><div><span>食指冲量 · N·s</span><b id="index">—</b></div><div><span>其他接触 · N·s</span><b id="other">—</b></div><div><span>双指同触 nZ · 子步</span><b id="both">—</b></div></div></section>
+<section class="panel controls"><h2>手动控制</h2><p class="hint">每次点击推进所选周期数，随后物理暂停，等待下一步。</p>
+<div class="section"><div class="row"><span class="sub">步进周期</span><div class="actions" id="ticks"><button data-ticks="1" aria-pressed="true">1</button><button data-ticks="5">5</button><button data-ticks="15">15</button></div></div></div>
+<div class="section"><strong class="sub">右腕 · 机器人基座坐标</strong><p class="hint">每周期平移最多 1 mm，绕掌心转动最多 0.5°。</p><div id="wrist"></div></div>
+<div class="section"><strong class="sub">右腕 · 魔方坐标</strong><p class="hint">保持手指姿势，右腕每周期绕 nZ 目标面中心轴移动 0.5°。观察实测转角确认目标层是否跟转。</p><div id="faceOrbit"></div></div>
+<div class="section"><strong class="sub">右手 · 每周期最多 1°</strong><div id="digits"></div></div>
+<div class="foot"><button id="hold" disabled>保持并步进</button><button id="finish" disabled>保存并结束</button></div>
+<p class="message" id="message" role="status"></p></section></div></main>
+<script>
+'use strict';
+const $=id=>document.getElementById(id);
+const phaseText={starting:'等待仿真',pickup:'自动抓取中',prepare:'准备交接',manual:'已暂停 · 可操作',stepping:'执行中',replay:'已录物理数据',finished:'已结束',failed:'已中止'};
+let latest=null, connected=false, sending=false, submitted='', ticks=1;
+const controls=[];
+function actionButton(parent,text,factory,label){
+ const b=document.createElement('button'); b.textContent=text;b.disabled=true;b.setAttribute('aria-label',label);
+ b.onclick=()=>send(factory());parent.append(b);controls.push(b)
+}
+function resetAction(){return {move:[0,0,0],rotate:[0,0,0],orbit:0,thumb:0,index:0,opposition:0,ticks}}
+function row(host,label,fields){
+ const r=document.createElement('div');r.className='row';const s=document.createElement('span');s.textContent=label;
+ const a=document.createElement('div');a.className='actions';r.append(s,a);host.append(r);
+ for(const [text,field,axis,value,full] of fields)actionButton(a,text,()=>{const v=resetAction();
+  if(Array.isArray(field)){for(const key of field)v[key]=value}else if(axis===null)v[field]=value;else v[field][axis]=value;return v},label+' '+full)
+}
+for(let i=0;i<3;i++){const axis='XYZ'[i];row($('wrist'),axis+' 轴',[
+ ['移 −','move',i,-1,axis+' 负向平移'],['移 +','move',i,1,axis+' 正向平移'],
+ ['转 −','rotate',i,-1,'绕 '+axis+' 负转'],['转 +','rotate',i,1,'绕 '+axis+' 正转']])}
+row($('faceOrbit'),'绕目标面轴',[['−','orbit',null,-1,'负转'],['+','orbit',null,1,'正转']]);
+for(const [name,field,minus,plus] of [['拇指对掌','opposition','回展','对掌'],['拇指屈伸','thumb','伸开','屈曲'],['食指屈伸','index','伸开','屈曲']])
+ row($('digits'),name,[[minus,field,null,-1,minus],[plus,field,null,1,plus]]);
+row($('digits'),'双指同步',[['一起伸开',['thumb','index'],null,-1,'伸开双指'],['一起屈曲',['thumb','index'],null,1,'屈曲双指']]);
+controls.push($('hold'),$('finish'));$('hold').onclick=()=>send(resetAction());$('finish').onclick=()=>send({finish:true});
+$('ticks').onclick=e=>{if(!e.target.dataset.ticks)return;ticks=Number(e.target.dataset.ticks);
+ for(const b of $('ticks').querySelectorAll('button'))b.setAttribute('aria-pressed',Number(b.dataset.ticks)===ticks)};
+document.addEventListener('keydown',e=>{if(e.repeat&&['Enter',' '].includes(e.key)&&e.target.tagName==='BUTTON')e.preventDefault()},true);
+const terminal=s=>s&&['finished','failed'].includes(s.phase);
+function sync(){
+ const s=latest;const key=s&&s.session+'/'+s.revision;
+ const allow=connected&&s&&s.phase==='manual'&&!sending&&key!==submitted;
+ controls.forEach(b=>b.disabled=!allow);
+ const replay=s?.phase==='replay';
+ for(const b of $('ticks').querySelectorAll('button'))b.disabled=replay;
+ $('title').textContent=replay?'示范回放':'双指转层示范';
+ $('intro').textContent=replay?'查看已录制的双手姿态、nZ 单层转角和双指目标层接触。':'左手支撑魔方，操控右腕、拇指与食指推动目标层。';
+ $('both').textContent=Number.isInteger(s?.thumb_index_same_substeps)?s.thumb_index_same_substeps+' / 8':'—';
+ $('phase').textContent=!connected&&!terminal(s)?'连接中断':(phaseText[s?.phase]||'连接中');
+ $('step').textContent=Number.isInteger(s?.step)?'STEP '+s.step:'';
+ for(const [id,name,precision] of [['angle','angle_deg',2],['index','index_Ns',5],['thumb','thumb_Ns',5],['other','other_Ns',5]]){
+  const v=s?.[name];$(id).textContent=Number.isFinite(v)?((id==='angle'&&v>0?'+':'')+v.toFixed(precision)+(id==='angle'?'°':'')):'—'}
+ let msg=s?.reason||'';
+ if(s?.phase==='finished')msg='示范已结束。'+(msg?msg+'。':'')+(s.summary_path||s.run_dir||s.output_dir||'保存位置见仿真终端。');
+ if(!connected&&!terminal(s))msg='等待重新连接。重连后以仿真当前状态为准。';
+ $('message').textContent=msg;draw()
+}
+async function send(action){
+ const s=latest,key=s?.session+'/'+s?.revision;if(!connected||!s||s.phase!=='manual'||sending||submitted===key)return;
+ sending=true;submitted=key;sync();
+ try{const r=await fetch('/action',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({session:s.session,revision:s.revision,action})});
+ if(!r.ok&&r.status!==409)throw Error('提交失败 '+r.status)}
+ catch(err){connected=false}
+ finally{sending=false;sync()}
+}
+async function poll(){
+ try{const r=await fetch('/state',{cache:'no-store'});if(!r.ok)throw Error(String(r.status));
+ const s=await r.json();latest=s;connected=true;
+ // A request lost before the server accepted it can be safely retried after a fresh state read.
+ if(!sending&&s.phase==='manual'&&submitted===s.session+'/'+s.revision)submitted='';
+ }catch(err){connected=false}sync();if(!terminal(latest))setTimeout(poll,250)
+}
+</script>
+<script>
+const canvas=$('view'), ctx=canvas.getContext('2d');
+const axis3=[[1,0,0],[0,1,0],[0,0,1]];
+const add=(a,b)=>a.map((x,i)=>x+b[i]), sub=(a,b)=>a.map((x,i)=>x-b[i]), mul=(a,s)=>a.map(x=>x*s);
+const dot=(a,b)=>a.reduce((v,x,i)=>v+x*b[i],0);
+const cross=(a,b)=>[a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]];
+function rotate(p,vec){const q=p.slice(3,6),t=mul(cross(q,vec),2);return add(vec,add(mul(t,p[6]),cross(q,t)))}
+const pos=p=>p.slice(0,3);
+let yaw=-.82,pitch=.35,zoom=1,selection='hands',whole=false,drag=null;
+function faceView(){const core=latest?.cube?.Core;if(!core)return;
+ const normal=rotate(core,[0,0,-1]);yaw=Math.atan2(normal[1],normal[0]);pitch=Math.asin(Math.min(1,Math.max(-1,normal[2])))}
+$('views').onclick=e=>{if(!e.target.dataset.view)return;
+ selection=e.target.dataset.view;whole=selection==='robot';zoom=1;
+ if(selection==='face')faceView();else if(selection==='side'){yaw=-Math.PI/2;pitch=0}else{yaw=-.82;pitch=.35}
+ for(const b of $('views').querySelectorAll('button'))b.setAttribute('aria-pressed',b.dataset.view===selection);
+ draw()
+};
+canvas.onpointerdown=e=>{if(e.button!==0)return;drag=[e.clientX,e.clientY];canvas.setPointerCapture(e.pointerId)};
+canvas.onpointermove=e=>{if(!drag)return;yaw-=(e.clientX-drag[0])*.01;pitch=Math.max(-1.55,Math.min(1.55,pitch+(e.clientY-drag[1])*.008));
+ drag=[e.clientX,e.clientY];draw()};
+canvas.onpointerup=canvas.onpointercancel=()=>{drag=null};
+canvas.addEventListener('wheel',e=>{e.preventDefault();zoom=Math.min(5,Math.max(.35,zoom*Math.exp(-e.deltaY*.001)));draw()},{passive:false});
+function draw(){
+ const W=canvas.clientWidth,H=canvas.clientHeight;if(!W||!H)return;
+ const d=Math.min(window.devicePixelRatio||1,2);if(canvas.width!==Math.round(W*d)||canvas.height!==Math.round(H*d)){canvas.width=Math.round(W*d);canvas.height=Math.round(H*d)}
+ ctx.setTransform(d,0,0,d,0,0);ctx.clearRect(0,0,W,H);
+ const s=latest,core=s?.cube?.Core;
+ if(!core){ctx.fillStyle='#afc2cc';ctx.font='14px sans-serif';ctx.textAlign='center';ctx.fillText('等待仿真发布第一帧实测位姿',W/2,H/2);return}
+ const bodies=s.bodies||{}, camera=[Math.cos(yaw)*Math.cos(pitch),Math.sin(yaw)*Math.cos(pitch),Math.sin(pitch)];
+ const right=[-Math.sin(yaw),Math.cos(yaw),0],up=cross(camera,right);
+ let center=pos(core),scale=zoom*Math.min(W,H)/.25;
+ if(whole){
+  const points=[center,...Object.entries(bodies).filter(([name])=>/^Link[1-7]_[LR]$|_palm_link$|_DIP_link$/.test(name)).map(([,p])=>pos(p))];
+  const box=points.map(p=>[dot(p,right),dot(p,up),dot(p,camera)]);
+  const lo=[0,1,2].map(i=>Math.min(...box.map(p=>p[i]))),hi=[0,1,2].map(i=>Math.max(...box.map(p=>p[i])));
+  const mid=mul(add(lo,hi),.5);center=add(add(mul(right,mid[0]),mul(up,mid[1])),mul(camera,mid[2]));
+  scale=zoom*Math.min(W/Math.max(.20,hi[0]-lo[0]+.12),H/Math.max(.20,hi[1]-lo[1]+.12))
+ }
+ function project(p){const v=sub(p,center);return [W*.5+dot(v,right)*scale,H*.5-dot(v,up)*scale,dot(v,camera)]}
+ const items=[],labels=[];
+ function segment(a,b,color,width){const A=project(a),B=project(b);
+  items.push({z:(A[2]+B[2])/2,draw(){ctx.beginPath();ctx.moveTo(A[0],A[1]);ctx.lineTo(B[0],B[1]);ctx.lineWidth=width;ctx.lineCap='round';ctx.strokeStyle=color;ctx.stroke()}})}
+ function joint(p,color,r){const A=project(p);items.push({z:A[2]+1e-5,draw(){ctx.beginPath();ctx.arc(A[0],A[1],r,0,Math.PI*2);ctx.fillStyle=color;ctx.fill()}})}
+ const stickers={pX:'#dd6457',nX:'#eea45f',pY:'#69ad80',nY:'#5987bd',pZ:'#e4e7dd',nZ:'#f1c153'};
+ for(const [name,pose] of Object.entries(s.cube)){if(name==='Core')continue;
+  // USD bodies share a pivot; the nominal 30 mm grid offset is in each piece's local frame.
+  const ids=name.split('_'),grid=[0,0,0];for(const token of ids){const i='XYZ'.indexOf(token[1]);if(i>=0)grid[i]=token[0]==='p'?.03:-.03}
+  for(let axis=0;axis<3;axis++){for(const sign of [-1,1]){
+   const localNormal=mul(axis3[axis],sign),normal=rotate(pose,localNormal);if(dot(normal,camera)<=0)continue;
+   const u=axis3[(axis+1)%3],v=axis3[(axis+2)%3],faceCenter=add(grid,mul(localNormal,.0147));
+   const pts=[[-1,-1],[1,-1],[1,1],[-1,1]].map(([a,b])=>project(add(pos(pose),rotate(pose,add(faceCenter,add(mul(u,.0145*a),mul(v,.0145*b)))))));
+   const key=(sign>0?'p':'n')+'XYZ'[axis],surface=ids.includes(key),target=ids.includes('nZ');
+   items.push({z:pts.reduce((a,b)=>a+b[2]/4,0),draw(){ctx.beginPath();ctx.moveTo(pts[0][0],pts[0][1]);for(const p of pts.slice(1))ctx.lineTo(p[0],p[1]);ctx.closePath();
+    ctx.fillStyle=surface?stickers[key]:'#34434d';ctx.fill();ctx.lineWidth=target?1.4:.8;ctx.strokeStyle=target?'#ffda72':'#19252d';ctx.stroke()}})
+  }}
+ }
+ for(const [side,tag] of [['left','L'],['right','R']]){
+  const palm=bodies[side+'_palm_link']||bodies[side+'_hand_base_link'];
+  const arm=Array.from({length:7},(_,i)=>bodies['Link'+(i+1)+'_'+tag]).concat([palm]).filter(Boolean);
+  const limbColor=side==='left'?'#8199cf':'#a8b8bf';
+  for(let i=1;i<arm.length;i++){segment(pos(arm[i-1]),pos(arm[i]),limbColor,whole?5:7);joint(pos(arm[i]),limbColor,3.5)}
+  for(const finger of ['middle','ring','little','thumb','index']){
+   const thumb=finger==='thumb',accent=side==='right'&&['thumb','index'].includes(finger);
+   const segments=thumb?['CMP','CMR','MCP','PIP','DIP']:['MPR','MCP','PIP','DIP'];
+   const stem=side+'_'+finger+'_';const chain=[palm,...segments.map(n=>bodies[stem+n+'_link']),bodies[stem+'tip_Link']||bodies[stem+'DIP_rubber_link']].filter(Boolean);
+   const color=accent?(thumb?'#fa96b2':'#5edcd6'):side==='left'?'#89a6fa':'#7b8f9b';
+   for(let i=1;i<chain.length;i++){segment(pos(chain[i-1]),pos(chain[i]),color,accent?3.8:2.2);joint(pos(chain[i]),color,accent?2.6:1.6)}
+   if(accent&&chain.length>1){const tip=project(pos(chain.at(-1)));if(tip[0]>=0&&tip[1]>=0&&tip[0]<W&&tip[1]<H)labels.push({tip,color,text:thumb?'右拇指':'右食指'})}
+  }
+ }
+ items.sort((a,b)=>a.z-b.z).forEach(o=>o.draw());
+ ctx.font='12px sans-serif';ctx.textAlign='left';
+ labels.sort((a,b)=>a.tip[1]-b.tip[1]);let previous=-25;
+ for(const l of labels){const [x,y]=l.tip,tx=Math.max(6,Math.min(W-52,x+17));const ty=Math.max(17,Math.min(H-8,Math.max(previous+22,y-10)));previous=ty;
+  ctx.strokeStyle=l.color;ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(tx,ty-4);ctx.stroke();
+  ctx.fillStyle='#13242c';ctx.fillRect(tx-2,ty-14,44,18);ctx.fillStyle=l.color;ctx.fillText(l.text,tx,ty)}
+}
+new ResizeObserver(draw).observe(canvas);
+poll();
+</script></body></html>

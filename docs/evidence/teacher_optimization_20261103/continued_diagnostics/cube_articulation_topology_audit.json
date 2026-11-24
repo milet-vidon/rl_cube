@@ -1,0 +1,664 @@
+{
+  "source_asset_sha256": "c41baa3cd75db5a497c5878d0e18bb6b3316124e0f1935867de8305b44e4eb11",
+  "meters_per_unit": 1.0,
+  "kilograms_per_unit": 1.0,
+  "bodies": [
+    "/World/Core",
+    "/World/Cube/pX",
+    "/World/Cube/nX",
+    "/World/Cube/pY",
+    "/World/Cube/nY",
+    "/World/Cube/pZ",
+    "/World/Cube/nZ",
+    "/World/Cube/pX_pY",
+    "/World/Cube/nY_pX",
+    "/World/Cube/nX_pY",
+    "/World/Cube/nX_nY",
+    "/World/Cube/pX_pZ",
+    "/World/Cube/nZ_pX",
+    "/World/Cube/nX_pZ",
+    "/World/Cube/nX_nZ",
+    "/World/Cube/pY_pZ",
+    "/World/Cube/nZ_pY",
+    "/World/Cube/nY_pZ",
+    "/World/Cube/nY_nZ",
+    "/World/Cube/pX_pY_pZ",
+    "/World/Cube/nZ_pX_pY",
+    "/World/Cube/nY_pX_pZ",
+    "/World/Cube/nY_nZ_pX",
+    "/World/Cube/nX_pY_pZ",
+    "/World/Cube/nX_nZ_pY",
+    "/World/Cube/nX_nY_pZ",
+    "/World/Cube/nX_nY_nZ"
+  ],
+  "joints": [
+    {
+      "path": "/World/Joints/pX",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/pX"
+      ],
+      "collisionEnabled": false,
+      "excludeFromArticulation": false,
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0": "(1, 0, 0, 0)",
+      "localRot1": "(1, 0, 0, 0)"
+    },
+    {
+      "path": "/World/Joints/nX",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nX"
+      ],
+      "collisionEnabled": false,
+      "excludeFromArticulation": false,
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0": "(1, 0, 0, 0)",
+      "localRot1": "(1, 0, 0, 0)"
+    },
+    {
+      "path": "/World/Joints/pY",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/pY"
+      ],
+      "collisionEnabled": false,
+      "excludeFromArticulation": false,
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0": "(1, 0, 0, 0)",
+      "localRot1": "(1, 0, 0, 0)"
+    },
+    {
+      "path": "/World/Joints/nY",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nY"
+      ],
+      "collisionEnabled": false,
+      "excludeFromArticulation": false,
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0": "(1, 0, 0, 0)",
+      "localRot1": "(1, 0, 0, 0)"
+    },
+    {
+      "path": "/World/Joints/pZ",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/pZ"
+      ],
+      "collisionEnabled": false,
+      "excludeFromArticulation": false,
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0": "(1, 0, 0, 0)",
+      "localRot1": "(1, 0, 0, 0)"
+    },
+    {
+      "path": "/World/Joints/nZ",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nZ"
+      ],
+      "collisionEnabled": false,
+      "excludeFromArticulation": false,
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0": "(1, 0, 0, 0)",
+      "localRot1": "(1, 0, 0, 0)"
+    },
+    {
+      "path": "/World/Joints/pX_pY",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/pX_pY"
+      ],
+      "collisionEnabled": false,
+      "excludeFromArticulation": false,
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0": "(1, 0, 0, 0)",
+      "localRot1": "(1, 0, 0, 0)"
+    },
+    {
+      "path": "/World/Joints/nY_pX",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nY_pX"
+      ],
+      "collisionEnabled": false,
+      "excludeFromArticulation": false,
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0": "(1, 0, 0, 0)",
+      "localRot1": "(1, 0, 0, 0)"
+    },
+    {
+      "path": "/World/Joints/nX_pY",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nX_pY"
+      ],
+      "collisionEnabled": false,
+      "excludeFromArticulation": false,
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0": "(1, 0, 0, 0)",
+      "localRot1": "(1, 0, 0, 0)"
+    },
+    {
+      "path": "/World/Joints/nX_nY",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nX_nY"
+      ],
+      "collisionEnabled": false,
+      "excludeFromArticulation": false,
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0": "(1, 0, 0, 0)",
+      "localRot1": "(1, 0, 0, 0)"
+    },
+    {
+      "path": "/World/Joints/pX_pZ",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/pX_pZ"
+      ],
+      "collisionEnabled": false,
+      "excludeFromArticulation": false,
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0": "(1, 0, 0, 0)",
+      "localRot1": "(1, 0, 0, 0)"
+    },
+    {
+      "path": "/World/Joints/nZ_pX",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nZ_pX"
+      ],
+      "collisionEnabled": false,
+      "excludeFromArticulation": false,
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0": "(1, 0, 0, 0)",
+      "localRot1": "(1, 0, 0, 0)"
+    },
+    {
+      "path": "/World/Joints/nX_pZ",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nX_pZ"
+      ],
+      "collisionEnabled": false,
+      "excludeFromArticulation": false,
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0": "(1, 0, 0, 0)",
+      "localRot1": "(1, 0, 0, 0)"
+    },
+    {
+      "path": "/World/Joints/nX_nZ",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nX_nZ"
+      ],
+      "collisionEnabled": false,
+      "excludeFromArticulation": false,
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0": "(1, 0, 0, 0)",
+      "localRot1": "(1, 0, 0, 0)"
+    },
+    {
+      "path": "/World/Joints/pY_pZ",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/pY_pZ"
+      ],
+      "collisionEnabled": false,
+      "excludeFromArticulation": false,
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0": "(1, 0, 0, 0)",
+      "localRot1": "(1, 0, 0, 0)"
+    },
+    {
+      "path": "/World/Joints/nZ_pY",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nZ_pY"
+      ],
+      "collisionEnabled": false,
+      "excludeFromArticulation": false,
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0": "(1, 0, 0, 0)",
+      "localRot1": "(1, 0, 0, 0)"
+    },
+    {
+      "path": "/World/Joints/nY_pZ",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nY_pZ"
+      ],
+      "collisionEnabled": false,
+      "excludeFromArticulation": false,
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0": "(1, 0, 0, 0)",
+      "localRot1": "(1, 0, 0, 0)"
+    },
+    {
+      "path": "/World/Joints/nY_nZ",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nY_nZ"
+      ],
+      "collisionEnabled": false,
+      "excludeFromArticulation": false,
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0": "(1, 0, 0, 0)",
+      "localRot1": "(1, 0, 0, 0)"
+    },
+    {
+      "path": "/World/Joints/pX_pY_pZ",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/pX_pY_pZ"
+      ],
+      "collisionEnabled": false,
+      "excludeFromArticulation": false,
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0": "(1, 0, 0, 0)",
+      "localRot1": "(1, 0, 0, 0)"
+    },
+    {
+      "path": "/World/Joints/nZ_pX_pY",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nZ_pX_pY"
+      ],
+      "collisionEnabled": false,
+      "excludeFromArticulation": false,
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0": "(1, 0, 0, 0)",
+      "localRot1": "(1, 0, 0, 0)"
+    },
+    {
+      "path": "/World/Joints/nY_pX_pZ",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nY_pX_pZ"
+      ],
+      "collisionEnabled": false,
+      "excludeFromArticulation": false,
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0": "(1, 0, 0, 0)",
+      "localRot1": "(1, 0, 0, 0)"
+    },
+    {
+      "path": "/World/Joints/nY_nZ_pX",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nY_nZ_pX"
+      ],
+      "collisionEnabled": false,
+      "excludeFromArticulation": false,
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0": "(1, 0, 0, 0)",
+      "localRot1": "(1, 0, 0, 0)"
+    },
+    {
+      "path": "/World/Joints/nX_pY_pZ",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nX_pY_pZ"
+      ],
+      "collisionEnabled": false,
+      "excludeFromArticulation": false,
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0": "(1, 0, 0, 0)",
+      "localRot1": "(1, 0, 0, 0)"
+    },
+    {
+      "path": "/World/Joints/nX_nZ_pY",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nX_nZ_pY"
+      ],
+      "collisionEnabled": false,
+      "excludeFromArticulation": false,
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0": "(1, 0, 0, 0)",
+      "localRot1": "(1, 0, 0, 0)"
+    },
+    {
+      "path": "/World/Joints/nX_nY_pZ",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nX_nY_pZ"
+      ],
+      "collisionEnabled": false,
+      "excludeFromArticulation": false,
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0": "(1, 0, 0, 0)",
+      "localRot1": "(1, 0, 0, 0)"
+    },
+    {
+      "path": "/World/Joints/nX_nY_nZ",
+      "type": "PhysicsSphericalJoint",
+      "body0": [
+        "/World/Core"
+      ],
+      "body1": [
+        "/World/Cube/nX_nY_nZ"
+      ],
+      "collisionEnabled": false,
+      "excludeFromArticulation": false,
+      "localPos0": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localPos1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localRot0": "(1, 0, 0, 0)",
+      "localRot1": "(1, 0, 0, 0)"
+    }
+  ],
+  "star_tree": true,
+  "no_excluded_joint": true,
+  "source_core_kinematic": true,
+  "articulation_roots": []
+}

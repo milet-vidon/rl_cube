@@ -1,0 +1,15 @@
+{
+  "passed": false,
+  "failures": [
+    {
+      "offset": [
+        0.0,
+        0.003,
+        -0.004
+      ],
+      "failure": "No collision-free finger closure schedule"
+    }
+  ],
+  "elapsed_s": 32.45738963400072,
+  "physics_validated": false
+}

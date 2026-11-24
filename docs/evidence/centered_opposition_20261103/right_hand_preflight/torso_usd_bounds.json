@@ -1,0 +1,104 @@
+{
+  "source": "/home/brainco/rl_cube/github_project/revotron_revo3/source/revotron_system/usd/revotron_bimanual_revo3_wrist_mesh_v1.usda",
+  "meters_per_unit": 0.01,
+  "colliders": [
+    {
+      "prim": "/revotron_bimanual/world/collisions/base_link/node_STL_BINARY_/mesh",
+      "body": "/revotron_bimanual/world",
+      "min": [
+        -0.5474998950958252,
+        -0.347445011138916,
+        -1.1494777202606201
+      ],
+      "max": [
+        0.14750008285045624,
+        0.3475549817085266,
+        0.26450440287590027
+      ]
+    },
+    {
+      "prim": "/revotron_bimanual/world/collisions/waist_pitch_Link/node_STL_BINARY_/mesh",
+      "body": "/revotron_bimanual/world",
+      "min": [
+        -0.08871199190616608,
+        -0.17200611531734467,
+        -0.07340441644191742
+      ],
+      "max": [
+        0.15977568924427032,
+        0.17200611531734467,
+        0.38285690546035767
+      ]
+    },
+    {
+      "prim": "/revotron_bimanual/world/collisions/Base_L/node_STL_BINARY_/mesh",
+      "body": "/revotron_bimanual/world",
+      "min": [
+        -0.025876483000246427,
+        0.06754925425613496,
+        0.18904058759828138
+      ],
+      "max": [
+        0.08725650018308909,
+        0.161629347420121,
+        0.2965407354324543
+      ]
+    },
+    {
+      "prim": "/revotron_bimanual/world/collisions/Base_R/node_STL_BINARY_/mesh",
+      "body": "/revotron_bimanual/world",
+      "min": [
+        -0.025876483000246427,
+        -0.161629347420121,
+        0.18904058759828138
+      ],
+      "max": [
+        0.08725650018308909,
+        -0.06755342318018212,
+        0.2965407354324543
+      ]
+    },
+    {
+      "prim": "/revotron_bimanual/world/collisions/neck_yaw_Link/node_STL_BINARY_/mesh",
+      "body": "/revotron_bimanual/world",
+      "min": [
+        0.026575183495879173,
+        -0.021950000897049904,
+        0.3389999866994343
+      ],
+      "max": [
+        0.07599999755620956,
+        0.018950000405311584,
+        0.40699999034404755
+      ]
+    },
+    {
+      "prim": "/revotron_bimanual/world/collisions/neck_pitch_Link/node_STL_BINARY_/mesh",
+      "body": "/revotron_bimanual/world",
+      "min": [
+        -0.08080277219414711,
+        -0.0955590084195137,
+        0.3011000007390976
+      ],
+      "max": [
+        0.1642443649470806,
+        0.0955590233206749,
+        0.52690090239048
+      ]
+    },
+    {
+      "prim": "/revotron_bimanual/world/collisions/Head_Oak_Link/node_STL_BINARY_/mesh",
+      "body": "/revotron_bimanual/world",
+      "min": [
+        0.11022374129122718,
+        -0.048499949276447296,
+        0.4627814136710563
+      ],
+      "max": [
+        0.14550540695735412,
+        0.04850005358457565,
+        0.49662637862883396
+      ]
+    }
+  ]
+}

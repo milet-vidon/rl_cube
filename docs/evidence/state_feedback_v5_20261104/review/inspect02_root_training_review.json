@@ -1,0 +1,8 @@
+{
+  "qualification_sha256": "71f98935291201335bfe24f8a19b133ee475f7e0dc5060ce553c97f93fd617d5",
+  "decision": "launch_frozen_200_epoch_gpu_bc_development_fit",
+  "basis": "independent review, 19 tests, exact zero unreachable projected labels, explicit 28-joint bounds and source hashes",
+  "independent_generalization_claim": false,
+  "closed_loop_success_claim": false,
+  "original_result_flags_unchanged": true
+}

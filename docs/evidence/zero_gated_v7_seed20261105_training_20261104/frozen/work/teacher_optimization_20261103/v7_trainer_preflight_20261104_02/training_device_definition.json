@@ -1,0 +1,70 @@
+{
+  "device": "cuda:0",
+  "elapsed_s": 0.4006991929782089,
+  "cuda_peak_allocated_bytes": 18384384,
+  "optimizer_created": false,
+  "training_started": false,
+  "all_classification_arrays_bitwise_identical": true,
+  "runs": [
+    {
+      "episode_id": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_dagger_baseline_mixture_v3_9501_20261104:left_dagger_v3",
+      "baseline_proposal_different_float32_elements": 0,
+      "baseline_projected_different_float32_elements": 0,
+      "baseline_projected_max_abs_difference_rad": 0.0,
+      "classification_differences": {
+        "correction_target": 0,
+        "classification_mask": 0,
+        "exact_zero": 0,
+        "ambiguous": 0
+      }
+    },
+    {
+      "episode_id": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_state_residual_v5_long_eval_9501_20261104_v2:left_state_residual_v5_long_eval_9501_20261104_v2",
+      "baseline_proposal_different_float32_elements": 0,
+      "baseline_projected_different_float32_elements": 0,
+      "baseline_projected_max_abs_difference_rad": 0.0,
+      "classification_differences": {
+        "correction_target": 0,
+        "classification_mask": 0,
+        "exact_zero": 0,
+        "ambiguous": 0
+      }
+    },
+    {
+      "episode_id": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_phase_gated_residual_v6_eval_9501_20261104:left_phase_gated_residual_v6_eval_9501_20261104",
+      "baseline_proposal_different_float32_elements": 0,
+      "baseline_projected_different_float32_elements": 0,
+      "baseline_projected_max_abs_difference_rad": 0.0,
+      "classification_differences": {
+        "correction_target": 0,
+        "classification_mask": 0,
+        "exact_zero": 0,
+        "ambiguous": 0
+      }
+    },
+    {
+      "episode_id": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_phase_gated_residual_v6_long_eval_9501_20261104:left_phase_gated_residual_v6_long_eval_9501_20261104",
+      "baseline_proposal_different_float32_elements": 0,
+      "baseline_projected_different_float32_elements": 0,
+      "baseline_projected_max_abs_difference_rad": 0.0,
+      "classification_differences": {
+        "correction_target": 0,
+        "classification_mask": 0,
+        "exact_zero": 0,
+        "ambiguous": 0
+      }
+    },
+    {
+      "episode_id": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_phase_v4_matched_eval_9501_20261104_v2:left_phase_v4_matched_eval_9501_20261104_v2",
+      "baseline_proposal_different_float32_elements": 0,
+      "baseline_projected_different_float32_elements": 0,
+      "baseline_projected_max_abs_difference_rad": 0.0,
+      "classification_differences": {
+        "correction_target": 0,
+        "classification_mask": 0,
+        "exact_zero": 0,
+        "ambiguous": 0
+      }
+    }
+  ]
+}

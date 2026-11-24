@@ -1,0 +1,41 @@
+{
+  "attempts": [
+    {
+      "run": "teacher_coverage_9901_20261103_v1",
+      "accepted": false,
+      "reason": "Source is not an accepted full left-center episode",
+      "adaptive": false
+    },
+    {
+      "run": "teacher_coverage_9901_20261103_adaptive_v2",
+      "accepted": false,
+      "reason": "Source is not an accepted full left-center episode",
+      "adaptive": true
+    },
+    {
+      "run": "teacher_coverage_9502_20261103_v1",
+      "accepted": false,
+      "reason": "Source is not an accepted full left-center episode",
+      "adaptive": false
+    },
+    {
+      "run": "teacher_coverage_9502_20261103_adaptive_v2",
+      "accepted": false,
+      "reason": "Source is not an accepted full left-center episode",
+      "adaptive": true
+    },
+    {
+      "run": "teacher_coverage_9503_20261103_v1",
+      "accepted": false,
+      "reason": "Source is not an accepted full left-center episode",
+      "adaptive": false
+    },
+    {
+      "run": "teacher_coverage_9503_20261103_adaptive_v2",
+      "accepted": false,
+      "reason": "Source is not an accepted full left-center episode",
+      "adaptive": true
+    }
+  ],
+  "accepted": []
+}

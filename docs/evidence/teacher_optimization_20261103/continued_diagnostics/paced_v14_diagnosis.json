@@ -1,0 +1,57 @@
+{
+  "run": "teacher_joint_paced_baseline_v14_20261103",
+  "trajectory_sha256": "b1a58f8552864c01ab0d57f82670fa6a952e31a016a224990cc22eb255308d6e",
+  "phases": {
+    "right_close": {
+      "frames": 151,
+      "left_missing": {
+        "thumb": 0,
+        "index": 3,
+        "middle": 0,
+        "ring": 0,
+        "little": 0
+      },
+      "right_missing": 115,
+      "core_angular_speed_max": 0.28419822454452515,
+      "core_angular_speed_violation_frames": 2,
+      "core_linear_speed_violation_frames": 0,
+      "posture_failure_frames": 0,
+      "assembly_failure_frames": 0,
+      "final_face_angle_deg": 0.07726986026220668
+    },
+    "opposition_hold": {
+      "frames": 121,
+      "left_missing": {
+        "thumb": 0,
+        "index": 0,
+        "middle": 0,
+        "ring": 0,
+        "little": 0
+      },
+      "right_missing": 0,
+      "core_angular_speed_max": 0.12598741054534912,
+      "core_angular_speed_violation_frames": 0,
+      "core_linear_speed_violation_frames": 0,
+      "posture_failure_frames": 0,
+      "assembly_failure_frames": 0,
+      "final_face_angle_deg": 0.07745200410952177
+    },
+    "opposed_face_turn": {
+      "frames": 120,
+      "left_missing": {
+        "thumb": 0,
+        "index": 105,
+        "middle": 0,
+        "ring": 0,
+        "little": 0
+      },
+      "right_missing": 0,
+      "core_angular_speed_max": 0.22968457639217377,
+      "core_angular_speed_violation_frames": 3,
+      "core_linear_speed_violation_frames": 0,
+      "posture_failure_frames": 0,
+      "assembly_failure_frames": 0,
+      "final_face_angle_deg": 0.11695281588071836
+    }
+  }
+}

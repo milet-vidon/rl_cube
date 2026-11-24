@@ -1,0 +1,3 @@
+CLOSED_CANDIDATE [0.0, 0.003, -0.004]
+REJECT {'offset': [0.0, 0.003, -0.004], 'failure': "Open grasp collision: ('right_middle_MPR_link', 'right_ring_MPR_link', 0.0028916456151202295)"}
+OPPOSITION_PLAN False

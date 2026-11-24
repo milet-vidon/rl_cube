@@ -1,0 +1,47 @@
+[
+  {
+    "kind": "wrist_redundancy_recovery",
+    "original_goal_deg": 12.000000000000002,
+    "selected_goal_deg": 10.000000000000002,
+    "original_error": "Wrist-side reversal IK violates palm pose envelope"
+  },
+  {
+    "kind": "wrist_redundancy_recovery",
+    "original_goal_deg": 12.000000000000002,
+    "selected_goal_deg": 10.000000000000002,
+    "original_error": "Wrist-side reversal IK violates palm pose envelope"
+  },
+  {
+    "kind": "wrist_redundancy_recovery",
+    "original_goal_deg": 12.000000000000002,
+    "selected_goal_deg": 10.000000000000002,
+    "original_error": "Wrist-side reversal IK violates palm pose envelope"
+  },
+  {
+    "kind": "wrist_redundancy_recovery",
+    "original_goal_deg": 12.000000000000002,
+    "selected_goal_deg": 10.000000000000002,
+    "original_error": "Wrist-side reversal IK violates palm pose envelope"
+  },
+  {
+    "kind": "wrist_redundancy_recovery",
+    "original_goal_deg": 12.000000000000002,
+    "selected_goal_deg": 10.000000000000002,
+    "original_error": "Wrist-side reversal IK violates palm pose envelope"
+  },
+  {
+    "kind": "wrist_redundancy_recovery",
+    "original_goal_deg": 12.000000000000002,
+    "selected_goal_deg": 10.000000000000002,
+    "original_error": "Wrist-side reversal IK violates palm pose envelope"
+  },
+  {
+    "kind": "bounded_wrist_pose_recovery",
+    "position_error_m": 7.457696666643438e-05,
+    "orientation_error_deg": 0.04222732713052984,
+    "joint6_deg": 5.75311740832667,
+    "elbow_outward_m": 0.16493088530561423,
+    "upper_arm_outward_deg": 35.002596339104365,
+    "original_error": "Wrist-side reversal IK violates palm pose envelope"
+  }
+]

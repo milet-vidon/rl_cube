@@ -1,0 +1,187 @@
+{
+  "scope": "offline native carb.Float3 payload replay of unchanged callback ASTs, synthetic headers/points",
+  "events_per_trial": 20,
+  "points_per_header": 1024,
+  "headers_per_event": 5,
+  "physx_binding_path": "/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/isaacsim/extscache/omni.physx-110.4.4+110.4.0.lx64.r.cp312.u7f4/omni/physx/bindings/_physx.pyi",
+  "physx_binding_sha256": "d5a6c56a0bf929917d1876fadb4127d4232b58d8b65e7aaefc856a4f6b0ca1f0",
+  "ContactData_property_type": {
+    "impulse": "carb._carb.Float3",
+    "position": "carb._carb.Float3",
+    "normal": "carb._carb.Float3"
+  },
+  "native_type": "<class 'carb._carb.Float3'>",
+  "microbench": {
+    "np.asarray": {
+      "calls": 200000,
+      "s": 0.6301393350004219,
+      "ns_per_call": 3150.6966750021093,
+      "dtype": "float64",
+      "shape": [
+        3
+      ],
+      "strides": [
+        8
+      ],
+      "owns_data": true
+    },
+    "np.array": {
+      "calls": 200000,
+      "s": 0.6382315079972614,
+      "ns_per_call": 3191.157539986307,
+      "dtype": "float64",
+      "shape": [
+        3
+      ],
+      "strides": [
+        8
+      ],
+      "owns_data": true
+    },
+    "independent_array_copy": {
+      "calls": 200000,
+      "s": 0.023394835006911308,
+      "ns_per_call": 116.97417503455654
+    }
+  },
+  "replay": [
+    {
+      "point_properties": "stable native Float3 per property",
+      "trials": [
+        {
+          "trial": 0,
+          "order": [
+            "baseline",
+            "cache"
+          ],
+          "baseline": 1.0668859530123882,
+          "cache": 1.2993315019994043,
+          "speedup": 0.8211037378611
+        },
+        {
+          "trial": 1,
+          "order": [
+            "cache",
+            "baseline"
+          ],
+          "cache": 1.2711490810033865,
+          "baseline": 1.0494180660170969,
+          "speedup": 0.8255664750107317
+        },
+        {
+          "trial": 2,
+          "order": [
+            "baseline",
+            "cache"
+          ],
+          "baseline": 1.0389364250004292,
+          "cache": 1.2659699420037214,
+          "speedup": 0.820664370084527
+        }
+      ],
+      "baseline_median_s": 1.0494180660170969,
+      "cache_median_s": 1.2711490810033865,
+      "median_speedup": 0.8255664750107317,
+      "all_output_types_order_float_bits_exact": true,
+      "cache_stats_last_event": {
+        "array_misses": 3072,
+        "array_hits": 0,
+        "asarray_misses": 3968,
+        "asarray_hits": 3072,
+        "path_misses": 9,
+        "path_hits": 33,
+        "registered_vectors": 7040
+      },
+      "callback_AST_sha256": {
+        "environment.py:_on_contact": "a43cfbca13c010038fc65334df0ce776836111c0d6b5deaa1346b17caf198810",
+        "finger_contact_audit.py:reset_step": "08d45087876260f2a6592ff385b20214f6d9b05d83d22d52aea4793dd11a3d6a",
+        "finger_contact_audit.py:callback": "17b9fa132a5e731c471b6177bdfb2a2deb46f6492e854edd890c397b326fffb1",
+        "finger_contact_audit.py:metrics": "e19a9fa03dcd88f610add08e8e198d9eea5b6134f82568551beded3778c99709",
+        "self_contact_audit.py:reset_step": "4407feabf4a8d8154370b7b332d0c9b0d64f295c65faeca1e0cdcaa009e63c24",
+        "self_contact_audit.py:callback": "e95a0ec093b59e9d01f98ff4c0bb314cf55d06e2e8df5bde087e41dfdb2b9e33",
+        "self_contact_audit.py:metrics": "21785e30ad2b66ee94c866b356d64c244e2aea502729658ae034b84a0f9635a6",
+        "palm_contact_audit.py:reset_step": "dc0fbd69ebd388e6ab616e9669a7991f69e03e619e70d7dfbe685d1476ca74a4",
+        "palm_contact_audit.py:callback": "ff838b6394338227bf244d5ff48f178a86efb32e5f7eb80af0a47e9393476a4d",
+        "palm_contact_audit.py:metrics": "36f29509133dd430e75d0a08a8d96b80af1ee86b25ef21138e00eb477e359df7",
+        "face_push_runtime.py:callback": "411c7ccc9be40077ec6c6477835d2f37ed61a0e3eb6c6566cd21f0828643bc45",
+        "opposed_grasp_runtime.py:callback": "23dd1db71c738e474998d855ec83cd0e864003ed2202c544a551c6723e0f62e9"
+      }
+    },
+    {
+      "point_properties": "fresh native Float3 per access",
+      "trials": [
+        {
+          "trial": 0,
+          "order": [
+            "baseline",
+            "cache"
+          ],
+          "baseline": 1.1263636839867104,
+          "cache": 1.3280535190133378,
+          "speedup": 0.8481312446079202
+        },
+        {
+          "trial": 1,
+          "order": [
+            "cache",
+            "baseline"
+          ],
+          "cache": 1.3337431540130638,
+          "baseline": 1.133905060007237,
+          "speedup": 0.85016748284365
+        },
+        {
+          "trial": 2,
+          "order": [
+            "baseline",
+            "cache"
+          ],
+          "baseline": 1.140404245001264,
+          "cache": 1.3245948560070246,
+          "speedup": 0.8609456996073492
+        }
+      ],
+      "baseline_median_s": 1.133905060007237,
+      "cache_median_s": 1.3280535190133378,
+      "median_speedup": 0.8538097627644243,
+      "all_output_types_order_float_bits_exact": true,
+      "cache_stats_last_event": {
+        "array_misses": 3072,
+        "array_hits": 0,
+        "asarray_misses": 3968,
+        "asarray_hits": 3072,
+        "path_misses": 9,
+        "path_hits": 33,
+        "registered_vectors": 7040
+      },
+      "callback_AST_sha256": {
+        "environment.py:_on_contact": "a43cfbca13c010038fc65334df0ce776836111c0d6b5deaa1346b17caf198810",
+        "finger_contact_audit.py:reset_step": "08d45087876260f2a6592ff385b20214f6d9b05d83d22d52aea4793dd11a3d6a",
+        "finger_contact_audit.py:callback": "17b9fa132a5e731c471b6177bdfb2a2deb46f6492e854edd890c397b326fffb1",
+        "finger_contact_audit.py:metrics": "e19a9fa03dcd88f610add08e8e198d9eea5b6134f82568551beded3778c99709",
+        "self_contact_audit.py:reset_step": "4407feabf4a8d8154370b7b332d0c9b0d64f295c65faeca1e0cdcaa009e63c24",
+        "self_contact_audit.py:callback": "e95a0ec093b59e9d01f98ff4c0bb314cf55d06e2e8df5bde087e41dfdb2b9e33",
+        "self_contact_audit.py:metrics": "21785e30ad2b66ee94c866b356d64c244e2aea502729658ae034b84a0f9635a6",
+        "palm_contact_audit.py:reset_step": "dc0fbd69ebd388e6ab616e9669a7991f69e03e619e70d7dfbe685d1476ca74a4",
+        "palm_contact_audit.py:callback": "ff838b6394338227bf244d5ff48f178a86efb32e5f7eb80af0a47e9393476a4d",
+        "palm_contact_audit.py:metrics": "36f29509133dd430e75d0a08a8d96b80af1ee86b25ef21138e00eb477e359df7",
+        "face_push_runtime.py:callback": "411c7ccc9be40077ec6c6477835d2f37ed61a0e3eb6c6566cd21f0828643bc45",
+        "opposed_grasp_runtime.py:callback": "23dd1db71c738e474998d855ec83cd0e864003ed2202c544a551c6723e0f62e9"
+      }
+    }
+  ],
+  "norm_function_unchanged": true,
+  "app_modules_loaded": [],
+  "source_sha256": {
+    "contact_event_cache.py": "c8cad239105da1beef796758aa6ae5d3d3f22570bc284b0072c8fc4d82d7884a",
+    "test_contact_event_cache.py": "9e53ff96f959a9157fc66aa2bc5c45d4ee7c99fc2c05ce25ba8cc5c9a6c4e0b0",
+    "benchmark_contact_cache_float3.py": "24c4682a5004fd2f73710adbdb46e9a7d6e3488e64332611938db1153627a6fb"
+  },
+  "limits": [
+    "No native ContactDataVector or actual event delivery measured",
+    "Property identity/lifetime hypotheses tested in both stable and fresh modes, not inferred as actual binding behavior",
+    "No actual PhysX path resolver measured; synthetic resolver unchanged between modes",
+    "No global NumPy patch, native factory, original modules or controller changed",
+    "Offline replay timing cannot imply whole-simulation speedup"
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "teacher_phase_basis_gpu_v4_fullframe_20261104": {
+    "mode": "CPU single-row restored checkpoint with targets() clipping and float32 command cast; source previous targets for offline increment check only",
+    "all_phase": {
+      "ready": {
+        "max_error_rad": 1.1920928955078125e-07,
+        "step": 205,
+        "joint": "Joint4_L"
+      },
+      "preshape": {
+        "max_error_rad": 1.1920928955078125e-07,
+        "step": 305,
+        "joint": "left_thumb_DIP_joint"
+      },
+      "lower": {
+        "max_error_rad": 1.1920928955078125e-07,
+        "step": 349,
+        "joint": "Joint2_L"
+      },
+      "approach": {
+        "max_error_rad": 0.0,
+        "step": 378,
+        "joint": "Joint1_L"
+      },
+      "squeeze": {
+        "max_error_rad": 1.1920928955078125e-07,
+        "step": 464,
+        "joint": "Joint2_L"
+      },
+      "primary_lift": {
+        "max_error_rad": 0.0,
+        "step": 512,
+        "joint": "Joint1_L"
+      },
+      "elbow_outward": {
+        "max_error_rad": 0.0,
+        "step": 632,
+        "joint": "Joint1_L"
+      },
+      "tilt_90": {
+        "max_error_rad": 2.384185791015625e-07,
+        "step": 915,
+        "joint": "Joint4_L"
+      },
+      "wrist_reconfigure": {
+        "max_error_rad": 1.7881393432617188e-07,
+        "step": 1411,
+        "joint": "Joint2_L"
+      },
+      "tilt_hold": {
+        "max_error_rad": 0.0,
+        "step": 1553,
+        "joint": "Joint1_L"
+      },
+      "left_center_transport": {
+        "max_error_rad": 2.384185791015625e-07,
+        "step": 1723,
+        "joint": "Joint4_L"
+      },
+      "center_hold": {
+        "max_error_rad": 0.0,
+        "step": 1888,
+        "joint": "Joint1_L"
+      }
+    },
+    "all_frame_max_error_rad": 2.384185791015625e-07,
+    "seconds_for_2129_inferences": 0.25200990500161424,
+    "checkpoint_sha256": "d2493b00df27b8d84ae69da3b399b3beb926b77fdd87a9b51aa6a2b1b23a36a4"
+  },
+  "teacher_phase_basis_gpu_v4_exact_20261104": {
+    "mode": "CPU single-row restored checkpoint with targets() clipping and float32 command cast; source previous targets for offline increment check only",
+    "all_phase": {
+      "ready": {
+        "max_error_rad": 0.0,
+        "step": 0,
+        "joint": "Joint1_L"
+      },
+      "preshape": {
+        "max_error_rad": 1.1434315865969718e-15,
+        "step": 244,
+        "joint": "left_thumb_CMP_joint"
+      },
+      "lower": {
+        "max_error_rad": 0.0,
+        "step": 317,
+        "joint": "Joint1_L"
+      },
+      "approach": {
+        "max_error_rad": 0.0,
+        "step": 378,
+        "joint": "Joint1_L"
+      },
+      "squeeze": {
+        "max_error_rad": 0.0,
+        "step": 427,
+        "joint": "Joint1_L"
+      },
+      "primary_lift": {
+        "max_error_rad": 0.0,
+        "step": 512,
+        "joint": "Joint1_L"
+      },
+      "elbow_outward": {
+        "max_error_rad": 0.0,
+        "step": 632,
+        "joint": "Joint1_L"
+      },
+      "tilt_90": {
+        "max_error_rad": 0.0,
+        "step": 761,
+        "joint": "Joint1_L"
+      },
+      "wrist_reconfigure": {
+        "max_error_rad": 0.0,
+        "step": 1372,
+        "joint": "Joint1_L"
+      },
+      "tilt_hold": {
+        "max_error_rad": 0.0,
+        "step": 1553,
+        "joint": "Joint1_L"
+      },
+      "left_center_transport": {
+        "max_error_rad": 0.0,
+        "step": 1647,
+        "joint": "Joint1_L"
+      },
+      "center_hold": {
+        "max_error_rad": 0.0,
+        "step": 1888,
+        "joint": "Joint1_L"
+      }
+    },
+    "all_frame_max_error_rad": 1.1434315865969718e-15,
+    "seconds_for_2129_inferences": 0.24680619599530473,
+    "checkpoint_sha256": "0a6455a9afd8d3d642aa29adb704b5307b76039125587a3581c23b253327b316"
+  }
+}

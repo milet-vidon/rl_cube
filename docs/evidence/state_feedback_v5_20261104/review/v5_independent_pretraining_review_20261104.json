@@ -1,0 +1,82 @@
+{
+  "schema": "v5_independent_pretraining_review_20261104",
+  "conclusion": "PASS_for_reviewed_development_BC_fit_no_blocking_findings",
+  "reviewer_role": "independent_training_path_audit",
+  "scope": "Read-only source and completed-data inspection; 19 host tests rerun; no optimizer or simulator started by reviewer",
+  "source_sha256": {
+    "phase_residual_policy_v5.py": "5bb033710c18c21310b526d539251794a37efb31a2f139a68b052983c363f412",
+    "dagger_residual_dataset_v5.py": "69c1cef251a4180f9839a2fc27ecbb738ce6f87828d5a9bc513a19aa40621cb1",
+    "train_phase_residual_v5.py": "74cc6077ae7bb135260b9fc1f4c0c99765653af8dd243301563e61808a027a6d",
+    "test_phase_residual_v5.py": "e3cb8dce816130352dcb08327cb159583d261df1dbb21a3298fc83c4a00f66c7"
+  },
+  "inspection_sha256": "d0c46d42d206fabb2e4fb630d477a2b4f429c33894bc32b8d686d0724a4a0dd1",
+  "reviewed_qualification_sha256": "71f98935291201335bfe24f8a19b133ee475f7e0dc5060ce553c97f93fd617d5",
+  "independent_host_tests_passed": 19,
+  "blocking_findings": [],
+  "confirmed": [
+    "284 features contain only actual privileged simulator state and public same-action phase/progress; expert labels, teacher hidden state and previous_executed_source are excluded",
+    "Entire contiguous actual episode history is passed to GRU; history reset per episode; no shuffled fragments or post-state labels as actor inputs",
+    "Frozen v4 weights have no gradients; exactly 28 left residual outputs; original right execution is outside neural actor and independently audited in the dataset",
+    "Labels come solely from actual-state expert projected_target and reproduce original float32 project_target; actual student commands are separately validated",
+    "Dataset validates original raw done/drop/timeout using independent trajectory stream, prevents records after terminal and rejects unrecorded physical rows",
+    "Projection source hashes, full physics fingerprint, external provenance SHA, baseline manifest/checkpoint and collector/core hashes are verified",
+    "Inspection02 has 1648 eligible transitions including 229 student visits, 0 excluded labels, and all 28 maximum unreachable distances exactly 0.0",
+    "Per-joint vector matches actual frozen joint-name ordering: 7 arms 0.0005rad, left index MCP/PIP/DIP 0.006rad, other 18 finger DOFs 0.000001rad",
+    "Labels are never clipped or silently filtered to fit bounds; candidate target envelope projection remains the original safety boundary",
+    "Qualification explicitly grants BC transition supervision only; original eligible_training_episode/runtime_bridge_validated/pure_student_episode_claim False flags are retained unchanged",
+    "Qualification is pinned by byte SHA and must equal a recomputation from current data/code/bounds before --train",
+    "Current split is 1 complete training episode and 0 validation episodes; selection is training-trajectory fit and no independent generalization is claimed"
+  ],
+  "not_claimed": [
+    "closed-loop improvement",
+    "right layer turn",
+    "vision policy",
+    "autonomous phase inference",
+    "PPO",
+    "new independent seed"
+  ],
+  "evaluation_musts": [
+    "Cross-check checkpoint metadata joint_names/output_indices against frozen v4 and actual environment before any action; current production training writes correct mapping but loader metadata tamper defense is not complete",
+    "Keep original dynamic phase/gain/right controller explicit; compare v5 with v4-only under the SAME adapter because historical v4 eval used fixed phase timing",
+    "Separate assisted warmup diagnostics from zero-left-teacher-intervention evaluation; never silently fall back to teacher after a learner failure"
+  ],
+  "qualification_original_flags": {
+    "eligible_training_episode": false,
+    "runtime_bridge_validated": false,
+    "pure_student_episode_claim": false,
+    "original_wrist_gate_qualified": true,
+    "failure": null,
+    "collection_mode": "explicit_teacher_student_mixture"
+  },
+  "bounds_by_joint": {
+    "Joint1_L": 0.0005,
+    "Joint2_L": 0.0005,
+    "Joint3_L": 0.0005,
+    "Joint4_L": 0.0005,
+    "Joint5_L": 0.0005,
+    "Joint6_L": 0.0005,
+    "Joint7_L": 0.0005,
+    "left_middle_MPR_joint": 1e-06,
+    "left_middle_MCP_joint": 1e-06,
+    "left_middle_PIP_joint": 1e-06,
+    "left_middle_DIP_joint": 1e-06,
+    "left_thumb_CMP_joint": 1e-06,
+    "left_thumb_CMR_joint": 1e-06,
+    "left_thumb_MCP_joint": 1e-06,
+    "left_thumb_PIP_joint": 1e-06,
+    "left_thumb_DIP_joint": 1e-06,
+    "left_index_MPR_joint": 1e-06,
+    "left_index_MCP_joint": 0.006,
+    "left_index_PIP_joint": 0.006,
+    "left_index_DIP_joint": 0.006,
+    "left_ring_MPR_joint": 1e-06,
+    "left_ring_MCP_joint": 1e-06,
+    "left_ring_PIP_joint": 1e-06,
+    "left_ring_DIP_joint": 1e-06,
+    "left_little_MPR_joint": 1e-06,
+    "left_little_MCP_joint": 1e-06,
+    "left_little_PIP_joint": 1e-06,
+    "left_little_DIP_joint": 1e-06
+  },
+  "physics_family_sha256": "b2f9feb645c8d92e2da3bb78653165292a5649e59864dee4b1de82e904854192"
+}

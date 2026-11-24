@@ -1,0 +1,89 @@
+{
+  "schema": "exception_prefix_two_exact_runs_independent_contract_and_report_review_v1",
+  "passed": true,
+  "blocking_findings": [],
+  "candidate_source_sha256": "3cf97ff2ee274b96091e27b8f8311f6c61f3feae0d5f83c6b003b6c6876bdeb2",
+  "frozen_registry2_sha256": "e076e877897420e651f691a10419049815d094c27b8196afeec77320d938d89e",
+  "private_engine_sha256": "55b43ef6c245354c700f7ade33d70a0966f9a3930a8c00133e373759c2375638",
+  "only_two_explicit_reversible_engine_hooks": true,
+  "all_original_transition_predicates_preserved": true,
+  "independent_host_tests": 17,
+  "test_skip_count": 0,
+  "host_test_log_sha256": "6001639d6a6507a63f2752495204638c32b0fe7a6e0b8e151523130ba935d50f",
+  "independent_test_source_sha256": "626654a9ab1c9169c1c665a7ede3966e19f573bde5efa6ce33b5d8182a772787",
+  "reports": [
+    {
+      "run": "left_hold_increment_v8_wide128_seed20261105_eval_9501_20261104",
+      "candidate_report_sha256": "a90afc2ee408d4fe58704eb2d92e9adb484f6addd37d6951a0186dcbfd6cb6aa",
+      "completed_safe_transitions": 1803,
+      "original_false_flags_preserved": true,
+      "all_actual_artifact_source_plan_hashes_verified": true,
+      "independently_rebuilt_284features_previous_projected_labels_safe_mask_sha256": {
+        "x": "a123aecd2fc1e144a8657c2ff39afc56ae3dc9853bdc231cd1c1588a63a8e3cc",
+        "previous_left": "2f9076bcfe2832f756ea1aca211ac3b10f0c662515f834623335d4693473153d",
+        "labels": "4ccdfac5b2b110debd1f053a6798b8db03e55a35e6b723ea54d117b737f45f21",
+        "mask": "467401a0a2807c25462d58ac89faf69e66e56dd8e9c8ad573f96993a77cb3129"
+      },
+      "actor_proof": {
+        "mode": "reuse_pinned_complete_actor_replay",
+        "report_sha256": "ab7d6a53bba933d24f9ce9542cfc427955155b48f59d86030a14060c6468634f",
+        "branch_sha256": "1e43ea5cf0a3b00f63cec65ebf5c622a7a099ee955d725cde7e17ee3a04e3cd1",
+        "prior_gru_calls": 1803,
+        "new_gru_calls": 0
+      },
+      "returned_queries": 1803,
+      "excluded_unreturned_query": {
+        "step": 1803,
+        "reason": "evaluation_protocol_error:Post-turn correction exceeded bounded pose envelope",
+        "type": "unreturned_teacher_exception_no_label",
+        "teacher_query_returned": false,
+        "teacher_after_state_known": false,
+        "actor_features_or_prediction_present": false,
+        "expert_label_present": false,
+        "physics_executed": false,
+        "excluded_from_bc_supervision": true
+      },
+      "this_independent_review_actor_forward_calls": 0,
+      "qualification_granted": false
+    },
+    {
+      "run": "left_hold_increment_v8_seed20261105_eval_9501_20261104",
+      "candidate_report_sha256": "2e14372acd71dae84ae263e56393e91995625d8ba3b70fcde04f11725a749975",
+      "completed_safe_transitions": 1725,
+      "original_false_flags_preserved": true,
+      "all_actual_artifact_source_plan_hashes_verified": true,
+      "independently_rebuilt_284features_previous_projected_labels_safe_mask_sha256": {
+        "x": "c8b103437ef8e1d4dfcf83543a1438f7347e294dd17493920c67019e61c92bea",
+        "previous_left": "7b1f343456f31bc94265d9f32579a720a17375d4ef346bda5bffceb950772a3b",
+        "labels": "2af581e26f9f71b4a4a7031e38b83a4f901a5fe5b344ca18c63b25e74ac05a9e",
+        "mask": "e657720f76432212a096ad1273ba95a879fbacd6a39ad7935238faff634a5b6b"
+      },
+      "actor_proof": {
+        "mode": "fresh_complete_single_actual_history_replay",
+        "prior_completed_proof_available": false,
+        "new_gru_calls": 1725
+      },
+      "returned_queries": 1725,
+      "excluded_unreturned_query": {
+        "step": 1725,
+        "reason": "evaluation_protocol_error:Post-turn correction exceeded bounded pose envelope",
+        "type": "unreturned_teacher_exception_no_label",
+        "teacher_query_returned": false,
+        "teacher_after_state_known": false,
+        "actor_features_or_prediction_present": false,
+        "expert_label_present": false,
+        "physics_executed": false,
+        "excluded_from_bc_supervision": true
+      },
+      "this_independent_review_actor_forward_calls": 0,
+      "qualification_granted": false
+    }
+  ],
+  "actual_actor_forward_repeated_by_this_reviewer": false,
+  "current_V9_nine_histories_22_sources_unchanged": true,
+  "existing_global_registries_unchanged": true,
+  "training_authorized_by_review": false,
+  "candidate_original_episode_success_claim": false,
+  "review_source_sha256": "2ea675e10cdc8f941206fd956a540b8a796536f105d3af91bf816a69f638c5c0",
+  "scope": "Integrity and candidate BC prefix contract only. Original failed queries remain unknown/unlabelled. Root must separately decide future qualification; no current trainer consumes this candidate."
+}

@@ -1,0 +1,413 @@
+{
+  "scope": "instrumented v16 parent process only; host preflight worker CPU is excluded",
+  "total_profiled_s": 643.9535895790063,
+  "top_self": [
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method time.sleep>",
+      "primitive_calls": 4529,
+      "calls": 4529,
+      "self_s": 226.10618023,
+      "cumulative_s": 226.10618023
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method numpy.asarray>",
+      "primitive_calls": 23450375,
+      "calls": 23450375,
+      "self_s": 80.68978128500001,
+      "cumulative_s": 80.690041238
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method numpy.array>",
+      "primitive_calls": 6797547,
+      "calls": 6797547,
+      "self_s": 68.334800208,
+      "cumulative_s": 68.339223706
+    },
+    {
+      "file": "/home/brainco/rl_cube/github_project/revotron_cube_rl/environment.py",
+      "line": 127,
+      "name": "_on_contact",
+      "primitive_calls": 27606,
+      "calls": 27606,
+      "self_s": 37.37371677,
+      "cumulative_s": 134.187210451
+    },
+    {
+      "file": "/home/brainco/rl_cube/github_project/revotron_cube_rl/finger_contact_audit.py",
+      "line": 14,
+      "name": "callback",
+      "primitive_calls": 27576,
+      "calls": 27576,
+      "self_s": 28.294186669000002,
+      "cumulative_s": 83.81724069900001
+    },
+    {
+      "file": "/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/numpy/linalg/_linalg.py",
+      "line": 2622,
+      "name": "norm",
+      "primitive_calls": 14793238,
+      "calls": 14793238,
+      "self_s": 21.022790424,
+      "cumulative_s": 37.0759032
+    },
+    {
+      "file": "/home/brainco/rl_cube/github_project/revotron_cube_rl/palm_contact_audit.py",
+      "line": 16,
+      "name": "callback",
+      "primitive_calls": 27576,
+      "calls": 27576,
+      "self_s": 16.064314786,
+      "cumulative_s": 89.22111639900001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method builtins.any>",
+      "primitive_calls": 4093,
+      "calls": 27619890,
+      "self_s": 8.770710540000001,
+      "cumulative_s": 0.006765745
+    },
+    {
+      "file": "/home/brainco/rl_cube/github_project/revotron_cube_rl/self_contact_audit.py",
+      "line": 14,
+      "name": "<genexpr>",
+      "primitive_calls": 2736276,
+      "calls": 2736276,
+      "self_s": 8.401577069,
+      "cumulative_s": 35.520672785
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'dot' of 'numpy.ndarray' objects>",
+      "primitive_calls": 14800436,
+      "calls": 14800436,
+      "self_s": 7.308873854000001,
+      "cumulative_s": 7.308873854000001
+    },
+    {
+      "file": "/home/brainco/rl_cube/github_project/revotron_cube_rl/self_contact_audit.py",
+      "line": 10,
+      "name": "callback",
+      "primitive_calls": 27576,
+      "calls": 27576,
+      "self_s": 6.182651624,
+      "cumulative_s": 44.005588359
+    },
+    {
+      "file": "/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/json/encoder.py",
+      "line": 278,
+      "name": "_iterencode_list",
+      "primitive_calls": 14271548,
+      "calls": 27806381,
+      "self_s": 5.355117509,
+      "cumulative_s": 14.058899980000001
+    },
+    {
+      "file": "/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/json/encoder.py",
+      "line": 334,
+      "name": "_iterencode_dict",
+      "primitive_calls": 14228689,
+      "calls": 30759148,
+      "self_s": 4.972775075,
+      "cumulative_s": 12.322253790000001
+    },
+    {
+      "file": "/home/brainco/rl_cube/github_project/revotron_cube_rl/torso_collision.py",
+      "line": 4,
+      "name": "export_fixed_colliders",
+      "primitive_calls": 2,
+      "calls": 2,
+      "self_s": 4.082476010000001,
+      "cumulative_s": 5.1734937500000004
+    },
+    {
+      "file": "/home/brainco/rl_cube/github_project/revotron_cube_rl/kinematics.py",
+      "line": 44,
+      "name": "fk",
+      "primitive_calls": 12596,
+      "calls": 12596,
+      "self_s": 4.041732596,
+      "cumulative_s": 17.134205498
+    },
+    {
+      "file": "/home/brainco/rl_cube/github_project/revotron_cube_rl/finger_contact_audit.py",
+      "line": 24,
+      "name": "<genexpr>",
+      "primitive_calls": 46941549,
+      "calls": 46941549,
+      "self_s": 3.9873477200000003,
+      "cumulative_s": 3.9906809240000003
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'startswith' of 'str' objects>",
+      "primitive_calls": 24485846,
+      "calls": 24485846,
+      "self_s": 3.245312465,
+      "cumulative_s": 3.245312465
+    },
+    {
+      "file": "/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/scipy/_lib/_array_api.py",
+      "line": 524,
+      "name": "xp_promote",
+      "primitive_calls": 1336662,
+      "calls": 1336662,
+      "self_s": 3.173664162,
+      "cumulative_s": 13.285412897
+    },
+    {
+      "file": "/home/brainco/rl_cube/github_project/revotron_cube_rl/opposed_grasp_runtime.py",
+      "line": 15,
+      "name": "callback",
+      "primitive_calls": 11176,
+      "calls": 11176,
+      "self_s": 2.8869051470000002,
+      "cumulative_s": 6.033126836
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'ravel' of 'numpy.ndarray' objects>",
+      "primitive_calls": 14790855,
+      "calls": 14790855,
+      "self_s": 2.876533122,
+      "cumulative_s": 2.876533122
+    }
+  ],
+  "top_cumulative": [
+    {
+      "file": "/home/brainco/rl_cube/github_project/revotron_cube_rl/centered_opposition_runtime.py",
+      "line": 16,
+      "name": "host_plan",
+      "primitive_calls": 3,
+      "calls": 3,
+      "self_s": 0.00022886500000000003,
+      "cumulative_s": 226.632008442
+    },
+    {
+      "file": "/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/subprocess.py",
+      "line": 506,
+      "name": "run",
+      "primitive_calls": 4,
+      "calls": 4,
+      "self_s": 9.214700000000001e-05,
+      "cumulative_s": 226.27326323600002
+    },
+    {
+      "file": "/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/subprocess.py",
+      "line": 1165,
+      "name": "communicate",
+      "primitive_calls": 4,
+      "calls": 4,
+      "self_s": 5.0983e-05,
+      "cumulative_s": 226.269769547
+    },
+    {
+      "file": "/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/subprocess.py",
+      "line": 2062,
+      "name": "_communicate",
+      "primitive_calls": 3,
+      "calls": 3,
+      "self_s": 6.1924e-05,
+      "cumulative_s": 226.269455061
+    },
+    {
+      "file": "/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/subprocess.py",
+      "line": 1259,
+      "name": "wait",
+      "primitive_calls": 11,
+      "calls": 11,
+      "self_s": 3.1480000000000004e-05,
+      "cumulative_s": 226.26942879900002
+    },
+    {
+      "file": "/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/subprocess.py",
+      "line": 2021,
+      "name": "_wait",
+      "primitive_calls": 11,
+      "calls": 11,
+      "self_s": 0.08505396300000001,
+      "cumulative_s": 226.26939657300002
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method time.sleep>",
+      "primitive_calls": 4529,
+      "calls": 4529,
+      "self_s": 226.10618023,
+      "cumulative_s": 226.10618023
+    },
+    {
+      "file": "/home/brainco/rl_cube/github_project/revotron_cube_rl/opposed_actuation.py",
+      "line": 4,
+      "name": "configure_right_fingers",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 0.000269779,
+      "cumulative_s": 166.433696227
+    },
+    {
+      "file": "/home/brainco/rl_cube/github_project/revotron_cube_rl/environment.py",
+      "line": 127,
+      "name": "_on_contact",
+      "primitive_calls": 27606,
+      "calls": 27606,
+      "self_s": 37.37371677,
+      "cumulative_s": 134.187210451
+    },
+    {
+      "file": "/home/brainco/rl_cube/github_project/revotron_cube_rl/palm_contact_audit.py",
+      "line": 16,
+      "name": "callback",
+      "primitive_calls": 27576,
+      "calls": 27576,
+      "self_s": 16.064314786,
+      "cumulative_s": 89.22111639900001
+    },
+    {
+      "file": "/home/brainco/rl_cube/github_project/revotron_cube_rl/finger_contact_audit.py",
+      "line": 14,
+      "name": "callback",
+      "primitive_calls": 27576,
+      "calls": 27576,
+      "self_s": 28.294186669000002,
+      "cumulative_s": 83.81724069900001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method numpy.asarray>",
+      "primitive_calls": 23450375,
+      "calls": 23450375,
+      "self_s": 80.68978128500001,
+      "cumulative_s": 80.690041238
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method numpy.array>",
+      "primitive_calls": 6797547,
+      "calls": 6797547,
+      "self_s": 68.334800208,
+      "cumulative_s": 68.339223706
+    },
+    {
+      "file": "/home/brainco/rl_cube/github_project/revotron_cube_rl/self_contact_audit.py",
+      "line": 10,
+      "name": "callback",
+      "primitive_calls": 27576,
+      "calls": 27576,
+      "self_s": 6.182651624,
+      "cumulative_s": 44.005588359
+    },
+    {
+      "file": "/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/numpy/linalg/_linalg.py",
+      "line": 2622,
+      "name": "norm",
+      "primitive_calls": 14793238,
+      "calls": 14793238,
+      "self_s": 21.022790424,
+      "cumulative_s": 37.0759032
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method builtins.sum>",
+      "primitive_calls": 573058,
+      "calls": 573058,
+      "self_s": 0.664281604,
+      "cumulative_s": 36.20569933
+    },
+    {
+      "file": "/home/brainco/rl_cube/github_project/revotron_cube_rl/self_contact_audit.py",
+      "line": 14,
+      "name": "<genexpr>",
+      "primitive_calls": 2736276,
+      "calls": 2736276,
+      "self_s": 8.401577069,
+      "cumulative_s": 35.520672785
+    },
+    {
+      "file": "/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/json/__init__.py",
+      "line": 183,
+      "name": "dumps",
+      "primitive_calls": 4864,
+      "calls": 4864,
+      "self_s": 0.12070970900000001,
+      "cumulative_s": 18.414596724000003
+    },
+    {
+      "file": "/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/json/encoder.py",
+      "line": 183,
+      "name": "encode",
+      "primitive_calls": 4864,
+      "calls": 4864,
+      "self_s": 0.9804786510000001,
+      "cumulative_s": 18.292477096000002
+    },
+    {
+      "file": "/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/scipy/_lib/_util.py",
+      "line": 705,
+      "name": "inner",
+      "primitive_calls": 298,
+      "calls": 298,
+      "self_s": 0.002331193,
+      "cumulative_s": 17.473623958
+    },
+    {
+      "file": "/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/scipy/optimize/_lsq/least_squares.py",
+      "line": 266,
+      "name": "least_squares",
+      "primitive_calls": 298,
+      "calls": 298,
+      "self_s": 0.009316635,
+      "cumulative_s": 17.470882026
+    },
+    {
+      "file": "/home/brainco/rl_cube/github_project/revotron_cube_rl/kinematics.py",
+      "line": 44,
+      "name": "fk",
+      "primitive_calls": 12596,
+      "calls": 12596,
+      "self_s": 4.041732596,
+      "cumulative_s": 17.134205498
+    },
+    {
+      "file": "/home/brainco/rl_cube/github_project/revotron_cube_rl/single_face_experiment.py",
+      "line": 47,
+      "name": "write",
+      "primitive_calls": 13,
+      "calls": 13,
+      "self_s": 0.010089858,
+      "cumulative_s": 16.766860063
+    },
+    {
+      "file": "/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/scipy/optimize/_differentiable_functions.py",
+      "line": 422,
+      "name": "__call__",
+      "primitive_calls": 18648,
+      "calls": 18648,
+      "self_s": 0.023617209,
+      "cumulative_s": 16.495034451000002
+    },
+    {
+      "file": "/home/brainco/rl_cube/.conda/rl_cube_6_2/lib/python3.12/site-packages/scipy/optimize/_lsq/least_squares.py",
+      "line": 262,
+      "name": "__call__",
+      "primitive_calls": 18648,
+      "calls": 18648,
+      "self_s": 0.066143354,
+      "cumulative_s": 16.456277092
+    }
+  ]
+}

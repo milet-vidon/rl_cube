@@ -1,0 +1,108 @@
+[
+  {
+    "seed": 9901,
+    "request": {
+      "q": {
+        "Joint1_L": 1.6158223152160645,
+        "Joint2_L": -0.9169306755065918,
+        "Joint3_L": -1.497588038444519,
+        "Joint4_L": -2.221001386642456,
+        "Joint5_L": -1.2783010005950928,
+        "Joint6_L": 0.09659632295370102,
+        "Joint7_L": 0.8015362620353699,
+        "left_middle_MPR_joint": -0.050229351967573166,
+        "left_middle_MCP_joint": 0.7315938472747803,
+        "left_middle_PIP_joint": 0.2896500527858734,
+        "left_middle_DIP_joint": 1.093008041381836,
+        "left_thumb_CMP_joint": 0.6366629004478455,
+        "left_thumb_CMR_joint": 0.4361843764781952,
+        "left_thumb_MCP_joint": 0.5500065088272095,
+        "left_thumb_PIP_joint": 1.0661275386810303,
+        "left_thumb_DIP_joint": 1.0962682962417603,
+        "left_index_MPR_joint": 0.011787104420363903,
+        "left_index_MCP_joint": 0.5502442717552185,
+        "left_index_PIP_joint": 0.8398871421813965,
+        "left_index_DIP_joint": 0.41641631722450256,
+        "left_ring_MPR_joint": -0.04142563417553902,
+        "left_ring_MCP_joint": 0.48343849182128906,
+        "left_ring_PIP_joint": 0.5778508186340332,
+        "left_ring_DIP_joint": 1.0705195665359497,
+        "left_little_MPR_joint": -0.04672420397400856,
+        "left_little_MCP_joint": 0.7132117748260498,
+        "left_little_PIP_joint": 0.3663650453090668,
+        "left_little_DIP_joint": 0.21655040979385376,
+        "Joint1_R": 1.9057286977767944,
+        "Joint2_R": -1.2259461879730225,
+        "Joint3_R": -1.0448445081710815,
+        "Joint4_R": -1.6382091045379639,
+        "Joint5_R": 0.07983031123876572,
+        "Joint6_R": -0.6671687960624695,
+        "Joint7_R": 0.6108946204185486,
+        "right_middle_MPR_joint": -0.20665253698825836,
+        "right_middle_MCP_joint": 0.6322394013404846,
+        "right_middle_PIP_joint": 0.49839073419570923,
+        "right_middle_DIP_joint": 0.22701875865459442,
+        "right_thumb_CMP_joint": 0.029999999329447746,
+        "right_thumb_CMR_joint": 0.0,
+        "right_thumb_MCP_joint": 0.0,
+        "right_thumb_PIP_joint": 0.0,
+        "right_thumb_DIP_joint": 0.0,
+        "right_index_MPR_joint": -0.08406538516283035,
+        "right_index_MCP_joint": 1.0989257097244263,
+        "right_index_PIP_joint": 1.0999794006347656,
+        "right_index_DIP_joint": 0.8000004887580872,
+        "right_ring_MPR_joint": -0.23748736083507538,
+        "right_ring_MCP_joint": 1.100000023841858,
+        "right_ring_PIP_joint": 1.100000023841858,
+        "right_ring_DIP_joint": 0.800000011920929,
+        "right_little_MPR_joint": -0.30000001192092896,
+        "right_little_MCP_joint": 1.100000023841858,
+        "right_little_PIP_joint": 1.100000023841858,
+        "right_little_DIP_joint": 0.800000011920929
+      },
+      "position": [
+        0.39638753017938333,
+        0.3350184831833934,
+        0.11258396476581388
+      ],
+      "rotation": [
+        [
+          0.2252612420091456,
+          0.03625457965428155,
+          0.9736236327773621
+        ],
+        [
+          -0.7815343687397724,
+          -0.5899840049415922,
+          0.20278783097514452
+        ],
+        [
+          0.5817743577427779,
+          -0.8066005699025816,
+          -0.10456632969463849
+        ]
+      ]
+    },
+    "reconstructed_request": true,
+    "baseline": {
+      "passed": false,
+      "failure": "Wrist-side reversal IK violates palm pose envelope"
+    },
+    "adaptive": {
+      "passed": true,
+      "position_error_m": 0.0007839544908401206,
+      "angle_error_deg": 0.45433942276887435,
+      "diagnostics": [
+        {
+          "kind": "bounded_wrist_pose_recovery",
+          "position_error_m": 0.0007839544908401206,
+          "orientation_error_deg": 0.45433942276887435,
+          "joint6_deg": 6.000000000000001,
+          "elbow_outward_m": 0.16756311446817007,
+          "upper_arm_outward_deg": 35.64137611829678,
+          "original_error": "Wrist-side reversal IK violates palm pose envelope"
+        }
+      ]
+    }
+  }
+]

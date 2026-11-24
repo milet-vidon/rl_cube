@@ -1,0 +1,5 @@
+REJECT {'offset': [0.0, 0.003, -0.004], 'failure': 'Right opposition palm IK failed'}
+REJECT {'offset': [0.0, 0.003, -0.004], 'failure': 'Right opposition palm IK failed'}
+REJECT {'offset': [0.0, 0.003, -0.004], 'failure': 'Right opposition palm IK failed'}
+REJECT {'offset': [0.0, 0.003, -0.004], 'failure': 'Finger goal unreachable: ring 0.014093386786138118'}
+OPPOSITION_PLAN False

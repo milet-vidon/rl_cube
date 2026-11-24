@@ -1,0 +1,179 @@
+{
+  "schema": "independent_support_cache_geometry_audit_v1",
+  "passed": true,
+  "scope": "Selected real right-path jobs and Cartesian index/ring extrema/midpoint only. Not full-envelope or physical success.",
+  "request_sha256": "9dff8f704dcfe20b9b8c2e3e2eec2876a3a9abbaa598b74c38481d0a7acef436",
+  "source_sha256": {
+    "left_support_envelope_v1.py": "665b976b1b15bfff66a3e111936abb632e043ec4623f2b577a4e32fa97bc335f",
+    "opposed_grasp_plan.py": "752d5f86f0fad09915875ce8d8ade4885ddc6452901f979a3a2837c5cc31a8ac",
+    "left_index_continuation.py": "564b5d6e6381f57e41613b7c23707f25111a86fee6c25475937625c3cc3719ea"
+  },
+  "full_job_count": 1502,
+  "full_cartesian_value_count": 112,
+  "selected_jobs": [
+    {
+      "phase": "right_preshape",
+      "step": 0,
+      "theta_deg": 0.0
+    },
+    {
+      "phase": "right_preshape",
+      "step": 49,
+      "theta_deg": 0.0
+    },
+    {
+      "phase": "right_preshape",
+      "step": 98,
+      "theta_deg": 0.0
+    },
+    {
+      "phase": "right_route",
+      "step": 0,
+      "theta_deg": 0.0
+    },
+    {
+      "phase": "right_route",
+      "step": 316,
+      "theta_deg": 0.0
+    },
+    {
+      "phase": "right_route",
+      "step": 631,
+      "theta_deg": 0.0
+    },
+    {
+      "phase": "right_approach",
+      "step": 0,
+      "theta_deg": 0.0
+    },
+    {
+      "phase": "right_approach",
+      "step": 60,
+      "theta_deg": 0.0
+    },
+    {
+      "phase": "right_approach",
+      "step": 120,
+      "theta_deg": 0.0
+    },
+    {
+      "phase": "right_close",
+      "step": 0,
+      "theta_deg": 0.0
+    },
+    {
+      "phase": "right_close",
+      "step": 75,
+      "theta_deg": 0.0
+    },
+    {
+      "phase": "right_close",
+      "step": 150,
+      "theta_deg": 0.0
+    },
+    {
+      "phase": "opposition_hold",
+      "step": 0,
+      "theta_deg": 0.0
+    },
+    {
+      "phase": "opposition_hold",
+      "step": 60,
+      "theta_deg": 0.0
+    },
+    {
+      "phase": "opposition_hold",
+      "step": 120,
+      "theta_deg": 0.0
+    },
+    {
+      "phase": "opposed_face_turn",
+      "step": 0,
+      "theta_deg": -1.0933156717530856e-15
+    },
+    {
+      "phase": "opposed_face_turn",
+      "step": 75,
+      "theta_deg": 7.500024965458915
+    },
+    {
+      "phase": "opposed_face_turn",
+      "step": 150,
+      "theta_deg": 14.999995764333606
+    },
+    {
+      "phase": "opposed_face_hold",
+      "step": 0,
+      "theta_deg": 14.999995764333612
+    },
+    {
+      "phase": "opposed_face_hold",
+      "step": 60,
+      "theta_deg": 14.999995764333612
+    },
+    {
+      "phase": "opposed_face_hold",
+      "step": 120,
+      "theta_deg": 14.999995764333612
+    }
+  ],
+  "selected_values": [
+    [
+      -0.005212895254045725,
+      0.5768783688545227
+    ],
+    [
+      -0.005212895254045725,
+      0.578867348766327
+    ],
+    [
+      -0.005212895254045725,
+      0.5818508186340332
+    ],
+    [
+      0.0027871047459542752,
+      0.5768783688545227
+    ],
+    [
+      0.0027871047459542752,
+      0.578867348766327
+    ],
+    [
+      0.0027871047459542752,
+      0.5818508186340332
+    ],
+    [
+      0.006787104745954277,
+      0.5768783688545227
+    ],
+    [
+      0.006787104745954277,
+      0.578867348766327
+    ],
+    [
+      0.006787104745954277,
+      0.5818508186340332
+    ]
+  ],
+  "results": {
+    "cached": {
+      "result": {
+        "passed": true,
+        "checks": 189
+      },
+      "elapsed_s": 52.61163938802201,
+      "distance_calls": 2310525
+    },
+    "uncached": {
+      "result": {
+        "passed": true,
+        "checks": 189
+      },
+      "elapsed_s": 80.99840056800167,
+      "distance_calls": 2575557
+    }
+  },
+  "distinct_geometry_distance_keys": 206890,
+  "all_distinct_geometry_keys_covered": true,
+  "shared_distance_values_bitwise_equal": true
+}

@@ -1,0 +1,24 @@
+{
+  "point_local": [
+    0.0038536799699331074,
+    -0.001619125218162036,
+    0.0265295278205508
+  ],
+  "contact_count": 805,
+  "source_run": "single_face_contact_dev_v1_20261103",
+  "source_phase": "right_face_push",
+  "source_link": "right_index_DIP_rubber_link",
+  "method": "Impulse-positive contact points transformed through measured joint FK to right_index_DIP_rubber_link; componentwise median",
+  "robot_root_world_translation_m": [
+    0,
+    0,
+    1.15
+  ],
+  "units": "m",
+  "kind": "development_contact_anchor_not_real_hardware_calibration",
+  "source_sha256": {
+    "trajectory.json": "481fe8faa177a2bd53e1266707eb8e1aaab439d5d1d6da6caefdb8ea645be131",
+    "config.json": "d3c6084f638ed96ea299dbf76c386537051d3857c61675ddfc4abd5e9d925ae1",
+    "push_plan.json": "544920c489a675b640dd571dec1159ac494d0b007ba42aa53030c276be1a5067"
+  }
+}

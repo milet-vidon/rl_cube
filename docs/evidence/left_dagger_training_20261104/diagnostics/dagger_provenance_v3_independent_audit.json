@@ -1,0 +1,210 @@
+{
+  "scope": "independent offline integrity and CPU serialization audit; no Isaac run",
+  "wrapper_sha256": "268653ef77b2b500d5299ebb377a6311f98ed9d5199f0b345795b26a92669a33",
+  "real_fixture_sha256": "efad1567813765bb1e470326c1f72c05cff43f1e3b43fff942ecd3fec9ed18fb",
+  "actual_source": "/home/brainco/rl_cube/github_project/revotron_cube_rl/runs/left_dagger_baseline_preserve_v2_9501_20261104/transitions.jsonl",
+  "actual_source_steps": [
+    0,
+    1000
+  ],
+  "whole_actual_records_equal_after_expansion": true,
+  "explicit_actor_expert_action_gate_fields_equal": [
+    "actor_observation_pre",
+    "actor_observation_post",
+    "expert_supervision",
+    "student_proposed_target",
+    "student_proposed_left_target",
+    "selected_requested_target",
+    "actual_applied_target",
+    "executed_source",
+    "teacher_intervention",
+    "pre_gates",
+    "post_gates",
+    "terminal",
+    "failure_reason"
+  ],
+  "collector_semantic_equivalence": [
+    {
+      "source": "teacher",
+      "abort": false,
+      "prepared_record_packet_actor_inputs_and_query_count_exact": true
+    },
+    {
+      "source": "student",
+      "abort": false,
+      "prepared_record_packet_actor_inputs_and_query_count_exact": true
+    },
+    {
+      "source": "teacher",
+      "abort": true,
+      "prepared_record_packet_actor_inputs_and_query_count_exact": true
+    }
+  ],
+  "rejection_tests": {
+    "wrong_file_SHA": {
+      "rejected": true,
+      "error_type": "ValueError",
+      "reason": "Provenance file SHA256 mismatch"
+    },
+    "wrong_physics_SHA": {
+      "rejected": true,
+      "error_type": "ValueError",
+      "reason": "Physics identity SHA256 mismatch"
+    },
+    "path_traversal": {
+      "rejected": true,
+      "error_type": "ValueError",
+      "reason": "Unexpected provenance path"
+    },
+    "unexpected_reference_field": {
+      "rejected": true,
+      "error_type": "ValueError",
+      "reason": "Expected explicit v3 provenance reference"
+    },
+    "missing_file": {
+      "rejected": true,
+      "error_type": "FileNotFoundError",
+      "reason": "[Errno 2] No such file or directory: 'E:\\\\Codex\\\\2026-11-03\\\\ssh-3\\\\work\\\\dagger_v3_integrity_audit_9ho7__l4\\\\empty\\\\collection_provenance.json'"
+    },
+    "immutable_overwrite": {
+      "rejected": true,
+      "error_type": "FileExistsError",
+      "reason": "[Errno 17] File exists: 'E:\\\\Codex\\\\2026-11-03\\\\ssh-3\\\\work\\\\dagger_v3_integrity_audit_9ho7__l4\\\\collection_provenance.json'"
+    },
+    "file_bytes_appended": {
+      "rejected": true,
+      "error_type": "ValueError",
+      "reason": "Provenance file SHA256 mismatch"
+    },
+    "modified_physics_with_rehashed_file": {
+      "rejected": true,
+      "error_type": "ValueError",
+      "reason": "Physics identity SHA256 mismatch"
+    },
+    "missing_checkpoint_with_rehashed_file": {
+      "rejected": true,
+      "error_type": "ValueError",
+      "reason": "Missing immutable source/checkpoint provenance"
+    },
+    "missing_sources_with_rehashed_file": {
+      "rejected": true,
+      "error_type": "ValueError",
+      "reason": "Missing immutable source/checkpoint provenance"
+    },
+    "nested_abort_reference_tamper": {
+      "rejected": true,
+      "error_type": "ValueError",
+      "reason": "Provenance file SHA256 mismatch"
+    },
+    "unchecked_inline_record_rejected_at_v3_loader": {
+      "rejected": true,
+      "error_type": "ValueError",
+      "reason": "Expected explicit v3 provenance reference"
+    }
+  },
+  "provenance_canonical_bytes": 430353,
+  "immutable_file_bytes": 430354,
+  "reference_canonical_bytes": 257,
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.7"
+  },
+  "offline_component_benchmarks": [
+    {
+      "step": 0,
+      "full_row_canonical_bytes": 446427,
+      "compact_row_canonical_bytes": 16331,
+      "full_copy_and_canonical_serialization": {
+        "iterations_per_repeat": 20,
+        "repeats": 5,
+        "milliseconds_per_operation": [
+          16.286385,
+          16.49814,
+          16.534405,
+          16.214175,
+          16.663355
+        ],
+        "median_milliseconds": 16.49814
+      },
+      "compact_copy_and_canonical_serialization": {
+        "iterations_per_repeat": 20,
+        "repeats": 5,
+        "milliseconds_per_operation": [
+          0.95217,
+          0.94955,
+          0.950775,
+          0.95151,
+          0.95045
+        ],
+        "median_milliseconds": 0.950775
+      },
+      "verified_loader_read_hash_parse_and_expand": {
+        "iterations_per_repeat": 5,
+        "repeats": 3,
+        "milliseconds_per_operation": [
+          22.71434,
+          19.56096,
+          24.33886
+        ],
+        "median_milliseconds": 22.71434
+      },
+      "copy_serialization_component_ratio": 17.35230732823223
+    },
+    {
+      "step": 1000,
+      "full_row_canonical_bytes": 495878,
+      "compact_row_canonical_bytes": 65782,
+      "full_copy_and_canonical_serialization": {
+        "iterations_per_repeat": 20,
+        "repeats": 5,
+        "milliseconds_per_operation": [
+          17.18684,
+          17.535935,
+          18.124295,
+          17.051085,
+          17.995215
+        ],
+        "median_milliseconds": 17.535935
+      },
+      "compact_copy_and_canonical_serialization": {
+        "iterations_per_repeat": 20,
+        "repeats": 5,
+        "milliseconds_per_operation": [
+          3.03151,
+          3.317875,
+          3.424575,
+          3.28237,
+          3.062565
+        ],
+        "median_milliseconds": 3.28237
+      },
+      "verified_loader_read_hash_parse_and_expand": {
+        "iterations_per_repeat": 5,
+        "repeats": 3,
+        "milliseconds_per_operation": [
+          18.11766,
+          21.15802,
+          17.49182
+        ],
+        "median_milliseconds": 18.11766
+      },
+      "copy_serialization_component_ratio": 5.342461392225739
+    }
+  ],
+  "frozen_core_v1_v2_unchanged_sha256": {
+    "dagger_collection_core_v1.py": "6d4b2a635f98b563c10388153e4116054eb03a383e898ae7c36d572c9b182411",
+    "left_dagger_baseline_runtime_v1.py": "bfb23cc670c8475755e09c4da04f4c630c99cca02a334830de7020f882239064",
+    "left_dagger_baseline_runtime_v2.py": "2503a8773270f8d1edc7211981d11db8078c23a55d922d95b47d6cb5d4fd531e",
+    "collect_left_dagger_baseline_v1.py": "dea8c2db9c4eb9a47e1936432beb7e2fa8be98c1ff70c0983d9218b477455b6c",
+    "collect_left_dagger_baseline_v2.py": "262cc3af33f1bb2498c857d73f7e4790abea0e87020faff75d1fb146760000d1"
+  },
+  "scratch_directory": "E:\\Codex\\2026-11-03\\ssh-3\\work\\dagger_v3_integrity_audit_9ho7__l4",
+  "limitations": [
+    "No simulator wall-time speedup measured or claimed",
+    "No complete training-loop speedup measured or claimed",
+    "No disk throughput benchmark; serialization output remains in memory",
+    "Loader intentionally validates file bytes and physics hash on each call",
+    "Two real v2 rows provide realistic metadata/label shapes; v3 collector equivalence uses host mocks",
+    "Content hashes provide integrity against the referenced manifest, not cryptographic authentication"
+  ]
+}

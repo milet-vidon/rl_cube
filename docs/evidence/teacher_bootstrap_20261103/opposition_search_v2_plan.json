@@ -1,0 +1,217 @@
+{
+  "passed": false,
+  "failures": [
+    {
+      "offset": [
+        0.0,
+        0.003,
+        -0.004
+      ],
+      "finger_x": [
+        0.025,
+        0.009,
+        -0.009,
+        -0.025
+      ],
+      "failure": "Mirrored palm posture rejected: {\"qualified\": false, \"wrist\": {\"joint6_deg\": 29.80236589609715, \"side_bend_deg\": -31.888356584775124, \"flexion_deg\": 32.02739164892807, \"forearm_direction_palm_frame\": [0.4690712415199136, -0.4665433981503304, 0.7498729412515882], \"wrist_inside_elbow_m\": 0.25747603552032483}, \"elbow\": {\"shoulder_root_m\": [0.021714391534826162, 0.2500000000025263, 0.2400407847702415], \"elbow_root_m\": [0.17556602771566, 0.43003617197247884, 0.07691606407219266], \"wrist_root_m\": [0.3227486081795794, 0.172560136452154, 0.181622220246117], \"outward_from_shoulder_m\": 0.18003617196995253, \"upper_arm_outward_deg\": 47.82133403159163, \"outward_from_shoulder_wrist_axis_m\": 0.2124749931048668}, \"palm_normal_dot\": -0.838494503619963, \"left_facing_right_cos\": 0.8645869145206928, \"right_facing_left_cos\": 0.4511432548684946}"
+    },
+    {
+      "offset": [
+        0.0,
+        0.003,
+        -0.004
+      ],
+      "finger_x": [
+        0.027,
+        0.009,
+        -0.009,
+        -0.027
+      ],
+      "failure": "Mirrored palm posture rejected: {\"qualified\": false, \"wrist\": {\"joint6_deg\": 29.80236589609715, \"side_bend_deg\": -31.888356584775124, \"flexion_deg\": 32.02739164892807, \"forearm_direction_palm_frame\": [0.4690712415199136, -0.4665433981503304, 0.7498729412515882], \"wrist_inside_elbow_m\": 0.25747603552032483}, \"elbow\": {\"shoulder_root_m\": [0.021714391534826162, 0.2500000000025263, 0.2400407847702415], \"elbow_root_m\": [0.17556602771566, 0.43003617197247884, 0.07691606407219266], \"wrist_root_m\": [0.3227486081795794, 0.172560136452154, 0.181622220246117], \"outward_from_shoulder_m\": 0.18003617196995253, \"upper_arm_outward_deg\": 47.82133403159163, \"outward_from_shoulder_wrist_axis_m\": 0.2124749931048668}, \"palm_normal_dot\": -0.838494503619963, \"left_facing_right_cos\": 0.8645869145206928, \"right_facing_left_cos\": 0.4511432548684946}"
+    },
+    {
+      "offset": [
+        0.0,
+        0.003,
+        -0.004
+      ],
+      "finger_x": [
+        0.028,
+        0.008,
+        -0.012,
+        -0.028
+      ],
+      "failure": "Mirrored palm posture rejected: {\"qualified\": false, \"wrist\": {\"joint6_deg\": 29.80236589609715, \"side_bend_deg\": -31.888356584775124, \"flexion_deg\": 32.02739164892807, \"forearm_direction_palm_frame\": [0.4690712415199136, -0.4665433981503304, 0.7498729412515882], \"wrist_inside_elbow_m\": 0.25747603552032483}, \"elbow\": {\"shoulder_root_m\": [0.021714391534826162, 0.2500000000025263, 0.2400407847702415], \"elbow_root_m\": [0.17556602771566, 0.43003617197247884, 0.07691606407219266], \"wrist_root_m\": [0.3227486081795794, 0.172560136452154, 0.181622220246117], \"outward_from_shoulder_m\": 0.18003617196995253, \"upper_arm_outward_deg\": 47.82133403159163, \"outward_from_shoulder_wrist_axis_m\": 0.2124749931048668}, \"palm_normal_dot\": -0.838494503619963, \"left_facing_right_cos\": 0.8645869145206928, \"right_facing_left_cos\": 0.4511432548684946}"
+    },
+    {
+      "offset": [
+        0.0,
+        0.0,
+        -0.004
+      ],
+      "finger_x": [
+        0.025,
+        0.009,
+        -0.009,
+        -0.025
+      ],
+      "failure": "Finger goal unreachable: little 0.004601938004411264"
+    },
+    {
+      "offset": [
+        0.0,
+        0.0,
+        -0.004
+      ],
+      "finger_x": [
+        0.027,
+        0.009,
+        -0.009,
+        -0.027
+      ],
+      "failure": "Finger goal unreachable: little 0.0029177620469136574"
+    },
+    {
+      "offset": [
+        0.0,
+        0.0,
+        -0.004
+      ],
+      "finger_x": [
+        0.028,
+        0.008,
+        -0.012,
+        -0.028
+      ],
+      "failure": "Finger goal unreachable: little 0.002373925641371992"
+    },
+    {
+      "offset": [
+        0.0,
+        0.006,
+        -0.004
+      ],
+      "finger_x": [
+        0.025,
+        0.009,
+        -0.009,
+        -0.025
+      ],
+      "failure": "Closed grasp collision: ('right_little_DIP_rubber_link', 'stationary_layers', 0.0018701884473234223)"
+    },
+    {
+      "offset": [
+        0.0,
+        0.006,
+        -0.004
+      ],
+      "finger_x": [
+        0.027,
+        0.009,
+        -0.009,
+        -0.027
+      ],
+      "failure": "Closed grasp collision: ('right_little_DIP_rubber_link', 'stationary_layers', 0.001871945506933644)"
+    },
+    {
+      "offset": [
+        0.0,
+        0.006,
+        -0.004
+      ],
+      "finger_x": [
+        0.028,
+        0.008,
+        -0.012,
+        -0.028
+      ],
+      "failure": "Closed grasp collision: ('right_little_DIP_rubber_link', 'stationary_layers', 0.0018705325651613566)"
+    },
+    {
+      "offset": [
+        0.0,
+        0.003,
+        -0.008
+      ],
+      "finger_x": [
+        0.025,
+        0.009,
+        -0.009,
+        -0.025
+      ],
+      "failure": "Finger goal unreachable: index 0.004659187826463096"
+    },
+    {
+      "offset": [
+        0.0,
+        0.003,
+        -0.008
+      ],
+      "finger_x": [
+        0.027,
+        0.009,
+        -0.009,
+        -0.027
+      ],
+      "failure": "Finger goal unreachable: index 0.0028165884164302636"
+    },
+    {
+      "offset": [
+        0.0,
+        0.003,
+        -0.008
+      ],
+      "finger_x": [
+        0.028,
+        0.008,
+        -0.012,
+        -0.028
+      ],
+      "failure": "Finger goal unreachable: index 0.0020113262964943836"
+    },
+    {
+      "offset": [
+        0.0,
+        0.003,
+        0.0
+      ],
+      "finger_x": [
+        0.025,
+        0.009,
+        -0.009,
+        -0.025
+      ],
+      "failure": "Finger goal unreachable: little 0.005915424375276343"
+    },
+    {
+      "offset": [
+        0.0,
+        0.003,
+        0.0
+      ],
+      "finger_x": [
+        0.027,
+        0.009,
+        -0.009,
+        -0.027
+      ],
+      "failure": "Finger goal unreachable: little 0.004030692335431069"
+    },
+    {
+      "offset": [
+        0.0,
+        0.003,
+        0.0
+      ],
+      "finger_x": [
+        0.028,
+        0.008,
+        -0.012,
+        -0.028
+      ],
+      "failure": "Finger goal unreachable: little 0.0029894074931602135"
+    }
+  ],
+  "elapsed_s": 35.54340957700333,
+  "physics_validated": false
+}

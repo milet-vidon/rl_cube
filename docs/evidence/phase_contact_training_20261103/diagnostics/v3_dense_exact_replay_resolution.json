@@ -1,0 +1,31 @@
+{
+  "scope": "resolution of v3_dense source/environment ambiguity using completed exact-target diagnostic replay; not a learned-policy success",
+  "original_diagnosis_sha256": "23d46f34dc87101b5cea2a369152b302143a22289ee8f3cd0aa9f7ed746b7ae5",
+  "source_trajectory_sha256": "aaae6e424223eda650ff30eb5fe6656c00b4ef2d73d6a8a83a4f22e512f0288b",
+  "replay_trajectory_sha256": "49c9c3006d00705be907392f8267180cf428ce985d3ed36754664f4543e782af",
+  "replay_result_sha256": "4fac4e1f775731b3bf0fdef12ad6820b645dd44037bb952e5765d7fa69e34b14",
+  "replay_code_sha256": "626fdb31d2f845ed335a75ecd0f55cedf2cdbd03091ddf586ecdd767a3a0c80c",
+  "run": "revotron_cube_rl/runs/reference_exact_headless_replay_9501_20261103",
+  "steps": 2129,
+  "exact_mismatch_counts": {
+    "q": 0,
+    "applied_target": 0,
+    "cube_position": 0,
+    "cube_quaternion_wxyz": 0,
+    "finger_contact_impulses": 0
+  },
+  "maximum_emitted_target_error_rad": 0.0,
+  "maximum_lift_m": 0.3929770555496216,
+  "qualified_center_hold_s": 8.033333333333333,
+  "accepted_diagnostic": true,
+  "cube_pose_writes_during_control": 0,
+  "learned_policy": false,
+  "stage_gate_unlocked": false,
+  "conclusions": [
+    "The complete same-seed prefix is exactly reproducible under the v3 headless environment when actual applied targets match.",
+    "The omitted teacher constructor and rendering configuration do not explain v3_dense failure in this controlled same-seed comparison.",
+    "The learned-target perturbations cause the observed squeeze contact bifurcation in this deterministic comparison; low average target RMSE is not a sufficient rollout success criterion.",
+    "No second source-render replay is required for this ambiguity.",
+    "Next learned-model work should target closed-loop contact robustness and actual rollout performance; exact replay does not establish robustness, generalization or autonomous success."
+  ]
+}

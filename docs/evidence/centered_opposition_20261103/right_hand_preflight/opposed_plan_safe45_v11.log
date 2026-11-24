@@ -1,0 +1,12 @@
+CLOSED_CANDIDATE [0.0, 0.003, -0.004]
+CLOSURE_REJECT {} ('right_middle_DIP_link', 'right_ring_DIP_link', 0.0029152273342836475)
+CLOSURE_REJECT {'middle': 0.2} ('right_middle_DIP_link', 'right_ring_DIP_link', 0.0029210405887557527)
+CLOSURE_REJECT {'ring': 0.2} ('right_middle_DIP_link', 'right_ring_DIP_link', 0.0028014761984632443)
+CLOSURE_REJECT {'middle': 0.2, 'ring': -0.2} ('right_middle_DIP_link', 'right_ring_DIP_link', 0.0029204170227277275)
+CLOSURE_REJECT {'ring': 0.2, 'middle': -0.2} ('right_middle_DIP_link', 'right_ring_DIP_rubber_link', 0.002947401083812173)
+CLOSURE_REJECT {'little': 0.2, 'ring': 0.1} ('right_ring_DIP_rubber_link', 'right_little_DIP_rubber_link', 0.0029987148580208696)
+CLOSURE_REJECT {'index': -0.2, 'middle': -0.1} ('right_middle_DIP_link', 'right_ring_DIP_link', 0.002811839474324692)
+CLOSURE_MPR_REPAIR_PASSED
+SEARCH 15 checks 1775 seconds 52.359359490001225
+SEARCH 0 checks 3523 seconds 84.39483173999179
+OPPOSITION_PLAN True

@@ -1,0 +1,597 @@
+{
+  "schema": "completed_teacher_query_exception_evidence_v1",
+  "runs": {
+    "left_teacher_initial_state_dev_9502_20261104_v1": {
+      "result_kind": "failed teacher query after completed prefix; independent audit only, not original result or data qualification",
+      "completed_control_steps": 1574,
+      "completed_transition_count": 1574,
+      "first_last_executed_step": [
+        0,
+        1573
+      ],
+      "abort_step": 1574,
+      "abort_count": 1,
+      "completed_query_indices": [
+        0,
+        1573
+      ],
+      "successful_query_count": 1574,
+      "failed_query_attempt_ordinal_one_based_inferred": 1575,
+      "abort_has_actual_query_count_field": false,
+      "query_counter_semantics": "Oracle increments query_count only after teacher.action and all query validation succeed; counter remains completed count on this exception by frozen-source inference, not an abort-recorded measurement.",
+      "original_exception": {
+        "type": "ValueError",
+        "message": "Wrist-side reversal IK violates palm pose envelope",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/brainco/rl_cube/github_project/revotron_cube_rl/collect_left_dagger_baseline_v3.py\", line 34, in main\n    result=collect(runtime,actor,journal,checkpoint_hash,max_steps=args.max_steps,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/brainco/rl_cube/github_project/revotron_cube_rl/dagger_projected_collection_v3.py\", line 117, in collect\n    decision = collector.prepare(observation, actor, gates, execute_source=source,\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/brainco/rl_cube/github_project/revotron_cube_rl/dagger_projected_collection_v3.py\", line 72, in prepare\n    super().prepare(observation,*args,**kwargs)\n  File \"/home/brainco/rl_cube/github_project/revotron_cube_rl/dagger_collection_core_v1.py\", line 258, in prepare\n    return self._prepare_once(frozen, student_target, pre_gates, execute_source=execute_source,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/brainco/rl_cube/github_project/revotron_cube_rl/dagger_collection_core_v1.py\", line 283, in _prepare_once\n    expert = self.oracle.query(observation)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/brainco/rl_cube/github_project/revotron_cube_rl/dagger_collection_core_v1.py\", line 185, in query\n    native_action = self.teacher.action()\n                    ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/brainco/rl_cube/github_project/revotron_cube_rl/wrist_direction.py\", line 66, in action\n    result=super().action()\n           ^^^^^^^^^^^^^^^^\n  File \"/home/brainco/rl_cube/github_project/revotron_cube_rl/elbow_handover.py\", line 73, in action\n    result=super().action()\n           ^^^^^^^^^^^^^^^^\n  File \"/home/brainco/rl_cube/github_project/revotron_cube_rl/palm_handover.py\", line 97, in action\n    fitted=self.planner.fit_tilt(commanded,'left',position,rotation)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/brainco/rl_cube/github_project/revotron_cube_rl/wrist_direction.py\", line 31, in fit_tilt\n    raise ValueError('Wrist-side reversal IK violates palm pose envelope')\nValueError: Wrist-side reversal IK violates palm pose envelope\n"
+      },
+      "failure_stage": "teacher query inside collector.prepare, before runtime.execute_packet",
+      "abort_matches_last_post_state_all_fields": {
+        "applied_target": true,
+        "cube_angular_velocity": true,
+        "cube_linear_velocity": true,
+        "cube_position": true,
+        "cube_quaternion_wxyz": true,
+        "finger_contact_impulses": true,
+        "finger_contact_points": true,
+        "joint_velocity": true,
+        "phase": true,
+        "phase_progress": true,
+        "previous_executed_source": true,
+        "q": true
+      },
+      "no_abort_action_execution_evidence": [
+        "contiguous trajectory ends at 1573",
+        "one final abort at 1574 with no pending transition",
+        "abort episode counter remains 1574",
+        "abort observation matches every last completed actor post-state field",
+        "frozen source and traceback locate exception before execute_packet"
+      ],
+      "evidence_limit": "Control-step journal, observed state and frozen call-order proof; no independent external physics-tick recorder is claimed.",
+      "raw_done_count": 0,
+      "pose_reset_counts": [
+        2
+      ],
+      "maximum_height_m": 0.31463712120056153,
+      "final_left_contact_impulses": {
+        "thumb": 0.026119314761844006,
+        "index": 0.0,
+        "middle": 0.0014701743581179163,
+        "ring": 0.015252229513696314,
+        "little": 0.033895330398631976
+      },
+      "physics_identity_sha256": "b2f9feb645c8d92e2da3bb78653165292a5649e59864dee4b1de82e904854192",
+      "phase_clock_rows": [
+        {
+          "phase": "ready",
+          "first_step": 0,
+          "last_step": 240,
+          "actual_executed_actions": 241,
+          "frozen_seed9501_count": 244,
+          "last_public_progress": 0.9876543209876543,
+          "actions_at_progress_one": 0,
+          "additional_actions_beyond_baseline_count": 0,
+          "applied_left_targets_at_same_phase_progress_one": {
+            "distinct": 0,
+            "max_joint_range_rad": 0.0
+          },
+          "nominal_left_targets_at_same_phase_progress_one": {
+            "distinct": 0,
+            "max_joint_range_rad": 0.0
+          },
+          "observed_last_teacher_tick": 0,
+          "tick_scope": "diagnostic privileged teacher memory, not proposed policy feature"
+        },
+        {
+          "phase": "preshape",
+          "first_step": 241,
+          "last_step": 313,
+          "actual_executed_actions": 73,
+          "frozen_seed9501_count": 73,
+          "last_public_progress": 1.0,
+          "actions_at_progress_one": 1,
+          "additional_actions_beyond_baseline_count": 0,
+          "applied_left_targets_at_same_phase_progress_one": {
+            "distinct": 1,
+            "max_joint_range_rad": 0.0
+          },
+          "nominal_left_targets_at_same_phase_progress_one": {
+            "distinct": 1,
+            "max_joint_range_rad": 0.0
+          },
+          "observed_last_teacher_tick": 0,
+          "tick_scope": "diagnostic privileged teacher memory, not proposed policy feature"
+        },
+        {
+          "phase": "lower",
+          "first_step": 314,
+          "last_step": 374,
+          "actual_executed_actions": 61,
+          "frozen_seed9501_count": 61,
+          "last_public_progress": 1.0,
+          "actions_at_progress_one": 1,
+          "additional_actions_beyond_baseline_count": 0,
+          "applied_left_targets_at_same_phase_progress_one": {
+            "distinct": 1,
+            "max_joint_range_rad": 0.0
+          },
+          "nominal_left_targets_at_same_phase_progress_one": {
+            "distinct": 1,
+            "max_joint_range_rad": 0.0
+          },
+          "observed_last_teacher_tick": 0,
+          "tick_scope": "diagnostic privileged teacher memory, not proposed policy feature"
+        },
+        {
+          "phase": "approach",
+          "first_step": 375,
+          "last_step": 423,
+          "actual_executed_actions": 49,
+          "frozen_seed9501_count": 49,
+          "last_public_progress": 1.0,
+          "actions_at_progress_one": 1,
+          "additional_actions_beyond_baseline_count": 0,
+          "applied_left_targets_at_same_phase_progress_one": {
+            "distinct": 1,
+            "max_joint_range_rad": 0.0
+          },
+          "nominal_left_targets_at_same_phase_progress_one": {
+            "distinct": 1,
+            "max_joint_range_rad": 0.0
+          },
+          "observed_last_teacher_tick": 0,
+          "tick_scope": "diagnostic privileged teacher memory, not proposed policy feature"
+        },
+        {
+          "phase": "squeeze",
+          "first_step": 424,
+          "last_step": 523,
+          "actual_executed_actions": 100,
+          "frozen_seed9501_count": 85,
+          "last_public_progress": 1.0,
+          "actions_at_progress_one": 16,
+          "additional_actions_beyond_baseline_count": 15,
+          "applied_left_targets_at_same_phase_progress_one": {
+            "distinct": 6,
+            "max_joint_range_rad": 0.02499997615814209
+          },
+          "nominal_left_targets_at_same_phase_progress_one": {
+            "distinct": 1,
+            "max_joint_range_rad": 0.0
+          },
+          "observed_last_teacher_tick": 0,
+          "tick_scope": "diagnostic privileged teacher memory, not proposed policy feature"
+        },
+        {
+          "phase": "primary_lift",
+          "first_step": 524,
+          "last_step": 651,
+          "actual_executed_actions": 128,
+          "frozen_seed9501_count": 120,
+          "last_public_progress": 1.0,
+          "actions_at_progress_one": 9,
+          "additional_actions_beyond_baseline_count": 8,
+          "applied_left_targets_at_same_phase_progress_one": {
+            "distinct": 2,
+            "max_joint_range_rad": 1.9073486328125e-06
+          },
+          "nominal_left_targets_at_same_phase_progress_one": {
+            "distinct": 2,
+            "max_joint_range_rad": 1.9073486328125e-06
+          },
+          "observed_last_teacher_tick": 0,
+          "tick_scope": "diagnostic privileged teacher memory, not proposed policy feature"
+        },
+        {
+          "phase": "elbow_outward",
+          "first_step": 652,
+          "last_step": 789,
+          "actual_executed_actions": 138,
+          "frozen_seed9501_count": 129,
+          "last_public_progress": 1.0,
+          "actions_at_progress_one": 10,
+          "additional_actions_beyond_baseline_count": 9,
+          "applied_left_targets_at_same_phase_progress_one": {
+            "distinct": 10,
+            "max_joint_range_rad": 0.0030733300372958183
+          },
+          "nominal_left_targets_at_same_phase_progress_one": {
+            "distinct": 10,
+            "max_joint_range_rad": 0.0030733300372958183
+          },
+          "observed_last_teacher_tick": 137,
+          "tick_scope": "diagnostic privileged teacher memory, not proposed policy feature"
+        },
+        {
+          "phase": "tilt_90",
+          "first_step": 790,
+          "last_step": 1272,
+          "actual_executed_actions": 483,
+          "frozen_seed9501_count": 611,
+          "last_public_progress": 0.7901639344262295,
+          "actions_at_progress_one": 0,
+          "additional_actions_beyond_baseline_count": 0,
+          "applied_left_targets_at_same_phase_progress_one": {
+            "distinct": 0,
+            "max_joint_range_rad": 0.0
+          },
+          "nominal_left_targets_at_same_phase_progress_one": {
+            "distinct": 0,
+            "max_joint_range_rad": 0.0
+          },
+          "observed_last_teacher_tick": 620,
+          "tick_scope": "diagnostic privileged teacher memory, not proposed policy feature"
+        },
+        {
+          "phase": "wrist_reconfigure",
+          "first_step": 1273,
+          "last_step": 1453,
+          "actual_executed_actions": 181,
+          "frozen_seed9501_count": 181,
+          "last_public_progress": 1.0,
+          "actions_at_progress_one": 1,
+          "additional_actions_beyond_baseline_count": 0,
+          "applied_left_targets_at_same_phase_progress_one": {
+            "distinct": 1,
+            "max_joint_range_rad": 0.0
+          },
+          "nominal_left_targets_at_same_phase_progress_one": {
+            "distinct": 1,
+            "max_joint_range_rad": 0.0
+          },
+          "observed_last_teacher_tick": 801,
+          "tick_scope": "diagnostic privileged teacher memory, not proposed policy feature"
+        },
+        {
+          "phase": "tilt_hold",
+          "first_step": 1454,
+          "last_step": 1573,
+          "actual_executed_actions": 120,
+          "frozen_seed9501_count": 94,
+          "last_public_progress": 1.0,
+          "actions_at_progress_one": 27,
+          "additional_actions_beyond_baseline_count": 26,
+          "applied_left_targets_at_same_phase_progress_one": {
+            "distinct": 3,
+            "max_joint_range_rad": 0.010095953941345215
+          },
+          "nominal_left_targets_at_same_phase_progress_one": {
+            "distinct": 3,
+            "max_joint_range_rad": 0.010095953941345215
+          },
+          "observed_last_teacher_tick": 921,
+          "tick_scope": "diagnostic privileged teacher memory, not proposed policy feature"
+        }
+      ],
+      "schedule_interpretation": "Public phase progress is a baseline-duration clock, not actual planner path parameter or measured task completion. Saturation merges distinct elapsed times and sometimes distinct target commands; it does not by itself prove the cause of the IK failure.",
+      "future_public_features": {
+        "already_public": [
+          "same-action phase",
+          "clamped baseline-duration phase_progress",
+          "current actual measured state",
+          "previous actual applied target"
+        ],
+        "causal_derivable_with_new_explicit_schema": [
+          "elapsed executed actions in phase",
+          "unclipped elapsed/baseline-duration ratio",
+          "phase visit count",
+          "reset measured state",
+          "past measured-state/action history"
+        ],
+        "not_currently_public_requires_new_planner_interface": [
+          "actual current plan length/waypoint index",
+          "planned target pose or commanded path"
+        ],
+        "not_allowed_as_implicit_model_inputs": [
+          "future actual phase length",
+          "privileged teacher memory/tick/contact-streak",
+          "expert target or action label",
+          "executor identity or teacher intervention flag"
+        ]
+      },
+      "independent_audit_sha256": "cb4cbbf55e95e21b2acdce65d825841d6fc8e41845c2138fedacaa522636933a",
+      "original_result_present": false,
+      "original_artifact_manifest_present": false,
+      "data_training_qualification_granted": false
+    },
+    "left_teacher_initial_state_dev_9503_20261104_v1": {
+      "result_kind": "failed teacher query after completed prefix; independent audit only, not original result or data qualification",
+      "completed_control_steps": 1505,
+      "completed_transition_count": 1505,
+      "first_last_executed_step": [
+        0,
+        1504
+      ],
+      "abort_step": 1505,
+      "abort_count": 1,
+      "completed_query_indices": [
+        0,
+        1504
+      ],
+      "successful_query_count": 1505,
+      "failed_query_attempt_ordinal_one_based_inferred": 1506,
+      "abort_has_actual_query_count_field": false,
+      "query_counter_semantics": "Oracle increments query_count only after teacher.action and all query validation succeed; counter remains completed count on this exception by frozen-source inference, not an abort-recorded measurement.",
+      "original_exception": {
+        "type": "ValueError",
+        "message": "Wrist-side reversal IK violates palm pose envelope",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/brainco/rl_cube/github_project/revotron_cube_rl/collect_left_dagger_baseline_v3.py\", line 34, in main\n    result=collect(runtime,actor,journal,checkpoint_hash,max_steps=args.max_steps,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/brainco/rl_cube/github_project/revotron_cube_rl/dagger_projected_collection_v3.py\", line 117, in collect\n    decision = collector.prepare(observation, actor, gates, execute_source=source,\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/brainco/rl_cube/github_project/revotron_cube_rl/dagger_projected_collection_v3.py\", line 72, in prepare\n    super().prepare(observation,*args,**kwargs)\n  File \"/home/brainco/rl_cube/github_project/revotron_cube_rl/dagger_collection_core_v1.py\", line 258, in prepare\n    return self._prepare_once(frozen, student_target, pre_gates, execute_source=execute_source,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/brainco/rl_cube/github_project/revotron_cube_rl/dagger_collection_core_v1.py\", line 283, in _prepare_once\n    expert = self.oracle.query(observation)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/brainco/rl_cube/github_project/revotron_cube_rl/dagger_collection_core_v1.py\", line 185, in query\n    native_action = self.teacher.action()\n                    ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/brainco/rl_cube/github_project/revotron_cube_rl/wrist_direction.py\", line 66, in action\n    result=super().action()\n           ^^^^^^^^^^^^^^^^\n  File \"/home/brainco/rl_cube/github_project/revotron_cube_rl/elbow_handover.py\", line 73, in action\n    result=super().action()\n           ^^^^^^^^^^^^^^^^\n  File \"/home/brainco/rl_cube/github_project/revotron_cube_rl/palm_handover.py\", line 97, in action\n    fitted=self.planner.fit_tilt(commanded,'left',position,rotation)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/brainco/rl_cube/github_project/revotron_cube_rl/wrist_direction.py\", line 31, in fit_tilt\n    raise ValueError('Wrist-side reversal IK violates palm pose envelope')\nValueError: Wrist-side reversal IK violates palm pose envelope\n"
+      },
+      "failure_stage": "teacher query inside collector.prepare, before runtime.execute_packet",
+      "abort_matches_last_post_state_all_fields": {
+        "applied_target": true,
+        "cube_angular_velocity": true,
+        "cube_linear_velocity": true,
+        "cube_position": true,
+        "cube_quaternion_wxyz": true,
+        "finger_contact_impulses": true,
+        "finger_contact_points": true,
+        "joint_velocity": true,
+        "phase": true,
+        "phase_progress": true,
+        "previous_executed_source": true,
+        "q": true
+      },
+      "no_abort_action_execution_evidence": [
+        "contiguous trajectory ends at 1504",
+        "one final abort at 1505 with no pending transition",
+        "abort episode counter remains 1505",
+        "abort observation matches every last completed actor post-state field",
+        "frozen source and traceback locate exception before execute_packet"
+      ],
+      "evidence_limit": "Control-step journal, observed state and frozen call-order proof; no independent external physics-tick recorder is claimed.",
+      "raw_done_count": 0,
+      "pose_reset_counts": [
+        2
+      ],
+      "maximum_height_m": 0.38809913063049317,
+      "final_left_contact_impulses": {
+        "thumb": 0.0432535725595768,
+        "index": 0.0,
+        "middle": 0.006932765517882558,
+        "ring": 0.01308856181467331,
+        "little": 0.04941803567749785
+      },
+      "physics_identity_sha256": "b2f9feb645c8d92e2da3bb78653165292a5649e59864dee4b1de82e904854192",
+      "phase_clock_rows": [
+        {
+          "phase": "ready",
+          "first_step": 0,
+          "last_step": 233,
+          "actual_executed_actions": 234,
+          "frozen_seed9501_count": 244,
+          "last_public_progress": 0.9588477366255144,
+          "actions_at_progress_one": 0,
+          "additional_actions_beyond_baseline_count": 0,
+          "applied_left_targets_at_same_phase_progress_one": {
+            "distinct": 0,
+            "max_joint_range_rad": 0.0
+          },
+          "nominal_left_targets_at_same_phase_progress_one": {
+            "distinct": 0,
+            "max_joint_range_rad": 0.0
+          },
+          "observed_last_teacher_tick": 0,
+          "tick_scope": "diagnostic privileged teacher memory, not proposed policy feature"
+        },
+        {
+          "phase": "preshape",
+          "first_step": 234,
+          "last_step": 306,
+          "actual_executed_actions": 73,
+          "frozen_seed9501_count": 73,
+          "last_public_progress": 1.0,
+          "actions_at_progress_one": 1,
+          "additional_actions_beyond_baseline_count": 0,
+          "applied_left_targets_at_same_phase_progress_one": {
+            "distinct": 1,
+            "max_joint_range_rad": 0.0
+          },
+          "nominal_left_targets_at_same_phase_progress_one": {
+            "distinct": 1,
+            "max_joint_range_rad": 0.0
+          },
+          "observed_last_teacher_tick": 0,
+          "tick_scope": "diagnostic privileged teacher memory, not proposed policy feature"
+        },
+        {
+          "phase": "lower",
+          "first_step": 307,
+          "last_step": 367,
+          "actual_executed_actions": 61,
+          "frozen_seed9501_count": 61,
+          "last_public_progress": 1.0,
+          "actions_at_progress_one": 1,
+          "additional_actions_beyond_baseline_count": 0,
+          "applied_left_targets_at_same_phase_progress_one": {
+            "distinct": 1,
+            "max_joint_range_rad": 0.0
+          },
+          "nominal_left_targets_at_same_phase_progress_one": {
+            "distinct": 1,
+            "max_joint_range_rad": 0.0
+          },
+          "observed_last_teacher_tick": 0,
+          "tick_scope": "diagnostic privileged teacher memory, not proposed policy feature"
+        },
+        {
+          "phase": "approach",
+          "first_step": 368,
+          "last_step": 416,
+          "actual_executed_actions": 49,
+          "frozen_seed9501_count": 49,
+          "last_public_progress": 1.0,
+          "actions_at_progress_one": 1,
+          "additional_actions_beyond_baseline_count": 0,
+          "applied_left_targets_at_same_phase_progress_one": {
+            "distinct": 1,
+            "max_joint_range_rad": 0.0
+          },
+          "nominal_left_targets_at_same_phase_progress_one": {
+            "distinct": 1,
+            "max_joint_range_rad": 0.0
+          },
+          "observed_last_teacher_tick": 0,
+          "tick_scope": "diagnostic privileged teacher memory, not proposed policy feature"
+        },
+        {
+          "phase": "squeeze",
+          "first_step": 417,
+          "last_step": 529,
+          "actual_executed_actions": 113,
+          "frozen_seed9501_count": 85,
+          "last_public_progress": 1.0,
+          "actions_at_progress_one": 29,
+          "additional_actions_beyond_baseline_count": 28,
+          "applied_left_targets_at_same_phase_progress_one": {
+            "distinct": 19,
+            "max_joint_range_rad": 0.08999991416931152
+          },
+          "nominal_left_targets_at_same_phase_progress_one": {
+            "distinct": 1,
+            "max_joint_range_rad": 0.0
+          },
+          "observed_last_teacher_tick": 0,
+          "tick_scope": "diagnostic privileged teacher memory, not proposed policy feature"
+        },
+        {
+          "phase": "primary_lift",
+          "first_step": 530,
+          "last_step": 649,
+          "actual_executed_actions": 120,
+          "frozen_seed9501_count": 120,
+          "last_public_progress": 1.0,
+          "actions_at_progress_one": 1,
+          "additional_actions_beyond_baseline_count": 0,
+          "applied_left_targets_at_same_phase_progress_one": {
+            "distinct": 1,
+            "max_joint_range_rad": 0.0
+          },
+          "nominal_left_targets_at_same_phase_progress_one": {
+            "distinct": 1,
+            "max_joint_range_rad": 0.0
+          },
+          "observed_last_teacher_tick": 0,
+          "tick_scope": "diagnostic privileged teacher memory, not proposed policy feature"
+        },
+        {
+          "phase": "elbow_outward",
+          "first_step": 650,
+          "last_step": 771,
+          "actual_executed_actions": 122,
+          "frozen_seed9501_count": 129,
+          "last_public_progress": 0.9453125,
+          "actions_at_progress_one": 0,
+          "additional_actions_beyond_baseline_count": 0,
+          "applied_left_targets_at_same_phase_progress_one": {
+            "distinct": 0,
+            "max_joint_range_rad": 0.0
+          },
+          "nominal_left_targets_at_same_phase_progress_one": {
+            "distinct": 0,
+            "max_joint_range_rad": 0.0
+          },
+          "observed_last_teacher_tick": 121,
+          "tick_scope": "diagnostic privileged teacher memory, not proposed policy feature"
+        },
+        {
+          "phase": "tilt_90",
+          "first_step": 772,
+          "last_step": 1233,
+          "actual_executed_actions": 462,
+          "frozen_seed9501_count": 611,
+          "last_public_progress": 0.7557377049180328,
+          "actions_at_progress_one": 0,
+          "additional_actions_beyond_baseline_count": 0,
+          "applied_left_targets_at_same_phase_progress_one": {
+            "distinct": 0,
+            "max_joint_range_rad": 0.0
+          },
+          "nominal_left_targets_at_same_phase_progress_one": {
+            "distinct": 0,
+            "max_joint_range_rad": 0.0
+          },
+          "observed_last_teacher_tick": 583,
+          "tick_scope": "diagnostic privileged teacher memory, not proposed policy feature"
+        },
+        {
+          "phase": "wrist_reconfigure",
+          "first_step": 1234,
+          "last_step": 1414,
+          "actual_executed_actions": 181,
+          "frozen_seed9501_count": 181,
+          "last_public_progress": 1.0,
+          "actions_at_progress_one": 1,
+          "additional_actions_beyond_baseline_count": 0,
+          "applied_left_targets_at_same_phase_progress_one": {
+            "distinct": 1,
+            "max_joint_range_rad": 0.0
+          },
+          "nominal_left_targets_at_same_phase_progress_one": {
+            "distinct": 1,
+            "max_joint_range_rad": 0.0
+          },
+          "observed_last_teacher_tick": 764,
+          "tick_scope": "diagnostic privileged teacher memory, not proposed policy feature"
+        },
+        {
+          "phase": "tilt_hold",
+          "first_step": 1415,
+          "last_step": 1504,
+          "actual_executed_actions": 90,
+          "frozen_seed9501_count": 94,
+          "last_public_progress": 0.956989247311828,
+          "actions_at_progress_one": 0,
+          "additional_actions_beyond_baseline_count": 0,
+          "applied_left_targets_at_same_phase_progress_one": {
+            "distinct": 0,
+            "max_joint_range_rad": 0.0
+          },
+          "nominal_left_targets_at_same_phase_progress_one": {
+            "distinct": 0,
+            "max_joint_range_rad": 0.0
+          },
+          "observed_last_teacher_tick": 854,
+          "tick_scope": "diagnostic privileged teacher memory, not proposed policy feature"
+        }
+      ],
+      "schedule_interpretation": "Public phase progress is a baseline-duration clock, not actual planner path parameter or measured task completion. Saturation merges distinct elapsed times and sometimes distinct target commands; it does not by itself prove the cause of the IK failure.",
+      "future_public_features": {
+        "already_public": [
+          "same-action phase",
+          "clamped baseline-duration phase_progress",
+          "current actual measured state",
+          "previous actual applied target"
+        ],
+        "causal_derivable_with_new_explicit_schema": [
+          "elapsed executed actions in phase",
+          "unclipped elapsed/baseline-duration ratio",
+          "phase visit count",
+          "reset measured state",
+          "past measured-state/action history"
+        ],
+        "not_currently_public_requires_new_planner_interface": [
+          "actual current plan length/waypoint index",
+          "planned target pose or commanded path"
+        ],
+        "not_allowed_as_implicit_model_inputs": [
+          "future actual phase length",
+          "privileged teacher memory/tick/contact-streak",
+          "expert target or action label",
+          "executor identity or teacher intervention flag"
+        ]
+      },
+      "independent_audit_sha256": "5827d0cd5d4ee4b8a48393fa8ed6224da7926f02faac45ca93071af18200ae3f",
+      "original_result_present": false,
+      "original_artifact_manifest_present": false,
+      "data_training_qualification_granted": false
+    }
+  },
+  "original_missing_results_preserved": true,
+  "no_original_result_or_manifest_fabricated": true,
+  "training_or_generalization_success_claim": false,
+  "whole_neural_episode_claim": false,
+  "actor_scope": "Original privileged teacher actions and original controller/gates, no visual policy or free cube turn/solution claim.",
+  "phase_clock_limit": "Old seed9501 baseline duration is a clamped public clock. It is not actual path progress and cannot identify varying targets after saturation. This observation does not prove the cause of either IK exception.",
+  "all_original_run_files_preserved": true,
+  "git_stage_commit_push_performed": false
+}

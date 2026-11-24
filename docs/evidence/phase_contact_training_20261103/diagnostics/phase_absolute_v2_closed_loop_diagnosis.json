@@ -1,0 +1,593 @@
+{
+  "trajectory_sha256": "41f82a3cc6bab9391f46cee9311fb0f6f5ce563e3a3185e7041173cf3228a6a0",
+  "reference_sha256": "aaae6e424223eda650ff30eb5fe6656c00b4ef2d73d6a8a83a4f22e512f0288b",
+  "phases": {
+    "ready": {
+      "first_step": 0,
+      "last_step": 243,
+      "frames": 244,
+      "all_five_frames": 0,
+      "missing_finger_frames": {
+        "thumb": 244,
+        "index": 244,
+        "middle": 244,
+        "ring": 244,
+        "little": 244
+      },
+      "last_target_error_rad": 0.002333870157599449,
+      "worst_joint": "left_middle_DIP_joint",
+      "signed_target_error_rad": 0.002333870157599449,
+      "last_height_m": -6.589889526287251e-07,
+      "reference_height_m": -6.589889526287251e-07
+    },
+    "preshape": {
+      "first_step": 244,
+      "last_step": 316,
+      "frames": 73,
+      "all_five_frames": 0,
+      "missing_finger_frames": {
+        "thumb": 73,
+        "index": 73,
+        "middle": 73,
+        "ring": 73,
+        "little": 73
+      },
+      "last_target_error_rad": 0.020560383796691895,
+      "worst_joint": "Joint6_L",
+      "signed_target_error_rad": 0.020560383796691895,
+      "last_height_m": -6.589889526287251e-07,
+      "reference_height_m": -6.589889526287251e-07
+    },
+    "lower": {
+      "first_step": 317,
+      "last_step": 377,
+      "frames": 61,
+      "all_five_frames": 0,
+      "missing_finger_frames": {
+        "thumb": 61,
+        "index": 61,
+        "middle": 61,
+        "ring": 61,
+        "little": 61
+      },
+      "last_target_error_rad": 0.003092259168624878,
+      "worst_joint": "left_ring_MCP_joint",
+      "signed_target_error_rad": 0.003092259168624878,
+      "last_height_m": -6.589889526287251e-07,
+      "reference_height_m": -6.589889526287251e-07
+    },
+    "approach": {
+      "first_step": 378,
+      "last_step": 426,
+      "frames": 49,
+      "all_five_frames": 0,
+      "missing_finger_frames": {
+        "thumb": 40,
+        "index": 49,
+        "middle": 49,
+        "ring": 49,
+        "little": 34
+      },
+      "last_target_error_rad": 0.0026634931564331055,
+      "worst_joint": "left_ring_MCP_joint",
+      "signed_target_error_rad": 0.0026634931564331055,
+      "last_height_m": 9.631776809693182e-05,
+      "reference_height_m": 2.6043891906746275e-05
+    },
+    "squeeze": {
+      "first_step": 427,
+      "last_step": 511,
+      "frames": 85,
+      "all_five_frames": 0,
+      "missing_finger_frames": {
+        "thumb": 0,
+        "index": 85,
+        "middle": 85,
+        "ring": 85,
+        "little": 2
+      },
+      "last_target_error_rad": 0.027180850505828857,
+      "worst_joint": "left_ring_PIP_joint",
+      "signed_target_error_rad": -0.027180850505828857,
+      "last_height_m": 0.0020693507194519123,
+      "reference_height_m": 0.003239985942840584
+    },
+    "primary_lift": {
+      "first_step": 512,
+      "last_step": 631,
+      "frames": 120,
+      "all_five_frames": 0,
+      "missing_finger_frames": {
+        "thumb": 0,
+        "index": 117,
+        "middle": 83,
+        "ring": 70,
+        "little": 0
+      },
+      "last_target_error_rad": 0.016327381134033203,
+      "worst_joint": "left_middle_DIP_joint",
+      "signed_target_error_rad": 0.016327381134033203,
+      "last_height_m": 0.18190019989013673,
+      "reference_height_m": 0.1877564754486084
+    },
+    "elbow_outward": {
+      "first_step": 632,
+      "last_step": 760,
+      "frames": 129,
+      "all_five_frames": 0,
+      "missing_finger_frames": {
+        "thumb": 0,
+        "index": 129,
+        "middle": 129,
+        "ring": 0,
+        "little": 0
+      },
+      "last_target_error_rad": 0.017166495323181152,
+      "worst_joint": "left_middle_DIP_joint",
+      "signed_target_error_rad": 0.017166495323181152,
+      "last_height_m": 0.23538189792633057,
+      "reference_height_m": 0.24226480388641358
+    },
+    "tilt_90": {
+      "first_step": 761,
+      "last_step": 1371,
+      "frames": 611,
+      "all_five_frames": 0,
+      "missing_finger_frames": {
+        "thumb": 0,
+        "index": 611,
+        "middle": 611,
+        "ring": 0,
+        "little": 0
+      },
+      "last_target_error_rad": 0.023783206939697266,
+      "worst_joint": "Joint5_L",
+      "signed_target_error_rad": 0.023783206939697266,
+      "last_height_m": 0.22664731407165528,
+      "reference_height_m": 0.23665445709228516
+    },
+    "wrist_reconfigure": {
+      "first_step": 1372,
+      "last_step": 1552,
+      "frames": 181,
+      "all_five_frames": 0,
+      "missing_finger_frames": {
+        "thumb": 0,
+        "index": 181,
+        "middle": 181,
+        "ring": 0,
+        "little": 0
+      },
+      "last_target_error_rad": 0.009247362613677979,
+      "worst_joint": "left_index_DIP_joint",
+      "signed_target_error_rad": 0.009247362613677979,
+      "last_height_m": 0.35763007068634034,
+      "reference_height_m": 0.36859577560424805
+    },
+    "tilt_hold": {
+      "first_step": 1553,
+      "last_step": 1646,
+      "frames": 94,
+      "all_five_frames": 0,
+      "missing_finger_frames": {
+        "thumb": 0,
+        "index": 94,
+        "middle": 94,
+        "ring": 0,
+        "little": 0
+      },
+      "last_target_error_rad": 0.03477597236633301,
+      "worst_joint": "left_index_DIP_joint",
+      "signed_target_error_rad": 0.03477597236633301,
+      "last_height_m": 0.34900539779663087,
+      "reference_height_m": 0.36801057720184327
+    },
+    "left_center_transport": {
+      "first_step": 1647,
+      "last_step": 1885,
+      "frames": 239,
+      "all_five_frames": 0,
+      "missing_finger_frames": {
+        "thumb": 7,
+        "index": 239,
+        "middle": 239,
+        "ring": 7,
+        "little": 6
+      },
+      "last_target_error_rad": 0.0351412296295166,
+      "worst_joint": "left_index_MCP_joint",
+      "signed_target_error_rad": -0.0351412296295166,
+      "last_height_m": 0.042385753631591805,
+      "reference_height_m": 0.3658969964981079
+    }
+  },
+  "events": [
+    {
+      "step": 1552,
+      "phase": "wrist_reconfigure",
+      "height_m": 0.35763007068634034,
+      "contacts": {
+        "thumb": true,
+        "index": false,
+        "middle": false,
+        "ring": true,
+        "little": true
+      },
+      "impulse": {
+        "thumb": 0.0445278668765486,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0293516855669091,
+        "little": 0.04624159606557847
+      },
+      "max_target_error_rad": 0.009247362613677979,
+      "worst_joint": "left_index_DIP_joint",
+      "wrist": {
+        "joint6_deg": 12.19864784820378,
+        "side_bend_deg": -15.283331696349924,
+        "flexion_deg": 42.19182691515752,
+        "forearm_direction_palm_frame": [
+          0.6582598955823724,
+          -0.19842994463276098,
+          0.7261676575976953
+        ],
+        "wrist_inside_elbow_m": 0.10251346230506897
+      },
+      "center_failed_conditions": [
+        "five_left_contacts",
+        "stable_lift",
+        "center_position",
+        "cube_orientation"
+      ]
+    },
+    {
+      "step": 1553,
+      "phase": "tilt_hold",
+      "height_m": 0.3568727340698242,
+      "contacts": {
+        "thumb": true,
+        "index": false,
+        "middle": false,
+        "ring": true,
+        "little": true
+      },
+      "impulse": {
+        "thumb": 0.02957936463771445,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.023986297637281828,
+        "little": 0.036990930822779704
+      },
+      "max_target_error_rad": 0.008382320404052734,
+      "worst_joint": "left_index_MCP_joint",
+      "wrist": {
+        "joint6_deg": 12.175182733310201,
+        "side_bend_deg": -15.256622834768853,
+        "flexion_deg": 42.22107632392286,
+        "forearm_direction_palm_frame": [
+          0.6586899769330681,
+          -0.19799239621824996,
+          0.725897048711228
+        ],
+        "wrist_inside_elbow_m": 0.102235347032547
+      },
+      "center_failed_conditions": [
+        "five_left_contacts",
+        "stable_lift",
+        "center_position",
+        "cube_orientation"
+      ]
+    },
+    {
+      "step": 1600,
+      "phase": "tilt_hold",
+      "height_m": 0.3556293811798096,
+      "contacts": {
+        "thumb": true,
+        "index": false,
+        "middle": false,
+        "ring": true,
+        "little": true
+      },
+      "impulse": {
+        "thumb": 0.030153736564429233,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.024220580458318087,
+        "little": 0.03994910351756042
+      },
+      "max_target_error_rad": 0.015465974807739258,
+      "worst_joint": "left_index_DIP_joint",
+      "wrist": {
+        "joint6_deg": 11.92359783787466,
+        "side_bend_deg": -15.011101569992626,
+        "flexion_deg": 42.52860916175805,
+        "forearm_direction_palm_frame": [
+          0.663133952173079,
+          -0.19386633076989182,
+          0.7229586483811722
+        ],
+        "wrist_inside_elbow_m": 0.10159829258918762
+      },
+      "center_failed_conditions": [
+        "five_left_contacts",
+        "stable_lift",
+        "center_position",
+        "cube_orientation"
+      ]
+    },
+    {
+      "step": 1646,
+      "phase": "tilt_hold",
+      "height_m": 0.34900539779663087,
+      "contacts": {
+        "thumb": true,
+        "index": false,
+        "middle": false,
+        "ring": true,
+        "little": true
+      },
+      "impulse": {
+        "thumb": 0.03739541586582898,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.027026383431081,
+        "little": 0.035011555173112996
+      },
+      "max_target_error_rad": 0.03477597236633301,
+      "worst_joint": "left_index_DIP_joint",
+      "wrist": {
+        "joint6_deg": 11.989849819050137,
+        "side_bend_deg": -15.069850012611166,
+        "flexion_deg": 42.390613296971296,
+        "forearm_direction_palm_frame": [
+          0.661233378033004,
+          -0.19504418517626032,
+          0.7243812432717949
+        ],
+        "wrist_inside_elbow_m": 0.10324907302856445
+      },
+      "center_failed_conditions": [
+        "five_left_contacts",
+        "stable_lift",
+        "center_position",
+        "cube_orientation"
+      ]
+    },
+    {
+      "step": 1647,
+      "phase": "left_center_transport",
+      "height_m": 0.347637113571167,
+      "contacts": {
+        "thumb": true,
+        "index": false,
+        "middle": false,
+        "ring": true,
+        "little": true
+      },
+      "impulse": {
+        "thumb": 0.03870890779223255,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.029305504420547957,
+        "little": 0.035275429711974136
+      },
+      "max_target_error_rad": 0.017415642738342285,
+      "worst_joint": "left_index_DIP_joint",
+      "wrist": {
+        "joint6_deg": 12.039736666974264,
+        "side_bend_deg": -15.133352446990276,
+        "flexion_deg": 42.39982839365449,
+        "forearm_direction_palm_frame": [
+          0.6612422788268538,
+          -0.19584486798200237,
+          0.7241570522869895
+        ],
+        "wrist_inside_elbow_m": 0.10329294204711914
+      },
+      "center_failed_conditions": [
+        "five_left_contacts",
+        "stable_lift",
+        "center_position",
+        "cube_orientation"
+      ]
+    },
+    {
+      "step": 1700,
+      "phase": "left_center_transport",
+      "height_m": 0.3522713747024536,
+      "contacts": {
+        "thumb": true,
+        "index": false,
+        "middle": false,
+        "ring": true,
+        "little": true
+      },
+      "impulse": {
+        "thumb": 0.03721449077952095,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.027275892270379194,
+        "little": 0.0365946932883594
+      },
+      "max_target_error_rad": 0.02156040072441101,
+      "worst_joint": "left_index_DIP_joint",
+      "wrist": {
+        "joint6_deg": 13.137993519471879,
+        "side_bend_deg": -16.38572800206781,
+        "flexion_deg": 42.094618779650816,
+        "forearm_direction_palm_frame": [
+          0.6549477520619278,
+          -0.21317756278908045,
+          0.7249819092862493
+        ],
+        "wrist_inside_elbow_m": 0.11293652653694153
+      },
+      "center_failed_conditions": [
+        "five_left_contacts",
+        "stable_lift",
+        "center_position",
+        "cube_orientation"
+      ]
+    },
+    {
+      "step": 1750,
+      "phase": "left_center_transport",
+      "height_m": 0.3676682081222534,
+      "contacts": {
+        "thumb": true,
+        "index": false,
+        "middle": false,
+        "ring": true,
+        "little": true
+      },
+      "impulse": {
+        "thumb": 0.037893562403691676,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.026956275578929188,
+        "little": 0.034705356993988086
+      },
+      "max_target_error_rad": 0.03669598698616028,
+      "worst_joint": "left_index_DIP_joint",
+      "wrist": {
+        "joint6_deg": 18.105467159417092,
+        "side_bend_deg": -21.42932968278172,
+        "flexion_deg": 39.247935445115765,
+        "forearm_direction_palm_frame": [
+          0.6053334277771003,
+          -0.2908110353415733,
+          0.7409456005262391
+        ],
+        "wrist_inside_elbow_m": 0.16158396005630493
+      },
+      "center_failed_conditions": [
+        "five_left_contacts",
+        "stable_lift",
+        "center_position",
+        "cube_orientation"
+      ]
+    },
+    {
+      "step": 1800,
+      "phase": "left_center_transport",
+      "height_m": 0.3700563278198242,
+      "contacts": {
+        "thumb": true,
+        "index": false,
+        "middle": false,
+        "ring": true,
+        "little": true
+      },
+      "impulse": {
+        "thumb": 0.03699706467285548,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.025864654897035905,
+        "little": 0.027837080570183817
+      },
+      "max_target_error_rad": 0.016345620155334473,
+      "worst_joint": "left_index_PIP_joint",
+      "wrist": {
+        "joint6_deg": 24.505718119292343,
+        "side_bend_deg": -27.27806158203245,
+        "flexion_deg": 35.19281970973021,
+        "forearm_direction_palm_frame": [
+          0.5310998315123366,
+          -0.3883296860900961,
+          0.7530823486636341
+        ],
+        "wrist_inside_elbow_m": 0.22201548516750336
+      },
+      "center_failed_conditions": [
+        "five_left_contacts",
+        "stable_lift",
+        "center_position",
+        "cube_orientation"
+      ]
+    },
+    {
+      "step": 1850,
+      "phase": "left_center_transport",
+      "height_m": 0.35501163864135743,
+      "contacts": {
+        "thumb": true,
+        "index": false,
+        "middle": false,
+        "ring": true,
+        "little": true
+      },
+      "impulse": {
+        "thumb": 0.035200031978237706,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.025252887725878873,
+        "little": 0.028984140941639626
+      },
+      "max_target_error_rad": 0.034706830978393555,
+      "worst_joint": "left_index_PIP_joint",
+      "wrist": {
+        "joint6_deg": 29.082648372685398,
+        "side_bend_deg": -31.27457200226432,
+        "flexion_deg": 32.50280159708798,
+        "forearm_direction_palm_frame": [
+          0.47824376513856687,
+          -0.45592270322091777,
+          0.75061134403486
+        ],
+        "wrist_inside_elbow_m": 0.2542332857847214
+      },
+      "center_failed_conditions": [
+        "five_left_contacts",
+        "stable_lift",
+        "center_position",
+        "cube_orientation"
+      ]
+    },
+    {
+      "step": 1885,
+      "phase": "left_center_transport",
+      "height_m": 0.042385753631591805,
+      "contacts": {
+        "thumb": false,
+        "index": false,
+        "middle": false,
+        "ring": false,
+        "little": false
+      },
+      "impulse": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "max_target_error_rad": 0.0351412296295166,
+      "worst_joint": "left_index_MCP_joint",
+      "wrist": {
+        "joint6_deg": 29.816743444300027,
+        "side_bend_deg": -31.94894271529788,
+        "flexion_deg": 32.19859568464653,
+        "forearm_direction_palm_frame": [
+          0.47126046981050296,
+          -0.46671893982296475,
+          0.7483896049548743
+        ],
+        "wrist_inside_elbow_m": 0.2606737017631531
+      },
+      "center_failed_conditions": [
+        "five_left_contacts",
+        "stable_lift",
+        "center_position",
+        "cube_orientation"
+      ]
+    }
+  ],
+  "first_loss_after_tilt_hold": {
+    "thumb": 1879,
+    "index": 1553,
+    "middle": 1553,
+    "ring": 1879,
+    "little": 1880
+  }
+}

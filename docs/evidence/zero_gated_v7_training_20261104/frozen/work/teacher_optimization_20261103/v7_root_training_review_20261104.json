@@ -1,0 +1,16 @@
+{
+  "reviewer": "root",
+  "approved_scope": "five actual development histories supervised BC only",
+  "authorization_sha256": "bee59f0f281d62029b8fbb9681b0a1a6affeb058f0b441d3e760951d300fd797",
+  "qualification_sha256": "9dc17535d63a0a7667b1b3aca1853421e6d0a5b8dbf44560462611130582474f",
+  "inspection_sha256": "055852bb56139d45d0c14f292c3994b02c867b9e256961194d9dfebc6c910653",
+  "all_active_original_labels_strictly_reachable": true,
+  "classification_ambiguity_excluded_only_from_BCE": true,
+  "all_original_continuous_labels_retained": true,
+  "original_physics_projection_safety_gates_unchanged": true,
+  "cpu_gpu_original_projected_labels_and_classes_bitwise_equal": true,
+  "original_candidate_training_authorized_stays_false": true,
+  "root_scope_authorized_in_this_separate_record": true,
+  "host_validation": "model15 + trainer16 tests independently passed; loader24 independently passed",
+  "no_physical_success_or_generalization_claim": true
+}
