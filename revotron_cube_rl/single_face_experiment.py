@@ -10,7 +10,11 @@ def stop_handler(signum,frame):
     print('INTERRUPTION_REQUESTED',signum,flush=True)
 signal.signal(signal.SIGTERM,stop_handler)
 ROOT=Path(__file__).resolve().parent
-p=argparse.ArgumentParser();p.add_argument('--name',required=True);p.add_argument('--seed',type=int,default=9501);p.add_argument('--record',action='store_true');p.add_argument('--max-steps',type=int,default=3500);p.add_argument('--friction',default='.9,.8');p.add_argument('--hand-friction',default=None);p.add_argument('--push-degrees',type=float,default=0.);p.add_argument('--contact-style',choices=['face','edge'],default='face');p.add_argument('--controller',choices=['index','opposed'],default='opposed');p.add_argument('--center-only',action='store_true');p.add_argument('--center-style',choices=['j56','legacy'],default='j56');p.add_argument('--split',choices=['development','independent'],default='development');p.add_argument('--opposition-planner',choices=['baseline','joint'],default='baseline');p.add_argument('--ring-inset',type=float,default=0.);p.add_argument('--adaptive-wrist',action='store_true');p.add_argument('--settled-hold',action='store_true');p.add_argument('--right-hand-friction');p.add_argument('--right-finger-stiffness',type=int,choices=[10,20,30]);p.add_argument('--source-core-inertia',action='store_true');p.add_argument('--position-iterations',type=int,choices=[32,64]);p.add_argument('--cube-clearance-refinement',action='store_true');p.add_argument('--matched-internal-friction');p.add_argument('--source-joint-damping',action='store_true');p.add_argument('--turn-feedback-pacing',action='store_true');p.add_argument('--turn-feedback-planning-frame',action='store_true');p.add_argument('--left-ring-support',action='store_true');p.add_argument('--preflight-workers',type=int,choices=[1,12],default=1);p.add_argument('--passive-cube-articulation',action='store_true');p.add_argument('--articulation-baseline');p.add_argument('--articulation-baseline-sha256');p.add_argument('--full-task-episode',action='store_true');p.add_argument('--left-index-continuation',action='store_true');p.add_argument('--left-index-continuation-v20',action='store_true');a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--name',required=True);p.add_argument('--seed',type=int,default=9501);p.add_argument('--record',action='store_true');p.add_argument('--max-steps',type=int,default=3500);p.add_argument('--friction',default='.9,.8');p.add_argument('--hand-friction',default=None);p.add_argument('--push-degrees',type=float,default=0.);p.add_argument('--contact-style',choices=['face','edge'],default='face');p.add_argument('--controller',choices=['index','opposed'],default='opposed');p.add_argument('--center-only',action='store_true');p.add_argument('--center-style',choices=['j56','legacy'],default='j56');p.add_argument('--split',choices=['development','independent'],default='development');p.add_argument('--opposition-planner',choices=['baseline','joint'],default='baseline');p.add_argument('--ring-inset',type=float,default=0.);p.add_argument('--adaptive-wrist',action='store_true');p.add_argument('--settled-hold',action='store_true');p.add_argument('--right-hand-friction');p.add_argument('--right-finger-stiffness',type=int,choices=[10,20,30]);p.add_argument('--source-core-inertia',action='store_true');p.add_argument('--position-iterations',type=int,choices=[32,64]);p.add_argument('--cube-clearance-refinement',action='store_true');p.add_argument('--matched-internal-friction');p.add_argument('--source-joint-damping',action='store_true');p.add_argument('--turn-feedback-pacing',action='store_true');p.add_argument('--turn-feedback-planning-frame',action='store_true');p.add_argument('--left-ring-support',action='store_true');p.add_argument('--preflight-workers',type=int,choices=[1,12],default=1);p.add_argument('--passive-cube-articulation',action='store_true');p.add_argument('--articulation-baseline');p.add_argument('--articulation-baseline-sha256');p.add_argument('--full-task-episode',action='store_true');p.add_argument('--left-index-continuation',action='store_true');p.add_argument('--left-index-continuation-v20',action='store_true');
+p.add_argument('--bc-evaluation-run',help='Completed contact-hold BC fit; use the evaluation launcher')
+a=p.parse_args()
+if a.bc_evaluation_run and (a.full_task_episode or a.center_only or a.push_degrees or not a.settled_hold or a.controller!='opposed' or (a.split!='development' and os.getenv('CONTACT_HOLD_EVAL_ROLE')!='test')):
+    p.error('Contact-hold BC evaluation requires the unmodified pickup-to-wrist scope')
 if a.full_task_episode and (a.controller!='opposed' or a.center_only or a.push_degrees not in (15.,30.,90.)):p.error('--full-task-episode requires a full opposed positive 15/30/90-degree task')
 if a.left_index_continuation and (not a.full_task_episode or not a.left_ring_support or a.center_style!='j56'):p.error('--left-index-continuation requires full-task, left-ring-support and j56 center')
 if a.left_index_continuation_v20 and not a.left_index_continuation:p.error('--left-index-continuation-v20 requires explicit original index continuation')
@@ -73,6 +77,11 @@ if a.passive_cube_articulation:sources+=['passive_cube_articulation.py']
 if a.full_task_episode:sources+=['full_task_episode.py']
 if a.left_index_continuation:sources+=['left_index_continuation.py','left_support_envelope_v3.py','left_support_envelope_preflight_v3.py','opposed_distance_cache_v1.py']
 if a.left_index_continuation_v20:sources+=['left_index_continuation_v20.py','left_index_mpr_envelope_v20.py','left_index_mpr_preflight_v20.py','left_index_mpr_preflight_contract_v20.json']
+student=None
+if a.bc_evaluation_run:
+    from contact_hold_student_eval import StudentEvaluation
+    student=StudentEvaluation(a.bc_evaluation_run,a,run)
+    sources+=['contact_hold_student_eval.py','contact_hold_teacher.py','contact_hold_policy.py','phase_contact_policy.py']
 sources=list(dict.fromkeys(sources))
 archive_paths={n:('source_config.json'if n=='config.json'else n)for n in sources}
 for n in sources:shutil.copy2(ROOT/n,run/archive_paths[n])
@@ -140,7 +149,13 @@ try:
     write('cube_asset.json',{'source_sha256':raw_sha(env.dynamic_source),'model':env.cube.model,'soft_limit_version':'revo3_user_soft_limits_v2'})
     env.rng=np.random.default_rng(a.seed);env.reset();env.metrics={};env.pair_impulses={}
     if a.passive_cube_articulation:write('passive_articulation_verification.json',env.cube.model['passive_articulation'])
+    if student is not None:
+        student.bind(env,run)
+        WristDirectionTeacher=student.teacher_class()
     teacher=WristDirectionTeacher(env,ROOT/'opposition_grasp_v20.json');fingers=FingerContactAudit();audit=DetailedSelfContactAudit();failure=None
+    if student is not None:
+        # An evaluation must never acquire the demonstration marker required by the BC reader.
+        (run/'contact_hold_candidate.json').rename(run/'evaluation_controller.json')
     initial_reset_count=env.cube.pose_reset_count
     if a.full_task_episode:
         from full_task_episode import FullTaskEpisode
@@ -163,8 +178,12 @@ try:
         if task and stop_requested:
             failure='execution_interrupted';task.abort(failure,truncated=True);break
         if task:task.step(action,phase=teacher.name,step_id=len(rows))
+        elif student is not None:
+            action,student_row=student.action(env,teacher.name,step,rows[-1] if rows else None,action)
+            _,_,env_done,_=env.step(action)
         else:env.step(action)
         row=dict(step=step,phase=teacher.name,**env.metrics);row.update(fingers.metrics());row.update(audit.metrics())
+        if student is not None:row.update(student_row)
         row['q']=tensor(env.robot.data.joint_pos)[0,env.ids].tolist();row['cube_quaternion_wxyz']=quaternion_from_native(tensor(env.cube.data.root_state_w)[0,3:7]).tolist()
         row.update(tilt_degrees=-90,right_contact_axis=0,right_thumb_sign=-1,measured_hand_frames=measured_hand_frames(env),measured_elbow=measured_elbow(env),tilt_reference_wxyz=teacher.reference.tolist()if teacher.reference is not None else None)
         row['measured_wrist']=wrist_geometry(row,env.cfg['joint_names']);row['nominal_target']=teacher.nominal_target[0].tolist()
@@ -174,6 +193,7 @@ try:
         unsafe=row['self_contact_impulse']>1e-6 or row['robot_table_impulse']>1e-6 or row['arm_soft_limit_hit'] or row['actual_arm_soft_limit_violation'] or any(row['hard_limit_hit'])
         if stop_requested:failure='execution_interrupted'
         if unsafe:failure='robot_safety_gate'
+        if student is not None and bool(env_done.item()) and not teacher.accepted and not failure:failure='environment_done'
         if row['drop']:failure='cube_drop'
         if teacher.failure_reason:failure=teacher.failure_reason
         if row['layer_measurement']['maximum_relative_rotation_deg']>30:failure='cube_layers_deformed_before_turn'
@@ -208,6 +228,9 @@ try:
         result['task_episode']=task.conclude(result)
         if result['task_episode']['done'] and not result['task_episode']['success']:
             result['failure']=result['task_episode']['reason'];result['face_turn_validated']=False
+    if student is not None:
+        result.update(student.protocol,checkpoint='evaluated_best.pt',student_executed_steps=len(rows),
+                      joint_wrist_hold_s=wrist['longest_jointly_qualified_hold_s'])
     write('planner_diagnostics.json',getattr(teacher.planner,'diagnostics',[]))
     write('trajectory.json',rows);write('result.json',result)
     if teacher.path is not None:write('left_plan.json',teacher.path.tolist())
@@ -215,7 +238,7 @@ try:
         frames[-1].save(run/'final.png')
         from side_video import encode_mp4
         encode_mp4(run/'demo.mp4',frames+[frames[-1]]*15)
-    write('artifact_manifest.json',{'seed':a.seed,'split':a.split,'full_episode':not stop_requested,'checkpoint':None,'checkpoint_reason':'traditional robot contact controller; no learned policy','sha256':{f.name:raw_sha(f)for f in sorted(run.iterdir())if f.is_file()and f.name!='artifact_manifest.json'}})
+    write('artifact_manifest.json',{'seed':a.seed,'split':a.split,'full_episode':not stop_requested,'checkpoint':result['checkpoint'],'checkpoint_reason':'frozen student under evaluation' if student is not None else 'traditional robot contact controller; no learned policy','sha256':{f.name:raw_sha(f)for f in sorted(run.iterdir())if f.is_file()and f.name!='artifact_manifest.json'}})
     print('RESULT',json.dumps(result),flush=True)
 except Exception as e:
     if task:task.abort('runtime_exception:'+str(e),detail={'type':type(e).__name__})

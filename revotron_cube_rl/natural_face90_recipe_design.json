@@ -1,0 +1,87 @@
+{
+  "schema": "natural_face90_recipe_design_v1",
+  "date": "2026-11-18",
+  "paper": {
+    "title": "Sim-to-Real Reinforcement Learning for Vision-Based Dexterous Manipulation on Humanoids",
+    "url": "https://proceedings.mlr.press/v305/lin25c.html",
+    "pdf_sha256": "0963dcbb28b300302b1214bcadde88ce56b5cb16fe8f70a576a629d68dc08ae5",
+    "sections": [
+      "3.2",
+      "3.3",
+      "6.3",
+      "6.4"
+    ]
+  },
+  "evidence": {
+    "v5_episodes": 8,
+    "v5_prefix_held": 7,
+    "v5_target_contact": 7,
+    "v5_unsafe": 7,
+    "v5_success": 0,
+    "end_reasons": {
+      "face_structure_violation": 6,
+      "right_contact_on_wrong_piece_or_link": 1,
+      "tilt_hold_timeout": 1
+    },
+    "observation": "接触发生在 hover，6 个回合由非目标块转动超过 5 度终止；现有聚合接触不能确定首先碰到的具体手指。",
+    "native_pad_audit": "work/natural_face90_v6_fix_20261118/v5_native_pad_audit.json"
+  },
+  "implemented": [
+    "原 R27 从桌面连续拿取",
+    "原自然换姿和安全接近，原门槛准入",
+    "神经网络输出右侧 28 关节动作，嵌入原 56 维动作，左侧保持准入目标",
+    "真实 PhysX 后续转移进入 PPO；前缀、未准入和结束后的帧不进入 PPO",
+    "接触标记距离势能、经接触归因的层转进度、实际撤手保持；不安全终止无正奖励",
+    "冻结 checkpoint 后单独评估，独立 32 seed 验收使用原共享注册表"
+  ],
+  "target": {
+    "cube_mm": 90,
+    "layer": "nZ",
+    "degrees": 15,
+    "non_target_tolerance_deg": 5,
+    "retreat_m": 0.02,
+    "hold_frames": 90
+  },
+  "paper_adaptations": [
+    "论文的专家主要按物体/任务子集划分；此处专门训练拿取后的转层任务",
+    "论文 actor 使用物体位置与关节位置；本版本为仿真状态专家，额外使用朝向、层角等特权状态",
+    "使用论文的 PPO/三层 512 MLP 思路；奖励势能形式、超参数、动作子集和安全投影为项目设计",
+    "不采用回合中加载状态，始终由真实 R27 前缀连续到达初态，保留原安全契约"
+  ],
+  "not_implemented": [
+    "视觉/深度观测、Diffusion Policy 蒸馏",
+    "实机自动标定和论文完整随机化设置",
+    "90 度单层转动与魔方复原"
+  ],
+  "verification": {
+    "offline_tests_total": 54,
+    "algorithm_and_bridge_tests": 12,
+    "physics_run_by_assistant": false,
+    "physics_validation": "pending user smoke",
+    "trained_checkpoint_created": false,
+    "baseline_v5_hashes_unchanged": true
+  },
+  "commands": {
+    "check": "bash run_natural_face90_recipe_long.sh --check --run-dir /tmp/natural_face90_recipe_check",
+    "smoke": "bash run_natural_face90_recipe_long.sh --run-dir \"$PWD/runs/r27_recipe_probe_$(date +%Y%m%d_%H%M%S)\" --smoke --lanes 8",
+    "train": "bash run_natural_face90_recipe_long.sh --run-dir \"$PWD/runs/r27_recipe_state_ppo_$(date +%Y%m%d_%H%M%S)\" --iterations 200 --lanes 32 --validate-every 10 --validation-seeds 16"
+  },
+  "qualification": "smoke checks rollout/update plumbing only; not a qualified manipulation model or sim-to-real result",
+  "frame_lookup_fix_20261118": {
+    "failed_run": "r27_recipe_probe_20261118_154022",
+    "error": "AssertionError(('right_index_DIP_rubber_link', 3))",
+    "cause": "Link frame, visuals and collisions share a basename; unqualified recursive lookup assumed uniqueness.",
+    "change": "Resolve exact link frame under right_index_DIP_link; check body/type/scale; run the same resolution in read-only source preflight.",
+    "original_source_backup": "/home/brainco/rl_cube/work/natural_face90_recipe_framefix_20261118/before",
+    "added_regressions": [
+      "original frozen scene reproduces old exception",
+      "runtime env_0000 reference namespace",
+      "nonidentity link/body transforms with different geometry decoys",
+      "missing link does not fall back to geometry",
+      "separate rigid body and nonunit scale rejected",
+      "specific child exception appears in launcher"
+    ],
+    "physics_run_by_assistant": false,
+    "physical_validation": "pending fresh user smoke; do not resume the failed source fingerprint"
+  }
+}

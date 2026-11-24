@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#132b30"><title>CubeLab · 魔方操作工作台</title>
+<link rel="icon" href="/static/cube.svg" type="image/svg+xml"><link rel="stylesheet" href="/static/app.css"><link rel="stylesheet" href="/static/inference.css"><link rel="stylesheet" href="/static/rollouts.css"><link rel="stylesheet" href="/static/controls.css"><link rel="stylesheet" href="/static/remote.css"></head>
+<body>
+<aside class="sidebar">
+  <a class="brand" href="#training" aria-label="CubeLab 首页"><img src="/static/cube.svg" alt=""><span>Cube<span class="brand-light">Lab</span><small>ROBOTICS WORKSPACE</small></span></a>
+  <div class="nav-group"><div class="navlabel">工作空间</div>
+    <a class="nav selected" data-page="training" href="#training"><i data-icon="activity"></i><span>训练监控</span><b>01</b></a>
+    <a class="nav" data-page="controls" href="#controls"><i data-icon="sliders"></i><span>训练调参</span><b>02</b></a>
+    <a class="nav" data-page="inference" href="#inference"><i data-icon="cube"></i><span>推理工作台</span><b>03</b></a>
+    <a class="nav" data-page="remote" href="#remote"><i data-icon="terminal"></i><span>远端训练</span><b>04</b></a>
+  </div>
+  <div class="nav-group subnav"><div class="navlabel">训练分析</div>
+    <a class="nav" href="#trends"><i data-icon="wave"></i><span>训练趋势</span></a>
+    <a class="nav" href="#compare"><i data-icon="target"></i><span>模型对比</span></a>
+  </div>
+  <div class="resource"><div class="navlabel">本机资源 <span>DEVICE 00</span></div>
+    <div class="gpu-title"><i data-icon="chip"></i><strong id="gpu-name">读取 GPU…</strong></div>
+    <div class="gpu-values"><span>GPU 利用率</span><b id="gpu-util">—</b></div><div class="gauge"><span id="gpu-bar"></span></div>
+    <div class="gpu-values"><span>显存</span><b id="gpu-memory">—</b></div>
+  </div>
+  <div class="sidefoot"><span class="node-dot"></span>本机工作站 <span>LOCAL</span></div>
+</aside>
+<div class="workspace">
+<header class="topbar"><div class="breadcrumb"><i data-icon="grid"></i><span>魔方操作工作台</span><b>/</b><strong id="crumb">训练监控</strong></div><div class="top-right"><span class="compact-gpu" id="compact-gpu"></span><div class="connection"><span id="connection-dot"></span><span id="connection-word">连接中</span></div></div></header>
+<main>
+  <div class="titlebar" id="run-header"><div><div class="eyebrow" id="training-eyebrow"><span></span> TRAINING TELEMETRY</div><h1 id="run-title">训练监控</h1><p id="run-description">90 毫米魔方 · GPU 并行采样与闭环验证</p></div>
+    <div class="controls"><label class="run-label" for="run-choice">实验</label><select id="run-choice" aria-label="选择训练实验"><option>正在读取…</option></select><a class="config-link" href="#controls">调整参数</a><button class="iconbutton" id="refresh" title="立即刷新" aria-label="立即刷新"><i data-icon="refresh"></i></button></div>
+  </div>
+  <div class="alert" id="problem" role="status" hidden></div>
+<section id="train-page">
+  <div class="stats">
+    <article class="stat"><div><span>当前轮次</span><i data-icon="layers"></i></div><strong id="round-value">—</strong><small id="round-sub">等待运行数据</small></article>
+    <article class="stat"><div><span>活跃采样环境</span><i data-icon="grid"></i></div><strong id="env-value">—</strong><small id="env-sub">当前批次</small></article>
+    <article class="stat"><div><span>验证拿稳率</span><i data-icon="target"></i></div><strong id="val-value">—</strong><small id="val-sub">最近一次学生闭环验证</small></article>
+    <article class="stat"><div><span>验证拟合损失</span><i data-icon="wave"></i></div><strong id="loss-value">—</strong><small id="loss-sub">留出样本 · MSE</small></article>
+  </div>
+  <article class="panel convergence" id="convergence" aria-labelledby="cv-title">
+    <div class="panel-head cv-head"><div><div class="section-tag">LEARNING CURVES</div><h2 id="cv-title">训练收敛趋势</h2><p>逐轮对照模型更新与学生验证表现。</p></div>
+      <div class="cv-selectors"><label>曲线范围 <select id="cv-range"><option value="0">全部轮次</option><option value="10">最近 10 轮</option><option value="20">最近 20 轮</option></select></label><label>查看数据 <select id="cv-round" disabled></select></label></div></div>
+    <p class="cv-loading" id="cv-empty" role="status">正在读取跨轮记录…</p>
+    <div id="cv-body" hidden>
+      <div class="cv-charts">
+        <section class="cv-chart"><h3>学生闭环达标率</h3><p class="cv-sub">每轮验证回合中的比例 · 越高越好</p><div class="cv-plot" id="cv-rates"></div><div class="cv-readout" id="cv-rates-values"></div></section>
+        <section class="cv-chart"><h3>留出样本拟合误差</h3><p class="cv-sub">阶段均衡归一化 MSE · 越低越好</p><div class="cv-plot" id="cv-loss"></div><div class="cv-readout" id="cv-loss-values"></div></section>
+        <section class="cv-chart"><h3>模型参数变化</h3><p class="cv-sub">选中模型相对其父模型的权重变化量</p><div class="cv-plot" id="cv-weights"></div><div class="cv-readout" id="cv-weights-values"></div></section>
+      </div>
+      <div class="cv-compare"><div class="cv-compare-head"><h3>近 5 轮还有多少收益？</h3><span id="cv-window"></span></div><div id="cv-comparison"></div><p id="cv-advice"></p></div>
+      <details class="cv-method"><summary>指标口径与判断方法</summary>
+        <p>横轴均为训练轮次。点选曲线上的点或用上方轮次选择器可查看该轮值。闭环达标率来自独立学生验证；三项同达指同一回合达到腕部终点、结束时仍拿稳、且曾达到整颗转动要求。这里不检验单层拧动。</p>
+        <p>选中模型 MSE 取自该轮被采用的检查点；轮末 MSE 取自最后一次更新。DAgger 的回放数据随轮次变化，各轮留出样本不一定相同。参数变化 = 100 × ‖本轮权重 − 父模型权重‖₂ / ‖父模型权重‖₂；数值小不能单独证明策略已收敛。</p>
+        <p>窗口比较使用相邻两组各 5 个完整轮次的均值；波动区间取最近 5 轮的最小值和最大值。固定验证种子会被反复使用，因此这些观测不能当成独立重复实验。</p>
+      </details>
+    </div>
+  </article>
+  <div class="chart-layout">
+    <article class="panel chart-panel"><div class="panel-head"><div><div class="section-tag">01 / TELEMETRY</div><h2>训练过程明细</h2></div><div class="segmented" aria-label="曲线类型"><button type="button" id="mode-sample" aria-pressed="true">采样</button><button type="button" id="mode-loss" aria-pressed="false">损失</button><button type="button" id="mode-val" aria-pressed="false">验证</button></div></div>
+      <div class="chart-meta" id="chart-meta"></div><div id="chart" class="plot" role="img" aria-label="训练数据曲线"></div><div class="plot-foot" id="chart-foot"></div>
+    </article>
+    <article class="panel pipeline"><div class="panel-head"><div><div class="section-tag">02 / PIPELINE</div><h2>本轮流程</h2></div><span class="pill" id="status-pill">读取中</span></div>
+      <ol id="pipeline"></ol><div class="pipeline-foot"><span class="clock-icon" data-icon="clock"></span><span id="last-event">等待日志</span></div>
+    </article>
+  </div>
+  <article class="panel performance" id="performance" aria-labelledby="perf-title">
+    <div class="panel-head"><div><h2 id="perf-title">采样耗时</h2><p id="perf-scope">等待采样记录</p></div><span class="capsule" id="perf-stamp">—</span></div>
+    <dl class="perf-metrics" id="perf-metrics"></dl>
+    <p class="perf-device" id="perf-device">正在读取 GPU 设备指标…</p>
+    <p id="perf-message"></p>
+    <div class="table-scroll" id="perf-table" hidden><table><thead><tr><th>操作</th><th>累计耗时</th><th>调用次数</th><th>平均每次</th></tr></thead><tbody id="perf-rows"></tbody></table></div>
+    <p id="perf-throughput"></p>
+    <details id="perf-benchmark" hidden><summary>转动路径求解 · 分块基准</summary><p>表中只计路径求解。跨控制步合并仅用于比较组件性能。</p><div class="table-scroll"><table><thead><tr><th>分组</th><th>宽度</th><th>中位耗时</th><th>最大角度差</th><th>数值逐位一致</th></tr></thead><tbody id="perf-bench-rows"></tbody></table></div></details>
+  </article>
+  <article class="panel" id="rounds"><div class="panel-head"><div><div class="section-tag">03 / VALIDATION</div><h2>轮次记录</h2></div><span class="capsule" id="round-count">0 轮完成</span></div><div class="table-scroll">
+    <table><thead><tr><th>轮次</th><th>拟合更新</th><th>验证 MSE</th><th>曾拿稳</th><th>结束仍稳持</th><th>整颗转动</th><th>平均峰值高度</th></tr></thead><tbody id="history"></tbody></table></div>
+    <div class="table-note">拿稳与整颗转动来自独立闭环验证。单层拧动不属于本次训练目标。</div>
+  </article>
+  <article class="panel logs" id="logs"><div class="panel-head"><div><div class="section-tag">04 / CONSOLE</div><h2>运行日志</h2></div><button type="button" id="log-toggle" aria-expanded="true">收起日志</button></div><pre id="log-content" tabindex="0">等待读取…</pre></article>
+</section>
+<section id="trend-page" class="quality" hidden aria-labelledby="run-title">
+  <p id="trend-empty" class="quality-empty panel">正在读取验证结果…</p>
+  <div id="trend-body" hidden>
+    <article class="panel">
+      <div class="panel-head"><h2>闭环验证达标率</h2><label class="round-filter">查看轮次 <select id="trend-round" disabled></select></label></div>
+      <dl id="quality-latest" class="quality-latest"></dl>
+      <div class="quality-legend" id="quality-legend"></div>
+      <div id="quality-rates" class="quality-chart"></div>
+      <p class="table-note">分母为当轮闭环验证的全部回合。「终点仍稳持」要求到达预设腕部终点时左手仍拿稳魔方。</p>
+    </article>
+    <article class="panel">
+      <div class="panel-head"><h2>平均最长连续稳持时间</h2><span id="duration-latest"></span></div>
+      <div id="quality-duration" class="quality-chart secondary"></div>
+      <p class="table-note">每个回合取最长连续稳持时间，再对当轮全部验证回合求平均。</p>
+    </article>
+  </div>
+</section>
+<section id="compare-page" hidden aria-labelledby="run-title">
+  <article class="panel cmp-panel">
+    <div class="panel-head"><div><div class="section-tag">MODEL COMPARISON</div><h2>同种子验证对照</h2></div><span class="capsule" id="cmp-default">自动选轮</span></div>
+    <div class="cmp-controls">
+      <label>参考模型<select id="cmp-base" disabled></select></label>
+      <label>对比模型<select id="cmp-target" disabled></select></label>
+      <label>判定指标<select id="cmp-metric"><option value="joint_pass">三项同达</option><option value="end_held">结束仍稳持</option><option value="endpoint_held">终点仍稳持</option><option value="whole_turn">整颗转动</option></select></label>
+      <button type="button" id="cmp-auto" hidden>恢复自动选轮</button>
+    </div>
+    <p id="cmp-coverage" class="cmp-meta" role="status"></p>
+    <p id="cmp-empty" class="cmp-empty">正在读取已验收的验证轮次…</p>
+    <div id="cmp-result" hidden>
+      <div class="cmp-summary"><h3 id="cmp-summary"></h3><p id="cmp-rates"></p></div>
+      <div id="cmp-kpis" aria-label="相同验证种子的达标变化"></div>
+      <p class="table-note" id="cmp-rule"></p>
+    </div>
+  </article>
+  <article id="cmp-detail" class="panel" hidden>
+    <div class="panel-head"><div><h2>逐种子差异</h2><p id="cmp-tally"></p></div>
+      <div class="cmp-filters"><label>显示<select id="cmp-filter"><option value="changed">仅有变化</option><option value="lost">仅退步</option><option value="gained">仅新增</option><option value="both_fail">两轮均未达标</option><option value="both_pass">两轮均达标</option><option value="all">全部配对</option></select></label>
+      <label>种子<input id="cmp-seed" type="search" inputmode="numeric" placeholder="搜索种子号" maxlength="24"></label></div>
+    </div>
+    <div class="table-scroll"><table class="cmp-table"><thead><tr><th>验证种子</th><th>变化</th><th id="cmp-base-heading">参考模型</th><th id="cmp-target-heading">对比模型</th><th>最长连续稳持</th></tr></thead><tbody id="cmp-rows"></tbody></table></div>
+    <p class="table-note">只比较两轮都验证过的种子。这批种子不能代表新种子的表现；若评测步数或配置改变，差异也可能来自评测条件。</p>
+  </article>
+</section>
+<section id="control-page" hidden><div class="titlebar"><div><div class="eyebrow"><span></span> EXPERIMENT CONFIGURATION</div><h1>训练调参</h1><p>选择训练轮数和批次，调整抓取、持稳和整颗转动在训练中的权重。</p></div></div><div id="controls-root" aria-live="off"></div></section>
+<section id="infer-page" hidden><div class="titlebar"><div><div class="eyebrow"><span></span> POLICY INSPECTION</div><h1>推理工作台</h1><p>查看机器人抓取轨迹，比较模型动作与实际物理结果。</p></div></div><nav class="infer-tabs" aria-label="推理模式"><a id="archive-tab" href="#inference">归档轨迹与单帧推理</a><a id="rollout-tab" href="#rollout">新模型闭环回放</a></nav><div id="inference-root"></div><div id="rollouts-root" hidden></div></section>
+<section id="remote-page" hidden><div id="remote-root"></div></section>
+<footer><span>CubeLab <b>/</b> RevoTron</span><span>LOCAL EXPERIMENT WORKSPACE</span></footer>
+</main></div>
+<script type="module" src="/static/app.js"></script>
+</body></html>
